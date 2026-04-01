@@ -1,0 +1,17 @@
+{
+  "id": 1948,
+  "name": "Feather Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Feather",
+  "description": "Swift boots made with feather",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 34
+  },
+  "image": "data/images/shoes-1948.png",
+  "file": "shoes-1948.json"
+}

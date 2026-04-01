@@ -1,0 +1,15 @@
+{
+  "id": 1704,
+  "name": "Snow bear hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cute hat with white bear ears",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1704.png",
+  "file": "helmet-1704.json"
+}

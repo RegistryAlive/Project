@@ -1,0 +1,15 @@
+{
+  "id": 6202,
+  "name": "Demon Jade Stone",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 21,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Magic",
+  "description": "A Magic jade made from special magic items.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6202.png",
+  "file": "furniture-6202.json"
+}

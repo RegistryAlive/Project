@@ -1,0 +1,18 @@
+{
+  "id": 1546,
+  "name": "Pirate's Eye Patch",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Special for Clive, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "DEF": 30
+  },
+  "image": "data/images/helmet-1546.png",
+  "file": "helmet-1546.json"
+}

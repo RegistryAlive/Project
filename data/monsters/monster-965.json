@@ -1,0 +1,27 @@
+{
+  "id": 965,
+  "name": "Unclaimed Spirit",
+  "location": "Ghost Isle",
+  "image": "data/Monster_Images/monster-965.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 87,
+    "hp": 930,
+    "sp": 723,
+    "catchable": "Unknown",
+    "spd": 234.5,
+    "str": 50,
+    "con": 54,
+    "int": 61,
+    "wis": 44,
+    "agi": 52
+  }
+}

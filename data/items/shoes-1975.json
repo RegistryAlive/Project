@@ -1,0 +1,18 @@
+{
+  "id": 1975,
+  "name": "Droll M. Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Droll Male Xmas Shoes.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30,
+    "ATK": 20
+  },
+  "image": "data/images/shoes-1975.png",
+  "file": "shoes-1975.json"
+}

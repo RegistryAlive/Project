@@ -1,0 +1,15 @@
+{
+  "id": 6767,
+  "name": "Calligraphy 1",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 6,
+  "rarity": "common",
+  "base": null,
+  "description": "Beautiful artwork.",
+  "size": "1x3",
+  "attributes": {},
+  "image": "data/images/furniture-6767.png",
+  "file": "furniture-6767.json"
+}

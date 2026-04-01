@@ -1,0 +1,17 @@
+{
+  "id": 953,
+  "name": "Uniform",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A peers high-school student's uniform.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-953.png",
+  "file": "armor-953.json"
+}

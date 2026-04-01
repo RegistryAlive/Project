@@ -1,0 +1,45 @@
+{
+  "id": 1071,
+  "name": "Aresh Cactus",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1072.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Nectar",
+      "itemId": 7531,
+      "itemFile": "material-7531.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pollen",
+      "itemId": 7528,
+      "itemFile": "material-7528.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wood",
+      "itemId": 7651,
+      "itemFile": "material-7651.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 74,
+    "hp": 885,
+    "sp": 602,
+    "catchable": "Unknown",
+    "spd": 211,
+    "str": 48,
+    "con": 55,
+    "int": 31,
+    "wis": 38,
+    "agi": 50
+  }
+}

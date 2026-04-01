@@ -1,0 +1,15 @@
+{
+  "id": 8361,
+  "name": "Fire Hell Demo",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Obtain a Fire Hell Demon pet",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8361.png",
+  "file": "questprop-8361.json"
+}

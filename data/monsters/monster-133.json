@@ -1,0 +1,39 @@
+{
+  "id": 133,
+  "name": "Blue Beetle",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-133.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fresh Apple",
+      "itemId": 7519,
+      "itemFile": "material-7519.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dry Clay",
+      "itemId": 7646,
+      "itemFile": "material-7646.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 53,
+    "hp": 511,
+    "sp": 489,
+    "catchable": "Unknown",
+    "spd": 139.5,
+    "str": 32,
+    "con": 34,
+    "int": 29,
+    "wis": 34,
+    "agi": 30
+  }
+}

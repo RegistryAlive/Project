@@ -1,0 +1,18 @@
+{
+  "id": 2894,
+  "name": "Blue Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Flower / Magic",
+  "description": "Bracers with magic powers",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "SPD": 20
+  },
+  "image": "data/images/arm-2894.png",
+  "file": "arm-2894.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 985,
+  "name": "Villager",
+  "location": "South Pole",
+  "image": "data/Monster_Images/monster-985.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 786,
+    "sp": 553,
+    "catchable": "Unknown",
+    "spd": 184.5,
+    "str": 53,
+    "con": 49,
+    "int": 37,
+    "wis": 35,
+    "agi": 39
+  }
+}

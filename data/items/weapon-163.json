@@ -1,0 +1,18 @@
+{
+  "id": 163,
+  "name": "West Titan SW",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 60,
+  "level": 120,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Gitans infused the wind from the west into their swords that they have forged.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "SPD": 60
+  },
+  "image": "data/images/weapon-163.png",
+  "file": "weapon-163.json"
+}

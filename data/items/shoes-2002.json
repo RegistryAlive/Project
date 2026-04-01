@@ -1,0 +1,18 @@
+{
+  "id": 2002,
+  "name": "Predator Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Boots representing the status class.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 10
+  },
+  "image": "data/images/shoes-2002.png",
+  "file": "shoes-2002.json"
+}

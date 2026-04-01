@@ -1,0 +1,15 @@
+{
+  "id": 6015,
+  "name": "Satellite Antenna",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To Receive a satellitic signal",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6015.png",
+  "file": "furniture-6015.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 499,
+  "name": "Yellow Spider",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-499.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Milk Tea",
+      "itemId": 7232,
+      "itemFile": "material-7232.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 117,
+    "hp": 701,
+    "sp": 664,
+    "catchable": "No",
+    "spd": 255.5,
+    "str": 28,
+    "con": 33,
+    "int": 38,
+    "wis": 35,
+    "agi": 40
+  }
+}

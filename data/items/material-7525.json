@@ -1,0 +1,17 @@
+{
+  "id": 7525,
+  "name": "Su Mushroom",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "A Mushroom beside the water",
+  "size": "1x1",
+  "attributes": {
+    "SP": 20
+  },
+  "image": "data/images/material-7525.png",
+  "file": "material-7525.json"
+}

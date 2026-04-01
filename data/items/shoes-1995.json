@@ -1,0 +1,15 @@
+{
+  "id": 1995,
+  "name": "Sakura Geta",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Soft and cute pink clogs, wear it to participate in the cherry blossom festival~",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1995.png",
+  "file": "shoes-1995.json"
+}

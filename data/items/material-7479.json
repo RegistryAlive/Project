@@ -1,0 +1,17 @@
+{
+  "id": 7479,
+  "name": "Roo Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Stiff roo meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 90
+  },
+  "image": "data/images/material-7479.png",
+  "file": "material-7479.json"
+}

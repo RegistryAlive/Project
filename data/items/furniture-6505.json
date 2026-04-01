@@ -1,0 +1,15 @@
+{
+  "id": 6505,
+  "name": "Xmas Fireplace",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The silver-white Christmas series furniture and the stone fireplace full of Christmas atmosphere warm up the body and mind.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6505.png",
+  "file": "furniture-6505.json"
+}

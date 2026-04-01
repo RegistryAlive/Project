@@ -1,0 +1,15 @@
+{
+  "id": 1643,
+  "name": "Chobits Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The futuristic little ears can let the lover understand your mind through electronic data exchange, and drive away the loneliness that the lover is not around",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1643.png",
+  "file": "helmet-1643.json"
+}

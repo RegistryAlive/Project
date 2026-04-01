@@ -1,0 +1,18 @@
+{
+  "id": 1865,
+  "name": "Light Fur Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Platinum / Leather",
+  "description": "light boots that have excellent flexibility.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 12,
+    "DEF": 9
+  },
+  "image": "data/images/shoes-1865.png",
+  "file": "shoes-1865.json"
+}

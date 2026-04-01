@@ -1,0 +1,15 @@
+{
+  "id": 6168,
+  "name": "Linen Pack",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made of linen",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6168.png",
+  "file": "furniture-6168.json"
+}

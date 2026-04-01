@@ -1,0 +1,27 @@
+{
+  "id": 833,
+  "name": "Old Woman",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-833.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 12,
+    "hp": 74,
+    "sp": 101,
+    "catchable": "Unknown",
+    "spd": 32,
+    "str": 5,
+    "con": 4,
+    "int": 11,
+    "wis": 9,
+    "agi": 7
+  }
+}

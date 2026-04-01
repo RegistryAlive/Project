@@ -1,0 +1,18 @@
+{
+  "id": 2865,
+  "name": "Wind Aurora Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Grass",
+  "description": "Suit: Damages Earth enemies;-50% damage to Fire enemies.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "ATK": 10
+  },
+  "image": "data/images/arm-2865.png",
+  "file": "arm-2865.json"
+}

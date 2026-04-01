@@ -1,0 +1,27 @@
+{
+  "id": 963,
+  "name": "UFO",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-963.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 28000,
+    "sp": 1094,
+    "catchable": "Unknown",
+    "spd": 393,
+    "str": 120,
+    "con": 123,
+    "int": 66,
+    "wis": 57,
+    "agi": 84
+  }
+}

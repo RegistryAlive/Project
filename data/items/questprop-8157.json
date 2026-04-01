@@ -1,0 +1,15 @@
+{
+  "id": 8157,
+  "name": "Small Sock",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Gift can be obtained after hanging it in the tree.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8157.png",
+  "file": "questprop-8157.json"
+}

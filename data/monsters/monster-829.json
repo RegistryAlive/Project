@@ -1,0 +1,27 @@
+{
+  "id": 829,
+  "name": "Neil",
+  "location": "Rome",
+  "image": "data/Monster_Images/monster-829.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 185,
+    "hp": 43500,
+    "sp": 32000,
+    "catchable": "Unknown",
+    "spd": 277.5,
+    "str": 165,
+    "con": 100,
+    "int": 180,
+    "wis": 125,
+    "agi": 0
+  }
+}

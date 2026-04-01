@@ -1,0 +1,18 @@
+{
+  "id": 1483,
+  "name": "Energy Halo+2",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 24,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets. Its numerical value can advance",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 120,
+    "MaxSP": 120
+  },
+  "image": "data/images/helmet-1483.png",
+  "file": "helmet-1483.json"
+}

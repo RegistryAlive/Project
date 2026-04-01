@@ -1,0 +1,15 @@
+{
+  "id": 6488,
+  "name": "Pink P. Mirror",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Pink Series Pattern Mirror. Favoured by young girls.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6488.png",
+  "file": "furniture-6488.json"
+}

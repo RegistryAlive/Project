@@ -1,0 +1,15 @@
+{
+  "id": 8025,
+  "name": "Red Mushroom",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The mushroom Hood Girl picked for grandma",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8025.png",
+  "file": "questprop-8025.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8085,
+  "name": "ShadingPuca Card",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a ShadingPuca become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8085.png",
+  "file": "questprop-8085.json"
+}

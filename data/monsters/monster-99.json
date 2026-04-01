@@ -1,0 +1,51 @@
+{
+  "id": 99,
+  "name": "Stone Monster",
+  "location": "Kelan Village's Cave",
+  "image": "data/Monster_Images/monster-99.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Tin Ore",
+      "itemId": 7572,
+      "itemFile": "material-7572.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Marble",
+      "itemId": 7634,
+      "itemFile": "material-7634.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Saltpeter",
+      "itemId": 7611,
+      "itemFile": "material-7611.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Clay",
+      "itemId": 7643,
+      "itemFile": "material-7643.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Aluminum Ore",
+      "itemId": 7581,
+      "itemFile": "material-7581.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 3,
+    "hp": 53,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 6.5,
+    "str": 3,
+    "con": 3,
+    "int": 1,
+    "wis": 1,
+    "agi": 1
+  }
+}

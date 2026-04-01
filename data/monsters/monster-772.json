@@ -1,0 +1,27 @@
+{
+  "id": 772,
+  "name": "Icy Scorpion (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-772.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 115,
+    "hp": 5900,
+    "sp": 2300,
+    "catchable": "Unknown",
+    "spd": 302.5,
+    "str": 65,
+    "con": 45,
+    "int": 80,
+    "wis": 90,
+    "agi": 65
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 889,
+  "name": "Scorpion King (Quest)",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-889.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 155,
+    "hp": 27850,
+    "sp": 9000,
+    "catchable": "Unknown",
+    "spd": 352.5,
+    "str": 120,
+    "con": 60,
+    "int": 115,
+    "wis": 110,
+    "agi": 60
+  }
+}

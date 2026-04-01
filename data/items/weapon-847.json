@@ -1,0 +1,17 @@
+{
+  "id": 847,
+  "name": "Dragon Gun",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Iron / Wood",
+  "description": "Endowed with the power of dragon flight for range.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25
+  },
+  "image": "data/images/weapon-847.png",
+  "file": "weapon-847.json"
+}

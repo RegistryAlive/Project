@@ -1,0 +1,15 @@
+{
+  "id": 6683,
+  "name": "Ghost Lounge C",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A lounge chair in the shape of a ghost.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6683.png",
+  "file": "furniture-6683.json"
+}

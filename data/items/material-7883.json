@@ -1,0 +1,15 @@
+{
+  "id": 7883,
+  "name": "Refined Tin (R18)",
+  "type": "Material",
+  "category": "material",
+  "rank": 18,
+  "level": 36,
+  "rarity": "uncommon",
+  "base": "Tin",
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7883.png",
+  "file": "material-7883.json"
+}

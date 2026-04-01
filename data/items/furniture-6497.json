@@ -1,0 +1,15 @@
+{
+  "id": 6497,
+  "name": "E. Bunny Stand",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 15,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Easter Bunny stand.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6497.png",
+  "file": "furniture-6497.json"
+}

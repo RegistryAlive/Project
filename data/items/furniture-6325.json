@@ -1,0 +1,15 @@
+{
+  "id": 6325,
+  "name": "Window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "used to see outside.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6325.png",
+  "file": "furniture-6325.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 970,
+  "name": "Flying Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Nylon / Grass",
+  "description": "Very elegant and stylish.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 13,
+    "MDEF": 5
+  },
+  "image": "data/images/armor-970.png",
+  "file": "armor-970.json"
+}

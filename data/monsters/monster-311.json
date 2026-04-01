@@ -1,0 +1,51 @@
+{
+  "id": 311,
+  "name": "Yellow Pterosaur",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-311.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Bird Meat",
+      "itemId": 7501,
+      "itemFile": "material-7501.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Egg",
+      "itemId": 7502,
+      "itemFile": "material-7502.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wing Claw",
+      "itemId": 7808,
+      "itemFile": "material-7808.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Rose",
+      "itemId": 7352,
+      "itemFile": "material-7352.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 56,
+    "hp": 471,
+    "sp": 498,
+    "catchable": "No",
+    "spd": 158,
+    "str": 33,
+    "con": 30,
+    "int": 34,
+    "wis": 34,
+    "agi": 37
+  }
+}

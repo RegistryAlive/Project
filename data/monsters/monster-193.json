@@ -1,0 +1,33 @@
+{
+  "id": 193,
+  "name": "Forest Bat",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-193.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Olla Noodles",
+      "itemId": 7065,
+      "itemFile": "material-7065.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 344,
+    "sp": 309,
+    "catchable": "Unknown",
+    "spd": 157,
+    "str": 24,
+    "con": 22,
+    "int": 15,
+    "wis": 17,
+    "agi": 26
+  }
+}

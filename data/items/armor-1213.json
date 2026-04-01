@@ -1,0 +1,15 @@
+{
+  "id": 1213,
+  "name": "Bless Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A gift from god, to young people who are still away on Christmas. 2016 Christmas limited edition men's clothing.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1213.png",
+  "file": "armor-1213.json"
+}

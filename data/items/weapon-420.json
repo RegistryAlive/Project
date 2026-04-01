@@ -1,0 +1,18 @@
+{
+  "id": 420,
+  "name": "Desire Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Uses the power of darkness to draw out power, trades your soul for power.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 17,
+    "SPD": 15
+  },
+  "image": "data/images/weapon-420.png",
+  "file": "weapon-420.json"
+}

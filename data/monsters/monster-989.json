@@ -1,0 +1,27 @@
+{
+  "id": 989,
+  "name": "Warrior",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-989.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 426,
+    "sp": 455,
+    "catchable": "Unknown",
+    "spd": 125,
+    "str": 32,
+    "con": 28,
+    "int": 33,
+    "wis": 32,
+    "agi": 25
+  }
+}

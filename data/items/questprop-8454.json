@@ -1,0 +1,15 @@
+{
+  "id": 8454,
+  "name": "Warriors Frag",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Collect a certain number to exchange for the Warrior Badge Puzzle",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8454.png",
+  "file": "questprop-8454.json"
+}

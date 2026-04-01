@@ -1,0 +1,15 @@
+{
+  "id": 8318,
+  "name": "Proposing Ring",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Ring that Lamont used to make his wedding proposal",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8318.png",
+  "file": "questprop-8318.json"
+}

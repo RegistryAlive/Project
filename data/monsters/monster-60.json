@@ -1,0 +1,33 @@
+{
+  "id": 60,
+  "name": "Scorpion",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-60.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 64,
+    "hp": 525,
+    "sp": 481,
+    "catchable": "Unknown",
+    "spd": 188,
+    "str": 42,
+    "con": 32,
+    "int": 41,
+    "wis": 31,
+    "agi": 46
+  }
+}

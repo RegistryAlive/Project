@@ -1,0 +1,17 @@
+{
+  "id": 991,
+  "name": "Steel Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Armor which is made from steel",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28
+  },
+  "image": "data/images/armor-991.png",
+  "file": "armor-991.json"
+}

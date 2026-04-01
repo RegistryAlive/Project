@@ -1,0 +1,15 @@
+{
+  "id": 7604,
+  "name": "Titanium",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Titanium",
+  "description": "A Rare metal with good tenacity",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7604.png",
+  "file": "material-7604.json"
+}

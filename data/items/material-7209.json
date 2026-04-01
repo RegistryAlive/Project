@@ -1,0 +1,18 @@
+{
+  "id": 7209,
+  "name": "Ginger Beancurd",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Bean / Egg",
+  "description": "Add an egg while producing beancurd",
+  "size": "1x1",
+  "attributes": {
+    "HP": 110,
+    "SP": 110
+  },
+  "image": "data/images/material-7209.png",
+  "file": "material-7209.json"
+}

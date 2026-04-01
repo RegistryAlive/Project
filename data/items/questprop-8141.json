@@ -1,0 +1,15 @@
+{
+  "id": 8141,
+  "name": "Phoenix Egg",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The Phoenix Egg of Volcano Crater",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8141.png",
+  "file": "questprop-8141.json"
+}

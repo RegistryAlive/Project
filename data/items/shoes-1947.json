@@ -1,0 +1,18 @@
+{
+  "id": 1947,
+  "name": "Green Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Grass / Flower / Iron",
+  "description": "Gorgeous boots that radiates green light",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20,
+    "DEF": 20
+  },
+  "image": "data/images/shoes-1947.png",
+  "file": "shoes-1947.json"
+}

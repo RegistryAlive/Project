@@ -1,0 +1,15 @@
+{
+  "id": 6500,
+  "name": "Azure Cab Desk",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Azure Series Cabinet Desk with a modern feel.",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6500.png",
+  "file": "furniture-6500.json"
+}

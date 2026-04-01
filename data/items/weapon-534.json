@@ -1,0 +1,18 @@
+{
+  "id": 534,
+  "name": "Thunder Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Corundum",
+  "description": "A wand touched by lightning.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30,
+    "MDEF": 18
+  },
+  "image": "data/images/weapon-534.png",
+  "file": "weapon-534.json"
+}

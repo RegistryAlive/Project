@@ -1,0 +1,18 @@
+{
+  "id": 474,
+  "name": "Crystal Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Tin / Quartz (Crystal)",
+  "description": "Simmering with the magical power of crystals.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 14,
+    "MDEF": 14
+  },
+  "image": "data/images/weapon-474.png",
+  "file": "weapon-474.json"
+}

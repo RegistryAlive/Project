@@ -1,0 +1,51 @@
+{
+  "id": 147,
+  "name": "Taverner",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-147.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Diamond",
+      "itemId": 7599,
+      "itemFile": "material-7599.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Rice Wine",
+      "itemId": 7001,
+      "itemFile": "material-7001.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Brandy",
+      "itemId": 7057,
+      "itemFile": "material-7057.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lyme Liquor",
+      "itemId": 7058,
+      "itemFile": "material-7058.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Liquor",
+      "itemId": 7095,
+      "itemFile": "material-7095.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 611,
+    "sp": 688,
+    "catchable": "Unknown",
+    "spd": 222,
+    "str": 53,
+    "con": 44,
+    "int": 49,
+    "wis": 43,
+    "agi": 51
+  }
+}

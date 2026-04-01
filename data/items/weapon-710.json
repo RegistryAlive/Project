@@ -1,0 +1,18 @@
+{
+  "id": 710,
+  "name": "Iron Hatchet",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Steel / Titanium",
+  "description": "The shape looks like a knife.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 37,
+    "ATK": 19
+  },
+  "image": "data/images/weapon-710.png",
+  "file": "weapon-710.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 456,
+  "name": "Butterfly",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-456.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Pest Tentacles",
+      "itemId": 7790,
+      "itemFile": "material-7790.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 51,
+    "hp": 384,
+    "sp": 495,
+    "catchable": "Unknown",
+    "spd": 130.5,
+    "str": 28,
+    "con": 30,
+    "int": 33,
+    "wis": 35,
+    "agi": 27
+  }
+}

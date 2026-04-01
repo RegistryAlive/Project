@@ -1,0 +1,15 @@
+{
+  "id": 7639,
+  "name": "Yueyi Rock",
+  "type": "MaterialRock",
+  "category": "material",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rock",
+  "description": "Picked from the moon surface",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7639.png",
+  "file": "material-7639.json"
+}

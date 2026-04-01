@@ -1,0 +1,18 @@
+{
+  "id": 246,
+  "name": "Twilight Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Jean d arc's exclusively weapon after Rebirth.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45,
+    "DEF": 40
+  },
+  "image": "data/images/weapon-246.png",
+  "file": "weapon-246.json"
+}

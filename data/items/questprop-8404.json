@@ -1,0 +1,15 @@
+{
+  "id": 8404,
+  "name": "Event c coupon",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Each card can be used for one additional time of cooperative activities, up to three times a day; the maximum number of cooperative activities per day is 10 times in total",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8404.png",
+  "file": "questprop-8404.json"
+}

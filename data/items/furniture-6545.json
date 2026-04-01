@@ -1,0 +1,15 @@
+{
+  "id": 6545,
+  "name": "Love Seat",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A sofa suitable for lovers to nest together",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6545.png",
+  "file": "furniture-6545.json"
+}

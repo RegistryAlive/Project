@@ -1,0 +1,18 @@
+{
+  "id": 7197,
+  "name": "Cream Cheese",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Dairy Product",
+  "description": "It's made from milk",
+  "size": "1x1",
+  "attributes": {
+    "SP": 190,
+    "HP": 85
+  },
+  "image": "data/images/material-7197.png",
+  "file": "material-7197.json"
+}

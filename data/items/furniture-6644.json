@@ -1,0 +1,15 @@
+{
+  "id": 6644,
+  "name": "Sakura Cushion",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A cushion made with cherry blossom pattern",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6644.png",
+  "file": "furniture-6644.json"
+}

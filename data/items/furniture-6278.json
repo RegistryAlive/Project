@@ -1,0 +1,15 @@
+{
+  "id": 6278,
+  "name": "Small Aigui",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can read and write at the top of the device",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6278.png",
+  "file": "furniture-6278.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8022,
+  "name": "Mysterious Crystal",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A Mysterious crystal with magical power",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8022.png",
+  "file": "questprop-8022.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 1595,
+  "name": "Dark Bunny Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Limited edition collector's item!",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1595.png",
+  "file": "helmet-1595.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 3,
+  "name": "Earth Pangolin",
+  "location": "Rome",
+  "image": "data/Monster_Images/monster-3.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Watermelon",
+      "itemId": 7440,
+      "itemFile": "material-7440.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ant Antennae",
+      "itemId": 7797,
+      "itemFile": "material-7797.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 1423,
+    "sp": 1366,
+    "catchable": "Yes",
+    "spd": 290,
+    "str": 60,
+    "con": 100,
+    "int": 65,
+    "wis": 80,
+    "agi": 55
+  }
+}

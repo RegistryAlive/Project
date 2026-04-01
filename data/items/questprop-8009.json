@@ -1,0 +1,15 @@
+{
+  "id": 8009,
+  "name": "Ocean Heart Piece",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A kind of gem piece",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8009.png",
+  "file": "questprop-8009.json"
+}

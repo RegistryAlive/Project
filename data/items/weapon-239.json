@@ -1,0 +1,18 @@
+{
+  "id": 239,
+  "name": "Bloodthirster",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 50,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The cursed sword, that sealed the blood of a demon.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55,
+    "DefShoot": 0
+  },
+  "image": "data/images/weapon-239.png",
+  "file": "weapon-239.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 7314,
+  "name": "Nian Noodle",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The food that must be eaten in Spring Festival",
+  "size": "1x1",
+  "attributes": {
+    "HP": 400
+  },
+  "image": "data/images/material-7314.png",
+  "file": "material-7314.json"
+}

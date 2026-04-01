@@ -1,0 +1,15 @@
+{
+  "id": 7728,
+  "name": "Sea Fish Scale",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Canine",
+  "description": "Scales of a sea fish",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7728.png",
+  "file": "material-7728.json"
+}

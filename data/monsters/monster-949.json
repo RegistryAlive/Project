@@ -1,0 +1,27 @@
+{
+  "id": 949,
+  "name": "Tark",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-949.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 58,
+    "hp": 535,
+    "sp": 401,
+    "catchable": "Unknown",
+    "spd": 153,
+    "str": 45,
+    "con": 43,
+    "int": 27,
+    "wis": 26,
+    "agi": 33
+  }
+}

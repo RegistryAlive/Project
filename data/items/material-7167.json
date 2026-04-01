@@ -1,0 +1,18 @@
+{
+  "id": 7167,
+  "name": "Orange Popsicle",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 1) / Fruit",
+  "description": "Frozen orange popsicle",
+  "size": "1x1",
+  "attributes": {
+    "SP": 100,
+    "HP": 50
+  },
+  "image": "data/images/material-7167.png",
+  "file": "material-7167.json"
+}

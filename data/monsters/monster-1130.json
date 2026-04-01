@@ -1,0 +1,27 @@
+{
+  "id": 1130,
+  "name": "Yellow Snow Monkey",
+  "location": "Shayii Hill",
+  "image": "data/Monster_Images/monster-1131.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 24,
+    "hp": 227,
+    "sp": 189,
+    "catchable": "No",
+    "spd": 64,
+    "str": 12,
+    "con": 18,
+    "int": 13,
+    "wis": 15,
+    "agi": 14
+  }
+}

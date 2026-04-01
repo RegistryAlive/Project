@@ -1,0 +1,17 @@
+{
+  "id": 7517,
+  "name": "Golden Apple",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "HP": 20
+  },
+  "image": "data/images/material-7517.png",
+  "file": "material-7517.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 814,
+  "name": "Book Land's",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": null,
+  "description": "There are the properties of magic",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 11
+  },
+  "image": "data/images/weapon-814.png",
+  "file": "weapon-814.json"
+}

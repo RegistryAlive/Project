@@ -1,0 +1,18 @@
+{
+  "id": 1855,
+  "name": "Iron Net Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Iron",
+  "description": "Shoes made from high-tension wires and twines.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 12,
+    "DEF": 5
+  },
+  "image": "data/images/shoes-1855.png",
+  "file": "shoes-1855.json"
+}

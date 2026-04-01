@@ -1,0 +1,39 @@
+{
+  "id": 525,
+  "name": "Blue Sandworm",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-525.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Bone",
+      "itemId": 7776,
+      "itemFile": "material-7776.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Common Grass",
+      "itemId": 7365,
+      "itemFile": "material-7365.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 93,
+    "hp": 775,
+    "sp": 971,
+    "catchable": "Unknown",
+    "spd": 245.5,
+    "str": 53,
+    "con": 55,
+    "int": 58,
+    "wis": 60,
+    "agi": 53
+  }
+}

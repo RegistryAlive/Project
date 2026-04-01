@@ -1,0 +1,15 @@
+{
+  "id": 9024,
+  "name": "Large Assembly Tool",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "one of the instrument used to make giant machine.",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/tool-9024.png",
+  "file": "tool-9024.json"
+}

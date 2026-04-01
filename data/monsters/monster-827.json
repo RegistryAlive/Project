@@ -1,0 +1,27 @@
+{
+  "id": 827,
+  "name": "Mystic Old Man",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-827.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 46,
+    "hp": 264,
+    "sp": 612,
+    "catchable": "Unknown",
+    "spd": 97,
+    "str": 12,
+    "con": 19,
+    "int": 47,
+    "wis": 46,
+    "agi": 14
+  }
+}

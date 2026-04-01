@@ -1,0 +1,18 @@
+{
+  "id": 607,
+  "name": "Chaos Star",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Corundum / Magic / Aluminum",
+  "description": "A wand with high MATK that causes chaos",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 56,
+    "MDEF": 20
+  },
+  "image": "data/images/weapon-607.png",
+  "file": "weapon-607.json"
+}

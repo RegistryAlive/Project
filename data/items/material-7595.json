@@ -1,0 +1,15 @@
+{
+  "id": 7595,
+  "name": "Ruby",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Corundum",
+  "description": "A Rare ruby",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7595.png",
+  "file": "material-7595.json"
+}

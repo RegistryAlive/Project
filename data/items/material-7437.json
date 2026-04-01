@@ -1,0 +1,17 @@
+{
+  "id": 7437,
+  "name": "Banana",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30
+  },
+  "image": "data/images/material-7437.png",
+  "file": "material-7437.json"
+}

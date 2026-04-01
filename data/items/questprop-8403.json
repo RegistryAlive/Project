@@ -1,0 +1,15 @@
+{
+  "id": 8403,
+  "name": "new event reg",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Enrollment tickets for special events",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8403.png",
+  "file": "questprop-8403.json"
+}

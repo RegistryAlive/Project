@@ -1,0 +1,15 @@
+{
+  "id": 8530,
+  "name": "Simple Suit-dress",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "A suit for a maid",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8530.png",
+  "file": "questprop-8530.json"
+}

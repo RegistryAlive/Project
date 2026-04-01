@@ -1,0 +1,18 @@
+{
+  "id": 230,
+  "name": "Pyreplume Epee",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Pure Iron / Copper / Steel / Titanium / Magic",
+  "description": "A mysterious blade that increases magic attack and agility.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 45,
+    "SPD": 43
+  },
+  "image": "data/images/weapon-230.png",
+  "file": "weapon-230.json"
+}

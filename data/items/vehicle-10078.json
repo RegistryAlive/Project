@@ -1,0 +1,17 @@
+{
+  "id": 10078,
+  "name": "Sharks",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Sharks longing for freedom, aiming for the other side of the world, are now on their way! Use the magic ball of yarn as a wear-and-tear substitute!",
+  "size": "3x2",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10078.png",
+  "file": "vehicle-10078.json"
+}

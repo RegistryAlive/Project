@@ -1,0 +1,18 @@
+{
+  "id": 2875,
+  "name": "Verdant Wristband",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Copper / Steel",
+  "description": "Gives off a verdant metal shine",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "ATK": 5
+  },
+  "image": "data/images/arm-2875.png",
+  "file": "arm-2875.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1063,
+  "name": "White Dragon Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Leather / Flower",
+  "description": "clothes which are made of white leather",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "MDEF": 5
+  },
+  "image": "data/images/armor-1063.png",
+  "file": "armor-1063.json"
+}

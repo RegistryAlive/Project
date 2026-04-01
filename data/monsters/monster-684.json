@@ -1,0 +1,27 @@
+{
+  "id": 684,
+  "name": "Eva",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-684.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 32,
+    "hp": 163,
+    "sp": 318,
+    "catchable": "Unknown",
+    "spd": 96,
+    "str": 9,
+    "con": 11,
+    "int": 27,
+    "wis": 25,
+    "agi": 24
+  }
+}

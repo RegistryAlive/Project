@@ -1,0 +1,15 @@
+{
+  "id": 9004,
+  "name": "Bench Saw",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "one of the instrument used to cut items.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/tool-9004.png",
+  "file": "tool-9004.json"
+}

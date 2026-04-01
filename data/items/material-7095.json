@@ -1,0 +1,17 @@
+{
+  "id": 7095,
+  "name": "Liquor",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Liquor",
+  "description": "A strong wine",
+  "size": "1x1",
+  "attributes": {
+    "SP": 400
+  },
+  "image": "data/images/material-7095.png",
+  "file": "material-7095.json"
+}

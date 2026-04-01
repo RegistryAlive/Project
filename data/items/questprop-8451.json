@@ -1,0 +1,15 @@
+{
+  "id": 8451,
+  "name": "Treasure Chest",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can eliminate the magic coins in the opened battle chest",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8451.png",
+  "file": "questprop-8451.json"
+}

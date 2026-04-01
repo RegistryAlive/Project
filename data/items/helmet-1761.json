@@ -1,0 +1,17 @@
+{
+  "id": 1761,
+  "name": "Fox Gloves",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The lavender color of the fox ears is as beautiful and light as wisteria. Increases damage by 2% when HP is below 50%.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20
+  },
+  "image": "data/images/helmet-1761.png",
+  "file": "helmet-1761.json"
+}

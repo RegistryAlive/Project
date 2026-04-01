@@ -1,0 +1,27 @@
+{
+  "id": 686,
+  "name": "Evil Snake Woman (Quest)",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-686.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 27510,
+    "sp": 1598,
+    "catchable": "Unknown",
+    "spd": 300,
+    "str": 60,
+    "con": 50,
+    "int": 95,
+    "wis": 95,
+    "agi": 60
+  }
+}

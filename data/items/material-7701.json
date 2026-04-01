@@ -1,0 +1,15 @@
+{
+  "id": 7701,
+  "name": "Eagle Feather",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Feather",
+  "description": "A Feather of a ancient giant eagle",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7701.png",
+  "file": "material-7701.json"
+}

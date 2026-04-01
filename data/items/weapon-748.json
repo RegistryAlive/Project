@@ -1,0 +1,18 @@
+{
+  "id": 748,
+  "name": "Iron Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "It is made of inferior iron.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 9,
+    "DEF": 11
+  },
+  "image": "data/images/weapon-748.png",
+  "file": "weapon-748.json"
+}

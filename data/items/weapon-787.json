@@ -1,0 +1,17 @@
+{
+  "id": 787,
+  "name": "Titanium Gold Hammer",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Titanium / Steel",
+  "description": "A massive hammer forged from titanium gold",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 36
+  },
+  "image": "data/images/weapon-787.png",
+  "file": "weapon-787.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 683,
+  "name": "Polar Frostclaw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Crystallization / Copper / Steel",
+  "description": "A claw fashioned from special icicle crystals.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 32,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-683.png",
+  "file": "weapon-683.json"
+}

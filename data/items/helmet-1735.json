@@ -1,0 +1,15 @@
+{
+  "id": 1735,
+  "name": "Basketball",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A cool artifact, a must-have for basketball masters, even if the top is crooked, I don?t know why it will still bounce back to its original position, very convenient",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1735.png",
+  "file": "helmet-1735.json"
+}

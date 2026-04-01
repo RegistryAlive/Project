@@ -1,0 +1,15 @@
+{
+  "id": 2038,
+  "name": "Valentine Shoes (Male)",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Feather",
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-2038.png",
+  "file": "shoes-2038.json"
+}

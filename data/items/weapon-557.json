@@ -1,0 +1,18 @@
+{
+  "id": 557,
+  "name": "FireAurora Sta",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Suit: Damages Wind enemies;-50% damage to Water enemies.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 40,
+    "ATK": 10
+  },
+  "image": "data/images/weapon-557.png",
+  "file": "weapon-557.json"
+}

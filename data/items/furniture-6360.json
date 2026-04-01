@@ -1,0 +1,15 @@
+{
+  "id": 6360,
+  "name": "White Desk Lamp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Steel",
+  "description": "White Desk Lamp",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6360.png",
+  "file": "furniture-6360.json"
+}

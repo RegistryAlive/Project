@@ -1,0 +1,27 @@
+{
+  "id": 778,
+  "name": "Innocent Spirit",
+  "location": "Ghost Isle",
+  "image": "data/Monster_Images/monster-778.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 87,
+    "hp": 1020,
+    "sp": 723,
+    "catchable": "Unknown",
+    "spd": 234.5,
+    "str": 50,
+    "con": 60,
+    "int": 55,
+    "wis": 44,
+    "agi": 52
+  }
+}

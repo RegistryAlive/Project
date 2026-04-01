@@ -1,0 +1,18 @@
+{
+  "id": 139,
+  "name": "Rip Steel Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Steel / Iron",
+  "description": "Made from iron ore quenched in steel.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 26,
+    "SPD": 26
+  },
+  "image": "data/images/weapon-139.png",
+  "file": "weapon-139.json"
+}

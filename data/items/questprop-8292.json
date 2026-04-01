@@ -1,0 +1,15 @@
+{
+  "id": 8292,
+  "name": "Cebu Stone",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Given by Tatasi. Symbol of pure friendship",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8292.png",
+  "file": "questprop-8292.json"
+}

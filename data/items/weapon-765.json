@@ -1,0 +1,18 @@
+{
+  "id": 765,
+  "name": "Giant hammer",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A giant mallet made of high-density iron block",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 26,
+    "DEF": 28
+  },
+  "image": "data/images/weapon-765.png",
+  "file": "weapon-765.json"
+}

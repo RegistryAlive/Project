@@ -1,0 +1,17 @@
+{
+  "id": 2284,
+  "name": "Fairy Waistban",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": null,
+  "description": "It allows wearer to move around with the wind.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 100
+  },
+  "image": "data/images/special-2284.png",
+  "file": "special-2284.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6319,
+  "name": "Dragon Vase",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "big vase without flowers. It is luxury too.",
+  "size": "1x3",
+  "attributes": {},
+  "image": "data/images/furniture-6319.png",
+  "file": "furniture-6319.json"
+}

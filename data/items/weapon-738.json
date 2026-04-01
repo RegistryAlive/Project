@@ -1,0 +1,18 @@
+{
+  "id": 738,
+  "name": "Schoolbag",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The schoolbag can be used to hold pencil boxes.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 0,
+    "DEF": 2
+  },
+  "image": "data/images/weapon-738.png",
+  "file": "weapon-738.json"
+}

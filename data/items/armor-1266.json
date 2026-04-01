@@ -1,0 +1,17 @@
+{
+  "id": 1266,
+  "name": "Fox Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Rumoured, that the messenger of god transformed into clothes.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 40
+  },
+  "image": "data/images/armor-1266.png",
+  "file": "armor-1266.json"
+}

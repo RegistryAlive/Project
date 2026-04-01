@@ -1,0 +1,39 @@
+{
+  "id": 1032,
+  "name": "Angry Lanternfish",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-1033.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Lobster",
+      "itemId": 7496,
+      "itemFile": "material-7496.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Crab Roes",
+      "itemId": 7498,
+      "itemFile": "material-7498.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Shrimp",
+      "itemId": 7497,
+      "itemFile": "material-7497.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 140,
+    "hp": 1838,
+    "sp": 1582,
+    "catchable": "Unknown",
+    "spd": 340,
+    "str": 88,
+    "con": 93,
+    "int": 85,
+    "wis": 89,
+    "agi": 65
+  }
+}

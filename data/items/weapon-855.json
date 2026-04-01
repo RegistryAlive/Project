@@ -1,0 +1,17 @@
+{
+  "id": 855,
+  "name": "Long Gun",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Iron / Wood",
+  "description": "A long gun given by Uncle Hunter.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25
+  },
+  "image": "data/images/weapon-855.png",
+  "file": "weapon-855.json"
+}

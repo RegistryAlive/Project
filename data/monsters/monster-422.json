@@ -1,0 +1,39 @@
+{
+  "id": 422,
+  "name": "Snow Fox",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-422.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "White Fox Fur",
+      "itemId": 7670,
+      "itemFile": "material-7670.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 65,
+    "hp": 637,
+    "sp": 471,
+    "catchable": "Yes",
+    "spd": 177.5,
+    "str": 43,
+    "con": 40,
+    "int": 42,
+    "wis": 30,
+    "agi": 40
+  }
+}

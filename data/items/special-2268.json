@@ -1,0 +1,18 @@
+{
+  "id": 2268,
+  "name": "Whole Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To evenly upgrade slight defense and magic defense",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 2,
+    "MDEF": 2
+  },
+  "image": "data/images/special-2268.png",
+  "file": "special-2268.json"
+}

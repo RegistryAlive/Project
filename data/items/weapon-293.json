@@ -1,0 +1,17 @@
+{
+  "id": 293,
+  "name": "Long Scythe",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Steel / Iron",
+  "description": "The most deadly weapon a farmer can wield.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 62
+  },
+  "image": "data/images/weapon-293.png",
+  "file": "weapon-293.json"
+}

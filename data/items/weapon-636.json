@@ -1,0 +1,18 @@
+{
+  "id": 636,
+  "name": "Cat and Ehru",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Maoyou's exclusive equipment, Maoyou's exclusive erhu, an instrument inherited from the memory of the ancestors; when equipped with other Maoyou series of equipment at the same time, an additional set effect can be obtained",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 100,
+    "SPD": 50
+  },
+  "image": "data/images/weapon-636.png",
+  "file": "weapon-636.json"
+}

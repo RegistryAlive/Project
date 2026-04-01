@@ -1,0 +1,15 @@
+{
+  "id": 6070,
+  "name": "DC Motor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A Motor for DC",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6070.png",
+  "file": "furniture-6070.json"
+}

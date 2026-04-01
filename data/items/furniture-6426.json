@@ -1,0 +1,15 @@
+{
+  "id": 6426,
+  "name": "Great Sofa",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A soft leather sofa made with White Sheepskin",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6426.png",
+  "file": "furniture-6426.json"
+}

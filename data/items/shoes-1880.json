@@ -1,0 +1,18 @@
+{
+  "id": 1880,
+  "name": "Comfortable Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Leather / Leaf",
+  "description": "Made from the tough skin of dragons.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25,
+    "MDEF": 10
+  },
+  "image": "data/images/shoes-1880.png",
+  "file": "shoes-1880.json"
+}

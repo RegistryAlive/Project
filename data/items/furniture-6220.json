@@ -1,0 +1,15 @@
+{
+  "id": 6220,
+  "name": "Colour Ballons",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Bag intended to be used by Hot Air Balloon SP.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6220.png",
+  "file": "furniture-6220.json"
+}

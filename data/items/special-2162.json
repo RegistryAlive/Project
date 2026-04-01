@@ -1,0 +1,18 @@
+{
+  "id": 2162,
+  "name": "Full Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To evenly raise attack power and magic defense.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 2,
+    "MATK": 2
+  },
+  "image": "data/images/special-2162.png",
+  "file": "special-2162.json"
+}

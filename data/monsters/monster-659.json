@@ -1,0 +1,27 @@
+{
+  "id": 659,
+  "name": "Dentist",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-659.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 96,
+    "hp": 1343,
+    "sp": 514,
+    "catchable": "Unknown",
+    "spd": 302,
+    "str": 77,
+    "con": 78,
+    "int": 26,
+    "wis": 28,
+    "agi": 79
+  }
+}

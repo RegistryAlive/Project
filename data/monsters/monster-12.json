@@ -1,0 +1,51 @@
+{
+  "id": 12,
+  "name": "Frenzy Hill Monster",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-12.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Common Stone",
+      "itemId": 7630,
+      "itemFile": "material-7630.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coprinus",
+      "itemId": 7483,
+      "itemFile": "material-7483.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lauan",
+      "itemId": 7653,
+      "itemFile": "material-7653.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 107,
+    "hp": 1550,
+    "sp": 1032,
+    "catchable": "No",
+    "spd": 296.5,
+    "str": 72,
+    "con": 70,
+    "int": 50,
+    "wis": 61,
+    "agi": 68
+  }
+}

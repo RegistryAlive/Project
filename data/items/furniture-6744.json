@@ -1,0 +1,15 @@
+{
+  "id": 6744,
+  "name": "Warming Carpet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Warm coloured carpet with snowflake pattern",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6744.png",
+  "file": "furniture-6744.json"
+}

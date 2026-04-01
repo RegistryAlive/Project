@@ -1,0 +1,18 @@
+{
+  "id": 1016,
+  "name": "Light Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Flower / Grass",
+  "description": "clothes which is made from sacks",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 2,
+    "MDEF": 3
+  },
+  "image": "data/images/armor-1016.png",
+  "file": "armor-1016.json"
+}

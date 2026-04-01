@@ -1,0 +1,15 @@
+{
+  "id": 6343,
+  "name": "Message Board",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Small blackboard that holds 5 players' mesWits.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6343.png",
+  "file": "furniture-6343.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1226,
+  "name": "Gentleman Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Elegant clothing that is loved by some of the opposite sex, and will have a mood of serving others after wearing it",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18
+  },
+  "image": "data/images/armor-1226.png",
+  "file": "armor-1226.json"
+}

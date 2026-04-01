@@ -1,0 +1,18 @@
+{
+  "id": 2030,
+  "name": "Iron Boots-2",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Pure Iron / Copper",
+  "description": "Firm boots that can increase magic damage.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 5,
+    "DEF": 11
+  },
+  "image": "data/images/shoes-2030.png",
+  "file": "shoes-2030.json"
+}

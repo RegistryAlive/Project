@@ -1,0 +1,15 @@
+{
+  "id": 6374,
+  "name": "Newspaper rack",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can hang stand for newspapers",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6374.png",
+  "file": "furniture-6374.json"
+}

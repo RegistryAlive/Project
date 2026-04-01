@@ -1,0 +1,27 @@
+{
+  "id": 1025,
+  "name": "Young Villager",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-1025.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 39,
+    "hp": 286,
+    "sp": 293,
+    "catchable": "Unknown",
+    "spd": 132.5,
+    "str": 19,
+    "con": 23,
+    "int": 17,
+    "wis": 21,
+    "agi": 37
+  }
+}

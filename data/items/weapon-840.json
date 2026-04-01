@@ -1,0 +1,18 @@
+{
+  "id": 840,
+  "name": "Green Twin Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A thin, lightweight folding fan made of rare green metal with a lacquered surface in a muted bamboo color. 40% crit possible.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 45,
+    "ATK": 55
+  },
+  "image": "data/images/weapon-840.png",
+  "file": "weapon-840.json"
+}

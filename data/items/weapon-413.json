@@ -1,0 +1,17 @@
+{
+  "id": 413,
+  "name": "Grass Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 26,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A bow with both elasticity and power.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 60
+  },
+  "image": "data/images/weapon-413.png",
+  "file": "weapon-413.json"
+}

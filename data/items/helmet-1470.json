@@ -1,0 +1,17 @@
+{
+  "id": 1470,
+  "name": "Stand Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "DEF+10, can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10
+  },
+  "image": "data/images/helmet-1470.png",
+  "file": "helmet-1470.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 10073,
+  "name": "Silver String",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A curved silver moon hangs high in the sky, and you can use the magic ball of wool as a wear-and-tear substitute to log on to the Moon and Mars.",
+  "size": "3x4",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10073.png",
+  "file": "vehicle-10073.json"
+}

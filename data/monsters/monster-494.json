@@ -1,0 +1,33 @@
+{
+  "id": 494,
+  "name": "Red Shark",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-494.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Fruit Berry Syrup",
+      "itemId": 7300,
+      "itemFile": "material-7300.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 144,
+    "hp": 990,
+    "sp": 705,
+    "catchable": "No",
+    "spd": 300,
+    "str": 52,
+    "con": 45,
+    "int": 42,
+    "wis": 34,
+    "agi": 42
+  }
+}

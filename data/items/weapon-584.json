@@ -1,0 +1,18 @@
+{
+  "id": 584,
+  "name": "Blessing Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Crystallization / Wood / Magic",
+  "description": "It's said to bless good people",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 23,
+    "MDEF": 23
+  },
+  "image": "data/images/weapon-584.png",
+  "file": "weapon-584.json"
+}

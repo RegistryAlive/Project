@@ -1,0 +1,15 @@
+{
+  "id": 6203,
+  "name": "Enclosed Crystal",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Magic",
+  "description": "A Magic crystal made from magic enclosed items.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6203.png",
+  "file": "furniture-6203.json"
+}

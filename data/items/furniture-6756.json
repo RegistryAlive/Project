@@ -1,0 +1,15 @@
+{
+  "id": 6756,
+  "name": "Egg Turner",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A fun egg-shaped game where you can invest your money and get something unexpected!",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6756.png",
+  "file": "furniture-6756.json"
+}

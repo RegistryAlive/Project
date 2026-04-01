@@ -1,0 +1,17 @@
+{
+  "id": 1255,
+  "name": "Snow Hoodie",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A casual outfit popular with youths. +2 MaxHP per forge up to a maximum of +200.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/armor-1255.png",
+  "file": "armor-1255.json"
+}

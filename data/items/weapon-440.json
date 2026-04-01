@@ -1,0 +1,18 @@
+{
+  "id": 440,
+  "name": "Red Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Used by Yi when shooting down the nine suns.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "SPD": 19
+  },
+  "image": "data/images/weapon-440.png",
+  "file": "weapon-440.json"
+}

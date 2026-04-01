@@ -1,0 +1,15 @@
+{
+  "id": 6345,
+  "name": "Turf",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can increase the quantity of planting.",
+  "size": "4x2",
+  "attributes": {},
+  "image": "data/images/furniture-6345.png",
+  "file": "furniture-6345.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 638,
+  "name": "Sky Stick",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A pure gold cane surrounded by stardust fragments, derived from the power of the white angel's feathers. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-638.png",
+  "file": "weapon-638.json"
+}

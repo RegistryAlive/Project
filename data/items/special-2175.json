@@ -1,0 +1,17 @@
+{
+  "id": 2175,
+  "name": "King's Necklac",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "Peculiar flame is gathreing around the necklace.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 120
+  },
+  "image": "data/images/special-2175.png",
+  "file": "special-2175.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1479,
+  "name": "Swan Wing Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 42,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Steel / Gold / Titanium",
+  "description": "The steel helmet has good defense and adaptability",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "SPD": 12
+  },
+  "image": "data/images/helmet-1479.png",
+  "file": "helmet-1479.json"
+}

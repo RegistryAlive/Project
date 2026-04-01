@@ -1,0 +1,33 @@
+{
+  "id": 306,
+  "name": "Land Spider",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-306.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Pigeon Meat",
+      "itemId": 7500,
+      "itemFile": "material-7500.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Widow's Venom",
+      "itemId": 7759,
+      "itemFile": "material-7759.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 66,
+    "hp": 517,
+    "sp": 672,
+    "catchable": "Yes",
+    "spd": 173,
+    "str": 35,
+    "con": 39,
+    "int": 42,
+    "wis": 45,
+    "agi": 37
+  }
+}

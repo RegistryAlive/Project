@@ -1,0 +1,18 @@
+{
+  "id": 1670,
+  "name": "Gladiator helm",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Fighter helmet focusing on attack power",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "MATK": 40
+  },
+  "image": "data/images/helmet-1670.png",
+  "file": "helmet-1670.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 452,
+  "name": "Water Color Parrot",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-452.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coconut (Pulp)",
+      "itemId": 7880,
+      "itemFile": "material-7880.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 127,
+    "hp": 1402,
+    "sp": 1392,
+    "catchable": "Unknown",
+    "spd": 340.5,
+    "str": 62,
+    "con": 72,
+    "int": 92,
+    "wis": 80,
+    "agi": 75
+  }
+}

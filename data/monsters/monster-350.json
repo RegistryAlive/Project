@@ -1,0 +1,45 @@
+{
+  "id": 350,
+  "name": "Rabbit",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-350.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pachyrhizus Leaf",
+      "itemId": 7413,
+      "itemFile": "material-7413.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mooli",
+      "itemId": 7429,
+      "itemFile": "material-7429.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wild Rabbit Fur",
+      "itemId": 7671,
+      "itemFile": "material-7671.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 9,
+    "hp": 69,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 29.5,
+    "str": 4,
+    "con": 4,
+    "int": 6,
+    "wis": 5,
+    "agi": 8
+  }
+}

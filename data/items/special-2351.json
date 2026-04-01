@@ -1,0 +1,17 @@
+{
+  "id": 2351,
+  "name": "Warrior Cape",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A cape used by Warriors, available to socket",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 53
+  },
+  "image": "data/images/special-2351.png",
+  "file": "special-2351.json"
+}

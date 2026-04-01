@@ -1,0 +1,18 @@
+{
+  "id": 2774,
+  "name": "Tiger Fur Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "Cuffs which are made from tiger fur",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 2,
+    "SPD": 1
+  },
+  "image": "data/images/arm-2774.png",
+  "file": "arm-2774.json"
+}

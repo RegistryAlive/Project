@@ -1,0 +1,17 @@
+{
+  "id": 1821,
+  "name": "Fairy Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Platinum / Magic",
+  "description": "Shoes specially made by lost eidolon.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 11
+  },
+  "image": "data/images/shoes-1821.png",
+  "file": "shoes-1821.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6776,
+  "name": "Spring Scrolls 2",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 5,
+  "level": 10,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Necessary scrolls used for Spring Festival.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6776.png",
+  "file": "furniture-6776.json"
+}

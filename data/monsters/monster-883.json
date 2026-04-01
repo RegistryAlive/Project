@@ -1,0 +1,27 @@
+{
+  "id": 883,
+  "name": "Sano",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-883.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 60,
+    "hp": 5500,
+    "sp": 303,
+    "catchable": "Unknown",
+    "spd": 178,
+    "str": 56,
+    "con": 43,
+    "int": 19,
+    "wis": 18,
+    "agi": 44
+  }
+}

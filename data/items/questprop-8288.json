@@ -1,0 +1,15 @@
+{
+  "id": 8288,
+  "name": "Key to Treasur",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can also unlock some important basement",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8288.png",
+  "file": "questprop-8288.json"
+}

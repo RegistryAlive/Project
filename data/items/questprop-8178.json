@@ -1,0 +1,15 @@
+{
+  "id": 8178,
+  "name": "Trader's Moneybag",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A Hidden by European merchant",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8178.png",
+  "file": "questprop-8178.json"
+}

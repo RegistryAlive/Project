@@ -1,0 +1,18 @@
+{
+  "id": 1427,
+  "name": "Rabbit Earring",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": null,
+  "description": "An ornament which is on the rabbit-lady's head",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "MATK": 5
+  },
+  "image": "data/images/helmet-1427.png",
+  "file": "helmet-1427.json"
+}

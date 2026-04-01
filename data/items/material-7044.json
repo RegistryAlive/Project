@@ -1,0 +1,18 @@
+{
+  "id": 7044,
+  "name": "Fruit Crepe",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Fruit",
+  "description": "Crepes with fruit in it",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 150
+  },
+  "image": "data/images/material-7044.png",
+  "file": "material-7044.json"
+}

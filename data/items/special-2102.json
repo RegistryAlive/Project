@@ -1,0 +1,18 @@
+{
+  "id": 2102,
+  "name": "Swift Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "A medal which can enhance attacking and some speed",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 4,
+    "SPD": 2
+  },
+  "image": "data/images/special-2102.png",
+  "file": "special-2102.json"
+}

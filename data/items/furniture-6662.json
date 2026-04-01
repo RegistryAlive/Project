@@ -1,0 +1,15 @@
+{
+  "id": 6662,
+  "name": "A.Fish Pond",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "With the floor decoration made of water blue colored glass, the bright little fishes look lifelike.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6662.png",
+  "file": "furniture-6662.json"
+}

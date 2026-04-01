@@ -1,0 +1,18 @@
+{
+  "id": 7050,
+  "name": "Fruit Cake",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat / Vegetable / Meat / Fish and Shellfish",
+  "description": "Delicious fruit cake, HP+400. Can be traded.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 160,
+    "SP": 40
+  },
+  "image": "data/images/material-7050.png",
+  "file": "material-7050.json"
+}

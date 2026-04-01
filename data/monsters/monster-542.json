@@ -1,0 +1,27 @@
+{
+  "id": 542,
+  "name": "Alien Orang",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-542.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 84,
+    "hp": 2879,
+    "sp": 813,
+    "catchable": "Unknown",
+    "spd": 252,
+    "str": 51,
+    "con": 43,
+    "int": 44,
+    "wis": 51,
+    "agi": 63
+  }
+}

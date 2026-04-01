@@ -1,0 +1,27 @@
+{
+  "id": 654,
+  "name": "Deadly Flower",
+  "location": "Mayan Forest",
+  "image": "data/Monster_Images/monster-654.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 884,
+    "sp": 800,
+    "catchable": "Unknown",
+    "spd": 200,
+    "str": 46,
+    "con": 53,
+    "int": 50,
+    "wis": 51,
+    "agi": 40
+  }
+}

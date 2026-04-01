@@ -1,0 +1,39 @@
+{
+  "id": 130,
+  "name": "Wind Adder",
+  "location": "Taiwan (Carnie) - Pleasure Island",
+  "image": "data/Monster_Images/monster-130.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Gooseberry",
+      "itemId": 7451,
+      "itemFile": "material-7451.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Skin",
+      "itemId": 7787,
+      "itemFile": "material-7787.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Liquid",
+      "itemId": 7755,
+      "itemFile": "material-7755.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 62,
+    "hp": 611,
+    "sp": 489,
+    "catchable": "Unknown",
+    "spd": 193,
+    "str": 32,
+    "con": 39,
+    "int": 33,
+    "wis": 32,
+    "agi": 50
+  }
+}

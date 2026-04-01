@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "name": "plate",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A plate used for holding the food",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 1,
+    "DEF": 1
+  },
+  "image": "data/images/weapon-1.png",
+  "file": "weapon-1.json"
+}

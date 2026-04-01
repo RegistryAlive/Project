@@ -1,0 +1,27 @@
+{
+  "id": 626,
+  "name": "Clive",
+  "location": "Blackwind Cave",
+  "image": "data/Monster_Images/monster-626.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 14,
+    "hp": 133,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 39,
+    "str": 14,
+    "con": 12,
+    "int": 4,
+    "wis": 3,
+    "agi": 9
+  }
+}

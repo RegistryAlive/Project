@@ -1,0 +1,15 @@
+{
+  "id": 6682,
+  "name": "Bat Window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The black windows with bat wings open, as if they will fly away from the wall.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6682.png",
+  "file": "furniture-6682.json"
+}

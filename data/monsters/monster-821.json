@@ -1,0 +1,27 @@
+{
+  "id": 821,
+  "name": "Match_Maker",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-821.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 95,
+    "hp": 687,
+    "sp": 1123,
+    "catchable": "Unknown",
+    "spd": 238.5,
+    "str": 50,
+    "con": 47,
+    "int": 70,
+    "wis": 70,
+    "agi": 48
+  }
+}

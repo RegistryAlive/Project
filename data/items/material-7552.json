@@ -1,0 +1,15 @@
+{
+  "id": 7552,
+  "name": "Bullion",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Valuable bullion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7552.png",
+  "file": "material-7552.json"
+}

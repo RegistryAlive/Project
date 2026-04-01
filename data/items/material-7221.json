@@ -1,0 +1,18 @@
+{
+  "id": 7221,
+  "name": "Fish Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish / Rice",
+  "description": "Congee with fish",
+  "size": "1x1",
+  "attributes": {
+    "SP": 120,
+    "HP": 75
+  },
+  "image": "data/images/material-7221.png",
+  "file": "material-7221.json"
+}

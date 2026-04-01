@@ -1,0 +1,15 @@
+{
+  "id": 8538,
+  "name": "4X Holy EXP Potion",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 10,
+  "level": 20,
+  "rarity": "uncommon",
+  "base": "Leaf / Magic",
+  "description": "Obtain 4x EXP for 2 hours",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8538.png",
+  "file": "questprop-8538.json"
+}

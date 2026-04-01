@@ -1,0 +1,17 @@
+{
+  "id": 10022,
+  "name": "Jalor Capsule",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It consists of a boat and sail",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10022.png",
+  "file": "vehicle-10022.json"
+}

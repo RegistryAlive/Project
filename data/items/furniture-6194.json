@@ -1,0 +1,15 @@
+{
+  "id": 6194,
+  "name": "Delicate Diamond",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Diamond",
+  "description": "Selected diamond",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6194.png",
+  "file": "furniture-6194.json"
+}

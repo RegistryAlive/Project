@@ -1,0 +1,15 @@
+{
+  "id": 798,
+  "name": "True Love",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Elegant, free and easy. Full of gorgeous beauty. Can be sewed on weapons, except for guns and bows.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-798.png",
+  "file": "weapon-798.json"
+}

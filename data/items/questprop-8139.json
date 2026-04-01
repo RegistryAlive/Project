@@ -1,0 +1,15 @@
+{
+  "id": 8139,
+  "name": "Key of Prison",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is the key to the Ghost Ship Jail",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8139.png",
+  "file": "questprop-8139.json"
+}

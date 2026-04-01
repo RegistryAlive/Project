@@ -1,0 +1,15 @@
+{
+  "id": 8049,
+  "name": "Turtle Car Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can be exchange for turtle car",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8049.png",
+  "file": "questprop-8049.json"
+}

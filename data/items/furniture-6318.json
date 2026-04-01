@@ -1,0 +1,15 @@
+{
+  "id": 6318,
+  "name": "Vase",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A vase with flowers. It is luxury.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6318.png",
+  "file": "furniture-6318.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2849,
+  "name": "Wolf Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Titanium",
+  "description": "Thin Cuffs which are made from gold",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 8,
+    "SPD": 8
+  },
+  "image": "data/images/arm-2849.png",
+  "file": "arm-2849.json"
+}

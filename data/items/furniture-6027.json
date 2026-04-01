@@ -1,0 +1,15 @@
+{
+  "id": 6027,
+  "name": "Pail Refrigerant",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Compound for cooling",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6027.png",
+  "file": "furniture-6027.json"
+}

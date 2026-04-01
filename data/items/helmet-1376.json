@@ -1,0 +1,17 @@
+{
+  "id": 1376,
+  "name": "Headscarf",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A headscarf used to cover the head.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/helmet-1376.png",
+  "file": "helmet-1376.json"
+}

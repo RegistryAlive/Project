@@ -1,0 +1,3357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier List - Wonderland Online DB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wlBlue: '#3b82f6',
+                        wlPurple: '#8b5cf6',
+                        wlGreen: '#10b981',
+                        wlRed: '#ef4444',
+                        wlYellow: '#f59e0b',
+                        wlDark: '#1e293b',
+                        wlDarker: '#0f172a',
+                        wlLight: '#f1f5f9',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%),
+                url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            min-height: 100vh;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02) rotateX(1deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        .tier-label {
+            font-size: 2.2rem;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            padding: 0.5rem 2.2rem;
+            border-radius: 9999px;
+            margin-bottom: 2.2rem;
+            display: inline-block;
+            box-shadow: 0 4px 24px 0 rgba(59,130,246,0.10), 0 1.5px 0 0 #fff2;
+            border: 2.5px solid #fff3;
+        }
+        .tier-S { background: linear-gradient(90deg, #f59e0b, #ef4444, #8b5cf6); color: #fff; border-color: #f59e0b; }
+        .tier-A { background: linear-gradient(90deg, #3b82f6, #8b5cf6); color: #fff; border-color: #3b82f6; }
+        .tier-B { background: linear-gradient(90deg, #10b981, #3b82f6); color: #fff; border-color: #10b981; }
+        .tier-C { background: linear-gradient(90deg, #f1f5f9, #1e293b); color: #1e293b; border-color: #f1f5f9; }
+        .filter-btn {
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border: 2px solid rgba(139, 92, 246, 0.2);
+            background: rgba(30, 41, 59, 0.6);
+            color: #f1f5f9;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            overflow: hidden;
+        }
+        .filter-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        .filter-btn:hover::before {
+            left: 100%;
+        }
+        .filter-btn:hover {
+            border-color: rgba(139, 92, 246, 0.5);
+            background: rgba(59, 130, 246, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+        }
+        .filter-btn.active {
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            border-color: transparent;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+            transform: translateY(-2px);
+        }
+        .filter-btn.active::after {
+            content: '✓';
+            margin-left: 6px;
+            font-size: 0.7rem;
+        }
+        /* Filter Section Styling */
+        .filter-section-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .filter-section-label i {
+            font-size: 1rem;
+        }
+        .filter-section-label span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: rgba(241, 245, 249, 0.8);
+        }
+        /* Collapsible Filter Panel */
+        .filter-panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .filter-panel.open {
+            max-height: 600px;
+            opacity: 1;
+        }
+        .filter-toggle-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 2px solid rgba(139, 92, 246, 0.3);
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
+            color: #f1f5f9;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .filter-toggle-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .filter-toggle-btn:hover::before {
+            left: 100%;
+        }
+        .filter-toggle-btn:hover {
+            border-color: rgba(139, 92, 246, 0.6);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25);
+        }
+        .filter-toggle-btn i {
+            transition: transform 0.3s ease;
+        }
+        .filter-toggle-btn.open i {
+            transform: rotate(180deg);
+        }
+        .active-filters-display {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+            min-height: 32px;
+        }
+        .active-filter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.3));
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            color: #f1f5f9;
+        }
+        .active-filter-tag button {
+            background: none;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        .active-filter-tag button:hover {
+            opacity: 1;
+        }
+        .mini-detail {
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -110%);
+            min-width: 260px;
+            z-index: 100;
+            background: #232946;
+            border: 2.5px solid #8b5cf6;
+            border-radius: 1rem;
+            box-shadow: 0 12px 32px 0 rgba(59,130,246,0.22), 0 2px 8px 0 rgba(0,0,0,0.18);
+            padding: 1.1rem 1.2rem 1.2rem 1.2rem;
+            color: #f1f5f9;
+            font-size: 1rem;
+            pointer-events: none;
+        }
+        .mini-detail::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            border-width: 10px 10px 0 10px;
+            border-style: solid;
+            border-color: #8b5cf6 transparent transparent transparent;
+            filter: drop-shadow(0 2px 4px #232946cc);
+        }
+        .card-hover:hover .mini-detail {
+            display: block;
+            pointer-events: auto;
+        }
+        .mini-detail .font-bold {
+            font-size: 1.15rem;
+            letter-spacing: 0.01em;
+        }
+        .mini-detail span {
+            margin-bottom: 0.2rem;
+        }
+        .mini-detail strong {
+            color: #f59e0b;
+            font-weight: 700;
+        }
+        .mini-detail .mb-1 {
+            margin-bottom: 0.4rem;
+        }
+        /* Character Card Styles */
+        .character-card {
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .character-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .character-card:hover::before {
+            opacity: 1;
+        }
+        .character-card .card-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(139, 92, 246, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .character-card .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .character-card .element-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 4px;
+            margin-bottom: 4px;
+        }
+        .element-fire { background: linear-gradient(135deg, #ef4444, #dc2626); }
+        .element-water { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+        .element-earth { background: linear-gradient(135deg, #10b981, #059669); }
+        .element-wind { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+        .element-lightning { background: linear-gradient(135deg, #f59e0b, #d97706); }
+        .element-magic { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+        .element-physical { background: linear-gradient(135deg, #6b7280, #4b5563); }
+        .element-neutral { background: linear-gradient(135deg, #64748b, #475569); }
+        .element-ranged { background: linear-gradient(135deg, #14b8a6, #0d9488); }
+        .element-support { background: linear-gradient(135deg, #ec4899, #db2777); }
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: fadeIn 0.3s ease;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .modal-content {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border-radius: 24px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            border: 2px solid rgba(139, 92, 246, 0.5);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 60px rgba(139, 92, 246, 0.2);
+            animation: slideUp 0.4s ease;
+            position: relative;
+        }
+        .modal-header {
+            position: relative;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, transparent 100%);
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+        }
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid rgba(239, 68, 68, 0.5);
+            color: #ef4444;
+            font-size: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .modal-close:hover {
+            background: #ef4444;
+            color: white;
+            transform: rotate(90deg);
+        }
+        .modal-body {
+            padding: 30px;
+        }
+        .stat-bar {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 6px;
+        }
+        .stat-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        .stat-high { background: linear-gradient(90deg, #10b981, #059669); }
+        .stat-medium { background: linear-gradient(90deg, #f59e0b, #d97706); }
+        .stat-low { background: linear-gradient(90deg, #ef4444, #dc2626); }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .info-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .info-box-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #94a3b8;
+            margin-bottom: 6px;
+        }
+        .info-box-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 16px;
+            border-left: 3px solid #8b5cf6;
+            margin-bottom: 12px;
+        }
+        .skill-name {
+            font-weight: 600;
+            color: #f59e0b;
+            margin-bottom: 4px;
+        }
+        .skill-desc {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        /* Character Image in Modal */
+        .modal-character-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid rgba(139, 92, 246, 0.5);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+        }
+        .modal-character-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+        /* Rebirth Image Toggle in Modal */
+        .rebirth-image-toggle {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .rebirth-toggle-btn {
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 2px solid rgba(139, 92, 246, 0.3);
+            background: rgba(30, 41, 59, 0.8);
+            color: #f1f5f9;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .rebirth-toggle-btn:hover {
+            border-color: rgba(139, 92, 246, 0.6);
+            background: rgba(59, 130, 246, 0.2);
+        }
+        .rebirth-toggle-btn.active {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border-color: #f59e0b;
+            color: white;
+        }
+        /* Single Rebirth Toggle Button */
+        .rebirth-single-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 12px;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 2px solid rgba(245, 158, 11, 0.3);
+            background: rgba(30, 41, 59, 0.8);
+            color: #f1f5f9;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        .rebirth-single-toggle:hover {
+            border-color: rgba(245, 158, 11, 0.6);
+            background: rgba(245, 158, 11, 0.1);
+        }
+        .rebirth-single-toggle.is-rebirth {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border-color: #f59e0b;
+            color: white;
+        }
+        /* Modal Tab Navigation */
+        .modal-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(139, 92, 246, 0.2);
+            padding-bottom: 0;
+        }
+        .modal-tab-btn {
+            padding: 12px 24px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: none;
+            background: transparent;
+            color: #94a3b8;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+        }
+        .modal-tab-btn:hover {
+            color: #f1f5f9;
+        }
+        .modal-tab-btn.active {
+            color: #8b5cf6;
+            border-bottom-color: #8b5cf6;
+        }
+        .modal-tab-content {
+            display: none;
+        }
+        .modal-tab-content.active {
+            display: block;
+        }
+        /* Quest Card Styles */
+        .quest-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            transition: all 0.3s ease;
+        }
+        .quest-card:hover {
+            border-color: rgba(139, 92, 246, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        /* Collapsible Quest Sections */
+        .quest-section {
+            margin-bottom: 12px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .quest-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            cursor: pointer;
+            background: rgba(139, 92, 246, 0.1);
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+        .quest-section-header:hover {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(139, 92, 246, 0.25));
+        }
+        .quest-section.open .quest-section-header {
+            border-bottom-color: rgba(59, 130, 246, 0.3);
+        }
+        .quest-section-header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .quest-section-header i {
+            transition: transform 0.3s ease;
+        }
+        .quest-section.open .quest-section-header i {
+            transform: rotate(180deg);
+        }
+        .quest-section-content {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            padding: 0 20px;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.3s ease;
+        }
+        .quest-section.open .quest-section-content {
+            max-height: 5000px;
+            opacity: 1;
+            padding: 16px 20px;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.3s ease;
+        }
+        .quest-section .quest-card {
+            margin: 0;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+        }
+        .quest-section .quest-card:last-child {
+            border-bottom: none;
+        }
+        .quest-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .quest-number {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        .quest-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+        .quest-description {
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .quest-images {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .quest-image {
+            width: 120px;
+            height: 80px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid rgba(139, 92, 246, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            pointer-events: auto;
+        }
+        .quest-image:hover {
+            border-color: #8b5cf6;
+            transform: scale(1.05);
+        }
+        .quest-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Pre-Quest Styles */
+        .prequest-category {
+            margin-bottom: 24px;
+        }
+        .prequest-character-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+            border-radius: 10px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+        .prequest-character-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: white;
+        }
+        .prequest-character-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+        .prequest-character-subtitle {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+        .prequest-quest-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            transition: all 0.3s ease;
+        }
+        .prequest-quest-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .prequest-quest-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .prequest-quest-number {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: white;
+            flex-shrink: 0;
+        }
+        .prequest-quest-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+        .prequest-quest-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            background: rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: #60a5fa;
+            margin-bottom: 12px;
+        }
+        /* Collapsible Character Sections */
+        .prequest-character-section {
+            margin-bottom: 16px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.02);
+        }
+        .prequest-character-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+        .prequest-character-header:hover {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(139, 92, 246, 0.25));
+        }
+        .prequest-character-section.open .prequest-character-header {
+            border-bottom-color: rgba(59, 130, 246, 0.3);
+        }
+        .prequest-character-header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .prequest-character-header i {
+            transition: transform 0.3s ease;
+        }
+        .prequest-character-section.open .prequest-character-header i {
+            transform: rotate(180deg);
+        }
+        .prequest-character-content {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: max-height 0.3s ease-in, opacity 0.2s ease, transform 0.2s ease;
+        }
+        .prequest-character-section.open .prequest-character-content {
+            max-height: 10000px;
+            opacity: 1;
+            transform: translateY(0);
+            transition: max-height 0.5s ease-out, opacity 0.3s ease, transform 0.3s ease;
+        }
+        .prequest-quest-card {
+            margin: 0;
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+        }
+        .prequest-quest-card:last-child {
+            border-bottom: none;
+        }
+        /* Quest Checklist */
+        .quest-checklist-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 10px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .quest-checklist-header:hover {
+            background: rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.5);
+        }
+        .quest-checklist-header i {
+            transition: transform 0.3s ease;
+        }
+        .quest-checklist-header.open i {
+            transform: rotate(180deg);
+        }
+        .quest-checklist-content {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: max-height 0.3s ease-in, opacity 0.2s ease, transform 0.2s ease;
+            position: relative;
+            z-index: 5;
+        }
+        .quest-checklist-header.open + .quest-checklist-content {
+            max-height: 10000px;
+            opacity: 1;
+            transform: translateY(0);
+            padding-right: 8px;
+            transition: max-height 0.5s ease-out, opacity 0.3s ease, transform 0.3s ease;
+        }
+        .quest-checklist-content::-webkit-scrollbar {
+            width: 6px;
+        }
+        .quest-checklist-content::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 3px;
+        }
+        .quest-checklist-content::-webkit-scrollbar-thumb {
+            background: rgba(139, 92, 246, 0.5);
+            border-radius: 3px;
+        }
+        .quest-checklist-content::-webkit-scrollbar-thumb:hover {
+            background: rgba(139, 92, 246, 0.7);
+        }
+        .quest-checklist-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #10b981;
+        }
+        .quest-checklist-stats {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+        .quest-check-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+        .quest-check-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(139, 92, 246, 0.2);
+        }
+        .quest-check-item.completed {
+            background: rgba(16, 185, 129, 0.1);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+        .quest-check-item.completed .quest-check-box {
+            background: #10b981;
+            border-color: #10b981;
+        }
+        .quest-check-item.completed .quest-check-box i {
+            display: block;
+        }
+        .quest-check-box {
+            width: 22px;
+            height: 22px;
+            border-radius: 6px;
+            border: 2px solid rgba(139, 92, 246, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+        .quest-check-box i {
+            display: none;
+            color: white;
+            font-size: 0.7rem;
+        }
+        .quest-check-label {
+            flex: 1;
+            color: #f1f5f9;
+            font-size: 0.9rem;
+        }
+        .quest-check-item.completed .quest-check-label {
+            color: #10b981;
+            text-decoration: line-through;
+        }
+        /* PreQuest Checklist Group Styles */
+        .prequest-checklist-group {
+            margin-bottom: 12px;
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(139, 92, 246, 0.05);
+        }
+        .prequest-checklist-group-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            background: rgba(139, 92, 246, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            user-select: none;
+            position: relative;
+            z-index: 10;
+        }
+        .prequest-checklist-group-header:hover {
+            background: rgba(139, 92, 246, 0.2);
+        }
+        .prequest-checklist-group-header i.group-toggle {
+            transition: transform 0.3s ease;
+            margin-left: auto;
+        }
+        .prequest-checklist-group.collapsed .prequest-checklist-group-header i.group-toggle {
+            transform: rotate(-90deg);
+        }
+        .prequest-checklist-group-content {
+            padding: 8px 0;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.25s ease-in, opacity 0.2s ease, padding 0.25s ease;
+        }
+        .prequest-checklist-group:not(.collapsed) .prequest-checklist-group-content {
+            max-height: 2000px;
+            opacity: 1;
+            transition: max-height 0.4s ease-out, opacity 0.3s ease, padding 0.3s ease;
+        }
+        .prequest-checklist-group.collapsed .prequest-checklist-group-content {
+            max-height: 0;
+            padding: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .prequest-checklist-group.collapsed .prequest-checklist-group-header {
+            border-bottom: none;
+        }
+        .prequest-checklist-group .quest-check-item {
+            margin: 0 8px 8px 8px;
+            border-radius: 6px;
+        }
+        .prequest-checklist-group .quest-check-item:first-of-type {
+            margin-top: 8px;
+        }
+        /* Quest Fight Images Section */
+        .quest-fight-section {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px dashed rgba(239, 68, 68, 0.3);
+        }
+        .quest-fight-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #ef4444;
+            margin-bottom: 12px;
+        }
+        .quest-fight-images {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .quest-fight-image {
+            width: 100px;
+            height: 70px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid rgba(239, 68, 68, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .quest-fight-image:hover {
+            border-color: #ef4444;
+            transform: scale(1.05);
+        }
+        .quest-fight-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Quest Ending Banner */
+        .quest-ending-banner {
+            margin-top: 24px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 3px solid rgba(245, 158, 11, 0.5);
+            box-shadow: 0 8px 32px rgba(245, 158, 11, 0.2);
+        }
+        .quest-ending-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .quest-ending-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(239, 68, 68, 0.2));
+            font-size: 1rem;
+            font-weight: 600;
+            color: #f59e0b;
+        }
+        /* Recommended Stats Section */
+        .recommended-stats-section {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 20px;
+        }
+        .recommended-stats-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #10b981;
+            margin-bottom: 8px;
+        }
+        .recommended-stats-value {
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            color: #f1f5f9;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px 14px;
+            border-radius: 8px;
+            border-left: 3px solid #10b981;
+        }
+        /* Quest Image Lightbox */
+        .quest-lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        .quest-lightbox.active {
+            display: flex;
+        }
+        .quest-lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        .quest-lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(239, 68, 68, 0.2);
+            border: 2px solid rgba(239, 68, 68, 0.5);
+            color: #ef4444;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .quest-lightbox-close:hover {
+            background: #ef4444;
+            color: white;
+        }
+        .quest-lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(139, 92, 246, 0.3);
+            border: 2px solid rgba(139, 92, 246, 0.6);
+            color: #f1f5f9;
+            font-size: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+        .quest-lightbox-nav:hover {
+            background: #8b5cf6;
+            border-color: #8b5cf6;
+            transform: translateY(-50%) scale(1.1);
+        }
+        .quest-lightbox-prev {
+            left: 20px;
+        }
+        .quest-lightbox-next {
+            right: 20px;
+        }
+        .quest-lightbox-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 8px 16px;
+            border-radius: 20px;
+            color: #f1f5f9;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .quest-lightbox-nav.hidden {
+            display: none;
+        }
+        .quest-lightbox-counter.hidden {
+            display: none;
+        }
+        /* Rebirth Section */
+        .rebirth-section {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(239, 68, 68, 0.1) 100%);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .rebirth-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 12px;
+        }
+        .rebirth-stats {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .rebirth-stat {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        .rebirth-stat-label {
+            font-size: 0.7rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .rebirth-stat-value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #f59e0b;
+        }
+        .rb-skill-card {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 3px solid #f59e0b;
+        }
+        .tier-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 16px;
+        }
+        .tier-badge-S { background: linear-gradient(135deg, #f59e0b, #ef4444); color: white; box-shadow: 0 0 20px rgba(245, 158, 11, 0.5); }
+        .tier-badge-A { background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        .tier-badge-B { background: linear-gradient(135deg, #10b981, #3b82f6); color: white; box-shadow: 0 0 20px rgba(16, 185, 129, 0.5); }
+        .tier-badge-C { background: linear-gradient(135deg, #64748b, #475569); color: white; box-shadow: 0 0 20px rgba(100, 116, 139, 0.5); }
+        /* Click hint */
+        .click-hint {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .character-card:hover .click-hint {
+            color: rgba(139, 92, 246, 0.8);
+        }
+        /* View Toggle Styles */
+        .view-toggle-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .view-toggle-btn {
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 2px solid rgba(139, 92, 246, 0.2);
+            background: rgba(30, 41, 59, 0.6);
+            color: #f1f5f9;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        .view-toggle-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .view-toggle-btn:hover {
+            border-color: rgba(139, 92, 246, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+        }
+        .view-toggle-btn:hover::before {
+            opacity: 1;
+        }
+        .view-toggle-btn.active {
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            border-color: transparent;
+            color: white;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+        }
+        .view-toggle-btn i {
+            position: relative;
+            z-index: 1;
+        }
+        .view-toggle-btn span {
+            position: relative;
+            z-index: 1;
+        }
+        /* Full Card View Styles */
+        .full-card-view .character-card {
+            padding: 0;
+            overflow: hidden;
+        }
+        .full-card-view .character-card .card-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 16px 16px 0 0;
+            border: none;
+            border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+        }
+        .full-card-view .character-card .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+        .full-card-view .character-card .card-content {
+            padding: 16px;
+        }
+        .full-card-view .character-card .card-footer {
+            padding: 12px 16px;
+            border-top: 1px solid rgba(139, 92, 246, 0.2);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, #1e293b, #3b82f6);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-ball {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle.light .theme-toggle-ball {
+            transform: translateX(30px);
+        }
+        
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e2e8f0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f8fafc !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #1e293b !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #cbd5e1 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+
+        /* Light mode - Tier List page specific */
+        body.light-mode .filter-btn {
+            background: rgba(226, 232, 240, 0.8) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .filter-btn:hover,
+        body.light-mode .filter-btn.active {
+            background-color: rgba(59, 130, 246, 0.2) !important;
+            border-color: #3b82f6 !important;
+        }
+        body.light-mode .filter-btn.active {
+            color: white !important;
+        }
+        body.light-mode .filter-btn::before {
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent) !important;
+        }
+        body.light-mode .filter-toggle-btn {
+            background: linear-gradient(135deg, rgba(226,232,240,0.9), rgba(241,245,249,0.9)) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .filter-section-label span {
+            color: #475569 !important;
+        }
+        body.light-mode .filter-section-label i {
+            opacity: 0.8;
+        }
+        body.light-mode .active-filter-tag {
+            color: #1e293b !important;
+            background-color: rgba(59, 130, 246, 0.15) !important;
+        }
+        body.light-mode .view-toggle-btn {
+            background: rgba(226, 232, 240, 0.8) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .view-toggle-btn.active {
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6) !important;
+            color: white !important;
+        }
+        body.light-mode #filterPanel .bg-gradient-to-br {
+            background: linear-gradient(to bottom right, #f1f5f9, #e2e8f0, #f1f5f9) !important;
+            border-color: rgba(139, 92, 246, 0.15) !important;
+        }
+        body.light-mode #filterPanel .border-t {
+            border-color: rgba(139, 92, 246, 0.15) !important;
+        }
+        body.light-mode .mini-detail {
+            background: #e2e8f0 !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .character-card .card-image {
+            background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%) !important;
+        }
+        body.light-mode .modal-content {
+            background: linear-gradient(145deg, #f1f5f9 0%, #e2e8f0 100%) !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .modal-character-image {
+            background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%) !important;
+        }
+        body.light-mode .rebirth-toggle-btn {
+            background: rgba(226, 232, 240, 0.8) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .rebirth-single-toggle {
+            background: rgba(226, 232, 240, 0.8) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .recommended-stats-value {
+            background: rgba(0, 0, 0, 0.06) !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .rebirth-stat {
+            background: rgba(0, 0, 0, 0.06) !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .view-toggle-btn {
+            background: rgba(226, 232, 240, 0.8) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .info-box-value {
+            color: #1e293b !important;
+        }
+        body.light-mode .full-card-view .card-footer {
+            background: rgba(0, 0, 0, 0.05) !important;
+        }
+
+        /* Light mode - Tailwind text utility overrides */
+        body.light-mode .text-white {
+            color: #1e293b !important;
+        }
+        body.light-mode .text-gray-300 {
+            color: #374151 !important;
+        }
+        body.light-mode .text-gray-400 {
+            color: #4b5563 !important;
+        }
+        body.light-mode .text-gray-500 {
+            color: #6b7280 !important;
+        }
+
+        /* Light mode - Character cards */
+        body.light-mode .click-hint {
+            color: rgba(0, 0, 0, 0.4) !important;
+        }
+        body.light-mode .character-card .card-content h4 {
+            color: #1e293b !important;
+        }
+        body.light-mode .character-card .card-footer {
+            color: #1e293b !important;
+        }
+
+        /* Light mode - Modal elements */
+        body.light-mode .modal-close:hover {
+            color: #1e293b !important;
+        }
+        body.light-mode .modal-tab-btn:hover {
+            color: #1e293b !important;
+        }
+        body.light-mode .rebirth-toggle-btn.active {
+            color: #1e293b !important;
+        }
+        body.light-mode .rebirth-single-toggle.is-rebirth {
+            color: #1e293b !important;
+        }
+
+        /* Light mode - Quest elements */
+        body.light-mode .quest-title {
+            color: #1e293b !important;
+        }
+        body.light-mode .quest-number {
+            color: white !important;
+        }
+        body.light-mode .prequest-character-name {
+            color: #1e293b !important;
+        }
+        body.light-mode .prequest-quest-title {
+            color: #1e293b !important;
+        }
+        body.light-mode .quest-check-label {
+            color: #1e293b !important;
+        }
+        body.light-mode .quest-lightbox-nav {
+            color: #1e293b !important;
+        }
+        body.light-mode .quest-lightbox-counter {
+            color: #1e293b !important;
+        }
+        body.light-mode .view-toggle-btn.active {
+            color: white !important;
+        }
+
+        /* Light mode - Rebirth stat cards */
+        body.light-mode .rebirth-stat {
+            background: rgba(0, 0, 0, 0.06) !important;
+            color: #1e293b !important;
+        }
+
+        /* Light mode - Tier badge text stays colored */
+        body.light-mode .tier-badge-S,
+        body.light-mode .tier-badge-A,
+        body.light-mode .tier-badge-B,
+        body.light-mode .tier-badge-C {
+            color: white !important;
+        }
+        body.light-mode .rebirth-badge {
+            color: #b45309 !important;
+        }
+    </style>
+</head>
+<body class="text-wlLight">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header (copied from monsters.html) -->
+        <header class="bg-wlDark bg-opacity-90 blur-bg shadow-lg sticky top-0 z-30">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <a href="index.html" class="flex items-center space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i>
+                            </div>
+                            <h1 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                                Wonderland Online DB
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6 items-center">
+                        <div class="relative group">
+                            <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium flex items-center">
+                                Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+                            </a>
+                            <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                                <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-lg flex items-center justify-between">
+                                    Roadmap <i class="fas fa-route text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="Item.html" class="nav-link px-3 py-2 text-sm font-medium">Items</a>
+                        <a href="quests.html" class="nav-link px-3 py-2 text-sm font-medium">Quests</a>
+                        <a href="monsters.html" class="nav-link px-3 py-2 text-sm font-medium">Monsters</a>
+                        <a href="Locations.html" class="nav-link px-3 py-2 text-sm font-medium">Locations</a>
+                        <a href="tier-list.html" class="nav-link px-3 py-2 text-sm font-medium text-wlBlue">Tier-List</a>
+                        <a href="shops.html" class="nav-link px-3 py-2 text-sm font-medium">Shops</a>
+                        <a href="manufacture.html" class="nav-link px-3 py-2 text-sm font-medium">Manufacture</a>
+                        <a href="Resources.html" class="nav-link px-3 py-2 text-sm font-medium">Resources</a>
+                        <!-- Theme Toggle -->
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                            <div class="theme-toggle-ball">
+                                <i class="fas fa-moon text-xs text-wlDark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="openSidebar" class="focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <section class="text-center mb-12">
+                <div class="max-w-4xl mx-auto relative">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-wlRed to-wlPurple gradient-text glow">
+                        Character Tier List
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                        Discover the best characters in Wonderland Online, ranked by their overall strength, utility, and popularity. Each card shows the character, their elements, and key info.
+                    </p>
+                    <div class="max-w-4xl mx-auto mb-8">
+                        <!-- Search Bar -->
+                        <div class="relative mb-6">
+                            <input id="searchInput" type="text" placeholder="Search by name, element, or role..." 
+                                   class="w-full px-6 py-4 pl-14 rounded-2xl bg-wlDark bg-opacity-80 border border-wlLight border-opacity-20 focus:border-wlPurple focus:ring-2 focus:ring-wlPurple focus:ring-opacity-20 transition duration-300 text-wlLight shadow-lg">
+                            <i class="fas fa-search absolute left-5 top-1/2 transform -translate-y-1/2 text-wlPurple text-opacity-60"></i>
+                        </div>
+                        
+                        <!-- View Toggle & Filter Button Row -->
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-4">
+                            <!-- View Toggle -->
+                            <div class="view-toggle-container mb-0">
+                                <button id="compactViewBtn" class="view-toggle-btn active" onclick="setViewMode('compact')">
+                                    <i class="fas fa-th"></i>
+                                    <span>Compact</span>
+                                </button>
+                                <button id="fullViewBtn" class="view-toggle-btn" onclick="setViewMode('full')">
+                                    <i class="fas fa-id-card"></i>
+                                    <span>Full Card</span>
+                                </button>
+                            </div>
+                            
+                            <!-- Filter Toggle Button -->
+                            <button id="filterToggleBtn" class="filter-toggle-btn" onclick="toggleFilterPanel()">
+                                <i class="fas fa-sliders-h"></i>
+                                <span>Filters</span>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Active Filters Display -->
+                        <div id="activeFiltersDisplay" class="active-filters-display" style="display: none;"></div>
+                        
+                        <!-- Collapsible Filters Container -->
+                        <div id="filterPanel" class="filter-panel">
+                            <div class="bg-gradient-to-br from-wlDark via-wlDarker to-wlDark rounded-2xl p-6 shadow-2xl border border-wlPurple border-opacity-20 mt-4">
+                                <!-- Element Filters -->
+                                <div class="mb-6">
+                                    <div class="filter-section-label">
+                                        <i class="fas fa-fire text-wlRed"></i>
+                                        <span>Elements</span>
+                                    </div>
+                                    <div id="elementFilters" class="flex flex-wrap gap-2"></div>
+                                </div>
+                                
+                                <!-- Divider -->
+                                <div class="border-t border-wlPurple border-opacity-20 my-4"></div>
+                                
+                                <!-- Role Filters -->
+                                <div class="mb-6">
+                                    <div class="filter-section-label">
+                                        <i class="fas fa-users text-wlBlue"></i>
+                                        <span>Roles</span>
+                                    </div>
+                                    <div id="roleFilters" class="flex flex-wrap gap-2"></div>
+                                </div>
+                                
+                                <!-- Divider -->
+                                <div class="border-t border-wlPurple border-opacity-20 my-4"></div>
+                                
+                                <!-- Rebirth Filters -->
+                                <div>
+                                    <div class="filter-section-label">
+                                        <i class="fas fa-sync-alt text-amber-400"></i>
+                                        <span>Rebirth Status</span>
+                                    </div>
+                                    <div id="rebirthFilters" class="flex flex-wrap gap-2">
+                                        <button class="filter-btn active" data-rebirth="">All</button>
+                                        <button class="filter-btn" data-rebirth="rebirth">Rebirth Only</button>
+                                        <button class="filter-btn" data-rebirth="non-rebirth">Non-Rebirth</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-12" id="tierListSection">
+                <!-- Tier lists will be rendered here by JS -->
+            </section>
+            <input type="hidden" id="viewMode" value="compact">
+            </section>
+        </main>
+        <!-- Footer (copied from monsters.html) -->
+        <footer class="bg-wlDark bg-opacity-90 blur-bg py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i></div>
+                            <h3 class="text-lg font-semibold">Wonderland Online DB</h3>
+                        </div>
+                        <p class="text-sm text-opacity-70">Your ultimate resource for Wonderland Online game data.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Quick Nav</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html" class="text-opacity-70 hover:text-wlBlue transition">Home</a></li>
+                            <li><a href="Item.html" class="text-opacity-70 hover:text-wlBlue transition">Items</a></li>
+                            <li><a href="monsters.html" class="text-opacity-70 hover:text-wlBlue transition">Monsters</a></li>
+                            <li><a href="quests.html" class="text-opacity-70 hover:text-wlBlue transition">Quests</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Community</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Forums</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Discord</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Contribute</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Privacy Policy</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-wlLight border-opacity-20 pt-8 text-center text-sm text-opacity-50">
+                    &copy; 2024 Wonderland Online DB. All rights reserved. Game content and materials are trademarks and copyrights of their respective publisher and its licensors.
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Character Detail Modal -->
+    <div id="characterModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="flex items-start gap-6">
+                    <div>
+                        <div class="modal-character-image">
+                            <img id="modalImageImg" src="" alt="Character" style="display: none;">
+                            <i id="modalIcon" class="fas fa-user text-5xl text-wlPurple"></i>
+                        </div>
+                        <button id="rebirthToggleBtn" class="rebirth-single-toggle" style="display: none;" onclick="toggleRebirthImage()">
+                            <i class="fas fa-sync-alt"></i>
+                            <span id="rebirthToggleText">Show Rebirth</span>
+                        </button>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div id="modalTierBadge" class="tier-badge"></div>
+                            <h2 id="modalName" class="text-3xl font-bold text-white"></h2>
+                        </div>
+                        <div id="modalElements" class="flex flex-wrap gap-2 mb-3"></div>
+                        <div id="modalRebirthBadge" class="rebirth-badge" style="display: none;">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Can Rebirth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <!-- Tab Navigation -->
+                <div id="modalTabs" class="modal-tabs" style="display: none;">
+                    <button class="modal-tab-btn active" onclick="switchTab('details')">
+                        <i class="fas fa-info-circle mr-2"></i>Details
+                    </button>
+                    <button class="modal-tab-btn" onclick="switchTab('prequests')">
+                        <i class="fas fa-history mr-2"></i>Pre-Quests
+                    </button>
+                    <button class="modal-tab-btn" onclick="switchTab('quests')">
+                        <i class="fas fa-scroll mr-2"></i>Quests
+                    </button>
+                </div>
+                
+                <!-- Details Tab Content -->
+                <div id="detailsTabContent" class="modal-tab-content active">
+                <!-- Quick Stats -->
+                <div class="info-grid mb-8">
+                    <div class="info-box" id="characterIconBox" style="display: none;">
+                        <div class="info-box-label">Icon</div>
+                        <div id="modalCharacterIcon" class="info-box-value"></div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-box-label">Role</div>
+                        <div id="modalRole" class="info-box-value"></div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-box-label">Special Abilities</div>
+                        <div id="modalSpecial" class="info-box-value"></div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-box-label">Tier Ranking</div>
+                        <div id="modalTier" class="info-box-value"></div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-box-label">Overall Rating</div>
+                        <div id="modalRating" class="info-box-value"></div>
+                    </div>
+                </div>
+                
+                <!-- Stats Section -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-chart-bar text-wlPurple"></i>
+                        Character Stats
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="modalStats">
+                        <!-- Stats will be rendered here -->
+                    </div>
+                </div>
+                
+                <!-- Recommended Stats -->
+                <div id="recommendedStatsSection" class="recommended-stats-section mb-8" style="display: none;">
+                    <div class="recommended-stats-label">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Recommended Stat Washing Priority</span>
+                    </div>
+                    <div id="recommendedStatsValue" class="recommended-stats-value"></div>
+                </div>
+                
+                <!-- Description -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-info-circle text-wlBlue"></i>
+                        Overview
+                    </h3>
+                    <p id="modalDescription" class="text-gray-300 leading-relaxed"></p>
+                </div>
+                
+                <!-- Skills -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-magic text-wlYellow"></i>
+                        Skills & Abilities
+                    </h3>
+                    <div id="modalSkills">
+                        <!-- Skills will be rendered here -->
+                    </div>
+                </div>
+                
+                <!-- Rebirth Section -->
+                <div id="rebirthSection" class="rebirth-section mb-8" style="display: none;">
+                    <h3 class="text-xl font-bold text-wlYellow mb-4 flex items-center gap-2">
+                        <i class="fas fa-sync-alt"></i>
+                        Rebirth Information
+                    </h3>
+                    <p class="text-gray-300 mb-4">This character can be rebirthed. Base stats shown below are the minimum stats after rebirth - any higher stats are bonus stats retained.</p>
+                    <div class="rebirth-stats" id="rebirthBaseStats">
+                        <!-- Rebirth base stats will be rendered here -->
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold text-wlYellow mb-3">Rebirth Skills</h4>
+                        <div id="rebirthSkills">
+                            <!-- Rebirth skills will be rendered here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pros and Cons -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <div>
+                        <h3 class="text-lg font-bold text-green-400 mb-3 flex items-center gap-2">
+                            <i class="fas fa-check-circle"></i>
+                            Strengths
+                        </h3>
+                        <ul id="modalPros" class="space-y-2">
+                            <!-- Pros will be rendered here -->
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-red-400 mb-3 flex items-center gap-2">
+                            <i class="fas fa-times-circle"></i>
+                            Weaknesses
+                        </h3>
+                        <ul id="modalCons" class="space-y-2">
+                            <!-- Cons will be rendered here -->
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                
+                <!-- Pre-Quests Tab Content -->
+                <div id="prequestsTabContent" class="modal-tab-content">
+                    <div id="prequestsContainer">
+                        <!-- Pre-Quests will be rendered here -->
+                    </div>
+                </div>
+                
+                <!-- Quests Tab Content -->
+                <div id="questsTabContent" class="modal-tab-content">
+                    <div id="questsContainer">
+                        <!-- Quests will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quest Image Lightbox -->
+    <div id="questLightbox" class="quest-lightbox" onclick="closeLightbox()">
+        <button class="quest-lightbox-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="quest-lightbox-nav quest-lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <img id="lightboxImage" src="" alt="Quest Image">
+        <button class="quest-lightbox-nav quest-lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div id="lightboxCounter" class="quest-lightbox-counter"></div>
+    </div>
+    
+    <script>
+    // Tier data loaded from external JSON file
+    let tierData = [];
+    
+    // Load tier data from JSON file
+    async function loadTierData() {
+        try {
+            const response = await fetch('data/tier-data.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            tierData = await response.json();
+            console.log('Tier data loaded successfully:', tierData.length, 'tiers');
+            return true;
+        } catch (error) {
+            console.error('Error loading tier data:', error);
+            // Fallback: show error message
+            document.getElementById('tierListSection').innerHTML = `
+                <div class="flex flex-col items-center justify-center py-16">
+                    <i class="fas fa-exclamation-triangle text-5xl text-wlRed mb-4"></i>
+                    <div class="text-center text-2xl opacity-80 font-semibold mb-2">Failed to load tier data</div>
+                    <div class="text-center text-base opacity-60">Please check that data/tier-data.json exists</div>
+                </div>
+            `;
+            return false;
+        }
+    }
+
+    // Utility to get unique elements and roles
+    function getUnique(arr, key) {
+        const set = new Set();
+        arr.forEach(tier => tier.characters.forEach(c => {
+            if (Array.isArray(c[key])) c[key].forEach(v => set.add(v));
+            else set.add(c[key]);
+        }));
+        return Array.from(set);
+    }
+
+    // Render filter buttons
+    function renderFilters() {
+        const elementFilters = document.getElementById('elementFilters');
+        const roleFilters = document.getElementById('roleFilters');
+        // Hardcoded elements as requested
+        const elements = ['Water', 'Fire', 'Wind', 'Earth'];
+        // Hardcoded roles as requested
+        const roles = ['Buffer', 'Debuffer', 'Tank', 'Physical', 'Magic', 'Healer', 'Hybrid', 'Ride'];
+        elementFilters.innerHTML = '<button class="filter-btn" data-element="">All Elements</button>' +
+            elements.map(e => `<button class="filter-btn" data-element="${e}">${e}</button>`).join('');
+        roleFilters.innerHTML = '<button class="filter-btn" data-role="">All Roles</button>' +
+            roles.map(r => `<button class="filter-btn" data-role="${r}">${r}</button>`).join('');
+    }
+
+    // Render the tier list
+    function renderTierList(search = '', element = '', role = '', rebirth = '') {
+        const section = document.getElementById('tierListSection');
+        const viewMode = document.getElementById('viewMode').value;
+        const isFullView = viewMode === 'full';
+        let html = '';
+        tierData.forEach(tier => {
+            // Filter characters by search, element, role, and rebirth
+            const filtered = tier.characters.filter(c => {
+                const matchesSearch = search === '' ||
+                    c.name.toLowerCase().includes(search) ||
+                    c.elements.some(el => el.toLowerCase().includes(search)) ||
+                    c.role.toLowerCase().includes(search) ||
+                    c.special.toLowerCase().includes(search);
+                const matchesElement = !element || c.elements.includes(element);
+                const matchesRole = !role || c.role === role;
+                // Rebirth filter logic
+                let matchesRebirth = true;
+                if (rebirth === 'rebirth') {
+                    matchesRebirth = c.canRebirth === true;
+                } else if (rebirth === 'non-rebirth') {
+                    matchesRebirth = !c.canRebirth;
+                }
+                return matchesSearch && matchesElement && matchesRole && matchesRebirth;
+            });
+            if (filtered.length === 0) return;
+            html += `<div class="mb-14 ${isFullView ? 'full-card-view' : ''}">
+                <span class="tier-label ${tier.labelClass}">${tier.tier} Tier</span>
+                <div class="grid grid-cols-1 ${isFullView ? 'sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' : 'sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'} gap-6">`;
+            filtered.forEach(c => {
+                // Determine which image to show based on rebirth filter
+                // - "All" (rebirth === ''): Show base image (default)
+                // - "Rebirth Only" (rebirth === 'rebirth'): Show rebirth image (no spoiler)
+                // - "Non-Rebirth" (rebirth === 'non-rebirth'): Show base image
+                let displayImage = c.image;
+                if (rebirth === 'rebirth' && c.canRebirth && c.rebirthImage) {
+                    displayImage = c.rebirthImage;
+                }
+                const imagePositionStyle = c.imagePosition ? `object-position: ${c.imagePosition};` : '';
+                const imageHtml = displayImage 
+                    ? `<img src="${displayImage}" alt="${c.name}" class="w-full h-full object-cover" style="${imagePositionStyle}">`
+                    : `<i class="fas ${c.icon} text-3xl ${c.iconColor}"></i>`;
+                const displayName = c.displayName || c.name;
+                const rebirthBadge = c.canRebirth ? '<span class="ml-2 px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs rounded-full">RB</span>' : '';
+                
+                if (isFullView) {
+                    // Full Card View - larger image taking up most of the card
+                    html += `<div class="character-card relative bg-wlDark bg-opacity-90 rounded-2xl border ${tier.borderClass} border-opacity-80 card-hover group shadow-xl overflow-hidden" onclick='openModal(${JSON.stringify(c).replace(/'/g, "&#39;")}, "${tier.tier}", "${tier.labelClass}")'>
+                        <div class="card-image">
+                            ${imageHtml}
+                        </div>
+                        <div class="card-content">
+                            <h4 class="text-xl font-bold mb-2 tracking-wide flex items-center">${displayName}${rebirthBadge}</h4>
+                            <div class="flex flex-wrap gap-1 mb-3">
+                                ${c.elements.map(el => `<span class="element-badge element-${el.toLowerCase()}">${el}</span>`).join('')}
+                            </div>
+                            <div class="text-sm space-y-1 mb-3">
+                                <p class="text-gray-300"><i class="fas fa-user-tag text-wlPurple mr-2"></i><strong>Role:</strong> ${c.role}</p>
+                                <p class="text-gray-300"><i class="fas fa-star text-wlYellow mr-2"></i><strong>Special:</strong> ${c.special}</p>
+                            </div>
+                        </div>
+                        <div class="card-footer flex items-center justify-between">
+                            <div class="flex items-center gap-1">
+                                <span class="text-xs text-gray-400">Rating:</span>
+                                <span class="text-lg font-bold text-wlYellow">${c.rating}</span>
+                            </div>
+                            <div class="click-hint">
+                                <i class="fas fa-mouse-pointer"></i>
+                                <span>Click for details</span>
+                            </div>
+                        </div>
+                    </div>`;
+                } else {
+                    // Compact View - original layout
+                    html += `<div class="character-card relative bg-wlDark bg-opacity-90 rounded-2xl p-6 border ${tier.borderClass} border-opacity-80 card-hover group shadow-xl" onclick='openModal(${JSON.stringify(c).replace(/'/g, "&#39;")}, "${tier.tier}", "${tier.labelClass}")'>
+                        <div class="flex items-center mb-4">
+                            <div class="card-image mr-4">
+                                ${imageHtml}
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-bold mb-2 tracking-wide flex items-center">${displayName}${rebirthBadge}</h4>
+                                <div class="flex flex-wrap gap-1">
+                                    ${c.elements.map(el => `<span class="element-badge element-${el.toLowerCase()}">${el}</span>`).join('')}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-sm space-y-1 mb-3">
+                            <p class="text-gray-300"><i class="fas fa-user-tag text-wlPurple mr-2"></i><strong>Role:</strong> ${c.role}</p>
+                            <p class="text-gray-300"><i class="fas fa-star text-wlYellow mr-2"></i><strong>Special:</strong> ${c.special}</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-1">
+                                <span class="text-xs text-gray-400">Rating:</span>
+                                <span class="text-lg font-bold text-wlYellow">${c.rating}</span>
+                            </div>
+                            <div class="click-hint">
+                                <i class="fas fa-mouse-pointer"></i>
+                                <span>Click for details</span>
+                            </div>
+                        </div>
+                        <div class="mini-detail">
+                            <div class="font-bold mb-1">${c.name}</div>
+                            <div class="mb-1">${c.elements.map(el => `<span class='inline-block px-2 py-1 rounded bg-wlBlue text-xs font-semibold mr-1 mb-1'>${el}</span>`).join('')}</div>
+                            <div class="mb-1"><strong>Role:</strong> ${c.role}</div>
+                            <div class="mb-1"><strong>Special:</strong> ${c.special}</div>
+                            <div class="mb-1"><strong>Rating:</strong> ${c.rating}/10</div>
+                        </div>
+                    </div>`;
+                }
+            });
+            html += '</div></div>';
+        });
+        section.innerHTML = html || '<div class="flex flex-col items-center justify-center py-16"><i class="fas fa-search text-5xl text-wlBlue mb-4"></i><div class="text-center text-2xl opacity-80 font-semibold mb-2">No characters found.</div><div class="text-center text-base opacity-60">Try adjusting your search or filter options.</div></div>';
+    }
+    
+    // View mode toggle function
+    function setViewMode(mode) {
+        document.getElementById('viewMode').value = mode;
+        const compactBtn = document.getElementById('compactViewBtn');
+        const fullBtn = document.getElementById('fullViewBtn');
+        
+        if (mode === 'compact') {
+            compactBtn.classList.add('active');
+            fullBtn.classList.remove('active');
+        } else {
+            compactBtn.classList.remove('active');
+            fullBtn.classList.add('active');
+        }
+        
+        // Re-render with current filters
+        const search = document.getElementById('searchInput').value.trim().toLowerCase();
+        const activeElementBtn = document.querySelector('#elementFilters .filter-btn.active');
+        const activeRoleBtn = document.querySelector('#roleFilters .filter-btn.active');
+        const activeRebirthBtn = document.querySelector('#rebirthFilters .filter-btn.active');
+        const element = activeElementBtn ? activeElementBtn.dataset.element || '' : '';
+        const role = activeRoleBtn ? activeRoleBtn.dataset.role || '' : '';
+        const rebirth = activeRebirthBtn ? activeRebirthBtn.dataset.rebirth || '' : '';
+        renderTierList(search, element, role, rebirth);
+    }
+    
+    // Modal functions
+    let currentCharacter = null;
+    let isShowingRebirth = false;
+    
+    function openModal(character, tier, labelClass) {
+        const modal = document.getElementById('characterModal');
+        currentCharacter = character;
+        isShowingRebirth = false;
+        
+        // Set basic info
+        const displayName = character.displayName || character.name;
+        document.getElementById('modalName').textContent = displayName;
+        document.getElementById('modalRole').textContent = character.role;
+        document.getElementById('modalSpecial').textContent = character.special;
+        document.getElementById('modalTier').textContent = tier + ' Tier';
+        document.getElementById('modalRating').innerHTML = `<span class="text-wlYellow">${character.rating}</span><span class="text-gray-400">/10</span>`;
+        document.getElementById('modalDescription').textContent = character.description || character.details;
+        
+        // Set character icon in details section
+        const characterIconBox = document.getElementById('characterIconBox');
+        const modalCharacterIcon = document.getElementById('modalCharacterIcon');
+        if (character.iconImage) {
+            characterIconBox.style.display = 'block';
+            modalCharacterIcon.innerHTML = `<img src="${character.iconImage}" alt="${displayName}" style="width: 50px; height: 50px; object-fit: contain; border-radius: 8px;">`;
+        } else {
+            characterIconBox.style.display = 'none';
+        }
+        
+        // Set tier badge
+        const tierBadge = document.getElementById('modalTierBadge');
+        tierBadge.textContent = tier;
+        tierBadge.className = `tier-badge tier-badge-${tier}`;
+        
+        // Set image or icon
+        const modalImageImg = document.getElementById('modalImageImg');
+        const modalIcon = document.getElementById('modalIcon');
+        const rebirthToggleBtn = document.getElementById('rebirthToggleBtn');
+        const rebirthToggleText = document.getElementById('rebirthToggleText');
+        
+        if (character.image) {
+            modalImageImg.src = character.image;
+            modalImageImg.alt = displayName;
+            modalImageImg.style.display = 'block';
+            modalIcon.style.display = 'none';
+            // Apply custom image position if specified
+            if (character.imagePosition) {
+                modalImageImg.style.objectPosition = character.imagePosition;
+            } else {
+                modalImageImg.style.objectPosition = 'top center';
+            }
+        } else if (character.iconImage) {
+            // Use custom icon image
+            modalImageImg.style.display = 'none';
+            modalIcon.style.display = 'block';
+            modalIcon.innerHTML = `<img src="${character.iconImage}" alt="${displayName}" style="width: 60px; height: 60px; object-fit: contain;">`;
+            modalIcon.className = '';
+        } else {
+            modalImageImg.style.display = 'none';
+            modalIcon.style.display = 'block';
+            modalIcon.className = `fas ${character.icon} text-5xl ${character.iconColor}`;
+            modalIcon.innerHTML = '';
+        }
+        
+        // Show/hide rebirth toggle button
+        if (character.rebirthImage) {
+            rebirthToggleBtn.style.display = 'flex';
+            rebirthToggleText.textContent = 'Show Rebirth';
+            rebirthToggleBtn.classList.remove('is-rebirth');
+        } else {
+            rebirthToggleBtn.style.display = 'none';
+        }
+        
+        // Show/hide tabs for quests
+        const modalTabs = document.getElementById('modalTabs');
+        if (character.hasQuests || character.hasPreQuests) {
+            modalTabs.style.display = 'flex';
+            
+            // Show/hide individual tab buttons
+            const tabButtons = modalTabs.querySelectorAll('.modal-tab-btn');
+            tabButtons.forEach(btn => {
+                const btnText = btn.textContent.toLowerCase();
+                if (btnText.includes('pre-quest')) {
+                    btn.style.display = character.hasPreQuests ? 'flex' : 'none';
+                } else if (btnText.includes('quest')) {
+                    btn.style.display = character.hasQuests ? 'flex' : 'none';
+                }
+            });
+        } else {
+            modalTabs.style.display = 'none';
+        }
+        
+        // Reset to details tab
+        switchTab('details');
+        
+        // Render quests if available
+        if (character.hasQuests && character.quests) {
+            renderQuests(character);
+        }
+        
+        // Render pre-quests if available
+        if (character.hasPreQuests && character.preQuests) {
+            renderPreQuests(character);
+        }
+        
+        // Set elements
+        document.getElementById('modalElements').innerHTML = character.elements.map(el => 
+            `<span class="element-badge element-${el.toLowerCase()}">${el}</span>`
+        ).join('');
+        
+        // Set rebirth badge
+        const rebirthBadge = document.getElementById('modalRebirthBadge');
+        rebirthBadge.style.display = character.canRebirth ? 'flex' : 'none';
+        
+        // Set stats (handle both old format and new STR/CON/INT/WIS/AGI format)
+        const statsObj = character.stats || {};
+        const statsHtml = Object.entries(statsObj).map(([stat, value]) => {
+            // For STR/CON/INT/WIS/AGI, show raw values. For hp/atk/def etc, show percentage bars
+            const isPetStats = ['STR', 'CON', 'INT', 'WIS', 'AGI'].includes(stat.toUpperCase());
+            if (isPetStats) {
+                const maxStat = 50; // Max base stat for pets
+                const statClass = value >= maxStat * 0.8 ? 'stat-high' : value >= maxStat * 0.5 ? 'stat-medium' : 'stat-low';
+                return `
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-gray-400">${stat.toUpperCase()}</span>
+                            <span class="font-semibold">${value}</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill ${statClass}" style="width: ${(value / maxStat) * 100}%"></div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                const statClass = value >= 80 ? 'stat-high' : value >= 60 ? 'stat-medium' : 'stat-low';
+                const statName = stat.toUpperCase();
+                return `
+                    <div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-gray-400">${statName}</span>
+                            <span class="font-semibold">${value}</span>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill ${statClass}" style="width: ${value}%"></div>
+                        </div>
+                    </div>
+                `;
+            }
+        }).join('');
+        document.getElementById('modalStats').innerHTML = statsHtml;
+        
+        // Set skills
+        const skillsHtml = (character.skills || []).map(skill => `
+            <div class="skill-card">
+                <div class="skill-name"><i class="fas fa-magic mr-2"></i>${skill.name}</div>
+                <div class="skill-desc">${skill.desc}</div>
+            </div>
+        `).join('');
+        document.getElementById('modalSkills').innerHTML = skillsHtml || '<p class="text-gray-400">No special skills available.</p>';
+        
+        // Set rebirth section
+        const rebirthSection = document.getElementById('rebirthSection');
+        if (character.canRebirth) {
+            rebirthSection.style.display = 'block';
+            
+            // Set rebirth base stats
+            const rebirthStatsHtml = Object.entries(character.rebirthBaseStats || {}).map(([stat, value]) => `
+                <div class="rebirth-stat">
+                    <div class="rebirth-stat-label">${stat}</div>
+                    <div class="rebirth-stat-value">${value}</div>
+                </div>
+            `).join('');
+            document.getElementById('rebirthBaseStats').innerHTML = rebirthStatsHtml;
+            
+            // Set rebirth skills
+            const rebirthSkillsHtml = (character.rebirthSkills || []).map(skill => `
+                <div class="skill-card rb-skill-card">
+                    <div class="skill-name"><i class="fas fa-star mr-2"></i>${skill.name}</div>
+                    <div class="skill-desc">${skill.desc}</div>
+                </div>
+            `).join('');
+            document.getElementById('rebirthSkills').innerHTML = rebirthSkillsHtml || '<p class="text-gray-400">No rebirth skills available.</p>';
+        } else {
+            rebirthSection.style.display = 'none';
+        }
+        
+        // Set pros
+        const prosHtml = (character.pros || []).map(pro => `
+            <li class="flex items-start gap-2 text-gray-300">
+                <i class="fas fa-check text-green-400 mt-1"></i>
+                <span>${pro}</span>
+            </li>
+        `).join('');
+        document.getElementById('modalPros').innerHTML = prosHtml || '<li class="text-gray-400">No notable strengths.</li>';
+        
+        // Set cons
+        const consHtml = (character.cons || []).map(con => `
+            <li class="flex items-start gap-2 text-gray-300">
+                <i class="fas fa-times text-red-400 mt-1"></i>
+                <span>${con}</span>
+            </li>
+        `).join('');
+        document.getElementById('modalCons').innerHTML = consHtml || '<li class="text-gray-400">No notable weaknesses.</li>';
+        
+        // Set recommended stats if available
+        const recommendedStatsSection = document.getElementById('recommendedStatsSection');
+        if (character.recommendedStats) {
+            recommendedStatsSection.style.display = 'block';
+            document.getElementById('recommendedStatsValue').textContent = character.recommendedStats;
+        } else {
+            recommendedStatsSection.style.display = 'none';
+        }
+        
+        // Show modal
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Force reflow to ensure CSS transitions work properly for quest sections
+        // This fixes the issue where expanding doesn't work until page refresh
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                const questSections = document.querySelectorAll('.quest-checklist-header, .quest-section');
+                questSections.forEach(section => {
+                    // Trigger reflow by reading offsetHeight
+                    void section.offsetHeight;
+                });
+            });
+        });
+    }
+    
+    function closeModal() {
+        const modal = document.getElementById('characterModal');
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    // Image toggle function for rebirth (single button)
+    function toggleRebirthImage() {
+        if (!currentCharacter) return;
+        
+        const modalImageImg = document.getElementById('modalImageImg');
+        const rebirthToggleBtn = document.getElementById('rebirthToggleBtn');
+        const rebirthToggleText = document.getElementById('rebirthToggleText');
+        
+        if (isShowingRebirth) {
+            // Switch to base image
+            modalImageImg.src = currentCharacter.image;
+            rebirthToggleText.textContent = 'Show Rebirth';
+            rebirthToggleBtn.classList.remove('is-rebirth');
+            isShowingRebirth = false;
+        } else {
+            // Switch to rebirth image
+            modalImageImg.src = currentCharacter.rebirthImage;
+            rebirthToggleText.textContent = 'Show Base';
+            rebirthToggleBtn.classList.add('is-rebirth');
+            isShowingRebirth = true;
+        }
+    }
+    
+    // Tab switching function
+    function switchTab(tabName) {
+        const detailsTab = document.getElementById('detailsTabContent');
+        const questsTab = document.getElementById('questsTabContent');
+        const prequestsTab = document.getElementById('prequestsTabContent');
+        const tabBtns = document.querySelectorAll('.modal-tab-btn');
+        
+        tabBtns.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.textContent.toLowerCase().includes(tabName)) {
+                btn.classList.add('active');
+            }
+        });
+        
+        // Hide all tabs first
+        detailsTab.classList.remove('active');
+        questsTab.classList.remove('active');
+        prequestsTab.classList.remove('active');
+        
+        if (tabName === 'details') {
+            detailsTab.classList.add('active');
+        } else if (tabName === 'quests') {
+            questsTab.classList.add('active');
+        } else if (tabName === 'prequests') {
+            prequestsTab.classList.add('active');
+        }
+    }
+    
+    // Render quests function
+    function renderQuests(character) {
+        const container = document.getElementById('questsContainer');
+        if (!character.quests || character.quests.length === 0) {
+            container.innerHTML = '<p class="text-gray-400 text-center py-8">No quest information available.</p>';
+            return;
+        }
+        
+        // Clear previous image sets
+        Object.keys(imageSets).forEach(key => delete imageSets[key]);
+        
+        // Get checklist data from localStorage
+        const checklistKey = `wlo_quest_checklist_${character.name}`;
+        const completedItems = JSON.parse(localStorage.getItem(checklistKey) || '[]');
+        
+        let html = '';
+        
+        // Add checklist header (collapsible)
+        const questChecklistOpenKey = `wlo_quest_checklist_${character.name}_open`;
+        const savedQuestChecklistState = localStorage.getItem(questChecklistOpenKey);
+        const isQuestChecklistOpen = savedQuestChecklistState === null ? true : (savedQuestChecklistState === 'true');
+        html += `
+            <div class="quest-checklist-header ${isQuestChecklistOpen ? 'open' : ''}">
+                <div class="quest-checklist-title">
+                    <i class="fas fa-clipboard-check"></i>
+                    <span>Progress Checklist</span>
+                </div>
+                <div>
+                    <div class="quest-checklist-stats">${completedItems.length} / ${character.quests.length} Completed</div>
+                </div>
+                <i class="fas fa-chevron-down ml-2"></i>
+            </div>
+            <div class="quest-checklist-content">
+        `;
+        
+        // Add checklist items
+        character.quests.forEach((quest, idx) => {
+            const checkId = `quest_${character.name}_${idx}`;
+            const isCompleted = completedItems.includes(checkId);
+            html += `
+                <div class="quest-check-item ${isCompleted ? 'completed' : ''}" data-character="${character.name}" data-index="${idx}" data-quest-type="quest">
+                    <div class="quest-check-box">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="quest-check-label">Quest ${quest.id}: ${quest.title}</div>
+                </div>
+            `;
+        });
+        html += '</div></div>';
+        
+        // Add collapsible Quests section (separate from checklist)
+        const questSectionKey = `wlo_quest_quests_${character.name}_open`;
+        const savedQuestSectionState = localStorage.getItem(questSectionKey);
+        const isQuestSectionOpen = savedQuestSectionState === null ? true : (savedQuestSectionState === 'true');
+        
+        html += `
+            <div class="quest-checklist-header ${isQuestSectionOpen ? 'open' : ''}" style="background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); margin-top: 16px;">
+                <div class="quest-checklist-title" style="color: #3b82f6;">
+                    <i class="fas fa-scroll"></i>
+                    <span>Quests</span>
+                </div>
+                <div>
+                    <div class="quest-checklist-stats">${character.quests.length} Quests</div>
+                </div>
+                <i class="fas fa-chevron-down ml-2"></i>
+            </div>
+            <div class="quest-checklist-content">
+        `;
+        
+        // Render quest cards
+        character.quests.forEach((quest, questIndex) => {
+            // Build quest images array with full paths and store in imageSets
+            const questImageSetKey = `quest_${questIndex}`;
+            const questImages = quest.images.map(img => character.questImageFolder + img);
+            if (questImages.length > 0) {
+                imageSets[questImageSetKey] = questImages;
+            }
+            
+            const imagesHtml = quest.images.map((img, imgIndex) => 
+                `<div class="quest-image" onclick="event.stopPropagation(); openLightbox('${character.questImageFolder}${img}', '${questImageSetKey}', ${imgIndex})">
+                    <img src="${character.questImageFolder}${img}" alt="Quest ${quest.id}" loading="lazy">
+                </div>`
+            ).join('');
+            
+            // Fight images section - also navigable
+            let fightHtml = '';
+            if (quest.fightImages && quest.fightImages.length > 0) {
+                const fightImageSetKey = `fight_${questIndex}`;
+                const fightImages = quest.fightImages.map(img => character.questImageFolder + img);
+                imageSets[fightImageSetKey] = fightImages;
+                
+                const fightImagesHtml = quest.fightImages.map((img, imgIndex) => 
+                    `<div class="quest-fight-image" onclick="event.stopPropagation(); openLightbox('${character.questImageFolder}${img}', '${fightImageSetKey}', ${imgIndex})">
+                        <img src="${character.questImageFolder}${img}" alt="Fight" loading="lazy">
+                    </div>`
+                ).join('');
+                fightHtml = `
+                    <div class="quest-fight-section">
+                        <div class="quest-fight-label">
+                            <i class="fas fa-swords"></i>
+                            <span>Battle Preview</span>
+                        </div>
+                        <div class="quest-fight-images">${fightImagesHtml}</div>
+                    </div>
+                `;
+            }
+            
+            // Get saved section state from localStorage, default to open for first few sections
+            const questSectionKey = `wlo_quest_section_${character.name}_${questIndex}`;
+            const savedQuestSectionState = localStorage.getItem(questSectionKey);
+            const isQuestSectionOpen = savedQuestSectionState === null ? (questIndex < 3) : (savedQuestSectionState === 'true');
+            
+            html += `
+                <div class="quest-section ${isQuestSectionOpen ? 'open' : ''}">
+                    <div class="quest-section-header">
+                        <div class="quest-section-header-left">
+                            <div class="quest-number">${quest.id}</div>
+                            <h4 class="quest-title">${quest.title}</h4>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="quest-section-content">
+            `;
+            
+            html += `
+                <div class="quest-card">
+                    <p class="quest-description">${quest.description}</p>
+                    ${quest.images.length > 0 ? `<div class="quest-images">${imagesHtml}</div>` : ''}
+                    ${fightHtml}
+                </div>
+            </div>
+        </div>
+            `;
+        });
+        
+        // Add ending banner if available
+        if (character.endingBanner) {
+            const endingImageSetKey = 'ending';
+            const endingImages = [character.questImageFolder + character.endingBanner];
+            imageSets[endingImageSetKey] = endingImages;
+            
+            html += `
+                <div class="quest-ending-banner">
+                    <div class="quest-ending-label">
+                        <i class="fas fa-flag-checkered"></i>
+                        <span>Quest Complete - ${character.name} Rebirth Unlocked!</span>
+                    </div>
+                    <img src="${character.questImageFolder}${character.endingBanner}" alt="Quest Complete" onclick="openLightbox('${character.questImageFolder}${character.endingBanner}', '${endingImageSetKey}', 0)" style="cursor: pointer;">
+                </div>
+            `;
+        }
+        
+        // Close the Quests section
+        html += '</div></div>';
+        
+        container.innerHTML = html;
+    }
+    
+    // Toggle quest checklist item
+    function toggleQuestChecklist(characterName, questIndex, label, event) {
+        console.log('toggleQuestChecklist called:', { characterName, questIndex, label, event: !!event });
+        if (!event) return;
+        
+        // Stop propagation and prevent default
+        event.stopPropagation();
+        event.preventDefault();
+        
+        // Don't toggle if clicking on child elements (checkbox, label, etc)
+        const target = event.target;
+        const checkItem = target.closest('.quest-check-item');
+        console.log('Check item found:', !!checkItem, target);
+        
+        if (checkItem) {
+            const checklistKey = `wlo_quest_checklist_${characterName}`;
+            const completedItems = JSON.parse(localStorage.getItem(checklistKey) || '[]');
+            const checkId = `quest_${characterName}_${questIndex}`;
+            
+            console.log('Check ID:', checkId, 'Completed items:', completedItems);
+            
+            const idx = completedItems.indexOf(checkId);
+            if (idx > -1) {
+                completedItems.splice(idx, 1);
+            } else {
+                completedItems.push(checkId);
+            }
+            
+            localStorage.setItem(checklistKey, JSON.stringify(completedItems));
+            
+            // Update the clicked item visually without re-rendering
+            if (checkItem) {
+                checkItem.classList.toggle('completed');
+            }
+            
+            // Update the stats counter
+            updateQuestChecklistStats(characterName);
+            console.log('Checklist updated, completed count:', completedItems.length);
+        }
+        
+        return false;
+    }
+    
+    // Update quest checklist stats counter
+    function updateQuestChecklistStats(characterName) {
+        console.log('updateQuestChecklistStats called:', { characterName });
+        const character = getCurrentCharacter(characterName);
+        if (!character || !character.quests) {
+            console.log('Character or quests not found');
+            return;
+        }
+        
+        const checklistKey = `wlo_quest_checklist_${characterName}`;
+        const completedItems = JSON.parse(localStorage.getItem(checklistKey) || '[]');
+        
+        console.log('Completed items:', completedItems, 'Total quests:', character.quests.length);
+        
+        const statsEl = document.querySelector('#questsContainer .quest-checklist-stats');
+        console.log('Stats element found:', !!statsEl);
+        if (statsEl) {
+            statsEl.textContent = `${completedItems.length} / ${character.quests.length} Completed`;
+            console.log('Stats updated to:', statsEl.textContent);
+        }
+    }
+    
+    // Toggle prequest checklist item
+    function togglePrequestChecklist(characterName, questIndex, label, event) {
+        if (!event) return;
+        
+        // Stop propagation and prevent default
+        event.stopPropagation();
+        event.preventDefault();
+        
+        // Don't toggle if clicking on child elements (checkbox, label, etc)
+        const target = event.target;
+        if (target.closest('.quest-check-item')) {
+            // This is a checklist item click - toggle its state
+            const checklistKey = `wlo_prequest_checklist_${characterName}`;
+            const completedItems = JSON.parse(localStorage.getItem(checklistKey) || '[]');
+            const checkId = `prequest_${characterName}_${questIndex}`;
+            
+            const idx = completedItems.indexOf(checkId);
+            if (idx > -1) {
+                completedItems.splice(idx, 1);
+            } else {
+                completedItems.push(checkId);
+            }
+            
+            localStorage.setItem(checklistKey, JSON.stringify(completedItems));
+            
+            // Update the clicked item visually without re-rendering
+            const checkItem = target.closest('.quest-check-item');
+            if (checkItem) {
+                checkItem.classList.toggle('completed');
+            }
+            
+            // Update the stats counter
+            updatePrequestChecklistStats(characterName);
+        }
+        
+        return false;
+    }
+    
+    // Update prequest checklist stats counter
+    function updatePrequestChecklistStats(characterName) {
+        console.log('updatePrequestChecklistStats called:', { characterName });
+        const character = getCurrentCharacter(characterName);
+        if (!character || !character.preQuests) {
+            console.log('Character or preQuests not found');
+            return;
+        }
+        
+        const checklistKey = `wlo_prequest_checklist_${characterName}`;
+        const completedItems = JSON.parse(localStorage.getItem(checklistKey) || '[]');
+        
+        console.log('Completed items:', completedItems, 'Total prequests:', character.preQuests.length);
+        
+        const statsEl = document.querySelector('#prequestsContainer .quest-checklist-stats');
+        console.log('Stats element found:', !!statsEl);
+        if (statsEl) {
+            statsEl.textContent = `${completedItems.length} / ${character.preQuests.length} Completed`;
+            console.log('Stats updated to:', statsEl.textContent);
+        }
+    }
+    
+    // Render pre-quests function
+    function renderPreQuests(character) {
+        const container = document.getElementById('prequestsContainer');
+        if (!character.preQuests || character.preQuests.length === 0) {
+            container.innerHTML = '<p class="text-gray-400 text-center py-8">No pre-quest information available.</p>';
+            return;
+        }
+        
+        // Group pre-quests by character
+        const groupedByCharacter = {};
+        character.preQuests.forEach((pq, idx) => {
+            const key = `${pq.character}_${pq.questNumber}`;
+            if (!groupedByCharacter[pq.character]) {
+                groupedByCharacter[pq.character] = [];
+            }
+            pq._index = idx; // Store original index
+            groupedByCharacter[pq.character].push(pq);
+        });
+        
+        // Sort characters by order: Roca, Clive, Magellan
+        const characterOrder = ['Roca', 'Clive', 'Magellan'];
+        const sortedCharacters = Object.keys(groupedByCharacter).sort((a, b) => {
+            const idxA = characterOrder.indexOf(a);
+            const idxB = characterOrder.indexOf(b);
+            if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+            if (idxA !== -1) return -1;
+            if (idxB !== -1) return 1;
+            return a.localeCompare(b);
+        });
+        
+        // Get checklist data from localStorage
+        const checklistKey = `wlo_prequest_checklist_${character.name}`;
+        const completedItems = JSON.parse(localStorage.getItem(checklistKey) || '[]');
+        
+        let html = '';
+        
+        // Add checklist header (collapsible)
+        const checklistOpenKey = `wlo_prequest_checklist_${character.name}_open`;
+        const savedChecklistState = localStorage.getItem(checklistOpenKey);
+        const isChecklistOpen = savedChecklistState === null ? true : (savedChecklistState === 'true');
+        html += `
+            <div class="quest-checklist-header ${isChecklistOpen ? 'open' : ''}">
+                <div class="quest-checklist-title">
+                    <i class="fas fa-clipboard-check"></i>
+                    <span>Progress Checklist</span>
+                </div>
+                <div>
+                    <div class="quest-checklist-stats">${completedItems.length} / ${character.preQuests.length} Completed</div>
+                </div>
+                <i class="fas fa-chevron-down ml-2"></i>
+            </div>
+            <div class="quest-checklist-content">
+        `;
+        
+        // Add checklist items grouped by character (each group is collapsible independently)
+        sortedCharacters.forEach((charName) => {
+            const charPreQuests = groupedByCharacter[charName];
+            const charCompleted = charPreQuests.filter((pq) => {
+                const checkId = `prequest_${character.name}_${pq._index}`;
+                return completedItems.includes(checkId);
+            }).length;
+            
+            // Check saved state for this group
+            const groupKey = `wlo_prequest_group_${character.name}_${charName}`;
+            const savedGroupState = localStorage.getItem(groupKey);
+            const isGroupCollapsed = savedGroupState === 'true';
+            
+            html += `
+                <div class="prequest-checklist-group ${isGroupCollapsed ? 'collapsed' : ''}" style="margin-bottom: 8px;">
+                    <div class="prequest-checklist-group-header">
+                        <i class="fas fa-folder-open text-wlPurple mr-2"></i>
+                        <span class="font-semibold text-wlPurple">${charName}</span>
+                        <span class="ml-2 text-xs text-gray-400">${charCompleted}/${charPreQuests.length}</span>
+                        <i class="fas fa-chevron-down group-toggle"></i>
+                    </div>
+                    <div class="prequest-checklist-group-content">
+            `;
+            
+            charPreQuests.forEach((pq) => {
+                const checkId = `prequest_${character.name}_${pq._index}`;
+                const isCompleted = completedItems.includes(checkId);
+                html += `
+                    <div class="quest-check-item ${isCompleted ? 'completed' : ''}" data-character="${character.name}" data-index="${pq._index}" data-label="${pq.character} - ${pq.title || 'Quest ' + pq.questNumber}" data-quest-type="prequest">
+                        <div class="quest-check-box">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="quest-check-label">${pq.title || 'Quest ' + pq.questNumber}</div>
+                    </div>
+                `;
+            });
+            
+            html += '</div></div>';
+        });
+        
+        html += '</div></div>';
+        
+        // Add collapsible Quests section (separate from checklist)
+        const questsSectionKey = `wlo_prequest_quests_${character.name}_open`;
+        const savedQuestsSectionState = localStorage.getItem(questsSectionKey);
+        const isQuestsSectionOpen = savedQuestsSectionState === null ? true : (savedQuestsSectionState === 'true');
+        
+        html += `
+            <div class="quest-checklist-header ${isQuestsSectionOpen ? 'open' : ''}" style="background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); margin-top: 16px;">
+                <div class="quest-checklist-title" style="color: #3b82f6;">
+                    <i class="fas fa-scroll"></i>
+                    <span>Quests</span>
+                </div>
+                <div>
+                    <div class="quest-checklist-stats">${Object.keys(groupedByCharacter).length} Quest Groups</div>
+                </div>
+                <i class="fas fa-chevron-down ml-2"></i>
+            </div>
+            <div class="quest-checklist-content">
+        `;
+        
+        // Add collapsible character sections
+        sortedCharacters.forEach((charName, sectionIdx) => {
+            const charPreQuests = groupedByCharacter[charName];
+            
+            // Get character icon
+            let charIcon = 'fa-user';
+            if (charName === 'Roca') charIcon = 'fa-user-ninja';
+            else if (charName === 'Clive') charIcon = 'fa-user-soldier';
+            else if (charName === 'Magellan') charIcon = 'fa-compass';
+            
+            // Count completed for this character
+            const charCompleted = charPreQuests.filter((pq, idx) => {
+                const checkId = `prequest_${character.name}_${pq._index}`;
+                return completedItems.includes(checkId);
+            }).length;
+            
+            // Get saved section state from localStorage, default to open for first section
+            const sectionKey = `wlo_prequest_section_${character.name}_${charName}`;
+            const savedState = localStorage.getItem(sectionKey);
+            const isSectionOpen = savedState === null ? (sectionIdx === 0) : (savedState === 'true');
+            
+            html += `
+                <div class="prequest-character-section ${isSectionOpen ? 'open' : ''}">
+                    <div class="prequest-character-header">
+                        <div class="prequest-character-header-left">
+                            <div class="prequest-character-icon">
+                                <i class="fas ${charIcon}"></i>
+                            </div>
+                            <div>
+                                <div class="prequest-character-name">${charName}</div>
+                                <div class="prequest-character-subtitle">${charCompleted}/${charPreQuests.length} Completed</div>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="prequest-character-content">
+            `;
+            
+            // Sort by quest number
+            charPreQuests.sort((a, b) => a.questNumber - b.questNumber);
+            
+            charPreQuests.forEach((pq) => {
+                const pqIndex = pq._index;
+                const imageSetKey = `prequest_${charName}_${pqIndex}`;
+                const prequestImages = pq.images.map(img => character.preQuestImageFolder + img);
+                if (prequestImages.length > 0) {
+                    imageSets[imageSetKey] = prequestImages;
+                }
+                
+                const imagesHtml = pq.images.map((img, imgIndex) => 
+                    `<div class="quest-image" onclick="event.stopPropagation(); openLightbox('${character.preQuestImageFolder}${img}', '${imageSetKey}', ${imgIndex})">
+                        <img src="${character.preQuestImageFolder}${img}" alt="Pre-Quest" loading="lazy">
+                    </div>`
+                ).join('');
+                
+                // Fight images
+                let fightHtml = '';
+                if (pq.fightImages && pq.fightImages.length > 0) {
+                    const fightImageSetKey = `prequest_${charName}_${pqIndex}_fight`;
+                    const fightImages = pq.fightImages.map(img => character.preQuestImageFolder + img);
+                    imageSets[fightImageSetKey] = fightImages;
+                    
+                    const fightImagesHtml = pq.fightImages.map((img, imgIndex) => 
+                        `<div class="quest-fight-image" onclick="event.stopPropagation(); openLightbox('${character.preQuestImageFolder}${img}', '${fightImageSetKey}', ${imgIndex})">
+                            <img src="${character.preQuestImageFolder}${img}" alt="Fight" loading="lazy">
+                        </div>`
+                    ).join('');
+                    
+                    fightHtml = `
+                        <div class="quest-fight-section">
+                            <div class="quest-fight-label">
+                                <i class="fas fa-swords"></i>
+                                <span>Battle Preview</span>
+                            </div>
+                            <div class="quest-fight-images">${fightImagesHtml}</div>
+                        </div>
+                    `;
+                }
+                
+                html += `
+                    <div class="prequest-quest-card">
+                        <div class="prequest-quest-header">
+                            <div class="prequest-quest-number">${pq.questNumber}</div>
+                            <div class="prequest-quest-title">${pq.title || 'Quest ' + pq.questNumber}</div>
+                        </div>
+                        <div class="prequest-quest-label">
+                            <i class="fas fa-history"></i>
+                            <span>Pre-Quest</span>
+                        </div>
+                        <p class="quest-description">${pq.description}</p>
+                        ${pq.images.length > 0 ? `<div class="quest-images">${imagesHtml}</div>` : ''}
+                        ${fightHtml}
+                    </div>
+                `;
+            });
+            
+            html += '</div></div>';
+        });
+        
+        // Close the Quests section
+        html += '</div></div>';
+        
+        container.innerHTML = html;
+    }
+    
+    // Toggle prequest section collapse
+    function togglePrequestSection(element, characterName, charName) {
+        console.log('togglePrequestSection called:', { element, characterName, charName });
+        // element is the header, get the parent prequest-character-section
+        const section = element.closest('.prequest-character-section');
+        section.classList.toggle('open');
+        
+        // Force reflow to ensure CSS transition triggers properly
+        const content = section.querySelector('.prequest-character-content');
+        if (content) {
+            void content.offsetHeight;
+        }
+        
+        // Save state to localStorage
+        const sectionKey = `wlo_prequest_section_${characterName}_${charName}`;
+        localStorage.setItem(sectionKey, section.classList.contains('open'));
+        console.log('Prequest section toggled:', { sectionKey, isOpen: section.classList.contains('open') });
+    }
+    
+    // Toggle checklist section collapse
+    function toggleChecklistSection(element, characterName) {
+        console.log('toggleChecklistSection called:', { element, characterName });
+        element.classList.toggle('open');
+        
+        // Force reflow to ensure CSS transition triggers properly
+        const content = element.nextElementSibling;
+        if (content) {
+            void content.offsetHeight;
+        }
+        
+        // Save state to localStorage
+        const sectionKey = `wlo_prequest_checklist_${characterName}_open`;
+        localStorage.setItem(sectionKey, element.classList.contains('open'));
+        console.log('Checklist section toggled:', { sectionKey, isOpen: element.classList.contains('open') });
+    }
+    
+    // Toggle quests section collapse
+    // type can be 'prequest' or 'quest' to distinguish between pre-quests and regular quests
+    function toggleQuestsSection(element, characterName, type) {
+        console.log('toggleQuestsSection called:', { element, characterName, type });
+        element.classList.toggle('open');
+        
+        // Force reflow to ensure CSS transition triggers properly
+        const content = element.nextElementSibling;
+        if (content) {
+            void content.offsetHeight;
+        }
+        
+        // Save state to localStorage - use different keys for pre-quest vs regular quest sections
+        const prefix = type === 'prequest' ? 'wlo_prequest_quests' : 'wlo_quest_quests';
+        const sectionKey = `${prefix}_${characterName}_open`;
+        localStorage.setItem(sectionKey, element.classList.contains('open'));
+        console.log('Quests section toggled:', { sectionKey, isOpen: element.classList.contains('open') });
+    }
+    
+    // Toggle prequest checklist group collapse
+    function togglePrequestChecklistGroup(header, characterName, charName) {
+        console.log('togglePrequestChecklistGroup called:', { header, characterName, charName });
+        const group = header.closest('.prequest-checklist-group');
+        group.classList.toggle('collapsed');
+        
+        // Force reflow to ensure CSS transition triggers properly
+        const content = group.querySelector('.prequest-checklist-group-content');
+        if (content) {
+            void content.offsetHeight;
+        }
+        
+        // Save state to localStorage
+        const groupKey = `wlo_prequest_group_${characterName}_${charName}`;
+        localStorage.setItem(groupKey, group.classList.contains('collapsed'));
+        console.log('Prequest checklist group toggled:', { groupKey, isCollapsed: group.classList.contains('collapsed') });
+    }
+    
+    // Toggle quest section collapse
+    function toggleQuestSection(element, characterName, questIndex) {
+        console.log('toggleQuestSection called:', { element, characterName, questIndex });
+        // element is the header, get the parent quest-section
+        const section = element.closest('.quest-section');
+        const isOpening = !section.classList.contains('open');
+        
+        // Toggle the class on the section container, not the header
+        section.classList.toggle('open');
+        
+        // Force reflow to ensure CSS transition triggers properly
+        const content = section.querySelector('.quest-section-content');
+        if (content) {
+            void content.offsetHeight;
+        }
+        
+        // Save state to localStorage
+        const sectionKey = `wlo_quest_section_${characterName}_${questIndex}`;
+        localStorage.setItem(sectionKey, isOpening);
+        console.log('Quest section toggled:', { sectionKey, isOpening });
+    }
+    
+    // Event listeners for search and filters
+    document.addEventListener('DOMContentLoaded', async function() {
+        // Load tier data from JSON first
+        const dataLoaded = await loadTierData();
+        if (!dataLoaded) return;
+        
+        renderFilters();
+        
+        // Check for search parameter in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchParam = urlParams.get('search');
+        
+        if (searchParam) {
+            // Set search input value
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.value = decodeURIComponent(searchParam);
+            }
+            // Render with search
+            renderTierList(decodeURIComponent(searchParam).toLowerCase(), '', '', '');
+        } else {
+            renderTierList();
+        }
+        let currentElement = '';
+        let currentRole = '';
+        let currentRebirth = '';
+        let currentSearch = '';
+        const searchInput = document.getElementById('searchInput');
+        const elementFilters = document.getElementById('elementFilters');
+        const roleFilters = document.getElementById('roleFilters');
+        const rebirthFilters = document.getElementById('rebirthFilters');
+        // Search
+        searchInput.addEventListener('input', function() {
+            currentSearch = this.value.trim().toLowerCase();
+            renderTierList(currentSearch, currentElement, currentRole, currentRebirth);
+        });
+        // Element filter
+        elementFilters.addEventListener('click', function(e) {
+            if (e.target.matches('.filter-btn')) {
+                currentElement = e.target.dataset.element || '';
+                Array.from(elementFilters.children).forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                updateActiveFiltersDisplay(currentElement, currentRole, currentRebirth);
+                renderTierList(currentSearch, currentElement, currentRole, currentRebirth);
+            }
+        });
+        // Role filter
+        roleFilters.addEventListener('click', function(e) {
+            if (e.target.matches('.filter-btn')) {
+                currentRole = e.target.dataset.role || '';
+                Array.from(roleFilters.children).forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                updateActiveFiltersDisplay(currentElement, currentRole, currentRebirth);
+                renderTierList(currentSearch, currentElement, currentRole, currentRebirth);
+            }
+        });
+        // Rebirth filter
+        rebirthFilters.addEventListener('click', function(e) {
+            if (e.target.matches('.filter-btn')) {
+                currentRebirth = e.target.dataset.rebirth || '';
+                Array.from(rebirthFilters.children).forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                updateActiveFiltersDisplay(currentElement, currentRole, currentRebirth);
+                renderTierList(currentSearch, currentElement, currentRole, currentRebirth);
+            }
+        });
+        // Set default active filter buttons
+        elementFilters.querySelector('.filter-btn[data-element=""]')?.classList.add('active');
+        roleFilters.querySelector('.filter-btn[data-role=""]')?.classList.add('active');
+        rebirthFilters.querySelector('.filter-btn[data-rebirth=""]')?.classList.add('active');
+        
+        // Event delegation for quest section toggles - more reliable than inline onclick
+        document.addEventListener('click', function(e) {
+            const target = e.target;
+            
+            
+            // Handle quest-section-header clicks (individual quest sections)
+            const sectionHeader = target.closest('.quest-section-header');
+            if (sectionHeader) {
+                const characterName = currentCharacter?.name || '';
+                const section = sectionHeader.closest('.quest-section');
+                const questIndex = Array.from(section?.parentElement?.children || []).indexOf(section) || 0;
+                toggleQuestSection(sectionHeader, characterName, questIndex);
+                e.preventDefault();
+                return;
+            }
+            
+            // Handle quest-checklist-header clicks (checklist and quests section headers)
+            const checklistHeader = target.closest('.quest-checklist-header');
+            if (checklistHeader) {
+                const characterName = currentCharacter?.name || '';
+                // Check if this is a checklist section (has clipboard icon)
+                if (checklistHeader.querySelector('.fa-clipboard-check')) {
+                    // This is a checklist section
+                    toggleChecklistSection(checklistHeader, characterName);
+                }
+                // Check if this is a quests section (has scroll icon)
+                else if (checklistHeader.querySelector('.fa-scroll')) {
+                    // This is a quests section - determine type based on container
+                    const container = checklistHeader.closest('#questsContainer') ? 'quest' : 'prequest';
+                    toggleQuestsSection(checklistHeader, characterName, container);
+                }
+                e.preventDefault();
+                return;
+            }
+            
+            // Handle prequest-checklist-group-header clicks
+            const groupHeader = target.closest('.prequest-checklist-group-header');
+            if (groupHeader) {
+                const characterName = currentCharacter?.name || '';
+                const group = groupHeader.closest('.prequest-checklist-group');
+                const charName = groupHeader.querySelector('.text-wlPurple')?.textContent || '';
+                togglePrequestChecklistGroup(groupHeader, characterName, charName);
+                e.preventDefault();
+                return;
+            }
+            
+            // Handle prequest-character-header clicks
+            const prequestCharacterHeader = target.closest('.prequest-character-header');
+            if (prequestCharacterHeader) {
+                const characterName = currentCharacter?.name || '';
+                const section = prequestCharacterHeader.closest('.prequest-character-section');
+                const charName = prequestCharacterHeader.querySelector('.prequest-character-name')?.textContent || '';
+                togglePrequestSection(prequestCharacterHeader, characterName, charName);
+                e.preventDefault();
+                return;
+            }
+        });
+    });
+    
+    // Get character by name
+    function getCurrentCharacter(characterName) {
+        for (const tier of tierData) {
+            for (const char of tier.characters) {
+                if (char.name === characterName) {
+                    return char;
+                }
+            }
+        }
+        return null;
+    }
+    
+    // Lightbox functions
+    let currentQuestImages = [];
+    let currentImageIndex = 0;
+    let currentImageSetKey = '';
+    const imageSets = {};
+    
+    function openLightbox(imageSrc, imageSetKey = '', index = 0) {
+        const lightbox = document.getElementById('questLightbox');
+        const lightboxImg = document.getElementById('lightboxImage');
+        const counter = document.getElementById('lightboxCounter');
+        const prevBtn = document.querySelector('.quest-lightbox-prev');
+        const nextBtn = document.querySelector('.quest-lightbox-next');
+        
+        // Get images from the stored image sets
+        if (imageSetKey && imageSets[imageSetKey]) {
+            currentQuestImages = imageSets[imageSetKey];
+            currentImageIndex = index;
+        } else {
+            // Single image mode
+            currentQuestImages = [imageSrc];
+            currentImageIndex = 0;
+        }
+        
+        lightboxImg.src = imageSrc;
+        lightbox.classList.add('active');
+        
+        // Show/hide navigation based on number of images
+        if (currentQuestImages.length > 1) {
+            counter.classList.remove('hidden');
+            prevBtn.classList.remove('hidden');
+            nextBtn.classList.remove('hidden');
+            counter.textContent = `${currentImageIndex + 1} / ${currentQuestImages.length}`;
+        } else {
+            counter.classList.add('hidden');
+            prevBtn.classList.add('hidden');
+            nextBtn.classList.add('hidden');
+        }
+    }
+    
+    function navigateLightbox(direction) {
+        if (currentQuestImages.length === 0) return;
+        
+        currentImageIndex += direction;
+        
+        // Wrap around
+        if (currentImageIndex < 0) {
+            currentImageIndex = currentQuestImages.length - 1;
+        } else if (currentImageIndex >= currentQuestImages.length) {
+            currentImageIndex = 0;
+        }
+        
+        const lightboxImg = document.getElementById('lightboxImage');
+        const counter = document.getElementById('lightboxCounter');
+        
+        lightboxImg.src = currentQuestImages[currentImageIndex];
+        counter.textContent = `${currentImageIndex + 1} / ${currentQuestImages.length}`;
+    }
+    
+    function closeLightbox() {
+        const lightbox = document.getElementById('questLightbox');
+        lightbox.classList.remove('active');
+        currentQuestImages = [];
+        currentImageIndex = 0;
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        const lightbox = document.getElementById('questLightbox');
+        if (!lightbox.classList.contains('active')) return;
+        
+        if (e.key === 'ArrowLeft') {
+            navigateLightbox(-1);
+        } else if (e.key === 'ArrowRight') {
+            navigateLightbox(1);
+        } else if (e.key === 'Escape') {
+            closeLightbox();
+        }
+    });
+    
+    // Filter panel toggle
+    function toggleFilterPanel() {
+        const filterPanel = document.getElementById('filterPanel');
+        const filterToggleBtn = document.getElementById('filterToggleBtn');
+        filterPanel.classList.toggle('open');
+        filterToggleBtn.classList.toggle('open');
+    }
+    
+    // Update active filters display
+    function updateActiveFiltersDisplay(element, role, rebirth) {
+        const display = document.getElementById('activeFiltersDisplay');
+        let tags = [];
+        
+        if (element) {
+            tags.push(`<span class="active-filter-tag"><i class="fas fa-fire text-wlRed"></i>${element}<button onclick="clearFilter('element')"><i class="fas fa-times"></i></button></span>`);
+        }
+        if (role) {
+            tags.push(`<span class="active-filter-tag"><i class="fas fa-user text-wlBlue"></i>${role}<button onclick="clearFilter('role')"><i class="fas fa-times"></i></button></span>`);
+        }
+        if (rebirth) {
+            const rebirthLabel = rebirth === 'rebirth' ? 'Rebirth Only' : 'Non-Rebirth';
+            tags.push(`<span class="active-filter-tag"><i class="fas fa-sync-alt text-amber-400"></i>${rebirthLabel}<button onclick="clearFilter('rebirth')"><i class="fas fa-times"></i></button></span>`);
+        }
+        
+        if (tags.length > 0) {
+            display.innerHTML = tags.join('');
+            display.style.display = 'flex';
+        } else {
+            display.style.display = 'none';
+        }
+    }
+    
+    // Clear individual filter
+    function clearFilter(type) {
+        if (type === 'element') {
+            const elementFilters = document.getElementById('elementFilters');
+            const allBtn = elementFilters.querySelector('.filter-btn[data-element=""]');
+            allBtn.click();
+        } else if (type === 'role') {
+            const roleFilters = document.getElementById('roleFilters');
+            const allBtn = roleFilters.querySelector('.filter-btn[data-role=""]');
+            allBtn.click();
+        } else if (type === 'rebirth') {
+            const rebirthFilters = document.getElementById('rebirthFilters');
+            const allBtn = rebirthFilters.querySelector('.filter-btn[data-rebirth=""]');
+            allBtn.click();
+        }
+    }
+    
+    // Close modal on overlay click
+    document.getElementById('characterModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeModal();
+        }
+    });
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const modal = document.getElementById('characterModal');
+            if (modal.classList.contains('active')) {
+                closeModal();
+            }
+        }
+    });
+
+    // Event delegation for checklist items
+    document.addEventListener('click', function(e) {
+        const checkItem = e.target.closest('.quest-check-item[data-character]');
+        if (checkItem) {
+            e.stopPropagation();
+            e.preventDefault();
+            const characterName = checkItem.dataset.character;
+            const questIndex = parseInt(checkItem.dataset.index);
+            const questType = checkItem.dataset.questType; // 'quest' or 'prequest'
+            
+            console.log('Checklist item clicked:', { characterName, questIndex, questType });
+            
+            // Determine the correct key and function based on quest type
+            const isPrequest = questType === 'prequest';
+            const checklistKey = isPrequest ? `wlo_prequest_checklist_${characterName}` : `wlo_quest_checklist_${characterName}`;
+            const checkId = isPrequest ? `prequest_${characterName}_${questIndex}` : `quest_${characterName}_${questIndex}`;
+            
+            const completedItems = JSON.parse(localStorage.getItem(checklistKey) || '[]');
+            
+            const idx = completedItems.indexOf(checkId);
+            if (idx > -1) {
+                completedItems.splice(idx, 1);
+            } else {
+                completedItems.push(checkId);
+            }
+            
+            localStorage.setItem(checklistKey, JSON.stringify(completedItems));
+            checkItem.classList.toggle('completed');
+            
+            // Call the correct update function based on quest type
+            if (isPrequest) {
+                updatePrequestChecklistStats(characterName);
+            } else {
+                updateQuestChecklistStats(characterName);
+            }
+            console.log('Checklist updated:', { checklistKey, checkId, completedItems: completedItems.length });
+        }
+    });
+    </script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('light');
+            themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('light');
+            const icon = themeToggle.querySelector('i');
+            
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>

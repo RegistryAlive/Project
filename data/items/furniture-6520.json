@@ -1,0 +1,15 @@
+{
+  "id": 6520,
+  "name": "Chinese stool",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Traditionally shaped Chinese-style low stool, round shape has the meaning of reunion",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6520.png",
+  "file": "furniture-6520.json"
+}

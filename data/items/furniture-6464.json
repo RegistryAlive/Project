@@ -1,0 +1,15 @@
+{
+  "id": 6464,
+  "name": "Snowy Tile",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Water (Type 2)",
+  "description": "Decorative floor tiles",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6464.png",
+  "file": "furniture-6464.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6584,
+  "name": "Pumpkin chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Many pumpkins are decorated with modeling chairs beside it, full of Halloween atmosphere",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6584.png",
+  "file": "furniture-6584.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 493,
+  "name": "Poisonous Spider",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-493.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Milk Tea",
+      "itemId": 7232,
+      "itemFile": "material-7232.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 119,
+    "hp": 723,
+    "sp": 638,
+    "catchable": "No",
+    "spd": 262.5,
+    "str": 32,
+    "con": 34,
+    "int": 36,
+    "wis": 33,
+    "agi": 42
+  }
+}

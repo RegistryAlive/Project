@@ -1,0 +1,15 @@
+{
+  "id": 6449,
+  "name": "Sunflower Plants",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A pot full of sunflowers",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6449.png",
+  "file": "furniture-6449.json"
+}

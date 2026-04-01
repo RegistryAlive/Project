@@ -1,0 +1,17 @@
+{
+  "id": 820,
+  "name": "Bloody scrolls",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Covered in blood horror magic book",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 17
+  },
+  "image": "data/images/weapon-820.png",
+  "file": "weapon-820.json"
+}

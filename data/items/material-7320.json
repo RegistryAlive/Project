@@ -1,0 +1,17 @@
+{
+  "id": 7320,
+  "name": "Energy Soup",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 32,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Nourishment for the PvP server",
+  "size": "1x1",
+  "attributes": {
+    "HP": 2000
+  },
+  "image": "data/images/material-7320.png",
+  "file": "material-7320.json"
+}

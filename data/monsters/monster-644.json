@@ -1,0 +1,27 @@
+{
+  "id": 644,
+  "name": "Darkness Niss",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-644.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 8800,
+    "sp": 1985,
+    "catchable": "Unknown",
+    "spd": 276,
+    "str": 36,
+    "con": 36,
+    "int": 120,
+    "wis": 120,
+    "agi": 48
+  }
+}

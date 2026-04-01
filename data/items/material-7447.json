@@ -1,0 +1,17 @@
+{
+  "id": 7447,
+  "name": "Cantaloupe",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "HP": 20
+  },
+  "image": "data/images/material-7447.png",
+  "file": "material-7447.json"
+}

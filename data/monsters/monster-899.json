@@ -1,0 +1,27 @@
+{
+  "id": 899,
+  "name": "Shasha",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-899.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 35,
+    "hp": 207,
+    "sp": 395,
+    "catchable": "Unknown",
+    "spd": 86.5,
+    "str": 14,
+    "con": 13,
+    "int": 30,
+    "wis": 31,
+    "agi": 17
+  }
+}

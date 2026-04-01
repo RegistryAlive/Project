@@ -1,0 +1,15 @@
+{
+  "id": 6156,
+  "name": "Cabin of Steam Ship",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Leisure cabin of a steam ship",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6156.png",
+  "file": "furniture-6156.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 537,
+  "name": "Magic Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Steel / Titanium / Wood",
+  "description": "Complete suit effect: resist 50% to seal.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20
+  },
+  "image": "data/images/weapon-537.png",
+  "file": "weapon-537.json"
+}

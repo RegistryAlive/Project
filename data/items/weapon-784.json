@@ -1,0 +1,15 @@
+{
+  "id": 784,
+  "name": "Bliss Bouquet",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "Unique item special for White Day",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-784.png",
+  "file": "weapon-784.json"
+}

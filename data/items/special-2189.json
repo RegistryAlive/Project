@@ -1,0 +1,15 @@
+{
+  "id": 2189,
+  "name": "Escape Cuffs",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "N/A",
+  "description": "Cuffs that increase the wearer's chance to escape.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2189.png",
+  "file": "special-2189.json"
+}

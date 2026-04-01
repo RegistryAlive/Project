@@ -1,0 +1,17 @@
+{
+  "id": 44,
+  "name": "Blue Drag Swor",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 50,
+  "level": 100,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A cyan double dragon sword",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 100
+  },
+  "image": "data/images/weapon-44.png",
+  "file": "weapon-44.json"
+}

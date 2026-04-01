@@ -1,0 +1,15 @@
+{
+  "id": 6144,
+  "name": "Bearing",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Fixes structures, helps to transmit power",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6144.png",
+  "file": "furniture-6144.json"
+}

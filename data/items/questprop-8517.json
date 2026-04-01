@@ -1,0 +1,15 @@
+{
+  "id": 8517,
+  "name": "Bunny Girl Tix",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that will make Rabbit a partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8517.png",
+  "file": "questprop-8517.json"
+}

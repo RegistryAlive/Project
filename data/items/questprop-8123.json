@@ -1,0 +1,15 @@
+{
+  "id": 8123,
+  "name": "Gun Design",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It looks like a gun plan,but it is very complex",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8123.png",
+  "file": "questprop-8123.json"
+}

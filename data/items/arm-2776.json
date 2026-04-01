@@ -1,0 +1,17 @@
+{
+  "id": 2776,
+  "name": "Wooden Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Wood",
+  "description": "Cuffs which are cut from wood",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 5
+  },
+  "image": "data/images/arm-2776.png",
+  "file": "arm-2776.json"
+}

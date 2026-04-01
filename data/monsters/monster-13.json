@@ -1,0 +1,45 @@
+{
+  "id": 13,
+  "name": "Rock Monster (Quest)",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-13.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Galena",
+      "itemId": 7576,
+      "itemFile": "material-7576.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Common Stone",
+      "itemId": 7630,
+      "itemFile": "material-7630.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grey Clay",
+      "itemId": 7645,
+      "itemFile": "material-7645.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Silvery",
+      "itemId": 7602,
+      "itemFile": "material-7602.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 42,
+    "hp": 1600,
+    "sp": 288,
+    "catchable": "No",
+    "spd": 121,
+    "str": 31,
+    "con": 30,
+    "int": 16,
+    "wis": 20,
+    "agi": 29
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7841,
+  "name": "Mineral Water",
+  "type": "MaterialWater",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 2)",
+  "description": "Mineral water, can be drank",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7841.png",
+  "file": "material-7841.json"
+}

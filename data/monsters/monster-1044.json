@@ -1,0 +1,39 @@
+{
+  "id": 1044,
+  "name": "Michelangelo",
+  "location": "Turtle Isle",
+  "image": "data/Monster_Images/monster-1045.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 113,
+    "hp": 1195,
+    "sp": 1295,
+    "catchable": "Unknown",
+    "spd": 229.5,
+    "str": 78,
+    "con": 84,
+    "int": 70,
+    "wis": 77,
+    "agi": 30
+  }
+}

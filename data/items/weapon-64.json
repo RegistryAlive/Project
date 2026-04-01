@@ -1,0 +1,18 @@
+{
+  "id": 64,
+  "name": "Bloody War Swo",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Enhanced sword for the Roman Soldier. Cannot be repaired.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 65,
+    "DEF": 15
+  },
+  "image": "data/images/weapon-64.png",
+  "file": "weapon-64.json"
+}

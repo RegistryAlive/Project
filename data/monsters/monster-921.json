@@ -1,0 +1,27 @@
+{
+  "id": 921,
+  "name": "Spider",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-921.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 20,
+    "hp": 147,
+    "sp": 148,
+    "catchable": "Unknown",
+    "spd": 54,
+    "str": 12,
+    "con": 12,
+    "int": 12,
+    "wis": 12,
+    "agi": 12
+  }
+}

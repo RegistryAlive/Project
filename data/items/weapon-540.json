@@ -1,0 +1,18 @@
+{
+  "id": 540,
+  "name": "Pure Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Tin / Corundum",
+  "description": "A rabbi's wand embeded with a pure tin magic gem.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 38,
+    "MDEF": 16
+  },
+  "image": "data/images/weapon-540.png",
+  "file": "weapon-540.json"
+}

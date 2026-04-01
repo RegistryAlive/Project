@@ -1,0 +1,15 @@
+{
+  "id": 7802,
+  "name": "Bear King Claw",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Hard Tissue",
+  "description": "A Big claw of a bear king",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7802.png",
+  "file": "material-7802.json"
+}

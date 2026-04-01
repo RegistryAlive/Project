@@ -1,0 +1,18 @@
+{
+  "id": 531,
+  "name": "Wing Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Silver / Jade",
+  "description": "A wind sculpted wand with a magic gem embeded.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 32,
+    "DEF": 20
+  },
+  "image": "data/images/weapon-531.png",
+  "file": "weapon-531.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 786,
+  "name": "Jailer",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-786.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 25,
+    "hp": 264,
+    "sp": 500,
+    "catchable": "Unknown",
+    "spd": 61.5,
+    "str": 25,
+    "con": 25,
+    "int": 8,
+    "wis": 5,
+    "agi": 12
+  }
+}

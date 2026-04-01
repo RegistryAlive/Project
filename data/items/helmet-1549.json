@@ -1,0 +1,18 @@
+{
+  "id": 1549,
+  "name": "Purple Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Pure Iron / Iron",
+  "description": "Refined from hematite ore. Adds a little to MDEF",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 14,
+    "MDEF": 10
+  },
+  "image": "data/images/helmet-1549.png",
+  "file": "helmet-1549.json"
+}

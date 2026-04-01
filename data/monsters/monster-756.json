@@ -1,0 +1,27 @@
+{
+  "id": 756,
+  "name": "Holy Griffin (Quest)",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-756.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 106,
+    "hp": 2480,
+    "sp": 924,
+    "catchable": "Unknown",
+    "spd": 313,
+    "str": 73,
+    "con": 65,
+    "int": 49,
+    "wis": 54,
+    "agi": 77
+  }
+}

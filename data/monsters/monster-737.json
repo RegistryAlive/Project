@@ -1,0 +1,27 @@
+{
+  "id": 737,
+  "name": "Half Beast Ghost",
+  "location": "Ghost Isle",
+  "image": "data/Monster_Images/monster-737.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1080,
+    "sp": 875,
+    "catchable": "Unknown",
+    "spd": 229,
+    "str": 56,
+    "con": 54,
+    "int": 50,
+    "wis": 54,
+    "agi": 47
+  }
+}

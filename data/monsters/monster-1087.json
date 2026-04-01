@@ -1,0 +1,45 @@
+{
+  "id": 1087,
+  "name": "Forest Spirit",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-1088.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mango Seed",
+      "itemId": 7384,
+      "itemFile": "material-7384.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Straw Mushroom",
+      "itemId": 7399,
+      "itemFile": "material-7399.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 106,
+    "hp": 1193,
+    "sp": 1014,
+    "catchable": "Yes",
+    "spd": 269,
+    "str": 65,
+    "con": 86,
+    "int": 52,
+    "wis": 60,
+    "agi": 55
+  }
+}

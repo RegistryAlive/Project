@@ -1,0 +1,27 @@
+{
+  "id": 672,
+  "name": "Eagle",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-672.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 2131,
+    "sp": 1537,
+    "catchable": "Unknown",
+    "spd": 403,
+    "str": 87,
+    "con": 106,
+    "int": 84,
+    "wis": 84,
+    "agi": 89
+  }
+}

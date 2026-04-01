@@ -1,0 +1,18 @@
+{
+  "id": 1081,
+  "name": "Red Qi Pao",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "Dyed crimson from animal blood it has magic power.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 8,
+    "SPD": 5
+  },
+  "image": "data/images/armor-1081.png",
+  "file": "armor-1081.json"
+}

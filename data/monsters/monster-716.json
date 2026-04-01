@@ -1,0 +1,27 @@
+{
+  "id": 716,
+  "name": "Girl",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-716.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 36,
+    "hp": 206,
+    "sp": 376,
+    "catchable": "Unknown",
+    "spd": 102,
+    "str": 13,
+    "con": 15,
+    "int": 27,
+    "wis": 29,
+    "agi": 24
+  }
+}

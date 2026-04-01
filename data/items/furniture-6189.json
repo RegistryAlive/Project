@@ -1,0 +1,15 @@
+{
+  "id": 6189,
+  "name": "Delicate Emerald",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Corundum",
+  "description": "A Special manufactured emerald",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6189.png",
+  "file": "furniture-6189.json"
+}

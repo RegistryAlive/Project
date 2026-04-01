@@ -1,0 +1,33 @@
+{
+  "id": 143,
+  "name": "Slow-witted Buffalo",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-143.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 866,
+    "sp": 802,
+    "catchable": "Unknown",
+    "spd": 207.5,
+    "str": 55,
+    "con": 65,
+    "int": 45,
+    "wis": 50,
+    "agi": 40
+  }
+}

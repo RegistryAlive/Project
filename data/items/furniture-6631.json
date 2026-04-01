@@ -1,0 +1,15 @@
+{
+  "id": 6631,
+  "name": "Egg Balloon",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "colorful egg-shaped balloons",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6631.png",
+  "file": "furniture-6631.json"
+}

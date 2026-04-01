@@ -1,0 +1,17 @@
+{
+  "id": 717,
+  "name": "Burning Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Created by a master blacksmith, the ax of Zhu Rong the god of fire.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 67
+  },
+  "image": "data/images/weapon-717.png",
+  "file": "weapon-717.json"
+}

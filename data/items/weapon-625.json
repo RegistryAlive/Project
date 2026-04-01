@@ -1,0 +1,18 @@
+{
+  "id": 625,
+  "name": "Red Lantern",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Warm red lanterns that lights up the festive atmosphere.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 6,
+    "MATK": 6
+  },
+  "image": "data/images/weapon-625.png",
+  "file": "weapon-625.json"
+}

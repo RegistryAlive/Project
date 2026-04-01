@@ -1,0 +1,33 @@
+{
+  "id": 151,
+  "name": "Advanced Guard",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-151.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Bread",
+      "itemId": 7010,
+      "itemFile": "material-7010.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "French Bread",
+      "itemId": 7015,
+      "itemFile": "material-7015.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 76,
+    "hp": 655,
+    "sp": 457,
+    "catchable": "Unknown",
+    "spd": 204,
+    "str": 50,
+    "con": 49,
+    "int": 29,
+    "wis": 27,
+    "agi": 45
+  }
+}

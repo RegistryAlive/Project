@@ -1,0 +1,15 @@
+{
+  "id": 1634,
+  "name": "Pure Lov. Veil",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pure Lover's Veil.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1634.png",
+  "file": "helmet-1634.json"
+}

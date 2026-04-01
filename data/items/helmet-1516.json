@@ -1,0 +1,18 @@
+{
+  "id": 1516,
+  "name": "Christmas Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A specific-shaped santa hat",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 5,
+    "MDEF": 5
+  },
+  "image": "data/images/helmet-1516.png",
+  "file": "helmet-1516.json"
+}

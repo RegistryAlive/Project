@@ -1,0 +1,17 @@
+{
+  "id": 1564,
+  "name": "Sunglow Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Aluminum / Steel",
+  "description": "Increases DEF when equipped",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30
+  },
+  "image": "data/images/helmet-1564.png",
+  "file": "helmet-1564.json"
+}

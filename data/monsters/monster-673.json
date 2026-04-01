@@ -1,0 +1,27 @@
+{
+  "id": 673,
+  "name": "Earth Evil Spirit",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-673.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 58,
+    "hp": 465,
+    "sp": 517,
+    "catchable": "Unknown",
+    "spd": 167,
+    "str": 30,
+    "con": 29,
+    "int": 40,
+    "wis": 35,
+    "agi": 40
+  }
+}

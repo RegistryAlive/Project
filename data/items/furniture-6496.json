@@ -1,0 +1,15 @@
+{
+  "id": 6496,
+  "name": "Ea. Egg Basket",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Basket full of Easter Eggs.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6496.png",
+  "file": "furniture-6496.json"
+}

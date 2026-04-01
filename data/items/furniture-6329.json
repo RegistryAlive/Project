@@ -1,0 +1,15 @@
+{
+  "id": 6329,
+  "name": "Shelf",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "used to hold items",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6329.png",
+  "file": "furniture-6329.json"
+}

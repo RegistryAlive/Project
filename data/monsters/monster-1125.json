@@ -1,0 +1,39 @@
+{
+  "id": 1125,
+  "name": "Shaking Mammoth",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-1126.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Maize",
+      "itemId": 7431,
+      "itemFile": "material-7431.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ivory",
+      "itemId": 7805,
+      "itemFile": "material-7805.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 94,
+    "hp": 1239,
+    "sp": 829,
+    "catchable": "Yes",
+    "spd": 251,
+    "str": 59,
+    "con": 72,
+    "int": 46,
+    "wis": 50,
+    "agi": 55
+  }
+}

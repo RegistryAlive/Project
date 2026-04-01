@@ -1,0 +1,51 @@
+{
+  "id": 83,
+  "name": "Irrigated Chicken",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-83.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Barley",
+      "itemId": 7401,
+      "itemFile": "material-7401.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Rice",
+      "itemId": 7403,
+      "itemFile": "material-7403.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Egg",
+      "itemId": 7502,
+      "itemFile": "material-7502.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Feather",
+      "itemId": 7659,
+      "itemFile": "material-7659.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 12,
+    "hp": 81,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 34,
+    "str": 6,
+    "con": 5,
+    "int": 10,
+    "wis": 7,
+    "agi": 8
+  }
+}

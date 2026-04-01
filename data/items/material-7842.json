@@ -1,0 +1,15 @@
+{
+  "id": 7842,
+  "name": "Pure Water",
+  "type": "MaterialWater",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 2)",
+  "description": "Pure water, can be drunk",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7842.png",
+  "file": "material-7842.json"
+}

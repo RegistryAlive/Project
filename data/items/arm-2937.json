@@ -1,0 +1,18 @@
+{
+  "id": 2937,
+  "name": "PinkKitten Paw",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The handprints of kittens passing by are super cute! Slightly increased damage when hit (will disappear if you change the bracelet's shape).",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "ATK": 20
+  },
+  "image": "data/images/arm-2937.png",
+  "file": "arm-2937.json"
+}

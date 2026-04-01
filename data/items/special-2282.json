@@ -1,0 +1,17 @@
+{
+  "id": 2282,
+  "name": "Light Waistban",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A very light waistband made from sepcial material.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 60
+  },
+  "image": "data/images/special-2282.png",
+  "file": "special-2282.json"
+}

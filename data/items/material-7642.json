@@ -1,0 +1,15 @@
+{
+  "id": 7642,
+  "name": "Black Clay",
+  "type": "MaterialClay",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Black Clay",
+  "description": "Used for making a furnace",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7642.png",
+  "file": "material-7642.json"
+}

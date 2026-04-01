@@ -1,0 +1,17 @@
+{
+  "id": 986,
+  "name": "White Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Iron / Platinum / Leather",
+  "description": "Armor which is refined from platinum.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 35
+  },
+  "image": "data/images/armor-986.png",
+  "file": "armor-986.json"
+}

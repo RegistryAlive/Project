@@ -1,0 +1,17 @@
+{
+  "id": 2070,
+  "name": "Defence Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Iron / Silver",
+  "description": "A medal which can enhance defending",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 36
+  },
+  "image": "data/images/special-2070.png",
+  "file": "special-2070.json"
+}

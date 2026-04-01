@@ -1,0 +1,17 @@
+{
+  "id": 7346,
+  "name": "Replaceable",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A mysterious potion made from souls is the raw material used to make Collector's Artifacts of Other Colours.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 200
+  },
+  "image": "data/images/material-7346.png",
+  "file": "material-7346.json"
+}

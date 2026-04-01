@@ -1,0 +1,45 @@
+{
+  "id": 1127,
+  "name": "Burning Caterpillar",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1128.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Leek",
+      "itemId": 7410,
+      "itemFile": "material-7410.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Garlic",
+      "itemId": 7417,
+      "itemFile": "material-7417.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Small Cucumber",
+      "itemId": 7425,
+      "itemFile": "material-7425.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 43,
+    "hp": 436,
+    "sp": 338,
+    "catchable": "No",
+    "spd": 104.5,
+    "str": 24,
+    "con": 31,
+    "int": 30,
+    "wis": 24,
+    "agi": 20
+  }
+}

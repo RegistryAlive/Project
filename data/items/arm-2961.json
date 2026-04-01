@@ -1,0 +1,18 @@
+{
+  "id": 2961,
+  "name": "Volcano Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Spirit in the hand. Set effect bonus.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "MATK": 20
+  },
+  "image": "data/images/arm-2961.png",
+  "file": "arm-2961.json"
+}

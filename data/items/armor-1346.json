@@ -1,0 +1,17 @@
+{
+  "id": 1346,
+  "name": "Rich Cheongsam",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A favorite dress of the rich in ancient China, with a dignified and elegant style. For every +1 forged, MaxHP is increased by +2, up to a maximum of 200.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 300
+  },
+  "image": "data/images/armor-1346.png",
+  "file": "armor-1346.json"
+}

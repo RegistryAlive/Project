@@ -1,0 +1,18 @@
+{
+  "id": 7172,
+  "name": "Pork Bone Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 24,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Best bone soup with fine noodles,HP+800,SP+400.Can be traded",
+  "size": "1x1",
+  "attributes": {
+    "HP": 800,
+    "SP": 400
+  },
+  "image": "data/images/material-7172.png",
+  "file": "material-7172.json"
+}

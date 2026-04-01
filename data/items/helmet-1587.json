@@ -1,0 +1,18 @@
+{
+  "id": 1587,
+  "name": "Grass Headwear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leaf / Feather",
+  "description": "Made with grass and feathers",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "DEF": 5
+  },
+  "image": "data/images/helmet-1587.png",
+  "file": "helmet-1587.json"
+}

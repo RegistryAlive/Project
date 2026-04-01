@@ -1,0 +1,18 @@
+{
+  "id": 132,
+  "name": "I.Demon Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword made of iron, blessed by the servant of god.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 29,
+    "SPD": 29
+  },
+  "image": "data/images/weapon-132.png",
+  "file": "weapon-132.json"
+}

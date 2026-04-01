@@ -1,0 +1,17 @@
+{
+  "id": 7398,
+  "name": "Gyrophora",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Herbal Medicine",
+  "description": "Made in arbor and can be used as medicine.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 120
+  },
+  "image": "data/images/material-7398.png",
+  "file": "material-7398.json"
+}

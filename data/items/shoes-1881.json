@@ -1,0 +1,18 @@
+{
+  "id": 1881,
+  "name": "Flax Green Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Leaf / Leather",
+  "description": "Thick light boots made from green hemp.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 24,
+    "SPD": 8
+  },
+  "image": "data/images/shoes-1881.png",
+  "file": "shoes-1881.json"
+}

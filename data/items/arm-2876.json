@@ -1,0 +1,18 @@
+{
+  "id": 2876,
+  "name": "Beaded Wristband",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Iron / Steel",
+  "description": "Ornamental wear made of high grade steel",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 32,
+    "SPD": 2
+  },
+  "image": "data/images/arm-2876.png",
+  "file": "arm-2876.json"
+}

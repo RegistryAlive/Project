@@ -1,0 +1,18 @@
+{
+  "id": 2897,
+  "name": "Demonia Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Magic / Leaf / Nylon",
+  "description": "This pair of gloves were once worn by the most horrendous demon.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20,
+    "SPD": 15
+  },
+  "image": "data/images/arm-2897.png",
+  "file": "arm-2897.json"
+}

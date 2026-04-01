@@ -1,0 +1,17 @@
+{
+  "id": 7179,
+  "name": "Ginseng Thick Soup",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 17,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish / Vegetable / Egg",
+  "description": "Thick Soup of ginseng, gyrophora and chicken",
+  "size": "1x1",
+  "attributes": {
+    "SP": 850
+  },
+  "image": "data/images/material-7179.png",
+  "file": "material-7179.json"
+}

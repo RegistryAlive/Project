@@ -1,0 +1,18 @@
+{
+  "id": 1298,
+  "name": "Ghost clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clothes dyed with ghosts. When using swords and muskets, attack damage +3%",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 24,
+    "MATK": 24
+  },
+  "image": "data/images/armor-1298.png",
+  "file": "armor-1298.json"
+}

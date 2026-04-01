@@ -1,0 +1,18 @@
+{
+  "id": 744,
+  "name": "Big Lauan Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Wood",
+  "description": "It is made of Lauan and is bigger than normal.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 5,
+    "DEF": 7
+  },
+  "image": "data/images/weapon-744.png",
+  "file": "weapon-744.json"
+}

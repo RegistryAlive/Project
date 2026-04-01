@@ -1,0 +1,15 @@
+{
+  "id": 6661,
+  "name": "Coral reef Dec",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Bright red and pink coral reef ornaments",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6661.png",
+  "file": "furniture-6661.json"
+}

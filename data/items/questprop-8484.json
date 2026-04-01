@@ -1,0 +1,15 @@
+{
+  "id": 8484,
+  "name": "War A Uni.vouc",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A voucher to exchange for a War Armor Unicorn.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8484.png",
+  "file": "questprop-8484.json"
+}

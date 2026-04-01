@@ -1,0 +1,33 @@
+{
+  "id": 211,
+  "name": "Typhoon Dragon",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-211.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Fugu Hot Pot",
+      "itemId": 7175,
+      "itemFile": "material-7175.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 653,
+    "sp": 464,
+    "catchable": "Unknown",
+    "spd": 224,
+    "str": 30,
+    "con": 33,
+    "int": 25,
+    "wis": 24,
+    "agi": 37
+  }
+}

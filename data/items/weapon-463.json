@@ -1,0 +1,18 @@
+{
+  "id": 463,
+  "name": "Mage's Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Wood",
+  "description": "An advanced law wand used by a mage.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 3,
+    "MDEF": 3
+  },
+  "image": "data/images/weapon-463.png",
+  "file": "weapon-463.json"
+}

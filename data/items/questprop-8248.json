@@ -1,0 +1,15 @@
+{
+  "id": 8248,
+  "name": "Magic Potion",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Bald people love this. It's used to make hair grow.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8248.png",
+  "file": "questprop-8248.json"
+}

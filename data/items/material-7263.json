@@ -1,0 +1,18 @@
+{
+  "id": 7263,
+  "name": "Sliced Goose",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Meat",
+  "description": "Roasted goose meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 160,
+    "SP": 60
+  },
+  "image": "data/images/material-7263.png",
+  "file": "material-7263.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 1366,
+  "name": "F-White Day Suit (2)",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Found in doala",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1366.png",
+  "file": "armor-1366.json"
+}

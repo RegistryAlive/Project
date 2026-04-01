@@ -1,0 +1,15 @@
+{
+  "id": 7383,
+  "name": "Golded Hemp",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Grass",
+  "description": "Rare golden grass",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7383.png",
+  "file": "material-7383.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 727,
+  "name": "Guard",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-727.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 96,
+    "hp": 1405,
+    "sp": 500,
+    "catchable": "Unknown",
+    "spd": 268,
+    "str": 90,
+    "con": 82,
+    "int": 27,
+    "wis": 27,
+    "agi": 62
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6648,
+  "name": "S.Resting Tree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Take a nap under the blooming cherry trees",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6648.png",
+  "file": "furniture-6648.json"
+}

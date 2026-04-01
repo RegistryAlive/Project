@@ -1,0 +1,45 @@
+{
+  "id": 278,
+  "name": "Du Ginseng Monster",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-278.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Ginseng",
+      "itemId": 7396,
+      "itemFile": "material-7396.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Small Ginseng",
+      "itemId": 7397,
+      "itemFile": "material-7397.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gyrophora",
+      "itemId": 7398,
+      "itemFile": "material-7398.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Great Ginseng",
+      "itemId": 7174,
+      "itemFile": "material-7174.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 83,
+    "hp": 853,
+    "sp": 753,
+    "catchable": "Unknown",
+    "spd": 224.5,
+    "str": 55,
+    "con": 50,
+    "int": 47,
+    "wis": 47,
+    "agi": 50
+  }
+}

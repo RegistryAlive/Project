@@ -1,0 +1,18 @@
+{
+  "id": 2605,
+  "name": "Swift Source",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Armlet increasing agility and used by a pet man.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 55,
+    "MaxHP": 600
+  },
+  "image": "data/images/special-2605.png",
+  "file": "special-2605.json"
+}

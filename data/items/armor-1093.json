@@ -1,0 +1,18 @@
+{
+  "id": 1093,
+  "name": "Red Woolen Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "One-piece clothes made of hairs and flower fibres.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 13,
+    "DEF": 12
+  },
+  "image": "data/images/armor-1093.png",
+  "file": "armor-1093.json"
+}

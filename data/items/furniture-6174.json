@@ -1,0 +1,15 @@
+{
+  "id": 6174,
+  "name": "Resistance",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Blocks current and heat",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6174.png",
+  "file": "furniture-6174.json"
+}

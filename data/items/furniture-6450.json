@@ -1,0 +1,15 @@
+{
+  "id": 6450,
+  "name": "Medicine Case",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A case used to store various capsules and pills",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6450.png",
+  "file": "furniture-6450.json"
+}

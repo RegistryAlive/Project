@@ -1,0 +1,18 @@
+{
+  "id": 7249,
+  "name": "Spicy Celery",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Fried Celery with beauty function",
+  "size": "1x1",
+  "attributes": {
+    "HP": 90,
+    "SP": 20
+  },
+  "image": "data/images/material-7249.png",
+  "file": "material-7249.json"
+}

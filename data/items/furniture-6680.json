@@ -1,0 +1,15 @@
+{
+  "id": 6680,
+  "name": "Horror Stereo",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The deluxe sound combination that emits a scary atmosphere. You can change the music in the tent",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6680.png",
+  "file": "furniture-6680.json"
+}

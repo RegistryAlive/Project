@@ -1,0 +1,27 @@
+{
+  "id": 607,
+  "name": "Bosun (Quest)",
+  "location": "Cook's Fleet",
+  "image": "data/Monster_Images/monster-607.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 1286,
+    "sp": 788,
+    "catchable": "Unknown",
+    "spd": 276,
+    "str": 74,
+    "con": 73,
+    "int": 44,
+    "wis": 46,
+    "agi": 63
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 881,
+  "name": "Sailor (Quest)",
+  "location": "Cook's Fleet",
+  "image": "data/Monster_Images/monster-881.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 95,
+    "hp": 1104,
+    "sp": 774,
+    "catchable": "Unknown",
+    "spd": 272.5,
+    "str": 68,
+    "con": 63,
+    "int": 43,
+    "wis": 46,
+    "agi": 65
+  }
+}

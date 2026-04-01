@@ -1,0 +1,15 @@
+{
+  "id": 6227,
+  "name": "Manual Blender",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can churn up some chemistry items.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6227.png",
+  "file": "furniture-6227.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 134,
+  "name": "Evil Wind Scopion",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-134.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 82,
+    "hp": 878,
+    "sp": 792,
+    "catchable": "Unknown",
+    "spd": 211,
+    "str": 56,
+    "con": 52,
+    "int": 44,
+    "wis": 50,
+    "agi": 44
+  }
+}

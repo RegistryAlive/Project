@@ -1,0 +1,15 @@
+{
+  "id": 8308,
+  "name": "Apple Sugar",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Summer Fiesta snack",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8308.png",
+  "file": "questprop-8308.json"
+}

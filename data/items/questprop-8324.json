@@ -1,0 +1,15 @@
+{
+  "id": 8324,
+  "name": "Sweet Sauce",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "One important Mid-autumn Festival item",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8324.png",
+  "file": "questprop-8324.json"
+}

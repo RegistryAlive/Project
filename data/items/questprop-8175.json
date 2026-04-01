@@ -1,0 +1,15 @@
+{
+  "id": 8175,
+  "name": "Cocoa Nib",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Chocolate's material",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8175.png",
+  "file": "questprop-8175.json"
+}

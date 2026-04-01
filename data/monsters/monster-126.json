@@ -1,0 +1,39 @@
+{
+  "id": 126,
+  "name": "Sand Crab",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-126.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Crab Pincer",
+      "itemId": 7746,
+      "itemFile": "material-7746.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Crab Roes",
+      "itemId": 7498,
+      "itemFile": "material-7498.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 48,
+    "hp": 504,
+    "sp": 302,
+    "catchable": "No",
+    "spd": 142,
+    "str": 36,
+    "con": 35,
+    "int": 18,
+    "wis": 20,
+    "agi": 35
+  }
+}

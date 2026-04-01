@@ -1,0 +1,18 @@
+{
+  "id": 1079,
+  "name": "Future Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Gold / Steel / Titanium",
+  "description": "Steel scales forged from Alchemical formulaes.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 29,
+    "ATK": 5
+  },
+  "image": "data/images/armor-1079.png",
+  "file": "armor-1079.json"
+}

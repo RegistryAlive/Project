@@ -1,0 +1,18 @@
+{
+  "id": 2794,
+  "name": "Super Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Flower / Magic / Leather",
+  "description": "The symbol of the highest magical power.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 17,
+    "MATK": 6
+  },
+  "image": "data/images/arm-2794.png",
+  "file": "arm-2794.json"
+}

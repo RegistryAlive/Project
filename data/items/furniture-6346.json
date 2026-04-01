@@ -1,0 +1,15 @@
+{
+  "id": 6346,
+  "name": "Pirate Ship Model",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Pretty pirate ship model",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6346.png",
+  "file": "furniture-6346.json"
+}

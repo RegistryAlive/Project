@@ -1,0 +1,15 @@
+{
+  "id": 6669,
+  "name": "Meniscus chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Sitting on the crooked moon and staring at the night sky... the moonlight is so beautiful tonight.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6669.png",
+  "file": "furniture-6669.json"
+}

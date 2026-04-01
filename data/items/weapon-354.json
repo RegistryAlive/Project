@@ -1,0 +1,18 @@
+{
+  "id": 354,
+  "name": "Beast Fork+10",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Cannot be socketed and traded, 46% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 66,
+    "MaxHP": 640
+  },
+  "image": "data/images/weapon-354.png",
+  "file": "weapon-354.json"
+}

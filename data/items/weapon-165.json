@@ -1,0 +1,18 @@
+{
+  "id": 165,
+  "name": "Hero's Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 62,
+  "level": 124,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The holy sword used to kill the demons, with the blessing of god infused. Is extremely powerful.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 62,
+    "SPD": 62
+  },
+  "image": "data/images/weapon-165.png",
+  "file": "weapon-165.json"
+}

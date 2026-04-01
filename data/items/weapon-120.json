@@ -1,0 +1,18 @@
+{
+  "id": 120,
+  "name": "Titanium Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Titanium / Wood",
+  "description": "Virtually unbreakable, it buzzes with potential.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "DEF": 14
+  },
+  "image": "data/images/weapon-120.png",
+  "file": "weapon-120.json"
+}

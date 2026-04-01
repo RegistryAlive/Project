@@ -1,0 +1,33 @@
+{
+  "id": 137,
+  "name": "Graceful Buffalo",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-137.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 777,
+    "sp": 805,
+    "catchable": "Unknown",
+    "spd": 233,
+    "str": 51,
+    "con": 57,
+    "int": 48,
+    "wis": 50,
+    "agi": 52
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 698,
+  "name": "Bronze Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "A single blade bronze axe.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 29
+  },
+  "image": "data/images/weapon-698.png",
+  "file": "weapon-698.json"
+}

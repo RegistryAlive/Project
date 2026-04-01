@@ -1,0 +1,18 @@
+{
+  "id": 162,
+  "name": "Pirate Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 59,
+  "level": 118,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The sword used by the pirate king. The most most powerful in the world.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 59,
+    "SPD": 59
+  },
+  "image": "data/images/weapon-162.png",
+  "file": "weapon-162.json"
+}

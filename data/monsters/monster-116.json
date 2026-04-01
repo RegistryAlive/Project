@@ -1,0 +1,45 @@
+{
+  "id": 116,
+  "name": "Fox",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-116.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Duck",
+      "itemId": 7481,
+      "itemFile": "material-7481.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Fox Fur",
+      "itemId": 7669,
+      "itemFile": "material-7669.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 43,
+    "hp": 366,
+    "sp": 338,
+    "catchable": "Yes",
+    "spd": 120.5,
+    "str": 26,
+    "con": 25,
+    "int": 26,
+    "wis": 24,
+    "agi": 28
+  }
+}

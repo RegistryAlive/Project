@@ -1,0 +1,15 @@
+{
+  "id": 6018,
+  "name": "Transformer",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Changes pressure",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6018.png",
+  "file": "furniture-6018.json"
+}

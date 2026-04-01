@@ -1,0 +1,18 @@
+{
+  "id": 1933,
+  "name": "Thunder Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 8,
+  "level": 0,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "Special for Frederico, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 40,
+    "MaxHP": 320
+  },
+  "image": "data/images/shoes-1933.png",
+  "file": "shoes-1933.json"
+}

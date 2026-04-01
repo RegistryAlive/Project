@@ -1,0 +1,15 @@
+{
+  "id": 6125,
+  "name": "Airship Device",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Makes the airship float in the sky",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6125.png",
+  "file": "furniture-6125.json"
+}

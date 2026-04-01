@@ -1,0 +1,18 @@
+{
+  "id": 407,
+  "name": "Great Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Wood / Grass",
+  "description": "A bow refined in craft and material.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 4,
+    "SPD": 2
+  },
+  "image": "data/images/weapon-407.png",
+  "file": "weapon-407.json"
+}

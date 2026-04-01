@@ -1,0 +1,377 @@
+[
+    {
+        "tier": "S",
+        "labelClass": "tier-S",
+        "borderClass": "border-wlYellow",
+        "characters": [
+            {
+                "name": "Athena",
+                "icon": "fa-crown",
+                "iconColor": "text-wlYellow",
+                "elements": ["Water", "Magic"],
+                "role": "Support / Healer",
+                "special": "Revive, Full Heal, Buffs",
+                "details": "Athena is the best support in the game, able to revive and heal the entire party. Her buffs are top tier.",
+                "stats": { "hp": 85, "atk": 45, "def": 70, "spd": 65, "mag": 95, "res": 80 },
+                "rating": 9.8,
+                "description": "Athena is widely considered the premier support character in Wonderland Online. Her unique combination of revival abilities, full-party healing, and powerful stat buffs makes her indispensable for challenging content. She excels in both PvE and PvP scenarios, providing sustainability that no other character can match.",
+                "skills": [
+                    { "name": "Divine Resurrection", "desc": "Revives all fallen party members with 50% HP." },
+                    { "name": "Ocean's Blessing", "desc": "Heals entire party for 100% HP and removes all debuffs." },
+                    { "name": "Goddess Shield", "desc": "Grants all allies a shield that absorbs 30% of damage for 3 turns." }
+                ],
+                "pros": ["Best healer in game", "Party-wide revive", "Excellent buffs", "High survivability"],
+                "cons": ["Low damage output", "High skill cap", "Rare to obtain"]
+            },
+            {
+                "name": "Freya",
+                "icon": "fa-fire",
+                "iconColor": "text-wlRed",
+                "elements": ["Fire", "Physical"],
+                "role": "DPS / Burst",
+                "special": "High Crit, AoE Attacks",
+                "details": "Freya excels at dealing massive burst damage with high crit rates and powerful AoE skills.",
+                "stats": { "hp": 70, "atk": 98, "def": 55, "spd": 80, "mag": 40, "res": 50 },
+                "rating": 9.5,
+                "description": "Freya is the queen of burst damage, capable of decimating entire enemy teams in a single turn. Her fire-based attacks have some of the highest damage multipliers in the game, and her critical hit rate is unmatched. She shines in speed runs and burst strategies.",
+                "skills": [
+                    { "name": "Inferno Burst", "desc": "Deals 300% fire damage to all enemies with 50% crit chance." },
+                    { "name": "Flame Strike", "desc": "Single target attack dealing 500% damage, guaranteed crit on burning enemies." },
+                    { "name": "Phoenix Rage", "desc": "Sacrifices 20% HP to deal 400% fire damage to all enemies." }
+                ],
+                "pros": ["Highest burst damage", "Excellent AoE", "Great crit rate", "Fast attacker"],
+                "cons": ["Squishy", "HP sacrifice skills", "Weak to water"]
+            },
+            {
+                "name": "Monkey",
+                "displayName": "Monkey / 小猴子",
+                "image": "data/Tierlist images/Monkey.png",
+                "rebirthImage": "data/Tierlist images/Monkey RB.png",
+                "questImageFolder": "data/Tierlist/Monkey/",
+                "iconImage": "data/Tierlist/Monkey/Icon.png",
+                "icon": "fa-leaf",
+                "iconColor": "text-wlGreen",
+                "elements": ["Earth"],
+                "role": "Physical",
+                "special": "Seal Debuff, Rebirth Available",
+                "details": "A nimble monkey that can debuff enemies and transform through rebirth.",
+                "stats": { "STR": 1, "CON": 2, "INT": 1, "WIS": 1, "AGI": 2 },
+                "rating": 9.0,
+                "canRebirth": true,
+                "hasQuests": true,
+                "endingBanner": "Banner Ending.png",
+                "rebirthBaseStats": { "STR": 30, "CON": 32, "INT": 31, "WIS": 23, "AGI": 33 },
+                "description": "Monkey is a versatile Earth-element pet that excels at debuffing enemies with her banana-based attacks. She can be rebirthed, gaining access to powerful new skills and improved base stats. Her ability to seal enemies makes her valuable in both PvE and PvP content.",
+                "skills": [
+                    { "name": "Head Attack", "desc": "Earth Physical, 8 SP, Single Target damage." },
+                    { "name": "Throw Banana Skin", "desc": "Debuff Seal, 12 SP, Single Target Seal for 2 Turns." }
+                ],
+                "rebirthSkills": [
+                    { "name": "Transformation", "desc": "Assist, Self Buff: Increase Defense by about 15% for 3 turns (66 SP)." },
+                    { "name": "Banana Headbutt", "desc": "Physical, Single Target Damage Skill (74 SP)." },
+                    { "name": "Golden Staff", "desc": "Physical, AoE 2 Target damage (115 SP)." }
+                ],
+                "quests": [
+                    {
+                        "id": 1,
+                        "title": "Little Monkey Get",
+                        "description": "Interact with Monkey on the Beach.",
+                        "images": ["01.png"]
+                    },
+                    {
+                        "id": 2,
+                        "title": "Little Monkey who met its parents",
+                        "description": "Head to Welling Village. Go to Jungle and interact with the orangutan's at the location. Fight the battle and Monkey will leave your party afterwards.",
+                        "images": ["02.png", "02-1.png", "02-2.png"]
+                    },
+                    {
+                        "id": 3,
+                        "title": "Revive Monkey Prequest",
+                        "description": "Head to Holy Village and go to the Chapel. A cutscene will occur after the cutscene interact with Abba and you'll be required to interact with the Holy Village Leader. Exit the Chapel and head south and enter the next part of the village. In the South quadrant, head south further then west and you'll see a luxurious house. Enter the house head upstairs and interact with the Village Leader. After interaction attempt to leave the house and you'll be stopped by the Housekeeper who then tells you where the key is hidden in. Get the key and rescue the villagers. After rescuing the villagers, upon entering back the chapel, you'll be tasked to fight. After the fight ends you are now free to revive any pets by interacting with Abba. For Monkey it requires 2 Stars.",
+                        "images": ["03.png", "03-01.png"]
+                    },
+                    {
+                        "id": 4,
+                        "title": "Meeting the little monkey again",
+                        "description": "Head over to Snow Island. Then enter the only portal in the map. Followed by going towards the south west quadrant. You'll see two orangutans interact with them and a fight will ensue.",
+                        "images": ["04.png", "04-01.png", "04-02.png"],
+                        "fightImages": ["04-Fight.png"]
+                    },
+                    {
+                        "id": 5,
+                        "title": "A language that cannot be understood",
+                        "description": "Head back to Holy Village and enter the Bar. Go up to the second floor and interact with the bartender.",
+                        "images": ["05.png", "05-01.png", "05-02.png"]
+                    },
+                    {
+                        "id": 6,
+                        "title": "The guidance of a legendary hermit",
+                        "description": "Use a transport vehicle and head to Test Island. The island is near Taiwan. Interact with the Mystic Old man and you'll be tasked to head to Mars.",
+                        "images": ["06.png", "06-01.png", "06-02.png"]
+                    },
+                    {
+                        "id": 7,
+                        "title": "Fire Crystal",
+                        "description": "At the location use your spacecraft to transport to Mars. At Mars, hop off your spacecraft and interact with the shiny crystal on the ground. It will fly to Revival Isle.",
+                        "images": ["07.png", "07-01.png", "07-02.png"]
+                    },
+                    {
+                        "id": 8,
+                        "title": "The path to seeking the Fire Crystal",
+                        "description": "At Revival Isle, head up the stairs to climb the Volcano. Midway there will be a sparkle that looks the same as the one in Mars. Interact with it and a battle against Ants will occur. This is a semi difficult battle. After the battle concludes you will be able to get the fire crystal.",
+                        "images": ["08.png", "08-01.png"],
+                        "fightImages": ["08-Fight.png"]
+                    },
+                    {
+                        "id": 9,
+                        "title": "The Trial of the Divine Dragon",
+                        "description": "Head back to the Test Island and interact with the Mystic old man to hand in the items. After handing in the items, you'll have to interact with the dragon - a series of 4 fights will occur. These fights are difficult and this is the one that'll result in your Monkey dying. After the 4 fights are over, you can interact with the portal which will result in your monkey's death. Head over to Holy Village Chapel to revive, then head to Hanging Gardens at level 100 with Monkey to rebirth.",
+                        "images": ["09.png", "09-01.png", "09-02.png"],
+                        "fightImages": ["09-Fight1.png", "09-Fight2.png", "09-Fight3.png", "09-Fight4.png"],
+                        "isFinal": true
+                    }
+                ],
+                "pros": ["Can be rebirthed", "Easy to scroll", "Can be bursted", "Defensive Element", "Has non-elemental skill", "AoE after rebirth"],
+                "cons": ["Low base stats", "Earth Element (Lower damage multiplier)"],
+                "recommendedStats": "STR > CON > AGI > WIS > INT or CON > STR > AGI > WIS > INT"
+            }
+        ]
+    },
+    {
+        "tier": "A",
+        "labelClass": "tier-A",
+        "borderClass": "border-wlBlue",
+        "characters": [
+            {
+                "name": "Robin",
+                "icon": "fa-leaf",
+                "iconColor": "text-wlGreen",
+                "elements": ["Earth", "Ranged"],
+                "role": "Ranged DPS",
+                "special": "Multi-hit, Debuffs",
+                "details": "Robin is a reliable ranged attacker with multi-hit skills and useful debuffs.",
+                "stats": { "hp": 65, "atk": 82, "def": 60, "spd": 75, "mag": 55, "res": 65 },
+                "rating": 8.7,
+                "description": "Robin is a versatile ranged DPS who excels at wearing down enemies with multi-hit attacks and debilitating debuffs. His earth-element attacks are particularly effective against lightning-based enemies, and his utility makes him valuable in prolonged fights.",
+                "skills": [
+                    { "name": "Arrow Storm", "desc": "Fires 5-8 arrows at random enemies, each dealing 80% damage." },
+                    { "name": "Nature's Curse", "desc": "Reduces enemy defense by 40% for 3 turns." },
+                    { "name": "Piercing Shot", "desc": "Ignores 50% defense, deals 200% damage to single target." }
+                ],
+                "pros": ["Consistent damage", "Good debuffs", "Multi-hit attacks", "Reliable"],
+                "cons": ["Lower burst than meta DPS", "Requires setup", "Average speed"]
+            },
+            {
+                "name": "Niss",
+                "displayName": "Niss / 妮丝",
+                "image": "data/Tierlist images/Niss.png",
+                "rebirthImage": "data/Tierlist images/Niss RB.jpg",
+                "imagePosition": "center 30%",
+                "icon": "fa-water",
+                "iconColor": "text-wlBlue",
+                "elements": ["Water", "Magic"],
+                "role": "Magic DPS",
+                "special": "Good ST/AoE, Rebirth Available",
+                "details": "Niss is a Water magic pet with strong single target and AoE capabilities.",
+                "stats": { "STR": 1, "CON": 1, "INT": 6, "WIS": 6, "AGI": 2 },
+                "rating": 8.5,
+                "canRebirth": true,
+                "hasQuests": false,
+                "hasPreQuests": true,
+                "preQuestImageFolder": "data/Tierlist/Niss/PreQuests/",
+                "rebirthBaseStats": { "STR": 17, "CON": 17, "INT": 45, "WIS": 42, "AGI": 19 },
+                "description": "Niss is a Water-element magic pet that excels at both single target and AoE damage. She can pierce Stone Wall and is relatively easy to wash. Her Magic Recovery skill makes her useful for training. She can be rebirthed to gain access to Lightning Ice.",
+                "skills": [
+                    { "name": "Sky Thunder", "desc": "Water Magical, 110 SP, AoE 2H>3V>4>6 at 1-3 / 4-6 / 7-9 / 10+." },
+                    { "name": "Magic Recovery", "desc": "AoE Buff, 26 SP, AoE 1>2H>3V at 1-4 / 5-6 / 7+." }
+                ],
+                "rebirthSkills": [
+                    { "name": "Lightning Ice", "desc": "Water Magical, 135 SP, Single Target." }
+                ],
+                "pros": ["Good ST", "Good AoE", "Really easy to wash", "Can pierce Stone Wall", "Has no RB Star method", "Magic Recovery useful for training", "Can be rebirthed"],
+                "cons": ["Manual Training only", "High Investment cost to be good", "Weak Element (Water / Low Multipliers)", "Magic so can miss targets", "Low BST"],
+                "recommendedStats": "INT > CON > AGI > WIS > STR",
+                "preQuests": [
+                    {
+                        "character": "Roca",
+                        "questNumber": 1,
+                        "title": "Finding Roca",
+                        "description": "Head to the Kelan Village Leader House. Interact and accept the quest. Now head out of Kelan Village going towards the north side of the town up the stairs, you'll see a cave. Head up to the 3rd Floor and you'll see a scroll with a '?' interact with it and you'll start a battle. Win the battle and bring back the scroll to the Village Leader and then interact with Roca.",
+                        "images": ["Roca/Roca-01.png", "Roca/Roca-01-02.png", "Roca/Roca-01-03.png", "Roca/Roca-01-04.png"],
+                        "fightImages": ["Roca/Roca-01-Fight.png"]
+                    },
+                    {
+                        "character": "Roca",
+                        "questNumber": 2,
+                        "title": "Death of Roca's Father",
+                        "description": "Head to the entrance of Subway. Roca will prompt you that she wants to visit her father before going on a journey with you. Head back to Kelan Village's Leader House where you first found Roca and you'll see that the house is empty. Exit the house and interact with the guard, now head to Welling Village's Leader House you'll see a cutscene with Frederico which results in Roca's Father dying. Interact with Roca to wake her up and head back to Kelan Village, head up the stairs going towards the Cave on the right there's a Statue where Roca is sitting.",
+                        "images": ["Roca/Roca-02.png", "Roca/Roca-02-01.png", "Roca/Roca-02-02.png", "Roca/Roca-02-03.png", "Roca/Roca-02-04.png"]
+                    },
+                    {
+                        "character": "Roca",
+                        "questNumber": 3,
+                        "title": "Undeserved Roca",
+                        "description": "Head to Holy Village. Enter the first house with Roca in your party. As you interact with the blood on the floor guards will enter the house to arrest Roca. Head to the Church If you've done the prior quest which results in you having the Key you can simply head down the cellar and find Roca, If not head to the Holy Village Leader house interact with the leader then head down and try to exit the house. The housekeeper will imply the location of the key which you can save Roca.",
+                        "images": ["Roca/Roca-03.JPG", "Roca/Roca-03-01.JPG", "Roca/Roca-03-02.JPG", "Roca/Roca-03-03.JPG"]
+                    },
+                    {
+                        "character": "Roca",
+                        "questNumber": 4,
+                        "title": "The Other Side Of The Cave",
+                        "description": "Go to South Island. From Holy Village head to the below portal you'll see a '?' near the cave from there use a flying vehicle and fly up the mountain you'll see a door. Click on it and follow down the pathway to the '?' and take a fight with La Tim. After winning the fight you can interact on the skull to take it for another quest.",
+                        "images": ["Roca/Roca-04.png", "Roca/Roca-04-01.png", "Roca/Roca-04-02.png"],
+                        "fightImages": ["Roca/Roca-04-Fight.png"]
+                    },
+                    {
+                        "character": "Roca",
+                        "questNumber": 5,
+                        "title": "Overcoming The Grief",
+                        "description": "Fly back down from the cave and enter the MaKa Cave head all the way up till 3F and go to the hilltop go to the fence and a cutscene should appear.",
+                        "images": ["Roca/Roca-05.JPG", "Roca/Roca-05-01.png", "Roca/Roca-05-02.JPG"]
+                    },
+                    {
+                        "character": "Roca",
+                        "questNumber": 6,
+                        "title": "The Fairy's Revelation",
+                        "description": "Outside Holy Village head to the waterfall with Xaolan and Roca in your party. They will both leave your party when you enter the waterfall. Inside the waterfall follow the left trail to the statue and interact with it. After interacting use your spawn point to get back Roca and Xaolan from their initial locations. For Roca she should be either at her house or the statue. By doing so you'll now have a save state of Roca where you can savely gather her once her death quest is over.",
+                        "images": ["Roca/Roca-06.png", "Roca/Roca-06-01.png", "Roca/Roca-06-02.png"]
+                    },
+                    {
+                        "character": "Clive",
+                        "questNumber": 1,
+                        "title": "Grandparent and Grandchild who are robbed",
+                        "description": "Head to the first house in Kelan Village near the storage keeper. Inside you'll see pirates interact with them and a battle will begin.",
+                        "images": ["Clive/01.png"],
+                        "fightImages": ["Clive/01-Fight.png"]
+                    },
+                    {
+                        "character": "Clive",
+                        "questNumber": 2,
+                        "title": "Avenging Pirate",
+                        "description": "Head out of Kelan Village at the South Exit. After exiting head south to the '?' there's Xaolan tied to a log surrounded by bad guys. Interact with them and start the fight to save Xaolan. After saving Xaolan, head back to her house and go through the dialogue.",
+                        "images": ["Clive/02.png", "Clive/02-01.png"],
+                        "fightImages": ["Clive/02-Fight.png"]
+                    },
+                    {
+                        "character": "Clive",
+                        "questNumber": 3,
+                        "title": "Pirate who turn over a new leaf",
+                        "description": "From Holy Village. Exit and head towards the down exit, from there head south all the way till the south near the water. From there there's a cave that you'll be able to access. Upon entering the cave, head towards the left side of the cave and a dialogue will happen, go through the first fight and open the secret door. Then interact the chest and another fight will happen. Win the fight and Clive will join you, you can click on the chests for the items after.",
+                        "images": ["Clive/03.png", "Clive/03-01.png"],
+                        "fightImages": ["Clive/03-Fight.png", "Clive/03-Fight2.png"]
+                    },
+                    {
+                        "character": "Clive",
+                        "questNumber": 4,
+                        "title": "Drunks in a bar",
+                        "description": "Head to Holy Village Bar (Inn) then interact with the two drunks. Clive will translate for you and tell you that the whereabouts of Frederico is at Revival Isle.",
+                        "images": ["Clive/04.png", "Clive/04-01.png"],
+                        "fightImages": []
+                    },
+                    {
+                        "character": "Clive",
+                        "questNumber": 5,
+                        "title": "Strong Enemy Frederico",
+                        "description": "This requires the completion of the quests from Roca, Niss and Clive. Roca: Initial Test, Undeserved Roca, Start off with Roca, Fairy Revelation, Other side of the cave. Niss: The Mysterious Girl, Niss' Danger, Niss Magical Wand. Clive: All prior quests. Head to Revival Isle, then head inside the Volcano. Head left and you'll see stairs - enter and a dialogue will tell you that Clive will leave you (Death). Go through and then interact with Fred to start the fight. Roca is required for this fight as you'll do no damage otherwise.",
+                        "images": ["Clive/05.png", "Clive/05-01.png"],
+                        "fightImages": ["Clive/05-Fight.png", "Clive/05-Fight.png"]
+                    },
+                    {
+                        "character": "Magellan",
+                        "questNumber": 1,
+                        "title": "Tough Guy in Bar",
+                        "description": "In Holy Village. Head to the bar then up to the second floor. Interact with the Tough guy surrounded by many drunks and help the fight. After the fight take the scroll.",
+                        "images": ["Magellan/01.png", "Magellan/01-01.png"],
+                        "fightImages": ["Magellan/01-Fight.png"]
+                    },
+                    {
+                        "character": "Magellan",
+                        "questNumber": 2,
+                        "title": "Magellan's Fleet //Part 1",
+                        "description": "Head to Magellan's Fleet located at around X:8869 Y:10580 South East from Cook's Fleet. Upon entering interact with Bo sun and start the fight after the fight. You'll be tasked to return to Pirate Cave where you found Clive.",
+                        "images": ["Magellan/02.png"],
+                        "fightImages": ["Magellan/02-Fight.png"]
+                    },
+                    {
+                        "character": "Magellan",
+                        "questNumber": 3,
+                        "title": "Magellan In Danger",
+                        "description": "Head to Holy Village. Exit then go towards the South Exit, From south exit head all the way south till the waters, from there there's a cave that you'll be able to enter. Upon entering the cave enter the south left portal, with clive in your party you'll be able to bypass the pirates. Then follow the next portal into the Ship. From there go below the deck and enter the first room with Clive on Battle mode. Talk to Magellan and a battle will ensue. After the battle head back up to the deck and another battle will ensue. (Magellan Joins you)",
+                        "images": ["Magellan/03.png", "Magellan/03-01.png", "Magellan/03-02.png"],
+                        "fightImages": ["Magellan/03-Fight.png", "Magellan/03-Fight1.png", "Magellan/03-Fight2.png"]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tier": "B",
+        "labelClass": "tier-B",
+        "borderClass": "border-wlGreen",
+        "characters": [
+            {
+                "name": "Marina",
+                "icon": "fa-water",
+                "iconColor": "text-wlBlue",
+                "elements": ["Water", "Support"],
+                "role": "Support",
+                "special": "Cleanse, Minor Heal",
+                "details": "Marina can cleanse debuffs and provide minor healing, making her a solid support pick.",
+                "stats": { "hp": 75, "atk": 40, "def": 65, "spd": 60, "mag": 80, "res": 85 },
+                "rating": 7.5,
+                "description": "Marina is a reliable support character who specializes in cleansing debuffs and providing steady healing. While she lacks the powerful revival abilities of top-tier supports, her consistent performance makes her a good choice for newer players.",
+                "skills": [
+                    { "name": "Purifying Waters", "desc": "Removes all debuffs from all allies." },
+                    { "name": "Healing Wave", "desc": "Heals all allies for 40% of their max HP." },
+                    { "name": "Water Shield", "desc": "Grants water shield absorbing 2000 damage." }
+                ],
+                "pros": ["Good cleanse", "Reliable heals", "Easy to obtain", "Low cooldowns"],
+                "cons": ["No revive", "Lower healing than meta", "Outclassed by Athena"]
+            },
+            {
+                "name": "Bolt",
+                "icon": "fa-bolt",
+                "iconColor": "text-wlYellow",
+                "elements": ["Lightning", "Magic"],
+                "role": "Magic DPS",
+                "special": "Stun, Chain Attacks",
+                "details": "Bolt is a magic DPS with chain attacks and a chance to stun enemies.",
+                "stats": { "hp": 60, "atk": 35, "def": 50, "spd": 85, "mag": 90, "res": 55 },
+                "rating": 7.2,
+                "description": "Bolt is a lightning-based magic DPS who excels at chaining attacks across multiple enemies. His stun abilities provide valuable crowd control, making him useful in fights where controlling enemy actions is crucial.",
+                "skills": [
+                    { "name": "Chain Lightning", "desc": "Deals 150% damage that chains to 3 enemies." },
+                    { "name": "Thunder Strike", "desc": "200% damage with 40% stun chance." },
+                    { "name": "Static Field", "desc": "Creates field dealing 50% damage per turn for 3 turns." }
+                ],
+                "pros": ["Good crowd control", "Chain damage", "Stun utility", "Fast caster"],
+                "cons": ["Unreliable stun RNG", "Weak to earth", "Single element"]
+            }
+        ]
+    },
+    {
+        "tier": "C",
+        "labelClass": "tier-C",
+        "borderClass": "border-wlLight",
+        "characters": [
+            {
+                "name": "Generic NPC",
+                "icon": "fa-user",
+                "iconColor": "text-wlLight",
+                "elements": ["Neutral"],
+                "role": "Filler",
+                "special": "None",
+                "details": "A generic NPC with no special abilities. Used as a filler character.",
+                "stats": { "hp": 50, "atk": 50, "def": 50, "spd": 50, "mag": 50, "res": 50 },
+                "rating": 4.0,
+                "description": "A basic character with no standout abilities. While they can fill a party slot, they offer no strategic advantage and should be replaced as soon as better options become available.",
+                "skills": [
+                    { "name": "Basic Attack", "desc": "Deals 100% damage to a single target." },
+                    { "name": "Defend", "desc": "Reduces damage taken by 50% for 1 turn." }
+                ],
+                "pros": ["Easy to obtain", "No investment needed", "Available early"],
+                "cons": ["No special abilities", "Outclassed by everyone", "No utility"]
+            }
+        ]
+    }
+]

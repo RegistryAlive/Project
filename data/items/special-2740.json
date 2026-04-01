@@ -1,0 +1,17 @@
+{
+  "id": 2740,
+  "name": "Friendship Brooch +6",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "N/A",
+  "description": "Double ATK and MATK after equipped by human pets with amity at 100. Can be intensified and traded.",
+  "size": "1x1",
+  "attributes": {
+    "MAXHP": 180
+  },
+  "image": "data/images/special-2740.png",
+  "file": "special-2740.json"
+}

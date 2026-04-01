@@ -1,0 +1,39 @@
+{
+  "id": 1124,
+  "name": "Red Brow Mammoth",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-1125.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Maize",
+      "itemId": 7431,
+      "itemFile": "material-7431.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ivory",
+      "itemId": 7805,
+      "itemFile": "material-7805.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 94,
+    "hp": 1177,
+    "sp": 829,
+    "catchable": "Yes",
+    "spd": 251,
+    "str": 64,
+    "con": 68,
+    "int": 45,
+    "wis": 50,
+    "agi": 55
+  }
+}

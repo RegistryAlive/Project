@@ -1,0 +1,18 @@
+{
+  "id": 712,
+  "name": "Black Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Grass / Wood",
+  "description": "It is made of black animal bones.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "DEF": 8
+  },
+  "image": "data/images/weapon-712.png",
+  "file": "weapon-712.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8119,
+  "name": "Mammoth Vouche",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a Mammoth become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8119.png",
+  "file": "questprop-8119.json"
+}

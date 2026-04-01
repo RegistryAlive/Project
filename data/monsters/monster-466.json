@@ -1,0 +1,45 @@
+{
+  "id": 466,
+  "name": "Red Rock Monster",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-466.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Coal Ore",
+      "itemId": 7586,
+      "itemFile": "material-7586.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Granite",
+      "itemId": 7635,
+      "itemFile": "material-7635.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pure Iron Ore",
+      "itemId": 7568,
+      "itemFile": "material-7568.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 77,
+    "hp": 769,
+    "sp": 679,
+    "catchable": "Unknown",
+    "spd": 211.5,
+    "str": 48,
+    "con": 46,
+    "int": 46,
+    "wis": 43,
+    "agi": 48
+  }
+}

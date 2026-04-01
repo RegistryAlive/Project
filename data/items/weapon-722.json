@@ -1,0 +1,17 @@
+{
+  "id": 722,
+  "name": "Stone Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Copper",
+  "description": "A axe made from stone",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 7
+  },
+  "image": "data/images/weapon-722.png",
+  "file": "weapon-722.json"
+}

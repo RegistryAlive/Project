@@ -1,0 +1,18 @@
+{
+  "id": 1414,
+  "name": "Red Hairwear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It looks like a horn from the devils head.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 19,
+    "MATK": 5
+  },
+  "image": "data/images/helmet-1414.png",
+  "file": "helmet-1414.json"
+}

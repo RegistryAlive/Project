@@ -1,0 +1,15 @@
+{
+  "id": 1996,
+  "name": "Light clogs",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Soft and cute light blue clogs, wear it to participate in the cherry blossom festival~",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1996.png",
+  "file": "shoes-1996.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6592,
+  "name": "Reindeer Sofa",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Chair specially decorated for Christmas",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6592.png",
+  "file": "furniture-6592.json"
+}

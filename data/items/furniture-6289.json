@@ -1,0 +1,15 @@
+{
+  "id": 6289,
+  "name": "Locker",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Can keep some items",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6289.png",
+  "file": "furniture-6289.json"
+}

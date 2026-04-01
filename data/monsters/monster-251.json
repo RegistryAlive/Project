@@ -1,0 +1,45 @@
+{
+  "id": 251,
+  "name": "Egyptian Worker Bee",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-251.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Hornet Comb",
+      "itemId": 7749,
+      "itemFile": "material-7749.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pollen",
+      "itemId": 7528,
+      "itemFile": "material-7528.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sparrow Meat",
+      "itemId": 7499,
+      "itemFile": "material-7499.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 58,
+    "hp": 738,
+    "sp": 324,
+    "catchable": "Yes",
+    "spd": 167,
+    "str": 44,
+    "con": 50,
+    "int": 20,
+    "wis": 20,
+    "agi": 40
+  }
+}

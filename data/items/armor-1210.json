@@ -1,0 +1,17 @@
+{
+  "id": 1210,
+  "name": "Sweet Love",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Limited edition, with heart necklace to fully show your love. Has great cutting to show-off the female figure.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 56
+  },
+  "image": "data/images/armor-1210.png",
+  "file": "armor-1210.json"
+}

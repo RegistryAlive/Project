@@ -1,0 +1,15 @@
+{
+  "id": 6529,
+  "name": "Summer Hammock",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, cool hammock for use on the beach",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6529.png",
+  "file": "furniture-6529.json"
+}

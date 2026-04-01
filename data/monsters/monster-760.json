@@ -1,0 +1,27 @@
+{
+  "id": 760,
+  "name": "Horse",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-760.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 791,
+    "sp": 542,
+    "catchable": "Unknown",
+    "spd": 220,
+    "str": 46,
+    "con": 49,
+    "int": 31,
+    "wis": 34,
+    "agi": 56
+  }
+}

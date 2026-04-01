@@ -1,0 +1,15 @@
+{
+  "id": 7558,
+  "name": "Copper Block",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Copper",
+  "description": "It is made of copper ore",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7558.png",
+  "file": "material-7558.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2123,
+  "name": "Fast Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To upgrade agility and minor defense",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 4,
+    "DEF": 2
+  },
+  "image": "data/images/special-2123.png",
+  "file": "special-2123.json"
+}

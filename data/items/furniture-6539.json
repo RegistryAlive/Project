@@ -1,0 +1,15 @@
+{
+  "id": 6539,
+  "name": "Wallpaper",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Red Chinese style, allowing players to change to different wall colors",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6539.png",
+  "file": "furniture-6539.json"
+}

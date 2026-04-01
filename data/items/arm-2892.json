@@ -1,0 +1,18 @@
+{
+  "id": 2892,
+  "name": "Dragon Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 42,
+  "level": 84,
+  "rarity": "legendary",
+  "base": "Iron / Titanium / Hard Tissue",
+  "description": "Bracers that increase DEF",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25,
+    "ATK": 17
+  },
+  "image": "data/images/arm-2892.png",
+  "file": "arm-2892.json"
+}

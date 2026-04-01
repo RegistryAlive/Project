@@ -1,0 +1,18 @@
+{
+  "id": 2015,
+  "name": "Summer Memory",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Handcrafted by artisans, what do you want to leave behind this summer? ;With 5% anti-seal effect, when equipped with other Summer Boom series equipment at the same time, you can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "SPD": 20
+  },
+  "image": "data/images/shoes-2015.png",
+  "file": "shoes-2015.json"
+}

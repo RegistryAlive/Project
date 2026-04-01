@@ -1,0 +1,18 @@
+{
+  "id": 7166,
+  "name": "Apple Popsicle",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Water (Type 1) / Fruit",
+  "description": "Frozen apple popsicle",
+  "size": "1x1",
+  "attributes": {
+    "SP": 150,
+    "HP": 100
+  },
+  "image": "data/images/material-7166.png",
+  "file": "material-7166.json"
+}

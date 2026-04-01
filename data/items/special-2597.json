@@ -1,0 +1,18 @@
+{
+  "id": 2597,
+  "name": "Defeat Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A coarse mixed-metal armlet used by a pet man.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 300,
+    "DEF": 30
+  },
+  "image": "data/images/special-2597.png",
+  "file": "special-2597.json"
+}

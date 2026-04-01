@@ -1,0 +1,15 @@
+{
+  "id": 8031,
+  "name": "Bright Bead",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A kind of precious gem, giving off light at night",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8031.png",
+  "file": "questprop-8031.json"
+}

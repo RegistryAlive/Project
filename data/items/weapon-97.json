@@ -1,0 +1,18 @@
+{
+  "id": 97,
+  "name": "Soul Hunter",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-97.png",
+  "file": "weapon-97.json"
+}

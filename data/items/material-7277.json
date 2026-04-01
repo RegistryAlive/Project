@@ -1,0 +1,17 @@
+{
+  "id": 7277,
+  "name": "Salted Quails Egg",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Egg",
+  "description": "It will be very delicious with some salt",
+  "size": "1x1",
+  "attributes": {
+    "SP": 110
+  },
+  "image": "data/images/material-7277.png",
+  "file": "material-7277.json"
+}

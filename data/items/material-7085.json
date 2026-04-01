@@ -1,0 +1,18 @@
+{
+  "id": 7085,
+  "name": "Braised Eel",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "Braised Eel with Brown Sauce",
+  "size": "1x1",
+  "attributes": {
+    "HP": 95,
+    "SP": 75
+  },
+  "image": "data/images/material-7085.png",
+  "file": "material-7085.json"
+}

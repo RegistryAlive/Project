@@ -1,0 +1,18 @@
+{
+  "id": 1005,
+  "name": "Demon Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Flower",
+  "description": "A gown which is made up by bats and silk",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 10,
+    "DEF": 5
+  },
+  "image": "data/images/armor-1005.png",
+  "file": "armor-1005.json"
+}

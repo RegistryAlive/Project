@@ -1,0 +1,27 @@
+{
+  "id": 810,
+  "name": "Martian",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-810.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 142,
+    "hp": 21000,
+    "sp": 3092,
+    "catchable": "Unknown",
+    "spd": 541,
+    "str": 154,
+    "con": 164,
+    "int": 188,
+    "wis": 182,
+    "agi": 164
+  }
+}

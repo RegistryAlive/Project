@@ -1,0 +1,17 @@
+{
+  "id": 1840,
+  "name": "Feather Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Feather",
+  "description": "Boots made from light flying feather.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 26
+  },
+  "image": "data/images/shoes-1840.png",
+  "file": "shoes-1840.json"
+}

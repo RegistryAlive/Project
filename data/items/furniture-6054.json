@@ -1,0 +1,15 @@
+{
+  "id": 6054,
+  "name": "Ore Powder",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made of ore",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6054.png",
+  "file": "furniture-6054.json"
+}

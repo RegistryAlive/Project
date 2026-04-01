@@ -1,0 +1,15 @@
+{
+  "id": 8142,
+  "name": "Phoenix Feather",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The Phoenix Feather of Volcano Crater",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8142.png",
+  "file": "questprop-8142.json"
+}

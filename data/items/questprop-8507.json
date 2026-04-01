@@ -1,0 +1,15 @@
+{
+  "id": 8507,
+  "name": "Paper Boat Tic",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can be exchanged for paper boats",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8507.png",
+  "file": "questprop-8507.json"
+}

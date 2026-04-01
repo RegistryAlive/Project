@@ -1,0 +1,17 @@
+{
+  "id": 10004,
+  "name": "Jalor",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It consists of a boat and sail",
+  "size": "5x5",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10004.png",
+  "file": "vehicle-10004.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1044,
+  "name": "Gold Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 16,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Made of Gold imbued with magical power.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 8,
+    "MDEF": 8
+  },
+  "image": "data/images/armor-1044.png",
+  "file": "armor-1044.json"
+}

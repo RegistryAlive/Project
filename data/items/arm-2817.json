@@ -1,0 +1,18 @@
+{
+  "id": 2817,
+  "name": "Spirit Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Flower / Magic / Grass",
+  "description": "Gloves that can call down more power magic effect.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 10,
+    "MDEF": 5
+  },
+  "image": "data/images/arm-2817.png",
+  "file": "arm-2817.json"
+}

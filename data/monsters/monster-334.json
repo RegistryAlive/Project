@@ -1,0 +1,39 @@
+{
+  "id": 334,
+  "name": "Flame Bat",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-334.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 102,
+    "hp": 1408,
+    "sp": 927,
+    "catchable": "No",
+    "spd": 251,
+    "str": 70,
+    "con": 80,
+    "int": 52,
+    "wis": 55,
+    "agi": 49
+  }
+}

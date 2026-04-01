@@ -1,0 +1,15 @@
+{
+  "id": 8384,
+  "name": "Ghost festi ex",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "2013 Ghost Festival event, you can exchange prizes with Venerable Mulian.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8384.png",
+  "file": "questprop-8384.json"
+}

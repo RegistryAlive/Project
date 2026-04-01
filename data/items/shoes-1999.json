@@ -1,0 +1,15 @@
+{
+  "id": 1999,
+  "name": "Magic P Clog",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Soft and cute purple clogs, wear them to participate in the cherry blossom festival~",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1999.png",
+  "file": "shoes-1999.json"
+}

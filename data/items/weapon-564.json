@@ -1,0 +1,18 @@
+{
+  "id": 564,
+  "name": "Icy Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Tin / Steel / Magic",
+  "description": "This wand has great mana attack power.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 44,
+    "ATK": 20
+  },
+  "image": "data/images/weapon-564.png",
+  "file": "weapon-564.json"
+}

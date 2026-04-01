@@ -1,0 +1,33 @@
+{
+  "id": 472,
+  "name": "Boiled Rock Monster",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-472.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Pork Miso Noodle",
+      "itemId": 7173,
+      "itemFile": "material-7173.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "2X Holy EXP Potion",
+      "itemId": 8533,
+      "itemFile": "questprop-8533.json",
+      "itemCategory": "questprop"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 668,
+    "sp": 449,
+    "catchable": "Unknown",
+    "spd": 212,
+    "str": 32,
+    "con": 34,
+    "int": 29,
+    "wis": 23,
+    "agi": 31
+  }
+}

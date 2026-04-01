@@ -1,0 +1,15 @@
+{
+  "id": 6175,
+  "name": "Titanium Ball",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Primary framework for landing a spacecraft.",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6175.png",
+  "file": "furniture-6175.json"
+}

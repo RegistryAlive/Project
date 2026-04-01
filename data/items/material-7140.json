@@ -1,0 +1,18 @@
+{
+  "id": 7140,
+  "name": "Fried Celery",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Fried Celery with beauty function",
+  "size": "1x1",
+  "attributes": {
+    "HP": 80,
+    "SP": 20
+  },
+  "image": "data/images/material-7140.png",
+  "file": "material-7140.json"
+}

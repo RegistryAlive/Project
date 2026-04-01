@@ -1,0 +1,15 @@
+{
+  "id": 8143,
+  "name": "Key to Ghostdom",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is the key to the door in Ghostdom",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8143.png",
+  "file": "questprop-8143.json"
+}

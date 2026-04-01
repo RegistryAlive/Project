@@ -1,0 +1,17 @@
+{
+  "id": 687,
+  "name": "Winds of Fury",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The claw-shaped mysterious weapon, which is nicknamed \"Wind Wind\", can tell from its name that the power of the weapon lies in its speed. 46% critical strike possible",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30
+  },
+  "image": "data/images/weapon-687.png",
+  "file": "weapon-687.json"
+}

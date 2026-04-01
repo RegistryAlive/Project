@@ -1,0 +1,17 @@
+{
+  "id": 1183,
+  "name": "Darkdusk Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 42,
+  "level": 84,
+  "rarity": "legendary",
+  "base": "Copper / Rock / Iron / Titanium",
+  "description": "A suit of armor with high defense capabilities",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 42
+  },
+  "image": "data/images/armor-1183.png",
+  "file": "armor-1183.json"
+}

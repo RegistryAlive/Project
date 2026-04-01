@@ -1,0 +1,27 @@
+{
+  "id": 687,
+  "name": "Evru",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-687.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 52,
+    "hp": 286,
+    "sp": 661,
+    "catchable": "Unknown",
+    "spd": 126,
+    "str": 22,
+    "con": 20,
+    "int": 42,
+    "wis": 48,
+    "agi": 24
+  }
+}

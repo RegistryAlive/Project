@@ -1,0 +1,18 @@
+{
+  "id": 83,
+  "name": "Kiyomitsu Kaga",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The famous sword that has been battle-tested has a very long blade, and the blade seems to contain mysterious power. The critical strike rate is 30%, and the critical strike rate increases by 1% for each forging +10, and the maximum is 40%.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 90,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-83.png",
+  "file": "weapon-83.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 719,
+  "name": "King's Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Created by the powers of the four great kings. This axe's core is firm and tough, it has reached the powers of gods.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 71
+  },
+  "image": "data/images/weapon-719.png",
+  "file": "weapon-719.json"
+}

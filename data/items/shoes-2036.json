@@ -1,0 +1,17 @@
+{
+  "id": 2036,
+  "name": "Cowboy Boots-2",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Leather / Nylon / Fur",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 33
+  },
+  "image": "data/images/shoes-2036.png",
+  "file": "shoes-2036.json"
+}

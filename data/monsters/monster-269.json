@@ -1,0 +1,45 @@
+{
+  "id": 269,
+  "name": "Snake",
+  "location": "Ancient Yazhou City",
+  "image": "data/Monster_Images/monster-269.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Fire Snake Skin",
+      "itemId": 7696,
+      "itemFile": "material-7696.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Meat",
+      "itemId": 7482,
+      "itemFile": "material-7482.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Liquid",
+      "itemId": 7755,
+      "itemFile": "material-7755.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Tooth",
+      "itemId": 7734,
+      "itemFile": "material-7734.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 544,
+    "sp": 572,
+    "catchable": "Yes",
+    "spd": 186,
+    "str": 47,
+    "con": 41,
+    "int": 37,
+    "wis": 37,
+    "agi": 42
+  }
+}

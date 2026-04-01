@@ -1,0 +1,18 @@
+{
+  "id": 1907,
+  "name": "Priest Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leather / Leaf / Grass",
+  "description": "Priest's favorite boots. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 15,
+    "SPD": 10
+  },
+  "image": "data/images/shoes-1907.png",
+  "file": "shoes-1907.json"
+}

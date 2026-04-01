@@ -1,0 +1,15 @@
+{
+  "id": 1657,
+  "name": "B Rabbit Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Ornaments shaped like black bunny ears",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1657.png",
+  "file": "helmet-1657.json"
+}

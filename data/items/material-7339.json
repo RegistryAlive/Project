@@ -1,0 +1,17 @@
+{
+  "id": 7339,
+  "name": "GoldSweetOlive",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Golden flowers with strong fragrance are the raw materials for making Mid-autumn osmanthus furniture.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 120
+  },
+  "image": "data/images/material-7339.png",
+  "file": "material-7339.json"
+}

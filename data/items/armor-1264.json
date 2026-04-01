@@ -1,0 +1,15 @@
+{
+  "id": 1264,
+  "name": "Winter Outfit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "2019 new Christmas clothes",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1264.png",
+  "file": "armor-1264.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6371,
+  "name": "Leg Gravity Tr",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can strengthen leg muscles training equipment",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6371.png",
+  "file": "furniture-6371.json"
+}

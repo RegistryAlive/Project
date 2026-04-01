@@ -1,0 +1,18 @@
+{
+  "id": 55,
+  "name": "Cool Blue Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Wood / Iron / Titanium",
+  "description": "Sharp falchion with blue blade",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55,
+    "DEF": 15
+  },
+  "image": "data/images/weapon-55.png",
+  "file": "weapon-55.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6332,
+  "name": "Wood Floor",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "used for the floor",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6332.png",
+  "file": "furniture-6332.json"
+}

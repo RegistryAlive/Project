@@ -1,0 +1,17 @@
+{
+  "id": 808,
+  "name": "Ball of Fire",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": null,
+  "description": "Fire properties of crystal ball",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 5
+  },
+  "image": "data/images/weapon-808.png",
+  "file": "weapon-808.json"
+}

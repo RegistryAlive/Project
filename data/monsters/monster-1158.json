@@ -1,0 +1,27 @@
+{
+  "id": 1158,
+  "name": "Freezing Snowtree",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-1159.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 426,
+    "sp": 480,
+    "catchable": "Unknown",
+    "spd": 125,
+    "str": 30,
+    "con": 28,
+    "int": 33,
+    "wis": 34,
+    "agi": 25
+  }
+}

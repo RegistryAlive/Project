@@ -1,0 +1,18 @@
+{
+  "id": 640,
+  "name": "Inari Ocarina",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "One of the instruments used in the songs and dances dedicated to the gods, the music is dedicated to the gods with the power of piety. 46% crit hit possible; bonus coat effect when equipped with other Fushimi Inari equipment.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 60,
+    "MaxHP": 200
+  },
+  "image": "data/images/weapon-640.png",
+  "file": "weapon-640.json"
+}

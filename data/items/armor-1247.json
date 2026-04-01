@@ -1,0 +1,17 @@
+{
+  "id": 1247,
+  "name": "Christmas Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A fashionable Christmas Outfit. Set: Critical damage increase.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 45
+  },
+  "image": "data/images/armor-1247.png",
+  "file": "armor-1247.json"
+}

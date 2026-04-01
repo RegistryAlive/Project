@@ -1,0 +1,18 @@
+{
+  "id": 862,
+  "name": "Cloudy Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A holy sword with 10% chance to resist seal.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 10,
+    "MaxHP": 300
+  },
+  "image": "data/images/weapon-862.png",
+  "file": "weapon-862.json"
+}

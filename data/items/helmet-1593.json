@@ -1,0 +1,15 @@
+{
+  "id": 1593,
+  "name": "White Bunny Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Limited edition collector's item!",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1593.png",
+  "file": "helmet-1593.json"
+}

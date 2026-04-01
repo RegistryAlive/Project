@@ -1,0 +1,15 @@
+{
+  "id": 9046,
+  "name": "Mill",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A giant instrument used to make a number of items.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/tool-9046.png",
+  "file": "tool-9046.json"
+}

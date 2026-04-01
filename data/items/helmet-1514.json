@@ -1,0 +1,18 @@
+{
+  "id": 1514,
+  "name": "Priest Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Tin / Iron / Titanium",
+  "description": "Priest's holy crown. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 15,
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1514.png",
+  "file": "helmet-1514.json"
+}

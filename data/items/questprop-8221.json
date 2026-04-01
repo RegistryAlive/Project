@@ -1,0 +1,15 @@
+{
+  "id": 8221,
+  "name": "White Bone Key",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is picked from the white bone pile",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8221.png",
+  "file": "questprop-8221.json"
+}

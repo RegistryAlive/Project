@@ -1,0 +1,45 @@
+{
+  "id": 295,
+  "name": "Red Pig",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-295.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Leek",
+      "itemId": 7410,
+      "itemFile": "material-7410.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "A-choy",
+      "itemId": 7404,
+      "itemFile": "material-7404.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pig Skin",
+      "itemId": 7777,
+      "itemFile": "material-7777.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 800,
+    "sp": 607,
+    "catchable": "Yes",
+    "spd": 180.5,
+    "str": 47,
+    "con": 50,
+    "int": 40,
+    "wis": 39,
+    "agi": 37
+  }
+}

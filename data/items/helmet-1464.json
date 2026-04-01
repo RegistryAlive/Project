@@ -1,0 +1,18 @@
+{
+  "id": 1464,
+  "name": "Leather Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "A gentleman hat made of leather and cloth.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1464.png",
+  "file": "helmet-1464.json"
+}

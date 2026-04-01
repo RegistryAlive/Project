@@ -1,0 +1,15 @@
+{
+  "id": 8138,
+  "name": "Star Index",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can lead in the dark",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8138.png",
+  "file": "questprop-8138.json"
+}

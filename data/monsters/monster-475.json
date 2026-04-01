@@ -1,0 +1,27 @@
+{
+  "id": 475,
+  "name": "Holy Beast (Quest)",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-475.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Ma Stone",
+      "itemId": 8172,
+      "itemFile": "questprop-8172.json",
+      "itemCategory": "questprop"
+    }
+  ],
+  "stats": {
+    "level": 110,
+    "hp": 15000,
+    "sp": 1011,
+    "catchable": "Unknown",
+    "spd": 313,
+    "str": 75,
+    "con": 75,
+    "int": 47,
+    "wis": 59,
+    "agi": 74
+  }
+}

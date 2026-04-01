@@ -1,0 +1,15 @@
+{
+  "id": 1671,
+  "name": "Captain hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "In order to express the captain's identity, a big hat was deliberately made",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1671.png",
+  "file": "helmet-1671.json"
+}

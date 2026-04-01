@@ -1,0 +1,39 @@
+{
+  "id": 429,
+  "name": "Taiwan Black Bear",
+  "location": "Taiwan (Carnie) - Pleasure Island",
+  "image": "data/Monster_Images/monster-429.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Claw",
+      "itemId": 7775,
+      "itemFile": "material-7775.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tuna",
+      "itemId": 7491,
+      "itemFile": "material-7491.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 84,
+    "hp": 931,
+    "sp": 728,
+    "catchable": "Yes",
+    "spd": 226,
+    "str": 53,
+    "con": 55,
+    "int": 49,
+    "wis": 45,
+    "agi": 50
+  }
+}

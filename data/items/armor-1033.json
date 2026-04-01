@@ -1,0 +1,18 @@
+{
+  "id": 1033,
+  "name": "Purple Qi Pao",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Magic / Flower",
+  "description": "Dyed with water from ethereal Purple-Water Lake",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "SPD": 11
+  },
+  "image": "data/images/armor-1033.png",
+  "file": "armor-1033.json"
+}

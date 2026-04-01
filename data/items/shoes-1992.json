@@ -1,0 +1,18 @@
+{
+  "id": 1992,
+  "name": "Breezy Clogs",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Shoes from the ancient country of Dongying, you can enjoy activities freely in the sun without fear of the summer heat. Complete four-piece suit effect: SPD+100",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MaxSP": 20
+  },
+  "image": "data/images/shoes-1992.png",
+  "file": "shoes-1992.json"
+}

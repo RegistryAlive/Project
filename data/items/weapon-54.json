@@ -1,0 +1,18 @@
+{
+  "id": 54,
+  "name": "Muramasa Katana",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Steel",
+  "description": "Special falchion for Hayate after her rebirth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-54.png",
+  "file": "weapon-54.json"
+}

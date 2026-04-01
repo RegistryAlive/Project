@@ -1,0 +1,17 @@
+{
+  "id": 1935,
+  "name": "High Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Leather / Flower / Grass",
+  "description": "Besides comfort, they come with up-to-par defense",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 27
+  },
+  "image": "data/images/shoes-1935.png",
+  "file": "shoes-1935.json"
+}

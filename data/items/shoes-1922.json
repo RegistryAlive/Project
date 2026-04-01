@@ -1,0 +1,18 @@
+{
+  "id": 1922,
+  "name": "Fire Aurora Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Flower",
+  "description": "Suit: Damages Wind enemies;-50% damage to Water enemies.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "MATK": 10
+  },
+  "image": "data/images/shoes-1922.png",
+  "file": "shoes-1922.json"
+}

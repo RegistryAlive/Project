@@ -1,0 +1,15 @@
+{
+  "id": 1278,
+  "name": "Nurse Uniform",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Nurse's clothing, female only.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1278.png",
+  "file": "armor-1278.json"
+}

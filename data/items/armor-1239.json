@@ -1,0 +1,18 @@
+{
+  "id": 1239,
+  "name": "Elegant dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Simple and elegant tailoring, low-key but noble temperament",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20,
+    "SPD": 32
+  },
+  "image": "data/images/armor-1239.png",
+  "file": "armor-1239.json"
+}

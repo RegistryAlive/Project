@@ -1,0 +1,15 @@
+{
+  "id": 6268,
+  "name": "Crane",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "one of the instrument used to lift heavy items.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6268.png",
+  "file": "furniture-6268.json"
+}

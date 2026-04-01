@@ -1,0 +1,18 @@
+{
+  "id": 53,
+  "name": "Chopping Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Copper / Iron / Steel",
+  "description": "Special falchion that increases caster's ATK power",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "DEF": 12
+  },
+  "image": "data/images/weapon-53.png",
+  "file": "weapon-53.json"
+}

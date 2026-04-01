@@ -1,0 +1,17 @@
+{
+  "id": 2877,
+  "name": "Magic Glove",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Flower / Leather / Magic",
+  "description": "Woven with special magic materials. Adds to MATK",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 37
+  },
+  "image": "data/images/arm-2877.png",
+  "file": "arm-2877.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8510,
+  "name": "Silver String",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets can be exchanged for Tattooed Silver Stringed Moon Tickets.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8510.png",
+  "file": "questprop-8510.json"
+}

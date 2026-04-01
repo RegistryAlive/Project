@@ -1,0 +1,15 @@
+{
+  "id": 6231,
+  "name": "Low-Temperature Kiln",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make fire items with low temperature.",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6231.png",
+  "file": "furniture-6231.json"
+}

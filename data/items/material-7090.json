@@ -1,0 +1,18 @@
+{
+  "id": 7090,
+  "name": "Rice Wine Chicken",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Chicken cooked in rice wine",
+  "size": "1x1",
+  "attributes": {
+    "SP": 180,
+    "HP": 170
+  },
+  "image": "data/images/material-7090.png",
+  "file": "material-7090.json"
+}

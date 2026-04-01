@@ -1,0 +1,15 @@
+{
+  "id": 8322,
+  "name": "Villager's Money",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Money that needs to be paid back to the villagers",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8322.png",
+  "file": "questprop-8322.json"
+}

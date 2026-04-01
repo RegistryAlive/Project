@@ -1,0 +1,15 @@
+{
+  "id": 6274,
+  "name": "Easter B. Bin",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Easter Bunny Recycle Bin. To store reusable items.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6274.png",
+  "file": "furniture-6274.json"
+}

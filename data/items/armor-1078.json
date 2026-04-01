@@ -1,0 +1,18 @@
+{
+  "id": 1078,
+  "name": "Sea Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Titanium / Iron / Steel",
+  "description": "Made of rare deep sea steel scales.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 19,
+    "MaxHP": 100
+  },
+  "image": "data/images/armor-1078.png",
+  "file": "armor-1078.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6315,
+  "name": "Stand Bell",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Big bell that can speed up creation by 3%.",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6315.png",
+  "file": "furniture-6315.json"
+}

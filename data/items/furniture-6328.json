@@ -1,0 +1,15 @@
+{
+  "id": 6328,
+  "name": "Coin Machine",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "can obtain items with coins",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6328.png",
+  "file": "furniture-6328.json"
+}

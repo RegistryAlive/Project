@@ -1,0 +1,17 @@
+{
+  "id": 728,
+  "name": "Blue Axe",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Iron / Steel",
+  "description": "An axe forged from steel and iron",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 65
+  },
+  "image": "data/images/weapon-728.png",
+  "file": "weapon-728.json"
+}

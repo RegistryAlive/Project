@@ -1,0 +1,17 @@
+{
+  "id": 10026,
+  "name": "Turtle Car Cap",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A four-wheeled, engine-powered transport",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 46911
+  },
+  "image": "data/images/vehicle-10026.png",
+  "file": "vehicle-10026.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2018,
+  "name": "Soulguard Shoe",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Texture and durability are essential, but the most important thing is not to lose the sense of propriety; when equipped together with other Soul Guardian series equipment, you can get an extra coat effect.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "MDEF": 20
+  },
+  "image": "data/images/shoes-2018.png",
+  "file": "shoes-2018.json"
+}

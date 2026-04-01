@@ -1,0 +1,15 @@
+{
+  "id": 1700,
+  "name": "Blue Mask",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "In addition to anti-smog and anti-virus, there are also good anti-epidemic products with different surprises when you wear it first!",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1700.png",
+  "file": "helmet-1700.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 524,
+  "name": "Wooden Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Wood / Pure Iron",
+  "description": "Twined by wood and dark red metal.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 28,
+    "ATK": 20
+  },
+  "image": "data/images/weapon-524.png",
+  "file": "weapon-524.json"
+}

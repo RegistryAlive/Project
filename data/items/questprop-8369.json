@@ -1,0 +1,15 @@
+{
+  "id": 8369,
+  "name": "Frostheart Cho",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Quest item for 2011 Valentine's Day Event Redemption",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8369.png",
+  "file": "questprop-8369.json"
+}

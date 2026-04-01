@@ -1,0 +1,15 @@
+{
+  "id": 8299,
+  "name": "Super Ginseng",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The one of best medicine in the world",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8299.png",
+  "file": "questprop-8299.json"
+}

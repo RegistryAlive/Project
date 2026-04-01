@@ -1,0 +1,27 @@
+{
+  "id": 459,
+  "name": "Red Papilionidae",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-459.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Pest Tentacles",
+      "itemId": 7790,
+      "itemFile": "material-7790.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 542,
+    "sp": 648,
+    "catchable": "Unknown",
+    "spd": 196.5,
+    "str": 43,
+    "con": 40,
+    "int": 43,
+    "wis": 42,
+    "agi": 45
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 1631,
+  "name": "White Bunny Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Pure White Bunny Ears that are meant for decorating purposes but can be equipped.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1631.png",
+  "file": "helmet-1631.json"
+}

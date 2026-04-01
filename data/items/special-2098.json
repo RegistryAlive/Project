@@ -1,0 +1,15 @@
+{
+  "id": 2098,
+  "name": "Shot Put",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Lead",
+  "description": "A heavy lead weight. Equipping this will reduce speed.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2098.png",
+  "file": "special-2098.json"
+}

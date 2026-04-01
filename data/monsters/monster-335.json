@@ -1,0 +1,39 @@
+{
+  "id": 335,
+  "name": "Frost Bat",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-335.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Muskmelon",
+      "itemId": 7446,
+      "itemFile": "material-7446.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 101,
+    "hp": 1482,
+    "sp": 1072,
+    "catchable": "No",
+    "spd": 261.5,
+    "str": 43,
+    "con": 85,
+    "int": 55,
+    "wis": 65,
+    "agi": 55
+  }
+}

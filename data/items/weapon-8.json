@@ -1,0 +1,18 @@
+{
+  "id": 8,
+  "name": "Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Steel / Wood",
+  "description": "A knife made from steel",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 6,
+    "DEF": 6
+  },
+  "image": "data/images/weapon-8.png",
+  "file": "weapon-8.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 177,
+  "name": "Sky Sword+1",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "Can't be socketed.24% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "SPD": 12
+  },
+  "image": "data/images/weapon-177.png",
+  "file": "weapon-177.json"
+}

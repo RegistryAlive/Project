@@ -1,0 +1,15 @@
+{
+  "id": 8359,
+  "name": "Crazy Dragon C",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Obtain a Crazy Dragon pet",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8359.png",
+  "file": "questprop-8359.json"
+}

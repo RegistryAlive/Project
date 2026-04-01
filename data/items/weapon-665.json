@@ -1,0 +1,15 @@
+{
+  "id": 665,
+  "name": "Broken Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "A damaged claw after excessive use.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-665.png",
+  "file": "weapon-665.json"
+}

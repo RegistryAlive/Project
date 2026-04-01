@@ -1,0 +1,15 @@
+{
+  "id": 1211,
+  "name": "Riffo's Patch",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "This Patch was made by Riffo with the help from the previous translators",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1211.png",
+  "file": "armor-1211.json"
+}

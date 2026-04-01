@@ -1,0 +1,15 @@
+{
+  "id": 8494,
+  "name": "Saturn Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make Saturn a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8494.png",
+  "file": "questprop-8494.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2017,
+  "name": "Platinum Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 60,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The best example of lightweight and speedy defense; when equipped together with other platinum guards, you can get an extra coat effect.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30,
+    "DEF": 30
+  },
+  "image": "data/images/shoes-2017.png",
+  "file": "shoes-2017.json"
+}

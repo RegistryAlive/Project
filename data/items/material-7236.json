@@ -1,0 +1,17 @@
+{
+  "id": 7236,
+  "name": "Boiled Sardine (Glaze Table)",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "Common fish, from a can",
+  "size": "1x1",
+  "attributes": {
+    "HP": 220
+  },
+  "image": "data/images/material-7236.png",
+  "file": "material-7236.json"
+}

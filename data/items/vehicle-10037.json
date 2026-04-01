@@ -1,0 +1,17 @@
+{
+  "id": 10037,
+  "name": "Girl's Dream C",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Designed and crafted for young girls. A flying equipment that represents Pink Love is born. (Capsule)",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10037.png",
+  "file": "vehicle-10037.json"
+}

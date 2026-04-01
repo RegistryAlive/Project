@@ -1,0 +1,15 @@
+{
+  "id": 8101,
+  "name": "Sealed Bead",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is the bead with the memory of Niss",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8101.png",
+  "file": "questprop-8101.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7815,
+  "name": "Energy Stone",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Quartz (Crystal)",
+  "description": "A Stone is full of magic energy",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7815.png",
+  "file": "material-7815.json"
+}

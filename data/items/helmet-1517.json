@@ -1,0 +1,18 @@
+{
+  "id": 1517,
+  "name": "Soul Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Pure Iron / Steel",
+  "description": "A helmet which is made from the hot soul mine",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MaxHP": 100
+  },
+  "image": "data/images/helmet-1517.png",
+  "file": "helmet-1517.json"
+}

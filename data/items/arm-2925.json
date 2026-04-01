@@ -1,0 +1,17 @@
+{
+  "id": 2925,
+  "name": "Firefly Brace",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The bracelet exudes a fragrance, making fireflies constantly flying around. When attacked by a water attribute enemy, the damage is reduced by 3% (if the bracelet shape is changed, the effect will disappear)",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 23
+  },
+  "image": "data/images/arm-2925.png",
+  "file": "arm-2925.json"
+}

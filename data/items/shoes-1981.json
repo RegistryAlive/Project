@@ -1,0 +1,17 @@
+{
+  "id": 1981,
+  "name": "Red Flipflops",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Red flipflos, has strong magical defense power ~",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 50
+  },
+  "image": "data/images/shoes-1981.png",
+  "file": "shoes-1981.json"
+}

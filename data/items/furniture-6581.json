@@ -1,0 +1,15 @@
+{
+  "id": 6581,
+  "name": "Student Desk",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Tables used by students in class",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6581.png",
+  "file": "furniture-6581.json"
+}

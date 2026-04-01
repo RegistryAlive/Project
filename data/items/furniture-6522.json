@@ -1,0 +1,15 @@
+{
+  "id": 6522,
+  "name": "Wallpaper",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Decorations shaped like dragons can be pasted on the wall as decoration",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6522.png",
+  "file": "furniture-6522.json"
+}

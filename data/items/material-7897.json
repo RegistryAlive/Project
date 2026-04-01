@@ -1,0 +1,15 @@
+{
+  "id": 7897,
+  "name": "Attack Pestle Box",
+  "type": "Material",
+  "category": "material",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "Can be enhanced but not socketed. Can be traded. Cannot be traded after being opened.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7897.png",
+  "file": "material-7897.json"
+}

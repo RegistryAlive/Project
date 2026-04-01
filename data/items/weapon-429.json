@@ -1,0 +1,18 @@
+{
+  "id": 429,
+  "name": "Fly Wing Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Wings on the side of the bow, stability and power have reached the level of the holy bow.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 26,
+    "SPD": 24
+  },
+  "image": "data/images/weapon-429.png",
+  "file": "weapon-429.json"
+}

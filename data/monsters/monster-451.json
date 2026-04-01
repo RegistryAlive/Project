@@ -1,0 +1,39 @@
+{
+  "id": 451,
+  "name": "Green Parrot",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-451.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coconut (Pulp)",
+      "itemId": 7880,
+      "itemFile": "material-7880.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 122,
+    "hp": 1362,
+    "sp": 1172,
+    "catchable": "Unknown",
+    "spd": 339,
+    "str": 59,
+    "con": 71,
+    "int": 91,
+    "wis": 67,
+    "agi": 78
+  }
+}

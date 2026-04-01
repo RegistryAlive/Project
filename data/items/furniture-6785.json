@@ -1,0 +1,15 @@
+{
+  "id": 6785,
+  "name": "Classic Light, East",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "An eastern classic lighting, hangs on the wall",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6785.png",
+  "file": "furniture-6785.json"
+}

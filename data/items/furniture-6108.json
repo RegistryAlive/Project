@@ -1,0 +1,15 @@
+{
+  "id": 6108,
+  "name": "Shower Part",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is used for taking a shower",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6108.png",
+  "file": "furniture-6108.json"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 16,
+  "name": "Swift Hill Monster",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-16.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Common Stone",
+      "itemId": 7630,
+      "itemFile": "material-7630.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coprinus",
+      "itemId": 7483,
+      "itemFile": "material-7483.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sardine",
+      "itemId": 7487,
+      "itemFile": "material-7487.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cypress",
+      "itemId": 7654,
+      "itemFile": "material-7654.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 106,
+    "hp": 1550,
+    "sp": 1014,
+    "catchable": "No",
+    "spd": 305,
+    "str": 68,
+    "con": 65,
+    "int": 52,
+    "wis": 60,
+    "agi": 73
+  }
+}

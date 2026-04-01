@@ -1,0 +1,18 @@
+{
+  "id": 708,
+  "name": "Bronze Hatchet",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Copper / Steel",
+  "description": "A long handle makes it easy to wield.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "DEF": 19
+  },
+  "image": "data/images/weapon-708.png",
+  "file": "weapon-708.json"
+}

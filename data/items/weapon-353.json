@@ -1,0 +1,18 @@
+{
+  "id": 353,
+  "name": "Thunder Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cannot be socketed and traded, 46% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 66,
+    "MaxSP": 330
+  },
+  "image": "data/images/weapon-353.png",
+  "file": "weapon-353.json"
+}

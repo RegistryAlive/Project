@@ -1,0 +1,18 @@
+{
+  "id": 835,
+  "name": "Wise Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Symbolizes the white lupin used by the wise, with 46% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 90,
+    "MaxHP": 200
+  },
+  "image": "data/images/weapon-835.png",
+  "file": "weapon-835.json"
+}

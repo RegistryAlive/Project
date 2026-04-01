@@ -1,0 +1,15 @@
+{
+  "id": 8332,
+  "name": "Corsair Blueprint",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Lay out for the corsair core",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8332.png",
+  "file": "questprop-8332.json"
+}

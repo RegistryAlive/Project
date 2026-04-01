@@ -1,0 +1,15 @@
+{
+  "id": 5030,
+  "name": "Demon Fruit",
+  "type": "ItemPetFruit",
+  "category": "accessory",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Adds 1 to Eva's ability. You can get it by compounding. Cannot be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5030.png",
+  "file": "accessory-5030.json"
+}

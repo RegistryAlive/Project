@@ -1,0 +1,18 @@
+{
+  "id": 19,
+  "name": "Wind Rip",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A Dexterous knife, brandished to slice through atmosphere.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 17,
+    "DEF": 17
+  },
+  "image": "data/images/weapon-19.png",
+  "file": "weapon-19.json"
+}

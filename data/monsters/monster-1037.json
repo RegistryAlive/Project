@@ -1,0 +1,33 @@
+{
+  "id": 1037,
+  "name": "Gurnard",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-1038.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Lobster",
+      "itemId": 7496,
+      "itemFile": "material-7496.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Shrimp",
+      "itemId": 7497,
+      "itemFile": "material-7497.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 134,
+    "hp": 1893,
+    "sp": 1417,
+    "catchable": "Unknown",
+    "spd": 333,
+    "str": 80,
+    "con": 98,
+    "int": 78,
+    "wis": 80,
+    "agi": 66
+  }
+}

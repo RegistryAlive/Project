@@ -1,0 +1,15 @@
+{
+  "id": 8311,
+  "name": "Magical Mirror",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A mirror from Colombo.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8311.png",
+  "file": "questprop-8311.json"
+}

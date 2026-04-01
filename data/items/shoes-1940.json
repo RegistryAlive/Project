@@ -1,0 +1,17 @@
+{
+  "id": 1940,
+  "name": "Super Demon Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Feather / Grass / Nylon",
+  "description": "Magic defensive boots belong to mage",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 32
+  },
+  "image": "data/images/shoes-1940.png",
+  "file": "shoes-1940.json"
+}

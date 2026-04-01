@@ -1,0 +1,17 @@
+{
+  "id": 267,
+  "name": "Copper Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Copper / Wood",
+  "description": "A spear made from copper.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10
+  },
+  "image": "data/images/weapon-267.png",
+  "file": "weapon-267.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6169,
+  "name": "Trigger",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Spring set of a gun",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6169.png",
+  "file": "furniture-6169.json"
+}

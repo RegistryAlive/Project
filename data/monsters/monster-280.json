@@ -1,0 +1,45 @@
+{
+  "id": 280,
+  "name": "An Ginseng Monster",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-280.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Ginseng",
+      "itemId": 7396,
+      "itemFile": "material-7396.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Paper Grass",
+      "itemId": 7364,
+      "itemFile": "material-7364.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Small Ginseng",
+      "itemId": 7397,
+      "itemFile": "material-7397.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Great Ginseng",
+      "itemId": 7174,
+      "itemFile": "material-7174.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 83,
+    "hp": 853,
+    "sp": 725,
+    "catchable": "Unknown",
+    "spd": 234.5,
+    "str": 52,
+    "con": 50,
+    "int": 47,
+    "wis": 45,
+    "agi": 55
+  }
+}

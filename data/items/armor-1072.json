@@ -1,0 +1,18 @@
+{
+  "id": 1072,
+  "name": "Wolf Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Leather / Gold",
+  "description": "Fighting outfit made of leather and gold.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 16,
+    "DEF": 14
+  },
+  "image": "data/images/armor-1072.png",
+  "file": "armor-1072.json"
+}

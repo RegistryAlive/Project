@@ -1,0 +1,18 @@
+{
+  "id": 1282,
+  "name": "Dark King Clot",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 3,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Clothes made of high-grade black silk are blessed with the King's blessing. When HP is below 50%, increase damage by 3%",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 30,
+    "MaxHP": 120
+  },
+  "image": "data/images/armor-1282.png",
+  "file": "armor-1282.json"
+}

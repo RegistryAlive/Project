@@ -1,0 +1,15 @@
+{
+  "id": 8286,
+  "name": "Flamy Ribbon",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used to wrap gifts box of lovers",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8286.png",
+  "file": "questprop-8286.json"
+}

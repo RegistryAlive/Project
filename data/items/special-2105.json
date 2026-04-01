@@ -1,0 +1,17 @@
+{
+  "id": 2105,
+  "name": "Burst Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "A medal which can enhance magic attacking",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 6
+  },
+  "image": "data/images/special-2105.png",
+  "file": "special-2105.json"
+}

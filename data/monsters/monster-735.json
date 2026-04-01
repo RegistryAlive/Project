@@ -1,0 +1,27 @@
+{
+  "id": 735,
+  "name": "Guardian Griffin (Quest)",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-735.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 102,
+    "hp": 13500,
+    "sp": 868,
+    "catchable": "Unknown",
+    "spd": 301,
+    "str": 71,
+    "con": 63,
+    "int": 47,
+    "wis": 51,
+    "agi": 74
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 679,
+  "name": "Icy Dragon Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Steel",
+  "description": "The sharp claw of icy dragon",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 23,
+    "SPD": 25
+  },
+  "image": "data/images/weapon-679.png",
+  "file": "weapon-679.json"
+}

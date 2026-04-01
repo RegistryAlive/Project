@@ -1,0 +1,27 @@
+{
+  "id": 906,
+  "name": "Skull Soul",
+  "location": "Rome",
+  "image": "data/Monster_Images/monster-906.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 111,
+    "hp": 4513,
+    "sp": 1075,
+    "catchable": "Unknown",
+    "spd": 236.5,
+    "str": 76,
+    "con": 98,
+    "int": 61,
+    "wis": 63,
+    "agi": 35
+  }
+}

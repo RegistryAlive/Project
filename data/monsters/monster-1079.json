@@ -1,0 +1,33 @@
+{
+  "id": 1079,
+  "name": "Mayan Rocket Man",
+  "location": "Mayan Forest",
+  "image": "data/Monster_Images/monster-1080.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Crude Oil",
+      "itemId": 7821,
+      "itemFile": "material-7821.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gasoline",
+      "itemId": 7822,
+      "itemFile": "material-7822.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 43,
+    "hp": 401,
+    "sp": 326,
+    "catchable": "Unknown",
+    "spd": 116.5,
+    "str": 28,
+    "con": 28,
+    "int": 24,
+    "wis": 23,
+    "agi": 26
+  }
+}

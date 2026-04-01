@@ -1,0 +1,18 @@
+{
+  "id": 1294,
+  "name": "Tech Atk Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Combat clothing made with high technology.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "MaxHP": 180
+  },
+  "image": "data/images/armor-1294.png",
+  "file": "armor-1294.json"
+}

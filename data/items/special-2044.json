@@ -1,0 +1,18 @@
+{
+  "id": 2044,
+  "name": "Pure Silver Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Silver / Grass",
+  "description": "A ring made of pure silver. It's a talisman.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 7,
+    "MATK": 3
+  },
+  "image": "data/images/special-2044.png",
+  "file": "special-2044.json"
+}

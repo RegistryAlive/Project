@@ -1,0 +1,17 @@
+{
+  "id": 2100,
+  "name": "Attack Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Iron / Silver",
+  "description": "A medal which can enhance attacking",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 6
+  },
+  "image": "data/images/special-2100.png",
+  "file": "special-2100.json"
+}

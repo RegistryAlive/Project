@@ -1,0 +1,18 @@
+{
+  "id": 369,
+  "name": "Searing Blade",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "A double-headed blade engulfed in ice. 24% chance of critical strike. Damage caused by critical greatly increased.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "MaxHP": 450
+  },
+  "image": "data/images/weapon-369.png",
+  "file": "weapon-369.json"
+}

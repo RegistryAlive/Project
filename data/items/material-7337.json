@@ -1,0 +1,17 @@
+{
+  "id": 7337,
+  "name": "Aqua Pearl",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The water-blue pearl is said to be the tears of a mermaid. It is the material for making marine furniture.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 150
+  },
+  "image": "data/images/material-7337.png",
+  "file": "material-7337.json"
+}

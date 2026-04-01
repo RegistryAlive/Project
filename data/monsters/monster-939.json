@@ -1,0 +1,27 @@
+{
+  "id": 939,
+  "name": "Stone Wizard",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-939.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 1080,
+    "sp": 847,
+    "catchable": "Unknown",
+    "spd": 262,
+    "str": 82,
+    "con": 60,
+    "int": 52,
+    "wis": 50,
+    "agi": 56
+  }
+}

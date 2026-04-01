@@ -1,0 +1,18 @@
+{
+  "id": 2683,
+  "name": "Magic Clockwor",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 24,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A clockwork glowing with mysterious magical powers.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 12,
+    "MDEF": 12
+  },
+  "image": "data/images/special-2683.png",
+  "file": "special-2683.json"
+}

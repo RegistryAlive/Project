@@ -1,0 +1,18 @@
+{
+  "id": 2945,
+  "name": "Immortal Glove",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It symbolizes the rapid wind that can fly freely to all parts of the world; when the wearer's HP is lower than 50%, the damage can be increased by 2%, and additional set effects can be obtained when equipped with other indestructible series equipment at",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "SPD": 35
+  },
+  "image": "data/images/arm-2945.png",
+  "file": "arm-2945.json"
+}

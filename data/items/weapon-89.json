@@ -1,0 +1,18 @@
+{
+  "id": 89,
+  "name": "Bloodlust",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The bright red double knives once belonged to the strong who survived countless bloody battles. Has 46% crit effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45,
+    "SPD": 50
+  },
+  "image": "data/images/weapon-89.png",
+  "file": "weapon-89.json"
+}

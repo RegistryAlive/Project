@@ -1,0 +1,15 @@
+{
+  "id": 9025,
+  "name": "Large Windmill",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Windmill which is power by fans.",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/tool-9025.png",
+  "file": "tool-9025.json"
+}

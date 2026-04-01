@@ -1,0 +1,15 @@
+{
+  "id": 6048,
+  "name": "Blue Flavor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 1) / Flower",
+  "description": "It is made from a blue flower",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6048.png",
+  "file": "furniture-6048.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1420,
+  "name": "Beard Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Titanium / Gold",
+  "description": "A holy helmet circled with a wing dragon.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 22,
+    "MDEF": 9
+  },
+  "image": "data/images/helmet-1420.png",
+  "file": "helmet-1420.json"
+}

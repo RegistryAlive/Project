@@ -1,0 +1,17 @@
+{
+  "id": 1812,
+  "name": "Vine Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Shoes which are made up by vines",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 2
+  },
+  "image": "data/images/shoes-1812.png",
+  "file": "shoes-1812.json"
+}

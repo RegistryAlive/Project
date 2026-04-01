@@ -1,0 +1,18 @@
+{
+  "id": 1569,
+  "name": "Eagle Headband",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Aluminum / Pure Iron / Steel",
+  "description": "Increases 300 DEF for 2 hrs, cannot be traded",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 22,
+    "ATK": 14
+  },
+  "image": "data/images/helmet-1569.png",
+  "file": "helmet-1569.json"
+}

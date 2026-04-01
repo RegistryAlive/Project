@@ -1,0 +1,18 @@
+{
+  "id": 864,
+  "name": "Copper Sabre",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "DEF": 12
+  },
+  "image": "data/images/weapon-864.png",
+  "file": "weapon-864.json"
+}

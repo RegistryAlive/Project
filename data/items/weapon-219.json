@@ -1,0 +1,18 @@
+{
+  "id": 219,
+  "name": "Frozen Dragon Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 42,
+  "level": 84,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Copper / Iron / Steel / Titanium",
+  "description": "Adds ATK power and prevents enemy counter measures",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "SPD": 34
+  },
+  "image": "data/images/weapon-219.png",
+  "file": "weapon-219.json"
+}

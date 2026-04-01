@@ -1,0 +1,15 @@
+{
+  "id": 7643,
+  "name": "White Clay",
+  "type": "MaterialClay",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "White/Yellow Clay",
+  "description": "Used for making a percolator",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7643.png",
+  "file": "material-7643.json"
+}

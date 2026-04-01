@@ -1,0 +1,18 @@
+{
+  "id": 164,
+  "name": "Pacific Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 61,
+  "level": 122,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The sword handed down by the descendents of the swire group",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 61,
+    "SPD": 61
+  },
+  "image": "data/images/weapon-164.png",
+  "file": "weapon-164.json"
+}

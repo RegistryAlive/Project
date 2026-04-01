@@ -1,0 +1,15 @@
+{
+  "id": 6133,
+  "name": "Airship Steer",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 16,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Aluminum",
+  "description": "Moves the airship in the direction wanted",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6133.png",
+  "file": "furniture-6133.json"
+}

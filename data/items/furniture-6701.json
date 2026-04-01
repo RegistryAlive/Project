@@ -1,0 +1,15 @@
+{
+  "id": 6701,
+  "name": "Chimney",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Santa's fast track makes people hesitant about whether they should burn firewood or not.",
+  "size": "2x5",
+  "attributes": {},
+  "image": "data/images/furniture-6701.png",
+  "file": "furniture-6701.json"
+}

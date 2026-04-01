@@ -1,0 +1,39 @@
+{
+  "id": 1111,
+  "name": "Land Snow Monkey",
+  "location": "Shayii Hill",
+  "image": "data/Monster_Images/monster-1112.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Latania",
+      "itemId": 7441,
+      "itemFile": "material-7441.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Banana",
+      "itemId": 7437,
+      "itemFile": "material-7437.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pinecone",
+      "itemId": 7456,
+      "itemFile": "material-7456.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 31,
+    "hp": 323,
+    "sp": 260,
+    "catchable": "Yes",
+    "spd": 76.5,
+    "str": 15,
+    "con": 20,
+    "int": 18,
+    "wis": 20,
+    "agi": 15
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 1144,
+  "name": "Great Wall Guard",
+  "location": "Great Wall",
+  "image": "data/Monster_Images/monster-1145.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Taro",
+      "itemId": 7432,
+      "itemFile": "material-7432.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 79,
+    "hp": 995,
+    "sp": 727,
+    "catchable": "Unknown",
+    "spd": 208.5,
+    "str": 53,
+    "con": 61,
+    "int": 32,
+    "wis": 46,
+    "agi": 45
+  }
+}

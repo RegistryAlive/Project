@@ -1,0 +1,33 @@
+{
+  "id": 169,
+  "name": "Skeleton General",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-169.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Bread",
+      "itemId": 7010,
+      "itemFile": "material-7010.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "French Bread",
+      "itemId": 7015,
+      "itemFile": "material-7015.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 104,
+    "hp": 881,
+    "sp": 784,
+    "catchable": "Unknown",
+    "spd": 244,
+    "str": 69,
+    "con": 61,
+    "int": 41,
+    "wis": 45,
+    "agi": 44
+  }
+}

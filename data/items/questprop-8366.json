@@ -1,0 +1,15 @@
+{
+  "id": 8366,
+  "name": "Light of Bless",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Reward for completion of instance Jade Emperor's Wrath. Use this to exchange for festive rewards!",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8366.png",
+  "file": "questprop-8366.json"
+}

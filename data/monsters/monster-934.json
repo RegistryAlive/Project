@@ -1,0 +1,27 @@
+{
+  "id": 934,
+  "name": "Stone Eagle (Trojan War)",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-934.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 130,
+    "hp": 30000,
+    "sp": 8031,
+    "catchable": "Unknown",
+    "spd": 195,
+    "str": 0,
+    "con": 500,
+    "int": 0,
+    "wis": 500,
+    "agi": 0
+  }
+}

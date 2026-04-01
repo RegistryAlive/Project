@@ -1,0 +1,18 @@
+{
+  "id": 2054,
+  "name": "Deer Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Diamond",
+  "description": "Ear rings rubbed from staghorn.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "ATK": 6
+  },
+  "image": "data/images/special-2054.png",
+  "file": "special-2054.json"
+}

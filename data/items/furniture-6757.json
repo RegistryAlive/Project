@@ -1,0 +1,15 @@
+{
+  "id": 6757,
+  "name": "Fine Nylon",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Nylon",
+  "description": "A kind of fine polymer with flexibility",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6757.png",
+  "file": "furniture-6757.json"
+}

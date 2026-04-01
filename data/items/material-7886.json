@@ -1,0 +1,15 @@
+{
+  "id": 7886,
+  "name": "10% EXP Bolus",
+  "type": "Material",
+  "category": "material",
+  "rank": 8,
+  "level": 16,
+  "rarity": "uncommon",
+  "base": "Chemical",
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7886.png",
+  "file": "material-7886.json"
+}

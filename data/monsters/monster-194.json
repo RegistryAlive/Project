@@ -1,0 +1,33 @@
+{
+  "id": 194,
+  "name": "Frozen Bat",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-194.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Olla Noodles",
+      "itemId": 7065,
+      "itemFile": "material-7065.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 329,
+    "sp": 292,
+    "catchable": "Unknown",
+    "spd": 148,
+    "str": 24,
+    "con": 21,
+    "int": 17,
+    "wis": 16,
+    "agi": 23
+  }
+}

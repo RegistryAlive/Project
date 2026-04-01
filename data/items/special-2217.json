@@ -1,0 +1,18 @@
+{
+  "id": 2217,
+  "name": "Fast Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Armlet enhancing agility.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 75,
+    "MaxHP": 400
+  },
+  "image": "data/images/special-2217.png",
+  "file": "special-2217.json"
+}

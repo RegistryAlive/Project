@@ -1,0 +1,15 @@
+{
+  "id": 6670,
+  "name": "Moonlight Osm",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Celebrate a full moon, fold a sprig of golden osmanthus, bathe in the fragrance of wine...it is true, you can really bathe.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6670.png",
+  "file": "furniture-6670.json"
+}

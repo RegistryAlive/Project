@@ -1,0 +1,18 @@
+{
+  "id": 1419,
+  "name": "Blue Bird Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Copper / Gold / Titanium",
+  "description": "Features the spread wings of a bluebird.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 27,
+    "SPD": 9
+  },
+  "image": "data/images/helmet-1419.png",
+  "file": "helmet-1419.json"
+}

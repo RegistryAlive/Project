@@ -1,0 +1,15 @@
+{
+  "id": 6451,
+  "name": "Tile",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Floor tiles",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6451.png",
+  "file": "furniture-6451.json"
+}

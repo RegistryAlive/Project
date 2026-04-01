@@ -1,0 +1,18 @@
+{
+  "id": 740,
+  "name": "Oak Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "It is made of oax.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 1,
+    "DEF": 3
+  },
+  "image": "data/images/weapon-740.png",
+  "file": "weapon-740.json"
+}

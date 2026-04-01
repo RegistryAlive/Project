@@ -1,0 +1,18 @@
+{
+  "id": 1743,
+  "name": "Black Sky Helm",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The Swan helmet is made of obsidian, which looks bulky but is not less agile.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25,
+    "SPD": 20
+  },
+  "image": "data/images/helmet-1743.png",
+  "file": "helmet-1743.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1828,
+  "name": "Noble Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Leather / Fur",
+  "description": "Boots which are worn by peer",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 13,
+    "MDEF": 5
+  },
+  "image": "data/images/shoes-1828.png",
+  "file": "shoes-1828.json"
+}

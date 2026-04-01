@@ -1,0 +1,17 @@
+{
+  "id": 2970,
+  "name": "Magic Gloves [Set]",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Magic / Flower",
+  "description": "Set: 50% chance to resist seal.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 15
+  },
+  "image": "data/images/arm-2970.png",
+  "file": "arm-2970.json"
+}

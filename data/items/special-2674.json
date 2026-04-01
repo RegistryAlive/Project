@@ -1,0 +1,15 @@
+{
+  "id": 2674,
+  "name": "Mini-Angel Win",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Legendary holy angel's wings",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2674.png",
+  "file": "special-2674.json"
+}

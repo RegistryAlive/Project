@@ -1,0 +1,18 @@
+{
+  "id": 2124,
+  "name": "Rapid Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To upgrade agility and minor magic defense",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 4,
+    "MDEF": 2
+  },
+  "image": "data/images/special-2124.png",
+  "file": "special-2124.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 468,
+  "name": "Eagle",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-468.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pork Bone Noodles",
+      "itemId": 7172,
+      "itemFile": "material-7172.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "1.5X Holy EXP Potion",
+      "itemId": 8532,
+      "itemFile": "questprop-8532.json",
+      "itemCategory": "questprop"
+    }
+  ],
+  "stats": {
+    "level": 47,
+    "hp": 227,
+    "sp": 191,
+    "catchable": "No",
+    "spd": 102.5,
+    "str": 15,
+    "con": 15,
+    "int": 14,
+    "wis": 11,
+    "agi": 16
+  }
+}

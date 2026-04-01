@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shops - Wonderland Online DB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wlBlue: '#3b82f6',
+                        wlPurple: '#8b5cf6',
+                        wlGreen: '#10b981',
+                        wlRed: '#ef4444',
+                        wlYellow: '#f59e0b',
+                        wlDark: '#1e293b',
+                        wlDarker: '#0f172a',
+                        wlLight: '#f1f5f9',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-fast': 'float 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'modal-scale-in': 'modalScaleIn 0.3s ease-out forwards',
+                        'modal-fade-in': 'modalFadeIn 0.3s ease-out forwards',
+                        'npc-bounce': 'npcBounce 1.2s cubic-bezier(0.4,0,0.6,1) infinite',
+                        'toast-in': 'toastIn 0.4s cubic-bezier(0.4,0,0.6,1) forwards',
+                        'fade-in-up': 'fadeInUp 0.5s cubic-bezier(0.4,0,0.6,1) both',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        modalScaleIn: {
+                            '0%': { opacity: 0, transform: 'scale(0.95) translateY(10px)' },
+                            '100%': { opacity: 1, transform: 'scale(1) translateY(0)' },
+                        },
+                        modalFadeIn: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        },
+                        npcBounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        },
+                        toastIn: {
+                            '0%': { opacity: 0, transform: 'translateY(30px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: 0, transform: 'translateY(30px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%),
+                url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover; background-attachment: fixed; background-position: center; background-blend-mode: overlay; min-height: 100vh; }
+        .particle {
+            position: fixed; pointer-events: none; z-index: 1; border-radius: 50%; opacity: 0.5;
+            animation: float 8s linear infinite;
+        }
+        .card-hover { transition: all 0.3s ease; transform-style: preserve-3d; }
+        .card-hover:hover { transform: translateY(-5px) scale(1.02) rotateX(1deg); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 0; background-color: currentColor; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        .sidebar { transition: transform 0.3s ease; }
+        .sidebar-hidden { transform: translateX(100%); }
+        .sidebar-visible { transform: translateX(0); }
+        .dark-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 40; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+        .dark-overlay-visible { opacity: 1; pointer-events: auto; }
+        .filter-select { background-color: #1e293b; border: 1px solid rgba(241, 245, 249, 0.2); padding: 0.5rem 1rem; border-radius: 0.375rem; font-size: 0.875rem; transition: border-color 0.3s ease; }
+        .filter-select:hover { border-color: #ef4444; }
+        .filter-select:focus { outline: none; border-color: #ef4444; box-shadow: 0 0 0 2px rgba(239,68,68,0.3); }
+        .fade-in { animation: fadeIn 0.5s ease-in forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .npc-bubble { background: linear-gradient(135deg, #1e293b 80%, #8b5cf6 100%); color: #f1f5f9; border-radius: 1.5rem 1.5rem 1.5rem 0.5rem; padding: 1.5rem 2rem; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); font-size: 1.1rem; position: relative; margin-bottom: 1.5rem; min-height: 56px; transition: background 0.3s; min-width: 180px; }
+        .npc-bubble::after { content: ''; position: absolute; left: 2rem; bottom: -18px; width: 24px; height: 24px; background: #1e293b; border-radius: 0 0 1.5rem 1.5rem; transform: rotate(30deg); z-index: 1; }
+        .npc-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6 60%, #3b82f6 100%); display: flex; align-items: center; justify-content: center; font-size: 2.7rem; color: #fff; box-shadow: 0 4px 16px 0 rgba(139, 92, 246, 0.15); margin-bottom: 1rem; border: 3px solid #f1f5f9; animation: npc-bounce 2.2s infinite; }
+        .npc-avatar.happy { border-color: #10b981; }
+        .npc-avatar.sad { border-color: #ef4444; }
+        .npc-avatar.neutral { border-color: #f59e0b; }
+        .shop-item-card { background: linear-gradient(120deg, #1e293b 80%, #3b82f6 100%); border-radius: 1rem; padding: 1.25rem; margin-bottom: 1rem; border: 1px solid rgba(241,245,249,0.08); transition: border 0.2s, box-shadow 0.2s; box-shadow: 0 2px 8px 0 rgba(59,130,246,0.08); display: flex; align-items: center; cursor: pointer; }
+        .shop-item-card:hover { border: 1px solid #8b5cf6; box-shadow: 0 4px 16px 0 rgba(139,92,246,0.15); }
+        .shop-item-icon { width: 40px; height: 40px; border-radius: 0.75rem; background: #8b5cf6; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #fff; margin-right: 1.25rem; box-shadow: 0 2px 8px 0 rgba(139,92,246,0.10); }
+        .shop-item-info { flex: 1; }
+        .shop-item-name { font-weight: 500; font-size: 1.1rem; text-decoration: underline; cursor: pointer; }
+        .shop-item-desc { font-size: 0.95rem; opacity: 0.8; }
+        .shop-item-price { color: #f59e0b; font-weight: bold; font-size: 1.1rem; margin-left: 0.5rem; }
+        .shop-item-buy { background: linear-gradient(90deg, #3b82f6 60%, #8b5cf6 100%); color: #fff; border: none; border-radius: 0.5rem; padding: 0.5rem 1.1rem; font-weight: 500; margin-left: 1rem; transition: background 0.2s, transform 0.2s; cursor: pointer; box-shadow: 0 2px 8px 0 rgba(59,130,246,0.10); }
+        .shop-item-buy:hover { background: linear-gradient(90deg, #8b5cf6 60%, #3b82f6 100%); transform: scale(1.07); }
+        .shopkeeper-meta { text-align: center; margin-bottom: 0.5rem; }
+        .shopkeeper-name { font-weight: 600; font-size: 1.1rem; color: #f59e0b; }
+        .shopkeeper-desc { font-size: 0.95rem; opacity: 0.8; color: #f1f5f9; }
+        .talk-btn { background: linear-gradient(90deg, #f59e0b 60%, #ef4444 100%); color: #fff; border: none; border-radius: 0.5rem; padding: 0.5rem 1.2rem; font-weight: 500; margin-top: 0.5rem; margin-bottom: 1.2rem; transition: background 0.2s, transform 0.2s; cursor: pointer; box-shadow: 0 2px 8px 0 rgba(245,158,11,0.10); }
+        .talk-btn:hover { background: linear-gradient(90deg, #ef4444 60%, #f59e0b 100%); transform: scale(1.07); }
+        .shop-search-input { width: 100%; padding: 0.7rem 1.2rem; border-radius: 0.75rem; border: 1px solid #8b5cf6; background: #1e293b; color: #f1f5f9; margin-bottom: 1.2rem; font-size: 1rem; transition: border 0.2s; }
+        .shop-search-input:focus { outline: none; border: 2px solid #3b82f6; }
+        .gold-bar { display: flex; align-items: center; justify-content: flex-end; font-size: 1.1rem; font-weight: 500; color: #f59e0b; margin-bottom: 1.2rem; gap: 0.5rem; }
+        .gold-bar .fa-coins { color: #f59e0b; font-size: 1.3rem; }
+        .inventory-btn { background: linear-gradient(90deg, #10b981 60%, #3b82f6 100%); color: #fff; border: none; border-radius: 0.5rem; padding: 0.5rem 1.2rem; font-weight: 500; margin-left: 1rem; transition: background 0.2s, transform 0.2s; cursor: pointer; box-shadow: 0 2px 8px 0 rgba(16,185,129,0.10); }
+        .inventory-btn:hover { background: linear-gradient(90deg, #3b82f6 60%, #10b981 100%); transform: scale(1.07); }
+        .toast { position: fixed; bottom: 2.5rem; left: 50%; transform: translateX(-50%); background: linear-gradient(90deg, #10b981 60%, #3b82f6 100%); color: #fff; padding: 1rem 2rem; border-radius: 1.2rem; font-weight: 500; font-size: 1.1rem; box-shadow: 0 4px 16px 0 rgba(16,185,129,0.15); z-index: 100; opacity: 0; pointer-events: none; animation: toast-in 0.4s forwards; }
+        .modal-overlay { position: fixed; inset: 0; background-color: rgba(15, 23, 42, 0.8); backdrop-filter: blur(4px); z-index: 50; display: flex; align-items: center; justify-content: center; padding: 1rem; animation: modalFadeIn 0.3s ease-out forwards; }
+        .modal-content { background-color: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid rgba(241, 245, 249, 0.2); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); width: 100%; max-width: 400px; max-height: 90vh; overflow-y: auto; position: relative; animation: modalScaleIn 0.3s ease-out forwards; }
+        .modal-close-button { position: absolute; top: 0.75rem; right: 0.75rem; color: #9ca3af; transition: color 0.2s ease; }
+        .modal-close-button:hover { color: #f1f5f9; }
+        .modal-hidden { display: none; }
+        .no-results { text-align: center; padding: 20px; opacity: 0.7; }
+        .inventory-list { margin-top: 1rem; }
+        .inventory-item { display: flex; align-items: center; gap: 0.7rem; background: #1e293b; border-radius: 0.7rem; padding: 0.7rem 1rem; margin-bottom: 0.5rem; color: #f1f5f9; }
+        .inventory-item .fa { color: #8b5cf6; font-size: 1.2rem; }
+        .item-modal-content { text-align: center; }
+        .item-modal-icon { font-size: 2.5rem; color: #8b5cf6; margin-bottom: 0.7rem; }
+        .item-modal-name { font-size: 1.3rem; font-weight: 600; margin-bottom: 0.3rem; }
+        .item-modal-desc { font-size: 1rem; opacity: 0.85; margin-bottom: 0.5rem; }
+        .item-modal-price { color: #f59e0b; font-weight: bold; font-size: 1.1rem; }
+        @media (max-width: 600px) {
+            .npc-bubble { padding: 1rem 1rem; font-size: 1rem; }
+            .shop-item-card { flex-direction: column; align-items: flex-start; }
+            .shop-item-buy { margin-left: 0; margin-top: 0.7rem; width: 100%; }
+            .shop-item-icon { margin-bottom: 0.7rem; margin-right: 0; }
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, #1e293b, #3b82f6);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-ball {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle.light .theme-toggle-ball {
+            transform: translateX(30px);
+        }
+        
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e2e8f0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f8fafc !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #1e293b !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #cbd5e1 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+
+        /* Light mode - Shops page specific */
+        body.light-mode .filter-select {
+            background-color: #e2e8f0 !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .npc-bubble {
+            background: linear-gradient(135deg, #f1f5f9 80%, #dbeafe 100%) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .npc-bubble::after {
+            background: #f1f5f9 !important;
+        }
+        body.light-mode .npc-avatar {
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .shop-item-card {
+            background: linear-gradient(120deg, #f1f5f9 80%, #dbeafe 100%) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .shop-search-input {
+            background: #e2e8f0 !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .modal-content {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .inventory-item {
+            background: #e2e8f0 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .shopkeeper-desc {
+            color: #334155 !important;
+        }
+        body.light-mode select {
+            background-color: #e2e8f0 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode select option {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .item-modal-price {
+            color: #b45309 !important;
+        }
+    </style>
+</head>
+<body class="text-wlLight">
+    <div id="particles"></div>
+    <div id="darkOverlay" class="dark-overlay"></div>
+    <div id="mobileSidebar" class="sidebar sidebar-hidden fixed inset-y-0 right-0 w-64 bg-wlDarker z-50 shadow-2xl p-4 overflow-y-auto">
+        <div class="flex justify-between items-center mb-8">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                <i class="fas fa-dragon text-xl text-white"></i>
+            </div>
+            <button id="closeSidebar" class="hover:text-wlRed">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="space-y-4">
+            <a href="index.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Home</a>
+            <a href="Item.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Items</a>
+            <a href="quests.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Quests</a>
+            <a href="monsters.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Monsters</a>
+            <a href="Locations.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Locations</a>
+            <a href="tier-list.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Tier-List</a>
+            <a href="shops.html" class="block px-4 py-2 rounded-md font-medium bg-wlDark bg-opacity-50 text-wlBlue transition">Shops</a>
+            <a href="manufacture.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Manufacture</a>
+            <a href="Resources.html" class="block px-4 py-2 rounded-md font-medium text-wlPurple hover:bg-wlDark hover:bg-opacity-50 transition">Resources</a>
+        </nav>
+        <div class="mt-8 pt-4 border-t border-wlLight border-opacity-20">
+            <h4 class="font-medium mb-4">Quick Links</h4>
+            <div class="space-y-2">
+                <a href="#" class="block text-sm text-opacity-70 hover:text-wlBlue transition">Updates</a>
+                <a href="#" class="block text-sm text-opacity-70 hover:text-wlBlue transition">Patch Notes</a>
+                <a href="#" class="block text-sm text-opacity-70 hover:text-wlBlue transition">Community</a>
+                <a href="#" class="block text-sm text-opacity-70 hover:text-wlBlue transition">API</a>
+            </div>
+        </div>
+    </div>
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-wlDark bg-opacity-90 blur-bg shadow-lg sticky top-0 z-30">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <a href="index.html" class="flex items-center space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i>
+                            </div>
+                            <h1 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                                Wonderland Online DB
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6 items-center">
+                        <div class="relative group">
+                            <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium flex items-center">
+                                Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+                            </a>
+                            <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                                <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-lg flex items-center justify-between">
+                                    Roadmap <i class="fas fa-route text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="Item.html" class="nav-link px-3 py-2 text-sm font-medium">Items</a>
+                        <a href="quests.html" class="nav-link px-3 py-2 text-sm font-medium">Quests</a>
+                        <a href="monsters.html" class="nav-link px-3 py-2 text-sm font-medium">Monsters</a>
+                        <a href="Locations.html" class="nav-link px-3 py-2 text-sm font-medium">Locations</a>
+                        <a href="tier-list.html" class="nav-link px-3 py-2 text-sm font-medium">Tier-List</a>
+                        <a href="shops.html" class="nav-link px-3 py-2 text-sm font-medium text-wlBlue">Shops</a>
+                        <a href="manufacture.html" class="nav-link px-3 py-2 text-sm font-medium">Manufacture</a>
+                        <a href="Resources.html" class="nav-link px-3 py-2 text-sm font-medium">Resources</a>
+                        <!-- Theme Toggle -->
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                            <div class="theme-toggle-ball">
+                                <i class="fas fa-moon text-xs text-wlDark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="openSidebar" class="focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <section class="text-center mb-12">
+                <div class="max-w-3xl mx-auto relative">
+                    <div class="absolute -top-20 -left-20 w-40 h-40 bg-wlBlue rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    <div class="absolute -bottom-20 -right-20 w-40 h-40 bg-wlPurple rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                        Welcome to the Shops
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Choose a shop location and talk to the shopkeeper to see what they offer!</p>
+                    <div class="max-w-xs mx-auto">
+                        <select id="shopSelect" class="filter-select text-wlLight w-full">
+                            <option value="" class="bg-wlDarker">Select a Shop Location...</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-2xl mx-auto mb-12">
+                <div class="flex flex-col items-center">
+                    <div class="shopkeeper-meta">
+                        <div class="shopkeeper-name" id="shopkeeperName"></div>
+                        <div class="shopkeeper-desc" id="shopkeeperDesc"></div>
+                    </div>
+                    <div class="npc-avatar mb-2" id="npcAvatar"><i class="fas fa-store"></i></div>
+                    <div class="npc-bubble" id="npcBubble">Hello traveler! Please select a shop location to see my wares.</div>
+                    <button class="talk-btn" id="talkBtn" style="display:none;">Talk</button>
+                    <button class="talk-btn" id="shopInfoBtn" style="margin-top:0.5rem;">Shop Info</button>
+                    <button class="inventory-btn" id="inventoryBtn"><i class="fas fa-box-open"></i> Inventory</button>
+                </div>
+            </section>
+            <section class="max-w-2xl mx-auto">
+                <div class="gold-bar"><i class="fas fa-coins"></i> <span id="goldAmount">1000</span>g</div>
+                <h3 class="text-2xl font-semibold mb-6 text-center">Shop Inventory</h3>
+                <input type="text" id="shopSearchInput" class="shop-search-input" placeholder="Search items in this shop..." style="display:none;">
+                <div id="shopItemsList"></div>
+                <div id="noShopItemsMessage" class="no-results hidden">No items available in this shop.</div>
+            </section>
+        </main>
+        <footer class="bg-wlDark bg-opacity-90 blur-bg py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i></div>
+                            <h3 class="text-lg font-semibold">Wonderland Online DB</h3>
+                        </div>
+                        <p class="text-sm text-opacity-70">Your ultimate resource for Wonderland Online game data.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Quick Nav</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html" class="text-opacity-70 hover:text-wlBlue transition">Home</a></li>
+                            <li><a href="Item.html" class="text-opacity-70 hover:text-wlBlue transition">Items</a></li>
+                            <li><a href="monsters.html" class="text-opacity-70 hover:text-wlBlue transition">Monsters</a></li>
+                            <li><a href="quests.html" class="text-opacity-70 hover:text-wlBlue transition">Quests</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Community</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Forums</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Discord</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Contribute</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Privacy Policy</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-wlLight border-opacity-20 pt-8 text-center text-sm text-opacity-50">
+                    &copy; 2024 Wonderland Online DB. All rights reserved. Game content and materials are trademarks and copyrights of their respective publisher and its licensors.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="shopInfoModal" class="modal-overlay modal-hidden">
+        <div class="modal-content">
+            <button id="modalCloseButton" class="modal-close-button text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex flex-col items-center mb-4">
+                <div id="modalNpcAvatar" class="npc-avatar mb-2"></div>
+                <div class="shopkeeper-name" id="modalShopkeeperName"></div>
+                <div class="shopkeeper-desc" id="modalShopkeeperDesc"></div>
+            </div>
+            <div class="text-center text-wlLight mb-2" id="modalShopName"></div>
+            <div class="text-center text-sm text-wlLight opacity-80" id="modalShopExtra"></div>
+        </div>
+    </div>
+    <div id="itemModal" class="modal-overlay modal-hidden">
+        <div class="modal-content item-modal-content">
+            <button id="itemModalCloseButton" class="modal-close-button text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="item-modal-icon" id="itemModalIcon"></div>
+            <div class="item-modal-name" id="itemModalName"></div>
+            <div class="item-modal-desc" id="itemModalDesc"></div>
+            <div class="item-modal-price" id="itemModalPrice"></div>
+        </div>
+    </div>
+    <div id="inventoryModal" class="modal-overlay modal-hidden">
+        <div class="modal-content">
+            <button id="inventoryModalCloseButton" class="modal-close-button text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 class="text-xl font-semibold mb-4 text-center">Your Inventory</h3>
+            <div id="inventoryList" class="inventory-list"></div>
+        </div>
+    </div>
+    <div id="toast" class="toast" style="display:none;"></div>
+    <audio id="buySound" src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfae3b2.mp3" preload="auto"></audio>
+    <audio id="talkSound" src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfae3b2.mp3" preload="auto"></audio>
+    <audio id="modalSound" src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfae3b2.mp3" preload="auto"></audio>
+    <script>
+    // Particle background
+    function createParticles() {
+        const container = document.getElementById('particles');
+        if (!container) return;
+        for (let i = 0; i < 24; i++) {
+            const p = document.createElement('div');
+            p.className = 'particle';
+            const size = Math.random() * 8 + 6;
+            p.style.width = p.style.height = size + 'px';
+            p.style.background = `radial-gradient(circle, #8b5cf6 0%, #3b82f6 100%)`;
+            p.style.left = Math.random() * 100 + 'vw';
+            p.style.top = Math.random() * 100 + 'vh';
+            p.style.animationDuration = (6 + Math.random() * 6) + 's';
+            p.style.opacity = 0.18 + Math.random() * 0.18;
+            container.appendChild(p);
+        }
+    }
+    createParticles();
+    document.addEventListener('DOMContentLoaded', () => {
+        // Example shop data
+        const shops = [
+            {
+                id: 1,
+                name: 'Kelan Village General Store',
+                npc: {
+                    name: 'Auntie Lin',
+                    avatar: '<i class="fas fa-user-nurse"></i>',
+                    greeting: 'Welcome to Kelan Village! Take a look at my goods, dear.',
+                    desc: 'Auntie Lin is known for her kindness and fresh bread. She always has a smile for travelers.',
+                    extra: 'Open: 8am - 8pm | Specialty: Food & Basic Gear'
+                },
+                items: [
+                    { name: 'Bread', price: 50, desc: 'Restores a small amount of HP.', icon: 'fa-bread-slice' },
+                    { name: 'Bandage', price: 100, desc: 'Heals minor wounds.', icon: 'fa-bandage' },
+                    { name: 'Wooden Sword', price: 300, desc: 'A basic weapon for beginners.', icon: 'fa-gavel' }
+                ],
+                shopExtra: 'Located in the heart of Kelan Village.'
+            },
+            {
+                id: 2,
+                name: 'Holy Village Potion Shop',
+                npc: {
+                    name: 'Potion Master',
+                    avatar: '<i class="fas fa-flask"></i>',
+                    greeting: 'Ah, a customer! My potions are the best in the land.',
+                    desc: 'The Potion Master is a mysterious figure, always brewing something new.',
+                    extra: 'Open: 10am - 10pm | Specialty: Potions & Remedies'
+                },
+                items: [
+                    { name: 'Small HP Potion', price: 120, desc: 'Restores 100 HP.', icon: 'fa-vial' },
+                    { name: 'Small SP Potion', price: 150, desc: 'Restores 50 SP.', icon: 'fa-bolt' },
+                    { name: 'Antidote', price: 80, desc: 'Cures poison.', icon: 'fa-prescription-bottle-alt' }
+                ],
+                shopExtra: 'Famous for rare ingredients.'
+            },
+            {
+                id: 3,
+                name: 'Oslya Weaponry',
+                npc: {
+                    name: 'Smith Goro',
+                    avatar: '<i class="fas fa-hammer"></i>',
+                    greeting: 'Looking for strong weapons? You came to the right place!',
+                    desc: 'Smith Goro is a burly man with a booming laugh. His weapons are second to none.',
+                    extra: 'Open: 6am - 6pm | Specialty: Weapons'
+                },
+                items: [
+                    { name: 'Stone Axe', price: 500, desc: 'A heavy axe made of stone.', icon: 'fa-axe' },
+                    { name: 'Bone Club', price: 350, desc: 'A club made from a large bone.', icon: 'fa-bone' }
+                ],
+                shopExtra: 'Located near the Oslya entrance.'
+            },
+            {
+                id: 4,
+                name: 'Welling Village Boutique',
+                npc: {
+                    name: 'Miss Lian',
+                    avatar: '<i class="fas fa-user-tie"></i>',
+                    greeting: 'Welcome! My clothes are the latest fashion in Wonderland.',
+                    desc: 'Miss Lian is elegant and always up to date with the latest trends.',
+                    extra: 'Open: 9am - 9pm | Specialty: Clothing'
+                },
+                items: [
+                    { name: 'Silk Dress', price: 1200, desc: 'Elegant and comfortable.', icon: 'fa-tshirt' },
+                    { name: 'Cotton Shirt', price: 300, desc: 'Simple and affordable.', icon: 'fa-tshirt' }
+                ],
+                shopExtra: 'A favorite among travelers.'
+            }
+        ];
+        const npcDialogues = {
+            1: [
+                'Fresh bread just out of the oven! Would you like some? 😊',
+                'Take your time, dear. No rush.',
+                'I remember when you were just a child running around the village!'
+            ],
+            2: [
+                'Careful with that potion, it packs a punch! 🧪',
+                'I can brew something special for you, for the right price.',
+                'Potions are best sellers today!'
+            ],
+            3: [
+                'My axe can split a boulder in two! 💪',
+                'You look like you could use a new weapon.',
+                'Don’t forget to sharpen your blade!'
+            ],
+            4: [
+                'This dress is all the rage in Welling! 👗',
+                'Fashion is power, darling.',
+                'You have a good eye for style!'
+            ]
+        };
+        let gold = 1000;
+        let inventory = [];
+        let npcMood = 'happy';
+        let currentShop = null;
+        let typingTimeout = null;
+        // DOM refs
+        const shopSelect = document.getElementById('shopSelect');
+        const npcBubble = document.getElementById('npcBubble');
+        const npcAvatar = document.getElementById('npcAvatar');
+        const shopkeeperName = document.getElementById('shopkeeperName');
+        const shopkeeperDesc = document.getElementById('shopkeeperDesc');
+        const shopItemsList = document.getElementById('shopItemsList');
+        const noShopItemsMessage = document.getElementById('noShopItemsMessage');
+        const talkBtn = document.getElementById('talkBtn');
+        const shopInfoBtn = document.getElementById('shopInfoBtn');
+        const shopInfoModal = document.getElementById('shopInfoModal');
+        const modalCloseButton = document.getElementById('modalCloseButton');
+        const modalNpcAvatar = document.getElementById('modalNpcAvatar');
+        const modalShopkeeperName = document.getElementById('modalShopkeeperName');
+        const modalShopkeeperDesc = document.getElementById('modalShopkeeperDesc');
+        const modalShopName = document.getElementById('modalShopName');
+        const modalShopExtra = document.getElementById('modalShopExtra');
+        const toast = document.getElementById('toast');
+        const shopSearchInput = document.getElementById('shopSearchInput');
+        const goldAmount = document.getElementById('goldAmount');
+        const inventoryBtn = document.getElementById('inventoryBtn');
+        const inventoryModal = document.getElementById('inventoryModal');
+        const inventoryModalCloseButton = document.getElementById('inventoryModalCloseButton');
+        const inventoryList = document.getElementById('inventoryList');
+        const itemModal = document.getElementById('itemModal');
+        const itemModalCloseButton = document.getElementById('itemModalCloseButton');
+        const itemModalIcon = document.getElementById('itemModalIcon');
+        const itemModalName = document.getElementById('itemModalName');
+        const itemModalDesc = document.getElementById('itemModalDesc');
+        const itemModalPrice = document.getElementById('itemModalPrice');
+        const buySound = document.getElementById('buySound');
+        const talkSound = document.getElementById('talkSound');
+        const modalSound = document.getElementById('modalSound');
+        // Populate shop select
+        shops.forEach(shop => {
+            const option = document.createElement('option');
+            option.value = shop.id;
+            option.textContent = shop.name;
+            option.classList.add('bg-wlDarker');
+            shopSelect.appendChild(option);
+        });
+        function setNpcMood(mood) {
+            npcAvatar.classList.remove('happy', 'sad', 'neutral');
+            npcAvatar.classList.add(mood);
+            npcMood = mood;
+        }
+        function renderShopItems(items, filter = "") {
+            if (!shopItemsList) return;
+            shopItemsList.innerHTML = '';
+            let filtered = items;
+            if (filter) {
+                filtered = items.filter(item => item.name.toLowerCase().includes(filter.toLowerCase()) || (item.desc && item.desc.toLowerCase().includes(filter.toLowerCase())));
+            }
+            if (!filtered || filtered.length === 0) {
+                noShopItemsMessage.classList.remove('hidden');
+                return;
+            }
+            noShopItemsMessage.classList.add('hidden');
+            filtered.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'shop-item-card fade-in-up';
+                div.innerHTML = `<div class="shop-item-icon"><i class="fas ${item.icon || 'fa-box'}"></i></div><div class="shop-item-info"><div class="shop-item-name">${item.name}</div><div class="shop-item-desc">${item.desc}</div></div><div class="shop-item-price">${item.price}g</div><button class="shop-item-buy">Buy</button>`;
+                // Buy button event
+                div.querySelector('.shop-item-buy').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (gold >= item.price) {
+                        gold -= item.price;
+                        goldAmount.textContent = gold;
+                        inventory.push(item);
+                        setNpcMood('happy');
+                        showToast(`You bought <b>${item.name}</b> for <b>${item.price}g</b>!`);
+                        if (buySound) { buySound.currentTime = 0; buySound.play(); }
+                    } else {
+                        setNpcMood('sad');
+                        showToast(`Not enough gold for <b>${item.name}</b>!`, true);
+                    }
+                });
+                // Item details modal
+                div.querySelector('.shop-item-name').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    openItemModal(item);
+                });
+                div.querySelector('.shop-item-icon').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    openItemModal(item);
+                });
+                shopItemsList.appendChild(div);
+            });
+        }
+        function showToast(msg, error = false) {
+            toast.innerHTML = msg;
+            toast.style.display = 'block';
+            toast.style.opacity = '1';
+            toast.style.background = error ? 'linear-gradient(90deg, #ef4444 60%, #f59e0b 100%)' : 'linear-gradient(90deg, #10b981 60%, #3b82f6 100%)';
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => { toast.style.display = 'none'; }, 400);
+            }, 1800);
+        }
+        function typeNpcBubble(text) {
+            if (typingTimeout) clearTimeout(typingTimeout);
+            npcBubble.textContent = '';
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    npcBubble.textContent += text[i];
+                    i++;
+                    typingTimeout = setTimeout(type, 18 + Math.random() * 30);
+                } else {
+                    npcBubble.textContent = text;
+                }
+            }
+            type();
+        }
+        shopSelect.addEventListener('change', (e) => {
+            const shopId = parseInt(e.target.value);
+            const shop = shops.find(s => s.id === shopId);
+            currentShop = shop;
+            if (shop) {
+                npcAvatar.innerHTML = shop.npc.avatar;
+                setNpcMood('happy');
+                typeNpcBubble(shop.npc.greeting);
+                shopkeeperName.textContent = shop.npc.name;
+                shopkeeperDesc.textContent = shop.npc.desc;
+                talkBtn.style.display = '';
+                shopSearchInput.style.display = '';
+                renderShopItems(shop.items, shopSearchInput.value);
+            } else {
+                npcAvatar.innerHTML = '<i class="fas fa-store"></i>';
+                setNpcMood('neutral');
+                typeNpcBubble('Hello traveler! Please select a shop location to see my wares.');
+                shopkeeperName.textContent = '';
+                shopkeeperDesc.textContent = '';
+                talkBtn.style.display = 'none';
+                shopSearchInput.style.display = 'none';
+                renderShopItems([]);
+            }
+        });
+        talkBtn.addEventListener('click', () => {
+            if (!currentShop) return;
+            const lines = npcDialogues[currentShop.id] || [currentShop.npc.greeting];
+            const line = lines[Math.floor(Math.random() * lines.length)];
+            setNpcMood('happy');
+            typeNpcBubble(line);
+            if (talkSound) { talkSound.currentTime = 0; talkSound.play(); }
+        });
+        shopSearchInput.addEventListener('input', () => {
+            if (currentShop) renderShopItems(currentShop.items, shopSearchInput.value);
+        });
+        shopInfoBtn.addEventListener('click', () => {
+            if (!currentShop) return;
+            shopInfoModal.classList.remove('modal-hidden');
+            modalNpcAvatar.innerHTML = currentShop.npc.avatar;
+            modalShopkeeperName.textContent = currentShop.npc.name;
+            modalShopkeeperDesc.textContent = currentShop.npc.desc;
+            modalShopName.textContent = currentShop.name;
+            modalShopExtra.textContent = currentShop.npc.extra + (currentShop.shopExtra ? ' | ' + currentShop.shopExtra : '');
+            document.body.style.overflow = 'hidden';
+            if (modalSound) { modalSound.currentTime = 0; modalSound.play(); }
+        });
+        modalCloseButton.addEventListener('click', () => {
+            shopInfoModal.classList.add('modal-hidden');
+            document.body.style.overflow = '';
+        });
+        shopInfoModal.addEventListener('click', (event) => {
+            if (event.target === shopInfoModal) {
+                shopInfoModal.classList.add('modal-hidden');
+                document.body.style.overflow = '';
+            }
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !shopInfoModal.classList.contains('modal-hidden')) {
+                shopInfoModal.classList.add('modal-hidden');
+                document.body.style.overflow = '';
+            }
+            if (event.key === 'Escape' && !inventoryModal.classList.contains('modal-hidden')) {
+                inventoryModal.classList.add('modal-hidden');
+                document.body.style.overflow = '';
+            }
+            if (event.key === 'Escape' && !itemModal.classList.contains('modal-hidden')) {
+                itemModal.classList.add('modal-hidden');
+                document.body.style.overflow = '';
+            }
+        });
+        // Inventory modal
+        inventoryBtn.addEventListener('click', () => {
+            renderInventory();
+            inventoryModal.classList.remove('modal-hidden');
+            document.body.style.overflow = 'hidden';
+            if (modalSound) { modalSound.currentTime = 0; modalSound.play(); }
+        });
+        inventoryModalCloseButton.addEventListener('click', () => {
+            inventoryModal.classList.add('modal-hidden');
+            document.body.style.overflow = '';
+        });
+        inventoryModal.addEventListener('click', (event) => {
+            if (event.target === inventoryModal) {
+                inventoryModal.classList.add('modal-hidden');
+                document.body.style.overflow = '';
+            }
+        });
+        function renderInventory() {
+            inventoryList.innerHTML = '';
+            if (inventory.length === 0) {
+                inventoryList.innerHTML = '<div class="text-center text-wlLight opacity-70">Your inventory is empty.</div>';
+                return;
+            }
+            inventory.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'inventory-item';
+                div.innerHTML = `<i class="fas ${item.icon || 'fa-box'}"></i> <span>${item.name}</span> <span class="text-wlPurple">${item.price}g</span>`;
+                inventoryList.appendChild(div);
+            });
+        }
+        // Item details modal
+        function openItemModal(item) {
+            itemModalIcon.innerHTML = `<i class="fas ${item.icon || 'fa-box'}"></i>`;
+            itemModalName.textContent = item.name;
+            itemModalDesc.textContent = item.desc;
+            itemModalPrice.textContent = item.price + 'g';
+            itemModal.classList.remove('modal-hidden');
+            document.body.style.overflow = 'hidden';
+            if (modalSound) { modalSound.currentTime = 0; modalSound.play(); }
+        }
+        itemModalCloseButton.addEventListener('click', () => {
+            itemModal.classList.add('modal-hidden');
+            document.body.style.overflow = '';
+        });
+        itemModal.addEventListener('click', (event) => {
+            if (event.target === itemModal) {
+                itemModal.classList.add('modal-hidden');
+                document.body.style.overflow = '';
+            }
+        });
+        // Sidebar logic (copied from monsters.html)
+        const openSidebarButton = document.getElementById('openSidebar');
+        const closeSidebarButton = document.getElementById('closeSidebar');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const pageDarkOverlay = document.getElementById('darkOverlay');
+        function toggleSidebar(visible) {
+            if (!mobileSidebar || !pageDarkOverlay) return;
+            mobileSidebar.classList.toggle('sidebar-hidden', !visible);
+            mobileSidebar.classList.toggle('sidebar-visible', visible);
+            pageDarkOverlay.classList.toggle('dark-overlay-visible', visible);
+        }
+        if (openSidebarButton) openSidebarButton.addEventListener('click', () => toggleSidebar(true));
+        if (closeSidebarButton) closeSidebarButton.addEventListener('click', () => toggleSidebar(false));
+        if (pageDarkOverlay) pageDarkOverlay.addEventListener('click', () => toggleSidebar(false));
+        // Initial state
+        renderShopItems([]);
+    });
+    </script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('light');
+            themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('light');
+            const icon = themeToggle.querySelector('i');
+            
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>

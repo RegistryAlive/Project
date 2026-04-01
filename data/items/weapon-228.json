@@ -1,0 +1,18 @@
+{
+  "id": 228,
+  "name": "Swirlfire Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Pure Iron / Steel / Titanium",
+  "description": "A longsword made with special crimson steel",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55,
+    "DEF": 19
+  },
+  "image": "data/images/weapon-228.png",
+  "file": "weapon-228.json"
+}

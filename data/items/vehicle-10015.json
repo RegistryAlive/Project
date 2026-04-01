@@ -1,0 +1,15 @@
+{
+  "id": 10015,
+  "name": "Robinson's Raf",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Rough navigate tool",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/vehicle-10015.png",
+  "file": "vehicle-10015.json"
+}

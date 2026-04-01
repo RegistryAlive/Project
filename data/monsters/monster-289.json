@@ -1,0 +1,39 @@
+{
+  "id": 289,
+  "name": "Owl",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-289.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pigeon Meat",
+      "itemId": 7500,
+      "itemFile": "material-7500.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gooseberry",
+      "itemId": 7451,
+      "itemFile": "material-7451.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 115,
+    "hp": 1345,
+    "sp": 1210,
+    "catchable": "Yes",
+    "spd": 310.5,
+    "str": 65,
+    "con": 72,
+    "int": 68,
+    "wis": 71,
+    "agi": 69
+  }
+}

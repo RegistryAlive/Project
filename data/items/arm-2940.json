@@ -1,0 +1,18 @@
+{
+  "id": 2940,
+  "name": "Frost Bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The ability to condense nearby water vapor into frost is a proof of being the dominator of frost. When attacked by a fire attribute enemy, the damage is reduced by 3% (the effect will disappear if you change the shape of the bracelet)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MaxSP": 280
+  },
+  "image": "data/images/arm-2940.png",
+  "file": "arm-2940.json"
+}

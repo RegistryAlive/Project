@@ -1,0 +1,18 @@
+{
+  "id": 799,
+  "name": "Fortitude Hamm",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A giant hammer that can't be lifted easily, and being able to swing it is proof of ample energy. 46% critical strike possible",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 900,
+    "DEF": 40
+  },
+  "image": "data/images/weapon-799.png",
+  "file": "weapon-799.json"
+}

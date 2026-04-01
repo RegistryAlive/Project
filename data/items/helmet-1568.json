@@ -1,0 +1,17 @@
+{
+  "id": 1568,
+  "name": "Holy Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Grass / Magic",
+  "description": "Pure white crest for angels",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 33
+  },
+  "image": "data/images/helmet-1568.png",
+  "file": "helmet-1568.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 535,
+  "name": "Evil Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 50,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A bell law wand specially used by little devil.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50,
+    "SPD": 50
+  },
+  "image": "data/images/weapon-535.png",
+  "file": "weapon-535.json"
+}

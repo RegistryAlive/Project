@@ -1,0 +1,18 @@
+{
+  "id": 1184,
+  "name": "The Stealthy One",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Fur / Leather",
+  "description": "A mask that hides and conceals. Increases agility and defense.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25,
+    "DEF": 5
+  },
+  "image": "data/images/armor-1184.png",
+  "file": "armor-1184.json"
+}

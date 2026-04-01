@@ -1,0 +1,15 @@
+{
+  "id": 8234,
+  "name": "Gold Griffin V",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It makes a Gold Griffin become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8234.png",
+  "file": "questprop-8234.json"
+}

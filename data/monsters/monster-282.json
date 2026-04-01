@@ -1,0 +1,39 @@
+{
+  "id": 282,
+  "name": "Blue Owl",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-282.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pigeon Meat",
+      "itemId": 7500,
+      "itemFile": "material-7500.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gooseberry",
+      "itemId": 7451,
+      "itemFile": "material-7451.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 119,
+    "hp": 1297,
+    "sp": 1332,
+    "catchable": "Yes",
+    "spd": 318.5,
+    "str": 64,
+    "con": 68,
+    "int": 77,
+    "wis": 78,
+    "agi": 70
+  }
+}

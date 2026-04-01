@@ -1,0 +1,51 @@
+{
+  "id": 275,
+  "name": "Snow Wolf (Quest)",
+  "location": "South Pole",
+  "image": "data/Monster_Images/monster-275.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Wolf Meat",
+      "itemId": 7463,
+      "itemFile": "material-7463.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pigeon Meat",
+      "itemId": 7500,
+      "itemFile": "material-7500.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wolf Tooth",
+      "itemId": 7724,
+      "itemFile": "material-7724.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 60,
+    "hp": 551,
+    "sp": 535,
+    "catchable": "Yes",
+    "spd": 164,
+    "str": 37,
+    "con": 35,
+    "int": 35,
+    "wis": 36,
+    "agi": 37
+  }
+}

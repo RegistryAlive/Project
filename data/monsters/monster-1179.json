@@ -1,0 +1,39 @@
+{
+  "id": 1179,
+  "name": "Pineapple Monster",
+  "location": "North Island Beach",
+  "image": "data/Monster_Images/monster-1179.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Small Pineapple",
+      "itemId": 7443,
+      "itemFile": "material-7443.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pure Drop",
+      "itemId": 7703,
+      "itemFile": "material-7703.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Tear",
+      "itemId": 7700,
+      "itemFile": "material-7700.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 1,
+    "hp": 36,
+    "sp": 100,
+    "catchable": null,
+    "spd": 1.5,
+    "str": 1,
+    "con": 0,
+    "int": 1,
+    "wis": 1,
+    "agi": 0
+  }
+}

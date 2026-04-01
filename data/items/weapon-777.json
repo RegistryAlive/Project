@@ -1,0 +1,17 @@
+{
+  "id": 777,
+  "name": "Attack Pestl+3",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 19,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Reduces the character's attack by 50% and also the target's SP by 90%. Can be enhanced but not socketed. However, its durability will diminish quickly during fights with monsters or players. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30
+  },
+  "image": "data/images/weapon-777.png",
+  "file": "weapon-777.json"
+}

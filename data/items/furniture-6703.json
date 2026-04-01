@@ -1,0 +1,15 @@
+{
+  "id": 6703,
+  "name": "Snow Forest W",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The white wall stickers are like walking into a forest in the land of snow.",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6703.png",
+  "file": "furniture-6703.json"
+}

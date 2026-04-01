@@ -1,0 +1,27 @@
+{
+  "id": 758,
+  "name": "Holy Spirit Lord",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-758.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 110,
+    "hp": 24000,
+    "sp": 1102,
+    "catchable": "Unknown",
+    "spd": 291,
+    "str": 64,
+    "con": 70,
+    "int": 68,
+    "wis": 65,
+    "agi": 63
+  }
+}

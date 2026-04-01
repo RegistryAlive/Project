@@ -1,0 +1,15 @@
+{
+  "id": 7681,
+  "name": "White Vicugna Fur",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fur",
+  "description": "Rare white fur of a vicugna",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7681.png",
+  "file": "material-7681.json"
+}

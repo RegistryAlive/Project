@@ -1,0 +1,18 @@
+{
+  "id": 578,
+  "name": "Thorny Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Jade / Tin / Magic",
+  "description": "It has great MATK&MDEF power",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 48,
+    "MDEF": 26
+  },
+  "image": "data/images/weapon-578.png",
+  "file": "weapon-578.json"
+}

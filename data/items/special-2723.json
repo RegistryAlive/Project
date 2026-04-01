@@ -1,0 +1,18 @@
+{
+  "id": 2723,
+  "name": "Michael Wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Michael's wings, called \"archangel\" among angels, can be inlaid",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "MaxSP": 200
+  },
+  "image": "data/images/special-2723.png",
+  "file": "special-2723.json"
+}

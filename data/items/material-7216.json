@@ -1,0 +1,18 @@
+{
+  "id": 7216,
+  "name": "Caraway Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish / Vegetable",
+  "description": "Noodles with seafood, fragrant and delicious",
+  "size": "1x1",
+  "attributes": {
+    "SP": 420,
+    "HP": 120
+  },
+  "image": "data/images/material-7216.png",
+  "file": "material-7216.json"
+}

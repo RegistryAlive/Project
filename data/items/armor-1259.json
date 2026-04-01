@@ -1,0 +1,18 @@
+{
+  "id": 1259,
+  "name": "WarriorClothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Costumes imitating warriors.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "SPD": 10
+  },
+  "image": "data/images/armor-1259.png",
+  "file": "armor-1259.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6290,
+  "name": "Silver candles",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 16,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "With silver refinement, quite expensive Candlestick",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6290.png",
+  "file": "furniture-6290.json"
+}

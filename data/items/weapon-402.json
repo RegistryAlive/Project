@@ -1,0 +1,18 @@
+{
+  "id": 402,
+  "name": "Platinum Guard",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Like a strategist on the battlefield, you are able to ease the battlefield or carry out an attack with ease. When equipped together with other Platinum Guard equipment, you can obtain additional armor effects.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50,
+    "MDEF": 40
+  },
+  "image": "data/images/weapon-402.png",
+  "file": "weapon-402.json"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 539,
+  "name": "Yellow Stegosaurus",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-539.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Dinosaur Fur",
+      "itemId": 7812,
+      "itemFile": "material-7812.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Water Spinach",
+      "itemId": 7412,
+      "itemFile": "material-7412.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Luffa",
+      "itemId": 7420,
+      "itemFile": "material-7420.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Unknown",
+      "itemId": 7892,
+      "itemFile": "material-7892.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 65,
+    "hp": 745,
+    "sp": 471,
+    "catchable": "Unknown",
+    "spd": 163.5,
+    "str": 54,
+    "con": 48,
+    "int": 30,
+    "wis": 30,
+    "agi": 33
+  }
+}

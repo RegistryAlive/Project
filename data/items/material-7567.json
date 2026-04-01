@@ -1,0 +1,15 @@
+{
+  "id": 7567,
+  "name": "Steel",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Steel",
+  "description": "It is made of iron",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7567.png",
+  "file": "material-7567.json"
+}

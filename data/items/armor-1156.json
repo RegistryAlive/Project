@@ -1,0 +1,18 @@
+{
+  "id": 1156,
+  "name": "Swift Dragon Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Feather / Leather / Nylon",
+  "description": "Light suit that can increase DEF power",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "DEF": 17
+  },
+  "image": "data/images/armor-1156.png",
+  "file": "armor-1156.json"
+}

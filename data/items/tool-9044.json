@@ -1,0 +1,15 @@
+{
+  "id": 9044,
+  "name": "Smoke Tool",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "used to smoke the food.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/tool-9044.png",
+  "file": "tool-9044.json"
+}

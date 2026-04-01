@@ -1,0 +1,18 @@
+{
+  "id": 891,
+  "name": "Sky Sword +3",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "32% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "SPD": 14
+  },
+  "image": "data/images/weapon-891.png",
+  "file": "weapon-891.json"
+}

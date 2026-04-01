@@ -1,0 +1,15 @@
+{
+  "id": 6006,
+  "name": "Small Wooden Gear",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "It is made of wood",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6006.png",
+  "file": "furniture-6006.json"
+}

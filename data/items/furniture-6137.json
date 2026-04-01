@@ -1,0 +1,15 @@
+{
+  "id": 6137,
+  "name": "Level Wing",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 21,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Adjusts the balance of plane",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6137.png",
+  "file": "furniture-6137.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 837,
+  "name": "Pet Keeper",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-837.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 56,
+    "hp": 407,
+    "sp": 612,
+    "catchable": "Unknown",
+    "spd": 140,
+    "str": 25,
+    "con": 31,
+    "int": 41,
+    "wis": 43,
+    "agi": 28
+  }
+}

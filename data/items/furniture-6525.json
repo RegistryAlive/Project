@@ -1,0 +1,15 @@
+{
+  "id": 6525,
+  "name": "Wallpaper",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, allowing players to change into different wall colors",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6525.png",
+  "file": "furniture-6525.json"
+}

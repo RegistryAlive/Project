@@ -1,0 +1,15 @@
+{
+  "id": 7554,
+  "name": "Silvery Sand",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Silver",
+  "description": "Common silver sand",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7554.png",
+  "file": "material-7554.json"
+}

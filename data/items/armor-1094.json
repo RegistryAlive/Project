@@ -1,0 +1,17 @@
+{
+  "id": 1094,
+  "name": "Red Monster Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Nylon / Pure Iron",
+  "description": "Battle clothes made of silk and red metal.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 34
+  },
+  "image": "data/images/armor-1094.png",
+  "file": "armor-1094.json"
+}

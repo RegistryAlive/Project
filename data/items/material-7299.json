@@ -1,0 +1,18 @@
+{
+  "id": 7299,
+  "name": "Grape Berry Syrup",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Grape juice with berries",
+  "size": "1x1",
+  "attributes": {
+    "HP": 300,
+    "SP": 150
+  },
+  "image": "data/images/material-7299.png",
+  "file": "material-7299.json"
+}

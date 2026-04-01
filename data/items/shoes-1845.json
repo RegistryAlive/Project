@@ -1,0 +1,17 @@
+{
+  "id": 1845,
+  "name": "Hunting Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Boots worn in riding. they reach the knees.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/shoes-1845.png",
+  "file": "shoes-1845.json"
+}

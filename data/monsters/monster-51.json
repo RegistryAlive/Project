@@ -1,0 +1,39 @@
+{
+  "id": 51,
+  "name": "Dead Bone Scorpion",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-51.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 89,
+    "hp": 1136,
+    "sp": 957,
+    "catchable": "Unknown",
+    "spd": 219.5,
+    "str": 47,
+    "con": 67,
+    "int": 50,
+    "wis": 60,
+    "agi": 43
+  }
+}

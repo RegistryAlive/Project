@@ -1,0 +1,15 @@
+{
+  "id": 6619,
+  "name": "Party Chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Party-style chair with red and blue ribbon",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6619.png",
+  "file": "furniture-6619.json"
+}

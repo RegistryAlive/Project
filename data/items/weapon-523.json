@@ -1,0 +1,18 @@
+{
+  "id": 523,
+  "name": "Silver Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Silver",
+  "description": "Made of silver, it has a strange resistant nature.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18,
+    "MDEF": 18
+  },
+  "image": "data/images/weapon-523.png",
+  "file": "weapon-523.json"
+}

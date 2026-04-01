@@ -1,0 +1,18 @@
+{
+  "id": 50,
+  "name": "Cracking Broadsword",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "For Roca's exclusive use after her re-birth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 28,
+    "DEF": 24
+  },
+  "image": "data/images/weapon-50.png",
+  "file": "weapon-50.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1123,
+  "name": "Pure Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Nylon / Magic",
+  "description": "The gown with help for both MATK and defense.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 14,
+    "MATK": 8
+  },
+  "image": "data/images/armor-1123.png",
+  "file": "armor-1123.json"
+}

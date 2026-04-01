@@ -1,0 +1,15 @@
+{
+  "id": 6494,
+  "name": "Ea. Bunny Maid",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Easter Bunny Robot that can command your human shape pet to manufacture.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6494.png",
+  "file": "furniture-6494.json"
+}

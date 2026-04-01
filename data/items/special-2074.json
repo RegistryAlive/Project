@@ -1,0 +1,18 @@
+{
+  "id": 2074,
+  "name": "Holy Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Iron / Silver",
+  "description": "A medal which can double holy attacking",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "MDEF": 20
+  },
+  "image": "data/images/special-2074.png",
+  "file": "special-2074.json"
+}

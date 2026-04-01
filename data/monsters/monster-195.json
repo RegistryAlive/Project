@@ -1,0 +1,33 @@
+{
+  "id": 195,
+  "name": "Green-skin Troll",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-195.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Olla Noodles",
+      "itemId": 7065,
+      "itemFile": "material-7065.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 75,
+    "hp": 364,
+    "sp": 359,
+    "catchable": "Unknown",
+    "spd": 158.5,
+    "str": 27,
+    "con": 23,
+    "int": 18,
+    "wis": 20,
+    "agi": 23
+  }
+}

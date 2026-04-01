@@ -1,0 +1,18 @@
+{
+  "id": 2968,
+  "name": "Killer Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leather / Leaf / Grass",
+  "description": "Killer's favorite gloves.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "SPD": 10
+  },
+  "image": "data/images/arm-2968.png",
+  "file": "arm-2968.json"
+}

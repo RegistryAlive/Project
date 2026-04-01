@@ -1,0 +1,15 @@
+{
+  "id": 7722,
+  "name": "Magical Dragon",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 16,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Dragon bone from a dragon, it may be magical.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7722.png",
+  "file": "material-7722.json"
+}

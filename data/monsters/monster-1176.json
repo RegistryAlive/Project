@@ -1,0 +1,39 @@
+{
+  "id": 1176,
+  "name": "Mayan Green Race",
+  "location": "Maya",
+  "image": "data/Monster_Images/monster-1176.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Galena",
+      "itemId": 7576,
+      "itemFile": "material-7576.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 0,
+    "sp": 0,
+    "catchable": null,
+    "spd": 255,
+    "str": 50,
+    "con": 50,
+    "int": 55,
+    "wis": 55,
+    "agi": 60
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 966,
+  "name": "Cotton Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "clothes which is made from cotton",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 8,
+    "MATK": 6
+  },
+  "image": "data/images/armor-966.png",
+  "file": "armor-966.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 300,
+  "name": "Nine Dragon",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The halberd used by the sky god, has the power to call the winds and rains.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 76
+  },
+  "image": "data/images/weapon-300.png",
+  "file": "weapon-300.json"
+}

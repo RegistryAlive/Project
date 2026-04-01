@@ -1,0 +1,15 @@
+{
+  "id": 8316,
+  "name": "Key to Slavery",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can open one important door on the slavery ship",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8316.png",
+  "file": "questprop-8316.json"
+}

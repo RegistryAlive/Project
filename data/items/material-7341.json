@@ -1,0 +1,17 @@
+{
+  "id": 7341,
+  "name": "Lucky Wine",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The aromatic aged wine collection is the raw material for making Chinese New Year furniture.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 150
+  },
+  "image": "data/images/material-7341.png",
+  "file": "material-7341.json"
+}

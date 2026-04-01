@@ -1,0 +1,39 @@
+{
+  "id": 449,
+  "name": "Brown Parrot",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-449.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mango Seed",
+      "itemId": 7384,
+      "itemFile": "material-7384.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coconut (Pulp)",
+      "itemId": 7880,
+      "itemFile": "material-7880.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 123,
+    "hp": 1418,
+    "sp": 1222,
+    "catchable": "Unknown",
+    "spd": 332.5,
+    "str": 61,
+    "con": 74,
+    "int": 90,
+    "wis": 70,
+    "agi": 74
+  }
+}

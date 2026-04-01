@@ -1,0 +1,18 @@
+{
+  "id": 1511,
+  "name": "Warrior Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Iron / Grass / Leaf",
+  "description": "Warrior's fighting cap. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "ATK": 10
+  },
+  "image": "data/images/helmet-1511.png",
+  "file": "helmet-1511.json"
+}

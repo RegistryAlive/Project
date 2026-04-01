@@ -1,0 +1,15 @@
+{
+  "id": 7373,
+  "name": "Blue Wild Flower",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "A blue wild flower",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7373.png",
+  "file": "material-7373.json"
+}

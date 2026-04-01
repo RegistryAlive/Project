@@ -1,0 +1,15 @@
+{
+  "id": 6092,
+  "name": "Small Generator",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is used for small instrument",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6092.png",
+  "file": "furniture-6092.json"
+}

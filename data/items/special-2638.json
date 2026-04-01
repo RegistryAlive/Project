@@ -1,0 +1,15 @@
+{
+  "id": 2638,
+  "name": "Fast Jet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Reduces the express time a lot. 1 time will be deducted for each slot filled. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2638.png",
+  "file": "special-2638.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7455,
+  "name": "Plum",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "A kind of fruit can satisfy one's thirst",
+  "size": "1x1",
+  "attributes": {
+    "HP": 50,
+    "SP": 20
+  },
+  "image": "data/images/material-7455.png",
+  "file": "material-7455.json"
+}

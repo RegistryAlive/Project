@@ -1,0 +1,18 @@
+{
+  "id": 2858,
+  "name": "Heart Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Flower / Magic",
+  "description": "Netty silk cuffs which have demagogic power",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 11,
+    "ATK": 9
+  },
+  "image": "data/images/arm-2858.png",
+  "file": "arm-2858.json"
+}

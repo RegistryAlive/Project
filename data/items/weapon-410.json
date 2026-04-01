@@ -1,0 +1,18 @@
+{
+  "id": 410,
+  "name": "Long Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Wood / Grass",
+  "description": "Very flexible, and the longest range of any bow.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 7,
+    "SPD": 5
+  },
+  "image": "data/images/weapon-410.png",
+  "file": "weapon-410.json"
+}

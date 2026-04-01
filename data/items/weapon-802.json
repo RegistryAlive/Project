@@ -1,0 +1,18 @@
+{
+  "id": 802,
+  "name": "Suitcase",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A mysterious suitcase that cannot be opened, left by a traveler, with a beautiful pocket watch hanging on it, 46% critical strike chance; when equipped with other Taisho Roman series equipment at the same time, an additional set effect can be obtained",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 80,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-802.png",
+  "file": "weapon-802.json"
+}

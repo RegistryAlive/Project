@@ -1,0 +1,18 @@
+{
+  "id": 1290,
+  "name": "J Magic Clothe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The magic suit made by the combination of technology and magic, the golden clothes are full of energy. Slightly increased damage on critical strikes.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MaxSP": 200
+  },
+  "image": "data/images/armor-1290.png",
+  "file": "armor-1290.json"
+}

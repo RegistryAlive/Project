@@ -1,0 +1,18 @@
+{
+  "id": 7285,
+  "name": "Christmas Sweets",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Sweet for christmas",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 200
+  },
+  "image": "data/images/material-7285.png",
+  "file": "material-7285.json"
+}

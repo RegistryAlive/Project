@@ -1,0 +1,15 @@
+{
+  "id": 6512,
+  "name": "New Yr Table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The pure white tablecloth is tied with a golden ribbon, which is very suitable for New Year party",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6512.png",
+  "file": "furniture-6512.json"
+}

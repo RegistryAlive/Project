@@ -1,0 +1,18 @@
+{
+  "id": 7143,
+  "name": "Fried Potato Leaf",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Common dish with full nutrition",
+  "size": "1x1",
+  "attributes": {
+    "HP": 95,
+    "SP": 5
+  },
+  "image": "data/images/material-7143.png",
+  "file": "material-7143.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6491,
+  "name": "Pink Heart Mat",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pink Series Floor Mat with a heart drawn. Favoured by young girls.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6491.png",
+  "file": "furniture-6491.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 10012,
+  "name": "UFO",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Surpasses the wisdom of human, it can cross space.",
+  "size": "5x4",
+  "attributes": {
+    "SPECIAL": 37043
+  },
+  "image": "data/images/vehicle-10012.png",
+  "file": "vehicle-10012.json"
+}

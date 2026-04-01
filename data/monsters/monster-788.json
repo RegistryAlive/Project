@@ -1,0 +1,27 @@
+{
+  "id": 788,
+  "name": "KaVo",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-788.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 64,
+    "hp": 628,
+    "sp": 481,
+    "catchable": "Unknown",
+    "spd": 168,
+    "str": 47,
+    "con": 50,
+    "int": 28,
+    "wis": 31,
+    "agi": 36
+  }
+}

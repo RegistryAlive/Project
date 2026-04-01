@@ -1,0 +1,17 @@
+{
+  "id": 1956,
+  "name": "Green Rider Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Nylon / Leather",
+  "description": "Boots that can resist physical attacks",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 35
+  },
+  "image": "data/images/shoes-1956.png",
+  "file": "shoes-1956.json"
+}

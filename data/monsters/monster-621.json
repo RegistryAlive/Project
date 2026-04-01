@@ -1,0 +1,27 @@
+{
+  "id": 621,
+  "name": "Chang-er",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-621.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 30,
+    "hp": 194,
+    "sp": 258,
+    "catchable": "Unknown",
+    "spd": 85,
+    "str": 11,
+    "con": 13,
+    "int": 26,
+    "wis": 20,
+    "agi": 20
+  }
+}

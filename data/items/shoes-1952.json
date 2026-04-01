@@ -1,0 +1,18 @@
+{
+  "id": 1952,
+  "name": "Gray Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Feather / Grass",
+  "description": "Feather boots will protect the wearer's ankles.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 16,
+    "MDEF": 13
+  },
+  "image": "data/images/shoes-1952.png",
+  "file": "shoes-1952.json"
+}

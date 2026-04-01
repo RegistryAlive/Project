@@ -1,0 +1,17 @@
+{
+  "id": 704,
+  "name": "War Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Steel / Wood",
+  "description": "A miniature axe.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 41
+  },
+  "image": "data/images/weapon-704.png",
+  "file": "weapon-704.json"
+}

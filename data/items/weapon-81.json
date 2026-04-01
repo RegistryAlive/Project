@@ -1,0 +1,18 @@
+{
+  "id": 81,
+  "name": "Blood Reaper",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "An ancient scythe full of blood-thirsty ghosts. Has 46% crit effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 75,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-81.png",
+  "file": "weapon-81.json"
+}

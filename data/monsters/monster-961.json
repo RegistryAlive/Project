@@ -1,0 +1,27 @@
+{
+  "id": 961,
+  "name": "Troll",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-961.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 30,
+    "hp": 600,
+    "sp": 171,
+    "catchable": "Unknown",
+    "spd": 79,
+    "str": 24,
+    "con": 24,
+    "int": 13,
+    "wis": 12,
+    "agi": 17
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 703,
+  "name": "Golden Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Gold / Wood",
+  "description": "An expensive gold axe.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 39
+  },
+  "image": "data/images/weapon-703.png",
+  "file": "weapon-703.json"
+}

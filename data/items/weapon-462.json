@@ -1,0 +1,18 @@
+{
+  "id": 462,
+  "name": "Magical Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "Made from the trees with magical power.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 2,
+    "MDEF": 2
+  },
+  "image": "data/images/weapon-462.png",
+  "file": "weapon-462.json"
+}

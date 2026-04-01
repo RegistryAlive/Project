@@ -1,0 +1,15 @@
+{
+  "id": 6002,
+  "name": "Wooden Axle",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "It is made of wood",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6002.png",
+  "file": "furniture-6002.json"
+}

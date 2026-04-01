@@ -1,0 +1,15 @@
+{
+  "id": 6209,
+  "name": "Half Uranium",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Chemical",
+  "description": "unpurified semi finished uranium",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6209.png",
+  "file": "furniture-6209.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8131,
+  "name": "Boarded Vouche",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used to board a ship when you meet the Sailor at the dock.Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8131.png",
+  "file": "questprop-8131.json"
+}

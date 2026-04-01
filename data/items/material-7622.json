@@ -1,0 +1,15 @@
+{
+  "id": 7622,
+  "name": "Magic Crystal Powder",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Magic",
+  "description": "It is made of magic powder",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7622.png",
+  "file": "material-7622.json"
+}

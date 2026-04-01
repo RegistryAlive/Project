@@ -1,0 +1,17 @@
+{
+  "id": 2859,
+  "name": "Blue War Bracers (Instance)",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "Pure blue steel makes these incredibly strong.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 31
+  },
+  "image": "data/images/arm-2859.png",
+  "file": "arm-2859.json"
+}

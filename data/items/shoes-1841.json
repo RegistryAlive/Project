@@ -1,0 +1,15 @@
+{
+  "id": 1841,
+  "name": "Broken Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "Shoes which are worn out",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1841.png",
+  "file": "shoes-1841.json"
+}

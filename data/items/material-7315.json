@@ -1,0 +1,17 @@
+{
+  "id": 7315,
+  "name": "Nian Cake",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The food that must be eaten in Spring Festival",
+  "size": "1x1",
+  "attributes": {
+    "SP": 300
+  },
+  "image": "data/images/material-7315.png",
+  "file": "material-7315.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1939,
+  "name": "Flame Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Nylon / Leather",
+  "description": "Made of beast hide which gives good defense",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "SPD": 3
+  },
+  "image": "data/images/shoes-1939.png",
+  "file": "shoes-1939.json"
+}

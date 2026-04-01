@@ -1,0 +1,15 @@
+{
+  "id": 7568,
+  "name": "Pure Iron Ore",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Pure Iron",
+  "description": "Rare iron ore",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7568.png",
+  "file": "material-7568.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 692,
+  "name": "Fighter's Spirit",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-692.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 76,
+    "hp": 1500,
+    "sp": 731,
+    "catchable": "Unknown",
+    "spd": 204,
+    "str": 42,
+    "con": 44,
+    "int": 50,
+    "wis": 47,
+    "agi": 45
+  }
+}

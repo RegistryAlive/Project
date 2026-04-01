@@ -1,0 +1,17 @@
+{
+  "id": 1851,
+  "name": "Fire Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Grass",
+  "description": "They have good magic effects but prick the feet.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 19
+  },
+  "image": "data/images/shoes-1851.png",
+  "file": "shoes-1851.json"
+}

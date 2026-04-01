@@ -1,0 +1,17 @@
+{
+  "id": 1182,
+  "name": "Polar Ultima",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Feather / Grass / Titanium / Leather / Magic",
+  "description": "A battlerobe made with the threads from the coldest terrain",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 44
+  },
+  "image": "data/images/armor-1182.png",
+  "file": "armor-1182.json"
+}

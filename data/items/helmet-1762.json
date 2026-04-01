@@ -1,0 +1,18 @@
+{
+  "id": 1762,
+  "name": "Magica Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Hair accessories that look like small wings increase speed and defence against magic; additional outfit effects can be obtained when equipped together with other Magical Girl series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MDEF": 20
+  },
+  "image": "data/images/helmet-1762.png",
+  "file": "helmet-1762.json"
+}

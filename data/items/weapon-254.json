@@ -1,0 +1,18 @@
+{
+  "id": 254,
+  "name": "Flame S.Shield",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is said that the gun and shield worn by one of the Knights of the Round Table was blessed by King Arthur. Can slightly increase the chance of counterattack in battle.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "ATK": 90
+  },
+  "image": "data/images/weapon-254.png",
+  "file": "weapon-254.json"
+}

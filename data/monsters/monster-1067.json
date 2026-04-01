@@ -1,0 +1,45 @@
+{
+  "id": 1067,
+  "name": "Blue Cactus",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1068.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Pollen",
+      "itemId": 7530,
+      "itemFile": "material-7530.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Nectar",
+      "itemId": 7529,
+      "itemFile": "material-7529.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Nectar",
+      "itemId": 7531,
+      "itemFile": "material-7531.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 107,
+    "hp": 1111,
+    "sp": 1092,
+    "catchable": "Unknown",
+    "spd": 284.5,
+    "str": 62,
+    "con": 60,
+    "int": 72,
+    "wis": 65,
+    "agi": 62
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2128,
+  "name": "Momo Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To evenly upgrade attack power and magic defense",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3,
+    "MDEF": 3
+  },
+  "image": "data/images/special-2128.png",
+  "file": "special-2128.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2012,
+  "name": "Lace-up boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Elegant lace-up boots that are time-consuming to wear; gain additional set effects when equipped with other Taisho Roman series equipment",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 40,
+    "SPD": 20
+  },
+  "image": "data/images/shoes-2012.png",
+  "file": "shoes-2012.json"
+}

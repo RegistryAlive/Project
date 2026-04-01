@@ -1,0 +1,27 @@
+{
+  "id": 926,
+  "name": "Spirit",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-926.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 535,
+    "sp": 1046,
+    "catchable": "Unknown",
+    "spd": 247,
+    "str": 32,
+    "con": 36,
+    "int": 64,
+    "wis": 67,
+    "agi": 59
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1323,
+  "name": "Jingya clothin",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Elegant clothing in mouse-colored tones, reminiscent of the old days, a slightly faded and tranquil color; when equipped with other Taisho Roman series equipment at the same time, an additional set effect can be obtained",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 350,
+    "SPD": 12
+  },
+  "image": "data/images/armor-1323.png",
+  "file": "armor-1323.json"
+}

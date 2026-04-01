@@ -1,0 +1,27 @@
+{
+  "id": 570,
+  "name": "Bandage Mummy",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-570.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 709,
+    "sp": 855,
+    "catchable": "Unknown",
+    "spd": 232,
+    "str": 42,
+    "con": 41,
+    "int": 46,
+    "wis": 55,
+    "agi": 56
+  }
+}

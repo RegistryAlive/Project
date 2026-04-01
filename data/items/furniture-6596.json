@@ -1,0 +1,15 @@
+{
+  "id": 6596,
+  "name": "FishKing Troph",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Shiny beautiful trophy. It's a proof of being a good fishing master",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6596.png",
+  "file": "furniture-6596.json"
+}

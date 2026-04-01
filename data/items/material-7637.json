@@ -1,0 +1,15 @@
+{
+  "id": 7637,
+  "name": "Grey Rock",
+  "type": "MaterialRock",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rock",
+  "description": "A Grey rock with high durability",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7637.png",
+  "file": "material-7637.json"
+}

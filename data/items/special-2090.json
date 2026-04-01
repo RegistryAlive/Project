@@ -1,0 +1,17 @@
+{
+  "id": 2090,
+  "name": "Little Statue",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": "Jade / Grass",
+  "description": "An idol which brings magic protection for humans.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 11
+  },
+  "image": "data/images/special-2090.png",
+  "file": "special-2090.json"
+}

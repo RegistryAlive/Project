@@ -1,0 +1,18 @@
+{
+  "id": 1655,
+  "name": "T&TPumpkin hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 12,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Halloween headdress in the shape of a Jack O'Lantern",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 12,
+    "MDEF": 12
+  },
+  "image": "data/images/helmet-1655.png",
+  "file": "helmet-1655.json"
+}

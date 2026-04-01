@@ -1,0 +1,18 @@
+{
+  "id": 1362,
+  "name": "Killer's Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Flower / Pure Iron / Iron",
+  "description": "Improve atk speed & power.Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "SPD": 10
+  },
+  "image": "data/images/armor-1362.png",
+  "file": "armor-1362.json"
+}

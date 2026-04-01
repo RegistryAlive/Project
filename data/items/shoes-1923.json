@@ -1,0 +1,18 @@
+{
+  "id": 1923,
+  "name": "Wind Aurora Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leaf",
+  "description": "Suit: Damages Earth enemies;-50% damage to Fire enemies.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MATK": 5
+  },
+  "image": "data/images/shoes-1923.png",
+  "file": "shoes-1923.json"
+}

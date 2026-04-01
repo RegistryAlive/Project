@@ -1,0 +1,15 @@
+{
+  "id": 7358,
+  "name": "Cotton",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "used to make cotton thread and then make clothes",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7358.png",
+  "file": "material-7358.json"
+}

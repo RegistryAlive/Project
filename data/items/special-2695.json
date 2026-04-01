@@ -1,0 +1,18 @@
+{
+  "id": 2695,
+  "name": "Passion Cl +10",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 104,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A clockwork that grows with physical passion.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 52,
+    "DEF": 52
+  },
+  "image": "data/images/special-2695.png",
+  "file": "special-2695.json"
+}

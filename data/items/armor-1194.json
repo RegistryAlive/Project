@@ -1,0 +1,17 @@
+{
+  "id": 1194,
+  "name": "Cerulean Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Rock / Copper",
+  "description": "Armor that does not restrict movement",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 32
+  },
+  "image": "data/images/armor-1194.png",
+  "file": "armor-1194.json"
+}

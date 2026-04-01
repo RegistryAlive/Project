@@ -1,0 +1,18 @@
+{
+  "id": 2019,
+  "name": "Inari Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A footgear that is part of the figure of the Omikami Messenger, whose true form is not visible to the naked eye, and which can be equipped at the same time as other Fushimi Inari equipment to gain an additional coat effect.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "SPD": 20
+  },
+  "image": "data/images/shoes-2019.png",
+  "file": "shoes-2019.json"
+}

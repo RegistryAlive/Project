@@ -1,0 +1,15 @@
+{
+  "id": 8558,
+  "name": "Ancient Crazy Dragon Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "Click to obtain an Ancient Crazy Dragon, found in 2012 Xmas boxes",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8558.png",
+  "file": "questprop-8558.json"
+}

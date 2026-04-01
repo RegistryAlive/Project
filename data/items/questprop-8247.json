@@ -1,0 +1,15 @@
+{
+  "id": 8247,
+  "name": "Love Arrow",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The arrow which has the Hanging Garden carved on it.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8247.png",
+  "file": "questprop-8247.json"
+}

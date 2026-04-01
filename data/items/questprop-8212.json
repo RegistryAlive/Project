@@ -1,0 +1,15 @@
+{
+  "id": 8212,
+  "name": "Love Rings",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Platinum",
+  "description": "The love ring between a villager and her beloved",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8212.png",
+  "file": "questprop-8212.json"
+}

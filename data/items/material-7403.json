@@ -1,0 +1,17 @@
+{
+  "id": 7403,
+  "name": "Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Rice",
+  "description": "Grown in hot and humid areas, especially along the equator.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 20
+  },
+  "image": "data/images/material-7403.png",
+  "file": "material-7403.json"
+}

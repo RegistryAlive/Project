@@ -1,0 +1,18 @@
+{
+  "id": 1236,
+  "name": "Bluebird costu",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "According to the legendary blue bird color that can bring happiness, the damage caused by critical strikes is slightly increased",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "MATK": 35
+  },
+  "image": "data/images/armor-1236.png",
+  "file": "armor-1236.json"
+}

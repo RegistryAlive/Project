@@ -1,0 +1,17 @@
+{
+  "id": 7503,
+  "name": "Duck Egg",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Egg",
+  "description": "An Egg of duck,can be made into a preserved egg",
+  "size": "1x1",
+  "attributes": {
+    "HP": 70
+  },
+  "image": "data/images/material-7503.png",
+  "file": "material-7503.json"
+}

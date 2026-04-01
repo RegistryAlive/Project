@@ -1,0 +1,15 @@
+{
+  "id": 6503,
+  "name": "Azure Dini. Ta",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Azure Series dining table with a modern feel.",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6503.png",
+  "file": "furniture-6503.json"
+}

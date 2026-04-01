@@ -1,0 +1,15 @@
+{
+  "id": 6039,
+  "name": "Massive Capstan",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Turns large items",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6039.png",
+  "file": "furniture-6039.json"
+}

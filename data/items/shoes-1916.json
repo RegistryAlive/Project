@@ -1,0 +1,15 @@
+{
+  "id": 1916,
+  "name": "Bride's Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass / Leaf",
+  "description": "Bride's high-heel shoes which is worn in weddings",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1916.png",
+  "file": "shoes-1916.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 988,
+  "name": "Warlike General",
+  "location": "Great Wall",
+  "image": "data/Monster_Images/monster-988.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 79,
+    "hp": 619,
+    "sp": 644,
+    "catchable": "Unknown",
+    "spd": 208.5,
+    "str": 58,
+    "con": 45,
+    "int": 49,
+    "wis": 40,
+    "agi": 45
+  }
+}

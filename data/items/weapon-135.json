@@ -1,0 +1,18 @@
+{
+  "id": 135,
+  "name": "Rip Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "Made from copper forged into a three edged blade.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 22,
+    "SPD": 22
+  },
+  "image": "data/images/weapon-135.png",
+  "file": "weapon-135.json"
+}

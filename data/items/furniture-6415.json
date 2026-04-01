@@ -1,0 +1,15 @@
+{
+  "id": 6415,
+  "name": "Toy Bambi",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Decoration for Christmas",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6415.png",
+  "file": "furniture-6415.json"
+}

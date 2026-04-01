@@ -1,0 +1,18 @@
+{
+  "id": 627,
+  "name": "Underworld Wan",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The evil hair staff and ominous dagger made from the bones and sharp teeth of the deep sea monsters can reduce the damage received by 1%. When equipped with other Nethersea series equipment at the same time, you can get additional set effects.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 45,
+    "MDEF": 25
+  },
+  "image": "data/images/weapon-627.png",
+  "file": "weapon-627.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2833,
+  "name": "Green Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Aluminum / Copper",
+  "description": "Cuffs made from green copper and aluminum.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 11,
+    "ATK": 5
+  },
+  "image": "data/images/arm-2833.png",
+  "file": "arm-2833.json"
+}

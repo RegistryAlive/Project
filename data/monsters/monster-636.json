@@ -1,0 +1,27 @@
+{
+  "id": 636,
+  "name": "Darius",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-636.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 593,
+    "sp": 564,
+    "catchable": "Unknown",
+    "spd": 197,
+    "str": 40,
+    "con": 45,
+    "int": 43,
+    "wis": 36,
+    "agi": 46
+  }
+}

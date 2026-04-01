@@ -1,0 +1,18 @@
+{
+  "id": 1292,
+  "name": "Predator coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clothing that represents the status class. Can slightly increase the chance of counterattack in battle.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MaxHP": 400
+  },
+  "image": "data/images/armor-1292.png",
+  "file": "armor-1292.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1524,
+  "name": "Sea Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Corundum / Steel",
+  "description": "A crown collected by Sea King.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "MaxHP": 160
+  },
+  "image": "data/images/helmet-1524.png",
+  "file": "helmet-1524.json"
+}

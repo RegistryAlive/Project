@@ -1,0 +1,33 @@
+{
+  "id": 399,
+  "name": "Alien Orang",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-399.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Beast Bone",
+      "itemId": 7776,
+      "itemFile": "material-7776.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 20,
+    "hp": 320,
+    "sp": 109,
+    "catchable": "Yes",
+    "spd": 54,
+    "str": 12,
+    "con": 20,
+    "int": 8,
+    "wis": 8,
+    "agi": 12
+  }
+}

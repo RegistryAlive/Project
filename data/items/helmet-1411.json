@@ -1,0 +1,18 @@
+{
+  "id": 1411,
+  "name": "Warrior's Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Gold / Pure Iron",
+  "description": "Often worn by Japanese warriors in combat.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 24,
+    "ATK": 8
+  },
+  "image": "data/images/helmet-1411.png",
+  "file": "helmet-1411.json"
+}

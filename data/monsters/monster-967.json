@@ -1,0 +1,27 @@
+{
+  "id": 967,
+  "name": "Unicorn Snow Monster",
+  "location": "Centaur Island",
+  "image": "data/Monster_Images/monster-967.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 958,
+    "sp": 817,
+    "catchable": "Unknown",
+    "spd": 245,
+    "str": 61,
+    "con": 55,
+    "int": 49,
+    "wis": 50,
+    "agi": 55
+  }
+}

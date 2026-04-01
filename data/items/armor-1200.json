@@ -1,0 +1,18 @@
+{
+  "id": 1200,
+  "name": "Fantasy Xmas F",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Fantasy Female Xmas Clothes.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "MATK": 20
+  },
+  "image": "data/images/armor-1200.png",
+  "file": "armor-1200.json"
+}

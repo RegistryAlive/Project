@@ -1,0 +1,18 @@
+{
+  "id": 2928,
+  "name": "Crystal Ribbon",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Ice crystals gleaming in the air, marking the arrival of winter. When attacked by a fire attribute enemy, the damage is reduced by 3% (if you change the shape of the bracelet, the effect will also disappear)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "SPD": 23
+  },
+  "image": "data/images/arm-2928.png",
+  "file": "arm-2928.json"
+}

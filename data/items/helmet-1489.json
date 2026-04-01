@@ -1,0 +1,18 @@
+{
+  "id": 1489,
+  "name": "Brown Feather Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Feather",
+  "description": "Made from hawk feathers.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 14,
+    "DEF": 6
+  },
+  "image": "data/images/helmet-1489.png",
+  "file": "helmet-1489.json"
+}

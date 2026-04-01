@@ -1,0 +1,18 @@
+{
+  "id": 1994,
+  "name": "Christmas Shoe",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A fashionable Christmas Shoe. Set: Critical damage increase.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 50,
+    "DEF": 15
+  },
+  "image": "data/images/shoes-1994.png",
+  "file": "shoes-1994.json"
+}

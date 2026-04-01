@@ -1,0 +1,18 @@
+{
+  "id": 13,
+  "name": "Steel Broadswords",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Steel / Wood",
+  "description": "A Falchion made from steel",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 11,
+    "DEF": 11
+  },
+  "image": "data/images/weapon-13.png",
+  "file": "weapon-13.json"
+}

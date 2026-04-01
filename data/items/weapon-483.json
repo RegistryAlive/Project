@@ -1,0 +1,18 @@
+{
+  "id": 483,
+  "name": "Whirlpool Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Tin / Corundum",
+  "description": "Wielding it gathers the storm at your fingertips.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 30,
+    "MATK": 10
+  },
+  "image": "data/images/weapon-483.png",
+  "file": "weapon-483.json"
+}

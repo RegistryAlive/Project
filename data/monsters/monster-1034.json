@@ -1,0 +1,33 @@
+{
+  "id": 1034,
+  "name": "Blue Gurnard",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-1035.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Shrimp",
+      "itemId": 7497,
+      "itemFile": "material-7497.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lobster",
+      "itemId": 7496,
+      "itemFile": "material-7496.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 136,
+    "hp": 1834,
+    "sp": 1488,
+    "catchable": "Unknown",
+    "spd": 340,
+    "str": 81,
+    "con": 94,
+    "int": 81,
+    "wis": 84,
+    "agi": 68
+  }
+}

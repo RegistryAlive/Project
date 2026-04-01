@@ -1,0 +1,39 @@
+{
+  "id": 131,
+  "name": "Graverobber",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-131.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Iron Ore",
+      "itemId": 7562,
+      "itemFile": "material-7562.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fugu",
+      "itemId": 7492,
+      "itemFile": "material-7492.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 74,
+    "hp": 804,
+    "sp": 660,
+    "catchable": "Unknown",
+    "spd": 195,
+    "str": 50,
+    "con": 49,
+    "int": 42,
+    "wis": 42,
+    "agi": 42
+  }
+}

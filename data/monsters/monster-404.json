@@ -1,0 +1,51 @@
+{
+  "id": 404,
+  "name": "Disguise Chameleon",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-404.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Orange",
+      "itemId": 7435,
+      "itemFile": "material-7435.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chameleon Tongue",
+      "itemId": 7785,
+      "itemFile": "material-7785.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chameleon Skin",
+      "itemId": 7786,
+      "itemFile": "material-7786.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 52,
+    "hp": 595,
+    "sp": 324,
+    "catchable": "Yes",
+    "spd": 150,
+    "str": 32,
+    "con": 41,
+    "int": 26,
+    "wis": 21,
+    "agi": 36
+  }
+}

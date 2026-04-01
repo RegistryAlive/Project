@@ -1,0 +1,18 @@
+{
+  "id": 1637,
+  "name": "Phoenix Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A Phoenix Crown relic, has a mysterious power after further investigation. Only for men.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 199,
+    "MDEF": 199
+  },
+  "image": "data/images/helmet-1637.png",
+  "file": "helmet-1637.json"
+}

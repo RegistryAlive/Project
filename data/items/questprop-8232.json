@@ -1,0 +1,15 @@
+{
+  "id": 8232,
+  "name": "Sea Lion Vouch",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a Sea Lion become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8232.png",
+  "file": "questprop-8232.json"
+}

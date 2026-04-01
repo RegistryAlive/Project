@@ -1,0 +1,15 @@
+{
+  "id": 8144,
+  "name": "Wish Token",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "May obtain a gift by throwing it into the pool.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8144.png",
+  "file": "questprop-8144.json"
+}

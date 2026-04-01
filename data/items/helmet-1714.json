@@ -1,0 +1,18 @@
+{
+  "id": 1714,
+  "name": "M Reindeer Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A cute reindeer-shaped hat, attracting attention every where you go!. For Men. Set Effect : MaxHP +450",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 100,
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1714.png",
+  "file": "helmet-1714.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7900,
+  "name": "Detoxification Potion",
+  "type": "Material",
+  "category": "material",
+  "rank": 8,
+  "level": 16,
+  "rarity": "uncommon",
+  "base": "Chemical",
+  "description": "Medicine treatment can detoxify",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7900.png",
+  "file": "material-7900.json"
+}

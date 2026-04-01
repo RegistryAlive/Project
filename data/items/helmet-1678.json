@@ -1,0 +1,17 @@
+{
+  "id": 1678,
+  "name": "Zombie hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "There is a charm on the front of the hat, which has a 5% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5
+  },
+  "image": "data/images/helmet-1678.png",
+  "file": "helmet-1678.json"
+}

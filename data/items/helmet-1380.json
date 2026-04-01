@@ -1,0 +1,18 @@
+{
+  "id": 1380,
+  "name": "Cat Headdress",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Flower",
+  "description": "Lovely female kitling headgear made from hide.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 3,
+    "MATK": 2
+  },
+  "image": "data/images/helmet-1380.png",
+  "file": "helmet-1380.json"
+}

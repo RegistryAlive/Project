@@ -1,0 +1,18 @@
+{
+  "id": 7246,
+  "name": "Fried Crabmeat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "An Autumn crab is the most delicious",
+  "size": "1x1",
+  "attributes": {
+    "HP": 165,
+    "SP": 165
+  },
+  "image": "data/images/material-7246.png",
+  "file": "material-7246.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1347,
+  "name": "Gladiator Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A martial arts costume that effectively enhances physical and internal strength; when equipped together with other martial arts warrior series equipment, it can increase the damage of weapons such as swords and mallets.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "DEF": 20
+  },
+  "image": "data/images/armor-1347.png",
+  "file": "armor-1347.json"
+}

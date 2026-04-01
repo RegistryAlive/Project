@@ -1,0 +1,33 @@
+{
+  "id": 1137,
+  "name": "Easy-going Buffalo",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-1138.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Small Pineapple",
+      "itemId": 7443,
+      "itemFile": "material-7443.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 800,
+    "sp": 833,
+    "catchable": "Unknown",
+    "spd": 221,
+    "str": 53,
+    "con": 59,
+    "int": 48,
+    "wis": 52,
+    "agi": 46
+  }
+}

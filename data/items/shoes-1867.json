@@ -1,0 +1,18 @@
+{
+  "id": 1867,
+  "name": "Sea Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Leaf / Grass",
+  "description": "Boots made from hemp leather and seaweed.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 17,
+    "MDEF": 6
+  },
+  "image": "data/images/shoes-1867.png",
+  "file": "shoes-1867.json"
+}

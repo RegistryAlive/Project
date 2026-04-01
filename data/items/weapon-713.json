@@ -1,0 +1,17 @@
+{
+  "id": 713,
+  "name": "Twin War ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A twin axe gifted by Ares, infused with the violence of war, can summon Ares to assist.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50
+  },
+  "image": "data/images/weapon-713.png",
+  "file": "weapon-713.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7612,
+  "name": "Magnetic Powder",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Platinum",
+  "description": "It is made of a magnet",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7612.png",
+  "file": "material-7612.json"
+}

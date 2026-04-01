@@ -1,0 +1,17 @@
+{
+  "id": 2881,
+  "name": "Formal Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Fur / Nylon",
+  "description": "Gorgeous gloves made with silk",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 29
+  },
+  "image": "data/images/arm-2881.png",
+  "file": "arm-2881.json"
+}

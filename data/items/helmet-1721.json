@@ -1,0 +1,18 @@
+{
+  "id": 1721,
+  "name": "Darktide Helm",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The helmet made of the horns of the deep-sea exotic beast can reduce the damage received by 1%, and can obtain additional set effects when equipped with other dark tide series equipment at the same time",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "DEF": 30
+  },
+  "image": "data/images/helmet-1721.png",
+  "file": "helmet-1721.json"
+}

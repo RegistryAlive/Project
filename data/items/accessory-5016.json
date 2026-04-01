@@ -1,0 +1,15 @@
+{
+  "id": 5016,
+  "name": "Golden Rings Box",
+  "type": "ItemBox",
+  "category": "accessory",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It cannot be socketed,it has 6% seal resistance effect. Can be traded. Cannot be traded after being opened.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5016.png",
+  "file": "accessory-5016.json"
+}

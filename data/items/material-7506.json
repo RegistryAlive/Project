@@ -1,0 +1,17 @@
+{
+  "id": 7506,
+  "name": "Salmon Roes",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "Roe of salmon",
+  "size": "1x1",
+  "attributes": {
+    "HP": 130
+  },
+  "image": "data/images/material-7506.png",
+  "file": "material-7506.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6575,
+  "name": "Christma Tree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A tall Christmas tree for celebrating Christmas Eve, with gifts from Santa Claus next to it",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6575.png",
+  "file": "furniture-6575.json"
+}

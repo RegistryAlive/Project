@@ -1,0 +1,17 @@
+{
+  "id": 900,
+  "name": "Attack Pestle +3",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 1,
+  "level": 1,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Cuts the enemy and drains their SP.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30
+  },
+  "image": "data/images/weapon-900.png",
+  "file": "weapon-900.json"
+}

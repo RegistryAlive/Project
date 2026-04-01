@@ -1,0 +1,17 @@
+{
+  "id": 1835,
+  "name": "Knight War Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Knight's special boots",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 31
+  },
+  "image": "data/images/shoes-1835.png",
+  "file": "shoes-1835.json"
+}

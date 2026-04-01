@@ -1,0 +1,17 @@
+{
+  "id": 2784,
+  "name": "Bronze Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Flower / Copper",
+  "description": "Aqua Gloves which are made from bronze",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 13
+  },
+  "image": "data/images/arm-2784.png",
+  "file": "arm-2784.json"
+}

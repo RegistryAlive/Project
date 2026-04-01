@@ -1,0 +1,15 @@
+{
+  "id": 7573,
+  "name": "Tin Sand",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Tin",
+  "description": "Rare tin sand",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7573.png",
+  "file": "material-7573.json"
+}

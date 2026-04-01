@@ -1,0 +1,15 @@
+{
+  "id": 7653,
+  "name": "Lauan",
+  "type": "MaterialWood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "Hard wood of a lauan",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7653.png",
+  "file": "material-7653.json"
+}

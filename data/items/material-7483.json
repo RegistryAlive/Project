@@ -1,0 +1,17 @@
+{
+  "id": 7483,
+  "name": "Coprinus",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Meat",
+  "description": "Savoury chicken leg",
+  "size": "1x1",
+  "attributes": {
+    "HP": 20
+  },
+  "image": "data/images/material-7483.png",
+  "file": "material-7483.json"
+}

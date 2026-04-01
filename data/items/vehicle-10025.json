@@ -1,0 +1,17 @@
+{
+  "id": 10025,
+  "name": "(Not opened)",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "(Spare)",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10025.png",
+  "file": "vehicle-10025.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7707,
+  "name": "Growth Element",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fluid",
+  "description": "The liquid can make a mushroom grow no longer",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7707.png",
+  "file": "material-7707.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1241,
+  "name": "F.Casual cloth",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Easily show the casual dress of urban style, the damage caused by critical strikes is slightly increased",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MaxHP": 450
+  },
+  "image": "data/images/armor-1241.png",
+  "file": "armor-1241.json"
+}

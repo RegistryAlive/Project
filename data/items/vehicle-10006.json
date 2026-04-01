@@ -1,0 +1,17 @@
+{
+  "id": 10006,
+  "name": "Motorbike",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A kind of engine powered vehicle with two wheels",
+  "size": "3x3",
+  "attributes": {
+    "SPECIAL": 46911
+  },
+  "image": "data/images/vehicle-10006.png",
+  "file": "vehicle-10006.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2931,
+  "name": "Furious Wave B",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "After wearing, you will be surrounded by fierce waves, and you feel that you can swallow everything, and the damage caused by critical strikes will be slightly increased (if you change the shape of the bracelet, the effect will also disappear)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "SPD": 40
+  },
+  "image": "data/images/arm-2931.png",
+  "file": "arm-2931.json"
+}

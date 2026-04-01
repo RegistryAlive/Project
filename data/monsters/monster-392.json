@@ -1,0 +1,51 @@
+{
+  "id": 392,
+  "name": "Burning Snail",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-392.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Grume of Snail",
+      "itemId": 7799,
+      "itemFile": "material-7799.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Onion",
+      "itemId": 7416,
+      "itemFile": "material-7416.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Bean",
+      "itemId": 7467,
+      "itemFile": "material-7467.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 8,
+    "hp": 68,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 24,
+    "str": 5,
+    "con": 4,
+    "int": 4,
+    "wis": 5,
+    "agi": 6
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": 219,
+  "name": "Sky Dragonfly",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-219.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Cotton",
+      "itemId": 7358,
+      "itemFile": "material-7358.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Turpentine",
+      "itemId": 7370,
+      "itemFile": "material-7370.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Onion",
+      "itemId": 7416,
+      "itemFile": "material-7416.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Spinach",
+      "itemId": 7408,
+      "itemFile": "material-7408.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 9,
+    "hp": 63,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 31.5,
+    "str": 3,
+    "con": 3,
+    "int": 6,
+    "wis": 6,
+    "agi": 9
+  }
+}

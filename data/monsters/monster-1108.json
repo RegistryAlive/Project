@@ -1,0 +1,27 @@
+{
+  "id": 1108,
+  "name": "Pirate",
+  "location": "Blackwind Cave",
+  "image": "data/Monster_Images/monster-1109.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 757,
+    "sp": 633,
+    "catchable": "Unknown",
+    "spd": 228,
+    "str": 56,
+    "con": 57,
+    "int": 34,
+    "wis": 39,
+    "agi": 54
+  }
+}

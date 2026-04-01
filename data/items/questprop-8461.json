@@ -1,0 +1,15 @@
+{
+  "id": 8461,
+  "name": "Baby uni exc",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can exchange voucher for Baby Unicorn.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8461.png",
+  "file": "questprop-8461.json"
+}

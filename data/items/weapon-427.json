@@ -1,0 +1,18 @@
+{
+  "id": 427,
+  "name": "Peerless Xbow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The range and accuracy are unmatched, the number one bow in terms of power.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 24,
+    "SPD": 22
+  },
+  "image": "data/images/weapon-427.png",
+  "file": "weapon-427.json"
+}

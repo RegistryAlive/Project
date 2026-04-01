@@ -1,0 +1,15 @@
+{
+  "id": 6612,
+  "name": "New Yr Chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "New Years party style chair with golden luxurious ribbon",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6612.png",
+  "file": "furniture-6612.json"
+}

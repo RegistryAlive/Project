@@ -1,0 +1,18 @@
+{
+  "id": 732,
+  "name": "Blaze Tomahawk",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A magical axe, made with the element of flames. 46% Critical Strike effect.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "MaxHP": 400
+  },
+  "image": "data/images/weapon-732.png",
+  "file": "weapon-732.json"
+}

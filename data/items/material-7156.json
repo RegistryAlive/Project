@@ -1,0 +1,18 @@
+{
+  "id": 7156,
+  "name": "Roasted Roo Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Roasted roo meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 180,
+    "SP": 70
+  },
+  "image": "data/images/material-7156.png",
+  "file": "material-7156.json"
+}

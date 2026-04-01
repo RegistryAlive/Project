@@ -1,0 +1,17 @@
+{
+  "id": 1207,
+  "name": "Pepper Hani",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Latin casual clothes, matched with jewelry.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 56
+  },
+  "image": "data/images/armor-1207.png",
+  "file": "armor-1207.json"
+}

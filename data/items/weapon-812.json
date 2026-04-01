@@ -1,0 +1,17 @@
+{
+  "id": 812,
+  "name": "Fire scrolls",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": null,
+  "description": "Flame has the power scrolls",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 9
+  },
+  "image": "data/images/weapon-812.png",
+  "file": "weapon-812.json"
+}

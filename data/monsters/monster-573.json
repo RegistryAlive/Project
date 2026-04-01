@@ -1,0 +1,27 @@
+{
+  "id": 573,
+  "name": "Beard the Pirate",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-573.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 20000,
+    "sp": 1455,
+    "catchable": "Unknown",
+    "spd": 343,
+    "str": 114,
+    "con": 121,
+    "int": 77,
+    "wis": 79,
+    "agi": 59
+  }
+}

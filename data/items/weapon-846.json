@@ -1,0 +1,17 @@
+{
+  "id": 846,
+  "name": "Long Arquebus",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Iron / Wood",
+  "description": "A huge gun with a long barrel for greater range.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20
+  },
+  "image": "data/images/weapon-846.png",
+  "file": "weapon-846.json"
+}

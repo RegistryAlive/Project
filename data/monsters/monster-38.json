@@ -1,0 +1,39 @@
+{
+  "id": 38,
+  "name": "Young Tyrannosaur",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-38.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Harl Grass",
+      "itemId": 7359,
+      "itemFile": "material-7359.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lei Dragon Thigh",
+      "itemId": 7813,
+      "itemFile": "material-7813.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tobacco",
+      "itemId": 7360,
+      "itemFile": "material-7360.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 73,
+    "hp": 1219,
+    "sp": 790,
+    "catchable": "Yes",
+    "spd": 129.5,
+    "str": 43,
+    "con": 79,
+    "int": 35,
+    "wis": 52,
+    "agi": 10
+  }
+}

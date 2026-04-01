@@ -1,0 +1,18 @@
+{
+  "id": 590,
+  "name": "Cotton Candy W",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Unique wand special for Christmas",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 12,
+    "ATK": 8
+  },
+  "image": "data/images/weapon-590.png",
+  "file": "weapon-590.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 928,
+  "name": "Thunder Spear+1",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "MAXSP": 60
+  },
+  "image": "data/images/weapon-928.png",
+  "file": "weapon-928.json"
+}

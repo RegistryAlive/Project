@@ -1,0 +1,17 @@
+{
+  "id": 832,
+  "name": "Holy Grimoire",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Magic book that priests love to use, has excellent magic defense effect. Can be forged, Set : double socket bonus",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55
+  },
+  "image": "data/images/weapon-832.png",
+  "file": "weapon-832.json"
+}

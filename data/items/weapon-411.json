@@ -1,0 +1,18 @@
+{
+  "id": 411,
+  "name": "Great Long Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Wood / Grass",
+  "description": "A more advanced version of the vaunted long bow.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 8,
+    "SPD": 6
+  },
+  "image": "data/images/weapon-411.png",
+  "file": "weapon-411.json"
+}

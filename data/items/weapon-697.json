@@ -1,0 +1,17 @@
+{
+  "id": 697,
+  "name": "Copper Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "A single blade copper axe.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 27
+  },
+  "image": "data/images/weapon-697.png",
+  "file": "weapon-697.json"
+}

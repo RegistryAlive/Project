@@ -1,0 +1,15 @@
+{
+  "id": 6690,
+  "name": "Black Cat Doll",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Plush black cat puppet, a must have collectible.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6690.png",
+  "file": "furniture-6690.json"
+}

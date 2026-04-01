@@ -1,0 +1,18 @@
+{
+  "id": 2152,
+  "name": "Spell Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To slightly raise magic defense and magic attack.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 3,
+    "MATK": 1
+  },
+  "image": "data/images/special-2152.png",
+  "file": "special-2152.json"
+}

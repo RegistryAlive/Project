@@ -1,0 +1,18 @@
+{
+  "id": 1827,
+  "name": "Sung Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Leather / Fur",
+  "description": "Boots which are reprocessed by hide",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 13,
+    "DEF": 4
+  },
+  "image": "data/images/shoes-1827.png",
+  "file": "shoes-1827.json"
+}

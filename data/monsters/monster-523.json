@@ -1,0 +1,39 @@
+{
+  "id": 523,
+  "name": "Grave Scopian",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-523.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lemon",
+      "itemId": 7449,
+      "itemFile": "material-7449.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 56,
+    "hp": 548,
+    "sp": 460,
+    "catchable": "Unknown",
+    "spd": 144,
+    "str": 36,
+    "con": 36,
+    "int": 35,
+    "wis": 31,
+    "agi": 30
+  }
+}

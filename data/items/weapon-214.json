@@ -1,0 +1,18 @@
+{
+  "id": 214,
+  "name": "Golden Broadsword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Gold / Iron / Steel / Titanium",
+  "description": "Radiating sword",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45,
+    "DEF": 35
+  },
+  "image": "data/images/weapon-214.png",
+  "file": "weapon-214.json"
+}

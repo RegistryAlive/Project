@@ -1,0 +1,15 @@
+{
+  "id": 852,
+  "name": "Broken Gun",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron / Wood",
+  "description": "A gun which is broken",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-852.png",
+  "file": "weapon-852.json"
+}

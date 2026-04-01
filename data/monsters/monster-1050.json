@@ -1,0 +1,39 @@
+{
+  "id": 1050,
+  "name": "Digging Earthworm",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-1051.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Potato",
+      "itemId": 7428,
+      "itemFile": "material-7428.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pachyrhizus Leaf",
+      "itemId": 7413,
+      "itemFile": "material-7413.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 574,
+    "sp": 369,
+    "catchable": "Yes",
+    "spd": 115,
+    "str": 42,
+    "con": 40,
+    "int": 23,
+    "wis": 25,
+    "agi": 20
+  }
+}

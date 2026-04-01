@@ -1,0 +1,18 @@
+{
+  "id": 603,
+  "name": "Staff of Mars",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Silver / Pure Iron / Steel / Titanium / Magic",
+  "description": "A gleaming silver staff rumored to be wielded by Mars, the God of War.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 65,
+    "MDEF": 23
+  },
+  "image": "data/images/weapon-603.png",
+  "file": "weapon-603.json"
+}

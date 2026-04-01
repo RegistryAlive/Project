@@ -1,0 +1,17 @@
+{
+  "id": 720,
+  "name": "Prideful Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The goddess of war Athena was lost when conquering the demons.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 73
+  },
+  "image": "data/images/weapon-720.png",
+  "file": "weapon-720.json"
+}

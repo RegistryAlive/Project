@@ -1,0 +1,17 @@
+{
+  "id": 850,
+  "name": "Bazooka",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Iron / Wood",
+  "description": "Primarily a large cylinder firing mini bombs.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40
+  },
+  "image": "data/images/weapon-850.png",
+  "file": "weapon-850.json"
+}

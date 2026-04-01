@@ -1,0 +1,27 @@
+{
+  "id": 1011,
+  "name": "Wind Immortal",
+  "location": "Underground Pathway",
+  "image": "data/Monster_Images/monster-1011.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 5800,
+    "sp": 720,
+    "catchable": "Unknown",
+    "spd": 145,
+    "str": 30,
+    "con": 25,
+    "int": 35,
+    "wis": 25,
+    "agi": 35
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2884,
+  "name": "Thief Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Feather / Leather",
+  "description": "Special gloves for a mysterious thief organization",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "DEF": 5
+  },
+  "image": "data/images/arm-2884.png",
+  "file": "arm-2884.json"
+}

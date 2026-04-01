@@ -1,0 +1,51 @@
+{
+  "id": 53,
+  "name": "Flour Beetle",
+  "location": "Kama Cave",
+  "image": "data/Monster_Images/monster-53.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple",
+      "itemId": 7433,
+      "itemFile": "material-7433.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Watermelon",
+      "itemId": 7440,
+      "itemFile": "material-7440.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cantaloupe",
+      "itemId": 7447,
+      "itemFile": "material-7447.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beetle Horn",
+      "itemId": 7783,
+      "itemFile": "material-7783.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 17,
+    "hp": 111,
+    "sp": 141,
+    "catchable": "Unknown",
+    "spd": 45.5,
+    "str": 10,
+    "con": 8,
+    "int": 11,
+    "wis": 12,
+    "agi": 10
+  }
+}

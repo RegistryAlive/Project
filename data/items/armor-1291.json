@@ -1,0 +1,17 @@
+{
+  "id": 1291,
+  "name": "Drk Killer Sui",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Special garments smelted from darkness and fire. When attacked by fire attribute enemies, damage is reduced by 3%.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 24
+  },
+  "image": "data/images/armor-1291.png",
+  "file": "armor-1291.json"
+}

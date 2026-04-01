@@ -1,0 +1,45 @@
+{
+  "id": 1072,
+  "name": "Big-Eyed Cactus",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1073.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Nectar",
+      "itemId": 7531,
+      "itemFile": "material-7531.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pollen",
+      "itemId": 7528,
+      "itemFile": "material-7528.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wood",
+      "itemId": 7651,
+      "itemFile": "material-7651.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 73,
+    "hp": 823,
+    "sp": 599,
+    "catchable": "Unknown",
+    "spd": 209.5,
+    "str": 48,
+    "con": 51,
+    "int": 32,
+    "wis": 38,
+    "agi": 50
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2582,
+  "name": "Common Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": "Titanium",
+  "description": "A metal alloy armlet exclusively used by pet men.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 110,
+    "DEF": 11
+  },
+  "image": "data/images/special-2582.png",
+  "file": "special-2582.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2868,
+  "name": "Silk Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "Pretty white silk gloves.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 25,
+    "DEF": 8
+  },
+  "image": "data/images/arm-2868.png",
+  "file": "arm-2868.json"
+}

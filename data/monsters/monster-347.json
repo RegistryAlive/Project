@@ -1,0 +1,45 @@
+{
+  "id": 347,
+  "name": "Yellow Moai",
+  "location": "Revival Isle",
+  "image": "data/Monster_Images/monster-347.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Huge Hand",
+      "itemId": 7816,
+      "itemFile": "material-7816.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Emerald",
+      "itemId": 7593,
+      "itemFile": "material-7593.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 74,
+    "hp": 870,
+    "sp": 561,
+    "catchable": "Unknown",
+    "spd": 191,
+    "str": 44,
+    "con": 54,
+    "int": 49,
+    "wis": 35,
+    "agi": 40
+  }
+}

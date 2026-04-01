@@ -1,0 +1,18 @@
+{
+  "id": 1258,
+  "name": "Camouflage Uni",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Green camouflage uniforms that can be integrated with nature. When using swords and muskets, attack damage +3%",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 400,
+    "SPD": 25
+  },
+  "image": "data/images/armor-1258.png",
+  "file": "armor-1258.json"
+}

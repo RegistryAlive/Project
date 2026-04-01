@@ -1,0 +1,17 @@
+{
+  "id": 7145,
+  "name": "Fried Waxgourd",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Fried waxgourd pieces",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150
+  },
+  "image": "data/images/material-7145.png",
+  "file": "material-7145.json"
+}

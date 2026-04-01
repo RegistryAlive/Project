@@ -1,0 +1,17 @@
+{
+  "id": 1895,
+  "name": "Common Sandal",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Shoes which are made up from grass",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 3
+  },
+  "image": "data/images/shoes-1895.png",
+  "file": "shoes-1895.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 709,
+  "name": "Red Hatchet",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Pure Iron / Steel",
+  "description": "The attack damage is awesome.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 59
+  },
+  "image": "data/images/weapon-709.png",
+  "file": "weapon-709.json"
+}

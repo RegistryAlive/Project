@@ -1,0 +1,17 @@
+{
+  "id": 7477,
+  "name": "Goose",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Well-knit goose",
+  "size": "1x1",
+  "attributes": {
+    "HP": 80
+  },
+  "image": "data/images/material-7477.png",
+  "file": "material-7477.json"
+}

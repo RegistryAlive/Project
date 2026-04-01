@@ -1,0 +1,18 @@
+{
+  "id": 90,
+  "name": "Jungle Blade",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The leaf-green double knives once belonged to a cruel and strong man who truly understood the law of the jungle. Has 46% crit effect",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 45,
+    "SPD": 50
+  },
+  "image": "data/images/weapon-90.png",
+  "file": "weapon-90.json"
+}

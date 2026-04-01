@@ -1,0 +1,17 @@
+{
+  "id": 7047,
+  "name": "Custard Tart",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat / Egg / Dairy Product",
+  "description": "It's a bakery treat made from egg",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200
+  },
+  "image": "data/images/material-7047.png",
+  "file": "material-7047.json"
+}

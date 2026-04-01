@@ -1,0 +1,27 @@
+{
+  "id": 643,
+  "name": "Darkness Magellan",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-643.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 134,
+    "hp": 27000,
+    "sp": 2117,
+    "catchable": "Unknown",
+    "spd": 489,
+    "str": 216,
+    "con": 194,
+    "int": 126,
+    "wis": 124,
+    "agi": 144
+  }
+}

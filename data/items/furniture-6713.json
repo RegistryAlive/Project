@@ -1,0 +1,15 @@
+{
+  "id": 6713,
+  "name": "Tiger Wild",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A tiger painted by a famous artist",
+  "size": "1x3",
+  "attributes": {},
+  "image": "data/images/furniture-6713.png",
+  "file": "furniture-6713.json"
+}

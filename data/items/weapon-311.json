@@ -1,0 +1,18 @@
+{
+  "id": 311,
+  "name": "Beast Fork+3",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 11,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets,32% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "MaxHP": 120
+  },
+  "image": "data/images/weapon-311.png",
+  "file": "weapon-311.json"
+}

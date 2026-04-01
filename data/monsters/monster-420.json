@@ -1,0 +1,39 @@
+{
+  "id": 420,
+  "name": "Silver Fox",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-420.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "White Fox Fur",
+      "itemId": 7670,
+      "itemFile": "material-7670.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sardine",
+      "itemId": 7487,
+      "itemFile": "material-7487.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 66,
+    "hp": 695,
+    "sp": 473,
+    "catchable": "Yes",
+    "spd": 177,
+    "str": 45,
+    "con": 44,
+    "int": 40,
+    "wis": 30,
+    "agi": 39
+  }
+}

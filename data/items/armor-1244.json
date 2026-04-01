@@ -1,0 +1,17 @@
+{
+  "id": 1244,
+  "name": "SunflowerDress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is rumored to be a fantasy costume that can increase attack power after being equipped",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 28
+  },
+  "image": "data/images/armor-1244.png",
+  "file": "armor-1244.json"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 1104,
+  "name": "Old Seaflower",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-1105.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Shrimp",
+      "itemId": 7497,
+      "itemFile": "material-7497.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Anemones Tentacles",
+      "itemId": 7796,
+      "itemFile": "material-7796.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Copper Ore",
+      "itemId": 7556,
+      "itemFile": "material-7556.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Coral",
+      "itemId": 7733,
+      "itemFile": "material-7733.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 450,
+    "sp": 430,
+    "catchable": "Yes",
+    "spd": 135,
+    "str": 30,
+    "con": 30,
+    "int": 30,
+    "wis": 30,
+    "agi": 30
+  }
+}

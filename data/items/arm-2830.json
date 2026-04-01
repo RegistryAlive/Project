@@ -1,0 +1,18 @@
+{
+  "id": 2830,
+  "name": "Crystal Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Titanium / Flower",
+  "description": "Light and defensive armguard.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "DEF": 9
+  },
+  "image": "data/images/arm-2830.png",
+  "file": "arm-2830.json"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 520,
+  "name": "Swift Caterpillar",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-520.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Waxgourd",
+      "itemId": 7421,
+      "itemFile": "material-7421.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Small Cucumber",
+      "itemId": 7425,
+      "itemFile": "material-7425.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Garlic",
+      "itemId": 7417,
+      "itemFile": "material-7417.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 44,
+    "hp": 428,
+    "sp": 353,
+    "catchable": "No",
+    "spd": 116,
+    "str": 20,
+    "con": 30,
+    "int": 32,
+    "wis": 25,
+    "agi": 25
+  }
+}

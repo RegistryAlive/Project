@@ -1,0 +1,18 @@
+{
+  "id": 656,
+  "name": "Violent Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Taken from a claw of the beasts, with fierce air.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 9,
+    "SPD": 11
+  },
+  "image": "data/images/weapon-656.png",
+  "file": "weapon-656.json"
+}

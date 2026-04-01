@@ -1,0 +1,18 @@
+{
+  "id": 119,
+  "name": "Steel Big Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Steel / Wood",
+  "description": "A sword made from steel, its wide.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 16,
+    "SPD": 16
+  },
+  "image": "data/images/weapon-119.png",
+  "file": "weapon-119.json"
+}

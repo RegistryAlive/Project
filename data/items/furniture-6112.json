@@ -1,0 +1,15 @@
+{
+  "id": 6112,
+  "name": "Magnet Stone",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A substitute fuel for the UFO. Double click to use it while using UFO. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6112.png",
+  "file": "furniture-6112.json"
+}

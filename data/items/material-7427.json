@@ -1,0 +1,17 @@
+{
+  "id": 7427,
+  "name": "Coffee Bean",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Vegetable",
+  "description": "It is made into coffee",
+  "size": "1x1",
+  "attributes": {
+    "SP": 50
+  },
+  "image": "data/images/material-7427.png",
+  "file": "material-7427.json"
+}

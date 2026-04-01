@@ -1,0 +1,18 @@
+{
+  "id": 1759,
+  "name": "Chef's Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "In addition to hygiene considerations, it also represents the identity and professionalism of the chef; 10% anti-blocking effect, additional coat effect can be obtained when equipped together with other Chef's Dream series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "Special": 10
+  },
+  "image": "data/images/helmet-1759.png",
+  "file": "helmet-1759.json"
+}

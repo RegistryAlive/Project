@@ -1,0 +1,17 @@
+{
+  "id": 10041,
+  "name": "Justice S. Cap",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Flying equipment that is specially crafted that contains the sense of justice and compassion. It is full of positive energy. (Capsule)",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10041.png",
+  "file": "vehicle-10041.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6380,
+  "name": "Piano",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wood",
+  "description": "can play beautiful music",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6380.png",
+  "file": "furniture-6380.json"
+}

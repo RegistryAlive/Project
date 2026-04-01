@@ -1,0 +1,15 @@
+{
+  "id": 1188,
+  "name": "M-White Day Su",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A special male suit for White Day 2013",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1188.png",
+  "file": "armor-1188.json"
+}

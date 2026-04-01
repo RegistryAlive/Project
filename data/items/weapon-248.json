@@ -1,0 +1,18 @@
+{
+  "id": 248,
+  "name": "Amethyst Epee",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "An epee that has the briliance of the crystal, which is breathtakingly beautiful. 46% chance of a critical strike.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 60,
+    "MaxHP": 400
+  },
+  "image": "data/images/weapon-248.png",
+  "file": "weapon-248.json"
+}

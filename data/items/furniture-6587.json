@@ -1,0 +1,15 @@
+{
+  "id": 6587,
+  "name": "Halloween Ship",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The decoration in the shape of a ghost ship is full of Halloween atmosphere",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6587.png",
+  "file": "furniture-6587.json"
+}

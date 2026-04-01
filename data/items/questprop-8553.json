@@ -1,0 +1,15 @@
+{
+  "id": 8553,
+  "name": "Gold Lion Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "It makes a Golden Lion Dove become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8553.png",
+  "file": "questprop-8553.json"
+}

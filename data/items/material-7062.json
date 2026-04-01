@@ -1,0 +1,18 @@
+{
+  "id": 7062,
+  "name": "Cabbage Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Vegetable",
+  "description": "Noodles with cabbage",
+  "size": "1x1",
+  "attributes": {
+    "HP": 175,
+    "SP": 75
+  },
+  "image": "data/images/material-7062.png",
+  "file": "material-7062.json"
+}

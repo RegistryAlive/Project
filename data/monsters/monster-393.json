@@ -1,0 +1,39 @@
+{
+  "id": 393,
+  "name": "Fire Pangolin",
+  "location": "Rome",
+  "image": "data/Monster_Images/monster-393.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Watermelon",
+      "itemId": 7440,
+      "itemFile": "material-7440.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ant Tooth",
+      "itemId": 7798,
+      "itemFile": "material-7798.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 123,
+    "hp": 1282,
+    "sp": 1377,
+    "catchable": "Unknown",
+    "spd": 314.5,
+    "str": 73,
+    "con": 88,
+    "int": 63,
+    "wis": 80,
+    "agi": 65
+  }
+}

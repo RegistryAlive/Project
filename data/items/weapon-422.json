@@ -1,0 +1,18 @@
+{
+  "id": 422,
+  "name": "Crossbow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Outstanding power and range.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 19,
+    "SPD": 17
+  },
+  "image": "data/images/weapon-422.png",
+  "file": "weapon-422.json"
+}

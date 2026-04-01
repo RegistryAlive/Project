@@ -1,0 +1,18 @@
+{
+  "id": 2777,
+  "name": "Bamboo Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Wood",
+  "description": "Cuffs which are cut from bamboo",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 5,
+    "SPD": 1
+  },
+  "image": "data/images/arm-2777.png",
+  "file": "arm-2777.json"
+}

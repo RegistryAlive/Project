@@ -1,0 +1,18 @@
+{
+  "id": 7131,
+  "name": "Fruit Juice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "Juice extracted from various fruits",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 150
+  },
+  "image": "data/images/material-7131.png",
+  "file": "material-7131.json"
+}

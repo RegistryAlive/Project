@@ -1,0 +1,27 @@
+{
+  "id": 784,
+  "name": "Isa",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-784.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 51,
+    "hp": 314,
+    "sp": 570,
+    "catchable": "Unknown",
+    "spd": 130.5,
+    "str": 19,
+    "con": 23,
+    "int": 46,
+    "wis": 41,
+    "agi": 27
+  }
+}

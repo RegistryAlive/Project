@@ -1,0 +1,17 @@
+{
+  "id": 1698,
+  "name": "Raccoon ears+6",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A cute raccoon costume for dressing up.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 70
+  },
+  "image": "data/images/helmet-1698.png",
+  "file": "helmet-1698.json"
+}

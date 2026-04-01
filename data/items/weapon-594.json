@@ -1,0 +1,18 @@
+{
+  "id": 594,
+  "name": "Silver Eagle Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 43,
+  "level": 86,
+  "rarity": "legendary",
+  "base": "Corundum / Aluminum / Steel / Titanium",
+  "description": "Silver Eagle Wand",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 65,
+    "MATK": 21
+  },
+  "image": "data/images/weapon-594.png",
+  "file": "weapon-594.json"
+}

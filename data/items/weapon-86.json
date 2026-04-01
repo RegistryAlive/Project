@@ -1,0 +1,18 @@
+{
+  "id": 86,
+  "name": "Flare Sabre",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A red arc engulfing the blade. 46% critical chance.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "SPD": 85
+  },
+  "image": "data/images/weapon-86.png",
+  "file": "weapon-86.json"
+}

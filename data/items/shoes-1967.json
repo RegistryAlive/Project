@@ -1,0 +1,17 @@
+{
+  "id": 1967,
+  "name": "Palemoss Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Nylon / Leather / Fur",
+  "description": "Made of sturdy leather reinforced with a mysterious layer of moss.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 29
+  },
+  "image": "data/images/shoes-1967.png",
+  "file": "shoes-1967.json"
+}

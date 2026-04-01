@@ -1,0 +1,17 @@
+{
+  "id": 2680,
+  "name": "Azure Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Rock",
+  "description": "Increases MATK slightly",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 19
+  },
+  "image": "data/images/special-2680.png",
+  "file": "special-2680.json"
+}

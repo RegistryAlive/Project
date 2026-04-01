@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap - Wonderland Online DB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wlBlue: '#3b82f6',
+                        wlPurple: '#8b5cf6',
+                        wlGreen: '#10b981',
+                        wlRed: '#ef4444',
+                        wlYellow: '#f59e0b',
+                        wlDark: '#1e293b',
+                        wlDarker: '#0f172a',
+                        wlLight: '#f8fafc',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-fast': 'float 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%),
+                url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            min-height: 100vh;
+            color: #f8fafc;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02) rotateX(1deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .glow {
+            text-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
+        }
+        
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        .blur-bg {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #8b5cf6, #3b82f6);
+            border-radius: 2px;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-line {
+                left: 20px;
+            }
+        }
+        
+        .discord-card {
+            transition: all 0.3s ease;
+        }
+        
+        .discord-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .progress-bar {
+            height: 8px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+        
+        /* Sidebar styles */
+        .sidebar {
+            transition: transform 0.3s ease;
+        }
+        
+        .sidebar-hidden {
+            transform: translateX(100%);
+        }
+        
+        .sidebar-visible {
+            transform: translateX(0);
+        }
+        
+        /* Scanline effect for terminal */
+        .bg-scanline {
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            background-size: 100% 4px;
+            animation: scanMove 8s linear infinite;
+        }
+        
+        @keyframes scanMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 100%; }
+        }
+        
+
+        
+        .code-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .code-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: currentColor;
+            opacity: 0.5;
+        }
+        
+        /* Hide sidebar completely on desktop */
+        @media (min-width: 768px) {
+            #mobileSidebar {
+                display: none !important;
+            }
+        }
+        
+        /* Interactive Roadmap Styles */
+        .roadmap-section {
+            position: relative;
+        }
+        
+        /* Scroll progress indicator */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, #8b5cf6, #3b82f6, #10b981);
+            z-index: 1000;
+            transition: width 0.1s ease-out;
+        }
+        
+        /* Timeline line with scroll animation */
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, 
+                rgba(139, 92, 246, 0.3) 0%,
+                rgba(139, 92, 246, 0.3) 25%,
+                rgba(59, 130, 246, 0.3) 50%,
+                rgba(16, 185, 129, 0.3) 75%,
+                rgba(16, 185, 129, 0.3) 100%
+            );
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: linear-gradient(to bottom, #8b5cf6, #3b82f6, #10b981);
+            transition: height 0.3s ease-out;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-line {
+                left: 20px;
+            }
+        }
+        
+        /* Phase card reveal animation */
+        .phase-card {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .phase-card.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .phase-card:nth-child(odd) {
+            transform: translateX(-50px) translateY(50px);
+        }
+        
+        .phase-card:nth-child(even) {
+            transform: translateX(50px) translateY(50px);
+        }
+        
+        .phase-card.revealed:nth-child(odd),
+        .phase-card.revealed:nth-child(even) {
+            transform: translateX(0) translateY(0);
+        }
+        
+        /* Interactive hover effects for phase cards */
+        .phase-card-inner {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .phase-card-inner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .phase-card:hover .phase-card-inner::before {
+            left: 100%;
+        }
+        
+        .phase-card:hover .phase-card-inner {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Timeline orb with pulse animation */
+        .timeline-orb {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .timeline-orb::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: inherit;
+            animation: orbPulse 2s ease-in-out infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .timeline-orb:hover::before {
+            opacity: 0.5;
+        }
+        
+        @keyframes orbPulse {
+            0%, 100% { transform: scale(1); opacity: 0; }
+            50% { transform: scale(1.3); opacity: 0.3; }
+        }
+        
+        /* Progress bar animation */
+        .progress-fill {
+            width: 0%;
+            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .progress-fill.animate {
+            width: var(--progress-width);
+        }
+        
+        /* Floating particles effect */
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+            animation: floatParticle 3s ease-in-out infinite;
+        }
+        
+        @keyframes floatParticle {
+            0%, 100% { 
+                transform: translateY(0) translateX(0); 
+                opacity: 0;
+            }
+            50% { 
+                transform: translateY(-20px) translateX(10px); 
+                opacity: 0.6;
+            }
+        }
+        
+        /* Glow effect for active phase */
+        .phase-active {
+            position: relative;
+        }
+        
+        .phase-active::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 1.5rem;
+            background: linear-gradient(45deg, #8b5cf6, #3b82f6, #10b981);
+            z-index: -1;
+            opacity: 0;
+            filter: blur(10px);
+            transition: opacity 0.3s ease;
+        }
+        
+        .phase-active.glow::after {
+            opacity: 0.5;
+            animation: glowPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes glowPulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+
+        /* Phase Accordion */
+        .phase-accordion-item {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .phase-accordion-item.open {
+            background: rgba(30, 41, 59, 0.85);
+        }
+        .phase-header {
+            background: transparent;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+            user-select: none;
+        }
+        .phase-header:active {
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .phase-detail {
+            will-change: max-height;
+        }
+
+        /* Phase Detail Button on cards */
+        .phase-detail-btn {
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+
+        /* Circular Phase Modal */
+        .phase-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+            padding: 1rem;
+        }
+        .phase-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .phase-modal-wrapper {
+            position: relative;
+            width: min(540px, 92vw);
+            aspect-ratio: 1;
+        }
+        /* Outer orbit ring */
+        .phase-orbit-ring {
+            position: absolute;
+            inset: -18px;
+            border-radius: 50%;
+            border: 1.5px dashed rgba(139, 92, 246, 0.25);
+            animation: orbitSpin 20s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes orbitSpin {
+            to { transform: rotate(360deg); }
+        }
+        /* Orbit dots — 4 phase markers on the ring */
+        .phase-orbit-dot {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid;
+            transition: all 0.4s ease;
+        }
+        .phase-orbit-dot:nth-child(1) { top: -6px; left: 50%; transform: translateX(-50%); }
+        .phase-orbit-dot:nth-child(2) { right: -6px; top: 50%; transform: translateY(-50%); }
+        .phase-orbit-dot:nth-child(3) { bottom: -6px; left: 50%; transform: translateX(-50%); }
+        .phase-orbit-dot:nth-child(4) { left: -6px; top: 50%; transform: translateY(-50%); }
+        .phase-orbit-dot.active {
+            width: 16px;
+            height: 16px;
+            box-shadow: 0 0 12px currentColor;
+        }
+        .phase-orbit-dot[data-color="wlGreen"] { border-color: #10b981; background: #10b98130; }
+        .phase-orbit-dot[data-color="wlGreen"].active { background: #10b981; }
+        .phase-orbit-dot[data-color="wlBlue"] { border-color: #3b82f6; background: #3b82f630; }
+        .phase-orbit-dot[data-color="wlBlue"].active { background: #3b82f6; }
+        .phase-orbit-dot[data-color="wlYellow"] { border-color: #f59e0b; background: #f59e0b30; }
+        .phase-orbit-dot[data-color="wlYellow"].active { background: #f59e0b; }
+        .phase-orbit-dot[data-color="wlPurple"] { border-color: #8b5cf6; background: #8b5cf630; }
+        .phase-orbit-dot[data-color="wlPurple"].active { background: #8b5cf6; }
+        /* Inner orbit — counter-rotating accent ring */
+        .phase-inner-ring {
+            position: absolute;
+            inset: 6px;
+            border-radius: 50%;
+            border: 1px solid rgba(139, 92, 246, 0.1);
+            animation: orbitSpin 30s linear infinite reverse;
+            pointer-events: none;
+        }
+        .phase-inner-ring::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(139, 92, 246, 0.4);
+            box-shadow: 0 0 8px rgba(139, 92, 246, 0.6);
+        }
+        /* Main circle */
+        .phase-modal-circle {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(circle at 35% 30%, rgba(30, 41, 59, 0.97), rgba(15, 23, 42, 0.99) 70%);
+            border: 2px solid rgba(139, 92, 246, 0.35);
+            box-shadow: 
+                0 0 80px rgba(139, 92, 246, 0.15),
+                0 0 160px rgba(59, 130, 246, 0.08),
+                inset 0 0 80px rgba(139, 92, 246, 0.04);
+            transform: scale(0.2) rotate(-20deg);
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .phase-modal-overlay.active .phase-modal-circle {
+            transform: scale(1) rotate(0deg);
+        }
+        /* Glow ring behind circle */
+        .phase-modal-glow {
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, #8b5cf6, #3b82f6, #10b981, #f59e0b, #8b5cf6);
+            z-index: -1;
+            opacity: 0.35;
+            animation: glowSpin 6s linear infinite;
+            filter: blur(10px);
+        }
+        @keyframes glowSpin {
+            to { transform: rotate(360deg); }
+        }
+        /* Phase watermark number */
+        .phase-watermark {
+            position: absolute;
+            font-size: 12rem;
+            font-weight: 900;
+            line-height: 1;
+            opacity: 0.04;
+            pointer-events: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            user-select: none;
+        }
+        /* Scanline overlay */
+        .phase-scanline {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 3px,
+                rgba(0, 0, 0, 0.04) 3px,
+                rgba(0, 0, 0, 0.04) 4px
+            );
+            pointer-events: none;
+            z-index: 5;
+        }
+        /* Inner ambient light */
+        .phase-ambient {
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            top: 10%;
+            left: 20%;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.12;
+            pointer-events: none;
+            transition: background 0.6s ease;
+        }
+        /* Close button */
+        .phase-modal-close {
+            position: absolute;
+            top: 13%;
+            right: 16%;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.25);
+            color: #ef4444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            z-index: 10;
+            font-size: 0.75rem;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+        .phase-modal-close:hover {
+            background: rgba(239, 68, 68, 0.35);
+            transform: scale(1.15) rotate(90deg);
+        }
+        .phase-modal-close:active {
+            transform: scale(0.9);
+        }
+        /* Content area */
+        .phase-modal-content {
+            padding: 20% 18% 18%;
+            overflow-y: auto;
+            max-height: 100%;
+            width: 100%;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(139, 92, 246, 0.3) transparent;
+            position: relative;
+            z-index: 6;
+        }
+        .phase-modal-content::-webkit-scrollbar { width: 3px; }
+        .phase-modal-content::-webkit-scrollbar-track { background: transparent; }
+        .phase-modal-content::-webkit-scrollbar-thumb { background: rgba(139, 92, 246, 0.3); border-radius: 2px; }
+        /* Navigation */
+        .phase-modal-nav {
+            position: absolute;
+            bottom: 7%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            z-index: 10;
+        }
+        .phase-nav-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(139, 92, 246, 0.12);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            color: #8b5cf6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-size: 0.7rem;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+        .phase-nav-btn:hover {
+            background: rgba(139, 92, 246, 0.25);
+            transform: scale(1.1);
+        }
+        .phase-nav-btn:active {
+            transform: scale(0.85);
+        }
+        .phase-nav-btn:disabled {
+            opacity: 0.2;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .phase-nav-btn:disabled:hover {
+            background: rgba(139, 92, 246, 0.12);
+            transform: none;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, #1e293b, #3b82f6);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-ball {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle.light .theme-toggle-ball {
+            transform: translateX(30px);
+        }
+        
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e2e8f0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f8fafc !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #1e293b !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #cbd5e1 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+
+        /* Light mode - Roadmap accordion */
+        body.light-mode .phase-accordion-item {
+            background: rgba(241, 245, 249, 0.8);
+        }
+        body.light-mode .phase-accordion-item.open {
+            background: rgba(241, 245, 249, 0.95);
+        }
+        body.light-mode .phase-header:active {
+            background: rgba(0, 0, 0, 0.03);
+        }
+        body.light-mode .phase-detail .bg-wlDarker {
+            background-color: #e2e8f0 !important;
+        }
+        body.light-mode .scroll-progress {
+            background: linear-gradient(90deg, #8b5cf6, #3b82f6, #10b981);
+        }
+        body.light-mode .phase-modal-circle {
+            background: radial-gradient(circle at 35% 30%, rgba(241, 245, 249, 0.98), rgba(226, 232, 240, 0.99));
+            box-shadow:
+                0 0 80px rgba(139, 92, 246, 0.12),
+                0 0 160px rgba(59, 130, 246, 0.06),
+                inset 0 0 80px rgba(139, 92, 246, 0.03);
+        }
+        body.light-mode .phase-modal-content .bg-wlDarker {
+            background-color: #e2e8f0 !important;
+        }
+        body.light-mode .phase-watermark {
+            opacity: 0.03;
+        }
+        body.light-mode .phase-scanline {
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 3px,
+                rgba(0, 0, 0, 0.02) 3px,
+                rgba(0, 0, 0, 0.02) 4px
+            );
+        }
+        body.light-mode .phase-orbit-ring {
+            border-color: rgba(139, 92, 246, 0.15);
+        }
+        body.light-mode .phase-inner-ring {
+            border-color: rgba(139, 92, 246, 0.06);
+        }
+    </style>
+</head>
+<body class="text-wlLight">
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Dark overlay for mobile menu -->
+    <div id="darkOverlay" class="dark-overlay"></div>
+    
+    <!-- Mobile sidebar -->
+    <div id="mobileSidebar" class="sidebar sidebar-hidden fixed inset-y-0 right-0 w-64 bg-wlDarker z-50 shadow-2xl p-4 overflow-y-auto">
+        <div class="flex justify-between items-center mb-8">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                <i class="fas fa-dragon text-xl text-white"></i>
+            </div>
+            <button id="closeSidebar" class="text-wlLight hover:text-wlRed">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="space-y-4">
+            <div class="block">
+                <a href="index.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Home</a>
+                <a href="roadmap.html" class="block px-4 py-2 pl-8 rounded-md font-medium text-wlBlue bg-wlDark bg-opacity-50 transition">- Roadmap</a>
+            </div>
+            <a href="Item.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Items</a>
+            <a href="quests.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Quests</a>
+            <a href="monsters.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Monsters</a>
+            <a href="Locations.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Locations</a>
+            <a href="tier-list.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Tier-List</a>
+            <a href="shops.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Shops</a>
+            <a href="manufacture.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Manufacture</a>
+            <a href="Resources.html" class="block px-4 py-2 rounded-md font-medium text-wlPurple hover:bg-wlDark hover:bg-opacity-50 transition">Resources</a>
+        </nav>
+    </div>
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-wlDark bg-opacity-90 blur-bg shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                            <i class="fas fa-dragon text-xl text-white"></i>
+                        </div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                            Wonderland Online DB
+                        </h1>
+                    </div>
+                    <div class="hidden md:flex space-x-6 items-center">
+                        <div class="relative group">
+                            <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium text-wlBlue flex items-center">
+                                Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+                            </a>
+                            <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                                <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-t-lg flex items-center justify-between">
+                                    Roadmap <i class="fas fa-route text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="Item.html" class="nav-link px-3 py-2 text-sm font-medium">Items</a>
+                        <a href="quests.html" class="nav-link px-3 py-2 text-sm font-medium">Quests</a>
+                        <a href="monsters.html" class="nav-link px-3 py-2 text-sm font-medium">Monsters</a>
+                        <a href="Locations.html" class="nav-link px-3 py-2 text-sm font-medium">Locations</a>
+                        <a href="tier-list.html" class="nav-link px-3 py-2 text-sm font-medium">Tier-List</a>
+                        <a href="shops.html" class="nav-link px-3 py-2 text-sm font-medium">Shops</a>
+                        <a href="manufacture.html" class="nav-link px-3 py-2 text-sm font-medium">Manufacture</a>
+                        <a href="Resources.html" class="nav-link px-3 py-2 text-sm font-medium">Resources</a>
+                        <!-- Theme Toggle -->
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                            <div class="theme-toggle-ball">
+                                <i class="fas fa-moon text-xs text-wlDark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="openSidebar" class="text-wlLight focus:outline-none hover:text-wlBlue transition">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <!-- Hero Section -->
+            <section class="text-center mb-12">
+                <div class="max-w-4xl mx-auto relative">
+                    <div class="absolute -top-20 -left-20 w-40 h-40 bg-wlPurple rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    <div class="absolute -bottom-20 -right-20 w-40 h-40 bg-wlBlue rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                        Project Roadmap
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                        Tap each phase to explore what's been built, what's in progress, and what's coming next.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Biography Section - Unique Terminal Style -->
+            <section class="mb-16">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-wlDarker rounded-2xl border border-wlPurple border-opacity-30 overflow-hidden relative">
+                        <!-- Scanline effect -->
+                        <div class="absolute inset-0 bg-scanline pointer-events-none"></div>
+                        
+                        <!-- Terminal header -->
+                        <div class="bg-purple-900/30 px-6 py-3 border-b border-wlPurple border-opacity-20 flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="text-wlPurple text-xs font-mono tracking-wider">DEVELOPER_INFO.exe</div>
+                            <div class="w-12"></div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <!-- Code-style intro -->
+                            <div class="font-mono text-sm mb-6">
+                                <div class="flex items-start">
+                                    <span class="text-green-400 mr-2">❯</span>
+                                    <span class="text-blue-400 mr-2">const</span>
+                                    <span class="text-yellow-300">developer</span>
+                                    <span class="text-wlLight mx-2">=</span>
+                                    <span class="text-wlLight">&#123;</span>
+                                </div>
+                                <div class="pl-8">
+                                    <span class="text-purple-300">name:</span>
+                                    <span class="text-green-400 ml-2">"Izuna"</span><span class="text-wlLight",</span>
+                                </div>
+                                <div class="pl-8">
+                                    <span class="text-purple-300">role:</span>
+                                    <span class="text-green-400 ml-2">"Creator & Lead Dev"</span><span class="text-wlLight",</span>
+                                </div>
+                                <div class="pl-8">
+                                    <span class="text-purple-300">status:</span>
+                                    <span class="text-yellow-400 ml-2">"Active"</span>
+                                </div>
+                                <div class="text-wlLight">&#125;</div>
+                            </div>
+                            
+                            <!-- Story sections -->
+                            <div class="mt-6 space-y-4">
+                                <div class="relative pl-4 border-l-2 border-wlPurple border-opacity-50">
+                                    <span class="absolute -left-1 top-2 w-2 h-2 bg-wlPurple rounded-full"></span>
+                                    <p class="text-wlLight text-opacity-90 leading-relaxed">
+                                        <span class="text-amber-400 font-mono text-sm">// 2024 — Project Birth</span><br>
+                                        <span class="text-wlYellow font-bold">WLODB</span> created under <span class="text-wlBlue">Izuna</span> as standalone after original WLODB closed. Set aside due to time constraints & Wlopedia development.
+                                    </p>
+                                </div>
+                                
+                                <div class="relative pl-4 border-l-2 border-wlBlue border-opacity-50">
+                                    <span class="absolute -left-1 top-2 w-2 h-2 bg-wlBlue rounded-full"></span>
+                                    <p class="text-wlLight text-opacity-90 leading-relaxed">
+                                        <span class="text-amber-400 font-mono text-sm">// 2025 — Revival</span><br>
+                                        Wlopedia abandoned — no comms or updates. Project <span class="text-green-400 font-bold">revived()</span>. Early infancy stage, extensive testing required. Triple-host deployment: <span class="text-wlBlue">GitHub Pages</span>, <span class="text-wlBlue">Cloudflare Pages</span>, <span class="text-wlBlue">Vercel</span>. Looking at paid alternatives if needed. Using "WLODB" as placeholder until real domain decided.
+                                    </p>
+                                </div>
+                                
+                                <div class="relative pl-4 border-l-2 border-wlGreen border-opacity-50">
+                                    <span class="absolute -left-1 top-2 w-2 h-2 bg-wlGreen rounded-full"></span>
+                                    <p class="text-wlLight text-opacity-90 leading-relaxed">
+                                        <span class="text-amber-400 font-mono text-sm">// About Developer</span><br>
+                                        <span class="text-wlPurple font-bold">Izuna</span> here — translator for NWLO & WLRI, dev of WLRI Translator Patcher, admin of Rhodes Islando Discord. Please understand dev/bug fixes take time. <span class="text-wlRed font-bold">NOT affiliated with other WLODB projects.</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="relative pl-4 border-l-2 border-amber-500 border-opacity-50">
+                                    <span class="absolute -left-1 top-2 w-2 h-2 bg-amber-500 rounded-full animate-pulse"></span>
+                                    <p class="text-wlLight text-opacity-90 leading-relaxed">
+                                        <span class="text-amber-400 font-mono text-sm">// Contact</span><br>
+                                        Bugs/suggestions → Discord server soon. Currently ping me or DM on any community Discord. Not affiliated with other WLODB in dev.
+                                    </p>
+                                </div>
+                            </div>
+                                
+                                <!-- Note box with creative styling -->
+                                <div class="mt-6 p-5 bg-gradient-to-r from-amber-900/40 via-yellow-900/30 to-red-900/40 rounded-2xl border border-amber-500/30 backdrop-blur-sm">
+                                    <div class="flex items-start">
+                                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-yellow-400 flex items-center justify-center mr-4 flex-shrink-0 shadow-lg shadow-amber-500/20">
+                                            <i class="fas fa-lightbulb text-wlDarker text-lg"></i>
+                                        </div>
+                                        <div class="flex-1">
+                                            <p class="text-amber-400 font-bold text-lg mb-2 tracking-wide">⚡ NOTE</p>
+                                            <p class="text-amber-100 text-base leading-relaxed">Please report bugs or suggestions through our Discord. Otherwise reach out via community servers by pinging or messaging me. We're not affiliated with any other WLODB projects.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Roadmap Timeline -->
+            <section class="mb-16 roadmap-section">
+                <!-- Code-style header -->
+                <div class="bg-wlDarker rounded-t-2xl border border-wlPurple border-opacity-30 overflow-hidden mb-10">
+                    <div class="bg-purple-900/30 px-6 py-3 border-b border-wlPurple border-opacity-20 flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="text-wlPurple text-xs font-mono tracking-wider">roadmap.js</div>
+                        <div class="w-12"></div>
+                    </div>
+                    <div class="p-6 font-mono">
+                        <div class="text-blue-400 text-sm mb-2">// Development Roadmap</div>
+                        <div class="text-wlLight text-opacity-70 text-sm mb-4">const <span class="text-yellow-300">roadmap</span> = [<br>
+                            <span class="text-green-400 pl-4"> phases</span>: [<br>
+                                <span class="text-purple-300 pl-8">Foundation</span>,<br>
+                                <span class="text-blue-300 pl-8">Enhancement</span>,<br>
+                                <span class="text-yellow-300 pl-8">Features</span>,<br>
+                                <span class="text-pink-300 pl-8">Advanced</span><br>
+                            <span class="text-green-400 pl-4">]</span><br>
+                        ];</div>
+                    </div>
+                </div>
+
+                <div class="max-w-5xl mx-auto relative">
+                    <!-- Timeline Line -->
+                    <div class="timeline-line hidden md:block"></div>
+
+                    <!-- Phase 1 - Completed -->
+                    <div class="mb-12 relative phase-card">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0">
+                                <div class="bg-gradient-to-br from-wlDark to-wlDarker rounded-2xl p-1">
+                                    <div class="phase-card-inner bg-wlDark bg-opacity-80 rounded-xl p-6 border border-wlGreen border-opacity-30 relative overflow-hidden">
+                                        <div class="absolute top-0 right-0 w-20 h-20 bg-wlGreen rounded-full filter blur-2xl opacity-10"></div>
+                                        <div class="relative z-10">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-8 h-8 rounded-lg bg-wlGreen flex items-center justify-center mr-3">
+                                                        <i class="fas fa-check text-white text-sm"></i>
+                                                    </div>
+                                                    <span class="px-3 py-1 bg-wlGreen bg-opacity-20 text-wlGreen text-sm rounded-full font-medium">✓ Completed</span>
+                                                </div>
+                                                <button onclick="openPhaseModal(1)" class="phase-detail-btn w-9 h-9 rounded-full bg-wlGreen bg-opacity-20 hover:bg-opacity-40 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer" title="View details">
+                                                    <i class="fas fa-expand text-wlGreen text-sm"></i>
+                                                </button>
+                                            </div>
+                                            <h4 class="text-2xl font-bold text-wlGreen mb-2">Phase 1: Foundation</h4>
+                                            <p class="text-wlLight text-opacity-60 text-sm mb-4">Building the core infrastructure</p>
+                                            <ul class="text-wlLight text-opacity-80 space-y-3 text-sm">
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlGreen bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-database text-wlGreen text-xs"></i></span>Database structure implementation</li>
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlGreen bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-paint-brush text-wlGreen text-xs"></i></span>Basic UI/UX framework</li>
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlGreen bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-cubes text-wlGreen text-xs"></i></span>Item database with 5000+ items</li>
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlGreen bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-bolt text-wlGreen text-xs"></i></span>Performance optimizations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-orb hidden md:flex w-12 h-12 rounded-full bg-gradient-to-r from-wlGreen to-emerald-500 absolute right-0 transform translate-x-1/2 -translate-y-1/2 items-center justify-center border-4 border-wlDarker shadow-lg">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12"></div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 - In Progress -->
+                    <div class="mb-12 relative phase-card">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12"></div>
+                            <div class="timeline-orb hidden md:flex w-12 h-12 rounded-full bg-gradient-to-r from-wlBlue to-purple-500 absolute left-0 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center border-4 border-wlDarker shadow-lg animate-pulse">
+                                <i class="fas fa-spinner text-white animate-spin"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+                                <div class="bg-gradient-to-br from-wlDark to-wlDarker rounded-2xl p-1">
+                                    <div class="phase-card-inner bg-wlDark bg-opacity-80 rounded-xl p-6 border border-wlBlue border-opacity-30 relative overflow-hidden">
+                                        <div class="absolute top-0 right-0 w-20 h-20 bg-wlBlue rounded-full filter blur-2xl opacity-10"></div>
+                                        <div class="absolute bottom-0 left-1/4 w-16 h-16 bg-wlPurple rounded-full filter blur-xl opacity-10"></div>
+                                        <div class="relative z-10">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-wlBlue to-wlPurple flex items-center justify-center mr-3 animate-pulse">
+                                                        <i class="fas fa-cog text-white text-sm animate-spin"></i>
+                                                    </div>
+                                                    <span class="px-3 py-1 bg-wlBlue bg-opacity-20 text-wlBlue text-sm rounded-full font-medium">◐ In Progress</span>
+                                                </div>
+                                                <button onclick="openPhaseModal(2)" class="phase-detail-btn w-9 h-9 rounded-full bg-wlBlue bg-opacity-20 hover:bg-opacity-40 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer" title="View details">
+                                                    <i class="fas fa-expand text-wlBlue text-sm"></i>
+                                                </button>
+                                            </div>
+                                            <h4 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple bg-clip-text text-transparent mb-2">Phase 2: Enhancement</h4>
+                                            <p class="text-wlLight text-opacity-60 text-sm mb-4">Improving and expanding features</p>
+                                            <div class="space-y-4">
+                                                <div>
+                                                    <div class="flex justify-between text-sm mb-2">
+                                                        <span class="text-wlLight flex items-center"><i class="fas fa-palette text-wlBlue mr-2"></i>UI/UX Refactoring</span>
+                                                        <span class="text-wlBlue font-bold">75%</span>
+                                                    </div>
+                                                    <div class="progress-bar h-2">
+                                                        <div class="progress-fill bg-gradient-to-r from-wlBlue to-wlPurple" style="width: 75%"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="flex justify-between text-sm mb-2">
+                                                        <span class="text-wlLight flex items-center"><i class="fas fa-mobile-alt text-wlBlue mr-2"></i>Mobile Optimization</span>
+                                                        <span class="text-wlBlue font-bold">60%</span>
+                                                    </div>
+                                                    <div class="progress-bar h-2">
+                                                        <div class="progress-fill bg-gradient-to-r from-wlBlue to-wlPurple" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="flex justify-between text-sm mb-2">
+                                                        <span class="text-wlLight flex items-center"><i class="fas fa-database text-wlBlue mr-2"></i>Database Expansion</span>
+                                                        <span class="text-wlBlue font-bold">90%</span>
+                                                    </div>
+                                                    <div class="progress-bar h-2">
+                                                        <div class="progress-fill bg-gradient-to-r from-wlBlue to-wlPurple" style="width: 90%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 3 - Planned -->
+                    <div class="mb-12 relative phase-card">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0">
+                                <div class="bg-gradient-to-br from-wlDark to-wlDarker rounded-2xl p-1">
+                                    <div class="phase-card-inner bg-wlDark bg-opacity-80 rounded-xl p-6 border border-wlYellow border-opacity-30 relative overflow-hidden">
+                                        <div class="absolute top-0 right-0 w-20 h-20 bg-wlYellow rounded-full filter blur-2xl opacity-10"></div>
+                                        <div class="relative z-10">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-8 h-8 rounded-lg bg-wlYellow flex items-center justify-center mr-3">
+                                                        <i class="fas fa-clock text-white text-sm"></i>
+                                                    </div>
+                                                    <span class="px-3 py-1 bg-wlYellow bg-opacity-20 text-wlYellow text-sm rounded-full font-medium">○ Planned</span>
+                                                </div>
+                                                <button onclick="openPhaseModal(3)" class="phase-detail-btn w-9 h-9 rounded-full bg-wlYellow bg-opacity-20 hover:bg-opacity-40 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer" title="View details">
+                                                    <i class="fas fa-expand text-wlYellow text-sm"></i>
+                                                </button>
+                                            </div>
+                                            <h4 class="text-2xl font-bold text-wlYellow mb-2">Phase 3: Features</h4>
+                                            <p class="text-wlLight text-opacity-60 text-sm mb-4">Advanced functionality coming next</p>
+                                            <ul class="text-wlLight text-opacity-80 space-y-3 text-sm">
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlYellow bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-map-marked-alt text-wlYellow text-xs"></i></span>Full Location maps with thumbnails</li>
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlYellow bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-list-ol text-wlYellow text-xs"></i></span>Functional Tier-list with prerequisites</li>
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlYellow bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-clipboard-list text-wlYellow text-xs"></i></span>Quest board (Forum + Discord hybrid)</li>
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlYellow bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-user-plus text-wlYellow text-xs"></i></span>Account login system</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-orb hidden md:flex w-12 h-12 rounded-full bg-gradient-to-r from-wlYellow to-orange-500 absolute right-0 transform translate-x-1/2 -translate-y-1/2 items-center justify-center border-4 border-wlDarker shadow-lg">
+                                <i class="fas fa-clock text-white text-sm"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12"></div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 4 - Future -->
+                    <div class="relative phase-card">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-12"></div>
+                            <div class="timeline-orb hidden md:flex w-12 h-12 rounded-full bg-gradient-to-r from-wlPurple to-pink-500 absolute left-0 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center border-4 border-wlDarker shadow-lg">
+                                <i class="fas fa-rocket text-white"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+                                <div class="bg-gradient-to-br from-wlDark to-wlDarker rounded-2xl p-1">
+                                    <div class="phase-card-inner bg-wlDark bg-opacity-80 rounded-xl p-6 border border-wlPurple border-opacity-30 relative overflow-hidden">
+                                        <div class="absolute top-0 right-0 w-20 h-20 bg-wlPurple rounded-full filter blur-2xl opacity-15"></div>
+                                        <div class="absolute bottom-0 left-1/4 w-16 h-16 bg-wlRed rounded-full filter blur-xl opacity-10"></div>
+                                        <div class="relative z-10">
+                                            <div class="flex items-center justify-between mb-4">
+                                                <div class="flex items-center">
+                                                    <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-wlPurple to-pink-500 flex items-center justify-center mr-3">
+                                                        <i class="fas fa-gem text-white text-sm"></i>
+                                                    </div>
+                                                    <span class="px-3 py-1 bg-wlPurple bg-opacity-20 text-wlPurple text-sm rounded-full font-medium">✦ Future</span>
+                                                </div>
+                                                <button onclick="openPhaseModal(4)" class="phase-detail-btn w-9 h-9 rounded-full bg-wlPurple bg-opacity-20 hover:bg-opacity-40 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 cursor-pointer" title="View details">
+                                                    <i class="fas fa-expand text-wlPurple text-sm"></i>
+                                                </button>
+                                            </div>
+                                            <h4 class="text-2xl font-bold bg-gradient-to-r from-wlPurple to-wlRed bg-clip-text text-transparent mb-2">Phase 4: Advanced</h4>
+                                            <p class="text-wlLight text-opacity-60 text-sm mb-4">Ultimate features for dedicated players</p>
+                                            <ul class="text-wlLight text-opacity-80 space-y-3 text-sm">
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlPurple bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-flask text-wlPurple text-xs"></i></span>Alchemy & Manufacture system</li>
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlPurple bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-toggle-on text-wlPurple text-xs"></i></span>Server toggle (Safe-Haven / Rhodes Island)</li>
+                                                <li class="flex items-center"><span class="w-5 h-5 rounded-full bg-wlPurple bg-opacity-20 flex items-center justify-center mr-2"><i class="fas fa-database text-wlPurple text-xs"></i></span>Complete database (Mainland + Rhodes Island)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Phase Detail Modal -->
+            <div id="phaseModal" class="phase-modal-overlay" onclick="closePhaseModal(event)">
+                <div class="phase-modal-wrapper">
+                    <div class="phase-modal-glow"></div>
+                    <div class="phase-orbit-ring">
+                        <div class="phase-orbit-dot" data-phase="1" data-color="wlGreen"></div>
+                        <div class="phase-orbit-dot" data-phase="2" data-color="wlBlue"></div>
+                        <div class="phase-orbit-dot" data-phase="3" data-color="wlYellow"></div>
+                        <div class="phase-orbit-dot" data-phase="4" data-color="wlPurple"></div>
+                    </div>
+                    <div class="phase-inner-ring"></div>
+                    <div class="phase-modal-circle" onclick="event.stopPropagation()">
+                        <div class="phase-ambient" id="phaseAmbient"></div>
+                        <div class="phase-scanline"></div>
+                        <div class="phase-watermark" id="phaseWatermark">1</div>
+                        <button class="phase-modal-close" onclick="closePhaseModal()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="phase-modal-content" id="phaseModalContent">
+                            <!-- Dynamic content -->
+                        </div>
+                        <div class="phase-modal-nav">
+                            <button onclick="navigatePhase(-1)" class="phase-nav-btn" id="phasePrevBtn"><i class="fas fa-chevron-left"></i></button>
+                            <span id="phaseModalIndicator" class="text-xs text-wlLight text-opacity-40 font-mono"></span>
+                            <button onclick="navigatePhase(1)" class="phase-nav-btn" id="phaseNextBtn"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Links Section -->
+            <section class="mb-12">
+                <div class="text-center mb-10">
+                    <h3 class="text-3xl font-bold text-wlLight flex items-center justify-center">
+                        <i class="fas fa-users text-wlRed mr-3"></i>
+                        Community Links
+                    </h3>
+                    <p class="text-wlLight text-opacity-70 mt-2">Join our communities and stay connected</p>
+                </div>
+
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Marketplace Discord -->
+                        <a href="https://discord.gg/VzcCp2YZHR" target="_blank" class="discord-card group block bg-gradient-to-br from-indigo-500 via-purple-500 to-indigo-600 rounded-2xl p-6 border border-white border-opacity-10 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
+                            <div class="absolute -right-16 -top-16 w-40 h-40 bg-white rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                            <div class="absolute -left-4 -bottom-4 w-24 h-24 bg-purple-400 rounded-full filter blur-2xl opacity-20"></div>
+                            <div class="relative z-10 flex items-center">
+                                <div class="w-14 h-14 rounded-2xl bg-white bg-opacity-20 flex items-center justify-center mr-4 group-hover:bg-opacity-30 transition-all">
+                                    <i class="fab fa-discord text-2xl text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="text-lg font-bold text-white">Marketplace</h4>
+                                        <span class="text-xs text-white text-opacity-60 group-hover:text-opacity-80 transition">Join <i class="fas fa-arrow-right ml-1 transform group-hover:translate-x-1 transition-transform"></i></span>
+                                    </div>
+                                    <p class="text-white text-opacity-70 text-sm mt-1">Official marketplace community</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Lurid Discord -->
+                        <a href="https://discord.gg/929DXxsK6E" target="_blank" class="discord-card group block bg-gradient-to-br from-red-500 via-orange-500 to-red-600 rounded-2xl p-6 border border-white border-opacity-10 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
+                            <div class="absolute -right-16 -top-16 w-40 h-40 bg-white rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                            <div class="absolute -left-4 -bottom-4 w-24 h-24 bg-orange-400 rounded-full filter blur-2xl opacity-20"></div>
+                            <div class="relative z-10 flex items-center">
+                                <div class="w-14 h-14 rounded-2xl bg-white bg-opacity-20 flex items-center justify-center mr-4 group-hover:bg-opacity-30 transition-all">
+                                    <i class="fab fa-discord text-2xl text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="text-lg font-bold text-white">Lurid</h4>
+                                        <span class="text-xs text-white text-opacity-60 group-hover:text-opacity-80 transition">Join <i class="fas fa-arrow-right ml-1 transform group-hover:translate-x-1 transition-transform"></i></span>
+                                    </div>
+                                    <p class="text-white text-opacity-70 text-sm mt-1">Connect with the community</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Islando Discord -->
+                        <a href="https://discord.gg/mxWA558" target="_blank" class="discord-card group block bg-gradient-to-br from-blue-500 via-cyan-500 to-blue-600 rounded-2xl p-6 border border-white border-opacity-10 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
+                            <div class="absolute -right-16 -top-16 w-40 h-40 bg-white rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                            <div class="absolute -left-4 -bottom-4 w-24 h-24 bg-cyan-400 rounded-full filter blur-2xl opacity-20"></div>
+                            <div class="relative z-10 flex items-center">
+                                <div class="w-14 h-14 rounded-2xl bg-white bg-opacity-20 flex items-center justify-center mr-4 group-hover:bg-opacity-30 transition-all">
+                                    <i class="fab fa-discord text-2xl text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="text-lg font-bold text-white">Islando</h4>
+                                        <span class="text-xs text-white text-opacity-60 group-hover:text-opacity-80 transition">Join <i class="fas fa-arrow-right ml-1 transform group-hover:translate-x-1 transition-transform"></i></span>
+                                    </div>
+                                    <p class="text-white text-opacity-70 text-sm mt-1">Rhodes Island community</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- WLO Drifters -->
+                        <a href="https://discord.gg/YUtW7CW2NU" target="_blank" class="discord-card group block bg-gradient-to-br from-teal-500 via-emerald-500 to-teal-600 rounded-2xl p-6 border border-white border-opacity-10 relative overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
+                            <div class="absolute -right-16 -top-16 w-40 h-40 bg-white rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                            <div class="absolute -left-4 -bottom-4 w-24 h-24 bg-emerald-400 rounded-full filter blur-2xl opacity-20"></div>
+                            <div class="relative z-10 flex items-center">
+                                <div class="w-14 h-14 rounded-2xl bg-white bg-opacity-20 flex items-center justify-center mr-4 group-hover:bg-opacity-30 transition-all">
+                                    <i class="fab fa-discord text-2xl text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="text-lg font-bold text-white">WLO Drifters</h4>
+                                        <span class="text-xs text-white text-opacity-60 group-hover:text-opacity-80 transition">Join <i class="fas fa-arrow-right ml-1 transform group-hover:translate-x-1 transition-transform"></i></span>
+                                    </div>
+                                    <p class="text-white text-opacity-70 text-sm mt-1">Join the drifters community</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-wlDark bg-opacity-90 border-t border-wlLight border-opacity-10">
+            <div class="container mx-auto px-4 py-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold">WLODB</h3>
+                        </div>
+                        <p class="text-wlLight text-opacity-70 text-sm">
+                            The most comprehensive database for Wonderland Online players.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2 text-sm text-wlLight text-opacity-70">
+                            <li><a href="index.html" class="hover:text-wlBlue transition">Home</a></li>
+                            <li><a href="Item.html" class="hover:text-wlBlue transition">Items</a></li>
+                            <li><a href="monsters.html" class="hover:text-wlBlue transition">Monsters</a></li>
+                            <li><a href="quests.html" class="hover:text-wlBlue transition">Quests</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Tools</h4>
+                        <ul class="space-y-2 text-sm text-wlLight text-opacity-70">
+                            <li><a href="manufacture.html" class="hover:text-wlBlue transition">Manufacture</a></li>
+                            <li><a href="tier-list.html" class="hover:text-wlBlue transition">Tier List</a></li>
+                            <li><a href="Resources.html" class="hover:text-wlBlue transition">Resources</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Newsletter</h4>
+                        <p class="text-wlLight text-opacity-70 text-sm mb-4">Stay updated with latest changes.</p>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="flex-grow px-4 py-2 bg-wlDarker border border-wlLight border-opacity-20 text-sm rounded-l focus:outline-none focus:border-wlBlue">
+                            <button class="px-4 py-2 bg-gradient-to-r from-wlBlue to-wlPurple text-white text-sm rounded-r hover:opacity-90 transition">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 border-t border-wlLight border-opacity-20">
+                    <p class="text-sm text-center text-wlLight text-opacity-70">
+                        © 2024 Wonderland Online DB. All game content and materials are trademarks of their respective owners.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Mobile Menu Toggle Button -->
+    <button id="mobileMenuBtn" class="fixed bottom-20 right-6 w-14 h-14 bg-gradient-to-r from-wlBlue to-wlPurple rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 z-50 shadow-lg hover:scale-110 md:hidden">
+        <i class="fas fa-bars text-white text-xl"></i>
+    </button>
+
+    <script>
+        // Mobile sidebar toggle
+        const openSidebar = document.getElementById('openSidebar');
+        const closeSidebar = document.getElementById('closeSidebar');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const darkOverlay = document.getElementById('darkOverlay');
+        
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileSidebar.classList.remove('sidebar-hidden');
+                mobileSidebar.classList.add('sidebar-visible');
+                darkOverlay.classList.add('dark-overlay-visible');
+            });
+        }
+        
+        openSidebar.addEventListener('click', () => {
+            mobileSidebar.classList.remove('sidebar-hidden');
+            mobileSidebar.classList.add('sidebar-visible');
+            darkOverlay.classList.add('dark-overlay-visible');
+        });
+        
+        closeSidebar.addEventListener('click', () => {
+            mobileSidebar.classList.remove('sidebar-visible');
+            mobileSidebar.classList.add('sidebar-hidden');
+            darkOverlay.classList.remove('dark-overlay-visible');
+        });
+        
+        darkOverlay.addEventListener('click', () => {
+            mobileSidebar.classList.remove('sidebar-visible');
+            mobileSidebar.classList.add('sidebar-hidden');
+            darkOverlay.classList.remove('dark-overlay-visible');
+        });
+
+        // Phase data
+        const phaseData = {
+            1: {
+                color: 'wlGreen',
+                title: 'Phase 1: Foundation',
+                status: 'Completed',
+                icon: 'fa-check',
+                content: `
+                    <p class="text-wlLight text-opacity-80 text-sm leading-relaxed mb-4">We have included almost the entirety of data that's widely available from <span class="text-wlBlue font-semibold">WLODB</span>, along with additional data from <span class="text-wlPurple font-semibold">WLOPEDIA</span>. Items, Monsters, Locations, and Manufacture data should be almost fully up to date, with some gaps here and there — feel free to report any missing data and it'll be added ASAP.</p>
+                    <p class="text-wlLight text-opacity-80 text-sm leading-relaxed mb-4">UI-wise, we aimed for a modern look inspired by popular game databases like <span class="text-wlYellow font-semibold">Prydwen</span>, with QOL as the main priority.</p>
+                    <div class="bg-wlDarker bg-opacity-60 rounded-xl p-3 border border-wlGreen border-opacity-15 mb-3">
+                        <p class="text-wlGreen font-semibold mb-2 text-xs uppercase tracking-wider">QOL Features</p>
+                        <div class="space-y-1.5 text-xs">
+                            <div class="flex items-start gap-2"><i class="fas fa-check text-wlGreen mt-0.5"></i><span class="text-wlLight text-opacity-70">Ascending / Descending order via clicking</span></div>
+                            <div class="flex items-start gap-2"><i class="fas fa-check text-wlGreen mt-0.5"></i><span class="text-wlLight text-opacity-70">Filter settings (Aluminum / Iron priority)</span></div>
+                            <div class="flex items-start gap-2"><i class="fas fa-check text-wlGreen mt-0.5"></i><span class="text-wlLight text-opacity-70">Modern Modal Paging (auto-generated recipes)</span></div>
+                            <div class="flex items-start gap-2"><i class="fas fa-check text-wlGreen mt-0.5"></i><span class="text-wlLight text-opacity-70">Direct page loading between items</span></div>
+                            <div class="flex items-start gap-2"><i class="fas fa-check text-wlGreen mt-0.5"></i><span class="text-wlLight text-opacity-70">Full Custom Recipe Builder (tree structure)</span></div>
+                            <div class="flex items-start gap-2"><i class="fas fa-check text-wlGreen mt-0.5"></i><span class="text-wlLight text-opacity-70">Manufacture toggles (raw data, -23% timer, qty)</span></div>
+                            <div class="flex items-start gap-2"><i class="fas fa-check text-wlGreen mt-0.5"></i><span class="text-wlLight text-opacity-70">Local data history (side-by-side craft switching)</span></div>
+                        </div>
+                    </div>
+                `
+            },
+            2: {
+                color: 'wlBlue',
+                title: 'Phase 2: Enhancement',
+                status: 'In Progress',
+                icon: 'fa-spinner',
+                content: `
+                    <p class="text-wlLight text-opacity-80 text-sm leading-relaxed mb-4">Constantly being tested. We are ensuring that <span class="text-wlBlue font-semibold">performance is smooth</span> while the UI/UX works perfectly across both <span class="text-wlPurple font-semibold">Mobile and Desktop</span>.</p>
+                    <p class="text-wlLight text-opacity-80 text-sm leading-relaxed mb-4">The database will be expanded to incorporate missing data — this is an ongoing effort throughout all updates.</p>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs mb-1"><span class="text-wlLight flex items-center gap-1"><i class="fas fa-palette text-wlBlue"></i>UI/UX Refactoring</span><span class="text-wlBlue font-bold">75%</span></div>
+                            <div class="h-2 rounded-full bg-wlDark overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-wlBlue to-wlPurple" style="width:75%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-1"><span class="text-wlLight flex items-center gap-1"><i class="fas fa-mobile-alt text-wlBlue"></i>Mobile Optimization</span><span class="text-wlBlue font-bold">60%</span></div>
+                            <div class="h-2 rounded-full bg-wlDark overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-wlBlue to-wlPurple" style="width:60%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-1"><span class="text-wlLight flex items-center gap-1"><i class="fas fa-database text-wlBlue"></i>Database Expansion</span><span class="text-wlBlue font-bold">90%</span></div>
+                            <div class="h-2 rounded-full bg-wlDark overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-wlBlue to-wlPurple" style="width:90%"></div></div>
+                        </div>
+                    </div>
+                `
+            },
+            3: {
+                color: 'wlYellow',
+                title: 'Phase 3: Features',
+                status: 'Planned',
+                icon: 'fa-clock',
+                content: `
+                    <div class="space-y-3">
+                        <div class="bg-wlDarker bg-opacity-60 rounded-lg p-3 border border-wlYellow border-opacity-15">
+                            <p class="text-wlYellow font-semibold mb-1 text-xs uppercase tracking-wider"><i class="fas fa-map mr-1"></i> Location Thumbnails</p>
+                            <p class="text-wlLight text-opacity-80 text-xs leading-relaxed">A gallery that works like a minimap — zoom and pan to see where monsters are located. Requires manual creation from memory.</p>
+                        </div>
+                        <div class="bg-wlDarker bg-opacity-60 rounded-lg p-3 border border-wlYellow border-opacity-15">
+                            <p class="text-wlYellow font-semibold mb-1 text-xs uppercase tracking-wider"><i class="fas fa-trophy mr-1"></i> Tier List Status</p>
+                            <p class="text-wlLight text-opacity-80 text-xs leading-relaxed">Core basis implemented. Only <span class="text-wlPurple font-semibold">Monkey</span> is fully done. <span class="text-wlBlue font-semibold">Niss</span> is being updated. Rest are placeholders.</p>
+                        </div>
+                        <div class="bg-wlDarker bg-opacity-60 rounded-lg p-3 border border-wlYellow border-opacity-15">
+                            <p class="text-wlYellow font-semibold mb-1 text-xs uppercase tracking-wider"><i class="fas fa-clipboard-list mr-1"></i> Quest Board</p>
+                            <p class="text-wlLight text-opacity-80 text-xs leading-relaxed">Discord forum + old-school forum board hybrid. Functionalities don't exist yet, data is sample/placeholder.</p>
+                        </div>
+                        <div class="bg-wlDarker bg-opacity-60 rounded-lg p-3 border border-wlYellow border-opacity-15">
+                            <p class="text-wlYellow font-semibold mb-1 text-xs uppercase tracking-wider"><i class="fas fa-user-lock mr-1"></i> Account Login</p>
+                            <p class="text-wlLight text-opacity-80 text-xs leading-relaxed">Community editing for quest board. Possible future Auction House — far-fetched, not a priority.</p>
+                        </div>
+                    </div>
+                `
+            },
+            4: {
+                color: 'wlPurple',
+                title: 'Phase 4: Advanced',
+                status: 'Future',
+                icon: 'fa-rocket',
+                content: `
+                    <div class="space-y-3">
+                        <div class="bg-wlDarker bg-opacity-60 rounded-lg p-3 border border-wlPurple border-opacity-15">
+                            <p class="text-wlPurple font-semibold mb-1 text-xs uppercase tracking-wider"><i class="fas fa-flask mr-1"></i> Multi-Version Data Toggle</p>
+                            <p class="text-wlLight text-opacity-80 text-xs leading-relaxed">A full toggle to switch data based on version. Different versions exist including 2 Private Servers — requires knowledge of data differences from owners or datamining.</p>
+                        </div>
+                        <div class="bg-wlDarker bg-opacity-60 rounded-lg p-3 border border-wlPurple border-opacity-15">
+                            <p class="text-wlPurple font-semibold mb-1 text-xs uppercase tracking-wider"><i class="fas fa-lightbulb mr-1"></i> Suggestions Welcome</p>
+                            <p class="text-wlLight text-opacity-80 text-xs leading-relaxed">Most planned features are accounted for. Suggestions will be phased into <span class="text-wlBlue font-semibold">Phase 2 or 3</span> unless more ambitious. Community input drives what's next.</p>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        let currentPhase = 1;
+
+        function openPhaseModal(phase) {
+            currentPhase = phase;
+            renderPhaseModal();
+            const overlay = document.getElementById('phaseModal');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePhaseModal(e) {
+            if (e && e.target !== e.currentTarget) return;
+            const overlay = document.getElementById('phaseModal');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function navigatePhase(dir) {
+            const next = currentPhase + dir;
+            if (next < 1 || next > 4) return;
+            currentPhase = next;
+            renderPhaseModal();
+        }
+
+        function renderPhaseModal() {
+            const data = phaseData[currentPhase];
+            const content = document.getElementById('phaseModalContent');
+            const indicator = document.getElementById('phaseModalIndicator');
+            const prevBtn = document.getElementById('phasePrevBtn');
+            const nextBtn = document.getElementById('phaseNextBtn');
+            const circle = document.querySelector('.phase-modal-circle');
+            const glow = document.querySelector('.phase-modal-glow');
+            const watermark = document.getElementById('phaseWatermark');
+            const ambient = document.getElementById('phaseAmbient');
+
+            const colors = { wlGreen: '#10b981', wlBlue: '#3b82f6', wlYellow: '#f59e0b', wlPurple: '#8b5cf6' };
+            const c = colors[data.color];
+
+            // Update circle border and glow
+            circle.style.borderColor = c + '55';
+            glow.style.background = `conic-gradient(from 0deg, ${c}, #3b82f6, ${c}80, #f59e0b, ${c})`;
+
+            // Update watermark
+            watermark.textContent = currentPhase;
+            watermark.style.color = c;
+
+            // Update ambient glow
+            ambient.style.background = c;
+
+            // Update orbit dots
+            document.querySelectorAll('.phase-orbit-dot').forEach(dot => {
+                const p = parseInt(dot.dataset.phase);
+                const dotColor = colors[dot.dataset.color];
+                dot.classList.toggle('active', p === currentPhase);
+                if (p === currentPhase) {
+                    dot.style.boxShadow = `0 0 14px ${dotColor}`;
+                } else {
+                    dot.style.boxShadow = 'none';
+                }
+            });
+
+            // Content
+            const statusClass = data.icon === 'fa-spinner' ? 'animate-spin' : '';
+            content.innerHTML = `
+                <div class="text-center mb-3">
+                    <div class="w-14 h-14 rounded-full mx-auto mb-2 flex items-center justify-center shadow-lg" style="background: linear-gradient(135deg, ${c}25, ${c}08); border: 1.5px solid ${c}35;">
+                        <i class="fas ${data.icon} text-xl ${statusClass}" style="color:${c}"></i>
+                    </div>
+                    <h3 class="text-lg font-bold tracking-wide" style="color:${c}">${data.title}</h3>
+                    <span class="text-xs text-wlLight text-opacity-40 uppercase tracking-widest">${data.status}</span>
+                </div>
+                <div>${data.content}</div>
+            `;
+
+            // Nav
+            indicator.textContent = `${currentPhase} / 4`;
+            prevBtn.disabled = currentPhase === 1;
+            nextBtn.disabled = currentPhase === 4;
+            prevBtn.style.borderColor = currentPhase === 1 ? '' : c + '40';
+            prevBtn.style.color = currentPhase === 1 ? '' : c;
+            nextBtn.style.borderColor = currentPhase === 4 ? '' : c + '40';
+            nextBtn.style.color = currentPhase === 4 ? '' : c;
+        }
+
+        // Keyboard nav for modal
+        document.addEventListener('keydown', (e) => {
+            const overlay = document.getElementById('phaseModal');
+            if (!overlay.classList.contains('active')) return;
+            if (e.key === 'Escape') closePhaseModal();
+            if (e.key === 'ArrowLeft') navigatePhase(-1);
+            if (e.key === 'ArrowRight') navigatePhase(1);
+        });
+
+        // Scroll animations (restored)
+        const scrollProgress = document.getElementById('scrollProgress');
+        const phaseCards = document.querySelectorAll('.phase-card');
+        const timelineLine = document.querySelector('.timeline-line');
+        const progressFills = document.querySelectorAll('.progress-fill');
+
+        function updateScrollProgress() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            if (scrollProgress) scrollProgress.style.width = scrollPercent + '%';
+        }
+
+        function revealPhaseCards() {
+            const windowHeight = window.innerHeight;
+            phaseCards.forEach((card, index) => {
+                if (card.getBoundingClientRect().top < windowHeight * 0.85) {
+                    setTimeout(() => card.classList.add('revealed'), index * 100);
+                }
+            });
+        }
+
+        function animateProgressBars() {
+            const windowHeight = window.innerHeight;
+            progressFills.forEach(fill => {
+                if (fill.getBoundingClientRect().top < windowHeight * 0.9) {
+                    fill.style.setProperty('--progress-width', fill.style.width);
+                    fill.classList.add('animate');
+                }
+            });
+        }
+
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        function handleScroll() {
+            updateScrollProgress();
+            revealPhaseCards();
+            animateProgressBars();
+        }
+
+        window.addEventListener('scroll', throttle(handleScroll, 16));
+        window.addEventListener('resize', throttle(handleScroll, 100));
+        setTimeout(() => handleScroll(), 100);
+    </script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('light');
+            themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('light');
+            const icon = themeToggle.querySelector('i');
+            
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>

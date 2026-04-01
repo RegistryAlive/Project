@@ -1,0 +1,18 @@
+{
+  "id": 2880,
+  "name": "Sky Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Aluminum / Steel / Titanium",
+  "description": "Superior bracers made with steel",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "ATK": 5
+  },
+  "image": "data/images/arm-2880.png",
+  "file": "arm-2880.json"
+}

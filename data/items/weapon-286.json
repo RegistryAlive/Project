@@ -1,0 +1,17 @@
+{
+  "id": 286,
+  "name": "War Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "Simple production and efficient use.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 48
+  },
+  "image": "data/images/weapon-286.png",
+  "file": "weapon-286.json"
+}

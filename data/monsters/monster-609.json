@@ -1,0 +1,27 @@
+{
+  "id": 609,
+  "name": "Breeze Moai",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-609.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1004,
+    "sp": 788,
+    "catchable": "Unknown",
+    "spd": 235,
+    "str": 58,
+    "con": 58,
+    "int": 56,
+    "wis": 48,
+    "agi": 50
+  }
+}

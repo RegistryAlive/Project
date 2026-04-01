@@ -1,0 +1,18 @@
+{
+  "id": 1770,
+  "name": "Gold Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Gold / Grass",
+  "description": "A laurel which is founded of gold",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 2,
+    "MDEF": 10
+  },
+  "image": "data/images/helmet-1770.png",
+  "file": "helmet-1770.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 951,
+  "name": "Titan Trace Sealord",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-951.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 192,
+    "hp": 60000,
+    "sp": 3701,
+    "catchable": "Unknown",
+    "spd": 486,
+    "str": 850,
+    "con": 600,
+    "int": 500,
+    "wis": 200,
+    "agi": 99
+  }
+}

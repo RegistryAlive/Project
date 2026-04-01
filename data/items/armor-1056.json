@@ -1,0 +1,17 @@
+{
+  "id": 1056,
+  "name": "Sky Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Grass / Flower / Leaf / Leather",
+  "description": "Fighting clothes which are as light-footed as sky",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30
+  },
+  "image": "data/images/armor-1056.png",
+  "file": "armor-1056.json"
+}

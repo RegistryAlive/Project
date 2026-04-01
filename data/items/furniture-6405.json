@@ -1,0 +1,15 @@
+{
+  "id": 6405,
+  "name": "Pillar",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A column used for support or decoration",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6405.png",
+  "file": "furniture-6405.json"
+}

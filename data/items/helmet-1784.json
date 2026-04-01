@@ -1,0 +1,17 @@
+{
+  "id": 1784,
+  "name": "Iron Helmet-2",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Flower",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 5
+  },
+  "image": "data/images/helmet-1784.png",
+  "file": "helmet-1784.json"
+}

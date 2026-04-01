@@ -1,0 +1,27 @@
+{
+  "id": 678,
+  "name": "Elephant God (Quest)",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-678.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 105,
+    "hp": 15000,
+    "sp": 996,
+    "catchable": "Unknown",
+    "spd": 267.5,
+    "str": 69,
+    "con": 75,
+    "int": 57,
+    "wis": 59,
+    "agi": 55
+  }
+}

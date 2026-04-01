@@ -1,0 +1,18 @@
+{
+  "id": 2950,
+  "name": "Ghost bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Many ghostly tangled bracelets make people feel that the temperature around them has dropped slightly. Slightly increases the chance of counterattack in battle. (If you change the shape of the bracelet, the effect will disappear together)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "ATK": 35
+  },
+  "image": "data/images/arm-2950.png",
+  "file": "arm-2950.json"
+}

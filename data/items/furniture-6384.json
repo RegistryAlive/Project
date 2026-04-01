@@ -1,0 +1,15 @@
+{
+  "id": 6384,
+  "name": "ATM",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "You can save an remit money by using it",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6384.png",
+  "file": "furniture-6384.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1876,
+  "name": "Gold Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 35,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "Boots that can raise promptness by 35.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 35
+  },
+  "image": "data/images/shoes-1876.png",
+  "file": "shoes-1876.json"
+}

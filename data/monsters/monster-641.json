@@ -1,0 +1,27 @@
+{
+  "id": 641,
+  "name": "Darkness Kanako",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-641.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 139,
+    "hp": 24000,
+    "sp": 2382,
+    "catchable": "Unknown",
+    "spd": 564.5,
+    "str": 208,
+    "con": 172,
+    "int": 137,
+    "wis": 139,
+    "agi": 178
+  }
+}

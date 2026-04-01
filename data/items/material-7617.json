@@ -1,0 +1,15 @@
+{
+  "id": 7617,
+  "name": "Crystal Shell",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Quartz (Crystal)",
+  "description": "A Natural crystal with a shell form",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7617.png",
+  "file": "material-7617.json"
+}

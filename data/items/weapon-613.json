@@ -1,0 +1,18 @@
+{
+  "id": 613,
+  "name": "Gold Eclipse",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Xaolan's special weapon, a staff made from gold.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 50,
+    "MaxSP": 200
+  },
+  "image": "data/images/weapon-613.png",
+  "file": "weapon-613.json"
+}

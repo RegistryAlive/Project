@@ -1,0 +1,15 @@
+{
+  "id": 8437,
+  "name": "Fire Kirin Tic",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make Fire kirin a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8437.png",
+  "file": "questprop-8437.json"
+}

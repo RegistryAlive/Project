@@ -1,0 +1,18 @@
+{
+  "id": 123,
+  "name": "Round Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "A sword made from pure iron, its semicircle form.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 23,
+    "SPD": 17
+  },
+  "image": "data/images/weapon-123.png",
+  "file": "weapon-123.json"
+}

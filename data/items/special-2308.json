@@ -1,0 +1,18 @@
+{
+  "id": 2308,
+  "name": "Tim's Lease",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Make an agreement with devil La. Tim",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "MaxHP": 350
+  },
+  "image": "data/images/special-2308.png",
+  "file": "special-2308.json"
+}

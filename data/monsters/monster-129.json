@@ -1,0 +1,39 @@
+{
+  "id": 129,
+  "name": "Red-eyed Adder",
+  "location": "Taiwan (Carnie) - Pleasure Island",
+  "image": "data/Monster_Images/monster-129.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Poisonous Liquid",
+      "itemId": 7755,
+      "itemFile": "material-7755.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Skin",
+      "itemId": 7787,
+      "itemFile": "material-7787.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gooseberry",
+      "itemId": 7451,
+      "itemFile": "material-7451.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 61,
+    "hp": 488,
+    "sp": 525,
+    "catchable": "Unknown",
+    "spd": 187.5,
+    "str": 35,
+    "con": 30,
+    "int": 35,
+    "wis": 35,
+    "agi": 48
+  }
+}

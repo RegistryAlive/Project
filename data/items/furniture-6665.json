@@ -1,0 +1,15 @@
+{
+  "id": 6665,
+  "name": "Star Balloon",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A collection of star-shaped balloons in three colors",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6665.png",
+  "file": "furniture-6665.json"
+}

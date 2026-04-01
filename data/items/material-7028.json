@@ -1,0 +1,17 @@
+{
+  "id": 7028,
+  "name": "Fruit Wine",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "It's made from fruit",
+  "size": "1x1",
+  "attributes": {
+    "SP": 300
+  },
+  "image": "data/images/material-7028.png",
+  "file": "material-7028.json"
+}

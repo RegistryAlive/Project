@@ -1,0 +1,27 @@
+{
+  "id": 931,
+  "name": "Spirit",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-931.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 40,
+    "hp": 411,
+    "sp": 307,
+    "catchable": "Unknown",
+    "spd": 110,
+    "str": 23,
+    "con": 23,
+    "int": 27,
+    "wis": 22,
+    "agi": 25
+  }
+}

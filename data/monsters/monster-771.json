@@ -1,0 +1,27 @@
+{
+  "id": 771,
+  "name": "Icy Frog",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-771.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 21,
+    "hp": 161,
+    "sp": 171,
+    "catchable": "Unknown",
+    "spd": 55.5,
+    "str": 12,
+    "con": 12,
+    "int": 13,
+    "wis": 14,
+    "agi": 12
+  }
+}

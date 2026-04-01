@@ -1,0 +1,18 @@
+{
+  "id": 2857,
+  "name": "Silk Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Magic / Grass",
+  "description": "Cuffs made from threads gained by high soul power.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 12,
+    "MATK": 8
+  },
+  "image": "data/images/arm-2857.png",
+  "file": "arm-2857.json"
+}

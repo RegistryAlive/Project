@@ -1,0 +1,17 @@
+{
+  "id": 886,
+  "name": "Golden Rings +6",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 1,
+  "level": 1,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Enhanced Golden Rings.Has 16% seal resistance effect.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 60
+  },
+  "image": "data/images/weapon-886.png",
+  "file": "weapon-886.json"
+}

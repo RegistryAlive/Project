@@ -1,0 +1,18 @@
+{
+  "id": 189,
+  "name": "Fire Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Ming Dynasty King's sword.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 40,
+    "SPD": 32
+  },
+  "image": "data/images/weapon-189.png",
+  "file": "weapon-189.json"
+}

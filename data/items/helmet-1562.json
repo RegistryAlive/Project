@@ -1,0 +1,18 @@
+{
+  "id": 1562,
+  "name": "Energy Halo +9",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 76,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Cannot be socketed and traded.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 380,
+    "MaxSP": 380
+  },
+  "image": "data/images/helmet-1562.png",
+  "file": "helmet-1562.json"
+}

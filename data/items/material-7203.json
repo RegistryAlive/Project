@@ -1,0 +1,18 @@
+{
+  "id": 7203,
+  "name": "Thick Seafood Soup",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish / Vegetable / Egg",
+  "description": "Thick Soup of Various Seafood",
+  "size": "1x1",
+  "attributes": {
+    "HP": 270,
+    "SP": 190
+  },
+  "image": "data/images/material-7203.png",
+  "file": "material-7203.json"
+}

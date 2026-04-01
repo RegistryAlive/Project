@@ -1,0 +1,15 @@
+{
+  "id": 6617,
+  "name": "Party Balloons",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The red, blue and white balloon decorations look lively and colorful",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6617.png",
+  "file": "furniture-6617.json"
+}

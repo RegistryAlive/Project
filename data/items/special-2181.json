@@ -1,0 +1,17 @@
+{
+  "id": 2181,
+  "name": "Solid Waistband",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Leather / Iron / Gum",
+  "description": "A solid waistband to upgrade speed",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 40
+  },
+  "image": "data/images/special-2181.png",
+  "file": "special-2181.json"
+}

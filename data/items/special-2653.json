@@ -1,0 +1,15 @@
+{
+  "id": 2653,
+  "name": "PvP Server Ice",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Terminate high temperature caused by fire",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2653.png",
+  "file": "special-2653.json"
+}

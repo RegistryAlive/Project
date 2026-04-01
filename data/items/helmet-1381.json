@@ -1,0 +1,18 @@
+{
+  "id": 1381,
+  "name": "Green Headdress",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Grass",
+  "description": "A band which is made up by green grass",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 6,
+    "MDEF": 4
+  },
+  "image": "data/images/helmet-1381.png",
+  "file": "helmet-1381.json"
+}

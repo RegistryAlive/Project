@@ -1,0 +1,15 @@
+{
+  "id": 6375,
+  "name": "Treadmill",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Use it on a pet to gain an additional 2% Exp each level",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6375.png",
+  "file": "furniture-6375.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6383,
+  "name": "LCD TV",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A flat TV with a big screen",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6383.png",
+  "file": "furniture-6383.json"
+}

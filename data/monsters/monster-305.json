@@ -1,0 +1,39 @@
+{
+  "id": 305,
+  "name": "Flamboyant Bat",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-305.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Lemon",
+      "itemId": 7449,
+      "itemFile": "material-7449.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Claw",
+      "itemId": 7775,
+      "itemFile": "material-7775.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pigeon Meat",
+      "itemId": 7500,
+      "itemFile": "material-7500.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 82,
+    "hp": 760,
+    "sp": 876,
+    "catchable": "Yes",
+    "spd": 219,
+    "str": 41,
+    "con": 44,
+    "int": 57,
+    "wis": 56,
+    "agi": 48
+  }
+}

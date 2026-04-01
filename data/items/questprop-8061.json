@@ -1,0 +1,15 @@
+{
+  "id": 8061,
+  "name": "Lottery Ticket",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Accumulate lottery tickets for rewards.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8061.png",
+  "file": "questprop-8061.json"
+}

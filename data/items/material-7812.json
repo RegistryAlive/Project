@@ -1,0 +1,15 @@
+{
+  "id": 7812,
+  "name": "Dinosaur Fur",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "A Thick fur of a dinosaur",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7812.png",
+  "file": "material-7812.json"
+}

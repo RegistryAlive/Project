@@ -1,0 +1,18 @@
+{
+  "id": 1180,
+  "name": "Obsidian Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Rock / Iron / Titanium",
+  "description": "A lightweight armor crafted from obsidian stone.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "SPD": 8
+  },
+  "image": "data/images/armor-1180.png",
+  "file": "armor-1180.json"
+}

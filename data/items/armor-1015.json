@@ -1,0 +1,18 @@
+{
+  "id": 1015,
+  "name": "Christmas Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 12,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dress for the occasion, Christmas",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 6,
+    "MDEF": 6
+  },
+  "image": "data/images/armor-1015.png",
+  "file": "armor-1015.json"
+}

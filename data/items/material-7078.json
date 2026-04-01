@@ -1,0 +1,18 @@
+{
+  "id": 7078,
+  "name": "Fish Congee",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish / Rice",
+  "description": "Congee with fish",
+  "size": "1x1",
+  "attributes": {
+    "SP": 100,
+    "HP": 50
+  },
+  "image": "data/images/material-7078.png",
+  "file": "material-7078.json"
+}

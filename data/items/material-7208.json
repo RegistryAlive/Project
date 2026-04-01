@@ -1,0 +1,17 @@
+{
+  "id": 7208,
+  "name": "Cube Beancurd",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Bean",
+  "description": "It is made from soya",
+  "size": "1x1",
+  "attributes": {
+    "HP": 110
+  },
+  "image": "data/images/material-7208.png",
+  "file": "material-7208.json"
+}

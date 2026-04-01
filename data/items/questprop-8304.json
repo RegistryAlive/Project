@@ -1,0 +1,15 @@
+{
+  "id": 8304,
+  "name": "Steve's Key",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Treasure key",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8304.png",
+  "file": "questprop-8304.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6150,
+  "name": "Body of Jalor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Hull of a jalor",
+  "size": "4x2",
+  "attributes": {},
+  "image": "data/images/furniture-6150.png",
+  "file": "furniture-6150.json"
+}

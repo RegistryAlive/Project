@@ -1,0 +1,15 @@
+{
+  "id": 8002,
+  "name": "Fairy's Axe",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A fairy's Axe",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8002.png",
+  "file": "questprop-8002.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1031,
+  "name": "Water Qi Pao",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "Shimmering cerulean silk floats like waves on it.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 12,
+    "SPD": 10
+  },
+  "image": "data/images/armor-1031.png",
+  "file": "armor-1031.json"
+}

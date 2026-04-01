@@ -1,0 +1,18 @@
+{
+  "id": 2066,
+  "name": "Demon Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal)",
+  "description": "Necklace which is worn by the queen of devildom",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 21,
+    "MATK": 11
+  },
+  "image": "data/images/special-2066.png",
+  "file": "special-2066.json"
+}

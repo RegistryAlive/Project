@@ -1,0 +1,15 @@
+{
+  "id": 8548,
+  "name": "Turkey (event)",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "Players can double click it to get their reward directly or they can exchange using a thanksgiving box together with the pumpkin pie.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8548.png",
+  "file": "questprop-8548.json"
+}

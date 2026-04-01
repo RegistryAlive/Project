@@ -1,0 +1,18 @@
+{
+  "id": 1626,
+  "name": "Grass Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Grass",
+  "description": "A cute artifact, a grass sprout on the head.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 32,
+    "ATK": 13
+  },
+  "image": "data/images/helmet-1626.png",
+  "file": "helmet-1626.json"
+}

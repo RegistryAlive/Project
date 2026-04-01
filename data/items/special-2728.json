@@ -1,0 +1,17 @@
+{
+  "id": 2728,
+  "name": "Uriel wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Uriel wings called \"God's Light\" among angels can be inlaid",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 50
+  },
+  "image": "data/images/special-2728.png",
+  "file": "special-2728.json"
+}

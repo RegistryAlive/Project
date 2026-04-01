@@ -1,0 +1,51 @@
+{
+  "id": 248,
+  "name": "Swift Velociraptor",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-248.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Snake Meat",
+      "itemId": 7482,
+      "itemFile": "material-7482.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Tooth",
+      "itemId": 7809,
+      "itemFile": "material-7809.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 62,
+    "hp": 572,
+    "sp": 541,
+    "catchable": "Unknown",
+    "spd": 187,
+    "str": 31,
+    "con": 36,
+    "int": 36,
+    "wis": 36,
+    "agi": 47
+  }
+}

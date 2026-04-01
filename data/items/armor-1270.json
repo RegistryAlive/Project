@@ -1,0 +1,18 @@
+{
+  "id": 1270,
+  "name": "Blood Fight Cl",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Martial arts combat uniform with a fiery heart. When attacked by fire attribute enemies, the damage is reduced by 3%.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "SPD": 20
+  },
+  "image": "data/images/armor-1270.png",
+  "file": "armor-1270.json"
+}

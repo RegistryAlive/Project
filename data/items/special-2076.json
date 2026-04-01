@@ -1,0 +1,18 @@
+{
+  "id": 2076,
+  "name": "Amulet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Quartz (Crystal) / Flower",
+  "description": "An ornament which can blass its owner",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 2,
+    "MATK": 1
+  },
+  "image": "data/images/special-2076.png",
+  "file": "special-2076.json"
+}

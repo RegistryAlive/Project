@@ -1,0 +1,15 @@
+{
+  "id": 7570,
+  "name": "Pure Iron Block",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Pure Iron",
+  "description": "It is made of pure iron ore",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7570.png",
+  "file": "material-7570.json"
+}

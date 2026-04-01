@@ -1,0 +1,18 @@
+{
+  "id": 70,
+  "name": "Zhangetsu",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The double knives forged by famous craftsmen are said to be able to split the moon, hence the name Zhanyue. 46% critical strike possible",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 90,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-70.png",
+  "file": "weapon-70.json"
+}

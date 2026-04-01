@@ -1,0 +1,17 @@
+{
+  "id": 1051,
+  "name": "Black Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Steel / Gold",
+  "description": "High defense armor forged in dark mines.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 34
+  },
+  "image": "data/images/armor-1051.png",
+  "file": "armor-1051.json"
+}

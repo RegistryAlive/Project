@@ -1,0 +1,15 @@
+{
+  "id": 6110,
+  "name": "Large Engine",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made of a large motor",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6110.png",
+  "file": "furniture-6110.json"
+}

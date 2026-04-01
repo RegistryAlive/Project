@@ -1,0 +1,15 @@
+{
+  "id": 6699,
+  "name": "Yew Blue Socks",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Ice-blue Christmas stockings, filled with the expectation of gifts.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6699.png",
+  "file": "furniture-6699.json"
+}

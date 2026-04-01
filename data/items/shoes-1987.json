@@ -1,0 +1,15 @@
+{
+  "id": 1987,
+  "name": "Snow Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A Snow boots, that protects against the cold. For women only.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1987.png",
+  "file": "shoes-1987.json"
+}

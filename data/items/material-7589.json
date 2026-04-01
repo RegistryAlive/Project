@@ -1,0 +1,15 @@
+{
+  "id": 7589,
+  "name": "Coal",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Coal",
+  "description": "A natural dark brown graphitelike material.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7589.png",
+  "file": "material-7589.json"
+}

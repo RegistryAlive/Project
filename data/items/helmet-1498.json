@@ -1,0 +1,17 @@
+{
+  "id": 1498,
+  "name": "Sky Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Gold / Grass",
+  "description": "A crown that can channel power.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 23
+  },
+  "image": "data/images/helmet-1498.png",
+  "file": "helmet-1498.json"
+}

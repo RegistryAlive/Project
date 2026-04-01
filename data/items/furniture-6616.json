@@ -1,0 +1,15 @@
+{
+  "id": 6616,
+  "name": "Large Cake",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Gorgeous cakes specially made for parties",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6616.png",
+  "file": "furniture-6616.json"
+}

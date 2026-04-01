@@ -1,0 +1,18 @@
+{
+  "id": 838,
+  "name": "Starfire Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The vermilion brocade fan with the power of stars, the stars dance when waving. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "MaxHP": 450
+  },
+  "image": "data/images/weapon-838.png",
+  "file": "weapon-838.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7569,
+  "name": "Pure Iron Sand",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Pure Iron",
+  "description": "Rare iron sand",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7569.png",
+  "file": "material-7569.json"
+}

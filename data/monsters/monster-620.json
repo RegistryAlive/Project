@@ -1,0 +1,27 @@
+{
+  "id": 620,
+  "name": "Chameleon Lord",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-620.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 10,
+    "hp": 300,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 27,
+    "str": 8,
+    "con": 7,
+    "int": 4,
+    "wis": 5,
+    "agi": 6
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 232,
+  "name": "Desolator",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Shadow Fred exclusive weapons",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 45,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-232.png",
+  "file": "weapon-232.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 881,
+  "name": "Golden Rings +1",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 1,
+  "level": 1,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Enhanced Gold Rings.Has 6% seal resistance effect.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 35
+  },
+  "image": "data/images/weapon-881.png",
+  "file": "weapon-881.json"
+}

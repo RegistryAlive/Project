@@ -1,0 +1,18 @@
+{
+  "id": 200,
+  "name": "King Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Titanium / Gold / Corundum",
+  "description": "Increases both attack and defense after equipping.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "DEF": 20
+  },
+  "image": "data/images/weapon-200.png",
+  "file": "weapon-200.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6519,
+  "name": "Chinese table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Traditionally shaped Chinese round table, the round shape means reunion",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6519.png",
+  "file": "furniture-6519.json"
+}

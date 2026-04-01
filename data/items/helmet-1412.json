@@ -1,0 +1,18 @@
+{
+  "id": 1412,
+  "name": "Green Hairwear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It looks like a horn from the green evil head.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 18,
+    "MDEF": 5
+  },
+  "image": "data/images/helmet-1412.png",
+  "file": "helmet-1412.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2025,
+  "name": "Wushu Footwear",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Light as a feather, as if you have light kung fu; when equipped together with other martial arts warrior series equipment, it can increase the damage of weapons such as swords and mallets.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25,
+    "DEF": 15
+  },
+  "image": "data/images/shoes-2025.png",
+  "file": "shoes-2025.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 10007,
+  "name": "Magic Carpet",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can fly in the sky.",
+  "size": "4x2",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10007.png",
+  "file": "vehicle-10007.json"
+}

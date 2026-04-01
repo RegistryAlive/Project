@@ -1,0 +1,18 @@
+{
+  "id": 7146,
+  "name": "Fried Melon",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Fried white gourd pieces",
+  "size": "1x1",
+  "attributes": {
+    "HP": 120,
+    "SP": 30
+  },
+  "image": "data/images/material-7146.png",
+  "file": "material-7146.json"
+}

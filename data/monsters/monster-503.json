@@ -1,0 +1,45 @@
+{
+  "id": 503,
+  "name": "Banyan Devil",
+  "location": "Kelan Village's Woods",
+  "image": "data/Monster_Images/monster-503.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Wood",
+      "itemId": 7651,
+      "itemFile": "material-7651.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Golden Apple",
+      "itemId": 7517,
+      "itemFile": "material-7517.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ordinary Wood",
+      "itemId": 7647,
+      "itemFile": "material-7647.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 5,
+    "hp": 68,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 9.5,
+    "str": 3,
+    "con": 5,
+    "int": 3,
+    "wis": 3,
+    "agi": 1
+  }
+}

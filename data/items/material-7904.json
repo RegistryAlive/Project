@@ -1,0 +1,15 @@
+{
+  "id": 7904,
+  "name": "Golden Ears+7",
+  "type": "Material",
+  "category": "material",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7904.png",
+  "file": "material-7904.json"
+}

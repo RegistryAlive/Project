@@ -1,0 +1,17 @@
+{
+  "id": 1149,
+  "name": "Water Elf Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Leaf / Flower / Grass",
+  "description": "It has great MDEF power",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 27
+  },
+  "image": "data/images/armor-1149.png",
+  "file": "armor-1149.json"
+}

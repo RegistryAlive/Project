@@ -1,0 +1,18 @@
+{
+  "id": 2896,
+  "name": "Runic Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Crystallization / Tin / Magic",
+  "description": "A pair of bracers imbued with arcane runes.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 25,
+    "MATK": 10
+  },
+  "image": "data/images/arm-2896.png",
+  "file": "arm-2896.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1429,
+  "name": "Dark Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": null,
+  "description": "An ornament which shaped like a black rabbit's ear",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20,
+    "MATK": 5
+  },
+  "image": "data/images/helmet-1429.png",
+  "file": "helmet-1429.json"
+}

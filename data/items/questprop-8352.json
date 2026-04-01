@@ -1,0 +1,15 @@
+{
+  "id": 8352,
+  "name": "Amazing Diet P",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Get thin quick or your money back! (No refunds)",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8352.png",
+  "file": "questprop-8352.json"
+}

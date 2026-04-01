@@ -1,0 +1,18 @@
+{
+  "id": 759,
+  "name": "Pure Iron Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Pure Iron / Wood",
+  "description": "A gavel refined from hematite.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "DEF": 22
+  },
+  "image": "data/images/weapon-759.png",
+  "file": "weapon-759.json"
+}

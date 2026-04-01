@@ -1,0 +1,18 @@
+{
+  "id": 2845,
+  "name": "Flame Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Pure Iron / Corundum / Magic",
+  "description": "Can raise chance to resist seal by 6%.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 6,
+    "ATK": 8
+  },
+  "image": "data/images/arm-2845.png",
+  "file": "arm-2845.json"
+}

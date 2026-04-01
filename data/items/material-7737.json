@@ -1,0 +1,15 @@
+{
+  "id": 7737,
+  "name": "Pearl Coral Ex",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Pearl coloured coral reef...",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7737.png",
+  "file": "material-7737.json"
+}

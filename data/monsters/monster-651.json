@@ -1,0 +1,27 @@
+{
+  "id": 651,
+  "name": "Dead Spirit Guardian (Quest)",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-651.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 164,
+    "hp": 31500,
+    "sp": 1340,
+    "catchable": "Unknown",
+    "spd": 506,
+    "str": 157,
+    "con": 138,
+    "int": 37,
+    "wis": 30,
+    "agi": 130
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6275,
+  "name": "Show Platform",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Used to show vehicles.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6275.png",
+  "file": "furniture-6275.json"
+}

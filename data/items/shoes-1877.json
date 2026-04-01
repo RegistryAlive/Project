@@ -1,0 +1,17 @@
+{
+  "id": 1877,
+  "name": "Sea Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Leather / Feather",
+  "description": "Boots made from younger dragon skin.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 27
+  },
+  "image": "data/images/shoes-1877.png",
+  "file": "shoes-1877.json"
+}

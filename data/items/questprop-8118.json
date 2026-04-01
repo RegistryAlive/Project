@@ -1,0 +1,15 @@
+{
+  "id": 8118,
+  "name": "Mystic Sunshade Card",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a ShadingPuca become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8118.png",
+  "file": "questprop-8118.json"
+}

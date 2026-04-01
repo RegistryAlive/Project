@@ -1,0 +1,15 @@
+{
+  "id": 6052,
+  "name": "Pet-Top",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It has a magnetic force",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6052.png",
+  "file": "furniture-6052.json"
+}

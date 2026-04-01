@@ -1,0 +1,18 @@
+{
+  "id": 2003,
+  "name": "M Rudolph Shoe",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A imitation of reindeer hooves. For men only. Set Effect : MaxHP +450.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 50,
+    "DEF": 10
+  },
+  "image": "data/images/shoes-2003.png",
+  "file": "shoes-2003.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2193,
+  "name": "Fortitude Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "An Armlet of Fortitude exclusively used by pet men.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 125
+  },
+  "image": "data/images/special-2193.png",
+  "file": "special-2193.json"
+}

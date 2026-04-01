@@ -1,0 +1,15 @@
+{
+  "id": 6215,
+  "name": "Ice Brick",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 1)",
+  "description": "An ice brick used to repair the roof.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6215.png",
+  "file": "furniture-6215.json"
+}

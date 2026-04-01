@@ -1,0 +1,18 @@
+{
+  "id": 485,
+  "name": "Fairy Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Silver / Quartz (Crystal) / Magic",
+  "description": "Made by Deity Spirit.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "SPD": 14
+  },
+  "image": "data/images/weapon-485.png",
+  "file": "weapon-485.json"
+}

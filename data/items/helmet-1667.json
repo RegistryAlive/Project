@@ -1,0 +1,15 @@
+{
+  "id": 1667,
+  "name": "White Bunny Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Ornament shaped like white bunny ears",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1667.png",
+  "file": "helmet-1667.json"
+}

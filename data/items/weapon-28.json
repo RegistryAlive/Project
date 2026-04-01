@@ -1,0 +1,18 @@
+{
+  "id": 28,
+  "name": "Ghost Horn Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Wood / Steel",
+  "description": "Made from a Unicorn's horn, it has holy strength.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 26,
+    "DEF": 26
+  },
+  "image": "data/images/weapon-28.png",
+  "file": "weapon-28.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 7309,
+  "name": "Yo BBQ Sauce",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat",
+  "description": "It is the of king favorited sauce",
+  "size": "1x1",
+  "attributes": {
+    "HP": 1200
+  },
+  "image": "data/images/material-7309.png",
+  "file": "material-7309.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6038,
+  "name": "Cable",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "A Thick wire",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6038.png",
+  "file": "furniture-6038.json"
+}

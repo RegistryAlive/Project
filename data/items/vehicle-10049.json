@@ -1,0 +1,17 @@
+{
+  "id": 10049,
+  "name": "Quarter Moon",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "First quarter moon, high in the sky able fly to both the Moon and Mars. Uses magic wool ball as fuel.",
+  "size": "3x4",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10049.png",
+  "file": "vehicle-10049.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8458,
+  "name": "Silver Coins",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Collect a certain amount of rare silver coins that can be exchanged for prizes",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8458.png",
+  "file": "questprop-8458.json"
+}

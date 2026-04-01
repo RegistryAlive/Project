@@ -1,0 +1,17 @@
+{
+  "id": 1225,
+  "name": "Magpie Fairy",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "In order to meet the lovers, the clothes that have been sewn for a whole year are very comfortable and make people feel light and light.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 520
+  },
+  "image": "data/images/armor-1225.png",
+  "file": "armor-1225.json"
+}

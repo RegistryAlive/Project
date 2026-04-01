@@ -1,0 +1,15 @@
+{
+  "id": 6076,
+  "name": "Blade",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "It is used for cutting things",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6076.png",
+  "file": "furniture-6076.json"
+}

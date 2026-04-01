@@ -1,0 +1,15 @@
+{
+  "id": 5025,
+  "name": "Energy Pill",
+  "type": "ItemPetFruit",
+  "category": "accessory",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Adds 1 to Magellan's ability. You can get it by compounding. Cannot be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5025.png",
+  "file": "accessory-5025.json"
+}

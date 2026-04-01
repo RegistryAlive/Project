@@ -1,0 +1,17 @@
+{
+  "id": 2737,
+  "name": "Zadkiel Wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Like the huge wings of an angel, the color is dreamlike and illusion like Caixia, which can be inlaid.",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 300
+  },
+  "image": "data/images/special-2737.png",
+  "file": "special-2737.json"
+}

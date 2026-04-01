@@ -1,0 +1,18 @@
+{
+  "id": 323,
+  "name": "Black Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Titanium / Copper",
+  "description": "A spear end forged with gold and steel.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "MDEF": 10
+  },
+  "image": "data/images/weapon-323.png",
+  "file": "weapon-323.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1736,
+  "name": "Knot Cat Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The snow-white cat ears that can attract good luck are tied with small tassel ropes. Has a 5% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "SPD": 20
+  },
+  "image": "data/images/helmet-1736.png",
+  "file": "helmet-1736.json"
+}

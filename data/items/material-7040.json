@@ -1,0 +1,18 @@
+{
+  "id": 7040,
+  "name": "Fried Seafood Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rice / Vegetable / Meat / Fish and Shellfish",
+  "description": "Fried rice with seafood",
+  "size": "1x1",
+  "attributes": {
+    "HP": 255,
+    "SP": 195
+  },
+  "image": "data/images/material-7040.png",
+  "file": "material-7040.json"
+}

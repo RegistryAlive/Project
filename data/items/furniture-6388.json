@@ -1,0 +1,15 @@
+{
+  "id": 6388,
+  "name": "Wit Maid-Rabbi",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The maid in rabbit clothes who can help you make a pet.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6388.png",
+  "file": "furniture-6388.json"
+}

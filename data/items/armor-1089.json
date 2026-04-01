@@ -1,0 +1,18 @@
+{
+  "id": 1089,
+  "name": "Mist Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "clothes of Japanese religion Shintoist, dark black",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 22,
+    "DEF": 14
+  },
+  "image": "data/images/armor-1089.png",
+  "file": "armor-1089.json"
+}

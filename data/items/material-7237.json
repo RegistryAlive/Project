@@ -1,0 +1,18 @@
+{
+  "id": 7237,
+  "name": "Boiled Cod",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "It is suitable for steaming",
+  "size": "1x1",
+  "attributes": {
+    "HP": 140,
+    "SP": 135
+  },
+  "image": "data/images/material-7237.png",
+  "file": "material-7237.json"
+}

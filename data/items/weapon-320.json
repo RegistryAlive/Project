@@ -1,0 +1,17 @@
+{
+  "id": 320,
+  "name": "Golden Pike",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Pure Iron / Steel",
+  "description": "A pike like a halberd, forged by golden steel.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 66
+  },
+  "image": "data/images/weapon-320.png",
+  "file": "weapon-320.json"
+}

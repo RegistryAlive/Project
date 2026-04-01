@@ -1,0 +1,15 @@
+{
+  "id": 8011,
+  "name": "Nun's Necklace",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The love gift KaVo gives to the nun",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8011.png",
+  "file": "questprop-8011.json"
+}

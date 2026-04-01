@@ -1,0 +1,18 @@
+{
+  "id": 2326,
+  "name": "Mysterious Scroll",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Flower / Mercury",
+  "description": "A scroll with the ability to create dreams.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 75,
+    "MaxSP": 400
+  },
+  "image": "data/images/special-2326.png",
+  "file": "special-2326.json"
+}

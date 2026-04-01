@@ -1,0 +1,39 @@
+{
+  "id": 1035,
+  "name": "Fishing Rod Fish",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-1036.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Lobster",
+      "itemId": 7496,
+      "itemFile": "material-7496.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Crab Roes",
+      "itemId": 7498,
+      "itemFile": "material-7498.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Shrimp",
+      "itemId": 7497,
+      "itemFile": "material-7497.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 138,
+    "hp": 1792,
+    "sp": 1575,
+    "catchable": "Unknown",
+    "spd": 347,
+    "str": 76,
+    "con": 91,
+    "int": 88,
+    "wis": 89,
+    "agi": 70
+  }
+}

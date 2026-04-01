@@ -1,0 +1,15 @@
+{
+  "id": 6513,
+  "name": "Party Card",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "An invitation card to welcome friends to a party at home, which can be placed at home as a decoration",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6513.png",
+  "file": "furniture-6513.json"
+}

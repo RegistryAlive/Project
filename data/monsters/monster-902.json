@@ -1,0 +1,27 @@
+{
+  "id": 902,
+  "name": "Shiv Guard",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-902.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 116,
+    "hp": 1584,
+    "sp": 1106,
+    "catchable": "Unknown",
+    "spd": 294,
+    "str": 81,
+    "con": 86,
+    "int": 57,
+    "wis": 64,
+    "agi": 60
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 5047,
+  "name": "Tasty Dumpling",
+  "type": "Item",
+  "category": "accessory",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Eat it to escape from demon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5047.png",
+  "file": "accessory-5047.json"
+}

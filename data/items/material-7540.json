@@ -1,0 +1,18 @@
+{
+  "id": 7540,
+  "name": "Seafood Sauce",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Fish and Shellfish",
+  "description": "Frozen seafood sauce",
+  "size": "1x1",
+  "attributes": {
+    "SP": 150,
+    "HP": 50
+  },
+  "image": "data/images/material-7540.png",
+  "file": "material-7540.json"
+}

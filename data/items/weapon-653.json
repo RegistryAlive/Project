@@ -1,0 +1,18 @@
+{
+  "id": 653,
+  "name": "Boxing Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Steel",
+  "description": "A claw commonly used for wrestling.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 6,
+    "SPD": 8
+  },
+  "image": "data/images/weapon-653.png",
+  "file": "weapon-653.json"
+}

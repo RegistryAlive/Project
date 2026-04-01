@@ -1,0 +1,45 @@
+{
+  "id": 402,
+  "name": "Cave Bear (Quest)",
+  "location": "Maka Cave",
+  "image": "data/Monster_Images/monster-402.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bear King Claw",
+      "itemId": 7802,
+      "itemFile": "material-7802.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 48,
+    "hp": 2400,
+    "sp": 327,
+    "catchable": "Yes",
+    "spd": 134,
+    "str": 35,
+    "con": 40,
+    "int": 16,
+    "wis": 22,
+    "agi": 31
+  }
+}

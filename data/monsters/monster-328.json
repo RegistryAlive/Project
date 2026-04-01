@@ -1,0 +1,39 @@
+{
+  "id": 328,
+  "name": "Blue Water Bat",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-328.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Pineapple",
+      "itemId": 7445,
+      "itemFile": "material-7445.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 723,
+    "sp": 883,
+    "catchable": "No",
+    "spd": 220,
+    "str": 38,
+    "con": 42,
+    "int": 53,
+    "wis": 57,
+    "agi": 50
+  }
+}

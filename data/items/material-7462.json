@@ -1,0 +1,17 @@
+{
+  "id": 7462,
+  "name": "Sunflower Oil",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Vegetable Oil",
+  "description": "Oil refine from a sunflower with good smell",
+  "size": "1x1",
+  "attributes": {
+    "HP": 70
+  },
+  "image": "data/images/material-7462.png",
+  "file": "material-7462.json"
+}

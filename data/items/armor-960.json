@@ -1,0 +1,17 @@
+{
+  "id": 960,
+  "name": "Blue Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Leather / Flower",
+  "description": "clothes which is made of cyan leather",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 8
+  },
+  "image": "data/images/armor-960.png",
+  "file": "armor-960.json"
+}

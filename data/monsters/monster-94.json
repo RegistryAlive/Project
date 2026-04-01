@@ -1,0 +1,51 @@
+{
+  "id": 94,
+  "name": "Damp Snail",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-94.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Hard Shell",
+      "itemId": 7789,
+      "itemFile": "material-7789.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Green Garlic",
+      "itemId": 7415,
+      "itemFile": "material-7415.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Bean",
+      "itemId": 7466,
+      "itemFile": "material-7466.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Clay",
+      "itemId": 7643,
+      "itemFile": "material-7643.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 9,
+    "hp": 69,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 21.5,
+    "str": 4,
+    "con": 4,
+    "int": 8,
+    "wis": 7,
+    "agi": 4
+  }
+}

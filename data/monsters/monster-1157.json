@@ -1,0 +1,27 @@
+{
+  "id": 1157,
+  "name": "Green Snowtree",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-1158.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 450,
+    "sp": 430,
+    "catchable": "Unknown",
+    "spd": 131,
+    "str": 32,
+    "con": 30,
+    "int": 30,
+    "wis": 30,
+    "agi": 28
+  }
+}

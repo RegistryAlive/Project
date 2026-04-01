@@ -1,0 +1,17 @@
+{
+  "id": 1025,
+  "name": "Sea Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Steel / Flower",
+  "description": "Body armor made of steel scales.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18
+  },
+  "image": "data/images/armor-1025.png",
+  "file": "armor-1025.json"
+}

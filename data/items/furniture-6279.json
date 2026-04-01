@@ -1,0 +1,15 @@
+{
+  "id": 6279,
+  "name": "Wood Bathtub",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "made up of wood can be used for a bath.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6279.png",
+  "file": "furniture-6279.json"
+}

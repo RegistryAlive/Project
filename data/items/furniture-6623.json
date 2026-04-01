@@ -1,0 +1,15 @@
+{
+  "id": 6623,
+  "name": "Fortune Bamboo",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Potted plants for decoration symbolize rising",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6623.png",
+  "file": "furniture-6623.json"
+}

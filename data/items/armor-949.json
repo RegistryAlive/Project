@@ -1,0 +1,17 @@
+{
+  "id": 949,
+  "name": "Nurse's Clothe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A comforting, clean uniform for health workers.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-949.png",
+  "file": "armor-949.json"
+}

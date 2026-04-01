@@ -1,0 +1,17 @@
+{
+  "id": 2676,
+  "name": "Bluezircon Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Lead / Corundum",
+  "description": "A pair of earrings crafted from brilliant stones. Increases defense.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 14
+  },
+  "image": "data/images/special-2676.png",
+  "file": "special-2676.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1174,
+  "name": "Yin Yang Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Magic / Grass / Leather / Feather",
+  "description": "Suit with unbelievable power",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 28,
+    "MDEF": 16
+  },
+  "image": "data/images/armor-1174.png",
+  "file": "armor-1174.json"
+}

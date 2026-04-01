@@ -1,0 +1,27 @@
+{
+  "id": 460,
+  "name": "Swallowtail Butterfl",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-460.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Pest Tentacles",
+      "itemId": 7790,
+      "itemFile": "material-7790.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 533,
+    "sp": 705,
+    "catchable": "Unknown",
+    "spd": 208,
+    "str": 40,
+    "con": 39,
+    "int": 41,
+    "wis": 46,
+    "agi": 50
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1379,
+  "name": "Pink Headband",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Flower",
+  "description": "A headband which is made of pink silk",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 4
+  },
+  "image": "data/images/helmet-1379.png",
+  "file": "helmet-1379.json"
+}

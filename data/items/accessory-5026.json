@@ -1,0 +1,15 @@
+{
+  "id": 5026,
+  "name": "Elin's Oil",
+  "type": "ItemPetFruit",
+  "category": "accessory",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Oil",
+  "description": "Adds 1 to Elin's ability. You can get it by compounding. Cannot be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5026.png",
+  "file": "accessory-5026.json"
+}

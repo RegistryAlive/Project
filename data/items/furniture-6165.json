@@ -1,0 +1,15 @@
+{
+  "id": 6165,
+  "name": "Windmill",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Generates motion by wind power",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6165.png",
+  "file": "furniture-6165.json"
+}

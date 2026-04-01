@@ -1,0 +1,18 @@
+{
+  "id": 2311,
+  "name": "Resistant Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "An armlet to increase magic energy and life",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 50,
+    "MaxHP": 350
+  },
+  "image": "data/images/special-2311.png",
+  "file": "special-2311.json"
+}

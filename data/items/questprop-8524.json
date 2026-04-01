@@ -1,0 +1,15 @@
+{
+  "id": 8524,
+  "name": "Dull Hippo Tix",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket roll that can make a nerdy hippopotamus a companion, and a guy who is nerdy all the time.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8524.png",
+  "file": "questprop-8524.json"
+}

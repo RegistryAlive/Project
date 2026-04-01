@@ -1,0 +1,50 @@
+{
+  "id": 283,
+  "name": "Drowcrusher",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-283.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Tooth",
+      "itemId": 7809,
+      "itemFile": "material-7809.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Fur",
+      "itemId": 7812,
+      "itemFile": "material-7812.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Drowcrusher Tooth",
+      "itemId": 7811,
+      "itemFile": "material-7811.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clear Devil's Spar",
+      "itemId": null,
+      "itemFile": null
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 943,
+    "sp": 559,
+    "catchable": "Yes",
+    "spd": 289,
+    "str": 77,
+    "con": 54,
+    "int": 30,
+    "wis": 32,
+    "agi": 77
+  }
+}

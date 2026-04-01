@@ -1,0 +1,18 @@
+{
+  "id": 843,
+  "name": "Clear Flow Gem",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A pearl that has been guarded by mermaids for generations, and can be used to use the skill \"Aqua Drop\" after equipping it. 46% crit probability.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "MaxSP": 350
+  },
+  "image": "data/images/weapon-843.png",
+  "file": "weapon-843.json"
+}

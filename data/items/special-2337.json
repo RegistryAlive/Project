@@ -1,0 +1,15 @@
+{
+  "id": 2337,
+  "name": "Mask",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Equip it to handle a task conveniently.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2337.png",
+  "file": "special-2337.json"
+}

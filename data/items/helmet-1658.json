@@ -1,0 +1,18 @@
+{
+  "id": 1658,
+  "name": "Fox earrings",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Ornaments shaped like fox ears. When using bow weapons, attack damage +3%",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "SPD": 15
+  },
+  "image": "data/images/helmet-1658.png",
+  "file": "helmet-1658.json"
+}

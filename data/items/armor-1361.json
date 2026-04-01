@@ -1,0 +1,18 @@
+{
+  "id": 1361,
+  "name": "Seer's Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leaf / Pure Iron / Iron",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 10,
+    "SPD": 15
+  },
+  "image": "data/images/armor-1361.png",
+  "file": "armor-1361.json"
+}

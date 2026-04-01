@@ -1,0 +1,17 @@
+{
+  "id": 1480,
+  "name": "Gold Ears+2",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets. Its numerical value can advance",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30
+  },
+  "image": "data/images/helmet-1480.png",
+  "file": "helmet-1480.json"
+}

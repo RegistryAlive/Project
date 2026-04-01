@@ -1,0 +1,17 @@
+{
+  "id": 2652,
+  "name": "Kevlar Vest B",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A light, effective kevlar vest for the PvP Server.",
+  "size": "1x1",
+  "attributes": {
+    "DefShoot": 90
+  },
+  "image": "data/images/special-2652.png",
+  "file": "special-2652.json"
+}

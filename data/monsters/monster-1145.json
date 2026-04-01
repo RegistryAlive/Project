@@ -1,0 +1,27 @@
+{
+  "id": 1145,
+  "name": "Ancient Chameleon",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-1146.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Beast Bone",
+      "itemId": 7776,
+      "itemFile": "material-7776.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 61,
+    "hp": 621,
+    "sp": 512,
+    "catchable": "No",
+    "spd": 159.5,
+    "str": 40,
+    "con": 40,
+    "int": 35,
+    "wis": 34,
+    "agi": 34
+  }
+}

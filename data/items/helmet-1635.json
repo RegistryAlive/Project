@@ -1,0 +1,15 @@
+{
+  "id": 1635,
+  "name": "Pure lover hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pure lovers males hat",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1635.png",
+  "file": "helmet-1635.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 485,
+  "name": "Fast Leopard",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-485.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Black Forestcake",
+      "itemId": 7049,
+      "itemFile": "material-7049.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 47,
+    "hp": 227,
+    "sp": 191,
+    "catchable": "No",
+    "spd": 102.5,
+    "str": 15,
+    "con": 15,
+    "int": 14,
+    "wis": 11,
+    "agi": 16
+  }
+}

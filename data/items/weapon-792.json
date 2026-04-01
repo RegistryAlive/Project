@@ -1,0 +1,18 @@
+{
+  "id": 792,
+  "name": "Chaos Hammer",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 45,
+  "level": 8,
+  "rarity": "legendary",
+  "base": "Iron",
+  "description": "Destroyer Kharne's personal weapon has a forebiding presence that seems to sap life force.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 65,
+    "SPD": 29
+  },
+  "image": "data/images/weapon-792.png",
+  "file": "weapon-792.json"
+}

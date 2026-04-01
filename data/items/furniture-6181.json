@@ -1,0 +1,15 @@
+{
+  "id": 6181,
+  "name": "Anti-Gravity Device",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Floats in the sky with counterweights",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6181.png",
+  "file": "furniture-6181.json"
+}

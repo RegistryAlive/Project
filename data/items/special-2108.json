@@ -1,0 +1,18 @@
+{
+  "id": 2108,
+  "name": "Aggressive Med",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "A medal that can enhance magic attack and agility.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 4,
+    "SPD": 2
+  },
+  "image": "data/images/special-2108.png",
+  "file": "special-2108.json"
+}

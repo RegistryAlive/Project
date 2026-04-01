@@ -1,0 +1,15 @@
+{
+  "id": 6507,
+  "name": "Xmas Tree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 24,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Silver-white Christmas series furniture, pure white Christmas tree and gifts, decorated with blue decorations.",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6507.png",
+  "file": "furniture-6507.json"
+}

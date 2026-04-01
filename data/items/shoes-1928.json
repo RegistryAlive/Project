@@ -1,0 +1,18 @@
+{
+  "id": 1928,
+  "name": "Red Flame Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Grass",
+  "description": "Red boots with high energy.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 26,
+    "MATK": 11
+  },
+  "image": "data/images/shoes-1928.png",
+  "file": "shoes-1928.json"
+}

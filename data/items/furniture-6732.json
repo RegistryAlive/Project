@@ -1,0 +1,15 @@
+{
+  "id": 6732,
+  "name": "cookie wall",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Gingerbread man wall sticker for wall decoration",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6732.png",
+  "file": "furniture-6732.json"
+}

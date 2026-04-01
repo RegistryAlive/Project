@@ -1,0 +1,27 @@
+{
+  "id": 624,
+  "name": "Chinese Guard",
+  "location": "Great Wall",
+  "image": "data/Monster_Images/monster-624.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 95,
+    "hp": 1104,
+    "sp": 789,
+    "catchable": "Unknown",
+    "spd": 254.5,
+    "str": 76,
+    "con": 63,
+    "int": 43,
+    "wis": 47,
+    "agi": 56
+  }
+}

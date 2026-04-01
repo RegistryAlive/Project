@@ -1,0 +1,15 @@
+{
+  "id": 6580,
+  "name": "Broadcaster",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The broadcaster hung on the wall, you can hear the bells of class and end",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6580.png",
+  "file": "furniture-6580.json"
+}

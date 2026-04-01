@@ -1,0 +1,15 @@
+{
+  "id": 6498,
+  "name": "2017 Easter D.",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "2017 Easter Decor.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6498.png",
+  "file": "furniture-6498.json"
+}

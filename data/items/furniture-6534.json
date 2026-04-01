@@ -1,0 +1,15 @@
+{
+  "id": 6534,
+  "name": "Beach Parasol",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, beach umbrellas can shield the hot sun",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6534.png",
+  "file": "furniture-6534.json"
+}

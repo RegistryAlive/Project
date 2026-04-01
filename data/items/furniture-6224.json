@@ -1,0 +1,15 @@
+{
+  "id": 6224,
+  "name": "Great Driver",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Used on a work platform to make delicate items.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6224.png",
+  "file": "furniture-6224.json"
+}

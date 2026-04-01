@@ -1,0 +1,17 @@
+{
+  "id": 283,
+  "name": "Perfect Long Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Iron / Wood / Hard Tissue",
+  "description": "Better than the Long Spear.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 42
+  },
+  "image": "data/images/weapon-283.png",
+  "file": "weapon-283.json"
+}

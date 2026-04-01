@@ -1,0 +1,45 @@
+{
+  "id": 332,
+  "name": "Dark Green Bat",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-332.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Muskmelon",
+      "itemId": 7446,
+      "itemFile": "material-7446.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 103,
+    "hp": 1286,
+    "sp": 930,
+    "catchable": "No",
+    "spd": 266.5,
+    "str": 62,
+    "con": 78,
+    "int": 52,
+    "wis": 55,
+    "agi": 56
+  }
+}

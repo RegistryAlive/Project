@@ -1,0 +1,45 @@
+{
+  "id": 182,
+  "name": "Senior Oak Devil",
+  "location": "Jungle",
+  "image": "data/Monster_Images/monster-182.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Oak",
+      "itemId": 7652,
+      "itemFile": "material-7652.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ha Mushroom",
+      "itemId": 7524,
+      "itemFile": "material-7524.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Original Rubber",
+      "itemId": 6029,
+      "itemFile": "furniture-6029.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Oak Wood",
+      "itemId": 7648,
+      "itemFile": "material-7648.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 18,
+    "hp": 166,
+    "sp": 124,
+    "catchable": "Yes",
+    "spd": 45,
+    "str": 10,
+    "con": 15,
+    "int": 10,
+    "wis": 10,
+    "agi": 9
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2840,
+  "name": "Net Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Grass / Magic",
+  "description": "Bracers which are light and magic.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MATK": 7
+  },
+  "image": "data/images/arm-2840.png",
+  "file": "arm-2840.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1097,
+  "name": "Blue Monster Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Leaf / Steel",
+  "description": "Battle clothes made of threads and metal ornaments.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 16,
+    "ATK": 14
+  },
+  "image": "data/images/armor-1097.png",
+  "file": "armor-1097.json"
+}

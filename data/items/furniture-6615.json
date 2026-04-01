@@ -1,0 +1,15 @@
+{
+  "id": 6615,
+  "name": "Small Cake",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Cakes specially made for parties",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6615.png",
+  "file": "furniture-6615.json"
+}

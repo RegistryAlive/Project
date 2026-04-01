@@ -1,0 +1,18 @@
+{
+  "id": 592,
+  "name": "Polished Wand+10",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets, 46% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 66,
+    "MaxSP": 640
+  },
+  "image": "data/images/weapon-592.png",
+  "file": "weapon-592.json"
+}

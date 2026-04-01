@@ -1,0 +1,15 @@
+{
+  "id": 7830,
+  "name": "Great Gasoline",
+  "type": "MaterialOil",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Oil",
+  "description": "A substitute fuel for the Cabriolet and Yacht. Double click to use it while using the Cabriolet or Yacht. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7830.png",
+  "file": "material-7830.json"
+}

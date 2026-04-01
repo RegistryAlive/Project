@@ -1,0 +1,15 @@
+{
+  "id": 6657,
+  "name": "Seagrass fence",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Fence in the shape of seaweed",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6657.png",
+  "file": "furniture-6657.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6710,
+  "name": "Tiger Rebirth",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "At first glance, the powerful tiger ornament is actually a furry doll.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6710.png",
+  "file": "furniture-6710.json"
+}

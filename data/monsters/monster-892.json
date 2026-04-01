@@ -1,0 +1,27 @@
+{
+  "id": 892,
+  "name": "Sculpture Soldier",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-892.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 95,
+    "hp": 1151,
+    "sp": 789,
+    "catchable": "Unknown",
+    "spd": 274.5,
+    "str": 96,
+    "con": 66,
+    "int": 10,
+    "wis": 47,
+    "agi": 66
+  }
+}

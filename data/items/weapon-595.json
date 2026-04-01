@@ -1,0 +1,18 @@
+{
+  "id": 595,
+  "name": "Dark Demon Wan",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 43,
+  "level": 86,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Wand with a ruby in the center",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 65,
+    "MDEF": 21
+  },
+  "image": "data/images/weapon-595.png",
+  "file": "weapon-595.json"
+}

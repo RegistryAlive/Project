@@ -1,0 +1,15 @@
+{
+  "id": 8452,
+  "name": "Complete Warri",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A special badge that can re-challenge the event [Floors 20, 25]",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8452.png",
+  "file": "questprop-8452.json"
+}

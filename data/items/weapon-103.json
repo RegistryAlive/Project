@@ -1,0 +1,18 @@
+{
+  "id": 103,
+  "name": "Demonic Blade",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword infused with internal energy. Crit rate 30%, increase by 1% for every +10 forged, up to 40%; when equipped alongside other martial arts warrior series equipment, it can increase the damage of knives and mallets.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 60,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-103.png",
+  "file": "weapon-103.json"
+}

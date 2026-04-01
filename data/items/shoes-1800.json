@@ -1,0 +1,17 @@
+{
+  "id": 1800,
+  "name": "Gentleman's Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Wearing it can set off the vigor.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/shoes-1800.png",
+  "file": "shoes-1800.json"
+}

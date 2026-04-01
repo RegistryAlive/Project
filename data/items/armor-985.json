@@ -1,0 +1,18 @@
+{
+  "id": 985,
+  "name": "Red Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Steel / Titanium",
+  "description": "Crimson leather armor with small iron \"scales\".",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25,
+    "SPD": 8
+  },
+  "image": "data/images/armor-985.png",
+  "file": "armor-985.json"
+}

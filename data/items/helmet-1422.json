@@ -1,0 +1,18 @@
+{
+  "id": 1422,
+  "name": "Snow Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Titanium / Gold",
+  "description": "A helmet circled with a Ice dragon.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 21,
+    "DEF": 12
+  },
+  "image": "data/images/helmet-1422.png",
+  "file": "helmet-1422.json"
+}

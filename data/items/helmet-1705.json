@@ -1,0 +1,18 @@
+{
+  "id": 1705,
+  "name": "Kingfisher Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The crown is decorated with beautiful kingfisher feathers, and the lifelike kingfisher spreads its wings on its head. Decreases damage by 1% when attacked by water attributes.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 1,
+    "MATK": 35
+  },
+  "image": "data/images/helmet-1705.png",
+  "file": "helmet-1705.json"
+}

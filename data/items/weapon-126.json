@@ -1,0 +1,18 @@
+{
+  "id": 126,
+  "name": "Skinny Bronze Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Copper / Hard Tissue",
+  "description": "A sword made from bronze and animal bones.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "SPD": 18
+  },
+  "image": "data/images/weapon-126.png",
+  "file": "weapon-126.json"
+}

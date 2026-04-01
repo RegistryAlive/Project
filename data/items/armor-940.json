@@ -1,0 +1,17 @@
+{
+  "id": 940,
+  "name": "Small Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A cute western style one-piece dress.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-940.png",
+  "file": "armor-940.json"
+}

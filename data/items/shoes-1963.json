@@ -1,0 +1,18 @@
+{
+  "id": 1963,
+  "name": "Mercury Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Fur / Leather / Nylon",
+  "description": "A pair of boots emanating luminous liquid gleam",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28,
+    "MDEF": 12
+  },
+  "image": "data/images/shoes-1963.png",
+  "file": "shoes-1963.json"
+}

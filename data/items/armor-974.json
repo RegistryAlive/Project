@@ -1,0 +1,18 @@
+{
+  "id": 974,
+  "name": "Tailored Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "a tailored dress which is handmade and fitted",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 16,
+    "MATK": 6
+  },
+  "image": "data/images/armor-974.png",
+  "file": "armor-974.json"
+}

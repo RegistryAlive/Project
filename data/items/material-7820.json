@@ -1,0 +1,15 @@
+{
+  "id": 7820,
+  "name": "Swallow Feather",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Feather",
+  "description": "A Feather of swallow",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7820.png",
+  "file": "material-7820.json"
+}

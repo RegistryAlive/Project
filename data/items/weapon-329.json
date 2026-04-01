@@ -1,0 +1,17 @@
+{
+  "id": 329,
+  "name": "Heavy Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Steel / Gold / Iron",
+  "description": "Long range and heavy weapon.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 78
+  },
+  "image": "data/images/weapon-329.png",
+  "file": "weapon-329.json"
+}

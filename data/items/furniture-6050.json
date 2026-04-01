@@ -1,0 +1,15 @@
+{
+  "id": 6050,
+  "name": "80mm Special Glass",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Its 8 cm thick glass with high force resistance.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6050.png",
+  "file": "furniture-6050.json"
+}

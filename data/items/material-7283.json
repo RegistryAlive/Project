@@ -1,0 +1,17 @@
+{
+  "id": 7283,
+  "name": "Poinsettia",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Magic flower for christmas",
+  "size": "1x1",
+  "attributes": {
+    "SP": 400
+  },
+  "image": "data/images/material-7283.png",
+  "file": "material-7283.json"
+}

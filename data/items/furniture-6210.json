@@ -1,0 +1,15 @@
+{
+  "id": 6210,
+  "name": "Organic Muck",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Chemical",
+  "description": "A magic item that is helpful for the crops growth.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6210.png",
+  "file": "furniture-6210.json"
+}

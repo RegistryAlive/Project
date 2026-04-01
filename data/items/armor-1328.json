@@ -1,0 +1,18 @@
+{
+  "id": 1328,
+  "name": "Pink Pearl Dre",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A pink dance dress with an elegant luster. For every forging +2, the equipment attributes will be additionally +1, with a maximum increase of 50 attribute values",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "SPD": 15
+  },
+  "image": "data/images/armor-1328.png",
+  "file": "armor-1328.json"
+}

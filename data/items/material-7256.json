@@ -1,0 +1,18 @@
+{
+  "id": 7256,
+  "name": "Spicy Mooli",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Nutritious fried radish",
+  "size": "1x1",
+  "attributes": {
+    "SP": 90,
+    "HP": 20
+  },
+  "image": "data/images/material-7256.png",
+  "file": "material-7256.json"
+}

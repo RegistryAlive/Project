@@ -1,0 +1,15 @@
+{
+  "id": 8443,
+  "name": "Nether Pegasus",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make Nether Tianma a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8443.png",
+  "file": "questprop-8443.json"
+}

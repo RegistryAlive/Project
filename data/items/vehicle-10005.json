@@ -1,0 +1,17 @@
+{
+  "id": 10005,
+  "name": "Steam Ship",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A kind of navigational tool using steam energy",
+  "size": "4x4",
+  "attributes": {
+    "SPECIAL": 36965
+  },
+  "image": "data/images/vehicle-10005.png",
+  "file": "vehicle-10005.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 960,
+  "name": "Tripleheaded Dog (Quest)",
+  "location": "Athens",
+  "image": "data/Monster_Images/monster-960.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 175,
+    "hp": 48560,
+    "sp": 28950,
+    "catchable": "Unknown",
+    "spd": 262.5,
+    "str": 110,
+    "con": 100,
+    "int": 165,
+    "wis": 150,
+    "agi": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6572,
+  "name": "Christm tiles",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Christmas Eve style wallpaper, allowing players to change to different floor designs",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6572.png",
+  "file": "furniture-6572.json"
+}

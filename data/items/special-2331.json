@@ -1,0 +1,15 @@
+{
+  "id": 2331,
+  "name": "Fixed Stick",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 0,
+  "rarity": "rare",
+  "base": "N/A",
+  "description": "A stick with holy power to freeze people.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2331.png",
+  "file": "special-2331.json"
+}

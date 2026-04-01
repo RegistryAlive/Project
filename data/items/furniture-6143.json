@@ -1,0 +1,15 @@
+{
+  "id": 6143,
+  "name": "Sailing Deck",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Wooden deck of a jalor",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6143.png",
+  "file": "furniture-6143.json"
+}

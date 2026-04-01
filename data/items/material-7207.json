@@ -1,0 +1,18 @@
+{
+  "id": 7207,
+  "name": "Braised Pork Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat / Wheat",
+  "description": "Noodles with sweet-sour pork",
+  "size": "1x1",
+  "attributes": {
+    "HP": 270,
+    "SP": 155
+  },
+  "image": "data/images/material-7207.png",
+  "file": "material-7207.json"
+}

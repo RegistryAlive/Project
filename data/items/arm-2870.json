@@ -1,0 +1,18 @@
+{
+  "id": 2870,
+  "name": "Emerald Armlet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Special for Xaolan, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 50,
+    "MaxHP": 360
+  },
+  "image": "data/images/arm-2870.png",
+  "file": "arm-2870.json"
+}

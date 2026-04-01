@@ -1,0 +1,18 @@
+{
+  "id": 505,
+  "name": "Nana's Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 21,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A magic wand abandoned with Qlaya as a child.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 32,
+    "MaxHP": 50
+  },
+  "image": "data/images/weapon-505.png",
+  "file": "weapon-505.json"
+}

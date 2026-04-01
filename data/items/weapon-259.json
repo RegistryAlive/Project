@@ -1,0 +1,18 @@
+{
+  "id": 259,
+  "name": "Snake Umbrella",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The red Japanese paper umbrella with snake-eye pattern is simple and full of details. The exquisite workmanship is amazing, with a 46% critical strike rate; when equipped with other Taisho Roman series equipment at the same time, an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 80,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-259.png",
+  "file": "weapon-259.json"
+}

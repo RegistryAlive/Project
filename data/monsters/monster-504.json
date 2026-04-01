@@ -1,0 +1,45 @@
+{
+  "id": 504,
+  "name": "Mushroom",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-504.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Spore",
+      "itemId": 7527,
+      "itemFile": "material-7527.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mushroom",
+      "itemId": 7400,
+      "itemFile": "material-7400.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ordinary Wood",
+      "itemId": 7647,
+      "itemFile": "material-7647.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sun Mushroom",
+      "itemId": 7523,
+      "itemFile": "material-7523.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 5,
+    "hp": 51,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 13.5,
+    "str": 2,
+    "con": 2,
+    "int": 4,
+    "wis": 4,
+    "agi": 3
+  }
+}

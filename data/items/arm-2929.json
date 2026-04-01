@@ -1,0 +1,18 @@
+{
+  "id": 2929,
+  "name": "Lantern Bracel",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Sky lanterns fly high. When attacked by a water-based enemy, the damage is reduced by 3% (the effect will disappear if you change the shape of the bracelet)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "SPD": 47
+  },
+  "image": "data/images/arm-2929.png",
+  "file": "arm-2929.json"
+}

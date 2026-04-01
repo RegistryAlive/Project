@@ -1,0 +1,27 @@
+{
+  "id": 557,
+  "name": "Apprentice",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-557.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 61,
+    "hp": 555,
+    "sp": 422,
+    "catchable": "Unknown",
+    "spd": 163.5,
+    "str": 47,
+    "con": 44,
+    "int": 29,
+    "wis": 27,
+    "agi": 36
+  }
+}

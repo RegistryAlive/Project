@@ -1,0 +1,18 @@
+{
+  "id": 1716,
+  "name": "Nightingale Ha",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A helmet worn by the bravest and strongest warriors. When using bow weapons, attack damage +1%.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 1,
+    "MaxHP": 200
+  },
+  "image": "data/images/helmet-1716.png",
+  "file": "helmet-1716.json"
+}

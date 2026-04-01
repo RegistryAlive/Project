@@ -1,0 +1,33 @@
+{
+  "id": 369,
+  "name": "Flattened Starfish",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-369.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Starfish Tentacles",
+      "itemId": 7795,
+      "itemFile": "material-7795.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 51,
+    "hp": 491,
+    "sp": 446,
+    "catchable": "Yes",
+    "spd": 128.5,
+    "str": 35,
+    "con": 33,
+    "int": 28,
+    "wis": 31,
+    "agi": 26
+  }
+}

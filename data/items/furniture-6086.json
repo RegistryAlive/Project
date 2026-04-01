@@ -1,0 +1,15 @@
+{
+  "id": 6086,
+  "name": "Nylon",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Nylon",
+  "description": "One kind of flexible combination",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6086.png",
+  "file": "furniture-6086.json"
+}

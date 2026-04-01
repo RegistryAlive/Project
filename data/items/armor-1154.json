@@ -1,0 +1,15 @@
+{
+  "id": 1154,
+  "name": "F-White Day Suit (1)",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Nylon",
+  "description": "Female dress special for White Day",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1154.png",
+  "file": "armor-1154.json"
+}

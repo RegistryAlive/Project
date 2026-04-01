@@ -1,0 +1,15 @@
+{
+  "id": 8351,
+  "name": "Purple Chest Key",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Opens purple chests",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8351.png",
+  "file": "questprop-8351.json"
+}

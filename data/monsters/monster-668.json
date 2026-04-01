@@ -1,0 +1,27 @@
+{
+  "id": 668,
+  "name": "Drunk Man",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-668.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 28,
+    "hp": 290,
+    "sp": 124,
+    "catchable": "Unknown",
+    "spd": 66,
+    "str": 27,
+    "con": 27,
+    "int": 10,
+    "wis": 8,
+    "agi": 12
+  }
+}

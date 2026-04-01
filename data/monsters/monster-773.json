@@ -1,0 +1,27 @@
+{
+  "id": 773,
+  "name": "Immortal Mummy (Quest)",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-773.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 88,
+    "hp": 5350,
+    "sp": 710,
+    "catchable": "Unknown",
+    "spd": 220,
+    "str": 72,
+    "con": 70,
+    "int": 41,
+    "wis": 37,
+    "agi": 44
+  }
+}

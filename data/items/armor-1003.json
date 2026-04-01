@@ -1,0 +1,17 @@
+{
+  "id": 1003,
+  "name": "Neptune robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 49,
+  "level": 98,
+  "rarity": "legendary",
+  "base": null,
+  "description": "When the demon turned into adult wearing the robes, to conceal their identity",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 0
+  },
+  "image": "data/images/armor-1003.png",
+  "file": "armor-1003.json"
+}

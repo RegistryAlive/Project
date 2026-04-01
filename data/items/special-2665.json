@@ -1,0 +1,18 @@
+{
+  "id": 2665,
+  "name": "Ruby Earbobs",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal)",
+  "description": "Made with ruby",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 12,
+    "MDEF": 4
+  },
+  "image": "data/images/special-2665.png",
+  "file": "special-2665.json"
+}

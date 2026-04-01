@@ -1,0 +1,18 @@
+{
+  "id": 441,
+  "name": "Wooden Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": null,
+  "description": "A short bow used in exercise .",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3,
+    "SPD": 1
+  },
+  "image": "data/images/weapon-441.png",
+  "file": "weapon-441.json"
+}

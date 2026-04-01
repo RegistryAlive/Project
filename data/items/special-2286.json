@@ -1,0 +1,18 @@
+{
+  "id": 2286,
+  "name": "Silvery Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Platinum",
+  "description": "A ring made with silver",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 10,
+    "MATK": 4
+  },
+  "image": "data/images/special-2286.png",
+  "file": "special-2286.json"
+}

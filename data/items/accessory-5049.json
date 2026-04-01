@@ -1,0 +1,15 @@
+{
+  "id": 5049,
+  "name": "Eye drops",
+  "type": "ItemBattle",
+  "category": "accessory",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Syrup made of special eye drops",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5049.png",
+  "file": "accessory-5049.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1520,
+  "name": "Stand Ears+4",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 50,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets. Its numerical value can advance",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 50
+  },
+  "image": "data/images/helmet-1520.png",
+  "file": "helmet-1520.json"
+}

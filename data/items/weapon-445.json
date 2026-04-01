@@ -1,0 +1,18 @@
+{
+  "id": 445,
+  "name": "Blue Moon Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Special wand for Kanako after her rebirth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "SPD": 24
+  },
+  "image": "data/images/weapon-445.png",
+  "file": "weapon-445.json"
+}

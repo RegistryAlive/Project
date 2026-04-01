@@ -1,0 +1,18 @@
+{
+  "id": 362,
+  "name": "Celestial Halb",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Enhanced halberd for Young Sano. Cannot be repaired.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 65,
+    "SPD": 15
+  },
+  "image": "data/images/weapon-362.png",
+  "file": "weapon-362.json"
+}

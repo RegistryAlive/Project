@@ -1,0 +1,51 @@
+{
+  "id": 247,
+  "name": "Sheep",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-247.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Celery",
+      "itemId": 7407,
+      "itemFile": "material-7407.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Caraway",
+      "itemId": 7411,
+      "itemFile": "material-7411.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sheepskin",
+      "itemId": 7683,
+      "itemFile": "material-7683.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 46,
+    "hp": 370,
+    "sp": 358,
+    "catchable": "Unknown",
+    "spd": 127,
+    "str": 28,
+    "con": 30,
+    "int": 26,
+    "wis": 25,
+    "agi": 29
+  }
+}

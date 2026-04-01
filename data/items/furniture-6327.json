@@ -1,0 +1,15 @@
+{
+  "id": 6327,
+  "name": "Fortune Egg",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "It can obtain unexpected items with coins.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6327.png",
+  "file": "furniture-6327.json"
+}

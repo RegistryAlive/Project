@@ -1,0 +1,17 @@
+{
+  "id": 2778,
+  "name": "Iron Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Wood",
+  "description": "Cuffs which are fused from iron",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 8
+  },
+  "image": "data/images/arm-2778.png",
+  "file": "arm-2778.json"
+}

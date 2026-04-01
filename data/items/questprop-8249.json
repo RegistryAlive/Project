@@ -1,0 +1,15 @@
+{
+  "id": 8249,
+  "name": "Key of Prison",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Key from the prison guard.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8249.png",
+  "file": "questprop-8249.json"
+}

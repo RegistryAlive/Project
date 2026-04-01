@@ -1,0 +1,17 @@
+{
+  "id": 304,
+  "name": "Bronze Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "Forged precisely with bronze, has 3 heads.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30
+  },
+  "image": "data/images/weapon-304.png",
+  "file": "weapon-304.json"
+}

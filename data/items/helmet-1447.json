@@ -1,0 +1,18 @@
+{
+  "id": 1447,
+  "name": "Energy Halo",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 16,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Iron",
+  "description": "MaxHP+80, MaxSP+80, can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 80,
+    "MaxSP": 80
+  },
+  "image": "data/images/helmet-1447.png",
+  "file": "helmet-1447.json"
+}

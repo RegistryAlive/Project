@@ -1,0 +1,15 @@
+{
+  "id": 6568,
+  "name": "Gothic tiles",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Gothic style floor tiles, allowing players to change to different wall colors",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6568.png",
+  "file": "furniture-6568.json"
+}

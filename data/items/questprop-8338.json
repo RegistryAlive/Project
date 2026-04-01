@@ -1,0 +1,15 @@
+{
+  "id": 8338,
+  "name": "Sky Scroll",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "An introduction to Curse Scroll",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8338.png",
+  "file": "questprop-8338.json"
+}

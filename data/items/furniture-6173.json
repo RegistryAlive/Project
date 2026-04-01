@@ -1,0 +1,15 @@
+{
+  "id": 6173,
+  "name": "Barrel",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The Main part of a gun",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6173.png",
+  "file": "furniture-6173.json"
+}

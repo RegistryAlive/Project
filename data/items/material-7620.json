@@ -1,0 +1,15 @@
+{
+  "id": 7620,
+  "name": "Magic Powder",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Magic",
+  "description": "A Powder with magic power",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7620.png",
+  "file": "material-7620.json"
+}

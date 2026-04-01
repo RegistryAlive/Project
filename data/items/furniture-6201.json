@@ -1,0 +1,15 @@
+{
+  "id": 6201,
+  "name": "Blackart Powder",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Magic",
+  "description": "The powder which was made from the beast's teeth.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6201.png",
+  "file": "furniture-6201.json"
+}

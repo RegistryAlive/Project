@@ -1,0 +1,17 @@
+{
+  "id": 1384,
+  "name": "Pink Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Quartz (Crystal) / Grass",
+  "description": "A laurel which is made of pind crystal",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 9
+  },
+  "image": "data/images/helmet-1384.png",
+  "file": "helmet-1384.json"
+}

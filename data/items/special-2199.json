@@ -1,0 +1,17 @@
+{
+  "id": 2199,
+  "name": "Swift Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Armlet of swiftness exclusivly used by a pet man.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 125
+  },
+  "image": "data/images/special-2199.png",
+  "file": "special-2199.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6270,
+  "name": "Resource Recycling",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A pail used to lay recycling resource.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6270.png",
+  "file": "furniture-6270.json"
+}

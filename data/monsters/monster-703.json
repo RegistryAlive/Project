@@ -1,0 +1,27 @@
+{
+  "id": 703,
+  "name": "Frederico",
+  "location": "Ghost Isle",
+  "image": "data/Monster_Images/monster-703.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 79,
+    "hp": 661,
+    "sp": 1004,
+    "catchable": "Unknown",
+    "spd": 186.5,
+    "str": 31,
+    "con": 38,
+    "int": 68,
+    "wis": 66,
+    "agi": 34
+  }
+}

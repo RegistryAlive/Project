@@ -1,0 +1,17 @@
+{
+  "id": 1128,
+  "name": "Purple Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Steel / Iron / Titanium",
+  "description": "Defensive armor made from a copper alloy",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 38
+  },
+  "image": "data/images/armor-1128.png",
+  "file": "armor-1128.json"
+}

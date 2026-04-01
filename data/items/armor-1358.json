@@ -1,0 +1,18 @@
+{
+  "id": 1358,
+  "name": "Cloth Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 8,
+    "SPD": 5
+  },
+  "image": "data/images/armor-1358.png",
+  "file": "armor-1358.json"
+}

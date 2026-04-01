@@ -1,0 +1,18 @@
+{
+  "id": 1943,
+  "name": "Mana Fur Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Feather / Leather / Magic",
+  "description": "Increases MDEF&MATK after equipping",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 28,
+    "MDEF": 8
+  },
+  "image": "data/images/shoes-1943.png",
+  "file": "shoes-1943.json"
+}

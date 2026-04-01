@@ -1,0 +1,15 @@
+{
+  "id": 8475,
+  "name": "RuyiCow Ticket",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make Jixiang Ruyi Cow a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8475.png",
+  "file": "questprop-8475.json"
+}

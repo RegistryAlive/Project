@@ -1,0 +1,39 @@
+{
+  "id": 34,
+  "name": "Valley Tyrannosaur",
+  "location": "Hezrou Island",
+  "image": "data/Monster_Images/monster-34.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lemon",
+      "itemId": 7449,
+      "itemFile": "material-7449.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lei Dragon Thigh",
+      "itemId": 7813,
+      "itemFile": "material-7813.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 77,
+    "hp": 985,
+    "sp": 638,
+    "catchable": "Yes",
+    "spd": 185.5,
+    "str": 60,
+    "con": 61,
+    "int": 35,
+    "wis": 40,
+    "agi": 35
+  }
+}

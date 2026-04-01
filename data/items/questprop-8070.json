@@ -1,0 +1,15 @@
+{
+  "id": 8070,
+  "name": "Holy Spirit Vo",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a Holy Spirit become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8070.png",
+  "file": "questprop-8070.json"
+}

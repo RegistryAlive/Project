@@ -1,0 +1,18 @@
+{
+  "id": 1961,
+  "name": "F-Dream Xmas Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Xmas boots for girls",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "DEF": 10
+  },
+  "image": "data/images/shoes-1961.png",
+  "file": "shoes-1961.json"
+}

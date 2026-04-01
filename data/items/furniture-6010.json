@@ -1,0 +1,15 @@
+{
+  "id": 6010,
+  "name": "Driving Device",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Drives one system to operate",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6010.png",
+  "file": "furniture-6010.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2803,
+  "name": "Chaos Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Titanium / Gold",
+  "description": "Used by Earth spirits having good defense.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25,
+    "SPD": 6
+  },
+  "image": "data/images/arm-2803.png",
+  "file": "arm-2803.json"
+}

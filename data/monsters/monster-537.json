@@ -1,0 +1,51 @@
+{
+  "id": 537,
+  "name": "Green Stegosaurus",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-537.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Dinosaur Fur",
+      "itemId": 7812,
+      "itemFile": "material-7812.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chinese Cabbage",
+      "itemId": 7405,
+      "itemFile": "material-7405.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pumpkin",
+      "itemId": 7423,
+      "itemFile": "material-7423.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Unknown",
+      "itemId": 7892,
+      "itemFile": "material-7892.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 66,
+    "hp": 750,
+    "sp": 500,
+    "catchable": "Unknown",
+    "spd": 163,
+    "str": 54,
+    "con": 48,
+    "int": 32,
+    "wis": 32,
+    "agi": 32
+  }
+}

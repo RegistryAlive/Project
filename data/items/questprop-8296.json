@@ -1,0 +1,15 @@
+{
+  "id": 8296,
+  "name": "Irondino Ticket",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Makes a irondino be your companion. Cant be traded",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8296.png",
+  "file": "questprop-8296.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7865,
+  "name": "Boiled Tuna",
+  "type": "Material",
+  "category": "material",
+  "rank": 8,
+  "level": 16,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "A kind of super sashimi with red color",
+  "size": "1x1",
+  "attributes": {
+    "HP": 270,
+    "SP": 170
+  },
+  "image": "data/images/material-7865.png",
+  "file": "material-7865.json"
+}

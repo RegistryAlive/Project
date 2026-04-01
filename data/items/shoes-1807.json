@@ -1,0 +1,17 @@
+{
+  "id": 1807,
+  "name": "White Leather",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Colorless and suitable for banquets.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/shoes-1807.png",
+  "file": "shoes-1807.json"
+}

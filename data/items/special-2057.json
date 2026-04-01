@@ -1,0 +1,18 @@
+{
+  "id": 2057,
+  "name": "Crystal Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Jade / Silver",
+  "description": "Earrings made from obsidian from the deep sea.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 22,
+    "MaxSP": 50
+  },
+  "image": "data/images/special-2057.png",
+  "file": "special-2057.json"
+}

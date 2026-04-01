@@ -1,0 +1,27 @@
+{
+  "id": 707,
+  "name": "Giant Earthworm (Quest)",
+  "location": "Athens",
+  "image": "data/Monster_Images/monster-707.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 25500,
+    "sp": 1554,
+    "catchable": "Unknown",
+    "spd": 225,
+    "str": 61,
+    "con": 75,
+    "int": 50,
+    "wis": 54,
+    "agi": 45
+  }
+}

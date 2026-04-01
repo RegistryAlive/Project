@@ -1,0 +1,39 @@
+{
+  "id": 1173,
+  "name": "Mayan Blue Race",
+  "location": "Maya",
+  "image": "data/Monster_Images/monster-1173.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tiger Meat",
+      "itemId": 7476,
+      "itemFile": "material-7476.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ruby",
+      "itemId": 7595,
+      "itemFile": "material-7595.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 89,
+    "hp": 0,
+    "sp": 0,
+    "catchable": null,
+    "spd": 243.5,
+    "str": 45,
+    "con": 51,
+    "int": 61,
+    "wis": 55,
+    "agi": 55
+  }
+}

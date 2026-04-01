@@ -1,0 +1,27 @@
+{
+  "id": 663,
+  "name": "Destroy Scorpion (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-663.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 125,
+    "hp": 6500,
+    "sp": 2300,
+    "catchable": "Unknown",
+    "spd": 339.5,
+    "str": 67,
+    "con": 58,
+    "int": 76,
+    "wis": 98,
+    "agi": 76
+  }
+}

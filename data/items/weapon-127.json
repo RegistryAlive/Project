@@ -1,0 +1,18 @@
+{
+  "id": 127,
+  "name": "Skeleton Iron Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Iron / Hard Tissue",
+  "description": "A sword made from iron and animal bones.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 19,
+    "SPD": 19
+  },
+  "image": "data/images/weapon-127.png",
+  "file": "weapon-127.json"
+}

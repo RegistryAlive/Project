@@ -1,0 +1,15 @@
+{
+  "id": 8253,
+  "name": "Uncle's Ladder",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Just ladder. No metaphorical meaning",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8253.png",
+  "file": "questprop-8253.json"
+}

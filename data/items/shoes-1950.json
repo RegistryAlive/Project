@@ -1,0 +1,18 @@
+{
+  "id": 1950,
+  "name": "Cat Claw Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Leather / Feather / Nylon / Magic",
+  "description": "Special boots for kitty in hell",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "MDEF": 8
+  },
+  "image": "data/images/shoes-1950.png",
+  "file": "shoes-1950.json"
+}

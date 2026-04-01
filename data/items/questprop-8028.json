@@ -1,0 +1,15 @@
+{
+  "id": 8028,
+  "name": "Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "This voucher can be exchange for proper things.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8028.png",
+  "file": "questprop-8028.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2843,
+  "name": "Blue-rip Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Titanium / Jade",
+  "description": "The bracers radiate a blue light",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 23,
+    "MaxHP": 80
+  },
+  "image": "data/images/arm-2843.png",
+  "file": "arm-2843.json"
+}

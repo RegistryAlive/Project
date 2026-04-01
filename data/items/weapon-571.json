@@ -1,0 +1,18 @@
+{
+  "id": 571,
+  "name": "Compression Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "For Qlaya's exclusive use after her rebirth",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 38,
+    "MaxSP": 100
+  },
+  "image": "data/images/weapon-571.png",
+  "file": "weapon-571.json"
+}

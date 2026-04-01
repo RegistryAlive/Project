@@ -1,0 +1,15 @@
+{
+  "id": 6186,
+  "name": "Polish Emerald",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Corundum",
+  "description": "A Special gem with a careful polish",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6186.png",
+  "file": "furniture-6186.json"
+}

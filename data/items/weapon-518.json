@@ -1,0 +1,18 @@
+{
+  "id": 518,
+  "name": "Bead Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Tin / Jade",
+  "description": "A famous law wand.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 23,
+    "MDEF": 19
+  },
+  "image": "data/images/weapon-518.png",
+  "file": "weapon-518.json"
+}

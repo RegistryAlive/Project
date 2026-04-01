@@ -1,0 +1,18 @@
+{
+  "id": 930,
+  "name": "Thunder Spear+3",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "MAXSP": 120
+  },
+  "image": "data/images/weapon-930.png",
+  "file": "weapon-930.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6120,
+  "name": "Balloon Basket",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Basket of a hot-air balloon",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6120.png",
+  "file": "furniture-6120.json"
+}

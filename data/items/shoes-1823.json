@@ -1,0 +1,17 @@
+{
+  "id": 1823,
+  "name": "Beast Fur Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Boots which are made from hide",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 13
+  },
+  "image": "data/images/shoes-1823.png",
+  "file": "shoes-1823.json"
+}

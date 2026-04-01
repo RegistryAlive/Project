@@ -1,0 +1,17 @@
+{
+  "id": 7149,
+  "name": "Roasted Beef",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Succulent roasted beef",
+  "size": "1x1",
+  "attributes": {
+    "HP": 250
+  },
+  "image": "data/images/material-7149.png",
+  "file": "material-7149.json"
+}

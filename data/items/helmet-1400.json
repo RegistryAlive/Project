@@ -1,0 +1,18 @@
+{
+  "id": 1400,
+  "name": "Cloth Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Flower",
+  "description": "A hat which is made from cotton",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 7,
+    "SPD": 3
+  },
+  "image": "data/images/helmet-1400.png",
+  "file": "helmet-1400.json"
+}

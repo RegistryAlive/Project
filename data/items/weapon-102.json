@@ -1,0 +1,18 @@
+{
+  "id": 102,
+  "name": "Sabre Mary",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Brave Strike; when equipped together with other Nutcracker series equipment, it can increase the damage of swords and muskets.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 60,
+    "SPD": 25
+  },
+  "image": "data/images/weapon-102.png",
+  "file": "weapon-102.json"
+}

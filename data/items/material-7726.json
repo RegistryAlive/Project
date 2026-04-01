@@ -1,0 +1,15 @@
+{
+  "id": 7726,
+  "name": "Dragon Claw",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 16,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "Claws of a dragon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7726.png",
+  "file": "material-7726.json"
+}

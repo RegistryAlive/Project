@@ -1,0 +1,15 @@
+{
+  "id": 8007,
+  "name": "Small Poached Egg",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Zhuang Zhi's favorite poached egg.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8007.png",
+  "file": "questprop-8007.json"
+}

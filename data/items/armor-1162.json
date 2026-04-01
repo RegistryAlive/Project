@@ -1,0 +1,18 @@
+{
+  "id": 1162,
+  "name": "Jade Silk Cloth",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 43,
+  "level": 86,
+  "rarity": "legendary",
+  "base": "Feather / Grass / Nylon",
+  "description": "Silk cloth",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 30,
+    "MATK": 13
+  },
+  "image": "data/images/armor-1162.png",
+  "file": "armor-1162.json"
+}

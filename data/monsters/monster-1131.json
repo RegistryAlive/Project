@@ -1,0 +1,45 @@
+{
+  "id": 1131,
+  "name": "Fire Caterpillar",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1132.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Small Cucumber",
+      "itemId": 7425,
+      "itemFile": "material-7425.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Garlic",
+      "itemId": 7417,
+      "itemFile": "material-7417.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Leek",
+      "itemId": 7410,
+      "itemFile": "material-7410.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 43,
+    "hp": 448,
+    "sp": 338,
+    "catchable": "Yes",
+    "spd": 104.5,
+    "str": 23,
+    "con": 32,
+    "int": 30,
+    "wis": 24,
+    "agi": 20
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 190,
+  "name": "Twin Swords",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Two swords in one.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "SPD": 32
+  },
+  "image": "data/images/weapon-190.png",
+  "file": "weapon-190.json"
+}

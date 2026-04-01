@@ -1,0 +1,18 @@
+{
+  "id": 1152,
+  "name": "Wizard Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Grass / Feather / Nylon / Magic",
+  "description": "Tailored for wizards",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 22,
+    "MDEF": 22
+  },
+  "image": "data/images/armor-1152.png",
+  "file": "armor-1152.json"
+}

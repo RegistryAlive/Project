@@ -1,0 +1,15 @@
+{
+  "id": 7365,
+  "name": "Common Grass",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "common grass on the sides of road.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7365.png",
+  "file": "material-7365.json"
+}

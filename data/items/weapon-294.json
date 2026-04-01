@@ -1,0 +1,17 @@
+{
+  "id": 294,
+  "name": "Death Scythe",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Titanium / Copper / Iron",
+  "description": "This is Death's weapon and can harness souls.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 64
+  },
+  "image": "data/images/weapon-294.png",
+  "file": "weapon-294.json"
+}

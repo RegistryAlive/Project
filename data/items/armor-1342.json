@@ -1,0 +1,18 @@
+{
+  "id": 1342,
+  "name": "Nutcrackr Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dazzling attire of valour; increases damage of swords and muskets when worn with other Nutcracker series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 350,
+    "SPD": 30
+  },
+  "image": "data/images/armor-1342.png",
+  "file": "armor-1342.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2609,
+  "name": "Coarse Collar",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "A coarse collar exclusively used by pet beasts.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 50,
+    "DEF": 5
+  },
+  "image": "data/images/special-2609.png",
+  "file": "special-2609.json"
+}

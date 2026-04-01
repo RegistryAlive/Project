@@ -1,0 +1,17 @@
+{
+  "id": 7317,
+  "name": "Asiatic Wormwood",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Restores energy after drinking the wormwood tea",
+  "size": "1x1",
+  "attributes": {
+    "SP": 600
+  },
+  "image": "data/images/material-7317.png",
+  "file": "material-7317.json"
+}

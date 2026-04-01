@@ -1,0 +1,17 @@
+{
+  "id": 7482,
+  "name": "Snake Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Restorative snake meat",
+  "size": "1x1",
+  "attributes": {
+    "SP": 90
+  },
+  "image": "data/images/material-7482.png",
+  "file": "material-7482.json"
+}

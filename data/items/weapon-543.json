@@ -1,0 +1,18 @@
+{
+  "id": 543,
+  "name": "Power Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Bright's wand",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 30,
+    "DEF": 30
+  },
+  "image": "data/images/weapon-543.png",
+  "file": "weapon-543.json"
+}

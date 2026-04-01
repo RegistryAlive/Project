@@ -1,0 +1,18 @@
+{
+  "id": 7251,
+  "name": "Spicy Waterspi",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It will be more delicious with sauce",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100,
+    "SP": 10
+  },
+  "image": "data/images/material-7251.png",
+  "file": "material-7251.json"
+}

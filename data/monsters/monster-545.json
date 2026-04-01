@@ -1,0 +1,27 @@
+{
+  "id": 545,
+  "name": "Amy",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-545.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 54,
+    "hp": 331,
+    "sp": 631,
+    "catchable": "Unknown",
+    "spd": 129,
+    "str": 19,
+    "con": 24,
+    "int": 50,
+    "wis": 45,
+    "agi": 24
+  }
+}

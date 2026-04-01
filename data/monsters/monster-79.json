@@ -1,0 +1,45 @@
+{
+  "id": 79,
+  "name": "Green Stone Monster",
+  "location": "Kelan Village's Cave",
+  "image": "data/Monster_Images/monster-79.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Iron Ore",
+      "itemId": 7562,
+      "itemFile": "material-7562.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Obsidian",
+      "itemId": 7632,
+      "itemFile": "material-7632.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Clay",
+      "itemId": 7642,
+      "itemFile": "material-7642.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Shale",
+      "itemId": 7631,
+      "itemFile": "material-7631.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 4,
+    "hp": 55,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 10,
+    "str": 3,
+    "con": 3,
+    "int": 2,
+    "wis": 2,
+    "agi": 2
+  }
+}

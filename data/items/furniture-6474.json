@@ -1,0 +1,15 @@
+{
+  "id": 6474,
+  "name": "WitMaid-Qi Pao",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Wearing a traditional Chinese costume, this maid helps you in pet creation.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6474.png",
+  "file": "furniture-6474.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6064,
+  "name": "Vitriol",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Diluted vitriol",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6064.png",
+  "file": "furniture-6064.json"
+}

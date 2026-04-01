@@ -1,0 +1,15 @@
+{
+  "id": 6480,
+  "name": "Green T Bonsai",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Green Tree Bonsai. Placed at home to increase greenness.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6480.png",
+  "file": "furniture-6480.json"
+}

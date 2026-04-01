@@ -1,0 +1,17 @@
+{
+  "id": 1600,
+  "name": "Bluehawk Headdress",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Diamond / Steel / Magic",
+  "description": "A hawk-shaped head gear crafted from blue diamonds.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 36
+  },
+  "image": "data/images/helmet-1600.png",
+  "file": "helmet-1600.json"
+}

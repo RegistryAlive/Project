@@ -1,0 +1,15 @@
+{
+  "id": 6463,
+  "name": "Snowy Wallpaper",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Changes the design and color of the wall",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6463.png",
+  "file": "furniture-6463.json"
+}

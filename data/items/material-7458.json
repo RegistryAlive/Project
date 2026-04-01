@@ -1,0 +1,17 @@
+{
+  "id": 7458,
+  "name": "Durian Fruit.",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Fruit with a unique taste and spiky...",
+  "size": "1x1",
+  "attributes": {
+    "SP": 70
+  },
+  "image": "data/images/material-7458.png",
+  "file": "material-7458.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 978,
+  "name": "Demon Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Nylon / Flower",
+  "description": "Crisp and intimidating, the ultimate \"Power Suit\".",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 26
+  },
+  "image": "data/images/armor-978.png",
+  "file": "armor-978.json"
+}

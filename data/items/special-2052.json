@@ -1,0 +1,18 @@
+{
+  "id": 2052,
+  "name": "Silvery Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Silver",
+  "description": "An ear ring which is made from pure silver",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 7,
+    "MATK": 2
+  },
+  "image": "data/images/special-2052.png",
+  "file": "special-2052.json"
+}

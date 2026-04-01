@@ -1,0 +1,15 @@
+{
+  "id": 8423,
+  "name": "Silver War Lio",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make the Silver Lion as a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8423.png",
+  "file": "questprop-8423.json"
+}

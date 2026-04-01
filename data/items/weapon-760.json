@@ -1,0 +1,18 @@
+{
+  "id": 760,
+  "name": "Steel Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Steel / Wood",
+  "description": "A gavel refined from pure steel.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 21,
+    "DEF": 23
+  },
+  "image": "data/images/weapon-760.png",
+  "file": "weapon-760.json"
+}

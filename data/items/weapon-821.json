@@ -1,0 +1,17 @@
+{
+  "id": 821,
+  "name": "Sacred scrolls",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": null,
+  "description": "There are sacred blessings magic book",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18
+  },
+  "image": "data/images/weapon-821.png",
+  "file": "weapon-821.json"
+}

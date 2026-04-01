@@ -1,0 +1,17 @@
+{
+  "id": 10075,
+  "name": "Seven Spice",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A car made of incense wood, a magic vehicle that can turn bad luck into good, and a magic ball of wool that can be used as a wear-and-tear substitute.",
+  "size": "5x5",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10075.png",
+  "file": "vehicle-10075.json"
+}

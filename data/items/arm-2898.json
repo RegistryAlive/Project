@@ -1,0 +1,17 @@
+{
+  "id": 2898,
+  "name": "Citrine Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Lead / Gold",
+  "description": "A pair of bracers casted with brilliant yellow gemstones.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18
+  },
+  "image": "data/images/arm-2898.png",
+  "file": "arm-2898.json"
+}

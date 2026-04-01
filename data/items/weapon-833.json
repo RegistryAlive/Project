@@ -1,0 +1,17 @@
+{
+  "id": 833,
+  "name": "Blaze Grimoire",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A old magic book, that records flame magic. Equipping it allows uWit of the skill \"Burn out\". 46% chance of critical strike effect.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 55
+  },
+  "image": "data/images/weapon-833.png",
+  "file": "weapon-833.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6606,
+  "name": "Square deco",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Square gift decoration",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6606.png",
+  "file": "furniture-6606.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6565,
+  "name": "Bat Wall St",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Bat-shaped wall stickers",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6565.png",
+  "file": "furniture-6565.json"
+}

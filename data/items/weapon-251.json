@@ -1,0 +1,18 @@
+{
+  "id": 251,
+  "name": "Dawn",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The sword that shone with crimson light contained very powerful power. Critical strike rate is 30%, and the critical strike rate increases by 1% per forging +10, up to 40%, and critical strike drills cannot be embedded",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "MaxSP": 450
+  },
+  "image": "data/images/weapon-251.png",
+  "file": "weapon-251.json"
+}

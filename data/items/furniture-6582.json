@@ -1,0 +1,15 @@
+{
+  "id": 6582,
+  "name": "Student chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Chairs used by students in class",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6582.png",
+  "file": "furniture-6582.json"
+}

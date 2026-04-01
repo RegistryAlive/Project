@@ -1,0 +1,15 @@
+{
+  "id": 6351,
+  "name": "Large shelf",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Slightly larger goods display stand",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6351.png",
+  "file": "furniture-6351.json"
+}

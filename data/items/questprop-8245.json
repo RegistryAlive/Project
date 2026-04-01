@@ -1,0 +1,15 @@
+{
+  "id": 8245,
+  "name": "Much Gold",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A lot of gold that the old man lost.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8245.png",
+  "file": "questprop-8245.json"
+}

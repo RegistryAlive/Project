@@ -1,0 +1,15 @@
+{
+  "id": 6299,
+  "name": "Shower",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "use to shower it can save space",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6299.png",
+  "file": "furniture-6299.json"
+}

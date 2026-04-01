@@ -1,0 +1,39 @@
+{
+  "id": 1041,
+  "name": "Blue Wild Horse",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-1042.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Mung Bean",
+      "itemId": 7468,
+      "itemFile": "material-7468.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Alocasia Macrorrhiza",
+      "itemId": 7356,
+      "itemFile": "material-7356.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 73,
+    "hp": 866,
+    "sp": 681,
+    "catchable": "Unknown",
+    "spd": 179.5,
+    "str": 50,
+    "con": 54,
+    "int": 36,
+    "wis": 44,
+    "agi": 35
+  }
+}

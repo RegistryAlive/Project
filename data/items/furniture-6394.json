@@ -1,0 +1,15 @@
+{
+  "id": 6394,
+  "name": "Bunk Bed",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The buck bed that is made from wood.",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/furniture-6394.png",
+  "file": "furniture-6394.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 469,
+  "name": "Tin Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Tin / Jade",
+  "description": "A magic cane forged by tin.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 9,
+    "MDEF": 9
+  },
+  "image": "data/images/weapon-469.png",
+  "file": "weapon-469.json"
+}

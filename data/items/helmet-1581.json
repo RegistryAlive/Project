@@ -1,0 +1,18 @@
+{
+  "id": 1581,
+  "name": "Dark Feather Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Crystallization / Tin / Jade",
+  "description": "Dark Feather Helmet",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20,
+    "MDEF": 13
+  },
+  "image": "data/images/helmet-1581.png",
+  "file": "helmet-1581.json"
+}

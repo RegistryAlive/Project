@@ -1,0 +1,17 @@
+{
+  "id": 1495,
+  "name": "Dark Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Titanium",
+  "description": "A firm horn-shape helmet which has high defense.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 23
+  },
+  "image": "data/images/helmet-1495.png",
+  "file": "helmet-1495.json"
+}

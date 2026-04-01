@@ -1,0 +1,18 @@
+{
+  "id": 1466,
+  "name": "White Cat Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 32,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The clothes can increase attack power and agility",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "SPD": 12
+  },
+  "image": "data/images/helmet-1466.png",
+  "file": "helmet-1466.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2021,
+  "name": "Buddhist Clog",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clogs suitable for cultivation, wherever you walk is the fruit of cultivation; additional outfit effect can be obtained when equipped together with other Monk's Clues series outfits.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MaxHP": 200
+  },
+  "image": "data/images/shoes-2021.png",
+  "file": "shoes-2021.json"
+}

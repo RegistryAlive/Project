@@ -1,0 +1,18 @@
+{
+  "id": 1333,
+  "name": "SeaSalt Kimono",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A summer kimono made of light and cool fabrics in fresh colors.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "ATK": 40
+  },
+  "image": "data/images/armor-1333.png",
+  "file": "armor-1333.json"
+}

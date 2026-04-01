@@ -1,0 +1,18 @@
+{
+  "id": 1539,
+  "name": "Wind Aurora Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leaf",
+  "description": "Suit: Damages Earth enemies;-50% damage to Fire enemies.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "ATK": 5
+  },
+  "image": "data/images/helmet-1539.png",
+  "file": "helmet-1539.json"
+}

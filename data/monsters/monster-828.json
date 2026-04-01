@@ -1,0 +1,27 @@
+{
+  "id": 828,
+  "name": "Napdoria",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-828.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 110,
+    "hp": 18560,
+    "sp": 1072,
+    "catchable": "Unknown",
+    "spd": 295,
+    "str": 60,
+    "con": 62,
+    "int": 80,
+    "wis": 63,
+    "agi": 65
+  }
+}

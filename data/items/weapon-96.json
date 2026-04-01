@@ -1,0 +1,18 @@
+{
+  "id": 96,
+  "name": "Immortal Yanxi",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 3,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "It symbolizes th",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "MATK": 35
+  },
+  "image": "data/images/weapon-96.png",
+  "file": "weapon-96.json"
+}

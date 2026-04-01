@@ -1,0 +1,18 @@
+{
+  "id": 1265,
+  "name": "New Year Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A New Year styled dress, worn for a year of prosperity. 20% chance of Anti Seal.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 300,
+    "SPD": 45
+  },
+  "image": "data/images/armor-1265.png",
+  "file": "armor-1265.json"
+}

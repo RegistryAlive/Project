@@ -1,0 +1,45 @@
+{
+  "id": 319,
+  "name": "ET (Quest)",
+  "location": "Mayan Forest",
+  "image": "data/Monster_Images/monster-319.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Magnet",
+      "itemId": 7603,
+      "itemFile": "material-7603.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coal",
+      "itemId": 7589,
+      "itemFile": "material-7589.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Diamond",
+      "itemId": 7599,
+      "itemFile": "material-7599.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Amethyst",
+      "itemId": 7596,
+      "itemFile": "material-7596.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 9600,
+    "sp": 1215,
+    "catchable": "Unknown",
+    "spd": 270,
+    "str": 40,
+    "con": 50,
+    "int": 75,
+    "wis": 75,
+    "agi": 60
+  }
+}

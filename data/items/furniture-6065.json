@@ -1,0 +1,15 @@
+{
+  "id": 6065,
+  "name": "Firewood",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "It can be used for burning or starting fires",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6065.png",
+  "file": "furniture-6065.json"
+}

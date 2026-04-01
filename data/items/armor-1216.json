@@ -1,0 +1,17 @@
+{
+  "id": 1216,
+  "name": "Gold Yin Yang",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The yin and yang clothes sewn with blessed golden silk threads are said to feel refreshed and move faster.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 40
+  },
+  "image": "data/images/armor-1216.png",
+  "file": "armor-1216.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7169,
+  "name": "Grape Ice Cream",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 1) / Fruit",
+  "description": "Grape flavored ice cream",
+  "size": "1x1",
+  "attributes": {
+    "SP": 100,
+    "HP": 50
+  },
+  "image": "data/images/material-7169.png",
+  "file": "material-7169.json"
+}

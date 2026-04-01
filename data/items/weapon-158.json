@@ -1,0 +1,18 @@
+{
+  "id": 158,
+  "name": "Spring S.Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 55,
+  "level": 110,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword made from melted steel cooled by the sacred mountain of god.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55,
+    "SPD": 55
+  },
+  "image": "data/images/weapon-158.png",
+  "file": "weapon-158.json"
+}

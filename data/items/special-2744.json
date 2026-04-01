@@ -1,0 +1,18 @@
+{
+  "id": 2744,
+  "name": "Dark Evil Wing",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "it is kind of a dracula wing",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "MATK": 12
+  },
+  "image": "data/images/special-2744.png",
+  "file": "special-2744.json"
+}

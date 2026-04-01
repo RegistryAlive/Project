@@ -1,0 +1,15 @@
+{
+  "id": 8389,
+  "name": "Golden Horn Ex",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A voucher that can exchange golden horn to become your partner, it is not tradeable.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8389.png",
+  "file": "questprop-8389.json"
+}

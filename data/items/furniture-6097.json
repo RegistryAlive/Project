@@ -1,0 +1,15 @@
+{
+  "id": 6097,
+  "name": "Cotton Wool",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "Extracted from cotton",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6097.png",
+  "file": "furniture-6097.json"
+}

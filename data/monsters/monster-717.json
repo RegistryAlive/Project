@@ -1,0 +1,27 @@
+{
+  "id": 717,
+  "name": "Girl",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-717.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 61,
+    "hp": 382,
+    "sp": 707,
+    "catchable": "Unknown",
+    "spd": 165.5,
+    "str": 21,
+    "con": 22,
+    "int": 54,
+    "wis": 49,
+    "agi": 37
+  }
+}

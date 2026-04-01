@@ -1,0 +1,15 @@
+{
+  "id": 8181,
+  "name": "Gold Necklace",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Gold Necklaces are beloved by the villager's wives",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8181.png",
+  "file": "questprop-8181.json"
+}

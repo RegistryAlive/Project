@@ -1,0 +1,18 @@
+{
+  "id": 227,
+  "name": "Scarlet Dracoblade",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Special weapon for Victoria after her rebirth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 46,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-227.png",
+  "file": "weapon-227.json"
+}

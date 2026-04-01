@@ -1,0 +1,17 @@
+{
+  "id": 1834,
+  "name": "Long Knight Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Boots which reach above the knees.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 24
+  },
+  "image": "data/images/shoes-1834.png",
+  "file": "shoes-1834.json"
+}

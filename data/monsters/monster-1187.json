@@ -1,0 +1,45 @@
+{
+  "id": 1187,
+  "name": "Beach Seaflower",
+  "location": "North Island Beach",
+  "image": "data/Monster_Images/monster-1187.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Sashimi",
+      "itemId": 7027,
+      "itemFile": "material-7027.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wood",
+      "itemId": 7651,
+      "itemFile": "material-7651.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 3,
+    "hp": 43,
+    "sp": 100,
+    "catchable": null,
+    "spd": 8.5,
+    "str": 1,
+    "con": 1,
+    "int": 2,
+    "wis": 3,
+    "agi": 2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1299,
+  "name": "Red Uniform",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The color of the clothes used to recognize the identity is red, which represents blood.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "MaxHP": 200
+  },
+  "image": "data/images/armor-1299.png",
+  "file": "armor-1299.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7854,
+  "name": "Fried Spinach",
+  "type": "Material",
+  "category": "material",
+  "rank": 3,
+  "level": 6,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Fried spinach is easy to absorb",
+  "size": "1x1",
+  "attributes": {
+    "HP": 110,
+    "SP": 40
+  },
+  "image": "data/images/material-7854.png",
+  "file": "material-7854.json"
+}

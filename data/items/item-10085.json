@@ -1,0 +1,15 @@
+{
+  "id": 10085,
+  "name": "Alchemy Book 3",
+  "type": "Item",
+  "category": "item",
+  "rank": 3,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Grass",
+  "description": "A senior book that upgrades an item's upper limit when putting it into the furnace. Disappear after finishing compounding. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/item-10085.png",
+  "file": "item-10085.json"
+}

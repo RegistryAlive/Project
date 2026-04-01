@@ -1,0 +1,27 @@
+{
+  "id": 984,
+  "name": "Villager",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-984.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 56,
+    "hp": 508,
+    "sp": 396,
+    "catchable": "Unknown",
+    "spd": 146,
+    "str": 43,
+    "con": 41,
+    "int": 27,
+    "wis": 26,
+    "agi": 31
+  }
+}

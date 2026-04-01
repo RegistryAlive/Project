@@ -1,0 +1,15 @@
+{
+  "id": 9011,
+  "name": "Hot Kiln",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make fire items with high temperature.",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/tool-9011.png",
+  "file": "tool-9011.json"
+}

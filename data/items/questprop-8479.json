@@ -1,0 +1,15 @@
+{
+  "id": 8479,
+  "name": "Pandora's Box",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A important Box capable of sealing negative energies.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8479.png",
+  "file": "questprop-8479.json"
+}

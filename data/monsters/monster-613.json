@@ -1,0 +1,27 @@
+{
+  "id": 613,
+  "name": "Captain (Quest)",
+  "location": "Rome",
+  "image": "data/Monster_Images/monster-613.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 8600,
+    "sp": 1000,
+    "catchable": "Unknown",
+    "spd": 205,
+    "str": 35,
+    "con": 51,
+    "int": 36,
+    "wis": 38,
+    "agi": 50
+  }
+}

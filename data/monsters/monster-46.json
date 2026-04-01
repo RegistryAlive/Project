@@ -1,0 +1,39 @@
+{
+  "id": 46,
+  "name": "Bloody Scorpion",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-46.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1187,
+    "sp": 961,
+    "catchable": "Unknown",
+    "spd": 221,
+    "str": 47,
+    "con": 70,
+    "int": 50,
+    "wis": 60,
+    "agi": 43
+  }
+}

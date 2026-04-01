@@ -1,0 +1,17 @@
+{
+  "id": 7137,
+  "name": "Iron Buhdda",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leaf / Water (Type 1)",
+  "description": "A kind of tea comes from Spring House.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 350
+  },
+  "image": "data/images/material-7137.png",
+  "file": "material-7137.json"
+}

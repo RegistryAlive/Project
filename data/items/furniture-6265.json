@@ -1,0 +1,15 @@
+{
+  "id": 6265,
+  "name": "Smoke Tool",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "used to smoke the food.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6265.png",
+  "file": "furniture-6265.json"
+}

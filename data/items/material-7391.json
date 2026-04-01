@@ -1,0 +1,15 @@
+{
+  "id": 7391,
+  "name": "Fine Grass",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Grass",
+  "description": "A processed flexible grass",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7391.png",
+  "file": "material-7391.json"
+}

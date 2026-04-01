@@ -1,0 +1,18 @@
+{
+  "id": 2716,
+  "name": "Saint Armband",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 37,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Special armband for Saint Angela, 35% anti seal effect.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 35,
+    "MaxHP": 500
+  },
+  "image": "data/images/special-2716.png",
+  "file": "special-2716.json"
+}

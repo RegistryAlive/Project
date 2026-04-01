@@ -1,0 +1,18 @@
+{
+  "id": 954,
+  "name": "Leather Garment",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Leather",
+  "description": "Clothes which are made up by a single hide",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1,
+    "SPD": 1
+  },
+  "image": "data/images/armor-954.png",
+  "file": "armor-954.json"
+}

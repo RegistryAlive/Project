@@ -1,0 +1,18 @@
+{
+  "id": 249,
+  "name": "Gold Scar Swor",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword made of noble gold, the crimson blade is the proof of its strength. Has 46% crit effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "MaxHP": 500
+  },
+  "image": "data/images/weapon-249.png",
+  "file": "weapon-249.json"
+}

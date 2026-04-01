@@ -1,0 +1,17 @@
+{
+  "id": 2685,
+  "name": "Clockwork gear",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 45,
+  "level": 90,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Handmade, precise clockwork full of craftsmanship.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 55
+  },
+  "image": "data/images/special-2685.png",
+  "file": "special-2685.json"
+}

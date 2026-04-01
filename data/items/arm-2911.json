@@ -1,0 +1,17 @@
+{
+  "id": 2911,
+  "name": "Speedy bracele",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 22,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The bracelet made of special materials is particularly light, and even the user's speed is also improved",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 45
+  },
+  "image": "data/images/arm-2911.png",
+  "file": "arm-2911.json"
+}

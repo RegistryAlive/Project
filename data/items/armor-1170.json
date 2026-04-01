@@ -1,0 +1,18 @@
+{
+  "id": 1170,
+  "name": "Blackdragon Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": "Leather / Nylon / Magic",
+  "description": "Gown with magic powers",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 35,
+    "DEF": 6
+  },
+  "image": "data/images/armor-1170.png",
+  "file": "armor-1170.json"
+}

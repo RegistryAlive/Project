@@ -1,0 +1,15 @@
+{
+  "id": 7824,
+  "name": "Heavy Oil",
+  "type": "MaterialOil",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Vegetable Oil",
+  "description": "Extracted from crude oil, used for huge machines.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7824.png",
+  "file": "material-7824.json"
+}

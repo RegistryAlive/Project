@@ -1,0 +1,15 @@
+{
+  "id": 6486,
+  "name": "Pink Heart Bed",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 24,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Pink Series Bed with heart drawn. Favoured by young girls.",
+  "size": "5x4",
+  "attributes": {},
+  "image": "data/images/furniture-6486.png",
+  "file": "furniture-6486.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8383,
+  "name": "Qiqiao Poems",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "2013 Qixi festival event, you can exchange prizes with Cowherd.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8383.png",
+  "file": "questprop-8383.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1398,
+  "name": "Knight's Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Iron / Platinum",
+  "description": "A helmet for cavalry having dood defensive power.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 16,
+    "SPD": 5
+  },
+  "image": "data/images/helmet-1398.png",
+  "file": "helmet-1398.json"
+}

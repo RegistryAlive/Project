@@ -1,0 +1,15 @@
+{
+  "id": 6509,
+  "name": "Xmas Bear",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The silver-white Christmas furniture and bear dolls wearing Christmas hats are full of festive atmosphere.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6509.png",
+  "file": "furniture-6509.json"
+}

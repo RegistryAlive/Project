@@ -1,0 +1,45 @@
+{
+  "id": 230,
+  "name": "Plain Aurochs",
+  "location": "Madagascar",
+  "image": "data/Monster_Images/monster-230.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Common Grass",
+      "itemId": 7365,
+      "itemFile": "material-7365.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Urus Skin",
+      "itemId": 7692,
+      "itemFile": "material-7692.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beef",
+      "itemId": 7472,
+      "itemFile": "material-7472.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 940,
+    "sp": 791,
+    "catchable": "Yes",
+    "spd": 241,
+    "str": 48,
+    "con": 55,
+    "int": 50,
+    "wis": 49,
+    "agi": 56
+  }
+}

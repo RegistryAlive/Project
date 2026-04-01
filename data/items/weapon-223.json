@@ -1,0 +1,18 @@
+{
+  "id": 223,
+  "name": "Jade Blades",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 43,
+  "level": 86,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Amazingly sharp blades",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 48,
+    "DEF": 38
+  },
+  "image": "data/images/weapon-223.png",
+  "file": "weapon-223.json"
+}

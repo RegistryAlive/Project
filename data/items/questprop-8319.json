@@ -1,0 +1,15 @@
+{
+  "id": 8319,
+  "name": "Feena Ring",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Ring that represented Sis's love for Feena",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8319.png",
+  "file": "questprop-8319.json"
+}

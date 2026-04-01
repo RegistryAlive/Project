@@ -1,0 +1,33 @@
+{
+  "id": 209,
+  "name": "Green Rock",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-209.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Fugu Hot Pot",
+      "itemId": 7175,
+      "itemFile": "material-7175.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 95,
+    "hp": 545,
+    "sp": 454,
+    "catchable": "Unknown",
+    "spd": 196.5,
+    "str": 35,
+    "con": 27,
+    "int": 23,
+    "wis": 24,
+    "agi": 27
+  }
+}

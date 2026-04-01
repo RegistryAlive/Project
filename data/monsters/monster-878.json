@@ -1,0 +1,27 @@
+{
+  "id": 878,
+  "name": "Royal Guard",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-878.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 12350,
+    "sp": 2300,
+    "catchable": "Unknown",
+    "spd": 181,
+    "str": 40,
+    "con": 50,
+    "int": 42,
+    "wis": 40,
+    "agi": 38
+  }
+}

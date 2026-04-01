@@ -1,0 +1,17 @@
+{
+  "id": 2091,
+  "name": "Mana Statue",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Jade / Grass",
+  "description": "An idol which can improve magic attacks.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 7
+  },
+  "image": "data/images/special-2091.png",
+  "file": "special-2091.json"
+}

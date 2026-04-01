@@ -1,0 +1,18 @@
+{
+  "id": 1024,
+  "name": "Pure Iron Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "Scale armor made of hematite. Good magic defense.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 9,
+    "DEF": 8
+  },
+  "image": "data/images/armor-1024.png",
+  "file": "armor-1024.json"
+}

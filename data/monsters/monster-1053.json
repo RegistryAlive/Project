@@ -1,0 +1,39 @@
+{
+  "id": 1053,
+  "name": "Swirling Earthworm",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-1054.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Potato",
+      "itemId": 7428,
+      "itemFile": "material-7428.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pachyrhizus Leaf",
+      "itemId": 7413,
+      "itemFile": "material-7413.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 51,
+    "hp": 528,
+    "sp": 396,
+    "catchable": "Yes",
+    "spd": 116.5,
+    "str": 48,
+    "con": 36,
+    "int": 22,
+    "wis": 27,
+    "agi": 20
+  }
+}

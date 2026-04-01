@@ -1,0 +1,18 @@
+{
+  "id": 7202,
+  "name": "Seafood Soft Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rice / Vegetable / Meat / Fish and Shellfish",
+  "description": "Fried rice with seafood",
+  "size": "1x1",
+  "attributes": {
+    "HP": 380,
+    "SP": 165
+  },
+  "image": "data/images/material-7202.png",
+  "file": "material-7202.json"
+}

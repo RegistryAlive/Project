@@ -1,0 +1,15 @@
+{
+  "id": 8491,
+  "name": "Dolphin Vouch",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that make banana dolphins buddies",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8491.png",
+  "file": "questprop-8491.json"
+}

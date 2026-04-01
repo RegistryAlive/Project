@@ -1,0 +1,15 @@
+{
+  "id": 7739,
+  "name": "Rattlesnake's Tail",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "A Tail of a rattlesnake",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7739.png",
+  "file": "material-7739.json"
+}

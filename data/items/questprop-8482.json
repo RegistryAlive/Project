@@ -1,0 +1,15 @@
+{
+  "id": 8482,
+  "name": "H.Shark Ticket",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make hammerhead sharks a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8482.png",
+  "file": "questprop-8482.json"
+}

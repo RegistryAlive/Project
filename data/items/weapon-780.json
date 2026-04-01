@@ -1,0 +1,18 @@
+{
+  "id": 780,
+  "name": "Lover's Bouquet",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 12,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Adds attributes to weapons except bows and spears",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "MATK": 12
+  },
+  "image": "data/images/weapon-780.png",
+  "file": "weapon-780.json"
+}

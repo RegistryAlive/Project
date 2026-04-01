@@ -1,0 +1,18 @@
+{
+  "id": 1676,
+  "name": "Crimson D Horn",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Ornaments imitating the shape of devil horns",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "SPD": 30
+  },
+  "image": "data/images/helmet-1676.png",
+  "file": "helmet-1676.json"
+}

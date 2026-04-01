@@ -1,0 +1,18 @@
+{
+  "id": 1248,
+  "name": "Party Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dress prepared for the grand party. Designed to be the main attraction of everyone's focus.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 35,
+    "MaxHP": 300
+  },
+  "image": "data/images/armor-1248.png",
+  "file": "armor-1248.json"
+}

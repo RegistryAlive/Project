@@ -1,0 +1,17 @@
+{
+  "id": 1043,
+  "name": "Soft Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Nylon / Grass",
+  "description": "A masked costume made of the softest material.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 21
+  },
+  "image": "data/images/armor-1043.png",
+  "file": "armor-1043.json"
+}

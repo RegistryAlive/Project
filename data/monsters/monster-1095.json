@@ -1,0 +1,51 @@
+{
+  "id": 1095,
+  "name": "Red Seaflower",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-1096.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Shrimp",
+      "itemId": 7497,
+      "itemFile": "material-7497.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Anemones Tentacles",
+      "itemId": 7796,
+      "itemFile": "material-7796.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lauan",
+      "itemId": 7653,
+      "itemFile": "material-7653.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 5,
+    "hp": 57,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 13.5,
+    "str": 2,
+    "con": 3,
+    "int": 4,
+    "wis": 3,
+    "agi": 3
+  }
+}

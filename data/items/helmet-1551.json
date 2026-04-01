@@ -1,0 +1,17 @@
+{
+  "id": 1551,
+  "name": "Bunny Ears+7",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 80,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 80
+  },
+  "image": "data/images/helmet-1551.png",
+  "file": "helmet-1551.json"
+}

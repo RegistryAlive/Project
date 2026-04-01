@@ -1,0 +1,17 @@
+{
+  "id": 783,
+  "name": "Rock Hammer",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Rock / Iron",
+  "description": "Huge round hammer used by giants",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 54
+  },
+  "image": "data/images/weapon-783.png",
+  "file": "weapon-783.json"
+}

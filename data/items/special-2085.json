@@ -1,0 +1,17 @@
+{
+  "id": 2085,
+  "name": "Blooded Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Hard Tissue",
+  "description": "A specific necklace which is accreted with blood",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 2
+  },
+  "image": "data/images/special-2085.png",
+  "file": "special-2085.json"
+}

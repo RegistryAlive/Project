@@ -1,0 +1,17 @@
+{
+  "id": 10038,
+  "name": "Rainbow City E",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "According to the legend, this flying equipment is painted from the collection of the rainbow and may be able to make dreams come true.",
+  "size": "4x5",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10038.png",
+  "file": "vehicle-10038.json"
+}

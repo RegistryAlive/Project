@@ -1,0 +1,15 @@
+{
+  "id": 6477,
+  "name": "S. Flower Bon.",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Small Flower Bonsai. Placed at home to increase greenness.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6477.png",
+  "file": "furniture-6477.json"
+}

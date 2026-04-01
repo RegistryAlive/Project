@@ -1,0 +1,39 @@
+{
+  "id": 240,
+  "name": "Graverobber",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-240.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Copper Ore",
+      "itemId": 7556,
+      "itemFile": "material-7556.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Silvery Sand",
+      "itemId": 7554,
+      "itemFile": "material-7554.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 74,
+    "hp": 804,
+    "sp": 660,
+    "catchable": "Unknown",
+    "spd": 195,
+    "str": 50,
+    "con": 49,
+    "int": 42,
+    "wis": 42,
+    "agi": 42
+  }
+}

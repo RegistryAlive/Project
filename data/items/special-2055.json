@@ -1,0 +1,17 @@
+{
+  "id": 2055,
+  "name": "Feather Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Feather / Silver",
+  "description": "Silver ear rings inlaid with deep sea pearls.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 5
+  },
+  "image": "data/images/special-2055.png",
+  "file": "special-2055.json"
+}

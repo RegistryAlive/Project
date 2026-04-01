@@ -1,0 +1,15 @@
+{
+  "id": 6588,
+  "name": "Ghost Wall Clo",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The clock with pumpkin head decoration on it is full of Halloween atmosphere",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6588.png",
+  "file": "furniture-6588.json"
+}

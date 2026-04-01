@@ -1,0 +1,18 @@
+{
+  "id": 263,
+  "name": "Magica Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Magical Girl sword that has magical energy. 10% crit rate, greatly increases damage during crit. Additional effect when used with other magical girl set.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-263.png",
+  "file": "weapon-263.json"
+}

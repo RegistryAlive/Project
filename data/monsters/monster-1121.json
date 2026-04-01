@@ -1,0 +1,39 @@
+{
+  "id": 1121,
+  "name": "Baby Mammoth",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-1122.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Maize",
+      "itemId": 7431,
+      "itemFile": "material-7431.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ivory",
+      "itemId": 7805,
+      "itemFile": "material-7805.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 935,
+    "sp": 618,
+    "catchable": "Yes",
+    "spd": 165,
+    "str": 50,
+    "con": 60,
+    "int": 30,
+    "wis": 40,
+    "agi": 30
+  }
+}

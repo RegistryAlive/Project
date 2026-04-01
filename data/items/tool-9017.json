@@ -1,0 +1,15 @@
+{
+  "id": 9017,
+  "name": "Auto Loom",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The evolvement of the Loom to save time.",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/tool-9017.png",
+  "file": "tool-9017.json"
+}

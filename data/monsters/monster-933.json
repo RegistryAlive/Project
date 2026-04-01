@@ -1,0 +1,27 @@
+{
+  "id": 933,
+  "name": "Spirit",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-933.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 40,
+    "hp": 279,
+    "sp": 307,
+    "catchable": "Unknown",
+    "spd": 114,
+    "str": 28,
+    "con": 22,
+    "int": 21,
+    "wis": 22,
+    "agi": 27
+  }
+}

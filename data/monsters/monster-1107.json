@@ -1,0 +1,27 @@
+{
+  "id": 1107,
+  "name": "Green Snow Monkey",
+  "location": "Shayii Hill",
+  "image": "data/Monster_Images/monster-1108.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 24,
+    "hp": 198,
+    "sp": 168,
+    "catchable": "Unknown",
+    "spd": 72,
+    "str": 14,
+    "con": 15,
+    "int": 12,
+    "wis": 13,
+    "agi": 18
+  }
+}

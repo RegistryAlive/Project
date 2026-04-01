@@ -1,0 +1,15 @@
+{
+  "id": 8489,
+  "name": "Ice Elk exc Vo",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Exchange for a Ice Elk.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8489.png",
+  "file": "questprop-8489.json"
+}

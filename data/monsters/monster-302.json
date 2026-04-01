@@ -1,0 +1,51 @@
+{
+  "id": 302,
+  "name": "Green Pterosaur",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-302.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Bird Meat",
+      "itemId": 7501,
+      "itemFile": "material-7501.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sardine",
+      "itemId": 7487,
+      "itemFile": "material-7487.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Quail Egg",
+      "itemId": 7505,
+      "itemFile": "material-7505.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wing Claw",
+      "itemId": 7808,
+      "itemFile": "material-7808.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Orchid",
+      "itemId": 7355,
+      "itemFile": "material-7355.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 57,
+    "hp": 514,
+    "sp": 488,
+    "catchable": "No",
+    "spd": 157.5,
+    "str": 36,
+    "con": 33,
+    "int": 33,
+    "wis": 33,
+    "agi": 36
+  }
+}

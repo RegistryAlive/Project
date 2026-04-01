@@ -1,0 +1,17 @@
+{
+  "id": 1966,
+  "name": "Hunter Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A pair of fur boots",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 26
+  },
+  "image": "data/images/shoes-1966.png",
+  "file": "shoes-1966.json"
+}

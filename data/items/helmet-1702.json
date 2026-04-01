@@ -1,0 +1,15 @@
+{
+  "id": 1702,
+  "name": "Doctor Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Hat worn by doctors, for men",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1702.png",
+  "file": "helmet-1702.json"
+}

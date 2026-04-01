@@ -1,0 +1,15 @@
+{
+  "id": 8223,
+  "name": "Ink Stones",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "1 of 4 stationery treasures of Chinese study.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8223.png",
+  "file": "questprop-8223.json"
+}

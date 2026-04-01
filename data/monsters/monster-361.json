@@ -1,0 +1,39 @@
+{
+  "id": 361,
+  "name": "Mummy",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-361.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Dye",
+      "itemId": 7804,
+      "itemFile": "material-7804.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cotton Thread",
+      "itemId": 6104,
+      "itemFile": "furniture-6104.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Oak Wood",
+      "itemId": 7648,
+      "itemFile": "material-7648.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 87,
+    "hp": 1155,
+    "sp": 609,
+    "catchable": "Unknown",
+    "spd": 222.5,
+    "str": 71,
+    "con": 69,
+    "int": 39,
+    "wis": 36,
+    "agi": 46
+  }
+}

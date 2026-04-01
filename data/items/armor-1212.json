@@ -1,0 +1,15 @@
+{
+  "id": 1212,
+  "name": "Viking Cloth",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "God's Blessing Clothes In the cold wind, the gods gave the Nordic Vikings descendants costumes, exclusively for men",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1212.png",
+  "file": "armor-1212.json"
+}

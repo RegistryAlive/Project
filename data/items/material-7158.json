@@ -1,0 +1,18 @@
+{
+  "id": 7158,
+  "name": "Roasted Duck Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Meat",
+  "description": "Roasted duck meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 180,
+    "SP": 20
+  },
+  "image": "data/images/material-7158.png",
+  "file": "material-7158.json"
+}

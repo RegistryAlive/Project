@@ -1,0 +1,15 @@
+{
+  "id": 8370,
+  "name": "Boy-Again Reme",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Turn back into a boy with this!",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8370.png",
+  "file": "questprop-8370.json"
+}

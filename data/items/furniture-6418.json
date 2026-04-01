@@ -1,0 +1,15 @@
+{
+  "id": 6418,
+  "name": "New Year Picture",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Necessary scrolls used for Spring Festival",
+  "size": "1x4",
+  "attributes": {},
+  "image": "data/images/furniture-6418.png",
+  "file": "furniture-6418.json"
+}

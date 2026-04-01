@@ -1,0 +1,17 @@
+{
+  "id": 945,
+  "name": "Racing Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used to dissipate the effects of a crash.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-945.png",
+  "file": "armor-945.json"
+}

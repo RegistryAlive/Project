@@ -1,0 +1,15 @@
+{
+  "id": 1013,
+  "name": "Broken Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower / Fur",
+  "description": "clothes which is worn out",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1013.png",
+  "file": "armor-1013.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 9005,
+  "name": "Crystal Furnace",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It makes crystal items and magic enclosed items.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/tool-9005.png",
+  "file": "tool-9005.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6091,
+  "name": "Dry Batteries",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "It does not need electricity",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6091.png",
+  "file": "furniture-6091.json"
+}

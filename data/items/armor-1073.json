@@ -1,0 +1,17 @@
+{
+  "id": 1073,
+  "name": "Fur Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Leather / Titanium",
+  "description": "Made from the fur of rare and precious beasts.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 28
+  },
+  "image": "data/images/armor-1073.png",
+  "file": "armor-1073.json"
+}

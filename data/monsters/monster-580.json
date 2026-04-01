@@ -1,0 +1,27 @@
+{
+  "id": 580,
+  "name": "Blaze Moai",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-580.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 855,
+    "sp": 518,
+    "catchable": "Unknown",
+    "spd": 138,
+    "str": 58,
+    "con": 55,
+    "int": 40,
+    "wis": 33,
+    "agi": 18
+  }
+}

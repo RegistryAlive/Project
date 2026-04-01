@@ -1,0 +1,17 @@
+{
+  "id": 7334,
+  "name": "Dragon Dumplin",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Zongzi made of fragrant rice wrapped in bamboo leaves can quickly restore physical strength",
+  "size": "1x1",
+  "attributes": {
+    "HP": 700
+  },
+  "image": "data/images/material-7334.png",
+  "file": "material-7334.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1813,
+  "name": "Copper Vine Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Copper",
+  "description": "Vine shoes which are made from bronze",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 4
+  },
+  "image": "data/images/shoes-1813.png",
+  "file": "shoes-1813.json"
+}

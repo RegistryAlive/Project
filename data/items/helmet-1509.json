@@ -1,0 +1,18 @@
+{
+  "id": 1509,
+  "name": "Heavenly Headband",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "A headband which is made up of spun gold",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MATK": 7
+  },
+  "image": "data/images/helmet-1509.png",
+  "file": "helmet-1509.json"
+}

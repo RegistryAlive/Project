@@ -1,0 +1,45 @@
+{
+  "id": 1151,
+  "name": "Green Triceratops",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-1152.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Pumpkin",
+      "itemId": 7423,
+      "itemFile": "material-7423.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tea",
+      "itemId": 7361,
+      "itemFile": "material-7361.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Fur",
+      "itemId": 7812,
+      "itemFile": "material-7812.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 796,
+    "sp": 618,
+    "catchable": "Unknown",
+    "spd": 177,
+    "str": 44,
+    "con": 50,
+    "int": 40,
+    "wis": 40,
+    "agi": 36
+  }
+}

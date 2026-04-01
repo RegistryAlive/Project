@@ -1,0 +1,51 @@
+{
+  "id": 1062,
+  "name": "Young Honey Bee",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-1063.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pollen",
+      "itemId": 7528,
+      "itemFile": "material-7528.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Nectar",
+      "itemId": 7529,
+      "itemFile": "material-7529.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bee Spine",
+      "itemId": 7715,
+      "itemFile": "material-7715.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Comb",
+      "itemId": 7747,
+      "itemFile": "material-7747.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Juice",
+      "itemId": 7711,
+      "itemFile": "material-7711.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 26,
+    "hp": 177,
+    "sp": 194,
+    "catchable": "Yes",
+    "spd": 75,
+    "str": 16,
+    "con": 14,
+    "int": 15,
+    "wis": 15,
+    "agi": 18
+  }
+}

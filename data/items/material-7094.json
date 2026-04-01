@@ -1,0 +1,18 @@
+{
+  "id": 7094,
+  "name": "Fugu Hot Pot",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish / Vegetable / Meat",
+  "description": "A thick soup with fugu in it",
+  "size": "1x1",
+  "attributes": {
+    "HP": 300,
+    "SP": 300
+  },
+  "image": "data/images/material-7094.png",
+  "file": "material-7094.json"
+}

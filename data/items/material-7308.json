@@ -1,0 +1,17 @@
+{
+  "id": 7308,
+  "name": "Stomach Powder",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 27,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "It is a best health food item",
+  "size": "1x1",
+  "attributes": {
+    "SP": 1200
+  },
+  "image": "data/images/material-7308.png",
+  "file": "material-7308.json"
+}

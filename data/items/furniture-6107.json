@@ -1,0 +1,15 @@
+{
+  "id": 6107,
+  "name": "Big Linen Cloth",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "It is made of linen",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6107.png",
+  "file": "furniture-6107.json"
+}

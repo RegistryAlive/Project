@@ -1,0 +1,15 @@
+{
+  "id": 2039,
+  "name": "Panda Costume",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A cute costume that transforms you into a panda. 5% anti-seal effect.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2039.png",
+  "file": "special-2039.json"
+}

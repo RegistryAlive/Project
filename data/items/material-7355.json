@@ -1,0 +1,15 @@
+{
+  "id": 7355,
+  "name": "Orchid",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "beautiful flowers for view and admire",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7355.png",
+  "file": "material-7355.json"
+}

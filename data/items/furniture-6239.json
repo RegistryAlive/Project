@@ -1,0 +1,15 @@
+{
+  "id": 6239,
+  "name": "Centrifuge",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can leach impurities.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6239.png",
+  "file": "furniture-6239.json"
+}

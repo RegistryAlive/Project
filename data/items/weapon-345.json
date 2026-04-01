@@ -1,0 +1,18 @@
+{
+  "id": 345,
+  "name": "ThunderSpear+6",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 14,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cannot be socketed and traded,38% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 34,
+    "MaxSP": 210
+  },
+  "image": "data/images/weapon-345.png",
+  "file": "weapon-345.json"
+}

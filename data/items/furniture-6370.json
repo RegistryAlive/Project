@@ -1,0 +1,15 @@
+{
+  "id": 6370,
+  "name": "Bicep Exerciser",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "can obtain 2% of Exp of level with training",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6370.png",
+  "file": "furniture-6370.json"
+}

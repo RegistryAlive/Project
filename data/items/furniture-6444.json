@@ -1,0 +1,15 @@
+{
+  "id": 6444,
+  "name": "Classic Light,",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A western classic lighting, hangs on the wall",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6444.png",
+  "file": "furniture-6444.json"
+}

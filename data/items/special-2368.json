@@ -1,0 +1,17 @@
+{
+  "id": 2368,
+  "name": "Knight's Cape",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A cape used by Knights and available to socket",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 11
+  },
+  "image": "data/images/special-2368.png",
+  "file": "special-2368.json"
+}

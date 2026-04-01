@@ -1,0 +1,18 @@
+{
+  "id": 7138,
+  "name": "Tomato In Fried Egg",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit / Egg",
+  "description": "Fried Egg with Tomato",
+  "size": "1x1",
+  "attributes": {
+    "HP": 220,
+    "SP": 30
+  },
+  "image": "data/images/material-7138.png",
+  "file": "material-7138.json"
+}

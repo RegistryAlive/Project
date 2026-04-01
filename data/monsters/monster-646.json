@@ -1,0 +1,27 @@
+{
+  "id": 646,
+  "name": "Darkness Qlaya",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-646.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 131,
+    "hp": 22500,
+    "sp": 3146,
+    "catchable": "Unknown",
+    "spd": 526.5,
+    "str": 114,
+    "con": 106,
+    "int": 211,
+    "wis": 190,
+    "agi": 165
+  }
+}

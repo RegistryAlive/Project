@@ -1,0 +1,15 @@
+{
+  "id": 6761,
+  "name": "Gold Eagle Totem",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "For trojan war, increase health per turn for defenders.",
+  "size": "2x5",
+  "attributes": {},
+  "image": "data/images/furniture-6761.png",
+  "file": "furniture-6761.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 951,
+  "name": "Kimono",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Traditional Japanese formal wear.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-951.png",
+  "file": "armor-951.json"
+}

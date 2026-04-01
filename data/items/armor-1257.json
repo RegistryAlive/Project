@@ -1,0 +1,18 @@
+{
+  "id": 1257,
+  "name": "Royal Fox Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Rumored to be a costume written by a god messenger, it has a 10% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "Special": 10,
+    "MaxHP": 200
+  },
+  "image": "data/images/armor-1257.png",
+  "file": "armor-1257.json"
+}

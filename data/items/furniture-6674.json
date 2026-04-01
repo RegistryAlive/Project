@@ -1,0 +1,15 @@
+{
+  "id": 6674,
+  "name": "Bright Moonlig",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The window scene accompanied by osmanthus flowers is most suitable for watching the moon",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6674.png",
+  "file": "furniture-6674.json"
+}

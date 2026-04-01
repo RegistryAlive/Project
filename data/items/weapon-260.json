@@ -1,0 +1,17 @@
+{
+  "id": 260,
+  "name": "Blood Excalibu",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The artifact left by the ancient demon god, in which powerful power surges.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 80
+  },
+  "image": "data/images/weapon-260.png",
+  "file": "weapon-260.json"
+}

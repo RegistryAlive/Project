@@ -1,0 +1,51 @@
+{
+  "id": 63,
+  "name": "Blue Snowman",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-63.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Dye",
+      "itemId": 7804,
+      "itemFile": "material-7804.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snow Crystal",
+      "itemId": 7803,
+      "itemFile": "material-7803.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Oak",
+      "itemId": 7652,
+      "itemFile": "material-7652.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Iron Sand",
+      "itemId": 7563,
+      "itemFile": "material-7563.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 662,
+    "sp": 625,
+    "catchable": "Yes",
+    "spd": 184,
+    "str": 41,
+    "con": 41,
+    "int": 40,
+    "wis": 41,
+    "agi": 41
+  }
+}

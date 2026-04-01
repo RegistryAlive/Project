@@ -1,0 +1,18 @@
+{
+  "id": 1501,
+  "name": "Iron Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Steel / Jade",
+  "description": "A helmet made from rare hematite.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 16,
+    "SPD": 16
+  },
+  "image": "data/images/helmet-1501.png",
+  "file": "helmet-1501.json"
+}

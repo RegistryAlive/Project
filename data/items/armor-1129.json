@@ -1,0 +1,18 @@
+{
+  "id": 1129,
+  "name": "Verdant Wing Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 44,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A splendid suit sewn with golden and verdant silk, pet cannot equip it.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 26,
+    "SPD": 18
+  },
+  "image": "data/images/armor-1129.png",
+  "file": "armor-1129.json"
+}

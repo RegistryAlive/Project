@@ -1,0 +1,18 @@
+{
+  "id": 573,
+  "name": "Prison Eclipse Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "For Xaolan's exclusive use after her rebirth",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30,
+    "MaxSP": 100
+  },
+  "image": "data/images/weapon-573.png",
+  "file": "weapon-573.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 286,
+  "name": "Mayan Aboriginal",
+  "location": "Mayan Forest",
+  "image": "data/Monster_Images/monster-286.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Crystal",
+      "itemId": 7597,
+      "itemFile": "material-7597.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 89,
+    "hp": 1060,
+    "sp": 814,
+    "catchable": "Yes",
+    "spd": 243.5,
+    "str": 45,
+    "con": 62,
+    "int": 55,
+    "wis": 50,
+    "agi": 55
+  }
+}

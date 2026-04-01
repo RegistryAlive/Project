@@ -1,0 +1,18 @@
+{
+  "id": 8537,
+  "name": "Carrot (Quest)",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 3,
+  "level": 6,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "A rabbits favorite food",
+  "size": "1x1",
+  "attributes": {
+    "HP": 75,
+    "SP": 75
+  },
+  "image": "data/images/questprop-8537.png",
+  "file": "questprop-8537.json"
+}

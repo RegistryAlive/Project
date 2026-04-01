@@ -1,0 +1,27 @@
+{
+  "id": 657,
+  "name": "Deadly Scorpion Lord (Quest)",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-657.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 15500,
+    "sp": 1500,
+    "catchable": "Unknown",
+    "spd": 296,
+    "str": 93,
+    "con": 92,
+    "int": 54,
+    "wis": 63,
+    "agi": 58
+  }
+}

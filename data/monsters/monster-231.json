@@ -1,0 +1,44 @@
+{
+  "id": 231,
+  "name": "Red Dairy Cattle",
+  "location": "Calcutta",
+  "image": "data/Monster_Images/monster-231.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Beef",
+      "itemId": 7472,
+      "itemFile": "material-7472.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Milk",
+      "itemId": 7509,
+      "itemFile": "material-7509.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clear Devil's Spar",
+      "itemId": null,
+      "itemFile": null
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 791,
+    "sp": 674,
+    "catchable": "Yes",
+    "spd": 196,
+    "str": 61,
+    "con": 60,
+    "int": 39,
+    "wis": 42,
+    "agi": 38
+  }
+}

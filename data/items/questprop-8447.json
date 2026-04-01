@@ -1,0 +1,15 @@
+{
+  "id": 8447,
+  "name": "Christmas fabr",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Collect a certain amount of Christmas fabric to exchange for a Christmas clothes",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8447.png",
+  "file": "questprop-8447.json"
+}

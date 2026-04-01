@@ -1,0 +1,15 @@
+{
+  "id": 8283,
+  "name": "Thanks",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Thanks for your participation. Bodes good luck",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8283.png",
+  "file": "questprop-8283.json"
+}

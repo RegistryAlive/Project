@@ -1,0 +1,27 @@
+{
+  "id": 935,
+  "name": "Stone Moai",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-935.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 64,
+    "hp": 889,
+    "sp": 508,
+    "catchable": "Unknown",
+    "spd": 124,
+    "str": 46,
+    "con": 59,
+    "int": 40,
+    "wis": 33,
+    "agi": 14
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 300,
+  "name": "Rock Cave Barbarian",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-300.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Duck Egg",
+      "itemId": 7503,
+      "itemFile": "material-7503.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 78,
+    "hp": 773,
+    "sp": 765,
+    "catchable": "Unknown",
+    "spd": 219,
+    "str": 42,
+    "con": 46,
+    "int": 46,
+    "wis": 49,
+    "agi": 51
+  }
+}

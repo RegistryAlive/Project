@@ -1,0 +1,33 @@
+{
+  "id": 483,
+  "name": "Earth Leopard",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-483.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Black Forestcake",
+      "itemId": 7049,
+      "itemFile": "material-7049.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 40,
+    "hp": 250,
+    "sp": 209,
+    "catchable": "No",
+    "spd": 86,
+    "str": 9,
+    "con": 18,
+    "int": 13,
+    "wis": 13,
+    "agi": 13
+  }
+}

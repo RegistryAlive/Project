@@ -1,0 +1,39 @@
+{
+  "id": 92,
+  "name": "Khaki Bat",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-92.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bird Claw",
+      "itemId": 7731,
+      "itemFile": "material-7731.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wolf Meat",
+      "itemId": 7463,
+      "itemFile": "material-7463.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 811,
+    "sp": 855,
+    "catchable": "Unknown",
+    "spd": 224,
+    "str": 40,
+    "con": 48,
+    "int": 45,
+    "wis": 55,
+    "agi": 52
+  }
+}

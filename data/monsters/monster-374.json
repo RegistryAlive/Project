@@ -1,0 +1,51 @@
+{
+  "id": 374,
+  "name": "Coffee Rabbit",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-374.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pachyrhizus Leaf",
+      "itemId": 7413,
+      "itemFile": "material-7413.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mooli",
+      "itemId": 7429,
+      "itemFile": "material-7429.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grey Rabbit Fur",
+      "itemId": 7673,
+      "itemFile": "material-7673.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Unknown",
+      "itemId": 7892,
+      "itemFile": "material-7892.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 9,
+    "hp": 69,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 29.5,
+    "str": 4,
+    "con": 4,
+    "int": 6,
+    "wis": 5,
+    "agi": 8
+  }
+}

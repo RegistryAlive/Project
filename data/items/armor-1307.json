@@ -1,0 +1,18 @@
+{
+  "id": 1307,
+  "name": "Divine Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "White clad robes, worn by the messengers of the temple. Two-piece Set Effect : Counter Rate +5%.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "MATK": 30
+  },
+  "image": "data/images/armor-1307.png",
+  "file": "armor-1307.json"
+}

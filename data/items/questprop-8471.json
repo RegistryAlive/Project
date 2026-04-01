@@ -1,0 +1,15 @@
+{
+  "id": 8471,
+  "name": "Magic Carpet v",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Paper rolls exchangeable for magic carpet",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8471.png",
+  "file": "questprop-8471.json"
+}

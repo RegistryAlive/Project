@@ -1,0 +1,15 @@
+{
+  "id": 6114,
+  "name": "Nuclear Machine",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Produces energy by putting fuel in it",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6114.png",
+  "file": "furniture-6114.json"
+}

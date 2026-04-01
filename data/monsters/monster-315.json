@@ -1,0 +1,45 @@
+{
+  "id": 315,
+  "name": "Light Blue Dragonfly",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-315.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Blue Wild Flower",
+      "itemId": 7373,
+      "itemFile": "material-7373.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Vine",
+      "itemId": 7362,
+      "itemFile": "material-7362.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pachyrhizus Leaf",
+      "itemId": 7413,
+      "itemFile": "material-7413.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chinese Cabbage",
+      "itemId": 7405,
+      "itemFile": "material-7405.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 8,
+    "hp": 61,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 22,
+    "str": 3,
+    "con": 3,
+    "int": 6,
+    "wis": 7,
+    "agi": 5
+  }
+}

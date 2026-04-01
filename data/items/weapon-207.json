@@ -1,0 +1,18 @@
+{
+  "id": 207,
+  "name": "Sky Sword+8",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 16,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets,42% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 66,
+    "SPD": 66
+  },
+  "image": "data/images/weapon-207.png",
+  "file": "weapon-207.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7276,
+  "name": "Boiled Ducks Egg",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Egg",
+  "description": "A Duck egg made with salt",
+  "size": "1x1",
+  "attributes": {
+    "SP": 170,
+    "HP": 50
+  },
+  "image": "data/images/material-7276.png",
+  "file": "material-7276.json"
+}

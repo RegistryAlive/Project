@@ -1,0 +1,15 @@
+{
+  "id": 8277,
+  "name": "Red Dungeon Ke",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Key of treasure box in dungeon under Persian palace",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8277.png",
+  "file": "questprop-8277.json"
+}

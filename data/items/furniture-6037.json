@@ -1,0 +1,15 @@
+{
+  "id": 6037,
+  "name": "Rose Flavor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made from rose",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6037.png",
+  "file": "furniture-6037.json"
+}

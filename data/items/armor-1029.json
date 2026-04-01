@@ -1,0 +1,18 @@
+{
+  "id": 1029,
+  "name": "Pure Iron Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "A light magic armor which is made from hematite",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 23,
+    "MATK": 4
+  },
+  "image": "data/images/armor-1029.png",
+  "file": "armor-1029.json"
+}

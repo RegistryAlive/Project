@@ -1,0 +1,18 @@
+{
+  "id": 1428,
+  "name": "Ashen Earrings",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A grey ornament which is on the rabbit-lady's head",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "SPD": 9
+  },
+  "image": "data/images/helmet-1428.png",
+  "file": "helmet-1428.json"
+}

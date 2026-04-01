@@ -1,0 +1,15 @@
+{
+  "id": 7683,
+  "name": "Sheepskin",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fur",
+  "description": "Wool of a sheep",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7683.png",
+  "file": "material-7683.json"
+}

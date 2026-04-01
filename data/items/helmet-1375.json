@@ -1,0 +1,17 @@
+{
+  "id": 1375,
+  "name": "Band",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Something which is used to tie hair",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/helmet-1375.png",
+  "file": "helmet-1375.json"
+}

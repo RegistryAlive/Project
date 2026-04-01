@@ -1,0 +1,18 @@
+{
+  "id": 1742,
+  "name": "Platinum Helm",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 60,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Glory comes not only from the headgear, but also from the strength of the heart; when equipped together with other Platinum Guard equipment, you can get an extra coat effect.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 300,
+    "MDEF": 30
+  },
+  "image": "data/images/helmet-1742.png",
+  "file": "helmet-1742.json"
+}

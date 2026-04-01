@@ -1,0 +1,18 @@
+{
+  "id": 95,
+  "name": "Cat Sickle",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is exclusive equipment for cats. Only cats can control the sickle. Most people can't touch it. It is said to be very light in weight and very sharp. When equipped with other series of cats at the same time, you can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 100,
+    "SPD": 50
+  },
+  "image": "data/images/weapon-95.png",
+  "file": "weapon-95.json"
+}

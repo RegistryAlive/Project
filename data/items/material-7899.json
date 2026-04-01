@@ -1,0 +1,15 @@
+{
+  "id": 7899,
+  "name": "Ant Tentacles",
+  "type": "Material",
+  "category": "material",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": null,
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7899.png",
+  "file": "material-7899.json"
+}

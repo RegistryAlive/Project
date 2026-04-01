@@ -1,0 +1,15 @@
+{
+  "id": 8285,
+  "name": "White Paper Bo",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used to wrap gifts box of lovers",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8285.png",
+  "file": "questprop-8285.json"
+}

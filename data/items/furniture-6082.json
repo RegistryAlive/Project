@@ -1,0 +1,15 @@
+{
+  "id": 6082,
+  "name": "Carburetor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Burns off fuel",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6082.png",
+  "file": "furniture-6082.json"
+}

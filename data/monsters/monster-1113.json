@@ -1,0 +1,45 @@
+{
+  "id": 1113,
+  "name": "Rhesus Monkey",
+  "location": "Taiwan (Carnie) - Pleasure Island",
+  "image": "data/Monster_Images/monster-1114.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Banana",
+      "itemId": 7437,
+      "itemFile": "material-7437.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Latania",
+      "itemId": 7441,
+      "itemFile": "material-7441.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pinecone",
+      "itemId": 7456,
+      "itemFile": "material-7456.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 66,
+    "hp": 505,
+    "sp": 646,
+    "catchable": "Yes",
+    "spd": 189,
+    "str": 45,
+    "con": 30,
+    "int": 35,
+    "wis": 43,
+    "agi": 45
+  }
+}

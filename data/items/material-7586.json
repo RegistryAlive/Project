@@ -1,0 +1,15 @@
+{
+  "id": 7586,
+  "name": "Coal Ore",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Coal",
+  "description": "Rare coal ore",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7586.png",
+  "file": "material-7586.json"
+}

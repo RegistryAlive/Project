@@ -1,0 +1,18 @@
+{
+  "id": 2746,
+  "name": "Sage Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Diamond / Magic",
+  "description": "A mysterious ring that increases magic defense and magic attack.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 7,
+    "MDEF": 25
+  },
+  "image": "data/images/special-2746.png",
+  "file": "special-2746.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 632,
+  "name": "Dew Orchid Wan",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "River Valley Xiaolan's exclusive weapon",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 40,
+    "MaxSP": 120
+  },
+  "image": "data/images/weapon-632.png",
+  "file": "weapon-632.json"
+}

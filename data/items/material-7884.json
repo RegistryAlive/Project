@@ -1,0 +1,15 @@
+{
+  "id": 7884,
+  "name": "Refined Tin (R14)",
+  "type": "Material",
+  "category": "material",
+  "rank": 14,
+  "level": 28,
+  "rarity": "uncommon",
+  "base": "Tin",
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7884.png",
+  "file": "material-7884.json"
+}

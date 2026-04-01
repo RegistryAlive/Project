@@ -1,0 +1,39 @@
+{
+  "id": 360,
+  "name": "Blue Mummy",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-360.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Cotton Thread",
+      "itemId": 6104,
+      "itemFile": "furniture-6104.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Dye",
+      "itemId": 7804,
+      "itemFile": "material-7804.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 88,
+    "hp": 1176,
+    "sp": 626,
+    "catchable": "Unknown",
+    "spd": 220,
+    "str": 72,
+    "con": 70,
+    "int": 41,
+    "wis": 37,
+    "agi": 44
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2571,
+  "name": "Angel Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 37,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Armlet of Angela eliminates 30% sealing effects.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 30,
+    "MaxHP": 350
+  },
+  "image": "data/images/special-2571.png",
+  "file": "special-2571.json"
+}

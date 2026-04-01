@@ -1,0 +1,15 @@
+{
+  "id": 7791,
+  "name": "Scorpion Thorn",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "A Thorn of a scorpion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7791.png",
+  "file": "material-7791.json"
+}

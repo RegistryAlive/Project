@@ -1,0 +1,17 @@
+{
+  "id": 1448,
+  "name": "Magic Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "A hat which is made from cotton and flexile grass",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 12
+  },
+  "image": "data/images/helmet-1448.png",
+  "file": "helmet-1448.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 10068,
+  "name": "Rain Balloon",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A cloud of blue mist looks very soft, huh~ just lie down and have a rest, you can use the magic wool ball as a substitute for wear and tear.",
+  "size": "3x2",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10068.png",
+  "file": "vehicle-10068.json"
+}

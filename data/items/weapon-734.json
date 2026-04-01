@@ -1,0 +1,18 @@
+{
+  "id": 734,
+  "name": "Darktide Axe",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A huge axe made from the bones and scales of deep-sea aliens can reduce damage by 1%, and can obtain additional set effects when equipped with other Dark Tide series equipment at the same time",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45,
+    "DEF": 25
+  },
+  "image": "data/images/weapon-734.png",
+  "file": "weapon-734.json"
+}

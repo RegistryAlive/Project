@@ -1,0 +1,51 @@
+{
+  "id": 82,
+  "name": "Hyperkinetic Chicken",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-82.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coprinus",
+      "itemId": 7483,
+      "itemFile": "material-7483.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Rice",
+      "itemId": 7403,
+      "itemFile": "material-7403.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Egg",
+      "itemId": 7502,
+      "itemFile": "material-7502.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Feather",
+      "itemId": 7659,
+      "itemFile": "material-7659.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 11,
+    "hp": 86,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 28.5,
+    "str": 4,
+    "con": 6,
+    "int": 8,
+    "wis": 9,
+    "agi": 6
+  }
+}

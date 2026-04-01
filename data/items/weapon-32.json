@@ -1,0 +1,18 @@
+{
+  "id": 32,
+  "name": "Aiels God Edge",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Knife of the medicinal god. Aiels, has a mysterious effect.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "DEF": 30
+  },
+  "image": "data/images/weapon-32.png",
+  "file": "weapon-32.json"
+}

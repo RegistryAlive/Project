@@ -1,0 +1,18 @@
+{
+  "id": 1739,
+  "name": "Silly Duck",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A good partner in the summer swimming pool, the cute little yellow duck. Every forging +1, MaxHP extra +2, up to 200",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 150,
+    "ATK": 20
+  },
+  "image": "data/images/helmet-1739.png",
+  "file": "helmet-1739.json"
+}

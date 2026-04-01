@@ -1,0 +1,27 @@
+{
+  "id": 1139,
+  "name": "Polar Snow Monkey",
+  "location": "Shayii Hill",
+  "image": "data/Monster_Images/monster-1140.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 25,
+    "hp": 211,
+    "sp": 160,
+    "catchable": "Unknown",
+    "spd": 67.5,
+    "str": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 12,
+    "agi": 15
+  }
+}

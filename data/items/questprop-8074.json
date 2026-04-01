@@ -1,0 +1,15 @@
+{
+  "id": 8074,
+  "name": "Penguin Vouche",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It makes a Penguin Villager become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8074.png",
+  "file": "questprop-8074.json"
+}

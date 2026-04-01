@@ -1,0 +1,17 @@
+{
+  "id": 2245,
+  "name": "Defensive Badg",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To slightly upgrade defense",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 4
+  },
+  "image": "data/images/special-2245.png",
+  "file": "special-2245.json"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 310,
+  "name": "Red Pterosaur",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-310.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Bird Meat",
+      "itemId": 7501,
+      "itemFile": "material-7501.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Goose Egg",
+      "itemId": 7504,
+      "itemFile": "material-7504.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wing Claw",
+      "itemId": 7808,
+      "itemFile": "material-7808.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yaro Safflower",
+      "itemId": 7354,
+      "itemFile": "material-7354.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 56,
+    "hp": 484,
+    "sp": 498,
+    "catchable": "No",
+    "spd": 156,
+    "str": 33,
+    "con": 31,
+    "int": 34,
+    "wis": 34,
+    "agi": 36
+  }
+}

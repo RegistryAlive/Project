@@ -1,0 +1,18 @@
+{
+  "id": 7030,
+  "name": "Cheese",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Dairy Product",
+  "description": "It's made from milk",
+  "size": "1x1",
+  "attributes": {
+    "SP": 180,
+    "HP": 70
+  },
+  "image": "data/images/material-7030.png",
+  "file": "material-7030.json"
+}

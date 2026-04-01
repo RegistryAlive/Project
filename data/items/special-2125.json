@@ -1,0 +1,18 @@
+{
+  "id": 2125,
+  "name": "Assault Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To evenly upgrade attack power and defense",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3,
+    "DEF": 3
+  },
+  "image": "data/images/special-2125.png",
+  "file": "special-2125.json"
+}

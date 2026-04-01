@@ -1,0 +1,18 @@
+{
+  "id": 330,
+  "name": "Fast Cross Pike",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Steel / Iron / Titanium",
+  "description": "It's the great gun with high SPD.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 36,
+    "ATK": 30
+  },
+  "image": "data/images/weapon-330.png",
+  "file": "weapon-330.json"
+}

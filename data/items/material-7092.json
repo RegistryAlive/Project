@@ -1,0 +1,17 @@
+{
+  "id": 7092,
+  "name": "Fugu Sashimi",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "The most popular sashimi in Japan",
+  "size": "1x1",
+  "attributes": {
+    "SP": 250
+  },
+  "image": "data/images/material-7092.png",
+  "file": "material-7092.json"
+}

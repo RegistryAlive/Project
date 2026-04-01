@@ -1,0 +1,17 @@
+{
+  "id": 1638,
+  "name": "Star of David",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The star of david, related to magic and occult is a cross-border production of male power and fashion.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 45
+  },
+  "image": "data/images/helmet-1638.png",
+  "file": "helmet-1638.json"
+}

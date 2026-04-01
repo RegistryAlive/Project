@@ -1,0 +1,18 @@
+{
+  "id": 1444,
+  "name": "Cat's Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 4,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A ornament which shapes like a cat's ear",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 2,
+    "SPD": 2
+  },
+  "image": "data/images/helmet-1444.png",
+  "file": "helmet-1444.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7794,
+  "name": "Conch Roes",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Canine",
+  "description": "A Meat of a conch",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7794.png",
+  "file": "material-7794.json"
+}

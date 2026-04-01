@@ -1,0 +1,18 @@
+{
+  "id": 1096,
+  "name": "Green Mantle",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Nylon / Leaf",
+  "description": "Battle clothes made of chemical silk and fibre.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 18,
+    "SPD": 14
+  },
+  "image": "data/images/armor-1096.png",
+  "file": "armor-1096.json"
+}

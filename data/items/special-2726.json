@@ -1,0 +1,17 @@
+{
+  "id": 2726,
+  "name": "Noble Christ",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 35,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dreamy and mysterious , Christmas limited 2017 outfit, exclusively for men",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 75
+  },
+  "image": "data/images/special-2726.png",
+  "file": "special-2726.json"
+}

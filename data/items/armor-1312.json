@@ -1,0 +1,18 @@
+{
+  "id": 1312,
+  "name": "Underworld Rob",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clothes sewn with the fur of the deep sea monsters can reduce the damage received by 1%, and can obtain additional suit effects when equipped with other Nethersea series equipment at the same time",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 40,
+    "MATK": 30
+  },
+  "image": "data/images/armor-1312.png",
+  "file": "armor-1312.json"
+}

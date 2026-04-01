@@ -1,0 +1,18 @@
+{
+  "id": 243,
+  "name": "Ben Lei Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The legendary sword that can even be split by lightning, forging +2 can increase the critical strike by 1% (up to 50%)",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 45,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-243.png",
+  "file": "weapon-243.json"
+}

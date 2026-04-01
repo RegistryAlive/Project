@@ -1,0 +1,17 @@
+{
+  "id": 7185,
+  "name": "Boiled Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat",
+  "description": "It's made from a paddy and is sweet-smelling",
+  "size": "1x1",
+  "attributes": {
+    "HP": 110
+  },
+  "image": "data/images/material-7185.png",
+  "file": "material-7185.json"
+}

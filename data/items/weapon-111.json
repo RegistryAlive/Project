@@ -1,0 +1,18 @@
+{
+  "id": 111,
+  "name": "Bronze Fine Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Copper / Wood / Hard Tissue",
+  "description": "A sword made from bronze, its long and thin.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 8,
+    "SPD": 8
+  },
+  "image": "data/images/weapon-111.png",
+  "file": "weapon-111.json"
+}

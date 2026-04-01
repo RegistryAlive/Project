@@ -1,0 +1,15 @@
+{
+  "id": 7767,
+  "name": "Regular Pearl",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Regular Pearl harvested from an oyster.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7767.png",
+  "file": "material-7767.json"
+}

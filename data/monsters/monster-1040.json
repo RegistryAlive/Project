@@ -1,0 +1,33 @@
+{
+  "id": 1040,
+  "name": "Scorpion",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-1041.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Orange",
+      "itemId": 7435,
+      "itemFile": "material-7435.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 63,
+    "hp": 508,
+    "sp": 479,
+    "catchable": "Yes",
+    "spd": 184.5,
+    "str": 45,
+    "con": 31,
+    "int": 37,
+    "wis": 31,
+    "agi": 45
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 1160,
+  "name": "Exorcism Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Special gown for exorcist's",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1160.png",
+  "file": "armor-1160.json"
+}

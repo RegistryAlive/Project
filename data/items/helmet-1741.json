@@ -1,0 +1,18 @@
+{
+  "id": 1741,
+  "name": "Octopus Ball ",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "An octopus doll with a turban tied in reference to the mascot of a takoyaki stand. Every forging +1, MaxHP extra +2, up to 200",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 150,
+    "SPD": 15
+  },
+  "image": "data/images/helmet-1741.png",
+  "file": "helmet-1741.json"
+}

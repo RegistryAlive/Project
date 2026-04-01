@@ -1,0 +1,18 @@
+{
+  "id": 308,
+  "name": "Spiri Fork+1",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "No sockets, 24% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 12,
+    "MaxHP": 100
+  },
+  "image": "data/images/weapon-308.png",
+  "file": "weapon-308.json"
+}

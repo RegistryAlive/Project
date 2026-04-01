@@ -1,0 +1,15 @@
+{
+  "id": 8341,
+  "name": "Merchant's Tapestrie",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tapestries from Persian merchants",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8341.png",
+  "file": "questprop-8341.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1565,
+  "name": "Mist Headband",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Leaf / Grass / Nylon",
+  "description": "The headband made by flowers and straws",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25,
+    "MDEF": 14
+  },
+  "image": "data/images/helmet-1565.png",
+  "file": "helmet-1565.json"
+}

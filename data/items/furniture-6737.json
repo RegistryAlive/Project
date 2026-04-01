@@ -1,0 +1,15 @@
+{
+  "id": 6737,
+  "name": "Black Soulfire",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Dark and Deep Soulfire Collection",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6737.png",
+  "file": "furniture-6737.json"
+}

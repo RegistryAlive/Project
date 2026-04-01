@@ -1,0 +1,15 @@
+{
+  "id": 6352,
+  "name": "Parterre",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A turf with flowers",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6352.png",
+  "file": "furniture-6352.json"
+}

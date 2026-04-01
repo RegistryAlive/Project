@@ -1,0 +1,15 @@
+{
+  "id": 7634,
+  "name": "Marble",
+  "type": "MaterialRock",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rock",
+  "description": "It is often used in sculpting",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7634.png",
+  "file": "material-7634.json"
+}

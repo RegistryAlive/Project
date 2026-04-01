@@ -1,0 +1,15 @@
+{
+  "id": 6128,
+  "name": "Ceramic Cylinder",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 11,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "It is made of ceramic",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6128.png",
+  "file": "furniture-6128.json"
+}

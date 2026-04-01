@@ -1,0 +1,15 @@
+{
+  "id": 7645,
+  "name": "Grey Clay",
+  "type": "MaterialClay",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grey Clay",
+  "description": "Used for making a water purifier",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7645.png",
+  "file": "material-7645.json"
+}

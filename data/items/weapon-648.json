@@ -1,0 +1,18 @@
+{
+  "id": 648,
+  "name": "Pure Iron Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Pure Iron",
+  "description": "A claw made from pure iron.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 4,
+    "SPD": 6
+  },
+  "image": "data/images/weapon-648.png",
+  "file": "weapon-648.json"
+}

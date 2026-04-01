@@ -1,0 +1,15 @@
+{
+  "id": 6136,
+  "name": "Propeller",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Wood",
+  "description": "Increases buoyancy, set in the front of engine",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6136.png",
+  "file": "furniture-6136.json"
+}

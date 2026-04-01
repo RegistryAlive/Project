@@ -1,0 +1,18 @@
+{
+  "id": 152,
+  "name": "Flame Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 49,
+  "level": 98,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword in the shape of a flame",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 49,
+    "SPD": 49
+  },
+  "image": "data/images/weapon-152.png",
+  "file": "weapon-152.json"
+}

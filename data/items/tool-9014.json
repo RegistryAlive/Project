@@ -1,0 +1,15 @@
+{
+  "id": 9014,
+  "name": "Spinning Machine",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make cotton to cotton thread.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/tool-9014.png",
+  "file": "tool-9014.json"
+}

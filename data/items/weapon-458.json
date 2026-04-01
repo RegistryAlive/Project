@@ -1,0 +1,15 @@
+{
+  "id": 458,
+  "name": "heart of wood",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The weather-beaten antique musical instrument is said to have been used on the battlefield and played countless poems. Can be used as any weapon appearance",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-458.png",
+  "file": "weapon-458.json"
+}

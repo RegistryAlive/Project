@@ -1,0 +1,18 @@
+{
+  "id": 2806,
+  "name": "Wu Ling gua",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": null,
+  "description": "After the defeat of St. fight many strong, filling the life energy in the hands of care, emitting a sharp breath",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 26,
+    "ATK": 9
+  },
+  "image": "data/images/arm-2806.png",
+  "file": "arm-2806.json"
+}

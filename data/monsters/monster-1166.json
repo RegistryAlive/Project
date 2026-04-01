@@ -1,0 +1,45 @@
+{
+  "id": 1166,
+  "name": "Pig",
+  "location": "Maya",
+  "image": "data/Monster_Images/monster-1166.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chinese Cabbage",
+      "itemId": 7405,
+      "itemFile": "material-7405.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Noodles",
+      "itemId": 7515,
+      "itemFile": "material-7515.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pig Skin",
+      "itemId": 7777,
+      "itemFile": "material-7777.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 0,
+    "sp": 0,
+    "catchable": null,
+    "spd": 182,
+    "str": 48,
+    "con": 50,
+    "int": 41,
+    "wis": 40,
+    "agi": 37
+  }
+}

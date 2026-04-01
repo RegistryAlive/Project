@@ -1,0 +1,17 @@
+{
+  "id": 1431,
+  "name": "Iron Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Iron / Corundum",
+  "description": "A magic crown which is made from iron inlaid bijou",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 21
+  },
+  "image": "data/images/helmet-1431.png",
+  "file": "helmet-1431.json"
+}

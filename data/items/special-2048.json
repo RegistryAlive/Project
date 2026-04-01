@@ -1,0 +1,18 @@
+{
+  "id": 2048,
+  "name": "Red Fire Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Jade / Grass",
+  "description": "A ring which is made from red flint",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 13,
+    "ATK": 10
+  },
+  "image": "data/images/special-2048.png",
+  "file": "special-2048.json"
+}

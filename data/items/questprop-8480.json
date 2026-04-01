@@ -1,0 +1,15 @@
+{
+  "id": 8480,
+  "name": "Sakuras Petals",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pink cherry blossom petals exude the breath of spring. It is the material for making cherry blossom viewing series furniture.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8480.png",
+  "file": "questprop-8480.json"
+}

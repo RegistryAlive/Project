@@ -1,0 +1,15 @@
+{
+  "id": 7686,
+  "name": "Black Sheepskin",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leather",
+  "description": "Hide of a black sheep",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7686.png",
+  "file": "material-7686.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 331,
+  "name": "Cold Bat",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-331.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 26,
+    "hp": 194,
+    "sp": 236,
+    "catchable": "No",
+    "spd": 69,
+    "str": 13,
+    "con": 14,
+    "int": 17,
+    "wis": 19,
+    "agi": 15
+  }
+}

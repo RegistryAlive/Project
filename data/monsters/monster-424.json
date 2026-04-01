@@ -1,0 +1,51 @@
+{
+  "id": 424,
+  "name": "Squirrel",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-424.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Hazelnut",
+      "itemId": 7442,
+      "itemFile": "material-7442.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Maize",
+      "itemId": 7431,
+      "itemFile": "material-7431.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chinese Cabbage",
+      "itemId": 7405,
+      "itemFile": "material-7405.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 27,
+    "hp": 170,
+    "sp": 207,
+    "catchable": "Yes",
+    "spd": 80.5,
+    "str": 16,
+    "con": 13,
+    "int": 16,
+    "wis": 16,
+    "agi": 20
+  }
+}

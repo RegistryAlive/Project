@@ -1,0 +1,17 @@
+{
+  "id": 1462,
+  "name": "Steel Roman Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "A helmet for the wrestling champion.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 38
+  },
+  "image": "data/images/helmet-1462.png",
+  "file": "helmet-1462.json"
+}

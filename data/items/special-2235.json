@@ -1,0 +1,15 @@
+{
+  "id": 2235,
+  "name": "Steel Hammer 9",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "SPD-99 after equipping it. Both characters and pets can use it. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2235.png",
+  "file": "special-2235.json"
+}

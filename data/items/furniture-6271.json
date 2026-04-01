@@ -1,0 +1,15 @@
+{
+  "id": 6271,
+  "name": "Training Platform",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A platform used for training.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6271.png",
+  "file": "furniture-6271.json"
+}

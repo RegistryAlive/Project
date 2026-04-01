@@ -1,0 +1,15 @@
+{
+  "id": 8021,
+  "name": "Farmer's Potato",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The potato needed by the aunt cooking soup",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8021.png",
+  "file": "questprop-8021.json"
+}

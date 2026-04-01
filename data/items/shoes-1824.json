@@ -1,0 +1,17 @@
+{
+  "id": 1824,
+  "name": "Little Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Boots worn in riding, reaching the knees.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 14
+  },
+  "image": "data/images/shoes-1824.png",
+  "file": "shoes-1824.json"
+}

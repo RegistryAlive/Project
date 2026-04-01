@@ -1,0 +1,15 @@
+{
+  "id": 6266,
+  "name": "Work Platform",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used for the study or process.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6266.png",
+  "file": "furniture-6266.json"
+}

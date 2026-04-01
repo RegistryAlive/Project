@@ -1,0 +1,15 @@
+{
+  "id": 1691,
+  "name": "New Fox Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 10,
+  "rarity": "common",
+  "base": null,
+  "description": "Rumoured that demon fox has transformed into the earrings due to new year messenger.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1691.png",
+  "file": "helmet-1691.json"
+}

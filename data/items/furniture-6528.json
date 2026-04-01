@@ -1,0 +1,15 @@
+{
+  "id": 6528,
+  "name": "Shark Mural",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, decorations showing the achievements of sea fishing",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6528.png",
+  "file": "furniture-6528.json"
+}

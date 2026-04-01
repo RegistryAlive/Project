@@ -1,0 +1,18 @@
+{
+  "id": 74,
+  "name": "P.Breath Whip",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The whip has a life-like indestructible force, 46% chance to crit",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "SPD": 50
+  },
+  "image": "data/images/weapon-74.png",
+  "file": "weapon-74.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8213,
+  "name": "Odyssey's Book",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The Librarian's lost book",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8213.png",
+  "file": "questprop-8213.json"
+}

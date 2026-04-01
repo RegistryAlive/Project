@@ -1,0 +1,18 @@
+{
+  "id": 2730,
+  "name": "Bluebird's win",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The legendary blue bird wings that can bring happiness, the damage caused by critical strikes is slightly increased",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MaxHP": 300
+  },
+  "image": "data/images/special-2730.png",
+  "file": "special-2730.json"
+}

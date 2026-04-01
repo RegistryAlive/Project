@@ -1,0 +1,18 @@
+{
+  "id": 1306,
+  "name": "Nightingale Cl",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The uniform worn by the bravest and strongest warriors. When using bow weapons, attack damage +3%.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "SPD": 20
+  },
+  "image": "data/images/armor-1306.png",
+  "file": "armor-1306.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 368,
+  "name": "Fiend Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Imitating the appearance of the legendary weapon, the magic halberd with powerful destructive power, 46% of the critical strike is possible",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 75,
+    "MaxHP": 330
+  },
+  "image": "data/images/weapon-368.png",
+  "file": "weapon-368.json"
+}

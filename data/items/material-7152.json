@@ -1,0 +1,17 @@
+{
+  "id": 7152,
+  "name": "Roasted Pork",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Meat",
+  "description": "Heated roasted pork",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200
+  },
+  "image": "data/images/material-7152.png",
+  "file": "material-7152.json"
+}

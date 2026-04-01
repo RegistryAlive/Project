@@ -1,0 +1,15 @@
+{
+  "id": 6590,
+  "name": "Christmas sofa",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Chair specially decorated for Christmas",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6590.png",
+  "file": "furniture-6590.json"
+}

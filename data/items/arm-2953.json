@@ -1,0 +1,18 @@
+{
+  "id": 2953,
+  "name": "Silent Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dark black minimalist short gloves; when equipped with other Taisho Roman series equipment, an additional set effect can be obtained",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 40,
+    "SPD": 20
+  },
+  "image": "data/images/arm-2953.png",
+  "file": "arm-2953.json"
+}

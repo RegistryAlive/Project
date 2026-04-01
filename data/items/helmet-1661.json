@@ -1,0 +1,17 @@
+{
+  "id": 1661,
+  "name": "Honor Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The hat that symbolizes the members of the Guard Of Honor, the combination of orange and gold is very eye-catching",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30
+  },
+  "image": "data/images/helmet-1661.png",
+  "file": "helmet-1661.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7003,
+  "name": "Fried rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Unique food produced out of the way rice dishes",
+  "size": "1x1",
+  "attributes": {
+    "HP": 130,
+    "SP": 20
+  },
+  "image": "data/images/material-7003.png",
+  "file": "material-7003.json"
+}

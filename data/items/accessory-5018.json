@@ -1,0 +1,15 @@
+{
+  "id": 5018,
+  "name": "Kung-Fu Suit Box",
+  "type": "ItemBox",
+  "category": "accessory",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can be enhanced but not socketed. Can be traded. Cannot be traded after being opened.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5018.png",
+  "file": "accessory-5018.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8496,
+  "name": "Beach Crab Tic",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that make beach crabs buddies",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8496.png",
+  "file": "questprop-8496.json"
+}

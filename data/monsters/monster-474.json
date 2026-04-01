@@ -1,0 +1,33 @@
+{
+  "id": 474,
+  "name": "Water Demon",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-474.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Pork Miso Noodle",
+      "itemId": 7173,
+      "itemFile": "material-7173.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "3X Holy Exp Potion",
+      "itemId": 8534,
+      "itemFile": "questprop-8534.json",
+      "itemCategory": "questprop"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 1063,
+    "sp": 684,
+    "catchable": "Unknown",
+    "spd": 325,
+    "str": 47,
+    "con": 48,
+    "int": 47,
+    "wis": 32,
+    "agi": 50
+  }
+}

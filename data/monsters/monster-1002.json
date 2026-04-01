@@ -1,0 +1,27 @@
+{
+  "id": 1002,
+  "name": "White Wolf Lord",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-1002.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 45,
+    "hp": 2200,
+    "sp": 368,
+    "catchable": "Unknown",
+    "spd": 127.5,
+    "str": 20,
+    "con": 34,
+    "int": 25,
+    "wis": 26,
+    "agi": 30
+  }
+}

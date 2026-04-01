@@ -1,0 +1,15 @@
+{
+  "id": 8287,
+  "name": "Light Armband",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Leads to the location of Hades",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8287.png",
+  "file": "questprop-8287.json"
+}

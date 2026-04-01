@@ -1,0 +1,15 @@
+{
+  "id": 6296,
+  "name": "Elm Bathtub",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Made of elm and player recovers during the bath.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6296.png",
+  "file": "furniture-6296.json"
+}

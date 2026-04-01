@@ -1,0 +1,27 @@
+{
+  "id": 874,
+  "name": "Rock Monster (Quest)",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-874.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 91,
+    "hp": 11275,
+    "sp": 1000,
+    "catchable": "Unknown",
+    "spd": 198.5,
+    "str": 92,
+    "con": 91,
+    "int": 26,
+    "wis": 33,
+    "agi": 31
+  }
+}

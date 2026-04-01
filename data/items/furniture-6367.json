@@ -1,0 +1,15 @@
+{
+  "id": 6367,
+  "name": "Magic Sandglass",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Decreases manufacturing time by 90%,10 uses. Can be not traded.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6367.png",
+  "file": "furniture-6367.json"
+}

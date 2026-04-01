@@ -1,0 +1,18 @@
+{
+  "id": 1596,
+  "name": "Voodoo Doll",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Magic / Grass / Corundum",
+  "description": "A tiny gem embedded within is said to increase magical attack, with 8% chance of seal resistance.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 8,
+    "MATK": 24
+  },
+  "image": "data/images/helmet-1596.png",
+  "file": "helmet-1596.json"
+}

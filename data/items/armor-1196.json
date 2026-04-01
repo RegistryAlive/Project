@@ -1,0 +1,18 @@
+{
+  "id": 1196,
+  "name": "Natura Zen Garb",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Fur / Grass / Feather",
+  "description": "Woven out of fur and leaves, this mysterious outfit increased both magic defense and attack power when equipped.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 25,
+    "DEF": 14
+  },
+  "image": "data/images/armor-1196.png",
+  "file": "armor-1196.json"
+}

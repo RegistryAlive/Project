@@ -1,0 +1,17 @@
+{
+  "id": 10050,
+  "name": "Yellow Duck Ca",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A cute marine vehicle imitating the shape of a duckling, uses diesel as fuel.",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10050.png",
+  "file": "vehicle-10050.json"
+}

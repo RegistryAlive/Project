@@ -1,0 +1,18 @@
+{
+  "id": 990,
+  "name": "Body Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Iron / Leather",
+  "description": "Armor which covers the whole body. Slow movement.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 29,
+    "MDEF": 9
+  },
+  "image": "data/images/armor-990.png",
+  "file": "armor-990.json"
+}

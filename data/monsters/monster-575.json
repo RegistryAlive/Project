@@ -1,0 +1,27 @@
+{
+  "id": 575,
+  "name": "Bimbashi",
+  "location": "Kyoto",
+  "image": "data/Monster_Images/monster-575.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 116,
+    "hp": 1501,
+    "sp": 1045,
+    "catchable": "Unknown",
+    "spd": 288,
+    "str": 86,
+    "con": 81,
+    "int": 64,
+    "wis": 60,
+    "agi": 57
+  }
+}

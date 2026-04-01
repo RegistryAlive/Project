@@ -1,0 +1,33 @@
+{
+  "id": 253,
+  "name": "Land Spider",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-253.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Sparrow Meat",
+      "itemId": 7499,
+      "itemFile": "material-7499.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Widow's Venom",
+      "itemId": 7759,
+      "itemFile": "material-7759.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 66,
+    "hp": 538,
+    "sp": 566,
+    "catchable": "Yes",
+    "spd": 171,
+    "str": 44,
+    "con": 41,
+    "int": 40,
+    "wis": 37,
+    "agi": 36
+  }
+}

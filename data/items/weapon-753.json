@@ -1,0 +1,18 @@
+{
+  "id": 753,
+  "name": "Giant Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Rock / Grass / Wood",
+  "description": "It is made of meteorolite.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "DEF": 16
+  },
+  "image": "data/images/weapon-753.png",
+  "file": "weapon-753.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8448,
+  "name": "New year fabri",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Collect a certain amount of New year fabric to exchange for a new year suit",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8448.png",
+  "file": "questprop-8448.json"
+}

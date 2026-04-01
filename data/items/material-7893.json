@@ -1,0 +1,15 @@
+{
+  "id": 7893,
+  "name": "No Drops",
+  "type": "Material",
+  "category": "material",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "No drops",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7893.png",
+  "file": "material-7893.json"
+}

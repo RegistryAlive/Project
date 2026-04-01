@@ -1,0 +1,18 @@
+{
+  "id": 7031,
+  "name": "Yoghurt Drink",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It's made from milk",
+  "size": "1x1",
+  "attributes": {
+    "SP": 105,
+    "HP": 45
+  },
+  "image": "data/images/material-7031.png",
+  "file": "material-7031.json"
+}

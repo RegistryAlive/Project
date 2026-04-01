@@ -1,0 +1,18 @@
+{
+  "id": 1650,
+  "name": "God of War Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The exquisite feather helmet made according to the shape of the god of war, it seems to be blessed by the god of war",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 250,
+    "MATK": 30
+  },
+  "image": "data/images/helmet-1650.png",
+  "file": "helmet-1650.json"
+}

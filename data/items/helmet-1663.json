@@ -1,0 +1,15 @@
+{
+  "id": 1663,
+  "name": "Snow XmasHat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Snow white Christmas hat with cat ears, decorated with cute golden bells",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1663.png",
+  "file": "helmet-1663.json"
+}

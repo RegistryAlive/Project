@@ -1,0 +1,15 @@
+{
+  "id": 6679,
+  "name": "Pumpkin Sofa",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The bright orange leather sofa is decorated with pumpkin lamps.",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6679.png",
+  "file": "furniture-6679.json"
+}

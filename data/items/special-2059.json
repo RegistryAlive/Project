@@ -1,0 +1,18 @@
+{
+  "id": 2059,
+  "name": "Snake Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal) / Silver",
+  "description": "Snake-shaped earrings made from snake bones.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20,
+    "ATK": 11
+  },
+  "image": "data/images/special-2059.png",
+  "file": "special-2059.json"
+}

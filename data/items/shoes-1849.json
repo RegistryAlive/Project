@@ -1,0 +1,18 @@
+{
+  "id": 1849,
+  "name": "Grass Spirit S",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Shoes which can increase magic effect and defense.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 9,
+    "MDEF": 6
+  },
+  "image": "data/images/shoes-1849.png",
+  "file": "shoes-1849.json"
+}

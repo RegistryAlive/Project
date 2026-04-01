@@ -1,0 +1,17 @@
+{
+  "id": 1074,
+  "name": "Concealment Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leather / Grass",
+  "description": "Woven grass and leather conceal one's scent.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 31
+  },
+  "image": "data/images/armor-1074.png",
+  "file": "armor-1074.json"
+}

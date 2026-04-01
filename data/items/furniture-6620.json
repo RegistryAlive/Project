@@ -1,0 +1,15 @@
+{
+  "id": 6620,
+  "name": "Party Deco",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Wall decoration",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6620.png",
+  "file": "furniture-6620.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 453,
+  "name": "Blue Lightning",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 22,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Lightning fast attack. 30% critical strike chance, crit rate+1 per +10 forge, max crit 40%. Can't imbue crit bomb.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 55
+  },
+  "image": "data/images/weapon-453.png",
+  "file": "weapon-453.json"
+}

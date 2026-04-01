@@ -1,0 +1,15 @@
+{
+  "id": 8121,
+  "name": "Black Monster Card",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Makes a Black Hill Monster become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8121.png",
+  "file": "questprop-8121.json"
+}

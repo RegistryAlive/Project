@@ -1,0 +1,15 @@
+{
+  "id": 6645,
+  "name": "Sakura Swing",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A double rocking chair with a cherry Blossom pillow that sway with cherry blossom",
+  "size": "5x4",
+  "attributes": {},
+  "image": "data/images/furniture-6645.png",
+  "file": "furniture-6645.json"
+}

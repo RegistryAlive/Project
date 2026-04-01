@@ -1,0 +1,15 @@
+{
+  "id": 8396,
+  "name": "Magic Kyubi Ti",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The Little Monkey Award, which can make the magical nine-tailed magic fox a ticket for partners",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8396.png",
+  "file": "questprop-8396.json"
+}

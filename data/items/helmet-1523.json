@@ -1,0 +1,17 @@
+{
+  "id": 1523,
+  "name": "Bride's Veil",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass / Leaf",
+  "description": "Headgear which is worn by bride",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 1
+  },
+  "image": "data/images/helmet-1523.png",
+  "file": "helmet-1523.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1195,
+  "name": "Violahaze Battlerobe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Leather / Nylon / Fur",
+  "description": "A deep purple battlerobe that increased defense and attack when equipped.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "ATK": 14
+  },
+  "image": "data/images/armor-1195.png",
+  "file": "armor-1195.json"
+}

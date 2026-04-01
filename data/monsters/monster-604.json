@@ -1,0 +1,27 @@
+{
+  "id": 604,
+  "name": "Blue Moai",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-604.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 62,
+    "hp": 841,
+    "sp": 528,
+    "catchable": "Unknown",
+    "spd": 125,
+    "str": 42,
+    "con": 50,
+    "int": 43,
+    "wis": 35,
+    "agi": 16
+  }
+}

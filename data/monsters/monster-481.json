@@ -1,0 +1,33 @@
+{
+  "id": 481,
+  "name": "Coast Leopard",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-481.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Black Forestcake",
+      "itemId": 7049,
+      "itemFile": "material-7049.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 45,
+    "hp": 262,
+    "sp": 199,
+    "catchable": "No",
+    "spd": 93.5,
+    "str": 13,
+    "con": 19,
+    "int": 11,
+    "wis": 12,
+    "agi": 13
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2815,
+  "name": "Ghost Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Leather / Gum",
+  "description": "Cuffs made from firm hide and adhesive worm skin.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 4,
+    "MDEF": 1
+  },
+  "image": "data/images/arm-2815.png",
+  "file": "arm-2815.json"
+}

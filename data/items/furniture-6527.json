@@ -1,0 +1,15 @@
+{
+  "id": 6527,
+  "name": "Beach Cushion",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, lifebuoy-shaped cushion",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6527.png",
+  "file": "furniture-6527.json"
+}

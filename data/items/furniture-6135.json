@@ -1,0 +1,15 @@
+{
+  "id": 6135,
+  "name": "Frame of the Plane",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The most important suppot of a plane",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6135.png",
+  "file": "furniture-6135.json"
+}

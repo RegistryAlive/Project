@@ -1,0 +1,15 @@
+{
+  "id": 7742,
+  "name": "Cobra Gall Ext",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Snake gall extracted from a Cobra.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7742.png",
+  "file": "material-7742.json"
+}

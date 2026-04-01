@@ -1,0 +1,15 @@
+{
+  "id": 8495,
+  "name": "Orange Jelly V",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that make mandarin jelly a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8495.png",
+  "file": "questprop-8495.json"
+}

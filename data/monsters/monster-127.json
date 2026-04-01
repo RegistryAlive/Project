@@ -1,0 +1,39 @@
+{
+  "id": 127,
+  "name": "Burning Adder",
+  "location": "Taiwan (Carnie) - Pleasure Island",
+  "image": "data/Monster_Images/monster-127.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Snake Skin",
+      "itemId": 7787,
+      "itemFile": "material-7787.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gooseberry",
+      "itemId": 7451,
+      "itemFile": "material-7451.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Liquid",
+      "itemId": 7755,
+      "itemFile": "material-7755.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 61,
+    "hp": 515,
+    "sp": 538,
+    "catchable": "Unknown",
+    "spd": 181.5,
+    "str": 40,
+    "con": 32,
+    "int": 30,
+    "wis": 36,
+    "agi": 45
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 161,
+  "name": "Elf Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 58,
+  "level": 116,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword forged by dark elves. Weight and sharpness are not comparable to the ordinary.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 58,
+    "SPD": 58
+  },
+  "image": "data/images/weapon-161.png",
+  "file": "weapon-161.json"
+}

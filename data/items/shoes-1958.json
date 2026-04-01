@@ -1,0 +1,18 @@
+{
+  "id": 1958,
+  "name": "Dream Purple Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Feather / Leaf / Leather",
+  "description": "Awesome boots",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 24,
+    "DEF": 14
+  },
+  "image": "data/images/shoes-1958.png",
+  "file": "shoes-1958.json"
+}

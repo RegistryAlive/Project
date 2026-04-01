@@ -1,0 +1,18 @@
+{
+  "id": 66,
+  "name": "Empire Scimit",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Empire Roca's exclusive weapon",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 23,
+    "DEF": 23
+  },
+  "image": "data/images/weapon-66.png",
+  "file": "weapon-66.json"
+}

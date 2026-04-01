@@ -1,0 +1,18 @@
+{
+  "id": 1408,
+  "name": "Golden Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "A pirate hat made from thin gold sheet.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 13,
+    "MDEF": 12
+  },
+  "image": "data/images/helmet-1408.png",
+  "file": "helmet-1408.json"
+}

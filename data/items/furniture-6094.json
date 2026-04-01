@@ -1,0 +1,15 @@
+{
+  "id": 6094,
+  "name": "Titanium Alloy",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 15,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Titanium / Gold",
+  "description": "A special combined metal",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6094.png",
+  "file": "furniture-6094.json"
+}

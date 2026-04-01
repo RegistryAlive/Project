@@ -1,0 +1,15 @@
+{
+  "id": 7818,
+  "name": "Seagull Feather",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Feather",
+  "description": "A Feather of seagull",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7818.png",
+  "file": "material-7818.json"
+}

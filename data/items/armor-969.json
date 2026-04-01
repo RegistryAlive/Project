@@ -1,0 +1,18 @@
+{
+  "id": 969,
+  "name": "Hidden Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Nylon / Grass",
+  "description": "Coated in a special dye, it can conceal weapons.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 13,
+    "SPD": 4
+  },
+  "image": "data/images/armor-969.png",
+  "file": "armor-969.json"
+}

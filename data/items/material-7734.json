@@ -1,0 +1,15 @@
+{
+  "id": 7734,
+  "name": "Snake Tooth",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Hard Tissue",
+  "description": "A Tooth of a snake",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7734.png",
+  "file": "material-7734.json"
+}

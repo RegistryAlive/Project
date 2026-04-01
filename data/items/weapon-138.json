@@ -1,0 +1,18 @@
+{
+  "id": 138,
+  "name": "Rip Pure Iron Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Pure Iron / Wood",
+  "description": "Made from pure iron,forged into three edged blade.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "SPD": 25
+  },
+  "image": "data/images/weapon-138.png",
+  "file": "weapon-138.json"
+}

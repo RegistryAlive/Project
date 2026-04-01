@@ -1,0 +1,18 @@
+{
+  "id": 359,
+  "name": "Demon Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 43,
+  "level": 86,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal) / Wood / Aluminum / Steel / Titanium",
+  "description": "After equipped, you can gain the power of killing gods, which can increase attack power and action power",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 66,
+    "SPD": 20
+  },
+  "image": "data/images/weapon-359.png",
+  "file": "weapon-359.json"
+}

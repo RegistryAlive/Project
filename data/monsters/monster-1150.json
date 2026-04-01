@@ -1,0 +1,27 @@
+{
+  "id": 1150,
+  "name": "Great Wall Guard",
+  "location": "Great Wall",
+  "image": "data/Monster_Images/monster-1151.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Potato",
+      "itemId": 7428,
+      "itemFile": "material-7428.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 869,
+    "sp": 855,
+    "catchable": "Yes",
+    "spd": 180,
+    "str": 65,
+    "con": 52,
+    "int": 38,
+    "wis": 55,
+    "agi": 30
+  }
+}

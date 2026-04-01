@@ -1,0 +1,15 @@
+{
+  "id": 2644,
+  "name": "Diamond Band",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Exclusively for ladies",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2644.png",
+  "file": "special-2644.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 110,
+  "name": "Red Shark",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-110.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Tuna",
+      "itemId": 7491,
+      "itemFile": "material-7491.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fugu",
+      "itemId": 7492,
+      "itemFile": "material-7492.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Salmon",
+      "itemId": 7489,
+      "itemFile": "material-7489.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 2131,
+    "sp": 1340,
+    "catchable": "Unknown",
+    "spd": 389,
+    "str": 109,
+    "con": 106,
+    "int": 81,
+    "wis": 72,
+    "agi": 82
+  }
+}

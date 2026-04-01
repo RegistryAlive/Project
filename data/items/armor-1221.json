@@ -1,0 +1,18 @@
+{
+  "id": 1221,
+  "name": "Breezy Kimono",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Light clothing from the ancient country of East China, you can do activities without fear of the heat in the sun. Complete four-piece suit effect: SPD+100",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "MaxSP": 50
+  },
+  "image": "data/images/armor-1221.png",
+  "file": "armor-1221.json"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 250,
+  "name": "Egyptian Sand Hornet",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-250.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Hornet Comb",
+      "itemId": 7749,
+      "itemFile": "material-7749.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pollen",
+      "itemId": 7528,
+      "itemFile": "material-7528.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sparrow Meat",
+      "itemId": 7499,
+      "itemFile": "material-7499.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 57,
+    "hp": 746,
+    "sp": 322,
+    "catchable": "Yes",
+    "spd": 165.5,
+    "str": 40,
+    "con": 51,
+    "int": 20,
+    "wis": 20,
+    "agi": 40
+  }
+}

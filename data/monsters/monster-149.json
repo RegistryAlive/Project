@@ -1,0 +1,33 @@
+{
+  "id": 149,
+  "name": "Advanced Guard",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-149.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Bread",
+      "itemId": 7010,
+      "itemFile": "material-7010.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "French Bread",
+      "itemId": 7015,
+      "itemFile": "material-7015.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 533,
+    "sp": 488,
+    "catchable": "Unknown",
+    "spd": 184,
+    "str": 45,
+    "con": 39,
+    "int": 28,
+    "wis": 30,
+    "agi": 38
+  }
+}

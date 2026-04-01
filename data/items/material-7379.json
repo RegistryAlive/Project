@@ -1,0 +1,15 @@
+{
+  "id": 7379,
+  "name": "Apple Seed",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Seed",
+  "description": "An Apple seed",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7379.png",
+  "file": "material-7379.json"
+}

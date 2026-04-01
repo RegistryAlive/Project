@@ -1,0 +1,15 @@
+{
+  "id": 7632,
+  "name": "Obsidian",
+  "type": "MaterialRock",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Rock",
+  "description": "Contains a lot of black crystals",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7632.png",
+  "file": "material-7632.json"
+}

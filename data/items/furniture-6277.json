@@ -1,0 +1,15 @@
+{
+  "id": 6277,
+  "name": "Aspersory",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "can auto-sprinkle water",
+  "size": "1x3",
+  "attributes": {},
+  "image": "data/images/furniture-6277.png",
+  "file": "furniture-6277.json"
+}

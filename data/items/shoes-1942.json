@@ -1,0 +1,18 @@
+{
+  "id": 1942,
+  "name": "Swift Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Feather / Leather / Nylon",
+  "description": "Light boots made by eagle feather and fur",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "DEF": 7
+  },
+  "image": "data/images/shoes-1942.png",
+  "file": "shoes-1942.json"
+}

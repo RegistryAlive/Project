@@ -1,0 +1,15 @@
+{
+  "id": 1437,
+  "name": "Broken Hairwear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "Headgear which is out of service",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1437.png",
+  "file": "helmet-1437.json"
+}

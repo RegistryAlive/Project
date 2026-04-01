@@ -1,0 +1,18 @@
+{
+  "id": 91,
+  "name": "Zhuri Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Forged on the day of a solar eclipse, the quaint blade overflows with golden brilliance. The critical strike rate is 30%, and the critical strike rate increases by 1% for every forging +10, up to 40%. The critical strike drill cannot be inlaid.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "MaxHP": 500
+  },
+  "image": "data/images/weapon-91.png",
+  "file": "weapon-91.json"
+}

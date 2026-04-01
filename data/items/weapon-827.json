@@ -1,0 +1,18 @@
+{
+  "id": 827,
+  "name": "Silver Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Platinum",
+  "description": "Silver and iron binding fan made of the effect of the seal with anti-",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "MATK": 30
+  },
+  "image": "data/images/weapon-827.png",
+  "file": "weapon-827.json"
+}

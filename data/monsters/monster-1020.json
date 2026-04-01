@@ -1,0 +1,27 @@
+{
+  "id": 1020,
+  "name": "Xibei'er",
+  "location": "Polo Island",
+  "image": "data/Monster_Images/monster-1020.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 843,
+    "sp": 1142,
+    "catchable": "Unknown",
+    "spd": 260,
+    "str": 50,
+    "con": 45,
+    "int": 80,
+    "wis": 70,
+    "agi": 55
+  }
+}

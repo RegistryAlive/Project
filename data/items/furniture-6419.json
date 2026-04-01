@@ -1,0 +1,15 @@
+{
+  "id": 6419,
+  "name": "New Year Cracker",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Necessary scrolls used for Spring Festival",
+  "size": "1x3",
+  "attributes": {},
+  "image": "data/images/furniture-6419.png",
+  "file": "furniture-6419.json"
+}

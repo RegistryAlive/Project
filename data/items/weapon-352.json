@@ -1,0 +1,18 @@
+{
+  "id": 352,
+  "name": "Blue Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Titanium / Steel",
+  "description": "Increases ATK&DEF when used",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 21,
+    "DEF": 21
+  },
+  "image": "data/images/weapon-352.png",
+  "file": "weapon-352.json"
+}

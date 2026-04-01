@@ -1,0 +1,15 @@
+{
+  "id": 9018,
+  "name": "Centrifuge",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can leach impurities.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/tool-9018.png",
+  "file": "tool-9018.json"
+}

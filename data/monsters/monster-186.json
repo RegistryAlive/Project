@@ -1,0 +1,33 @@
+{
+  "id": 186,
+  "name": "Hot Tree",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-186.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Rice With Roast Pork",
+      "itemId": 7037,
+      "itemFile": "material-7037.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 23,
+    "hp": 119,
+    "sp": 100,
+    "catchable": "No",
+    "spd": 46.5,
+    "str": 8,
+    "con": 7,
+    "int": 8,
+    "wis": 5,
+    "agi": 6
+  }
+}

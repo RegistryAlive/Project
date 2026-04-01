@@ -1,0 +1,17 @@
+{
+  "id": 2836,
+  "name": "Light Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Aluminum / Gold",
+  "description": "Light cuffs accreted with gold spines.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 19
+  },
+  "image": "data/images/arm-2836.png",
+  "file": "arm-2836.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1387,
+  "name": "GoldCrest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A laurel which is founded of gold",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 10,
+    "SPD": 2
+  },
+  "image": "data/images/helmet-1387.png",
+  "file": "helmet-1387.json"
+}

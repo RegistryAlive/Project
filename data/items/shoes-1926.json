@@ -1,0 +1,18 @@
+{
+  "id": 1926,
+  "name": "Wild Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 45,
+  "level": 90,
+  "rarity": "legendary",
+  "base": "Nylon / Leather",
+  "description": "Boots that are meant to be worn outside.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 37,
+    "SPD": 8
+  },
+  "image": "data/images/shoes-1926.png",
+  "file": "shoes-1926.json"
+}

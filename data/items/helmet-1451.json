@@ -1,0 +1,18 @@
+{
+  "id": 1451,
+  "name": "Wit Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Leather / Pure Iron / Iron",
+  "description": "A skullcap that rests on top of the head.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 13,
+    "MATK": 7
+  },
+  "image": "data/images/helmet-1451.png",
+  "file": "helmet-1451.json"
+}

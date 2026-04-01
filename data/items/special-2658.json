@@ -1,0 +1,17 @@
+{
+  "id": 2658,
+  "name": "Dark Earbobs",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Diamond",
+  "description": "Made with diamond and it can increase MATK",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20
+  },
+  "image": "data/images/special-2658.png",
+  "file": "special-2658.json"
+}

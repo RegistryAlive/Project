@@ -1,0 +1,18 @@
+{
+  "id": 637,
+  "name": "Rose Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Carved from gorgeous jade, it looks like real flowers at first glance. Blacksmithing +2 can increase critical strike by 1% (up to 50%)",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 55,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-637.png",
+  "file": "weapon-637.json"
+}

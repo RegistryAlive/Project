@@ -1,0 +1,18 @@
+{
+  "id": 1772,
+  "name": "Sage Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 7,
+    "MDEF": 13
+  },
+  "image": "data/images/helmet-1772.png",
+  "file": "helmet-1772.json"
+}

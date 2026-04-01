@@ -1,0 +1,15 @@
+{
+  "id": 6764,
+  "name": "Pretty Tea Table",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": null,
+  "description": "People can enjoy drinking tea around it.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6764.png",
+  "file": "furniture-6764.json"
+}

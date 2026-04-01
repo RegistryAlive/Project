@@ -1,0 +1,15 @@
+{
+  "id": 6362,
+  "name": "Globe",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A simple model of the Earth",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6362.png",
+  "file": "furniture-6362.json"
+}

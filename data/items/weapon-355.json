@@ -1,0 +1,18 @@
+{
+  "id": 355,
+  "name": "Spiri Fork+10",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cannot be socketed and traded, 46% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 66,
+    "MaxHP": 640
+  },
+  "image": "data/images/weapon-355.png",
+  "file": "weapon-355.json"
+}

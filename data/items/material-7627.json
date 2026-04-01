@@ -1,0 +1,15 @@
+{
+  "id": 7627,
+  "name": "Refined Tin",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Made of tin",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7627.png",
+  "file": "material-7627.json"
+}

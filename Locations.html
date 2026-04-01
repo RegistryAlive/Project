@@ -1,0 +1,3627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - Wonderland Online DB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wlBlue: '#3b82f6',
+                        wlPurple: '#8b5cf6',
+                        wlGreen: '#10b981',
+                        wlRed: '#ef4444',
+                        wlYellow: '#f59e0b',
+                        wlDark: '#1e293b',
+                        wlDarker: '#0f172a',
+                        wlLight: '#f1f5f9', 
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-fast': 'float 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'modal-scale-in': 'modalScaleIn 0.3s ease-out forwards',
+                        'modal-fade-in': 'modalFadeIn 0.3s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        modalScaleIn: {
+                            '0%': { opacity: 0, transform: 'scale(0.95) translateY(10px)' },
+                            '100%': { opacity: 1, transform: 'scale(1) translateY(0)' },
+                        },
+                        modalFadeIn: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a; /* wlDarker */
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            min-height: 100vh;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02) rotateX(1deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-input:focus { /* This existing style might be overridden by Tailwind focus utilities on new inputs */
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.5); 
+        }
+        
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: 0; left: 0; background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .nav-link.active::after { width: 100%; } 
+        .nav-link:hover::after { width: 100%; }
+        
+        .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        
+        .tooltip { position: relative; }
+        .tooltip:hover .tooltip-text { visibility: visible; opacity: 1; transform: translateY(0); }
+        .tooltip-text {
+            visibility: hidden; opacity: 0; position: absolute; z-index: 10;
+            bottom: 125%; left: 50%; transform: translateX(-50%) translateY(10px);
+            background-color: #1e293b; color: white; text-align: center;
+            padding: 5px 10px; border-radius: 6px; transition: all 0.3s ease;
+            width: max-content; max-width: 200px; font-size: 0.8rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+        }
+        .tooltip-text::after {
+            content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px;
+            border-width: 5px; border-style: solid; border-color: #1e293b transparent transparent transparent;
+        }
+        
+        .fade-in { animation: fadeIn 0.5s ease-in forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .sidebar { transition: transform 0.3s ease; }
+        .sidebar-hidden { transform: translateX(100%); }
+        .sidebar-visible { transform: translateX(0); }
+        
+        .dark-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.5); z-index: 40; opacity: 0;
+            pointer-events: none; transition: opacity 0.3s ease;
+        }
+        .dark-overlay-visible { opacity: 1; pointer-events: auto; }
+
+        #interactiveMapContainer {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        /* Remove padding and ensure border doesn't shrink the content */
+        border: 2px solid rgba(59, 130, 246, 0.3);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-sizing: border-box; /* Ensures the 2px border is included in the 900px */
+        }
+
+        #mapImageWrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            cursor: grab;
+            /* This ensures markers calculate % based on the ACTUAL image pixels */
+            display: block; 
+        }
+
+        #worldMapImage {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: fill; /* Essential to match your 736:575 math exactly */
+        }
+        
+
+        #locationDetailSection {
+            background-color: rgba(30, 41, 59, 0.7); 
+            border: 1px solid rgba(241, 245, 249, 0.1); 
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            animation: fadeIn 0.5s ease-out;
+        }
+        #locationDetailSection h3 {
+            color: #f1f5f9; 
+        }
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .detail-card {
+            background-color: #0f172a; 
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(241, 245, 249, 0.1);
+        }
+        .detail-card h4 {
+            color: #8b5cf6; 
+            margin-bottom: 0.5rem;
+        }
+        .detail-card ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+            color: rgba(241, 245, 249, 0.8); 
+        }
+        .detail-card img {
+            max-width: 100%;
+            border-radius: 0.375rem;
+            margin-top: 0.75rem;
+            border: 1px solid rgba(241, 245, 249, 0.1);
+        }
+        .results-fade-in {
+      animation: resultsFadeIn 0.65s cubic-bezier(.39,.68,.54,1.01);
+    }
+    @keyframes resultsFadeIn {
+      from { opacity: 0; transform: translateY(20px) scale(0.97);}
+      to   { opacity: 1; transform: translateY(0) scale(1);}
+    }
+    /* Result card hover effect and focus for accessibility */
+    .result-card:focus-visible {
+        outline: 2.5px solid #3b82f6;
+        outline-offset: 2px;
+    }
+    .result-card.selected, .result-card:hover {
+        border-color: #f59e0b !important;
+        background: linear-gradient(90deg,#241887 0 7%,#2563eb11 50%,#0f172a 100%);
+        box-shadow: 0 4px 24px -7px #8b5cf631, 0 1.5px 9px -7px #f59e0b76;
+        color: #f59e0b;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(.39,.68,.54,1.01)!important;
+    }
+    /* Badge style for numbers */
+    .search-badge {
+        font-size: 0.95rem;
+        border-radius: 8px;
+        font-weight: 500;
+        padding: 1.5px 9px 1.5px 8px;
+        margin-left: 6px;
+        background: linear-gradient(90deg,#8b5cf66b 20%,#3b82f633 100%);
+        color: #f1f5f9ba;
+        display: inline-flex;
+        align-items: center;
+    }
+    /* Placeholder icon animation for empty state */
+    .search-empty-icon {
+        font-size: 2.1rem !important;
+        color: #8b5cf6b2;
+        animation: glowRotate 2.2s linear infinite;
+        display: block;
+        margin-bottom: 0.4rem;
+    }
+    @keyframes glowRotate {
+        0% { filter: drop-shadow(0 0 9px #8b5cf6a1);}
+        50% { filter: drop-shadow(0 0 18px #8b5cf66a);}
+        100% { filter: drop-shadow(0 0 9px #8b5cf6a1);}
+    }
+
+    /* Responsive search list grid: 2 columns on md+, 1 on mobile */
+    #searchResultsList {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+        gap: 1.15rem;
+    }
+    @keyframes modalScaleIn {
+        from { opacity: 0; transform: scale(0.96) translateY(30px);}
+        to   { opacity: 1; transform: scale(1) translateY(0);}
+    }
+    .animate-modalScaleIn { animation: modalScaleIn 0.35s cubic-bezier(.23,.98,.23,1.01);}
+    .blurred-bg { filter: blur(5px) !important; pointer-events: none !important; }
+    .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; overflow: hidden; clip: rect(0,0,0,0);}
+    .result-thumbnail {
+        width: 80px; height: 60px;
+        border-radius: 0.6rem;
+        margin-right: 1.2rem;
+        object-fit: cover; object-position: center;
+        box-shadow: 0 4px 14px -3px #3b82f674;
+        border: 1.5px solid #374151;
+        transition: transform 0.13s;
+    }
+    .result-card.selected .result-thumbnail,
+    .result-card:hover .result-thumbnail {
+        outline: 2.5px solid #f59e0b;
+        transform: scale(1.07) rotate(-1.5deg);
+        filter: brightness(1.13);
+        box-shadow: 0 6px 16px -2px #f59e0b56;
+    }
+    /* Modal overlay background blur for app (optional) */
+    #filterModalBg[aria-modal="true"] ~ .min-h-screen { filter: blur(5px);}
+
+    /* Responsive SEARCH BAR and BUTTONS */
+@media (max-width: 640px) {
+  #searchFilterControls .grid {
+    display: block !important;
+  }
+  #searchFilterControls > div,
+  #searchFilterControls .md\:col-span-2 {
+    width: 100%;
+    max-width: 100%;
+  }
+  #searchFilterControls label,
+  #searchFilterControls input,
+  #searchFilterControls button {
+    font-size: 1.03rem !important;
+  }
+  #searchFilterControls input {
+    min-height: 2.5em;
+    padding: 0.9em 0.85em;
+  }
+  #searchFilterControls .flex {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  #searchFilterControls button {
+    width: 100% !important;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    font-size: 1.06rem;
+    padding: 0.85em 0.7em;
+  }
+}
+
+/* Responsive SEARCH RESULTS LIST */
+@media (max-width: 640px) {
+  #searchResultsList {
+    grid-template-columns: 1fr !important;
+    gap: 0.7rem !important;
+  }
+  .result-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 0.95em 0.7em !important;
+    min-width: 0;
+  }
+  .result-thumbnail {
+    width: 100%;
+    max-width: 230px;
+    height: 50vw;
+    max-height: 110px;
+    min-height: 52px;
+    margin: 0 auto 0.8em auto;
+    display: block;
+    border-radius: 0.8em;
+  }
+  .result-card > .flex-1 {
+    width: 100%;
+    padding-right: 0;
+  }
+  .result-card .absolute.top-4.right-6 {
+    position: static !important;
+    margin-top: 0.9em;
+    margin-bottom: 0.1em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .result-card .font-bold.text-xl {
+    font-size: 1.12rem !important;
+    margin-bottom: 0.16em !important;
+    padding-right: 0 !important;
+  }
+  .result-card .grid.sm\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Better tap target on result cards */
+.result-card {
+  min-width: 0;
+  word-break: break-word;
+  transition: box-shadow .14s, border .12s;
+  touch-action: manipulation;
+}
+.result-card:active {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 1.5px 16px 0 #38bdf844;
+}
+
+/* FILTER MODAL on small screens */
+@media (max-width: 600px) {
+  #filterModal {
+    max-width: 98vw !important;
+    padding: 1.1em 0.8em 1.4em 0.8em !important;
+    border-radius: 1.1em !important;
+  }
+  #filterModal h2 {
+    font-size: 1.25rem !important;
+    margin-bottom: 1.05em !important;
+  }
+  #filterModal label,
+  #filterModal input,
+  #filterModal button {
+    font-size: 1rem !important;
+  }
+  #filterModal input {
+    min-height: 2.15em !important;
+    padding: 0.6em 0.88em !important;
+    border-radius: 0.6em !important;
+  }
+  #filterModal .flex.gap-4.mt-6 {
+    flex-direction: column !important;
+    gap: 0.75em !important;
+  }
+  #filterModal .flex.gap-4.items-center {
+    flex-direction: column !important;
+    gap: 0.5em !important;
+    align-items: flex-start !important;
+  }
+}
+
+    /* Hide overflow and prevent accidental horizontal scroll */
+    html, body {
+      max-width: 100vw;
+      overflow-x: hidden;
+    }
+
+    /* Search suggestions dropdown styles */
+    #searchSuggestions {
+      scrollbar-width: thin;
+      scrollbar-color: #3b82f6 #0f172a;
+      margin-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    #searchSuggestions::-webkit-scrollbar {
+      width: 6px;
+    }
+    #searchSuggestions::-webkit-scrollbar-track {
+      background: #0f172a;
+      border-radius: 3px;
+    }
+    #searchSuggestions::-webkit-scrollbar-thumb {
+      background: #3b82f6;
+      border-radius: 3px;
+    }
+    .suggestion-item {
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: background 0.15s;
+    }
+    .suggestion-item:last-child {
+      border-bottom: none;
+    }
+    .suggestion-item:hover, .suggestion-item.active {
+      background: rgba(59, 130, 246, 0.2);
+    }
+    .suggestion-item .suggestion-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+    }
+    .suggestion-item .suggestion-icon.location {
+      background: rgba(16, 185, 129, 0.2);
+      color: #10b981;
+    }
+    .suggestion-item .suggestion-icon.monster {
+      background: rgba(139, 92, 246, 0.2);
+      color: #8b5cf6;
+    }
+    .suggestion-item .suggestion-text {
+      flex: 1;
+    }
+    .suggestion-item .suggestion-name {
+      font-weight: 500;
+      color: #f1f5f9;
+    }
+    .suggestion-item .suggestion-meta {
+      font-size: 0.8rem;
+      color: rgba(241, 245, 249, 0.6);
+    }
+    .suggestion-item .suggestion-match {
+      background: rgba(245, 158, 11, 0.3);
+      color: #f59e0b;
+      padding: 0 2px;
+      border-radius: 2px;
+    }
+
+/* Adjust details modal/grid on mobile */
+@media (max-width: 640px) {
+  .detail-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1em !important;
+  }
+  #locationDetailSection {
+    padding: 0.7em 0.2em !important;
+  }
+}
+
+/* Stat Cards */
+.stat-card {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Gallery */
+.gallery-thumb {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.gallery-thumb:hover, .gallery-thumb.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Image Viewer Modal */
+#imageViewerModal img {
+  animation: imageZoomIn 0.3s ease-out;
+  transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
+  transition: transform 0.15s ease-out;
+  cursor: zoom-in;
+}
+#imageViewerModal img.zoomed {
+  cursor: grab;
+}
+#imageViewerModal img.zoomed:active {
+  cursor: grabbing;
+}
+@keyframes imageZoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+#imageViewerModal:not(.hidden) {
+  animation: fadeIn 0.3s ease-out;
+}
+#prevImage:hover, #nextImage:hover {
+  transform: scale(1.15);
+}
+
+/* Zoom controls */
+.zoom-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+.zoom-btn {
+  background: rgba(30, 41, 59, 0.9);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+.zoom-btn:hover {
+  background: rgba(59, 130, 246, 0.9);
+  transform: scale(1.05);
+}
+.viewer-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.viewer-container img.dragging {
+  user-select: none;
+}
+.viewer-container img {
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* Element Distribution Bars */
+.element-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+}
+.element-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+/* Monster Preview Cards */
+.monster-preview-card {
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  transition: all 0.3s ease;
+}
+.monster-preview-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+.monster-preview-card img {
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  background: rgba(30, 41, 59, 0.5);
+}
+
+/* Connection Pills */
+.connection-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  border-radius: 2rem;
+  color: #f1f5f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.connection-pill:hover {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.4), rgba(139, 92, 246, 0.4));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Favorite button animation */
+#favoriteBtn.active {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+#favoriteBtn.active i {
+  color: white;
+}
+
+/* Comparison Modal */
+#comparisonModal .comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+#comparisonModal .comparison-card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+}
+#comparisonModal .comparison-card.winner {
+  border-color: #10b981;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Map Zoom Modal */
+#mapZoomModalBg {
+  backdrop-filter: blur(10px);
+}
+#mapZoomContainer {
+  background: rgba(15, 23, 42, 0.95);
+}
+
+/* Floating particles */
+.floating-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(139, 92, 246, 0.6);
+  border-radius: 50%;
+  animation: floatParticle 15s infinite linear;
+  pointer-events: none;
+}
+@keyframes floatParticle {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Stars rating */
+.star {
+  color: #4b5563;
+  transition: color 0.2s ease;
+}
+.star.filled {
+  color: #f59e0b;
+}
+.star.half {
+  background: linear-gradient(90deg, #f59e0b 50%, #4b5563 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, #1e293b, #3b82f6);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-ball {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle.light .theme-toggle-ball {
+            transform: translateX(30px);
+        }
+        
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e2e8f0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f8fafc !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #1e293b !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #cbd5e1 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+
+        /* Light mode - Locations page specific */
+        body.light-mode #locationDetailSection {
+            background-color: rgba(226, 232, 240, 0.7) !important;
+        }
+        body.light-mode #locationDetailSection h3 {
+            color: #1e293b !important;
+        }
+        body.light-mode .detail-card {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .detail-card ul {
+            color: rgba(30, 41, 59, 0.8) !important;
+        }
+        body.light-mode .tooltip-text {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .tooltip-text::after {
+            border-color: #f1f5f9 transparent transparent transparent !important;
+        }
+        body.light-mode .marker-popover {
+            background: #f1f5f9 !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .marker-tooltip {
+            background: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .toast {
+            background: linear-gradient(135deg, #f1f5f9, #e2e8f0) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .zoom-btn {
+            background: rgba(226, 232, 240, 0.9) !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .connection-pill {
+            color: #1e293b !important;
+        }
+        body.light-mode .monster-preview-card {
+            background: rgba(226, 232, 240, 0.8) !important;
+        }
+        body.light-mode .monster-preview-card img {
+            background: rgba(241, 245, 249, 0.5) !important;
+        }
+        body.light-mode #comparisonModal .comparison-card {
+            background: rgba(241, 245, 249, 0.9) !important;
+        }
+        body.light-mode #mapZoomContainer {
+            background: rgba(241, 245, 249, 0.95) !important;
+        }
+        body.light-mode #searchSuggestions::-webkit-scrollbar-track {
+            background: #f1f5f9 !important;
+        }
+        body.light-mode .suggestion-item .suggestion-name {
+            color: #1e293b !important;
+        }
+        body.light-mode .suggestion-item {
+            border-color: #e2e8f0 !important;
+        }
+        body.light-mode select {
+            background-color: #e2e8f0 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode select option {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+</style>
+</head>
+<body class="text-wlLight"> 
+    <div id="darkOverlay" class="dark-overlay"></div>
+    <div id="mobileSidebar" class="sidebar sidebar-hidden fixed inset-y-0 right-0 w-64 bg-wlDarker z-50 shadow-2xl p-4 overflow-y-auto">
+        <div class="flex justify-between items-center mb-8">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                <i class="fas fa-dragon text-xl text-white"></i>
+            </div>
+            <button id="closeSidebar" class="hover:text-wlRed">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="space-y-4">
+            <a href="index.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Home</a>
+            <a href="Item.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Items</a>
+            <a href="quests.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Quests</a>
+            <a href="monsters.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Monsters</a>
+            <a href="Locations.html" class="block px-4 py-2 rounded-md font-medium bg-wlDark bg-opacity-50 text-wlBlue transition">Locations</a>
+            <a href="tier-list.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Tier-List</a>
+            <a href="shops.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Shops</a>
+            <a href="manufacture.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Manufacture</a>
+            <a href="Resources.html" class="block px-4 py-2 rounded-md font-medium text-wlPurple hover:bg-wlDark hover:bg-opacity-50 transition">Resources</a>
+        </nav>
+    </div>
+
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-wlDark bg-opacity-90 blur-bg shadow-lg sticky top-0 z-30">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <a href="index.html" class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                            <i class="fas fa-dragon text-xl text-white"></i>
+                        </div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                            Wonderland Online DB
+                        </h1>
+                    </a>
+                    <div class="hidden md:flex space-x-6 items-center">
+                        <div class="relative group">
+                            <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium flex items-center">
+                                Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+                            </a>
+                            <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                                <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-lg flex items-center justify-between">
+                                    Roadmap <i class="fas fa-route text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="Item.html" class="nav-link px-3 py-2 text-sm font-medium">Items</a>
+                        <a href="quests.html" class="nav-link px-3 py-2 text-sm font-medium">Quests</a>
+                        <a href="monsters.html" class="nav-link px-3 py-2 text-sm font-medium">Monsters</a>
+                        <a href="Locations.html" class="nav-link px-3 py-2 text-sm font-medium text-wlBlue">Locations</a>
+                        <a href="tier-list.html" class="nav-link px-3 py-2 text-sm font-medium">Tier-List</a>
+                        <a href="shops.html" class="nav-link px-3 py-2 text-sm font-medium">Shops</a>
+                        <a href="manufacture.html" class="nav-link px-3 py-2 text-sm font-medium">Manufacture</a>
+                        <a href="Resources.html" class="nav-link px-3 py-2 text-sm font-medium">Resources</a>
+                        <!-- Theme Toggle -->
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                            <div class="theme-toggle-ball">
+                                <i class="fas fa-moon text-xs text-wlDark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="openSidebar" class="focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <section class="text-center mb-12">
+                <div class="max-w-4xl mx-auto relative">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-wlGreen rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-wlBlue rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-wlGreen to-wlBlue gradient-text glow">
+                        Explore the World
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                        Discover new lands, hidden dungeons, and bustling towns. Click on a location to see its details.
+                    </p>
+                </div>
+            </section>
+
+            <section id="interactiveMapSection" class="mb-12">
+            <h3 class="text-2xl font-bold mb-2 text-wlBlue">World Map</h3>
+            <p class="mb-4 text-wlLight/80">Click a marker to explore a location. Hover for names. Use the legend below for marker meanings.</p>
+            <div id="interactiveMapContainer" class="relative bg-wlDark bg-opacity-60 p-0 sm:p-0 rounded-lg shadow-2xl border-2 border-wlBlue/30 flex justify-center items-center overflow-hidden" style="width:100%; max-width:900px; margin:0 auto; aspect-ratio: 736/575;">
+            
+            <button id="zoomInBtn" class="absolute top-3 left-3 z-40 px-2 py-1 bg-wlBlue hover:bg-wlGreen text-white text-sm rounded shadow transition"><i class="fas fa-search-plus"></i></button>
+            <button id="zoomOutBtn" class="absolute top-12 left-3 z-40 px-2 py-1 bg-wlBlue hover:bg-wlGreen text-white text-sm rounded shadow transition"><i class="fas fa-search-minus"></i></button>
+            <button id="resetZoomBtn" class="absolute top-20 left-3 z-40 px-2 py-1 bg-wlPurple hover:bg-wlGreen text-white text-sm rounded shadow transition"><i class="fas fa-compress-arrows-alt"></i></button>
+            <div id="mapImageWrapper" style="position:relative;width:100%;height:100%;cursor:grab;">
+            <img id="worldMapImage" src="world_map.png" alt="World Map of Wonderland" class="rounded-md shadow-lg w-full h-full" style="border:0; user-select:none; -webkit-user-drag:none; object-fit: fill;" draggable="false">
+            <div id="mapMarkersLayer" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;"></div>
+            </div>
+            </div>
+            <div class="flex items-center gap-4 mt-3 text-sm">
+            <button id="showAllLocationsBtn" class="px-3 py-1.5 bg-wlGreen hover:bg-wlBlue text-white rounded shadow transition">
+            <i class="fas fa-list mr-1"></i>Show All Locations
+            </button>
+            <span class="inline-flex items-center"><span class="map-marker marker-glow" style="background:rgba(239,68,68,0.8);width:10px;height:10px;box-shadow:0 0 6px 2px #f59e0b;display:inline-block;margin-right:6px;"></span> Main Location</span>
+            <span class="inline-flex items-center"><span class="map-marker marker-glow" style="background:rgba(59,130,246,0.8);width:10px;height:10px;box-shadow:0 0 6px 2px #3b82f6;display:inline-block;margin-right:6px;"></span> Dungeon</span>
+            </div>
+            </section>
+            
+            <style>
+            .marker-glow {
+            box-shadow: 0 0 8px 3px rgba(245, 158, 11, 0.6);
+             border: 2px solid #fff;
+             }
+            .map-marker {
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                font-size: 8px;
+                pointer-events: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+                border: 2px solid #fff;
+                transform: translate(-50%, -50%) scale(var(--marker-scale, 1));
+                cursor: pointer;
+                transition: box-shadow 0.2s ease;
+             }
+            .map-marker i {
+              font-size: 0.6em;
+              opacity: 0;
+            }
+            .map-marker:hover {
+              box-shadow: 0 0 12px 4px rgba(245, 158, 11, 0.8), 0 0 20px 6px rgba(239, 68, 68, 0.4);
+            }
+            .map-marker:hover i {
+              opacity: 1;
+            }
+            /* Dungeon markers - blue style */
+            .map-marker.dungeon {
+                background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            }
+            .map-marker.dungeon:hover {
+              box-shadow: 0 0 12px 4px rgba(59, 130, 246, 0.8), 0 0 20px 6px rgba(139, 92, 246, 0.4);
+            }
+            /* Scale markers based on zoom level */
+            #mapImageWrapper {
+                --marker-scale: 1;
+            }
+            @media (max-width: 700px) {
+              .map-marker {
+                width: 12px;
+                height: 12px;
+                font-size: 6px;
+                transform: translate(-50%, -50%) scale(var(--marker-scale, 1));
+              }
+            }
+            @media (max-width: 900px) {
+              #interactiveMapContainer {
+                max-width: 98vw;
+              }
+              .map-marker {
+                width: 13px;
+                height: 13px;
+                font-size: 7px;
+                transform: translate(-50%, -50%) scale(var(--marker-scale, 1));
+              }
+            }
+            @media (max-width: 640px) {
+              #interactiveMapContainer {
+                max-width: 100vw;
+                min-width: 0;
+              }
+              .map-marker {
+                width: 11px;
+                height: 11px;
+                font-size: 6px;
+                transform: translate(-50%, -50%) scale(var(--marker-scale, 1));
+              }
+              .marker-tooltip {
+                font-size: 0.92rem;
+                padding: 4px 8px;
+              }
+            }
+            .marker-popover {
+              position: fixed;
+              left: 50%;
+              bottom: auto;
+              top: auto;
+              margin-bottom: 0;
+              transform: translateX(-50%);
+              background: #1e293b;
+              color: #fff;
+              border-radius: 8px;
+              box-shadow: 0 4px 16px #0007;
+              padding: 10px 16px;
+              min-width: 170px;
+              max-width: 280px;
+              z-index: 1000;
+              font-size: 0.98rem;
+              pointer-events: none;
+              opacity: 0;
+              transition: opacity 0.18s;
+              display: flex;
+              flex-direction: column;
+              gap: 0.3em;
+            }
+            .marker-popover.below {
+              bottom: auto;
+              top: auto;
+            }
+            .marker-popover.visible {
+              opacity: 1;
+              pointer-events: auto;
+            }
+            .marker-popover .popover-title {
+              font-weight: 600;
+              color: #f59e0b;
+              margin-bottom: 2px;
+              font-size: 1.08em;
+            }
+            .marker-popover .popover-section {
+              font-size: 0.97em;
+              color: #f1f5f9;
+            }
+            .marker-popover .popover-section i {
+              color: #8b5cf6;
+              margin-right: 4px;
+            }
+            .loader {
+              border: 4px solid #f3f3f3;
+              border-top: 4px solid #3b82f6;
+              border-radius: 50%;
+              width: 38px;
+              height: 38px;
+              animation: spin 0.8s linear infinite;
+              display: inline-block;
+            }
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+            .tooltip-marker {
+            position: relative;
+            }
+            .marker-tooltip {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            bottom: 100%;
+            margin-bottom: 8px;
+            transform: translateX(-50%);
+            background: #1e293b;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            pointer-events: none;
+            z-index: 20;
+            box-shadow: 0 2px 8px #0005;
+            transition: opacity 0.18s, visibility 0.18s;
+            }
+            .tooltip-marker:hover .marker-tooltip,
+            .tooltip-marker:focus .marker-tooltip,
+            .tooltip-marker:focus-visible .marker-tooltip {
+            visibility: visible;
+            opacity: 1;
+            }
+            .map-marker.highlighted, .result-card.highlighted {
+            outline: 2px solid #f59e0b !important;
+             z-index: 30;
+             box-shadow: 0 0 12px 4px #f59e0b, 0 0 2px 1px #fff;
+             }
+             @media (max-width: 640px) {
+                 .map-marker { width: 11px !important; height: 11px !important; font-size: 6px; transform: translate(-50%, -50%) scale(var(--marker-scale, 1)); }
+                 .marker-tooltip { font-size: 1.1rem; padding: 6px 14px; }
+             }
+            </style>
+
+            <!-- Search and Filter Section -->
+            <section id="searchFilterControls" class="my-8 mb-72 p-6 bg-wlDark bg-opacity-70 blur-bg rounded-lg shadow-xl overflow-visible">
+                <div class="grid md:grid-cols-3 gap-6 items-end">
+                    <div class="md:col-span-2 relative">
+                        <label for="searchInput" class="block text-sm font-medium text-wlLight mb-2">Search Locations or Monsters</label>
+                        <input type="text" id="searchInput" placeholder="E.g., North Island, Ice Fairy, or 12 (for level)"
+                               class="w-full px-4 py-2.5 bg-wlDarker border border-wlLight border-opacity-30 rounded-md focus:ring-2 focus:ring-wlRed focus:border-wlRed text-wlLight placeholder-wlLight placeholder-opacity-60 transition duration-150 ease-in-out"
+                               autocomplete="off">
+                        <!-- Autocomplete suggestions dropdown -->
+                        <div id="searchSuggestions" class="absolute z-[60] w-full mt-2 bg-wlDarker border border-wlBlue border-opacity-40 rounded-md shadow-xl max-h-64 overflow-y-auto hidden">
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button id="searchButton" class="w-full flex-1 bg-wlBlue hover:bg-blue-600 text-white font-semibold py-2.5 px-4 rounded-md transition duration-150 ease-in-out flex items-center justify-center shadow-md hover:shadow-lg">
+                            <i class="fas fa-search mr-2"></i>Search
+                        </button>
+                        <button id="filterButton" class="w-full flex-1 bg-wlPurple hover:bg-purple-600 text-white font-semibold py-2.5 px-4 rounded-md transition duration-150 ease-in-out flex items-center justify-center shadow-md hover:shadow-lg">
+                            <i class="fas fa-filter mr-2"></i>Filter
+                        </button>
+                    </div>
+                </div>
+                <!-- Filter options could be expanded here or managed via a modal triggered by the Filter button -->
+            </section>
+
+            <section id="searchResultsSection" class="my-8 hidden fade-in">
+                <div class="flex items-center mb-3 gap-2">
+                    <h4 class="text-2xl font-bold gradient-text bg-gradient-to-r from-wlBlue to-wlPurple glow flex items-center">
+                        <i class="fas fa-list mr-2"></i>Results
+                    </h4>
+                    <span id="searchResultsCount" class="search-badge hidden"></span>
+                </div>
+                <div id="searchLoadingSpinner" class="hidden flex justify-center items-center my-8">
+                  <span class="loader"></span>
+                </div>
+                <ul id="searchResultsList"></ul>
+                <div id="searchResultsEmpty" class="hidden text-center my-8 py-5 text-wlLight/80">
+                    <div><i class="fas fa-search-location search-empty-icon"></i></div>
+                    <div class="font-semibold text-lg">No results found.</div>
+                    <div class="text-sm text-wlLight/60 mt-1">Try searching by <span class="text-wlGreen">location</span> or <span class="text-wlPurple">monster name</span>.<br>Eg: <b>North Island</b>, <b>Ice Fairy</b>, <b>12</b></div>
+                </div>
+            </section>
+
+            <section id="locationDetailSection" class="hidden">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h3 id="locationName" class="text-3xl font-semibold">Location Name</h3>
+                            <span id="locationTypeBadge" class="px-3 py-1 rounded-full text-sm font-semibold bg-wlBlue text-white"></span>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-4 text-sm">
+                            <span id="difficultyRating" class="flex items-center gap-1"></span>
+                            <span id="recommendedLevel" class="px-2 py-1 bg-wlPurple bg-opacity-30 rounded text-wlPurple"></span>
+                            <button id="favoriteBtn" class="flex items-center gap-1 px-3 py-1 rounded-full bg-wlDark hover:bg-wlRed transition" title="Add to Favorites">
+                                <i class="far fa-heart"></i><span class="hidden sm:inline">Favorite</span>
+                            </button>
+                            <button id="shareBtn" class="flex items-center gap-1 px-3 py-1 rounded-full bg-wlDark hover:bg-wlBlue transition" title="Share Location">
+                                <i class="fas fa-share-alt"></i><span class="hidden sm:inline">Share</span>
+                            </button>
+                            <button id="compareBtn" class="flex items-center gap-1 px-3 py-1 rounded-full bg-wlDark hover:bg-wlGreen transition" title="Compare Locations">
+                                <i class="fas fa-balance-scale"></i><span class="hidden sm:inline">Compare</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button id="closeLocationDetail" class="text-wlLight hover:text-wlRed text-2xl">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                </div>
+                <button id="backToMapBtn" class="mb-6 px-4 py-2 bg-wlBlue hover:bg-wlGreen text-white rounded-md shadow transition hidden">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Map
+                </button>
+                
+                <!-- Quick Stats Cards -->
+                <div id="quickStatsSection" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="stat-card bg-gradient-to-br from-wlBlue to-wlPurple rounded-xl p-4 text-center transform hover:scale-105 transition">
+                        <div class="text-3xl font-bold" id="statMonsterCount">0</div>
+                        <div class="text-sm opacity-80"><i class="fas fa-paw mr-1"></i>Monsters</div>
+                    </div>
+                    <div class="stat-card bg-gradient-to-br from-wlGreen to-wlBlue rounded-xl p-4 text-center transform hover:scale-105 transition">
+                        <div class="text-3xl font-bold" id="statNpcCount">0</div>
+                        <div class="text-sm opacity-80"><i class="fas fa-user-friends mr-1"></i>NPCs</div>
+                    </div>
+                    <div class="stat-card bg-gradient-to-br from-wlYellow to-wlRed rounded-xl p-4 text-center transform hover:scale-105 transition">
+                        <div class="text-3xl font-bold" id="statAvgLevel">-</div>
+                        <div class="text-sm opacity-80"><i class="fas fa-level-up-alt mr-1"></i>Avg Level</div>
+                    </div>
+                    <div class="stat-card bg-gradient-to-br from-wlPurple to-wlRed rounded-xl p-4 text-center transform hover:scale-105 transition">
+                        <div class="text-3xl font-bold" id="statDangerLevel">-</div>
+                        <div class="text-sm opacity-80"><i class="fas fa-skull mr-1"></i>Danger</div>
+                    </div>
+                </div>
+                
+                <!-- Location Gallery -->
+                <div id="locationGallery" class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4 text-wlBlue"><i class="fas fa-images mr-2"></i>Location Gallery</h4>
+                    <div class="flex gap-4 overflow-x-auto pb-4" id="galleryContainer">
+                        <div class="gallery-main flex-shrink-0 w-full md:w-2/3">
+                            <img id="galleryMainImage" src="" alt="Location View" class="w-full h-64 object-cover rounded-xl shadow-lg border-2 border-wlBlue border-opacity-30">
+                        </div>
+                        <div class="gallery-thumbs flex-shrink-0 flex gap-2 md:flex-col">
+                            <img src="" alt="Thumbnail 1" class="gallery-thumb w-20 h-16 object-cover rounded-lg cursor-pointer hover:ring-2 ring-wlYellow transition" data-index="0">
+                            <img src="" alt="Thumbnail 2" class="gallery-thumb w-20 h-16 object-cover rounded-lg cursor-pointer hover:ring-2 ring-wlYellow transition" data-index="1">
+                            <img src="" alt="Thumbnail 3" class="gallery-thumb w-20 h-16 object-cover rounded-lg cursor-pointer hover:ring-2 ring-wlYellow transition" data-index="2">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <h4 class="text-xl font-semibold"><i class="fas fa-map-signs mr-2"></i>Map Layout</h4>
+                        <div style="position:relative;">
+                          <img id="locationMapImage" src="https://via.placeholder.com/400x300.png?text=Location+Map" alt="Location Map Layout" class="rounded-md shadow">
+                        </div>
+                        </div>
+
+                    <div class="detail-card">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-semibold"><i class="fas fa-paw mr-2"></i>Monsters</h4>
+                            <button id="monsterViewToggle" class="px-3 py-1 text-sm bg-wlDark hover:bg-wlBlue rounded transition" title="Toggle View">
+                                <i class="fas fa-th-large"></i> Toggle
+                            </button>
+                        </div>
+                        <div id="monstersPreviewGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-2"></div>
+                        <ul id="locationMonstersList" class="mt-3 hidden">
+                            <li>Loading monsters...</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4 class="text-xl font-semibold"><i class="fas fa-user-friends mr-2"></i>NPCs</h4>
+                        <ul id="locationNpcsList">
+                            <li>Loading NPCs...</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h4 class="text-xl font-semibold"><i class="fas fa-fire-alt mr-2"></i>Element Distribution</h4>
+                        <div id="elementDistribution" class="mt-2 space-y-2"></div>
+                    </div>
+                </div>
+                
+                <!-- Travel Connections -->
+                <div id="travelConnections" class="mt-8 p-6 bg-wlDark bg-opacity-50 rounded-xl border border-wlBlue border-opacity-20">
+                    <h4 class="text-xl font-semibold mb-4 text-wlGreen"><i class="fas fa-route mr-2"></i>Travel Connections</h4>
+                    <div id="connectionsList" class="flex flex-wrap gap-3"></div>
+                </div>
+                
+                <!-- Map Zoom Modal -->
+                <div id="mapZoomModalBg" class="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-[100] hidden">
+                    <button id="closeMapZoomModal" class="absolute top-4 right-4 z-[110] text-white hover:text-wlRed text-5xl p-2 cursor-pointer bg-wlDark bg-opacity-50 rounded-full w-16 h-16 flex items-center justify-center transition">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="flex flex-col items-center w-full h-full p-4">
+                        <div id="mapZoomContainer" class="flex-1 w-full overflow-auto rounded-xl border-4 border-wlBlue border-opacity-50 bg-wlDarker relative flex items-center justify-center">
+                            <img id="mapZoomImage" src="" alt="Location Map" class="max-w-full max-h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Locations -->
+                <div id="relatedLocations" class="mt-8"></div>
+            </section>
+        </main>
+
+        <footer class="bg-wlDark bg-opacity-90 blur-bg py-12 mt-auto">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i></div>
+                            <h3 class="text-lg font-semibold">Wonderland Online DB</h3>
+                        </div>
+                        <p class="text-sm text-opacity-70">Your ultimate resource for Wonderland Online game data.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Quick Nav</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html" class="text-opacity-70 hover:text-wlBlue transition">Home</a></li>
+                            <li><a href="Item.html" class="text-opacity-70 hover:text-wlBlue transition">Items</a></li>
+                            <li><a href="monsters.html" class="text-opacity-70 hover:text-wlBlue transition">Monsters</a></li>
+                            <li><a href="Locations.html" class="text-opacity-70 hover:text-wlBlue transition">Locations</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Community</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Forums</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Discord</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Privacy Policy</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-wlLight border-opacity-20 pt-8 text-center text-sm text-opacity-50">
+                    &copy; 2024 Wonderland Online DB. All rights reserved. Game content and materials are trademarks and copyrights of their respective publisher and its licensors.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="filterModalBg" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden transition">
+    <div id="filterModal" class="bg-wlDarker w-full max-w-lg mx-auto rounded-2xl border border-wlBlue shadow-2xl p-7 relative animate-modalScaleIn">
+        <button id="closeFilterModal" aria-label="Close filter" class="absolute top-3 right-4 text-wlLight hover:text-wlRed text-3xl">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <h2 class="text-2xl font-bold mb-6 gradient-text bg-gradient-to-r from-wlBlue to-wlPurple glow flex items-center"><i class="fas fa-filter mr-2"></i>Filter Locations</h2>
+        <form id="filterForm" class="space-y-5 text-wlLight text-md">
+            <div>
+                <label class="block mb-1" for="filterMonsterName"><i class="fas fa-paw mr-1 text-wlPurple"></i>Monster Name</label>
+                <input id="filterMonsterName" type="text" class="w-full px-4 py-2 bg-wlDarker border border-wlLight border-opacity-30 rounded-md focus:ring-2 focus:ring-wlPurple focus:border-wlPurple text-wlLight placeholder-wlLight placeholder-opacity-60 transition" placeholder="e.g. Wolf, Fairy" autocomplete="off">
+            </div>
+            <div class="flex gap-4 items-center">
+                <label class="block w-32"><i class="fas fa-layer-group mr-1 text-wlBlue"></i>Monster Level</label>
+                <input id="filterLevelMin" type="number" min="1" max="999" class="w-24 px-2.5 py-2 bg-wlDarker border border-wlLight border-opacity-30 rounded-md focus:ring-2 focus:ring-wlBlue focus:border-wlBlue text-wlLight placeholder-wlLight/50 transition" placeholder="Min">
+                <span class="text-wlLight/50 mx-2">to</span>
+                <input id="filterLevelMax" type="number" min="1" max="999" class="w-24 px-2.5 py-2 bg-wlDarker border border-wlLight border-opacity-30 rounded-md focus:ring-2 focus:ring-wlBlue focus:border-wlBlue text-wlLight placeholder-wlLight/50 transition" placeholder="Max">
+            </div>
+            <div class="flex gap-4 mt-6">
+                <button type="submit" class="flex-1 py-2 px-4 rounded-md bg-wlBlue hover:bg-wlGreen text-white font-semibold text-lg transition"><i class="fas fa-check mr-1"></i>Apply</button>
+                <button type="button" id="resetFilter" class="flex-1 py-2 px-4 rounded-md bg-wlDarker border border-wlRed hover:bg-wlRed text-wlRed hover:text-white font-semibold text-lg transition"><i class="fas fa-redo-alt mr-1"></i>Reset</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <div id="comparisonModalBg" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden transition">
+    <div id="comparisonModal" class="bg-wlDarker w-full max-w-4xl mx-auto rounded-2xl border border-wlPurple shadow-2xl p-7 relative animate-modalScaleIn max-h-[90vh] overflow-y-auto">
+        <button id="closeComparisonModal" aria-label="Close comparison" class="absolute top-3 right-4 text-wlLight hover:text-wlRed text-3xl">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <h2 class="text-2xl font-bold mb-6 gradient-text bg-gradient-to-r from-wlBlue to-wlPurple glow flex items-center"><i class="fas fa-balance-scale mr-2"></i>Compare Locations</h2>
+        <div class="mb-4">
+            <label class="block mb-2 text-wlLight"><i class="fas fa-map-marker-alt mr-1 text-wlBlue"></i>Select Location to Compare</label>
+            <select id="compareSelect" class="w-full px-4 py-2 bg-wlDarker border border-wlBlue border-opacity-30 rounded-md text-wlLight">
+                <option value="">Select a location...</option>
+            </select>
+        </div>
+        <div id="comparisonContent" class="comparison-grid"></div>
+    </div>
+</div>
+
+    <!-- Image Viewer Modal -->
+    <div id="imageViewerModal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition" role="dialog" aria-modal="true" aria-label="Image Viewer">
+        <button id="closeImageViewer" aria-label="Close image viewer" class="absolute top-4 right-4 text-white hover:text-wlRed text-4xl z-10 transition">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <button id="prevImage" aria-label="Previous image" class="absolute left-4 text-white hover:text-wlYellow text-5xl z-10 transition opacity-70 hover:opacity-100">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="nextImage" aria-label="Next image" class="absolute right-4 text-white hover:text-wlYellow text-5xl z-10 transition opacity-70 hover:opacity-100">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="max-w-5xl max-h-[90vh] p-4">
+            <div class="viewer-container" id="viewerContainer">
+                <img id="viewerImage" src="" alt="Enlarged View" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl">
+            </div>
+            <p id="viewerCaption" class="text-center text-white mt-4 text-lg"></p>
+            <div class="zoom-controls">
+                <button id="zoomOut" class="zoom-btn" title="Zoom Out"><i class="fas fa-minus"></i></button>
+                <button id="zoomReset" class="zoom-btn" title="Reset Zoom"><i class="fas fa-compress"></i></button>
+                <button id="zoomIn" class="zoom-btn" title="Zoom In"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="fixed bottom-4 right-4 z-50"></div>
+    
+    <script>
+        // Global monster data cache
+        let monstersData = [];
+        let monstersByLocation = {};
+        
+        // Data - Location data with monsters and NPCs (defined first before loading monsters)
+        const locationsData = {
+            "korea": { 
+                name: "Korea", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "koyota": { 
+                name: "Koyota", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "yamataikoku": { 
+                name: "Yamataikoku", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "shayii-hill": { 
+                name: "Shayii Hill", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "ghost-isle": { 
+                name: "Ghost Isle", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "hawaii": { 
+                name: "Hawaii", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "fishing-village": { 
+                name: "Fishing Village", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "taiwan": { 
+                name: "Taiwan", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "ancient-yazhou-city": { 
+                name: "Ancient Yazhou City", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "bangkok": { 
+                name: "Bangkok", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "philippines": { 
+                name: "Philippines", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "zheng-he-fleet": { 
+                name: "Zheng He's Fleet", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "polo-island": { 
+                name: "Polo Island", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "hezrou-island": { 
+                name: "Hezrou Island", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "universal": { 
+                name: "Universal", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "centaurs-island": { 
+                name: "Centaur's Island", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "lions-isle": { 
+                name: "Lion's Isle", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "calcutta": { 
+                name: "Calcutta", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "training-island": { 
+                name: "Training Island", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "north-island": { 
+                name: "North Island", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "stoowa-isle": { 
+                name: "Stoowa Isle", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "south-island": { 
+                name: "South Island", 
+                mapImage: "data/Map Images/South Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "cook-island": { 
+                name: "Cook Island", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "magellan-fleet": { 
+                name: "Magellan's Fleet", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "oslya": { 
+                name: "Oslya", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "south-pole": { 
+                name: "South Pole", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "sky-city": { 
+                name: "Sky City", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "snow-island": { 
+                name: "Snow Island", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "revival-island": { 
+                name: "Revival Island", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "iceberg": { 
+                name: "Iceberg", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "inca": { 
+                name: "Inca", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "mayan-forest": { 
+                name: "Mayan Forest", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "ghost-fleet": { 
+                name: "Ghost Fleet", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "madagascar": { 
+                name: "Madagascar", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "african-villages": { 
+                name: "African Villages", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "persia": { 
+                name: "Persia", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "egypt": { 
+                name: "Egypt", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "turtle-isle": { 
+                name: "Turtle Isle", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "fog-jungle": { 
+                name: "Fog Jungle", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "bordeaux-jungle": { 
+                name: "Bordeaux Jungle", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "avignon-jungle": { 
+                name: "Avignon Jungle", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "rome": { 
+                name: "Rome", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "hanging-gardens": { 
+                name: "Hanging Gardens", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "sea-monster": { 
+                name: "Sea Monster", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "athens": { 
+                name: "Athens", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "rhode-islands": { 
+                name: "Rhode Islands", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            },
+            "relic-island": { 
+                name: "Relic Island", 
+                mapImage: "data/Map Images/North Island.png",
+                monsters: [],
+                npcs: []
+            }
+        };
+        
+        // Load monster data from JSON
+        async function loadMonstersData() {
+            try {
+                const response = await fetch('data/monsters-index.json');
+                const data = await response.json();
+                monstersData = data.monsters || [];
+                
+                // Group monsters by location
+                monstersByLocation = {};
+                monstersData.forEach(monster => {
+                    if (monster.location) {
+                        // Use exact location name as key
+                        const locKey = monster.location;
+                        if (!monstersByLocation[locKey]) {
+                            monstersByLocation[locKey] = [];
+                        }
+                        monstersByLocation[locKey].push({
+                            name: monster.name,
+                            level: monster.level,
+                            id: monster.id,
+                            image: monster.image,
+                            element: monster.element
+                        });
+                    }
+                });
+                
+                // Update locationsData with monster info
+                updateLocationsWithMonsters();
+                console.log('Loaded', monstersData.length, 'monsters across', Object.keys(monstersByLocation).length, 'locations');
+                
+                // Re-render markers with updated data
+                renderMapMarkers();
+            } catch (error) {
+                console.error('Failed to load monsters data:', error);
+            }
+        }
+        
+        // Match location names with monster locations
+        function updateLocationsWithMonsters() {
+            Object.keys(locationsData).forEach(locKey => {
+                const loc = locationsData[locKey];
+                const locName = loc.name;
+                
+                // Try to find matching monsters by exact name match first
+                let matchedMonsters = [];
+                
+                // Direct name match
+                if (monstersByLocation[locName]) {
+                    matchedMonsters = monstersByLocation[locName];
+                }
+                
+                // Try case-insensitive match
+                if (matchedMonsters.length === 0) {
+                    Object.keys(monstersByLocation).forEach(monsterLocName => {
+                        if (monsterLocName.toLowerCase() === locName.toLowerCase()) {
+                            matchedMonsters = matchedMonsters.concat(monstersByLocation[monsterLocName]);
+                        }
+                    });
+                }
+                
+                // Try partial match (also handle plural/singular like "Hanging Gardens" vs "Hanging Garden")
+                if (matchedMonsters.length === 0) {
+                    Object.keys(monstersByLocation).forEach(monsterLocName => {
+                        const normalizedLocName = locName.toLowerCase().replace(/s$/, '');
+                        const normalizedMonsterLocName = monsterLocName.toLowerCase().replace(/s$/, '');
+                        if (normalizedMonsterLocName.includes(normalizedLocName) ||
+                            normalizedLocName.includes(normalizedMonsterLocName)) {
+                            matchedMonsters = matchedMonsters.concat(monstersByLocation[monsterLocName]);
+                        }
+                    });
+                }
+                
+                // Remove duplicates and sort by level
+                const uniqueMonsters = [];
+                const seen = new Set();
+                matchedMonsters.forEach(m => {
+                    if (!seen.has(m.name)) {
+                        seen.add(m.name);
+                        uniqueMonsters.push(m);
+                    }
+                });
+                uniqueMonsters.sort((a, b) => a.level - b.level);
+                
+                loc.monsters = uniqueMonsters;
+                console.log(locName + ': ' + uniqueMonsters.length + ' monsters');
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load monster data
+            loadMonstersData();
+            
+            const openSidebarBtn = document.getElementById('openSidebar');
+            const closeSidebarBtn = document.getElementById('closeSidebar');
+            const mobileSidebarEl = document.getElementById('mobileSidebar');
+            const darkOverlayEl = document.getElementById('darkOverlay');
+
+            if (openSidebarBtn) {
+                openSidebarBtn.addEventListener('click', () => {
+                    mobileSidebarEl.classList.remove('sidebar-hidden');
+                    mobileSidebarEl.classList.add('sidebar-visible');
+                    darkOverlayEl.classList.add('dark-overlay-visible');
+                });
+            }
+            if (closeSidebarBtn) {
+                closeSidebarBtn.addEventListener('click', () => {
+                    mobileSidebarEl.classList.remove('sidebar-visible');
+                    mobileSidebarEl.classList.add('sidebar-hidden');
+                    darkOverlayEl.classList.remove('dark-overlay-visible');
+                });
+            }
+            if (darkOverlayEl) {
+                darkOverlayEl.addEventListener('click', () => { 
+                    mobileSidebarEl.classList.remove('sidebar-visible');
+                    mobileSidebarEl.classList.add('sidebar-hidden');
+                    darkOverlayEl.classList.remove('dark-overlay-visible');
+                });
+            }
+
+    const mapMarkers = document.querySelectorAll('.map-marker');
+    const locationDetailSection = document.getElementById('locationDetailSection');
+    const locationNameEl = document.getElementById('locationName');
+    const locationMapImageEl = document.getElementById('locationMapImage');
+    const locationMonstersListEl = document.getElementById('locationMonstersList');
+    const locationNpcsListEl = document.getElementById('locationNpcsList');
+    const closeLocationDetailBtn = document.getElementById('closeLocationDetail');
+    
+    // New feature elements
+    const locationTypeBadge = document.getElementById('locationTypeBadge');
+    const difficultyRatingEl = document.getElementById('difficultyRating');
+    const recommendedLevelEl = document.getElementById('recommendedLevel');
+    const favoriteBtn = document.getElementById('favoriteBtn');
+    const shareBtn = document.getElementById('shareBtn');
+    const compareBtn = document.getElementById('compareBtn');
+    const statMonsterCount = document.getElementById('statMonsterCount');
+    const statNpcCount = document.getElementById('statNpcCount');
+    const statAvgLevel = document.getElementById('statAvgLevel');
+    const statDangerLevel = document.getElementById('statDangerLevel');
+    const monstersPreviewGrid = document.getElementById('monstersPreviewGrid');
+    const elementDistribution = document.getElementById('elementDistribution');
+    const connectionsList = document.getElementById('connectionsList');
+    const galleryMainImage = document.getElementById('galleryMainImage');
+    
+    // Image Viewer Modal elements
+    const imageViewerModal = document.getElementById('imageViewerModal');
+    const closeImageViewer = document.getElementById('closeImageViewer');
+    const viewerImage = document.getElementById('viewerImage');
+    const viewerCaption = document.getElementById('viewerCaption');
+    const prevImage = document.getElementById('prevImage');
+    const nextImage = document.getElementById('nextImage');
+    const viewerContainer = document.getElementById('viewerContainer');
+    const imgZoomInBtn = document.getElementById('zoomIn');
+    const imgZoomOutBtn = document.getElementById('zoomOut');
+    const imgZoomResetBtn = document.getElementById('zoomReset');
+    
+    let galleryImages = [];
+    let currentImageIndex = 0;
+    let currentLocationName = '';
+    
+    // Image viewer zoom state
+    let imgZoomLevel = 1;
+    let imgPanX = 0;
+    let imgPanY = 0;
+    let imgIsDragging = false;
+    let imgStartX = 0;
+    let imgStartY = 0;
+    let imgLastPanX = 0;
+    let imgLastPanY = 0;
+    const IMG_MIN_ZOOM = 1;
+    const IMG_MAX_ZOOM = 4;
+    const IMG_ZOOM_STEP = 0.5;
+    
+    // Comparison modal elements
+    const comparisonModalBg = document.getElementById('comparisonModalBg');
+    const comparisonModal = document.getElementById('comparisonModal');
+    const closeComparisonModal = document.getElementById('closeComparisonModal');
+    const compareSelect = document.getElementById('compareSelect');
+    const comparisonContent = document.getElementById('comparisonContent');
+    
+    let currentLocationId = null;
+    let favorites = JSON.parse(localStorage.getItem('wlo_favorites') || '[]');
+    let comparisonLocation = null;
+    
+    // Location type detection
+    const locationTypes = {
+        'town': { label: 'Town', color: 'bg-wlGreen', icon: 'fa-city' },
+        'dungeon': { label: 'Dungeon', color: 'bg-wlRed', icon: 'fa-skull' },
+        'island': { label: 'Island', color: 'bg-wlBlue', icon: 'fa-umbrella-beach' },
+        'village': { label: 'Village', color: 'bg-wlYellow', icon: 'fa-home' },
+        'ruins': { label: 'Ruins', color: 'bg-wlPurple', icon: 'fa-archway' },
+        'forest': { label: 'Forest', color: 'bg-wlGreen', icon: 'fa-tree' },
+        'mountain': { label: 'Mountain', color: 'bg-gray-500', icon: 'fa-mountain' },
+        'ocean': { label: 'Ocean', color: 'bg-blue-500', icon: 'fa-water' },
+        'sky': { label: 'Sky', color: 'bg-indigo-500', icon: 'fa-cloud' },
+        'default': { label: 'Location', color: 'bg-wlPurple', icon: 'fa-map-marker-alt' }
+    };
+    
+    // Travel connections (simulated data - in real app would come from data)
+    const travelConnections = {
+        'korea': ['koyota', 'north-island', 'yamataikoku'],
+        'koyota': ['korea', 'shayii-hill'],
+        'north-island': ['korea', 'training-island', 'south-island'],
+        'south-island': ['north-island', 'cook-island'],
+        'training-island': ['north-island'],
+        'hawaii': ['polo-island', 'fishing-village'],
+        'philippines': ['bangkok', 'malaysia'],
+        'calcutta': ['mayan-forest', 'african-villages'],
+        'oslya': ['sky-city', 'snow-island'],
+        'iceberg': ['south-pole', 'snow-island']
+    };
+    
+    // Detect location type from name
+    function detectLocationType(name) {
+        const nameLower = name.toLowerCase();
+        if (nameLower.includes('dungeon') || nameLower.includes('cave') || nameLower.includes('ruins')) return 'dungeon';
+        if (nameLower.includes('island') || nameLower.includes('isle')) return 'island';
+        if (nameLower.includes('town') || nameLower.includes('city')) return 'town';
+        if (nameLower.includes('village')) return 'village';
+        if (nameLower.includes('forest')) return 'forest';
+        if (nameLower.includes('mountain')) return 'mountain';
+        if (nameLower.includes('ocean') || nameLower.includes('sea')) return 'ocean';
+        if (nameLower.includes('sky')) return 'sky';
+        if (nameLower.includes('ruins')) return 'ruins';
+        return 'default';
+    }
+    
+    // Generate stars rating
+    function generateStars(rating) {
+        let html = '';
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+                html += '<i class="fas fa-star star filled"></i>';
+            } else if (i - 0.5 <= rating) {
+                html += '<i class="fas fa-star-half-alt star filled"></i>';
+            } else {
+                html += '<i class="far fa-star star"></i>';
+            }
+        }
+        return html;
+    }
+    
+    // Calculate difficulty based on monster levels
+    function calculateDifficulty(monsters) {
+        if (!monsters || monsters.length === 0) return 1;
+        const avgLevel = monsters.reduce((sum, m) => sum + (m.level || 0), 0) / monsters.length;
+        if (avgLevel < 10) return 1;
+        if (avgLevel < 30) return 2;
+        if (avgLevel < 50) return 3;
+        if (avgLevel < 80) return 4;
+        return 5;
+    }
+    
+    // Calculate danger level text
+    function getDangerLevel(difficulty) {
+        const levels = ['Safe', 'Low', 'Medium', 'High', 'Very High', 'Extreme'];
+        return levels[Math.min(difficulty, 5)];
+    }
+    
+    // Get element color
+    function getElementColor(element) {
+        const colors = {
+            'fire': '#ef4444',
+            'ice': '#3b82f6',
+            'wind': '#10b981',
+            'earth': '#f59e0b',
+            'physical': '#6b7280'
+        };
+        return colors[element] || '#6b7280';
+    }
+    
+    // Get monster image URL
+    function getMonsterImageUrl(monsterId) {
+        return `data/Monster_Images/monster-${monsterId}.png`;
+    }
+    
+    // Toast notification
+    function showToast(message, type = 'info') {
+        const container = document.getElementById('toastContainer');
+        const toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.innerHTML = `<i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'} mr-2"></i>${message}`;
+        container.appendChild(toast);
+        setTimeout(() => {
+            toast.style.animation = 'slideIn 0.3s ease reverse';
+            setTimeout(() => toast.remove(), 300);
+        }, 3000);
+    }
+    
+    // Toggle favorite
+    function toggleFavorite() {
+        const locId = currentLocationId;
+        if (!locId) return;
+        
+        const idx = favorites.indexOf(locId);
+        if (idx > -1) {
+            favorites.splice(idx, 1);
+            favoriteBtn.classList.remove('active');
+            favoriteBtn.querySelector('i').className = 'far fa-heart';
+            showToast('Removed from favorites', 'info');
+        } else {
+            favorites.push(locId);
+            favoriteBtn.classList.add('active');
+            favoriteBtn.querySelector('i').className = 'fas fa-heart';
+            showToast('Added to favorites!', 'success');
+        }
+        localStorage.setItem('wlo_favorites', JSON.stringify(favorites));
+    }
+    
+    // Share functionality
+    function shareLocation() {
+        const locData = locationsData[currentLocationId];
+        if (!locData) return;
+        
+        const shareData = {
+            title: `${locData.name} - Wonderland Online DB`,
+            text: `Check out ${locData.name} in Wonderland Online!`,
+            url: window.location.href
+        };
+        
+        if (navigator.share) {
+            navigator.share(shareData).catch(() => {});
+        } else {
+            // Fallback: copy to clipboard
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                showToast('Link copied to clipboard!', 'success');
+            });
+        }
+    }
+    
+    // Show comparison modal
+    function showComparisonModal() {
+        // Populate select dropdown
+        compareSelect.innerHTML = '<option value="">Select a location...</option>';
+        Object.entries(locationsData).forEach(([id, loc]) => {
+            if (id !== currentLocationId) {
+                compareSelect.innerHTML += `<option value="${id}">${loc.name}</option>`;
+            }
+        });
+        
+        comparisonModalBg.classList.remove('hidden');
+        comparisonModalBg.setAttribute('aria-modal', 'true');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function hideComparisonModal() {
+        comparisonModalBg.classList.add('hidden');
+        comparisonModalBg.removeAttribute('aria-modal');
+        document.body.style.overflow = '';
+    }
+    
+    // Image Viewer Functions
+    function openImageViewer(imageSrc, caption, images, index, locationName) {
+        galleryImages = images || [imageSrc];
+        currentImageIndex = index || 0;
+        currentLocationName = locationName || '';
+        
+        // Reset zoom and pan
+        imgZoomLevel = 1;
+        imgPanX = 0;
+        imgPanY = 0;
+        updateImageTransform();
+        
+        viewerImage.src = imageSrc;
+        viewerCaption.textContent = caption || (currentLocationName + ' - Image ' + (currentImageIndex + 1));
+        
+        imageViewerModal.classList.remove('hidden');
+        imageViewerModal.setAttribute('aria-modal', 'true');
+        document.body.style.overflow = 'hidden';
+        
+        updateNavigationButtons();
+    }
+    
+    function closeImageViewerFunc() {
+        // Reset zoom state when closing
+        imgZoomLevel = 1;
+        imgPanX = 0;
+        imgPanY = 0;
+        imageViewerModal.classList.add('hidden');
+        imageViewerModal.removeAttribute('aria-modal');
+        document.body.style.overflow = '';
+    }
+    
+    function showPrevImage() {
+        if (galleryImages.length > 0) {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            viewerImage.src = galleryImages[currentImageIndex];
+            viewerCaption.textContent = currentLocationName + ' - Image ' + (currentImageIndex + 1);
+            // Reset zoom when changing images
+            imgZoomLevel = 1;
+            imgPanX = 0;
+            imgPanY = 0;
+            updateImageTransform();
+            updateNavigationButtons();
+        }
+    }
+    
+    function showNextImage() {
+        if (galleryImages.length > 0) {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            viewerImage.src = galleryImages[currentImageIndex];
+            viewerCaption.textContent = currentLocationName + ' - Image ' + (currentImageIndex + 1);
+            // Reset zoom when changing images
+            imgZoomLevel = 1;
+            imgPanX = 0;
+            imgPanY = 0;
+            updateImageTransform();
+            updateNavigationButtons();
+        }
+    }
+    
+    function updateNavigationButtons() {
+        if (galleryImages.length <= 1) {
+            prevImage.classList.add('hidden');
+            nextImage.classList.add('hidden');
+        } else {
+            prevImage.classList.remove('hidden');
+            nextImage.classList.remove('hidden');
+        }
+    }
+    
+    // Zoom and Pan Functions
+    function updateImageTransform() {
+        viewerImage.style.transform = `translate(${imgPanX}px, ${imgPanY}px) scale(${imgZoomLevel})`;
+        
+        if (imgZoomLevel > 1) {
+            viewerImage.classList.add('zoomed');
+        } else {
+            viewerImage.classList.remove('zoomed');
+        }
+    }
+    
+    function zoomInAtPoint(e) {
+        if (imgZoomLevel >= IMG_MAX_ZOOM) return;
+        
+        const rect = viewerImage.getBoundingClientRect();
+        const imgX = (e.clientX - rect.left) / rect.width;
+        const imgY = (e.clientY - rect.top) / rect.height;
+        
+        const oldZoom = imgZoomLevel;
+        imgZoomLevel = Math.min(imgZoomLevel + IMG_ZOOM_STEP, IMG_MAX_ZOOM);
+        
+        // Adjust pan to zoom towards the clicked point
+        const zoomRatio = imgZoomLevel / oldZoom;
+        imgPanX = imgPanX - (imgX - 0.5) * rect.width * (zoomRatio - 1);
+        imgPanY = imgPanY - (imgY - 0.5) * rect.height * (zoomRatio - 1);
+        
+        updateImageTransform();
+    }
+    
+    function zoomOutAtPoint(e) {
+        if (imgZoomLevel <= IMG_MIN_ZOOM) return;
+        
+        const rect = viewerImage.getBoundingClientRect();
+        const imgX = (e.clientX - rect.left) / rect.width;
+        const imgY = (e.clientY - rect.top) / rect.height;
+        
+        const oldZoom = imgZoomLevel;
+        imgZoomLevel = Math.max(imgZoomLevel - IMG_ZOOM_STEP, IMG_MIN_ZOOM);
+        
+        // Adjust pan to zoom away from the clicked point
+        const zoomRatio = imgZoomLevel / oldZoom;
+        imgPanX = imgPanX - (imgX - 0.5) * rect.width * (zoomRatio - 1);
+        imgPanY = imgPanY - (imgY - 0.5) * rect.height * (zoomRatio - 1);
+        
+        // Clamp pan when zoomed out
+        if (imgZoomLevel === 1) {
+            imgPanX = 0;
+            imgPanY = 0;
+        }
+        
+        updateImageTransform();
+    }
+    
+    function resetImageZoom() {
+        imgZoomLevel = 1;
+        imgPanX = 0;
+        imgPanY = 0;
+        updateImageTransform();
+    }
+    
+    // Pan handlers
+    function handleImageMouseDown(e) {
+        if (imgZoomLevel <= 1) {
+            // If not zoomed, click to zoom in
+            zoomInAtPoint(e);
+            return;
+        }
+        
+        imgIsDragging = true;
+        imgStartX = e.clientX - imgPanX;
+        imgStartY = e.clientY - imgPanY;
+        viewerImage.style.cursor = 'grabbing';
+    }
+    
+    function handleImageMouseMove(e) {
+        if (!imgIsDragging || imgZoomLevel <= 1) return;
+        
+        imgPanX = e.clientX - imgStartX;
+        imgPanY = e.clientY - imgStartY;
+        updateImageTransform();
+    }
+    
+    function handleImageMouseUp() {
+        imgIsDragging = false;
+        if (imgZoomLevel > 1) {
+            viewerImage.style.cursor = 'grab';
+        }
+    }
+    
+    // Add zoom button event listeners
+    if (imgZoomInBtn) {
+        imgZoomInBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            // Zoom in at center
+            const rect = viewerImage.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            const fakeEvent = { clientX: centerX, clientY: centerY };
+            zoomInAtPoint(fakeEvent);
+        });
+    }
+    if (imgZoomOutBtn) {
+        imgZoomOutBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const rect = viewerImage.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            const fakeEvent = { clientX: centerX, clientY: centerY };
+            zoomOutAtPoint(fakeEvent);
+        });
+    }
+    if (imgZoomResetBtn) {
+        imgZoomResetBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            resetImageZoom();
+        });
+    }
+    
+    // Add click/drag handlers to viewer image
+    if (viewerImage) {
+        viewerImage.addEventListener('mousedown', handleImageMouseDown);
+        viewerImage.addEventListener('mousemove', handleImageMouseMove);
+        viewerImage.addEventListener('mouseup', handleImageMouseUp);
+        viewerImage.addEventListener('mouseleave', handleImageMouseUp);
+        
+        // Double click to zoom out
+        viewerImage.addEventListener('dblclick', function(e) {
+            e.stopPropagation();
+            zoomOutAtPoint(e);
+        });
+    }
+    
+    // Add wheel zoom
+    if (viewerContainer) {
+        viewerContainer.addEventListener('wheel', function(e) {
+            e.preventDefault();
+            if (e.deltaY < 0) {
+                zoomInAtPoint(e);
+            } else {
+                zoomOutAtPoint(e);
+            }
+        });
+    }
+    
+    // Image Viewer Event Listeners
+    if (closeImageViewer) {
+        closeImageViewer.addEventListener('click', closeImageViewerFunc);
+    }
+    if (prevImage) {
+        prevImage.addEventListener('click', showPrevImage);
+    }
+    if (nextImage) {
+        nextImage.addEventListener('click', showNextImage);
+    }
+    if (imageViewerModal) {
+        imageViewerModal.addEventListener('click', function(e) {
+            if (e.target === imageViewerModal) {
+                closeImageViewerFunc();
+            }
+        });
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (!imageViewerModal || imageViewerModal.classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeImageViewerFunc();
+        if (e.key === 'ArrowLeft') showPrevImage();
+        if (e.key === 'ArrowRight') showNextImage();
+    });
+    
+    // Add click handlers to gallery images
+    if (galleryMainImage) {
+        galleryMainImage.style.cursor = 'zoom-in';
+        galleryMainImage.addEventListener('click', function() {
+            const src = this.src;
+            if (src && !src.includes('placeholder.com')) {
+                openImageViewer(src, currentLocationName + ' - Main View', [src], 0, currentLocationName);
+            }
+        });
+    }
+    
+    // Add click handlers to gallery thumbnails
+    document.querySelectorAll('.gallery-thumb').forEach(function(thumb) {
+        thumb.style.cursor = 'zoom-in';
+        thumb.addEventListener('click', function() {
+            const src = this.src;
+            if (src && !src.includes('placeholder.com')) {
+                const index = parseInt(this.getAttribute('data-index') || '0');
+                openImageViewer(src, currentLocationName + ' - Thumbnail ' + (index + 1), [src], index, currentLocationName);
+            }
+        });
+    });
+    
+    // Update comparison content
+    function updateComparison() {
+        const compareId = compareSelect.value;
+        if (!compareId) {
+            comparisonContent.innerHTML = '<p class="text-wlLight">Select a location to compare</p>';
+            return;
+        }
+        
+        const currentLoc = locationsData[currentLocationId];
+        const compareLoc = locationsData[compareId];
+        
+        const currentMonsters = currentLoc.monsters || [];
+        const compareMonsters = compareLoc.monsters || [];
+        
+        const currentAvgLevel = currentMonsters.length > 0 
+            ? Math.round(currentMonsters.reduce((s, m) => s + (m.level || 0), 0) / currentMonsters.length) 
+            : 0;
+        const compareAvgLevel = compareMonsters.length > 0 
+            ? Math.round(compareMonsters.reduce((s, m) => s + (m.level || 0), 0) / compareMonsters.length) 
+            : 0;
+        
+        const currentMaxLevel = currentMonsters.length > 0 ? (() => {
+            const levels = currentMonsters.map(m => m.level || 0).sort((a, b) => a - b);
+            return levels[Math.floor(levels.length * 0.75)] || levels[0] || 0;
+        })() : 0;
+        const compareMaxLevel = compareMonsters.length > 0 ? (() => {
+            const levels = compareMonsters.map(m => m.level || 0).sort((a, b) => a - b);
+            return levels[Math.floor(levels.length * 0.75)] || levels[0] || 0;
+        })() : 0;
+        
+        comparisonContent.innerHTML = `
+            <div class="comparison-card ${currentMaxLevel > compareMaxLevel ? 'winner' : ''}">
+                <h3 class="text-xl font-bold text-wlBlue mb-4">${currentLoc.name}</h3>
+                <div class="space-y-2">
+                    <div class="flex justify-between"><span>Monsters:</span><span class="font-bold">${currentMonsters.length}</span></div>
+                    <div class="flex justify-between"><span>Avg Level:</span><span class="font-bold">${currentAvgLevel || '-'}</span></div>
+                    <div class="flex justify-between"><span>Max Level:</span><span class="font-bold">${currentMaxLevel || '-'}</span></div>
+                    <div class="flex justify-between"><span>Difficulty:</span><span class="font-bold">${generateStars(calculateDifficulty(currentMonsters))}</span></div>
+                </div>
+            </div>
+            <div class="comparison-card ${compareMaxLevel > currentMaxLevel ? 'winner' : ''}">
+                <h3 class="text-xl font-bold text-wlPurple mb-4">${compareLoc.name}</h3>
+                <div class="space-y-2">
+                    <div class="flex justify-between"><span>Monsters:</span><span class="font-bold">${compareMonsters.length}</span></div>
+                    <div class="flex justify-between"><span>Avg Level:</span><span class="font-bold">${compareAvgLevel || '-'}</span></div>
+                    <div class="flex justify-between"><span>Max Level:</span><span class="font-bold">${compareMaxLevel || '-'}</span></div>
+                    <div class="flex justify-between"><span>Difficulty:</span><span class="font-bold">${generateStars(calculateDifficulty(compareMonsters))}</span></div>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Event listeners for new features
+    if (favoriteBtn) {
+        favoriteBtn.addEventListener('click', toggleFavorite);
+    }
+    if (shareBtn) {
+        shareBtn.addEventListener('click', shareLocation);
+    }
+    if (compareBtn) {
+        compareBtn.addEventListener('click', showComparisonModal);
+    }
+    if (closeComparisonModal) {
+        closeComparisonModal.addEventListener('click', hideComparisonModal);
+    }
+    if (comparisonModalBg) {
+        comparisonModalBg.addEventListener('click', (e) => {
+            if (e.target === comparisonModalBg) hideComparisonModal();
+        });
+    }
+    if (compareSelect) {
+        compareSelect.addEventListener('change', updateComparison);
+    }
+    
+    // Add floating particles
+    function addFloatingParticles() {
+        const container = document.querySelector('main');
+        if (!container) return;
+        
+        for (let i = 0; i < 15; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'floating-particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+            container.appendChild(particle);
+        }
+    }
+    addFloatingParticles();
+    
+    // Map Zoom Modal functionality
+    const mapZoomModalBg = document.getElementById('mapZoomModalBg');
+    const closeMapZoomModal = document.getElementById('closeMapZoomModal');
+    const mapZoomImage = document.getElementById('mapZoomImage');
+    const locationMapImage = document.getElementById('locationMapImage');
+    
+    let isMonsterListView = false;
+    const monsterViewToggle = document.getElementById('monsterViewToggle');
+    
+    if (monsterViewToggle) {
+        monsterViewToggle.addEventListener('click', () => {
+            isMonsterListView = !isMonsterListView;
+            
+            if (isMonsterListView) {
+                monsterViewToggle.innerHTML = '<i class="fas fa-list"></i> List';
+                monstersPreviewGrid.classList.add('hidden');
+                locationMonstersListEl.classList.remove('hidden');
+            } else {
+                monsterViewToggle.innerHTML = '<i class="fas fa-th-large"></i> Toggle';
+                monstersPreviewGrid.classList.remove('hidden');
+                locationMonstersListEl.classList.add('hidden');
+            }
+        });
+    }
+    
+    function openMapZoomModal() {
+        if (locationMapImage && locationMapImage.src) {
+            if (mapZoomImage) {
+                mapZoomImage.src = locationMapImage.src;
+            }
+            if (mapZoomModalBg) {
+                mapZoomModalBg.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+    }
+    
+    function closeMapZoom() {
+        if (mapZoomModalBg) {
+            mapZoomModalBg.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+    }
+    
+    // Add click handler to map image to open zoom modal
+    if (locationMapImage) {
+        locationMapImage.style.cursor = 'zoom-in';
+        locationMapImage.addEventListener('click', openMapZoomModal);
+    }
+    
+    // Close button
+    if (closeMapZoomModal) {
+        closeMapZoomModal.addEventListener('click', function(e) {
+            e.stopPropagation();
+            closeMapZoom();
+        });
+    }
+    
+    // Click on background to close
+    if (mapZoomModalBg) {
+        mapZoomModalBg.addEventListener('click', function(e) {
+            if (e.target === mapZoomModalBg) {
+                closeMapZoom();
+            }
+        });
+    }
+
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const filterButton = document.getElementById('filterButton');
+    const searchResultsSection = document.getElementById('searchResultsSection');
+    const searchResultsList = document.getElementById('searchResultsList');
+    const searchResultsCount = document.getElementById('searchResultsCount');
+    const searchResultsEmpty = document.getElementById('searchResultsEmpty');
+    const searchSuggestions = document.getElementById('searchSuggestions');
+    
+    // Autocomplete functionality
+    let currentSuggestionIndex = -1;
+    let currentSuggestions = [];
+    
+    function highlightMatch(text, searchTerm) {
+        if (!searchTerm) return text;
+        const regex = new RegExp(`(${searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+        return text.replace(regex, '<span class="suggestion-match">$1</span>');
+    }
+    
+    function showSuggestions(suggestions) {
+        currentSuggestions = suggestions;
+        currentSuggestionIndex = -1;
+        
+        if (suggestions.length === 0) {
+            searchSuggestions.classList.add('hidden');
+            return;
+        }
+        
+        searchSuggestions.innerHTML = suggestions.slice(0, 10).map((s, i) => `
+            <div class="suggestion-item" data-index="${i}" data-type="${s.type}" data-id="${s.id || ''}">
+                <div class="suggestion-icon ${s.type}">
+                    <i class="fas ${s.type === 'location' ? 'fa-map-marker-alt' : 'fa-paw'}"></i>
+                </div>
+                <div class="suggestion-text">
+                    <div class="suggestion-name">${highlightMatch(s.name, searchInput.value)}</div>
+                    <div class="suggestion-meta">${s.type === 'location' ? 'Location' : `Monster - Lv. ${s.level} - ${s.location || 'Unknown'}`}</div>
+                </div>
+            </div>
+        `).join('');
+        
+        searchSuggestions.classList.remove('hidden');
+        
+        // Add click handlers
+        searchSuggestions.querySelectorAll('.suggestion-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const idx = parseInt(item.dataset.index);
+                selectSuggestion(idx);
+            });
+        });
+    }
+    
+    function selectSuggestion(index) {
+        const suggestion = currentSuggestions[index];
+        if (!suggestion) return;
+        
+        searchInput.value = suggestion.name;
+        searchSuggestions.classList.add('hidden');
+        
+        if (suggestion.type === 'location') {
+            displayLocationDetails(locationsData[suggestion.id]);
+        } else if (suggestion.type === 'monster') {
+            // Find location for this monster and show it
+            const monsterLoc = suggestion.locationKey;
+            if (monsterLoc && locationsData[monsterLoc]) {
+                displayLocationDetails(locationsData[monsterLoc]);
+            } else {
+                // Just search for the monster
+                performSearchListing();
+            }
+        }
+    }
+    
+    function getSuggestions(searchTerm) {
+        if (!searchTerm || searchTerm.length < 1) return [];
+        
+        const term = searchTerm.toLowerCase();
+        const suggestions = [];
+        
+        // Add matching locations
+        Object.entries(locationsData).forEach(([id, loc]) => {
+            if (loc.name.toLowerCase().includes(term)) {
+                suggestions.push({
+                    type: 'location',
+                    id: id,
+                    name: loc.name,
+                    priority: loc.name.toLowerCase().startsWith(term) ? 2 : 1
+                });
+            }
+        });
+        
+        // Add matching monsters
+        monstersData.forEach(monster => {
+            if (monster.name.toLowerCase().includes(term) || String(monster.level) === term) {
+                const locKey = monster.location ? monster.location.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') : null;
+                suggestions.push({
+                    type: 'monster',
+                    id: monster.id,
+                    name: monster.name,
+                    level: monster.level,
+                    location: monster.location,
+                    locationKey: locKey,
+                    priority: monster.name.toLowerCase().startsWith(term) ? 1.5 : 0.5
+                });
+            }
+        });
+        
+        // Sort by priority and type
+        suggestions.sort((a, b) => {
+            if (a.priority !== b.priority) return b.priority - a.priority;
+            if (a.type !== b.type) return a.type === 'location' ? -1 : 1;
+            return a.name.localeCompare(b.name);
+        });
+        
+        return suggestions;
+    }
+    
+    // Input event for autocomplete
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            const term = searchInput.value.trim();
+            if (term.length >= 1) {
+                const suggestions = getSuggestions(term);
+                showSuggestions(suggestions);
+            } else {
+                searchSuggestions.classList.add('hidden');
+            }
+        });
+        
+        // Keyboard navigation for suggestions
+        searchInput.addEventListener('keydown', (e) => {
+            const items = searchSuggestions.querySelectorAll('.suggestion-item');
+            
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                if (items.length > 0) {
+                    currentSuggestionIndex = Math.min(currentSuggestionIndex + 1, items.length - 1);
+                    items.forEach((item, i) => item.classList.toggle('active', i === currentSuggestionIndex));
+                    if (currentSuggestionIndex >= 0) {
+                        items[currentSuggestionIndex].scrollIntoView({ block: 'nearest' });
+                    }
+                }
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                if (items.length > 0) {
+                    currentSuggestionIndex = Math.max(currentSuggestionIndex - 1, -1);
+                    items.forEach((item, i) => item.classList.toggle('active', i === currentSuggestionIndex));
+                    if (currentSuggestionIndex >= 0) {
+                        items[currentSuggestionIndex].scrollIntoView({ block: 'nearest' });
+                    }
+                }
+            } else if (e.key === 'Enter') {
+                if (currentSuggestionIndex >= 0 && currentSuggestions[currentSuggestionIndex]) {
+                    e.preventDefault();
+                    selectSuggestion(currentSuggestionIndex);
+                } else {
+                    searchSuggestions.classList.add('hidden');
+                    performSearchListing();
+                }
+            } else if (e.key === 'Escape') {
+                searchSuggestions.classList.add('hidden');
+            }
+        });
+        
+        // Hide suggestions when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !searchSuggestions.contains(e.target)) {
+                searchSuggestions.classList.add('hidden');
+            }
+        });
+    }
+
+    // FILTER MODAL refs
+    const filterModalBg = document.getElementById('filterModalBg');
+    const filterModal = document.getElementById('filterModal');
+    const closeFilterModal = document.getElementById('closeFilterModal');
+    const filterForm = document.getElementById('filterForm');
+    const resetFilter = document.getElementById('resetFilter');
+    const filterMonsterName = document.getElementById('filterMonsterName');
+    const filterLevelMin = document.getElementById('filterLevelMin');
+    const filterLevelMax = document.getElementById('filterLevelMax');
+
+    // --- FILTER MODAL (modal display logic)
+    let activeFilters = {};
+    let activeSearchTerm = "";
+
+    function showFilterModal() {
+        filterModalBg.classList.remove('hidden');
+        filterModalBg.setAttribute('aria-modal','true');
+        document.body.style.overflow='hidden';
+        setTimeout(()=>filterMonsterName.focus(),150);
+    }
+    function hideFilterModal() {
+        filterModalBg.classList.add('hidden');
+        filterModalBg.removeAttribute('aria-modal');
+        document.body.style.overflow='';
+    }
+    if(filterButton) filterButton.addEventListener('click', showFilterModal);
+    if(closeFilterModal) closeFilterModal.addEventListener('click', hideFilterModal);
+    if(filterModalBg) filterModalBg.addEventListener('click', function(e){
+        if(e.target===filterModalBg) hideFilterModal();
+    });
+    document.addEventListener('keydown', e=>{
+        if(!filterModalBg.classList.contains('hidden') && e.key==="Escape") hideFilterModal();
+    });
+
+    if(resetFilter) resetFilter.addEventListener('click',()=>{
+        filterMonsterName.value = "";
+        filterLevelMin.value = "";
+        filterLevelMax.value = "";
+        activeFilters = {};
+        hideFilterModal();
+        performSearchListing();
+    });
+
+    if(filterForm) filterForm.addEventListener('submit', e=>{
+        e.preventDefault();
+        activeFilters.monsterName = filterMonsterName.value.trim().toLowerCase();
+        activeFilters.minLevel = Number(filterLevelMin.value) || null;
+        activeFilters.maxLevel = Number(filterLevelMax.value) || null;
+        hideFilterModal();
+        performSearchListing();
+    });
+
+    function matchesFilters(locationData) {
+        if(activeFilters.monsterName) {
+            let found = false;
+            if(locationData.monsters)
+                for(let mon of locationData.monsters)
+                    if(mon.name.toLowerCase().includes(activeFilters.monsterName))
+                        found=true;
+            if(!found) return false;
+        }
+        if(activeFilters.minLevel!==undefined && activeFilters.minLevel!==null && activeFilters.minLevel!=="") {
+            let found = false;
+            if(locationData.monsters)
+                for(let mon of locationData.monsters)
+                    if(mon.level>=activeFilters.minLevel)
+                        found=true;
+            if(!found) return false;
+        }
+        if(activeFilters.maxLevel!==undefined && activeFilters.maxLevel!==null && activeFilters.maxLevel!=="") {
+            let found = false;
+            if(locationData.monsters)
+                for(let mon of locationData.monsters)
+                    if(mon.level<=activeFilters.maxLevel)
+                        found=true;
+            if(!found) return false;
+        }
+        return true;
+    }
+
+    // --- Shared marker positions for main map and mini map ---
+    // Map base size: 736 x 575 pixels (natural dimensions)
+    // Positions stored as absolute pixel coordinates based on natural image dimensions
+    // These are calculated from the original percentages: x = left% * 736 / 100, y = top% * 575 / 100
+const markerPos = {
+    'korea': {x: 500, y: 105, name: 'Korea'},
+    'koyota': {x: 550, y: 92, name: 'Koyota'},
+    'yamataikoku': {x: 525, y: 102, name: 'Yamataikoku'},
+    'shayii-hill': {x: 565, y: 40, name: 'Shayii Hill'},
+    'ghost-isle': {x: 602, y: 5, name: 'Ghost Isle'},
+    'hawaii': {x: 611, y: 150, name: 'Hawaii'},
+    'fishing-village': {x: 498, y: 72, name: 'Fishing Village'},
+    'taiwan': {x: 500, y: 95, name: 'Taiwan'},
+    'ancient-yazhou-city': {x: 470, y: 95, name: 'Ancient Yazhou City'},
+    'bangkok': {x: 442, y: 115, name: 'Bangkok'},
+    'philippines': {x: 523, y: 112, name: 'Philippines'},
+    'zheng-he-fleet': {x: 443, y: 118, name: "Zheng He's Fleet"},
+    'polo-island': {x: 445, y: 150, name: 'Polo Island'},
+    'hezrou-island': {x: 482, y: 175, name: 'Hezrou Island'},
+    'universal': {x: 390, y: 166, name: 'Universal'},
+    'centaurs-island': {x: 332, y: 155, name: "Centaur's Island"},
+    'lions-isle': {x: 362, y: 83, name: "Lion's Isle"},
+    'calcutta': {x: 396, y: 15, name: 'Calcutta'},
+    'training-island': {x: 572, y: 163, name: 'Training Island'},
+    'north-island': {x: 525, y: 200, name: 'North Island'},
+    'stoowa-isle': {x: 498, y: 270, name: 'Stoowa Isle'},
+    'south-island': {x: 525, y: 210, name: 'South Island'},
+    'cook-island': {x: 525, y: 225, name: 'Cook Island'},
+    'magellan-fleet': {x: 589, y: 253, name: "Magellan's Fleet"},
+    'oslya': {x: 475, y: 149, name: 'Oslya'},
+    'south-pole': {x: 465, y: 260, name: 'South Pole'},
+    'sky-city': {x: 375, y: 210, name: 'Sky City'},
+    'snow-island': {x: 266, y: 216, name: 'Snow Island'},
+    'revival-island': {x: 680, y: 160, name: 'Revival Island'},
+    'iceberg': {x: 710, y: 205, name: 'Iceberg'},
+    'inca': {x: 708, y: 45, name: 'Inca'},
+    'mayan-forest': {x: 718, y: -60, name: 'Mayan Forest'},
+    'ghost-fleet': {x: 310, y: 120, name: 'Ghost Fleet'},
+    'madagascar': {x: 238, y: -45, name: 'Madagascar'},
+    'african-villages': {x: 220, y: -125, name: 'African Villages'},
+    'persia': {x: 302, y: -240, name: 'Persia'},
+    'egypt': {x: 210, y: -260, name: 'Egypt'},
+    'turtle-isle': {x: 210, y: -305, name: 'Turtle Isle'},
+    'fog-jungle': {x: 140, y: -400, name: 'Fog Jungle'},
+    'bordeaux-jungle': {x: 140, y: -385, name: 'Bordeaux Jungle'},
+    'avignon-jungle': {x: 158, y: -370, name: 'Avignon Jungle'},
+    'rome': {x: 185, y: -370, name: 'Rome'},
+    'hanging-gardens': {x: 205, y: -380, name: 'Hanging Gardens'},
+    'sea-monster': {x: 223, y: -395, name: 'Sea Monster'},
+    'athens': {x: 191, y: -385, name: 'Athens'},
+    'rhode-islands': {x: 170, y: -395, name: 'Rhode Islands'},
+    'relic-island': {x: 175, y: -390, name: 'Relic Island'}
+};
+
+// Natural dimensions of the world map image
+const MAP_NATURAL_WIDTH = 736;
+const MAP_NATURAL_HEIGHT = 575;
+
+// Global reference to the map image element
+let worldMapImage = null;
+let mapWrapper = null;
+let mapScale = { x: 1, y: 1 };
+
+// Calculate the current scale of the displayed map image
+function updateMapScale() {
+    worldMapImage = document.getElementById('worldMapImage');
+    mapWrapper = document.getElementById('mapImageWrapper');
+    
+    if (!worldMapImage || !mapWrapper) {
+        console.log('updateMapScale: Missing elements', { worldMapImage, mapWrapper });
+        return false;
+    }
+    
+    // Use the wrapper's dimensions since markers are positioned relative to it
+    const wrapperRect = mapWrapper.getBoundingClientRect();
+    
+    // Use natural dimensions from the image (or fallback to known dimensions)
+    const naturalW = worldMapImage.naturalWidth || MAP_NATURAL_WIDTH;
+    const naturalH = worldMapImage.naturalHeight || MAP_NATURAL_HEIGHT;
+    
+    // Calculate scale: displayed size / natural size
+    mapScale.x = wrapperRect.width / naturalW;
+    mapScale.y = wrapperRect.height / naturalH;
+    
+    console.log('updateMapScale:', {
+        wrapperWidth: wrapperRect.width,
+        wrapperHeight: wrapperRect.height,
+        naturalW,
+        naturalH,
+        scaleX: mapScale.x,
+        scaleY: mapScale.y
+    });
+    
+    return true;
+}
+
+// Convert natural pixel coordinates to displayed pixel coordinates
+function naturalToDisplay(naturalX, naturalY) {
+    const result = {
+        x: naturalX * mapScale.x,
+        y: naturalY * mapScale.y
+    };
+    console.log('naturalToDisplay:', { naturalX, naturalY, result, mapScale });
+    return result;
+}
+
+    // THE MAIN SEARCH LISTING RENDER FUNCTION (make sure it's defined in this scope!)
+    function performSearchListing(showAll = false) {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        activeSearchTerm = searchTerm;
+        searchResultsList.innerHTML = '';
+        searchResultsEmpty.classList.add('hidden');
+        searchResultsCount.classList.add('hidden');
+        document.getElementById('searchLoadingSpinner').classList.remove('hidden');
+
+        // Remove all marker highlights before new search
+        document.querySelectorAll('.map-marker').forEach(m => m.classList.remove('highlighted'));
+
+        // Dynamically render map markers
+        renderMapMarkers();
+
+        // Improved loading: show spinner for at least 180ms, but do search in parallel
+        const start = Date.now();
+        let matches = [];
+        let searchDone = false;
+        let spinnerTimeout = null;
+        function finishSearch() {
+            if (!searchDone) return;
+            const elapsed = Date.now() - start;
+            const minDelay = 180;
+            if (elapsed < minDelay) {
+                spinnerTimeout = setTimeout(renderResults, minDelay - elapsed);
+            } else {
+                renderResults();
+            }
+        }
+        function renderResults() {
+            if (spinnerTimeout) clearTimeout(spinnerTimeout);
+            if (matches.length > 0) {
+                searchResultsCount.textContent = matches.length + " match" + (matches.length!==1 ? "es":"");
+                searchResultsCount.classList.remove('hidden');
+                // ARIA live update
+                searchResultsCount.setAttribute('aria-live', 'polite');
+            }
+
+            // Keyboard navigation support
+            let currentIndex = -1;
+            function setActive(idx) {
+                const cards = document.querySelectorAll('.result-card');
+                cards.forEach((card,i)=>card.classList.toggle('selected',i===idx));
+                if(idx !== -1 && cards[idx]) cards[idx].focus();
+            }
+            searchInput.onkeydown = (e) => {
+                const N = matches.length;
+                if(!N) return;
+                if (e.key === "ArrowDown") {
+                    e.preventDefault();
+                    currentIndex = (currentIndex + 1) % N;
+                    setActive(currentIndex);
+                } else if (e.key === "ArrowUp") {
+                    e.preventDefault();
+                    currentIndex = (currentIndex - 1 + N) % N;
+                    setActive(currentIndex);
+                } else if (e.key === "Enter" && currentIndex !== -1) {
+                    document.querySelectorAll('.result-card')[currentIndex].click();
+                } else {
+                    currentIndex = -1;
+                    setActive(-1);
+                }
+            };
+
+            if (matches.length === 0) {
+                searchResultsEmpty.classList.remove('hidden');
+            } else {
+                matches.forEach(({id, data}, idx) => {
+                    const li = document.createElement('li');
+                    li.tabIndex = 0;
+                    li.className = "result-card cursor-pointer px-5 py-5 fade-in bg-wlDarker rounded-2xl border border-wlBlue shadow-md hover:shadow-lg transition group relative flex items-center results-fade-in focus:outline-none";
+                    li.setAttribute('role','button');
+                    li.setAttribute('aria-label',`View details of ${data.name}`);
+                    // MAP THUMBNAIL preview:
+                    li.innerHTML = `
+                        <img src="${data.mapImage}" alt="Map preview of ${data.name}" class="result-thumbnail mr-5" loading="lazy">
+                        <div class="flex-1">
+                          <div class="absolute top-4 right-6 flex items-center gap-2">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-medium bg-wlGreen/20 text-wlGreen px-2 rounded-full shadow">
+                              <i class="fas fa-map-marker-alt"></i>
+                              ${data.name}
+                            </span>
+                            <span class="search-badge bg-wlBlue/10 text-wlBlue">
+                              ${data.monsters.length} <i class="fas fa-paw ml-1"></i>
+                            </span>
+                            <span class="search-badge bg-wlPurple/10 text-wlPurple">
+                              ${data.npcs.length} <i class="fas fa-user-friends ml-1"></i>
+                            </span>
+                          </div>
+                          <div class="font-bold text-xl text-wlLight group-hover:text-wlBlue mb-1 pr-28">
+                            <i class="fas fa-map mr-2"></i>${data.name}
+                          </div>
+                          <div class="grid grid-cols-1 gap-1 sm:grid-cols-2">
+                            <div class="mb-1">
+                              <span class="text-wlLight font-medium mr-2"><i class="fas fa-paw mr-1"></i>Monsters:</span>
+                              <span class="text-wlLight/70">${data.monsters.map(m=>`${m.name}<span class='text-wlYellow/70 text-xs'> (Lv.${m.level})</span>`).join(", ") || "None"}</span>
+                            </div>
+                            <div>
+                              <span class="text-wlLight font-medium mr-2"><i class="fas fa-user-friends mr-1"></i>NPCs:</span>
+                              <span class="text-wlLight/70">${data.npcs.join(', ') || "None"}</span>
+                            </div>
+                          </div>
+                        </div>
+                      `;
+                    li.addEventListener('click', () => {
+                        displayLocationDetails(data);
+                    });
+                    li.addEventListener('keydown',(e)=>{
+                        if(e.key==='Enter' || e.key===' ') {
+                            displayLocationDetails(data);
+                        }
+                    });
+
+                    // --- Highlight corresponding marker on hover/focus ---
+                    li.addEventListener('mouseenter', () => {
+                      document.querySelectorAll('.map-marker').forEach(m => m.classList.remove('highlighted'));
+                      const marker = document.querySelector(`.map-marker[data-location-id='${id}']`);
+                      if(marker) marker.classList.add('highlighted');
+                      li.classList.add('highlighted');
+                    });
+                    li.addEventListener('mouseleave', () => {
+                      document.querySelectorAll('.map-marker').forEach(m => m.classList.remove('highlighted'));
+                      li.classList.remove('highlighted');
+                    });
+                    li.addEventListener('focus', () => {
+                      document.querySelectorAll('.map-marker').forEach(m => m.classList.remove('highlighted'));
+                      const marker = document.querySelector(`.map-marker[data-location-id='${id}']`);
+                      if(marker) marker.classList.add('highlighted');
+                      li.classList.add('highlighted');
+                    });
+                    li.addEventListener('blur', () => {
+                      document.querySelectorAll('.map-marker').forEach(m => m.classList.remove('highlighted'));
+                      li.classList.remove('highlighted');
+                    });
+
+                    searchResultsList.appendChild(li);
+
+                    // Animation delay for cascading effect
+                    setTimeout(()=>li.classList.add('results-fade-in'), 40*idx);
+                });
+            }
+            searchResultsSection.classList.remove('hidden');
+            searchResultsSection.scrollIntoView({behavior: "smooth", block: "center"});
+            document.getElementById('searchLoadingSpinner').classList.add('hidden');
+        }
+        // Do search
+        setTimeout(() => {
+            matches = [];
+            if (showAll) {
+                for (const [id, locationData] of Object.entries(locationsData)) {
+                    matches.push({id, data: locationData});
+                }
+            } else {
+                if (
+                    searchTerm === "" &&
+                    (!activeFilters.monsterName || activeFilters.monsterName === "") &&
+                    (!activeFilters.minLevel || activeFilters.minLevel === null) &&
+                    (!activeFilters.maxLevel || activeFilters.maxLevel === null)
+                ) {
+                    searchResultsSection.classList.add('hidden');
+                    document.getElementById('searchLoadingSpinner').classList.add('hidden');
+                    return;
+                }
+                for (const [id, locationData] of Object.entries(locationsData)) {
+                    let isMatch = false;
+                    // Text search (location or monster)
+                    if (searchTerm && locationData.name.toLowerCase().includes(searchTerm)) isMatch = true;
+                    // Monster name or level in search
+                    if (!isMatch && searchTerm && locationData.monsters) {
+                        for (const monster of locationData.monsters) {
+                            if (monster.name.toLowerCase().includes(searchTerm) || String(monster.level)===searchTerm) {
+                                isMatch = true;
+                                break;
+                            }
+                        }
+                    }
+                    // If not found by search, skip
+                    if (searchTerm && !isMatch) continue;
+                    // Now apply the filter modal settings
+                    if (!matchesFilters(locationData)) continue;
+                    matches.push({id,data:locationData});
+                }
+            }
+            searchDone = true;
+            finishSearch();
+        }, 0);
+    }
+
+// --- Dynamically render map markers ---
+function renderMapMarkers() {
+    const mapMarkersLayer = document.getElementById('mapMarkersLayer');
+    if (!mapMarkersLayer) return;
+    
+    // Update scale before rendering
+    if (!updateMapScale()) {
+        // If image not loaded yet, wait and retry
+        setTimeout(renderMapMarkers, 100);
+        return;
+    }
+    
+    mapMarkersLayer.innerHTML = '';
+    Object.entries(markerPos).forEach(([id, pos]) => {
+        const div = document.createElement('div');
+        div.className = 'map-marker marker-glow tooltip-marker';
+        
+        // Convert natural pixel coordinates to displayed coordinates
+        const displayPos = naturalToDisplay(pos.x, pos.y);
+        div.style.top = displayPos.y + 'px';
+        div.style.left = displayPos.x + 'px';
+        div.setAttribute('data-location-id', id);
+        div.setAttribute('aria-label', pos.name);
+        div.setAttribute('tabindex', '0');
+        div.innerHTML = `<i class="fas fa-map-pin"></i><span class="marker-tooltip">${pos.name}</span>`;
+        // Popover
+        const popover = document.createElement('div');
+        popover.className = 'marker-popover';
+        popover.innerHTML = `
+          <div class="popover-title">${pos.name}</div>
+          <div class="popover-section"><i class="fas fa-paw"></i>Monsters: <span class="popover-monsters">Loading...</span></div>
+          <div class="popover-section"><i class="fas fa-user-friends"></i>NPCs: <span class="popover-npcs">Loading...</span></div>
+        `;
+        div.appendChild(popover);
+        mapMarkersLayer.appendChild(div);
+    });
+    // Re-bind marker events
+    setTimeout(() => {
+        document.querySelectorAll('.map-marker').forEach(marker => {
+            const popover = marker.querySelector('.marker-popover');
+            marker.addEventListener('mouseenter', () => {
+                if (popover) {
+                    // Fill popover with data
+                    const id = marker.getAttribute('data-location-id');
+                    const loc = locationsData[id];
+                    if (loc) {
+                        popover.querySelector('.popover-monsters').textContent = loc.monsters.map(m=>m.name).join(', ') || 'None';
+                        popover.querySelector('.popover-npcs').textContent = loc.npcs.join(', ') || 'None';
+                    }
+                    // Position popover using fixed positioning to stay within viewport
+                    const markerRect = marker.getBoundingClientRect();
+                    const popoverWidth = 200; // Approximate width
+                    const popoverHeight = 100; // Approximate height
+                    
+                    // Calculate position
+                    let left = markerRect.left + markerRect.width / 2;
+                    let top = markerRect.top - 10;
+                    
+                    // Check if popover would go above viewport
+                    if (top - popoverHeight < 10) {
+                        // Show below instead
+                        top = markerRect.bottom + 10;
+                    }
+                    
+                    // Check if popover would go off right edge
+                    if (left + popoverWidth / 2 > window.innerWidth - 10) {
+                        left = window.innerWidth - popoverWidth / 2 - 10;
+                    }
+                    
+                    // Check if popover would go off left edge
+                    if (left - popoverWidth / 2 < 10) {
+                        left = popoverWidth / 2 + 10;
+                    }
+                    
+                    popover.style.position = 'fixed';
+                    popover.style.left = left + 'px';
+                    popover.style.top = top + 'px';
+                    popover.style.transform = 'translate(-50%, -100%)';
+                    popover.classList.add('visible');
+                }
+            });
+            marker.addEventListener('mouseleave', () => {
+                if (popover) popover.classList.remove('visible');
+            });
+            marker.addEventListener('focus', () => {
+                if (popover) {
+                    const id = marker.getAttribute('data-location-id');
+                    const loc = locationsData[id];
+                    if (loc) {
+                        popover.querySelector('.popover-monsters').textContent = loc.monsters.map(m=>m.name).join(', ') || 'None';
+                        popover.querySelector('.popover-npcs').textContent = loc.npcs.join(', ') || 'None';
+                    }
+                    // Position popover using fixed positioning to stay within viewport
+                    const markerRect = marker.getBoundingClientRect();
+                    const popoverWidth = 200;
+                    const popoverHeight = 100;
+                    
+                    let left = markerRect.left + markerRect.width / 2;
+                    let top = markerRect.top - 10;
+                    
+                    if (top - popoverHeight < 10) {
+                        top = markerRect.bottom + 10;
+                    }
+                    
+                    if (left + popoverWidth / 2 > window.innerWidth - 10) {
+                        left = window.innerWidth - popoverWidth / 2 - 10;
+                    }
+                    
+                    if (left - popoverWidth / 2 < 10) {
+                        left = popoverWidth / 2 + 10;
+                    }
+                    
+                    popover.style.position = 'fixed';
+                    popover.style.left = left + 'px';
+                    popover.style.top = top + 'px';
+                    popover.style.transform = 'translate(-50%, -100%)';
+                    popover.classList.add('visible');
+                }
+            });
+            marker.addEventListener('blur', () => {
+                if (popover) popover.classList.remove('visible');
+            });
+            marker.addEventListener('click', () => {
+                const locationId = marker.dataset.locationId;
+                const data = locationsData[locationId];
+                if (data) {
+                    displayLocationDetails(data);
+                    setTimeout(() => {
+                      document.getElementById('locationDetailSection').scrollIntoView({behavior: 'smooth', block: 'start'});
+                    }, 100);
+                }
+            });
+            marker.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    const locationId = marker.dataset.locationId;
+                    const data = locationsData[locationId];
+                    if (data) {
+                        displayLocationDetails(data);
+                        setTimeout(() => {
+                          document.getElementById('locationDetailSection').scrollIntoView({behavior: 'smooth', block: 'start'});
+                        }, 100);
+                    }
+                }
+            });
+        });
+    }, 10);
+}
+
+// --- Highlight search result when marker is hovered/focused ---
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    document.querySelectorAll('.map-marker').forEach(marker => {
+      marker.addEventListener('mouseenter', () => {
+        const id = marker.getAttribute('data-location-id');
+        document.querySelectorAll('.result-card').forEach(card => {
+          if(card.innerHTML.includes(locationsData[id].name)) card.classList.add('highlighted');
+        });
+        marker.classList.add('highlighted');
+      });
+      marker.addEventListener('mouseleave', () => {
+        document.querySelectorAll('.result-card').forEach(card => card.classList.remove('highlighted'));
+        marker.classList.remove('highlighted');
+      });
+      marker.addEventListener('focus', () => {
+        const id = marker.getAttribute('data-location-id');
+        document.querySelectorAll('.result-card').forEach(card => {
+          if(card.innerHTML.includes(locationsData[id].name)) card.classList.add('highlighted');
+        });
+        marker.classList.add('highlighted');
+      });
+      marker.addEventListener('blur', () => {
+        document.querySelectorAll('.result-card').forEach(card => card.classList.remove('highlighted'));
+        marker.classList.remove('highlighted');
+      });
+    });
+  }, 500);
+});
+
+    // Bind search (and also ENTER on input)
+    if (searchButton && searchInput) {
+        searchButton.addEventListener('click', () => performSearchListing());
+        searchInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                performSearchListing();
+            }
+        });
+    }
+    // Show All Locations button
+    const showAllLocationsBtn = document.getElementById('showAllLocationsBtn');
+    if (showAllLocationsBtn) {
+        showAllLocationsBtn.addEventListener('click', () => {
+            performSearchListing(true);
+            searchResultsSection.scrollIntoView({behavior: 'smooth', block: 'center'});
+        });
+    }
+    // Reset Map View button
+    const resetMapBtn = document.getElementById('resetMapBtn');
+    if (resetMapBtn) {
+        resetMapBtn.addEventListener('click', () => {
+            document.getElementById('locationDetailSection').classList.add('hidden');
+            document.getElementById('interactiveMapSection').scrollIntoView({behavior: 'smooth', block: 'center'});
+            // Remove highlights
+            document.querySelectorAll('.map-marker, .result-card').forEach(el => el.classList.remove('highlighted'));
+        });
+    }
+    // Animate marker drop on load
+    window.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.marker-drop').forEach(marker => {
+            marker.style.opacity = '';
+            marker.style.transform = '';
+        });
+    });
+
+    // Map marker click logic unchanged
+    // (handled by renderMapMarkers now)
+
+    // Ensure result list and detail logic remains as styled before...
+    function displayLocationDetails(data) {
+        // Find location ID
+        let thisId = Object.keys(locationsData).find(id => locationsData[id].name === data.name);
+        currentLocationId = thisId;
+        currentLocationName = data.name || '';
+        
+        locationNameEl.textContent = data.name;
+        locationMapImageEl.src = data.mapImage;
+        locationMapImageEl.alt = `${data.name} Map Layout`;
+        
+        // Update location type badge
+        const locType = detectLocationType(data.name);
+        const typeInfo = locationTypes[locType] || locationTypes.default;
+        locationTypeBadge.textContent = typeInfo.label;
+        locationTypeBadge.className = `px-3 py-1 rounded-full text-sm font-semibold ${typeInfo.color} text-white`;
+        
+        // Calculate difficulty and update stars
+        const difficulty = calculateDifficulty(data.monsters);
+        difficultyRatingEl.innerHTML = generateStars(difficulty);
+        
+        // Update recommended level - filter out outliers (use median instead of max)
+        let maxLevel = 0;
+        if (data.monsters && data.monsters.length > 0) {
+            const levels = data.monsters.map(m => m.level || 0).sort((a, b) => a - b);
+            // Use the 75th percentile to filter out potential quest/npc outliers
+            const p75Index = Math.floor(levels.length * 0.75);
+            maxLevel = levels[p75Index] || levels[0] || 0;
+        }
+        recommendedLevelEl.textContent = maxLevel > 0 ? `Recommended: Lv. ${maxLevel}+` : 'All Levels';
+        
+        // Update favorite button state
+        if (favoriteBtn) {
+            if (favorites.includes(thisId)) {
+                favoriteBtn.classList.add('active');
+                favoriteBtn.querySelector('i').className = 'fas fa-heart';
+            } else {
+                favoriteBtn.classList.remove('active');
+                favoriteBtn.querySelector('i').className = 'far fa-heart';
+            }
+        }
+        
+        // Update quick stats
+        const monsterCount = data.monsters ? data.monsters.length : 0;
+        const npcCount = data.npcs ? data.npcs.length : 0;
+        const avgLevel = data.monsters && data.monsters.length > 0
+            ? Math.round(data.monsters.reduce((s, m) => s + (m.level || 0), 0) / data.monsters.length)
+            : 0;
+        
+        if (statMonsterCount) statMonsterCount.textContent = monsterCount;
+        if (statNpcCount) statNpcCount.textContent = npcCount;
+        if (statAvgLevel) statAvgLevel.textContent = avgLevel || '-';
+        if (statDangerLevel) statDangerLevel.textContent = getDangerLevel(difficulty);
+        
+        // Update gallery (using map image as placeholder)
+        if (galleryMainImage) {
+            galleryMainImage.src = data.mapImage || 'https://via.placeholder.com/600x400.png?text=' + encodeURIComponent(data.name);
+        }
+        
+        // Update monsters list with preview cards
+        locationMonstersListEl.innerHTML = '';
+        if (monstersPreviewGrid) {
+            monstersPreviewGrid.innerHTML = '';
+            if (data.monsters && data.monsters.length > 0) {
+                data.monsters.slice(0, 6).forEach(monster => {
+                    const card = document.createElement('div');
+                    card.className = 'monster-preview-card';
+                    const monsterImg = getMonsterImageUrl(monster.id || 1);
+                    card.innerHTML = `
+                        <img src="${monsterImg}" alt="${monster.name}" onerror="this.src='https://via.placeholder.com/60x60.png?text=?'">
+                        <div class="text-xs mt-1 truncate">${monster.name}</div>
+                        <div class="text-xs text-wlYellow">Lv. ${monster.level}</div>
+                    `;
+                    monstersPreviewGrid.appendChild(card);
+                });
+                
+                data.monsters.forEach(monster => {
+                    const li = document.createElement('li');
+                    li.textContent = `${monster.name} (Lv. ${monster.level})`;
+                    locationMonstersListEl.appendChild(li);
+                });
+            } else {
+                monstersPreviewGrid.innerHTML = '<p class="text-wlLight opacity-60">No monsters in this area</p>';
+                locationMonstersListEl.innerHTML = '<li>No notable monsters in this area.</li>';
+            }
+        }
+        
+        // Update element distribution
+        if (elementDistribution) {
+            elementDistribution.innerHTML = '';
+            if (data.monsters && data.monsters.length > 0) {
+                // Elements in Wonderland Online: Fire, Ice, Wind, Earth
+                const elements = ['fire', 'ice', 'wind', 'earth'];
+                const elementCounts = {};
+                elements.forEach(el => elementCounts[el] = 0);
+                
+                data.monsters.forEach((m, i) => {
+                    const el = elements[i % elements.length];
+                    elementCounts[el]++;
+                });
+                
+                const total = data.monsters.length;
+                elements.forEach(el => {
+                    const count = elementCounts[el];
+                    const percent = Math.round((count / total) * 100);
+                    const color = getElementColor(el);
+                    elementDistribution.innerHTML += `
+                        <div class="flex items-center gap-2">
+                            <span class="w-12 text-xs capitalize">${el}</span>
+                            <div class="flex-1 element-bar">
+                                <div class="element-bar-fill" style="width: ${percent}%; background: ${color};"></div>
+                            </div>
+                            <span class="text-xs w-8 text-right">${percent}%</span>
+                        </div>
+                    `;
+                });
+            } else {
+                elementDistribution.innerHTML = '<p class="text-wlLight opacity-60">No element data available</p>';
+            }
+        }
+        
+        // Update NPCs
+        locationNpcsListEl.innerHTML = '';
+        if (data.npcs && data.npcs.length > 0) {
+            data.npcs.forEach(npc => {
+                const li = document.createElement('li');
+                li.textContent = npc;
+                locationNpcsListEl.appendChild(li);
+            });
+        } else {
+            locationNpcsListEl.innerHTML = '<li>No NPCs found in this area.</li>';
+        }
+        
+        // Update travel connections
+        if (connectionsList) {
+            const connections = travelConnections[thisId] || [];
+            if (connections.length > 0) {
+                connectionsList.innerHTML = connections.map(cid => 
+                    `<button class="connection-pill" data-loc="${cid}">
+                        <i class="fas fa-map-marker-alt"></i>
+                        ${locationsData[cid] ? locationsData[cid].name : cid}
+                    </button>`
+                ).join('');
+                
+                connectionsList.querySelectorAll('.connection-pill').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const locId = btn.getAttribute('data-loc');
+                        if (locationsData[locId]) {
+                            displayLocationDetails(locationsData[locId]);
+                        }
+                    });
+                });
+            } else {
+                connectionsList.innerHTML = '<p class="text-wlLight opacity-60">No direct travel connections</p>';
+            }
+        }
+        
+        // Related locations
+        const relatedDiv = document.getElementById('relatedLocations');
+        if (relatedDiv) {
+            // Suggest next 2 locations by id (circular)
+            let ids = Object.keys(locationsData);
+            let idx = ids.indexOf(thisId);
+            let related = [ids[(idx+1)%ids.length], ids[(idx+2)%ids.length]];
+            relatedDiv.innerHTML = '<h4 class="text-lg font-semibold mb-2 text-wlBlue"><i class="fas fa-compass mr-2"></i>Nearby Locations</h4>' +
+                related.map(rid => `<button class="related-btn px-3 py-2 bg-wlDark hover:bg-wlBlue text-wlLight rounded shadow mr-2 mb-2" data-relid="${rid}"><i class="fas fa-map-marker-alt mr-1"></i>${locationsData[rid].name}</button>`).join('');
+            // Add click listeners
+            relatedDiv.querySelectorAll('.related-btn').forEach(btn => {
+                btn.addEventListener('click', e => {
+                    displayLocationDetails(locationsData[btn.getAttribute('data-relid')]);
+                });
+            });
+        }
+        
+        // Persistent highlight
+        document.querySelectorAll('.map-marker').forEach(m => m.classList.remove('highlighted'));
+        if (thisId) {
+            const marker = document.querySelector(`.map-marker[data-location-id='${thisId}']`);
+            if (marker) marker.classList.add('highlighted');
+        }
+        locationDetailSection.classList.remove('hidden');
+        locationDetailSection.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
+
+    if (closeLocationDetailBtn) {
+        closeLocationDetailBtn.addEventListener('click', () => {
+            locationDetailSection.classList.add('hidden');
+            // Remove marker highlight when closing detail
+            document.querySelectorAll('.map-marker').forEach(m => m.classList.remove('highlighted'));
+        });
+    }
+    // Back to Map button logic
+    const backToMapBtn = document.getElementById('backToMapBtn');
+    if (backToMapBtn) {
+        backToMapBtn.addEventListener('click', () => {
+            locationDetailSection.classList.add('hidden');
+            setTimeout(() => {
+                document.getElementById('interactiveMapSection').scrollIntoView({behavior: 'smooth', block: 'center'});
+            }, 100);
+        });
+    }
+    // Show Back to Map button when detail is open
+    function showBackToMapBtn() {
+        if (backToMapBtn) backToMapBtn.classList.remove('hidden');
+    }
+    // Patch displayLocationDetails to show the button
+    const origDisplayLocationDetails = displayLocationDetails;
+    displayLocationDetails = function(data) {
+        origDisplayLocationDetails(data);
+        showBackToMapBtn();
+        // Copy Location Link button
+        const copyBtn = document.getElementById('copyLocationLinkBtn');
+        if (copyBtn) {
+            copyBtn.onclick = function() {
+                const url = window.location.origin + window.location.pathname + '#'+encodeURIComponent(data.name.replace(/\s+/g,'_'));
+                navigator.clipboard.writeText(url).then(()=>{
+                    copyBtn.textContent = 'Copied!';
+                    setTimeout(()=>{copyBtn.innerHTML = '<i class="fas fa-link mr-1"></i>Copy Location Link';}, 1200);
+                });
+            };
+        }
+        // Update URL hash for sharing
+        if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', '#' + encodeURIComponent(data.name.replace(/\s+/g,'_')));
+        } else {
+            window.location.hash = encodeURIComponent(data.name.replace(/\s+/g,'_'));
+        }
+        // Animate marker bounce
+        let thisId = Object.keys(locationsData).find(id => locationsData[id].name === data.name);
+        if (thisId) {
+            const marker = document.querySelector(`.map-marker[data-location-id='${thisId}']`);
+            if (marker) {
+                marker.classList.remove('highlighted');
+                void marker.offsetWidth; // force reflow
+                marker.classList.add('highlighted');
+            }
+        }
+    }
+// On page load, open location if hash is present
+window.addEventListener('DOMContentLoaded', () => {
+    const hash = decodeURIComponent(window.location.hash.replace(/^#/,''));
+    if (hash) {
+        const found = Object.values(locationsData).find(loc => loc.name.replace(/\s+/g,'_') === hash);
+        if (found) {
+            displayLocationDetails(found);
+        }
+    }
+});
+    // Zoom In/Out logic
+    let mapZoom = 1;
+    let mapPanX = 0;
+    let mapPanY = 0;
+    const mapImageWrapper = document.getElementById('mapImageWrapper');
+    const mapContainer = document.getElementById('interactiveMapContainer');
+    const zoomInBtn = document.getElementById('zoomInBtn');
+    const zoomOutBtn = document.getElementById('zoomOutBtn');
+    const resetZoomBtn = document.getElementById('resetZoomBtn');
+    
+    // Set default zoom for mobile
+    if (window.innerWidth < 700) {
+        mapZoom = 0.7;
+    }
+    
+    function updateMapTransform() {
+        if (mapImageWrapper) {
+            mapImageWrapper.style.transform = `translate(${mapPanX}px, ${mapPanY}px) scale(${mapZoom})`;
+            mapImageWrapper.style.transition = 'transform 0.25s cubic-bezier(.39,.68,.54,1.01)';
+            mapImageWrapper.style.transformOrigin = 'center center';
+            // Scale markers inversely with zoom so they stay consistent size
+            const markerScale = 1 / mapZoom;
+            mapImageWrapper.style.setProperty('--marker-scale', markerScale);
+        }
+    }
+    
+    function setMapZoom(z) {
+        mapZoom = Math.max(0.5, Math.min(2.2, z));
+        updateMapTransform();
+    }
+    
+    function resetMapView() {
+        mapZoom = window.innerWidth < 700 ? 0.7 : 1;
+        mapPanX = 0;
+        mapPanY = 0;
+        updateMapTransform();
+    }
+    
+    if (zoomInBtn) zoomInBtn.onclick = () => setMapZoom(mapZoom + 0.2);
+    if (zoomOutBtn) zoomOutBtn.onclick = () => setMapZoom(mapZoom - 0.2);
+    if (resetZoomBtn) resetZoomBtn.onclick = resetMapView;
+    
+    // Drag-to-pan functionality
+    let isDragging = false;
+    let dragStartX = 0;
+    let dragStartY = 0;
+    let dragStartPanX = 0;
+    let dragStartPanY = 0;
+    
+    if (mapContainer && mapImageWrapper) {
+        mapImageWrapper.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            dragStartX = e.clientX;
+            dragStartY = e.clientY;
+            dragStartPanX = mapPanX;
+            dragStartPanY = mapPanY;
+            mapImageWrapper.style.cursor = 'grabbing';
+            mapImageWrapper.style.transition = 'none';
+            e.preventDefault();
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            const dx = e.clientX - dragStartX;
+            const dy = e.clientY - dragStartY;
+            mapPanX = dragStartPanX + dx;
+            mapPanY = dragStartPanY + dy;
+            mapImageWrapper.style.transition = 'none';
+            mapImageWrapper.style.transform = `translate(${mapPanX}px, ${mapPanY}px) scale(${mapZoom})`;
+        });
+        
+        document.addEventListener('mouseup', () => {
+            if (isDragging) {
+                isDragging = false;
+                mapImageWrapper.style.cursor = 'grab';
+                mapImageWrapper.style.transition = 'transform 0.25s cubic-bezier(.39,.68,.54,1.01)';
+            }
+        });
+        
+        // Touch support for mobile
+        mapImageWrapper.addEventListener('touchstart', (e) => {
+            if (e.touches.length === 1) {
+                isDragging = true;
+                dragStartX = e.touches[0].clientX;
+                dragStartY = e.touches[0].clientY;
+                dragStartPanX = mapPanX;
+                dragStartPanY = mapPanY;
+                mapImageWrapper.style.transition = 'none';
+            }
+        }, { passive: true });
+        
+        mapImageWrapper.addEventListener('touchmove', (e) => {
+            if (!isDragging || e.touches.length !== 1) return;
+            const dx = e.touches[0].clientX - dragStartX;
+            const dy = e.touches[0].clientY - dragStartY;
+            mapPanX = dragStartPanX + dx;
+            mapPanY = dragStartPanY + dy;
+            mapImageWrapper.style.transition = 'none';
+            mapImageWrapper.style.transform = `translate(${mapPanX}px, ${mapPanY}px) scale(${mapZoom})`;
+        }, { passive: true });
+        
+        mapImageWrapper.addEventListener('touchend', () => {
+            isDragging = false;
+            mapImageWrapper.style.transition = 'transform 0.25s cubic-bezier(.39,.68,.54,1.01)';
+        }, { passive: true });
+    }
+    
+    // Initial marker render
+    renderMapMarkers();
+    
+    // Recalculate marker positions on window resize
+    let resizeTimeout = null;
+    window.addEventListener('resize', () => {
+        // Debounce resize events
+        if (resizeTimeout) clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            updateMapScale();
+            // Update all marker positions
+            document.querySelectorAll('.map-marker').forEach(marker => {
+                const id = marker.getAttribute('data-location-id');
+                if (id && markerPos[id]) {
+                    const displayPos = naturalToDisplay(markerPos[id].x, markerPos[id].y);
+                    marker.style.top = displayPos.y + 'px';
+                    marker.style.left = displayPos.x + 'px';
+                }
+            });
+        }, 50);
+    });
+    
+    // Also recalculate when image loads (in case it wasn't loaded yet)
+    const worldMapImg = document.getElementById('worldMapImage');
+    if (worldMapImg) {
+        worldMapImg.addEventListener('load', () => {
+            updateMapScale();
+            renderMapMarkers();
+        });
+    }
+});
+</script>
+<script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    
+    if (localStorage.getItem('theme') === 'light') {
+        body.classList.add('light-mode');
+        themeToggle.classList.add('light');
+        themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+    }
+    
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+        themeToggle.classList.toggle('light');
+        const icon = themeToggle.querySelector('i');
+        
+        if (body.classList.contains('light-mode')) {
+            icon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('theme', 'light');
+        } else {
+            icon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+</script>
+</body>
+</html>

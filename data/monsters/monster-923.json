@@ -1,0 +1,27 @@
+{
+  "id": 923,
+  "name": "Spirit",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-923.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 40,
+    "hp": 408,
+    "sp": 330,
+    "catchable": "Unknown",
+    "spd": 118,
+    "str": 23,
+    "con": 23,
+    "int": 21,
+    "wis": 24,
+    "agi": 29
+  }
+}

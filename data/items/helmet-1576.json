@@ -1,0 +1,17 @@
+{
+  "id": 1576,
+  "name": "Blue Gem Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Diamond / Steel",
+  "description": "Magic crest with a blue diamond held in center",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 28
+  },
+  "image": "data/images/helmet-1576.png",
+  "file": "helmet-1576.json"
+}

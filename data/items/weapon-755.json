@@ -1,0 +1,18 @@
+{
+  "id": 755,
+  "name": "Wooden Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Wood",
+  "description": "A wooden Gavel which is made of the common lignum",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 16,
+    "DEF": 18
+  },
+  "image": "data/images/weapon-755.png",
+  "file": "weapon-755.json"
+}

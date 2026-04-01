@@ -1,0 +1,17 @@
+{
+  "id": 1474,
+  "name": "Jade Ears+1",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets. Its numerical value can advance",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20
+  },
+  "image": "data/images/helmet-1474.png",
+  "file": "helmet-1474.json"
+}

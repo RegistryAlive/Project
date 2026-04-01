@@ -1,0 +1,18 @@
+{
+  "id": 2023,
+  "name": "Wood Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Nakayama Armour, used in a set effect.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "DEF": 30
+  },
+  "image": "data/images/shoes-2023.png",
+  "file": "shoes-2023.json"
+}

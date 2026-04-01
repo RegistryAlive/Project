@@ -1,0 +1,15 @@
+{
+  "id": 8242,
+  "name": "bright key",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A shining key made of gold.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8242.png",
+  "file": "questprop-8242.json"
+}

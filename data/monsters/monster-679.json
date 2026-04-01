@@ -1,0 +1,27 @@
+{
+  "id": 679,
+  "name": "Elin",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-679.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 20,
+    "hp": 209,
+    "sp": 119,
+    "catchable": "Unknown",
+    "spd": 58,
+    "str": 6,
+    "con": 20,
+    "int": 11,
+    "wis": 9,
+    "agi": 14
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8301,
+  "name": "Lady's Dumplin",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The tasty dumpling with many ingredients in it",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8301.png",
+  "file": "questprop-8301.json"
+}

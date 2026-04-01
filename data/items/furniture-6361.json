@@ -1,0 +1,15 @@
+{
+  "id": 6361,
+  "name": "Screen",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Restores your HP 2x faster while bathing. Can be traded.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6361.png",
+  "file": "furniture-6361.json"
+}

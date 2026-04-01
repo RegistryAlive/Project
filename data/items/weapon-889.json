@@ -1,0 +1,18 @@
+{
+  "id": 889,
+  "name": "Sky Sword +1",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "24% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "SPD": 12
+  },
+  "image": "data/images/weapon-889.png",
+  "file": "weapon-889.json"
+}

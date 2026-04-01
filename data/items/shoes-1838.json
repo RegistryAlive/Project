@@ -1,0 +1,18 @@
+{
+  "id": 1838,
+  "name": "Cool Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Feather / Leather",
+  "description": "It's light while wearing them.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 22,
+    "MATK": 6
+  },
+  "image": "data/images/shoes-1838.png",
+  "file": "shoes-1838.json"
+}

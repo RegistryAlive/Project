@@ -1,0 +1,15 @@
+{
+  "id": 6354,
+  "name": "Mailbox",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "can deliver letters to others",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6354.png",
+  "file": "furniture-6354.json"
+}

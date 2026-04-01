@@ -1,0 +1,18 @@
+{
+  "id": 1575,
+  "name": "Redbell Headband",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Leather / Pure Iron / Corundum",
+  "description": "Can be used to increase a little ATK",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28,
+    "ATK": 10
+  },
+  "image": "data/images/helmet-1575.png",
+  "file": "helmet-1575.json"
+}

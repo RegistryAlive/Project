@@ -1,0 +1,39 @@
+{
+  "id": 132,
+  "name": "Graverobber",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-132.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fugu",
+      "itemId": 7492,
+      "itemFile": "material-7492.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Silvery Sand",
+      "itemId": 7554,
+      "itemFile": "material-7554.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Silvery Ore",
+      "itemId": 7553,
+      "itemFile": "material-7553.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 76,
+    "hp": 823,
+    "sp": 663,
+    "catchable": "Unknown",
+    "spd": 200,
+    "str": 51,
+    "con": 50,
+    "int": 42,
+    "wis": 42,
+    "agi": 43
+  }
+}

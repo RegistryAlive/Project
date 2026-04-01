@@ -1,0 +1,15 @@
+{
+  "id": 6292,
+  "name": "Wardrobe",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A little wardrobe that can hold a few items.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6292.png",
+  "file": "furniture-6292.json"
+}

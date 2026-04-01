@@ -1,0 +1,15 @@
+{
+  "id": 8167,
+  "name": "Tomb Path Map",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It records the location of Tomb Pathway",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8167.png",
+  "file": "questprop-8167.json"
+}

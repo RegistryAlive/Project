@@ -1,0 +1,18 @@
+{
+  "id": 2656,
+  "name": "Angel Wing+9",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 96,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cannot be socketed and traded.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 48,
+    "MDEF": 48
+  },
+  "image": "data/images/special-2656.png",
+  "file": "special-2656.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2305,
+  "name": "War Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Armlet increasing speed and lethality.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 75,
+    "SPD": 75
+  },
+  "image": "data/images/special-2305.png",
+  "file": "special-2305.json"
+}

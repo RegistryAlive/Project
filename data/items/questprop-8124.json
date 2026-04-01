@@ -1,0 +1,15 @@
+{
+  "id": 8124,
+  "name": "Treasure Room1 Key",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is the key to the 1st door of National Treasure.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8124.png",
+  "file": "questprop-8124.json"
+}

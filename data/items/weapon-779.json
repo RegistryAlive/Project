@@ -1,0 +1,15 @@
+{
+  "id": 779,
+  "name": "Bouquets",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A beautiful bouquet for a bride.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-779.png",
+  "file": "weapon-779.json"
+}

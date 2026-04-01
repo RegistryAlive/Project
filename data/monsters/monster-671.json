@@ -1,0 +1,27 @@
+{
+  "id": 671,
+  "name": "DwarfLord",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-671.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 46,
+    "hp": 328,
+    "sp": 467,
+    "catchable": "Unknown",
+    "spd": 125,
+    "str": 22,
+    "con": 21,
+    "int": 33,
+    "wis": 34,
+    "agi": 28
+  }
+}

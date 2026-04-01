@@ -1,0 +1,27 @@
+{
+  "id": 543,
+  "name": "Alien Orang",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-543.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 88,
+    "hp": 2984,
+    "sp": 854,
+    "catchable": "Unknown",
+    "spd": 240,
+    "str": 58,
+    "con": 49,
+    "int": 50,
+    "wis": 53,
+    "agi": 54
+  }
+}

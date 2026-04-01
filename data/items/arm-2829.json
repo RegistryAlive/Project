@@ -1,0 +1,17 @@
+{
+  "id": 2829,
+  "name": "Arm Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "Legendary armguard with defense can reach the arm.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 26
+  },
+  "image": "data/images/arm-2829.png",
+  "file": "arm-2829.json"
+}

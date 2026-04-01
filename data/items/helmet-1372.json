@@ -1,0 +1,17 @@
+{
+  "id": 1372,
+  "name": "Sailor's Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A hat usually worn by sailors.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/helmet-1372.png",
+  "file": "helmet-1372.json"
+}

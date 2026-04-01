@@ -1,0 +1,45 @@
+{
+  "id": 267,
+  "name": "Snake",
+  "location": "Ancient Yazhou City",
+  "image": "data/Monster_Images/monster-267.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "White Snake Skin",
+      "itemId": 7695,
+      "itemFile": "material-7695.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Meat",
+      "itemId": 7482,
+      "itemFile": "material-7482.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Liquid",
+      "itemId": 7755,
+      "itemFile": "material-7755.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Tooth",
+      "itemId": 7734,
+      "itemFile": "material-7734.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 67,
+    "hp": 531,
+    "sp": 542,
+    "catchable": "Yes",
+    "spd": 184.5,
+    "str": 46,
+    "con": 40,
+    "int": 38,
+    "wis": 35,
+    "agi": 42
+  }
+}

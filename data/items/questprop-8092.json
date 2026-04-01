@@ -1,0 +1,15 @@
+{
+  "id": 8092,
+  "name": "Heaven Scroll",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "White Old Man looks for it,including 20 volumes.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8092.png",
+  "file": "questprop-8092.json"
+}

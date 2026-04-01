@@ -1,0 +1,18 @@
+{
+  "id": 1433,
+  "name": "Steel Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Steel / Corundum",
+  "description": "A magic crown made with a steel inlaid crest.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 13,
+    "MDEF": 8
+  },
+  "image": "data/images/helmet-1433.png",
+  "file": "helmet-1433.json"
+}

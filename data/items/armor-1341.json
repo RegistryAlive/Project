@@ -1,0 +1,18 @@
+{
+  "id": 1341,
+  "name": "Monk's Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clothing worn by monks to break away from worldly desires; additional outfit effects can be gained when equipped together with other Monk's Predictable Series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "DEF": 10
+  },
+  "image": "data/images/armor-1341.png",
+  "file": "armor-1341.json"
+}

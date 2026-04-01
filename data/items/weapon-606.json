@@ -1,0 +1,18 @@
+{
+  "id": 606,
+  "name": "Shadowine",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Magic / Corundum / Titanium",
+  "description": "A destructive wand that evokes desire",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 42,
+    "MATK": 34
+  },
+  "image": "data/images/weapon-606.png",
+  "file": "weapon-606.json"
+}

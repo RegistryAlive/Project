@@ -1,0 +1,18 @@
+{
+  "id": 114,
+  "name": "Steel Fine Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Steel / Wood / Hard Tissue",
+  "description": "A sword made from steel, its long and thin.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 11,
+    "SPD": 11
+  },
+  "image": "data/images/weapon-114.png",
+  "file": "weapon-114.json"
+}

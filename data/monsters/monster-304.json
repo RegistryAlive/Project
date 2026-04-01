@@ -1,0 +1,45 @@
+{
+  "id": 304,
+  "name": "Egyptian Rubytail",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-304.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Hornet Comb",
+      "itemId": 7749,
+      "itemFile": "material-7749.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Nectar",
+      "itemId": 7529,
+      "itemFile": "material-7529.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pigeon Meat",
+      "itemId": 7500,
+      "itemFile": "material-7500.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 57,
+    "hp": 733,
+    "sp": 322,
+    "catchable": "Yes",
+    "spd": 167.5,
+    "str": 40,
+    "con": 50,
+    "int": 20,
+    "wis": 20,
+    "agi": 41
+  }
+}

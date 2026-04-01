@@ -1,0 +1,15 @@
+{
+  "id": 6476,
+  "name": "Cactus Bonsai",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Cactus Bonsai. Placed at home to increase greenness.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6476.png",
+  "file": "furniture-6476.json"
+}

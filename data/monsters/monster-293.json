@@ -1,0 +1,50 @@
+{
+  "id": 293,
+  "name": "Pig Lord",
+  "location": "Athens",
+  "image": "data/Monster_Images/monster-293.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Spring Onion",
+      "itemId": 7414,
+      "itemFile": "material-7414.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Garlic",
+      "itemId": 7417,
+      "itemFile": "material-7417.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Spinach",
+      "itemId": 7408,
+      "itemFile": "material-7408.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clear Devil's Spar",
+      "itemId": null,
+      "itemFile": null
+    }
+  ],
+  "stats": {
+    "level": 75,
+    "hp": 847,
+    "sp": 646,
+    "catchable": "Yes",
+    "spd": 190.5,
+    "str": 51,
+    "con": 52,
+    "int": 42,
+    "wis": 41,
+    "agi": 39
+  }
+}

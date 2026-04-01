@@ -1,0 +1,15 @@
+{
+  "id": 8372,
+  "name": "Mystic Tiger V",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Use this to receive a Mystic Tiger as a companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8372.png",
+  "file": "questprop-8372.json"
+}

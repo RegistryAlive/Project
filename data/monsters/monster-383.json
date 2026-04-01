@@ -1,0 +1,45 @@
+{
+  "id": 383,
+  "name": "Yellow Dragonfly",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-383.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Chrysanthemum",
+      "itemId": 7353,
+      "itemFile": "material-7353.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Harl Grass",
+      "itemId": 7359,
+      "itemFile": "material-7359.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Water Spinach",
+      "itemId": 7412,
+      "itemFile": "material-7412.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "A-choy",
+      "itemId": 7404,
+      "itemFile": "material-7404.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 7,
+    "hp": 66,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 22.5,
+    "str": 2,
+    "con": 4,
+    "int": 5,
+    "wis": 4,
+    "agi": 6
+  }
+}

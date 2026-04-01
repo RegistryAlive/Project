@@ -1,0 +1,17 @@
+{
+  "id": 2841,
+  "name": "Steel Thorn Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Leather / Copper / Steel",
+  "description": "Made of leather, copper sheet and steel hook.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 22
+  },
+  "image": "data/images/arm-2841.png",
+  "file": "arm-2841.json"
+}

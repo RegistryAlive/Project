@@ -1,0 +1,18 @@
+{
+  "id": 2866,
+  "name": "Green-rip Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Leaf / Titanium",
+  "description": "Green and light bracers.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 24,
+    "SPD": 9
+  },
+  "image": "data/images/arm-2866.png",
+  "file": "arm-2866.json"
+}

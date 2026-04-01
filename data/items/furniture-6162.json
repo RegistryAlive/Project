@@ -1,0 +1,15 @@
+{
+  "id": 6162,
+  "name": "Sprinkler",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "One kind of bath facility",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6162.png",
+  "file": "furniture-6162.json"
+}

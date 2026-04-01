@@ -1,0 +1,51 @@
+{
+  "id": 218,
+  "name": "Golden Flower",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-218.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Rose",
+      "itemId": 7352,
+      "itemFile": "material-7352.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coconut (Pulp)",
+      "itemId": 7880,
+      "itemFile": "material-7880.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Green Apple",
+      "itemId": 7518,
+      "itemFile": "material-7518.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pine",
+      "itemId": 7371,
+      "itemFile": "material-7371.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Turpentine",
+      "itemId": 7370,
+      "itemFile": "material-7370.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 698,
+    "sp": 645,
+    "catchable": "Yes",
+    "spd": 177,
+    "str": 45,
+    "con": 43,
+    "int": 44,
+    "wis": 42,
+    "agi": 36
+  }
+}

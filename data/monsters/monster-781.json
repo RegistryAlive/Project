@@ -1,0 +1,27 @@
+{
+  "id": 781,
+  "name": "Inspecting Crew (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-781.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 63,
+    "hp": 4800,
+    "sp": 450,
+    "catchable": "Unknown",
+    "spd": 198.5,
+    "str": 38,
+    "con": 32,
+    "int": 37,
+    "wis": 30,
+    "agi": 52
+  }
+}

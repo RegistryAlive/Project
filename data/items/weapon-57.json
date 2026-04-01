@@ -1,0 +1,17 @@
+{
+  "id": 57,
+  "name": "Fatal Scythe",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Diamond / Titanium",
+  "description": "A menacing weapon stolen from the Grim Reaper",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 64
+  },
+  "image": "data/images/weapon-57.png",
+  "file": "weapon-57.json"
+}

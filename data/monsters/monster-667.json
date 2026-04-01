@@ -1,0 +1,27 @@
+{
+  "id": 667,
+  "name": "Dog Power",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-667.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 6500,
+    "sp": 600,
+    "catchable": "Unknown",
+    "spd": 195,
+    "str": 35,
+    "con": 44,
+    "int": 48,
+    "wis": 38,
+    "agi": 45
+  }
+}

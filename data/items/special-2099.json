@@ -1,0 +1,15 @@
+{
+  "id": 2099,
+  "name": "Iron Ball",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Iron",
+  "description": "A heavy iron weight. Equipping this will reduce speed.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2099.png",
+  "file": "special-2099.json"
+}

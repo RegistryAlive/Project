@@ -1,0 +1,51 @@
+{
+  "id": 24,
+  "name": "Scorpion",
+  "location": "African Villages",
+  "image": "data/Monster_Images/monster-24.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sparrow Meat",
+      "itemId": 7499,
+      "itemFile": "material-7499.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Scorpion'S Venom",
+      "itemId": 7760,
+      "itemFile": "material-7760.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Basalt",
+      "itemId": 7636,
+      "itemFile": "material-7636.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 51,
+    "hp": 393,
+    "sp": 433,
+    "catchable": "Unknown",
+    "spd": 138.5,
+    "str": 31,
+    "con": 31,
+    "int": 30,
+    "wis": 30,
+    "agi": 31
+  }
+}

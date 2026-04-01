@@ -1,0 +1,17 @@
+{
+  "id": 7853,
+  "name": "Fried Tilapia-2",
+  "type": "Material",
+  "category": "material",
+  "rank": 3,
+  "level": 6,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "A common family dish",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150
+  },
+  "image": "data/images/material-7853.png",
+  "file": "material-7853.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 806,
+  "name": "Mahabrahman (Quest)",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-806.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 200,
+    "hp": 60000,
+    "sp": 13000,
+    "catchable": "Unknown",
+    "spd": 1500,
+    "str": 580,
+    "con": 480,
+    "int": 380,
+    "wis": 300,
+    "agi": 600
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 1147,
+  "name": "Scorpion",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-1148.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Apple",
+      "itemId": 7433,
+      "itemFile": "material-7433.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 63,
+    "hp": 508,
+    "sp": 479,
+    "catchable": "Unknown",
+    "spd": 184.5,
+    "str": 44,
+    "con": 31,
+    "int": 38,
+    "wis": 31,
+    "agi": 45
+  }
+}

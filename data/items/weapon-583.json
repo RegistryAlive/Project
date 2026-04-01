@@ -1,0 +1,18 @@
+{
+  "id": 583,
+  "name": "Wand of Defiance",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Magic / Flower / Tin / Titanium / Feather",
+  "description": "Magic wand used by ancient wizards",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 54,
+    "MDEF": 26
+  },
+  "image": "data/images/weapon-583.png",
+  "file": "weapon-583.json"
+}

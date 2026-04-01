@@ -1,0 +1,18 @@
+{
+  "id": 2832,
+  "name": "Flame Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "Large thorn cuff which is assembled from hematite",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "DEF": 4
+  },
+  "image": "data/images/arm-2832.png",
+  "file": "arm-2832.json"
+}

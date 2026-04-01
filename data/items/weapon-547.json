@@ -1,0 +1,17 @@
+{
+  "id": 547,
+  "name": "Turquoise Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Corundum / Gold",
+  "description": "A wand that can initiate magic energy.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 18
+  },
+  "image": "data/images/weapon-547.png",
+  "file": "weapon-547.json"
+}

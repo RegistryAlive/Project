@@ -1,0 +1,15 @@
+{
+  "id": 8053,
+  "name": "Snake's Flute",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A flute for the person that plays the flute",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8053.png",
+  "file": "questprop-8053.json"
+}

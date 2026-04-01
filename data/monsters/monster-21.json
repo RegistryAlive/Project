@@ -1,0 +1,33 @@
+{
+  "id": 21,
+  "name": "Ancient Rock Monster",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-21.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Basalt",
+      "itemId": 7636,
+      "itemFile": "material-7636.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Clay",
+      "itemId": 7643,
+      "itemFile": "material-7643.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 906,
+    "sp": 872,
+    "catchable": "Unknown",
+    "spd": 219.5,
+    "str": 47,
+    "con": 53,
+    "int": 54,
+    "wis": 55,
+    "agi": 46
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6598,
+  "name": "Secretary Cabi",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The bookcase where magical objects are piled, there are many classics that need to be collected, and only experts understand the mystery.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6598.png",
+  "file": "furniture-6598.json"
+}

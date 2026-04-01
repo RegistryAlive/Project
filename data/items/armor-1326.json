@@ -1,0 +1,18 @@
+{
+  "id": 1326,
+  "name": "Daisy Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Like the sunshine in spring, the bright yellow dress has a fresh tone. Has a 5% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 350,
+    "DEF": 30
+  },
+  "image": "data/images/armor-1326.png",
+  "file": "armor-1326.json"
+}

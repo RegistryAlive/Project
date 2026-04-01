@@ -1,0 +1,18 @@
+{
+  "id": 837,
+  "name": "GoldDragon Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A golden dragon embroiodered on the blue brocade cloth, fierce and dignified. 46% chance of critical strike effect",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "SPD": 50
+  },
+  "image": "data/images/weapon-837.png",
+  "file": "weapon-837.json"
+}

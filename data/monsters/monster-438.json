@@ -1,0 +1,45 @@
+{
+  "id": 438,
+  "name": "Earthworm",
+  "location": "Kama Cave",
+  "image": "data/Monster_Images/monster-438.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pachyrhizus",
+      "itemId": 7516,
+      "itemFile": "material-7516.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Clay",
+      "itemId": 7642,
+      "itemFile": "material-7642.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 3,
+    "hp": 48,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 6.5,
+    "str": 2,
+    "con": 2,
+    "int": 2,
+    "wis": 2,
+    "agi": 1
+  }
+}

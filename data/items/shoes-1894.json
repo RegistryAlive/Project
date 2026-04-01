@@ -1,0 +1,17 @@
+{
+  "id": 1894,
+  "name": "White Loops",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Flower / Feather",
+  "description": "Boots made from purple flower floss and feathers.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28
+  },
+  "image": "data/images/shoes-1894.png",
+  "file": "shoes-1894.json"
+}

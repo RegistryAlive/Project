@@ -1,0 +1,18 @@
+{
+  "id": 2132,
+  "name": "Strong Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To evenly upgrade defense and agility",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 3,
+    "SPD": 3
+  },
+  "image": "data/images/special-2132.png",
+  "file": "special-2132.json"
+}

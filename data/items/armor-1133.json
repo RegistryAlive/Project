@@ -1,0 +1,18 @@
+{
+  "id": 1133,
+  "name": "Wolf Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Leather / Leaf",
+  "description": "A fighting outfit made from wolf hide",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28,
+    "ATK": 8
+  },
+  "image": "data/images/armor-1133.png",
+  "file": "armor-1133.json"
+}

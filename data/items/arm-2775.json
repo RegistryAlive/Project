@@ -1,0 +1,17 @@
+{
+  "id": 2775,
+  "name": "Leather Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "Cuffs which are made from the reprocessed hide",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 4
+  },
+  "image": "data/images/arm-2775.png",
+  "file": "arm-2775.json"
+}

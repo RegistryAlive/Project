@@ -1,0 +1,15 @@
+{
+  "id": 7388,
+  "name": "Oolong Tea",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leaf",
+  "description": "Mellow Oolong tea leaf",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7388.png",
+  "file": "material-7388.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7613,
+  "name": "Pure Tin",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Tin",
+  "description": "High quanlity tin",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7613.png",
+  "file": "material-7613.json"
+}

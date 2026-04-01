@@ -1,0 +1,45 @@
+{
+  "id": 524,
+  "name": "Swift Hippo",
+  "location": "Taiwan (Carnie) - Pleasure Island",
+  "image": "data/Monster_Images/monster-524.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lemon",
+      "itemId": 7449,
+      "itemFile": "material-7449.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pineapple",
+      "itemId": 7445,
+      "itemFile": "material-7445.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 734,
+    "sp": 705,
+    "catchable": "Unknown",
+    "spd": 188,
+    "str": 38,
+    "con": 45,
+    "int": 47,
+    "wis": 46,
+    "agi": 40
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 705,
+  "name": "Tao's Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Steel / Wood",
+  "description": "The shape of it looks like a spade.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 43
+  },
+  "image": "data/images/weapon-705.png",
+  "file": "weapon-705.json"
+}

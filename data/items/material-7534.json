@@ -1,0 +1,17 @@
+{
+  "id": 7534,
+  "name": "Brown Nut",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "A Nut",
+  "size": "1x1",
+  "attributes": {
+    "SP": 100
+  },
+  "image": "data/images/material-7534.png",
+  "file": "material-7534.json"
+}

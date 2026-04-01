@@ -1,0 +1,18 @@
+{
+  "id": 2873,
+  "name": "Mayan Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 5,
+  "level": 0,
+  "rarity": "rare",
+  "base": "N/A",
+  "description": "Special for Shasha, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 60,
+    "MaxSP": 240
+  },
+  "image": "data/images/arm-2873.png",
+  "file": "arm-2873.json"
+}

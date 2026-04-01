@@ -1,0 +1,18 @@
+{
+  "id": 23,
+  "name": "Arabia Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "Curved knife from Arabia, enormous lethality.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 21,
+    "DEF": 21
+  },
+  "image": "data/images/weapon-23.png",
+  "file": "weapon-23.json"
+}

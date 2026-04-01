@@ -1,0 +1,18 @@
+{
+  "id": 496,
+  "name": "Feather Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Titanium",
+  "description": "A law cane used by Archangel according to legend.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 8,
+    "SPD": 8
+  },
+  "image": "data/images/weapon-496.png",
+  "file": "weapon-496.json"
+}

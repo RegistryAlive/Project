@@ -1,0 +1,18 @@
+{
+  "id": 2062,
+  "name": "Gem Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Diamond",
+  "description": "Expensive necklace processed from diamonds.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 4,
+    "DEF": 4
+  },
+  "image": "data/images/special-2062.png",
+  "file": "special-2062.json"
+}

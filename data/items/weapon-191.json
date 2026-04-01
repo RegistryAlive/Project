@@ -1,0 +1,18 @@
+{
+  "id": 191,
+  "name": "Sky Sword+6",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 14,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Can't be socketed.38% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 42,
+    "SPD": 42
+  },
+  "image": "data/images/weapon-191.png",
+  "file": "weapon-191.json"
+}

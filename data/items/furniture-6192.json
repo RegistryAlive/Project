@@ -1,0 +1,15 @@
+{
+  "id": 6192,
+  "name": "Immaculate Sapphire",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 16,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Corundum",
+  "description": "A Perfect blue gem with no flaw",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6192.png",
+  "file": "furniture-6192.json"
+}

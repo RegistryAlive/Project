@@ -1,0 +1,18 @@
+{
+  "id": 31,
+  "name": "Red Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Titanium / Steel",
+  "description": "A crimson light gleams along the killing edge.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 43,
+    "SPD": 15
+  },
+  "image": "data/images/weapon-31.png",
+  "file": "weapon-31.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1733,
+  "name": "Cat Bells",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Maoyou exclusive equipment, the gems inlaid on it can make Maoyou exert its real power; when equipped with other Maoyou series equipment at the same time, it can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50,
+    "MDEF": 50
+  },
+  "image": "data/images/helmet-1733.png",
+  "file": "helmet-1733.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6429,
+  "name": "Cypress Desk",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Made with Cypress and it carries a sweet aroma",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6429.png",
+  "file": "furniture-6429.json"
+}

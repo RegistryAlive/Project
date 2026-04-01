@@ -1,0 +1,15 @@
+{
+  "id": 6335,
+  "name": "Handcart",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "used to make a pillar",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6335.png",
+  "file": "furniture-6335.json"
+}

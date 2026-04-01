@@ -1,0 +1,18 @@
+{
+  "id": 39,
+  "name": "Indian Machete",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "An Indian tulwar that enhances attack speed.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 8,
+    "SPD": 14
+  },
+  "image": "data/images/weapon-39.png",
+  "file": "weapon-39.json"
+}

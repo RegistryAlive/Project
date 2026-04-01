@@ -1,0 +1,18 @@
+{
+  "id": 1321,
+  "name": "Haruyuki",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A kimono made of bright satin, the color of which symbolizes a sunny, snowy day. For every forging +2, the equipment attributes will be additionally +1, with a maximum increase of 50 attribute values",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 450,
+    "MaxSP": 200
+  },
+  "image": "data/images/armor-1321.png",
+  "file": "armor-1321.json"
+}

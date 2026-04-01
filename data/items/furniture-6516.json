@@ -1,0 +1,15 @@
+{
+  "id": 6516,
+  "name": "Chinese tea",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Use the tea set made of fine porcelain",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6516.png",
+  "file": "furniture-6516.json"
+}

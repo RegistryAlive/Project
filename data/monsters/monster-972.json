@@ -1,0 +1,27 @@
+{
+  "id": 972,
+  "name": "Vapor Prist",
+  "location": "Underground Pathway",
+  "image": "data/Monster_Images/monster-972.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 60,
+    "hp": 7800,
+    "sp": 523,
+    "catchable": "Unknown",
+    "spd": 170,
+    "str": 30,
+    "con": 30,
+    "int": 45,
+    "wis": 35,
+    "agi": 40
+  }
+}

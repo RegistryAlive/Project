@@ -1,0 +1,18 @@
+{
+  "id": 2731,
+  "name": "Baby Magpie",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The magpie guarding the lover, transformed into a baby magpie, snuggling around all the time",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30,
+    "MaxHP": 300
+  },
+  "image": "data/images/special-2731.png",
+  "file": "special-2731.json"
+}

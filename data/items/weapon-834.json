@@ -1,0 +1,18 @@
+{
+  "id": 834,
+  "name": "Bright Crystal",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The exclusive weapon of the reincarnated snow girl, formed by absorbing the essence of the traveler, has a strong spirituality.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 40,
+    "SPD": 40
+  },
+  "image": "data/images/weapon-834.png",
+  "file": "weapon-834.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2807,
+  "name": "Hand inflammat",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The use of gauntlets inflammation soul messenger, can destroy all attacking the offensive torch",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 25,
+    "MDEF": 11
+  },
+  "image": "data/images/arm-2807.png",
+  "file": "arm-2807.json"
+}

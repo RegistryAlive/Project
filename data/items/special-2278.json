@@ -1,0 +1,17 @@
+{
+  "id": 2278,
+  "name": "Red Bead",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A red magic ball giving the wearer energy.",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 60
+  },
+  "image": "data/images/special-2278.png",
+  "file": "special-2278.json"
+}

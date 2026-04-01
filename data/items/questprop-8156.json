@@ -1,0 +1,15 @@
+{
+  "id": 8156,
+  "name": "Sock",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Exchanged with Santa Claus, hang it on the tree.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8156.png",
+  "file": "questprop-8156.json"
+}

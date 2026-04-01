@@ -1,0 +1,18 @@
+{
+  "id": 987,
+  "name": "Silvery Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Iron / Leather",
+  "description": "Armor which soldiers usually wear in battlefield",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "MDEF": 8
+  },
+  "image": "data/images/armor-987.png",
+  "file": "armor-987.json"
+}

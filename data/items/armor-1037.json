@@ -1,0 +1,18 @@
+{
+  "id": 1037,
+  "name": "Party Wear",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "Stylish, striking, stunning, not comfortable.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 13,
+    "DEF": 12
+  },
+  "image": "data/images/armor-1037.png",
+  "file": "armor-1037.json"
+}

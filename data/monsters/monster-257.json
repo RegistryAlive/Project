@@ -1,0 +1,45 @@
+{
+  "id": 257,
+  "name": "DrowCrusher Lord (Quest)",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-257.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Tiger Meat",
+      "itemId": 7476,
+      "itemFile": "material-7476.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Tooth",
+      "itemId": 7809,
+      "itemFile": "material-7809.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Fur",
+      "itemId": 7812,
+      "itemFile": "material-7812.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Drowcrusher Tooth",
+      "itemId": 7811,
+      "itemFile": "material-7811.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 10000,
+    "sp": 596,
+    "catchable": "Unknown",
+    "spd": 256,
+    "str": 103,
+    "con": 84,
+    "int": 27,
+    "wis": 33,
+    "agi": 53
+  }
+}

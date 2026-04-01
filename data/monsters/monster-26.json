@@ -1,0 +1,39 @@
+{
+  "id": 26,
+  "name": "Green Tyrannosaur",
+  "location": "Hezrou Island",
+  "image": "data/Monster_Images/monster-26.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tomato",
+      "itemId": 7444,
+      "itemFile": "material-7444.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lei Dragon Thigh",
+      "itemId": 7813,
+      "itemFile": "material-7813.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 78,
+    "hp": 1005,
+    "sp": 627,
+    "catchable": "Yes",
+    "spd": 199,
+    "str": 58,
+    "con": 62,
+    "int": 34,
+    "wis": 39,
+    "agi": 41
+  }
+}

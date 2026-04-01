@@ -1,0 +1,18 @@
+{
+  "id": 404,
+  "name": "Dual Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Popular weapon used in the past. When equipped with other series, gain set effect.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "SPD": 40
+  },
+  "image": "data/images/weapon-404.png",
+  "file": "weapon-404.json"
+}

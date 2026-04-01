@@ -1,0 +1,15 @@
+{
+  "id": 6677,
+  "name": "Osmanthus Vase",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Cut a sprig of osmanthus and put it in the bottle, and the scent of osmanthus is immediately filled around it.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6677.png",
+  "file": "furniture-6677.json"
+}

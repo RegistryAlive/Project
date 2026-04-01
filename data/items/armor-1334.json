@@ -1,0 +1,18 @@
+{
+  "id": 1334,
+  "name": "Plat Uniform",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 60,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Feel the holy light emanating from your entire body; when equipped together with other Platinum Guard equipment, you can obtain an additional outfit effect.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 450,
+    "SPD": 15
+  },
+  "image": "data/images/armor-1334.png",
+  "file": "armor-1334.json"
+}

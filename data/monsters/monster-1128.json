@@ -1,0 +1,33 @@
+{
+  "id": 1128,
+  "name": "Cateran I",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-1129.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Potato",
+      "itemId": 7428,
+      "itemFile": "material-7428.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 89,
+    "hp": 1075,
+    "sp": 843,
+    "catchable": "No",
+    "spd": 215.5,
+    "str": 64,
+    "con": 63,
+    "int": 47,
+    "wis": 52,
+    "agi": 41
+  }
+}

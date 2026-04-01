@@ -1,0 +1,18 @@
+{
+  "id": 1458,
+  "name": "Spirit Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Titanium",
+  "description": "A crown which can protect the whole body and soul.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 14,
+    "MDEF": 14
+  },
+  "image": "data/images/helmet-1458.png",
+  "file": "helmet-1458.json"
+}

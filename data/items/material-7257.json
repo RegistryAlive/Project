@@ -1,0 +1,17 @@
+{
+  "id": 7257,
+  "name": "Spicy Carrot",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Nutritious fried Carrot",
+  "size": "1x1",
+  "attributes": {
+    "SP": 110
+  },
+  "image": "data/images/material-7257.png",
+  "file": "material-7257.json"
+}

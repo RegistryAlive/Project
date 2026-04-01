@@ -1,0 +1,15 @@
+{
+  "id": 6499,
+  "name": "Azure Combo Be",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 24,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Azure Series Combination Bed with a modern feel.",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/furniture-6499.png",
+  "file": "furniture-6499.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 877,
+  "name": "Rotten Scorpion Lord (Quest)",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-877.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 14500,
+    "sp": 1700,
+    "catchable": "Unknown",
+    "spd": 286,
+    "str": 70,
+    "con": 97,
+    "int": 80,
+    "wis": 60,
+    "agi": 53
+  }
+}

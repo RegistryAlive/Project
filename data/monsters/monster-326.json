@@ -1,0 +1,45 @@
+{
+  "id": 326,
+  "name": "Torrid Jellyfish",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-326.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Sea Water",
+      "itemId": 7891,
+      "itemFile": "material-7891.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Juice",
+      "itemId": 7711,
+      "itemFile": "material-7711.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Jelly Fish",
+      "itemId": 7800,
+      "itemFile": "material-7800.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 14,
+    "hp": 91,
+    "sp": 133,
+    "catchable": "Yes",
+    "spd": 39,
+    "str": 5,
+    "con": 6,
+    "int": 10,
+    "wis": 12,
+    "agi": 9
+  }
+}

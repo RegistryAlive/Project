@@ -1,0 +1,18 @@
+{
+  "id": 489,
+  "name": "Fallen Angel's Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Titanium / Gold / Quartz (Crystal)",
+  "description": "Wielded by the Angel who betrayed Heaven to Evil.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 26,
+    "SPD": 26
+  },
+  "image": "data/images/weapon-489.png",
+  "file": "weapon-489.json"
+}

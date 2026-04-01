@@ -1,0 +1,15 @@
+{
+  "id": 8521,
+  "name": "Flower Mantis",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets to make the Flower Mantis a partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8521.png",
+  "file": "questprop-8521.json"
+}

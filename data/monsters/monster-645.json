@@ -1,0 +1,27 @@
+{
+  "id": 645,
+  "name": "Darkness Niss (Quest)",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-645.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 26500,
+    "sp": 10000,
+    "catchable": "Unknown",
+    "spd": 331,
+    "str": 45,
+    "con": 55,
+    "int": 158,
+    "wis": 139,
+    "agi": 53
+  }
+}

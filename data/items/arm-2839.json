@@ -1,0 +1,17 @@
+{
+  "id": 2839,
+  "name": "Swift Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Leaf / Grass",
+  "description": "Cuffs made from arcane leaves and grasses.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 24
+  },
+  "image": "data/images/arm-2839.png",
+  "file": "arm-2839.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6514,
+  "name": "Good luck",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Fruit basket decoration symbolizing good luck",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6514.png",
+  "file": "furniture-6514.json"
+}

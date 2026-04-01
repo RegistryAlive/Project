@@ -1,0 +1,45 @@
+{
+  "id": 27,
+  "name": "Red Tyrannosaur",
+  "location": "Hezrou Island",
+  "image": "data/Monster_Images/monster-27.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Lemon",
+      "itemId": 7449,
+      "itemFile": "material-7449.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lei Dragon Thigh",
+      "itemId": 7813,
+      "itemFile": "material-7813.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    }
+  ],
+  "stats": {
+    "level": 77,
+    "hp": 1000,
+    "sp": 611,
+    "catchable": "Yes",
+    "spd": 185.5,
+    "str": 61,
+    "con": 62,
+    "int": 35,
+    "wis": 38,
+    "agi": 35
+  }
+}

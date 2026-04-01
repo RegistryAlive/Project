@@ -1,0 +1,18 @@
+{
+  "id": 2229,
+  "name": "Angel Wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 24,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Feather",
+  "description": "DEF+12,MDEF+12, can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 12,
+    "MDEF": 12
+  },
+  "image": "data/images/special-2229.png",
+  "file": "special-2229.json"
+}

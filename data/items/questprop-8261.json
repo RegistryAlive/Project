@@ -1,0 +1,15 @@
+{
+  "id": 8261,
+  "name": "Amusement Park",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Commemorative cards issued by amusement park",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8261.png",
+  "file": "questprop-8261.json"
+}

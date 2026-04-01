@@ -1,0 +1,18 @@
+{
+  "id": 879,
+  "name": "Water Aurora Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Corundum",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "MDEF": 20
+  },
+  "image": "data/images/weapon-879.png",
+  "file": "weapon-879.json"
+}

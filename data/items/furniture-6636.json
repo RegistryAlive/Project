@@ -1,0 +1,15 @@
+{
+  "id": 6636,
+  "name": "Easter wallpap",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Easter style allows players to change the colors of the walls",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6636.png",
+  "file": "furniture-6636.json"
+}

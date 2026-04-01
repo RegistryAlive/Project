@@ -1,0 +1,33 @@
+{
+  "id": 495,
+  "name": "Scared Water Demon",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-495.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Fruit Berry Syrup",
+      "itemId": 7300,
+      "itemFile": "material-7300.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 1063,
+    "sp": 684,
+    "catchable": "No",
+    "spd": 325,
+    "str": 47,
+    "con": 48,
+    "int": 47,
+    "wis": 32,
+    "agi": 50
+  }
+}

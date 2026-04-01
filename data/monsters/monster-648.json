@@ -1,0 +1,27 @@
+{
+  "id": 648,
+  "name": "Darkness Spirit",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-648.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 6700,
+    "sp": 699,
+    "catchable": "Unknown",
+    "spd": 189,
+    "str": 42,
+    "con": 34,
+    "int": 46,
+    "wis": 46,
+    "agi": 42
+  }
+}

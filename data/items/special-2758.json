@@ -1,0 +1,17 @@
+{
+  "id": 2758,
+  "name": "Archangel Wings+6",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 70,
+  "level": 140,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 70
+  },
+  "image": "data/images/special-2758.png",
+  "file": "special-2758.json"
+}

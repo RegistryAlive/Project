@@ -1,0 +1,18 @@
+{
+  "id": 2717,
+  "name": "Golden wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Golden wings that symbolize eternity, can be inlaid",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "SPD": 20
+  },
+  "image": "data/images/special-2717.png",
+  "file": "special-2717.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6692,
+  "name": "Halloween Wall",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Halloween styled wallpaper's that allow players to change to different wall colors.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6692.png",
+  "file": "furniture-6692.json"
+}

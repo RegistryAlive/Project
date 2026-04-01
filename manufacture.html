@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manufacture Dashboard - Wonderland Online DB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wlBlue: '#3b82f6',
+            wlPurple: '#8b5cf6',
+            wlGreen: '#10b981',
+            wlRed: '#ef4444',
+            wlYellow: '#f59e0b',
+            wlDark: '#1e293b',
+            wlDarker: '#0f172a',
+            wlLight: '#f1f5f9',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      background-image: 
+        radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%),
+        url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-blend-mode: overlay;
+      min-height: 100vh;
+    }
+    .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
+    .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
+    .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+    .checklist input[type=checkbox] { accent-color: #3b82f6; }
+    .process-tree-vertical {
+      padding-left: 0.5rem;
+      position: relative;
+    }
+    .process-step {
+      position: relative;
+      border-left: 2px solid #3b82f6;
+      margin-left: 0.5rem;
+      padding-left: 1.2rem;
+      margin-bottom: 0.3rem;
+      background: #232946;
+      border-radius: 0.7rem;
+      box-shadow: 0 2px 8px 0 rgba(59,130,246,0.08);
+      transition: background 0.2s, max-height 0.3s, box-shadow 0.2s;
+      overflow: hidden;
+      border: 1.5px solid transparent;
+    }
+    .process-step:hover, .process-step:focus-within {
+      background: #28304a;
+      box-shadow: 0 4px 16px 0 rgba(59,130,246,0.13);
+      border: 1.5px solid #3b82f6;
+    }
+    .process-step input[type=checkbox]:checked ~ span,
+    .process-step input[type=checkbox]:checked ~ .font-bold {
+      opacity: 0.6;
+      text-decoration: line-through;
+    }
+    .process-step input[type=checkbox]:focus {
+      outline: 2px solid #8b5cf6;
+      outline-offset: 2px;
+    }
+    .process-step.collapsed > .children {
+      max-height: 0 !important;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
+      display: block;
+    }
+    .process-step > .children {
+      max-height: 1000px;
+      opacity: 1;
+      transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
+      overflow: hidden;
+      display: block;
+    }
+    .process-step:before {
+      content: '';
+      position: absolute;
+      left: -1.2rem;
+      top: 0.7rem;
+      width: 1.2rem;
+      height: 2px;
+      background: #3b82f6;
+      border-radius: 2px;
+      display: block;
+    }
+    .process-step.root {
+      border-left: none;
+      margin-left: 0;
+      padding-left: 0.5rem;
+    }
+    .process-step label { padding: 0.7rem 0.2rem 0.7rem 0; display: flex; align-items: center; gap: 0.7rem; }
+    .process-step .fa-cube { color: #8b5cf6; }
+    .process-step .fa-tools { color: #3b82f6; }
+    .process-step .fa-clock { color: #f59e0b; }
+    .process-step .fa-cogs { color: #3b82f6; }
+    .process-step .fa-leaf { color: #4ade80; }
+    .process-step .fa-info-circle { color: #10b981; }
+    .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; }
+    .legend-item i { width: 1.2rem; text-align: center; }
+    .process-step.collapsed > .children {
+      max-height: 0 !important;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
+      display: block;
+    }
+    .process-step > .children {
+      max-height: none;
+      opacity: 1;
+      transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
+      overflow: visible;
+      display: block;
+    }
+    .process-step:hover { background: #28304a; }
+    .summary-box { background: linear-gradient(120deg, #232946 80%, #3b82f6 10%); border-radius: 1.2rem; box-shadow: 0 4px 18px 0 rgba(59,130,246,0.13); position: sticky; top: 2rem; }
+    .dashboard-card { background: #232946; border-radius: 1.2rem; box-shadow: 0 4px 18px 0 rgba(59,130,246,0.13); padding: 1.2rem 1.2rem 1rem 1.2rem; position: relative; }
+    .process-checklist-card {
+    min-height: 500px;
+    padding: 1.2rem 1.2rem 1rem 1.2rem;
+    }
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border-radius: 1rem;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 20px 0 rgba(59,130,246,0.1);
+      border: 1px solid rgba(139, 92, 246, 0.15);
+      width: 100%;
+    }
+    .filter-section {
+      display: flex;
+      align-items: center;
+    }
+    .filter-options-container {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    .filter-bar .filter-option {
+      color: #94a3b8;
+      font-weight: 500;
+      font-size: 0.85rem;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      transition: all 0.2s ease;
+      background: transparent;
+      border: 1px solid transparent;
+    }
+    .filter-bar .filter-option:hover {
+      background: rgba(59, 130, 246, 0.1);
+      color: #f1f5f9;
+    }
+    .filter-bar .filter-option.selected {
+      background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+    }
+    .search-section {
+      flex: 1;
+      min-width: 200px;
+      max-width: 350px;
+    }
+    .search-wrapper {
+      position: relative;
+      width: 100%;
+    }
+    .filter-bar .search-bar {
+      background: rgba(35, 41, 70, 0.6);
+      color: #f1f5f9;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 2rem;
+      padding: 0.6rem 1rem 0.6rem 2.5rem;
+      font-size: 0.9rem;
+      outline: none;
+      width: 100%;
+      transition: all 0.2s ease;
+    }
+    .filter-bar .search-bar:focus {
+      border-color: #8b5cf6;
+      background: rgba(35, 41, 70, 0.9);
+    }
+    .filter-bar .search-bar::placeholder {
+      color: #64748b;
+    }
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+    .autocomplete-list {
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      left: 0;
+      right: 0;
+      background: #1e293b;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 0.75rem;
+      max-height: 320px;
+      overflow-y: auto;
+      z-index: 30;
+      display: none;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    }
+    .autocomplete-list.show {
+      display: block;
+    }
+    .autocomplete-item {
+      padding: 0.6rem 0.8rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      transition: all 0.15s ease;
+    }
+    .autocomplete-item:last-child {
+      border-bottom: none;
+    }
+    .autocomplete-item:hover, .autocomplete-item.selected {
+      background: linear-gradient(90deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+    }
+    .autocomplete-item img {
+      width: 28px;
+      height: 28px;
+      border-radius: 0.4rem;
+      object-fit: cover;
+    }
+    .autocomplete-item .item-name {
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    .autocomplete-item .item-type {
+      font-size: 0.65rem;
+      color: #8b5cf6;
+      margin-left: auto;
+      background: rgba(139, 92, 246, 0.15);
+      padding: 0.15rem 0.4rem;
+      border-radius: 0.25rem;
+    }
+    .autocomplete-item:hover .item-type,
+    .autocomplete-item.selected .item-type {
+      background: rgba(245, 158, 11, 0.2);
+      color: #f59e0b;
+    }
+    .settings-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      color: #64748b;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: all 0.15s ease;
+      background: transparent;
+      position: relative;
+    }
+    .settings-toggle:hover {
+      background: rgba(139, 92, 246, 0.15);
+      color: #8b5cf6;
+    }
+    .settings-toggle input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    .settings-toggle input[type="checkbox"]:checked + i {
+      color: #f59e0b;
+    }
+    .settings-dropdown {
+      position: absolute;
+      top: 110%;
+      right: 0;
+      background: #1e293b;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 0.75rem;
+      padding: 0.5rem 0;
+      min-width: 180px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      z-index: 20;
+    }
+    .settings-option {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .settings-option:hover {
+      background: rgba(59, 130, 246, 0.15);
+    }
+    .settings-option input[type="checkbox"] {
+      accent-color: #8b5cf6;
+      width: 16px;
+      height: 16px;
+    }
+    .settings-option span {
+      color: #f1f5f9;
+      font-size: 0.9rem;
+    }
+    /* Selected Item Header */
+    .selected-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%);
+      border-radius: 1rem;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .selected-item-header .item-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .selected-item-header .item-image {
+      width: 48px;
+      height: 48px;
+      border-radius: 0.75rem;
+      object-fit: cover;
+      background: rgba(35, 41, 70, 0.5);
+      border: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    .selected-item-header .item-details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .selected-item-header .item-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin: 0;
+    }
+    .selected-item-header .item-type-badge {
+      font-size: 0.7rem;
+      color: #8b5cf6;
+      background: rgba(139, 92, 246, 0.15);
+      padding: 0.2rem 0.6rem;
+      border-radius: 1rem;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .selected-item-header .quantity-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .selected-item-header .quantity-label {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+    .quantity-input {
+      width: 70px;
+      background: rgba(35, 41, 70, 0.8);
+      color: #f1f5f9;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.6rem;
+      font-size: 0.95rem;
+      text-align: center;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .quantity-input:focus {
+      border-color: #8b5cf6;
+      box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+    }
+    .quantity-btn {
+      background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .quantity-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+    .dropdown-wrapper {
+      position: relative;
+      display: inline-block;
+      margin-left: 1.2rem;
+    }
+    #dropdownSelected {
+      background: linear-gradient(90deg, #3b82f6 60%, #8b5cf6 100%);
+      color: #fff;
+      border: 2px solid #8b5cf6;
+      border-radius: 0.7rem;
+      font-weight: 700;
+      box-shadow: 0 2px 8px 0 rgba(59,130,246,0.13);
+      padding: 0.7rem 1.2rem;
+      margin-bottom: 0.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 1.13rem;
+      transition: background 0.18s, color 0.18s, border 0.18s;
+    }
+    #dropdownSelected:before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      margin-right: 0.7rem;
+      color: #f59e0b;
+      font-size: 1.1em;
+      display: inline-block;
+    }
+    .dropdown-list {
+      background: #1e293b;
+      color: #f1f5f9;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 0.75rem;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      width: 220px;
+      max-height: 250px;
+      overflow-y: auto;
+      z-index: 20;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      display: none;
+    }
+    .dropdown-wrapper.open .dropdown-list {
+      display: block;
+    }
+    .dropdown-item {
+      padding: 0.6rem 0.9rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .dropdown-item:last-child { border-bottom: none; }
+    .dropdown-item.selected, .dropdown-item:hover {
+      background: linear-gradient(90deg, rgba(59, 130, 246, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+    }
+    .dropdown-item img {
+      width: 24px;
+      height: 24px;
+      border-radius: 0.3rem;
+    }
+    .sidebar-fab {
+      position: fixed;
+      right: 2.2rem;
+      bottom: 2.2rem;
+      z-index: 100;
+      background: linear-gradient(90deg, #3b82f6 60%, #8b5cf6 100%);
+      color: #fff;
+      border-radius: 9999px;
+      box-shadow: 0 4px 18px 0 rgba(59,130,246,0.13);
+      padding: 1.1rem 1.7rem;
+      font-size: 1.5rem;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-weight: 700;
+      transition: background 0.18s, box-shadow 0.18s;
+    }
+    .sidebar-fab:hover { background: linear-gradient(90deg, #8b5cf6 60%, #3b82f6 100%); }
+    /* History Bar Styles */
+    .history-bar {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 1rem;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      display: none;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .history-bar.visible {
+      display: flex;
+    }
+    .history-bar-title {
+      font-weight: 600;
+      color: #8b5cf6;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+    .history-items {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    .history-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 2rem;
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 0.85rem;
+      color: #f1f5f9;
+    }
+    .history-item:hover {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(139, 92, 246, 0.3) 100%);
+      border-color: #8b5cf6;
+      transform: translateY(-1px);
+    }
+    .history-item.active {
+      background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+      border-color: #8b5cf6;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+    }
+    .history-item img {
+      width: 20px;
+      height: 20px;
+      border-radius: 0.25rem;
+      object-fit: cover;
+    }
+    .history-item .remove-btn {
+      display: none;
+      margin-left: 0.25rem;
+      color: #ef4444;
+      font-size: 0.7rem;
+      opacity: 0.7;
+    }
+    .history-item:hover .remove-btn {
+      display: inline-flex;
+    }
+    .history-item .remove-btn:hover {
+      opacity: 1;
+    }
+    .history-controls {
+      display: flex;
+      gap: 0.5rem;
+      margin-left: auto;
+    }
+    .history-nav-btn {
+      background: rgba(59, 130, 246, 0.2);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 0.5rem;
+      padding: 0.4rem 0.6rem;
+      color: #f1f5f9;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 0.85rem;
+    }
+    .history-nav-btn:hover:not(:disabled) {
+      background: rgba(59, 130, 246, 0.4);
+    }
+    .history-nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .history-clear-btn {
+      background: rgba(239, 68, 68, 0.2);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 0.5rem;
+      padding: 0.4rem 0.6rem;
+      color: #ef4444;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 0.85rem;
+    }
+    .history-clear-btn:hover {
+      background: rgba(239, 68, 68, 0.4);
+    }
+    .history-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #94a3b8;
+      font-size: 0.85rem;
+      cursor: pointer;
+      padding: 0.4rem 0.8rem;
+      border-radius: 2rem;
+      transition: all 0.2s ease;
+    }
+    .history-toggle:hover {
+      background: rgba(139, 92, 246, 0.15);
+      color: #8b5cf6;
+    }
+    .history-toggle input[type="checkbox"] {
+      accent-color: #8b5cf6;
+    }
+    @media (max-width: 900px) {
+      .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.8rem;
+        gap: 0.8rem;
+      }
+      .filter-options-container {
+        justify-content: center;
+      }
+      .filter-bar .filter-option {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+      }
+      .search-section {
+        max-width: 100%;
+      }
+      .dropdown-wrapper {
+        width: 100%;
+      }
+      #dropdownSelected {
+        width: 100% !important;
+      }
+      .selected-item-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+      .selected-item-header .item-info {
+        flex-direction: column;
+      }
+      .selected-item-header .quantity-controls {
+        width: 100%;
+        justify-content: center;
+      }
+      .sidebar-fab {
+        right: 1rem;
+        bottom: 1rem;
+        padding: 0.8rem 1.3rem;
+        font-size: 1.2rem;
+      }
+      .dropdown-list {
+        left: 0;
+        right: 0;
+        width: 100%;
+        min-width: 0;
+      }
+      .dashboard-card.process-checklist-card {
+        padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+        min-height: unset;
+        border-radius: 0.7rem;
+      }
+      #processTree {
+        font-size: 0.97rem;
+        padding-left: 0.1rem;
+      }
+      .process-step {
+        margin-left: 0.2rem !important;
+        padding-left: 0.5rem !important;
+        border-radius: 0.4rem;
+      }
+      .process-step.root {
+        padding-left: 0.1rem !important;
+      }
+      .process-step label {
+        padding: 0.5rem 0.1rem 0.5rem 0 !important;
+        gap: 0.3rem !important;
+        font-size: 0.97rem;
+      }
+      .process-step .fa-cube,
+      .process-step .fa-tools,
+      .process-step .fa-clock {
+        font-size: 0.97rem !important;
+      }
+      .tree-controls button {
+        font-size: 0.97rem !important;
+        padding: 0.2rem 0.5rem !important;
+      }
+      .summary-box {
+        padding: 0.7rem !important;
+        border-radius: 0.7rem !important;
+        font-size: 0.97rem;
+      }
+      .progress-bar-bg, .progress-bar-fill {
+        height: 0.7rem !important;
+        border-radius: 0.4rem !important;
+      }
+    }
+  #processTree {
+      height: auto !important;
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background: linear-gradient(to right, #1e293b, #3b82f6);
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .theme-toggle-ball {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 24px;
+        height: 24px;
+        background: white;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .theme-toggle.light .theme-toggle-ball {
+        transform: translateX(30px);
+    }
+    
+    /* Light mode styles */
+    body.light-mode {
+        background-color: #f1f5f9;
+        color: #1e293b;
+    }
+    
+    body.light-mode .bg-wlDark {
+        background-color: #e2e8f0 !important;
+    }
+    
+    body.light-mode .bg-wlDarker {
+        background-color: #f8fafc !important;
+    }
+    
+    body.light-mode .text-wlLight {
+        color: #1e293b !important;
+    }
+    
+    body.light-mode .border-wlLight {
+        border-color: #cbd5e1 !important;
+    }
+    
+    body.light-mode .search-input {
+        background-color: #e2e8f0;
+        color: #1e293b;
+    }
+
+    /* Light mode - Manufacture page specific */
+    body.light-mode .process-step {
+        background: #e2e8f0 !important;
+        color: #1e293b !important;
+        border-color: #cbd5e1 !important;
+    }
+    body.light-mode .process-step:hover {
+        background: #dde3eb !important;
+    }
+    body.light-mode .summary-box {
+        background: linear-gradient(120deg, #e2e8f0 80%, #dbeafe 10%) !important;
+        color: #1e293b !important;
+    }
+    body.light-mode .summary-box[style] {
+        background: linear-gradient(120deg, #e2e8f0 80%, #dbeafe 10%) !important;
+    }
+    body.light-mode .dashboard-card {
+        background: #e2e8f0 !important;
+        color: #1e293b !important;
+    }
+    body.light-mode .filter-bar {
+        background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%) !important;
+        color: #1e293b !important;
+    }
+    body.light-mode .filter-bar .search-bar {
+        background: rgba(226, 232, 240, 0.8) !important;
+        color: #1e293b !important;
+        border-color: #cbd5e1 !important;
+    }
+    body.light-mode .filter-bar .search-bar::placeholder {
+        color: #64748b !important;
+    }
+    body.light-mode .filter-bar .filter-option {
+        color: #475569 !important;
+        border-color: #cbd5e1 !important;
+    }
+    body.light-mode .filter-bar .filter-option:hover {
+        color: #1e293b !important;
+    }
+    body.light-mode .filter-bar .filter-option.selected {
+        background-color: rgba(59, 130, 246, 0.2) !important;
+        color: #1e293b !important;
+    }
+    body.light-mode .autocomplete-list {
+        background: #f1f5f9 !important;
+        color: #1e293b !important;
+        border-color: #cbd5e1 !important;
+    }
+    body.light-mode .autocomplete-list .item {
+        color: #1e293b !important;
+    }
+    body.light-mode .autocomplete-list .item:hover {
+        background: #e2e8f0 !important;
+    }
+    body.light-mode .settings-dropdown {
+        background: #f1f5f9 !important;
+        color: #1e293b !important;
+        border-color: #cbd5e1 !important;
+    }
+    body.light-mode .settings-option span {
+        color: #1e293b !important;
+    }
+    body.light-mode .selected-item-header {
+        background: linear-gradient(135deg, rgba(226,232,240,0.8), rgba(241,245,249,0.8)) !important;
+    }
+    body.light-mode .selected-item-header .item-image {
+        background: rgba(226, 232, 240, 0.5) !important;
+    }
+    body.light-mode .quantity-input {
+        background: rgba(226, 232, 240, 0.8) !important;
+        color: #1e293b !important;
+        border-color: #cbd5e1 !important;
+    }
+    body.light-mode .dropdown-list {
+        background: #f1f5f9 !important;
+        color: #1e293b !important;
+        border-color: #cbd5e1 !important;
+    }
+    body.light-mode .history-bar {
+        background: linear-gradient(135deg, rgba(226,232,240,0.95), rgba(241,245,249,0.95)) !important;
+    }
+    body.light-mode .history-item {
+        color: #1e293b !important;
+    }
+    body.light-mode .history-item:hover {
+        background: #e2e8f0 !important;
+    }
+    body.light-mode select {
+        background-color: #e2e8f0 !important;
+        color: #1e293b !important;
+    }
+    body.light-mode select option {
+        background-color: #f1f5f9 !important;
+        color: #1e293b !important;
+    }
+    body.light-mode .selected-item-header .item-name {
+        color: #1e293b !important;
+    }
+    body.light-mode .selected-item-header .quantity-label {
+        color: #475569 !important;
+    }
+    body.light-mode .autocomplete-item .item-name {
+        color: #1e293b !important;
+    }
+  </style>
+</head>
+<body class="text-wlLight">
+  <!-- Header -->
+  <header class="bg-wlDark bg-opacity-90 blur-bg shadow-lg sticky top-0 z-30">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <a href="index.html" class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+              <i class="fas fa-dragon text-xl text-white"></i>
+            </div>
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+              Wonderland Online DB
+            </h1>
+          </a>
+        </div>
+        <div class="hidden md:flex space-x-6 items-center">
+          <div class="relative group">
+              <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium flex items-center">
+                  Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+              </a>
+              <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                  <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-lg flex items-center justify-between">
+                      Roadmap <i class="fas fa-route text-xs"></i>
+                  </a>
+              </div>
+          </div>
+          <a href="Item.html" class="nav-link px-3 py-2 text-sm font-medium">Items</a>
+          <a href="quests.html" class="nav-link px-3 py-2 text-sm font-medium">Quests</a>
+          <a href="monsters.html" class="nav-link px-3 py-2 text-sm font-medium">Monsters</a>
+          <a href="Locations.html" class="nav-link px-3 py-2 text-sm font-medium">Locations</a>
+          <a href="tier-list.html" class="nav-link px-3 py-2 text-sm font-medium">Tier-List</a>
+          <a href="shops.html" class="nav-link px-3 py-2 text-sm font-medium">Shops</a>
+          <a href="manufacture.html" class="nav-link px-3 py-2 text-sm font-medium text-wlBlue">Manufacture</a>
+          <a href="Resources.html" class="nav-link px-3 py-2 text-sm font-medium">Resources</a>
+          <!-- Theme Toggle -->
+          <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+              <div class="theme-toggle-ball">
+                  <i class="fas fa-moon text-xs text-wlDark"></i>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container mx-auto px-2 py-6" style="max-width: 1430px;">
+    <!-- Filter Bar - Streamlined for Discovery -->
+    <div class="filter-bar">
+      <!-- Category Filters -->
+      <div class="filter-section">
+        <div class="filter-options-container" id="filterOptions">
+          <span class="filter-option selected" data-type="All"><i class="fas fa-globe mr-1"></i>All</span>
+          <span class="filter-option" data-type="Furniture"><i class="fas fa-couch mr-1"></i>Furniture</span>
+          <span class="filter-option" data-type="Manufacture"><i class="fas fa-industry mr-1"></i>Manufacture</span>
+          <span class="filter-option" data-type="Tools"><i class="fas fa-tools mr-1"></i>Tools</span>
+          <span class="filter-option" data-type="Vehicle"><i class="fas fa-car mr-1"></i>Vehicle</span>
+        </div>
+      </div>
+      
+      <!-- Search - Primary Discovery Tool -->
+      <div class="search-section">
+        <div class="search-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input id="furnitureSearch" class="search-bar" type="text" placeholder="Search all items..." autocomplete="off">
+          <div class="autocomplete-list" id="autocompleteList"></div>
+        </div>
+      </div>
+      
+      <!-- Item Selector Dropdown -->
+      <div class="dropdown-wrapper" id="dropdownWrapper">
+        <div id="dropdownSelected" class="dropdown-item selected" style="width:220px; cursor:pointer;">Select item...</div>
+        <div class="dropdown-list" id="dropdownList"></div>
+      </div>
+      
+      <!-- Settings Toggle -->
+      <label class="settings-toggle" title="Toggle autocomplete suggestions">
+        <input type="checkbox" id="autocompleteToggle" checked>
+        <i class="fas fa-lightbulb"></i>
+      </label>
+      
+      <!-- History Toggle -->
+      <label class="history-toggle" title="Toggle item history">
+        <input type="checkbox" id="historyToggle">
+        <i class="fas fa-history"></i>
+        <span>History</span>
+      </label>
+    </div>
+    
+    <!-- History Bar -->
+    <div id="historyBar" class="history-bar">
+      <div class="history-bar-title">
+        <i class="fas fa-history"></i>
+        <span>Item History:</span>
+      </div>
+      <div class="history-items" id="historyItems">
+        <!-- History items will be rendered here -->
+      </div>
+      <div class="history-controls">
+        <button id="historyBackBtn" class="history-nav-btn" title="Go back" disabled>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button id="historyForwardBtn" class="history-nav-btn" title="Go forward" disabled>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <button id="historyClearBtn" class="history-clear-btn" title="Clear history">
+          <i class="fas fa-trash"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Selected Item Header - Contextual Controls -->
+    <div id="selectedItemHeader" class="selected-item-header" style="display: none;">
+      <div class="item-info">
+        <img id="selectedItemImage" src="" alt="" class="item-image">
+        <div class="item-details">
+          <h2 id="selectedItemName" class="item-name"></h2>
+          <span id="selectedItemType" class="item-type-badge"></span>
+        </div>
+      </div>
+      <div class="quantity-controls">
+        <span class="quantity-label">Craft Quantity:</span>
+        <input type="number" id="quantityInput" class="quantity-input" value="1" min="1" max="999">
+        <button id="quantityBtn" class="quantity-btn"><i class="fas fa-sync-alt"></i> Update</button>
+      </div>
+    </div>
+    <!-- Process Checklist Card -->
+    <section class="dashboard-card process-checklist-card">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold text-wlBlue flex items-center gap-2"><i class="fas fa-tasks"></i> Process Checklist</h2>
+        <div class="tree-controls flex flex-wrap gap-2">
+          <button id="expandAllBtn" title="Expand All"><i class="fas fa-plus-square"></i> Expand All</button>
+          <button id="collapseAllBtn" title="Collapse All"><i class="fas fa-minus-square"></i> Collapse All</button>
+          <div class="relative">
+            <button id="settingsToggleBtn" title="Settings" class="settings-toggle"><i class="fas fa-cog"></i></button>
+            <div id="settingsDropdown" class="settings-dropdown" style="display:none;">
+              <label class="settings-option">
+                <input type="checkbox" id="showFullSummary">
+                <span>Show Full Summary</span>
+              </label>
+              <label class="settings-option">
+                <input type="checkbox" id="reduceTime">
+                <span>Reduce Time by 23%</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Legend -->
+      <div class="mb-4 p-3 bg-wlDarker rounded-lg flex flex-wrap gap-4 items-center">
+        <span class="text-sm font-semibold text-wlLight">Legend:</span>
+        <div class="legend-item"><i class="fas fa-cube text-wlPurple"></i> <span>Material</span></div>
+        <div class="legend-item"><i class="fas fa-cogs text-wlBlue"></i> <span>Craftable (click to expand)</span></div>
+        <div class="legend-item"><i class="fas fa-leaf text-green-400"></i> <span>Raw Material</span></div>
+        <div class="legend-item"><i class="fas fa-tools text-wlBlue"></i> <span>Tool Required</span></div>
+        <div class="legend-item"><i class="fas fa-clock text-wlYellow"></i> <span>Time (min)</span></div>
+      </div>
+      <div id="processTree" class="checklist process-tree-vertical"></div>
+      <div class="mt-8 mb-4">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="font-semibold text-wlBlue">Checklist Progress</span>
+          <span id="progressPercent" class="text-sm text-wlLight"></span>
+          <span id="progressCount" class="text-xs text-wlPurple"></span>
+        </div>
+        <div class="progress-bar-bg">
+          <div id="progressBar" class="progress-bar-fill" style="width:0%"></div>
+        </div>
+      </div>
+      <div class="summary-box mt-8 p-5" style="user-select:text; pointer-events:auto; background:rgba(36,41,70,0.97); border:1.5px solid #3b82f6; border-radius:1.2rem;">
+        <h3 class="text-lg font-bold mb-2 text-wlPurple flex items-center gap-2"><i class="fas fa-clipboard-list"></i> Summary</h3>
+        <div id="summaryRaw" class="mb-2"></div>
+        <div id="summaryTime"></div>
+      </div>
+    </section>
+    <!-- Sidebar FAB -->
+    <button class="sidebar-fab" id="sidebarFab" title="Menu"><i class="fas fa-bars"></i> Menu</button>
+  </main>
+  <script>
+// --- Data and LocalStorage ---
+const LS_KEY = 'manufactureDataV2';
+let manufactureData = {};
+let manufactureDataLoaded = false;
+let rawMaterialsSet = new Set(); // Track items that are raw materials (no recipe)
+let masterDataRecipes = {}; // Reverse index: item name -> recipe from masterData
+let masterDataLoaded = null; // Cache for masterData
+
+// Type patterns for inferring item types - moved globally for autocomplete
+const typePatterns = {
+  'Furniture': ['Table', 'Chair', 'Bed', 'Desk', 'Lamp', 'Sofa', 'Cabinet', 'Drawer', 'Shelf', 'Bench', 'Floor', 'Wall', 'Window', 'Door', 'Mirror', 'Clock', 'Radio', 'TV', 'Computer', 'Phone', 'Fan', 'Heater', 'AC', 'Generator', 'Motor', 'Pump', 'Tank', 'Pipe', 'Filter', 'Equipment', 'Machine', 'Gear', 'Winch', 'Pulley', 'Saw', 'Kiln', 'Furnace', 'Lathe', 'Platform', 'Basin', 'Rope', 'Wire', 'Winding', 'Transformer', 'Device'],
+  'Tools': ['Tool', 'Hammer', 'Wrench', 'Screwdriver', 'Pliers', 'Knife', 'Axe', 'Saw', 'Drill', 'Grinder', 'Blade', 'Needle', 'Machine'],
+  'Vehicle': ['Car', 'Bike', 'Boat', 'Ship', 'Plane', 'Yacht', 'Cart', 'Wagon', 'UFO', 'Ufo', 'Vehicle', 'Jet', 'Helicopter', 'Submarine', 'Raft', 'Canoe', 'Skateboard', 'Rocket'],
+  'Manufacture': ['Bread', 'Cake', 'Juice', 'Soup', 'Stew', 'Rice', 'Noodle', 'Potion', 'Medicine', 'Egg', 'Milk', 'Cheese', 'Wine', 'Tea', 'Coffee', 'Water', 'Salt', 'Sugar', 'Flour', 'Dough', 'Meat', 'Fish', 'Vegetable', 'Fruit']
+};
+
+// Infer type from item name - globally accessible
+function inferType(name) {
+  for (const [type, patterns] of Object.entries(typePatterns)) {
+    for (const pattern of patterns) {
+      if (name.includes(pattern)) {
+        return type;
+      }
+    }
+  }
+  return 'Manufacture';
+}
+
+// Load manufacture data from JSON
+async function loadManufactureDataFromJSON() {
+  try {
+    // Load both files and merge them
+    // Only load wlo_master_complete.json which has correct hierarchical data
+    const masterResponse = await fetch('data/wlo_yield_fixed_v10.json');
+    const masterData = await masterResponse.json();
+    
+    // Collect ALL craftable items - both top-level keys AND nested ingredients
+    const allItemNames = new Set(Object.keys(masterData));
+    
+    function collectAllItems(item) {
+      if (!item.ingredients) return;
+      for (const ing of item.ingredients) {
+        if (ing.data && ing.data.name) {
+          allItemNames.add(ing.data.name);
+          collectAllItems(ing.data);
+        }
+      }
+    }
+    
+    // Collect all items from master data (including nested)
+    for (const item of Object.values(masterData)) {
+      collectAllItems(item);
+    }
+    
+    // All items come from masterData only - no need to add from manufacture-index
+    
+    const craftableItems = allItemNames;
+    
+    // Store masterData globally for autocomplete and other functions
+    window.masterData = masterData;
+    
+    // Helper function to create a data entry from master item
+    function createMasterEntry(name, item) {
+      let timeValue = 0;
+      if (item.time) {
+        const timeMatch = item.time.toString().match(/(\d+)/);
+        if (timeMatch) {
+          timeValue = parseInt(timeMatch[1], 10);
+        }
+      }
+      
+      // Construct image path from icon_id if not explicitly set
+      let imgPath = '';
+      if (item.image_path) {
+        imgPath = item.image_path;
+      } else if (item.icon_id) {
+        imgPath = 'data/data/images/item_' + item.icon_id + '.png';
+      }
+      
+      return {
+        name: item.name,
+        type: inferType(item.name),
+        tool: item.tool || '',
+        time: timeValue,
+        image_path: imgPath,
+        image_id: item.image_id || null,
+        allSteps: [],
+        rawMaterials: [],
+        materials: [],
+        ingredients: item.ingredients || []
+      };
+    }
+    
+    // Use only masterData (wlo_master_complete.json) - no longer using manufacture-index.json
+    for (const [name, item] of Object.entries(masterData)) {
+      manufactureData[name] = createMasterEntry(name, item);
+    }
+    
+    // Also need to add ALL nested items from master data that aren't already there
+    function addNestedItems(item) {
+      if (!item.ingredients) return;
+      for (const ing of item.ingredients) {
+        if (ing.data && ing.data.name) {
+          const ingName = ing.data.name;
+          if (!manufactureData[ingName]) {
+            manufactureData[ingName] = createMasterEntry(ingName, ing.data);
+          }
+          addNestedItems(ing.data);
+        }
+      }
+    }
+    
+    for (const item of Object.values(masterData)) {
+      addNestedItems(item);
+    }
+    
+    // NOW collect raw materials - AFTER manufactureData is fully populated
+    // Raw materials are items that have NO ingredients (cannot be crafted further)
+    // Check the actual ingredients array, not just whether it exists in the data
+    const allRawMaterials = new Set();
+    
+    function collectRawMaterials(item) {
+      if (!item.ingredients) return;
+      for (const ing of item.ingredients) {
+        if (ing.data && ing.data.name) {
+          const ingName = ing.data.name;
+          // Check if this ingredient has NO ingredients itself - that's what makes it raw
+          const ingData = ing.data;
+          const hasIngredients = ingData.ingredients && ingData.ingredients.length > 0;
+          if (!hasIngredients) {
+            allRawMaterials.add(ingName);
+          }
+          collectRawMaterials(ing.data);
+        }
+      }
+    }
+    
+    for (const item of Object.values(masterData)) {
+      collectRawMaterials(item);
+    }
+    
+    // Update raw materials set
+    rawMaterialsSet = allRawMaterials;
+    
+    // Build reverse index from masterData: for each item, find which top-level items produce it
+    // This gives us the correct hierarchical recipes
+    masterDataRecipes = {};
+    for (const [parentName, parentItem] of Object.entries(masterData)) {
+      if (parentItem.ingredients) {
+        for (const ing of parentItem.ingredients) {
+          if (ing.data && ing.data.name) {
+            const ingName = ing.data.name;
+            // If this ingredient is also a craftable item (has its own ingredients),
+            // store it in masterDataRecipes for priority lookup
+            if (ing.data.ingredients && ing.data.ingredients.length > 0) {
+              masterDataRecipes[ingName] = ing.data;
+            }
+          }
+        }
+      }
+    }
+    console.log(`Built masterDataRecipes with ${Object.keys(masterDataRecipes).length} items`);
+    
+    // Clear the recipe cache
+    clearRecipeCache();
+    
+    manufactureDataLoaded = true;
+    // Store masterData globally for autocomplete access
+    window.masterData = masterData;
+    console.log(`Loaded ${Object.keys(masterData).length} items from wlo_master_complete.json`);
+    console.log(`Loaded ${Object.keys(manufactureData).length} manufacture items (from masterData)`);
+    console.log(`Identified ${rawMaterialsSet.size} raw materials`);
+    return true;
+  } catch (error) {
+    console.error('Error loading manufacture data:', error);
+    return false;
+  }
+}
+
+// Check if an item is a raw material (cannot be crafted)
+function isRawMaterial(name) {
+  return rawMaterialsSet.has(name);
+}
+
+// Check if an item has a recipe - check both masterData AND manufactureData
+// masterData has top-level items, manufactureData also includes nested items
+function hasRecipe(name) {
+  // Check masterData first (top-level craftable items)
+  if (masterData.hasOwnProperty(name)) return true;
+  // Also check manufactureData (includes nested items like Iron Material)
+  if (manufactureData.hasOwnProperty(name)) return true;
+  return false;
+}
+
+// Cache for getRecipe to improve performance
+const recipeCache = new Map();
+
+// Get recipe for an item (returns null if not found) - with caching
+function getRecipe(name) {
+  if (recipeCache.has(name)) {
+    return recipeCache.get(name);
+  }
+  // Check both masterData (top-level) and manufactureData (includes nested items)
+  const result = masterData[name] || manufactureData[name] || null;
+  recipeCache.set(name, result);
+  return result;
+}
+
+// Clear recipe cache when data is reloaded
+function clearRecipeCache() {
+  recipeCache.clear();
+}
+
+// Convert flat manufacturing steps to tree format
+// This function is now simplified - we'll build the tree dynamically
+function convertToTreeFormat(item) {
+  const steps = item.manufacturing_steps || [];
+  const rawMaterials = item.raw_materials || [];
+  
+  // The last step is the final product
+  const rootStep = steps.length > 0 ? steps[steps.length - 1] : null;
+  
+  const result = {
+    name: item.name,
+    type: item.type || 'Manufacture',
+    tool: rootStep ? rootStep.tool : '',
+    time: item.total_time_mins || (rootStep ? rootStep.time : 0),
+    image_path: item.image_path,
+    image_id: item.image_id,
+    // Store all steps for reference
+    allSteps: steps,
+    rawMaterials: rawMaterials,
+    materials: [] // Will be populated dynamically
+  };
+  
+  return result;
+}
+
+// Build a hierarchical recipe tree for an item
+// This creates the parent-child relationships based on which items have recipes
+function buildRecipeTree(item, visited = new Set(), depth = 0) {
+  if (!item) return null;
+  
+  // Prevent infinite recursion
+  if (visited.has(item.name)) {
+    return { name: item.name, qty: 1, isCircular: true, materials: [] };
+  }
+  visited.add(item.name);
+  
+  const steps = item.allSteps || [];
+  
+  // Build the tree node
+  const node = {
+    name: item.name,
+    type: item.type,
+    tool: item.tool,
+    time: item.time,
+    image_path: item.image_path,
+    depth: depth,
+    materials: []
+  };
+  
+  // For each step, check if it has its own recipe
+  // If it does, it's a "parent node" that can be expanded
+  for (let i = 0; i < steps.length - 1; i++) { // Exclude final product step
+    const step = steps[i];
+    const stepNode = {
+      name: step.name,
+      tool: step.tool,
+      time: step.time,
+      qty: step.qty,
+      depth: depth + 1,
+      hasRecipe: hasRecipe(step.name),
+      isRawMaterial: isRawMaterial(step.name),
+      materials: []
+    };
+    
+    // If this step has a recipe, we can expand it later
+    // Don't recursively expand here - let user click to expand
+    node.materials.push(stepNode);
+  }
+  
+  return node;
+}
+
+// Get the direct materials for display (first level only)
+// Shows: 1) Raw materials (aggregated), 2) Craftable items (that can be expanded)
+// Base steps (intermediate non-craftable items) are hidden from top level
+function getDirectMaterialsForDisplay(item) {
+  if (!item) return [];
+  
+  // Use the pre-built ingredients if available (from wlo_master_index.json)
+  if (item.ingredients && item.ingredients.length > 0) {
+    const materials = [];
+    const seen = new Set();
+    
+    for (const ing of item.ingredients) {
+      if (!ing.data || seen.has(ing.data.name)) continue;
+      seen.add(ing.data.name);
+      
+      const ingName = ing.data.name;
+      const itemHasRecipe = hasRecipe(ingName);
+      const isRaw = rawMaterialsSet.has(ingName);
+      
+      // Parse time from string
+      let timeValue = 0;
+      if (ing.data.time) {
+        const timeMatch = ing.data.time.toString().match(/(\d+)/);
+        if (timeMatch) timeValue = parseInt(timeMatch[1], 10);
+      }
+      
+      materials.push({
+        name: ingName,
+        tool: ing.data.tool || '',
+        time: timeValue,
+        qty: ing.qty || 1,
+        hasRecipe: itemHasRecipe,
+        isRawMaterial: isRaw
+      });
+    }
+    
+    return materials;
+  }
+  
+  // Fallback to the old allSteps approach
+  const steps = item.allSteps || [];
+  const rawMats = item.rawMaterials || [];
+  
+  // Build a set of all step names in this recipe (for quick lookup)
+  const stepNames = new Set();
+  for (let i = 0; i < steps.length - 1; i++) {
+    stepNames.add(steps[i].name);
+  }
+  
+  // Build a set of items that are consumed as ingredients by other craftable items
+  const consumedItems = new Set();
+  
+  for (let i = 0; i < steps.length - 1; i++) {
+    const step = steps[i];
+    const stepRecipe = getRecipe(step.name);
+    
+    if (stepRecipe && stepRecipe.allSteps) {
+      for (const ingredient of stepRecipe.allSteps) {
+        if (stepNames.has(ingredient.name) && ingredient.name !== step.name) {
+          consumedItems.add(ingredient.name);
+        }
+      }
+    }
+  }
+  
+  const materials = [];
+  
+  // First, add raw materials from the raw_materials field
+  for (const raw of rawMats) {
+    materials.push({
+      name: raw.name,
+      tool: '',
+      time: 0,
+      qty: raw.qty,
+      hasRecipe: false,
+      isRawMaterial: true
+    });
+  }
+  
+  // Then, add craftable items that are NOT consumed by other items
+  for (let i = 0; i < steps.length - 1; i++) {
+    const step = steps[i];
+    const stepHasRecipe = hasRecipe(step.name);
+    const stepIsRaw = isRawMaterial(step.name);
+    
+    // Skip if consumed by another craftable item
+    if (consumedItems.has(step.name)) {
+      continue;
+    }
+    
+    // Skip if it's a raw material (already added from raw_materials)
+    if (stepIsRaw) {
+      continue;
+    }
+    
+    // Skip if it doesn't have a recipe (base step) - these are intermediate
+    if (!stepHasRecipe) {
+      continue;
+    }
+    
+    materials.push({
+      name: step.name,
+      tool: step.tool,
+      time: step.time,
+      qty: step.qty,
+      hasRecipe: stepHasRecipe,
+      isRawMaterial: false
+    });
+  }
+  
+  return materials;
+}
+// --- Filter Bar Logic ---
+const filterTypes = ['All', 'Furniture', 'Manufacture', 'Tools', 'Vehicle'];
+let currentFilter = 'All';
+let searchTerm = '';
+function renderDropdown(selected = null) {
+  const dropdownList = document.getElementById('dropdownList');
+  let items = Object.values(manufactureData);
+  
+  // If there's a search term, search across ALL items regardless of category
+  if (searchTerm.trim()) {
+    items = items.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  } else if (currentFilter !== 'All') {
+    // Only filter by category if no search term and not "All"
+    items = items.filter(item => (item.type || 'Furniture') === currentFilter);
+  }
+  
+  // Sort items alphabetically for better findability
+  items.sort((a, b) => a.name.localeCompare(b.name));
+  
+  // Show all items (no hard limit) - dropdown is scrollable
+  dropdownList.innerHTML = items.map((item, idx) => {
+    const imgHtml = item.image_path ? `<img src="${item.image_path}" alt="${item.name}" class="w-6 h-6 rounded inline-block mr-2" onerror="this.style.display='none'">` : '';
+    const typeLabel = currentFilter === 'All' || searchTerm.trim() ? `<span class="text-xs text-wlPurple ml-1">[${item.type || 'Furniture'}]</span>` : '';
+    return `<div class="dropdown-item${selected===item.name?' selected':''}" data-name="${item.name}">${imgHtml}${item.name}${typeLabel}</div>`;
+  }).join('');
+  // Make dropdown scrollable with larger height for many items
+  dropdownList.style.maxHeight = '300px';
+}
+function setDropdownSelected(name) {
+  document.getElementById('dropdownSelected').textContent = name || 'Select...';
+}
+function updateFurnitureSelection(name) {
+  window.selectedFurniture = name;
+  setDropdownSelected(name);
+  window.selectFurniture(name);
+}
+document.getElementById('dropdownSelected').addEventListener('click', function() {
+  document.getElementById('dropdownWrapper').classList.toggle('open');
+  renderDropdown(window.selectedFurniture);
+});
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('#dropdownWrapper')) {
+    document.getElementById('dropdownWrapper').classList.remove('open');
+  }
+});
+document.getElementById('dropdownList').addEventListener('click', function(e) {
+  const item = e.target.closest('.dropdown-item');
+  if (item) {
+    updateFurnitureSelection(item.getAttribute('data-name'));
+    document.getElementById('dropdownWrapper').classList.remove('open');
+  }
+});
+
+// Check for search parameter in URL and apply on page load
+(function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchParam = urlParams.get('search');
+  if (searchParam) {
+    const decoded = decodeURIComponent(searchParam);
+    document.getElementById('furnitureSearch').value = decoded;
+    searchTerm = decoded;
+    // Trigger the search after data is loaded
+    const checkAndSearch = setInterval(() => {
+      if (manufactureDataLoaded) {
+        clearInterval(checkAndSearch);
+        // Update the filter to show all items
+        currentFilter = 'All';
+        document.querySelectorAll('.filter-option').forEach(el => el.classList.remove('selected'));
+        const allFilter = document.querySelector('.filter-option[data-type="All"]');
+        if (allFilter) allFilter.classList.add('selected');
+        // Re-render the dropdown
+        renderDropdown();
+      }
+    }, 100);
+    // Timeout after 5 seconds
+    setTimeout(() => clearInterval(checkAndSearch), 5000);
+  }
+})();
+
+// Handle search input - both dropdown and autocomplete
+document.getElementById('furnitureSearch').addEventListener('input', function() {
+  searchTerm = this.value;
+  renderDropdown(window.selectedFurniture);
+  
+  // Show autocomplete suggestions if enabled
+  const autocompleteEnabled = document.getElementById('autocompleteToggle').checked;
+  const autocompleteList = document.getElementById('autocompleteList');
+  
+  if (searchTerm.trim().length >= 1 && autocompleteEnabled && manufactureDataLoaded) {
+    // Use both masterData and manufactureData for autocomplete
+    // masterData has top-level items, manufactureData also has nested items like Steel
+    const allSearchData = { ...masterData, ...manufactureData };
+    const matches = Object.values(allSearchData)
+      .filter(item => item.name && item.name.toLowerCase().includes(searchTerm.toLowerCase()))
+      .sort((a, b) => {
+        // Prioritize items that start with the search term
+        const aStartsWith = a.name.toLowerCase().startsWith(searchTerm.toLowerCase());
+        const bStartsWith = b.name.toLowerCase().startsWith(searchTerm.toLowerCase());
+        if (aStartsWith && !bStartsWith) return -1;
+        if (!aStartsWith && bStartsWith) return 1;
+        return a.name.localeCompare(b.name);
+      })
+      .slice(0, 12); // Limit to 12 suggestions
+    
+    if (matches.length > 0) {
+      autocompleteList.innerHTML = matches.map((item, idx) => {
+        const imgHtml = item.image_path ? `<img src="${item.image_path}" alt="${item.name}" onerror="this.style.display='none'">` : '';
+        return `<div class="autocomplete-item" data-name="${item.name}" data-index="${idx}">
+          ${imgHtml}
+          <span class="item-name">${item.name}</span>
+          <span class="item-type">[${inferType(item.name)}]</span>
+        </div>`;
+      }).join('');
+      autocompleteList.classList.add('show');
+    } else {
+      autocompleteList.classList.remove('show');
+    }
+  } else {
+    autocompleteList.classList.remove('show');
+  }
+});
+
+// Autocomplete item click handler
+document.getElementById('autocompleteList').addEventListener('click', function(e) {
+  const item = e.target.closest('.autocomplete-item');
+  if (item) {
+    const name = item.getAttribute('data-name');
+    document.getElementById('furnitureSearch').value = name;
+    searchTerm = name;
+    updateFurnitureSelection(name);
+    document.getElementById('autocompleteList').classList.remove('show');
+    renderDropdown(name);
+  }
+});
+
+// Keyboard navigation for autocomplete
+let autocompleteSelectedIndex = -1;
+document.getElementById('furnitureSearch').addEventListener('keydown', function(e) {
+  const autocompleteList = document.getElementById('autocompleteList');
+  const items = autocompleteList.querySelectorAll('.autocomplete-item');
+  
+  if (!autocompleteList.classList.contains('show') || items.length === 0) return;
+  
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    autocompleteSelectedIndex = Math.min(autocompleteSelectedIndex + 1, items.length - 1);
+    updateAutocompleteSelection(items);
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    autocompleteSelectedIndex = Math.max(autocompleteSelectedIndex - 1, 0);
+    updateAutocompleteSelection(items);
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    if (autocompleteSelectedIndex >= 0 && items[autocompleteSelectedIndex]) {
+      const name = items[autocompleteSelectedIndex].getAttribute('data-name');
+      document.getElementById('furnitureSearch').value = name;
+      searchTerm = name;
+      updateFurnitureSelection(name);
+      autocompleteList.classList.remove('show');
+      renderDropdown(name);
+    }
+  } else if (e.key === 'Escape') {
+    autocompleteList.classList.remove('show');
+  }
+});
+
+function updateAutocompleteSelection(items) {
+  items.forEach((item, idx) => {
+    item.classList.toggle('selected', idx === autocompleteSelectedIndex);
+  });
+  // Scroll selected item into view
+  if (autocompleteSelectedIndex >= 0 && items[autocompleteSelectedIndex]) {
+    items[autocompleteSelectedIndex].scrollIntoView({ block: 'nearest' });
+  }
+}
+
+// Hide autocomplete when clicking outside
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.search-wrapper')) {
+    document.getElementById('autocompleteList').classList.remove('show');
+  }
+});
+
+// Save/load autocomplete toggle preference
+const autocompleteToggle = document.getElementById('autocompleteToggle');
+const savedPref = localStorage.getItem('manufactureAutocompleteEnabled');
+if (savedPref !== null) {
+  autocompleteToggle.checked = savedPref === 'true';
+}
+autocompleteToggle.addEventListener('change', function() {
+  localStorage.setItem('manufactureAutocompleteEnabled', this.checked);
+  if (!this.checked) {
+    document.getElementById('autocompleteList').classList.remove('show');
+  }
+});
+document.getElementById('filterOptions').addEventListener('click', function(e) {
+  const opt = e.target.closest('.filter-option');
+  if (opt) {
+    document.querySelectorAll('.filter-option').forEach(el => el.classList.remove('selected'));
+    opt.classList.add('selected');
+    currentFilter = opt.getAttribute('data-type');
+    renderDropdown(window.selectedFurniture);
+    // Auto-select first item in new filter
+    let items = Object.values(manufactureData);
+    if (searchTerm.trim()) {
+      items = items.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    } else if (currentFilter !== 'All') {
+      items = items.filter(item => (item.type || 'Furniture') === currentFilter);
+    }
+    items.sort((a, b) => a.name.localeCompare(b.name));
+    if (items.length) updateFurnitureSelection(items[0].name);
+    else updateFurnitureSelection(null);
+  }
+});
+// --- Render Process Tree (with recursive sub-recipe support) ---
+function renderProcessTree(node, path = '', checked = {}, expanded = {}, depth = 0, isRoot = true, quantityMultiplier = 1) {
+  const id = (path ? path + '-' : '') + node.name.replace(/\s+/g, '_');
+  
+  if (!(id in expanded)) {
+    expanded[id] = isRoot ? true : false;
+  }
+  const isExpanded = expanded[id];
+
+  // --- THE STABILIZER FIX ---
+  // 1. If it's the Root (Grinding Equip), we use the quantityMultiplier.
+  // 2. If it's a child (Steel, Iron Ore), the JSON 'node.qty' is ALREADY the total needed for its parent.
+  // We only multiply the child's qty by the root's multiplier.
+  const displayQty = isRoot ? quantityMultiplier : (node.qty * quantityMultiplier);
+
+  // Time calculation: Use the item's recipe yield to see how many batches are needed
+  const itemRecipe = getRecipe(node.name);
+  const yieldPerCraft = (itemRecipe && itemRecipe.qty) ? itemRecipe.qty : 1;
+  const batchesNeeded = Math.ceil(displayQty / yieldPerCraft);
+
+  let qtyLabel = ` <span class="text-xs text-wlPurple">x${displayQty}</span>`;
+  
+  let stepClass = 'process-step' + (isRoot ? ' root' : '') + (isExpanded ? '' : ' collapsed');
+  const itemHasRecipe = hasRecipe(node.name);
+  const isRaw = isRawMaterial(node.name);
+
+  // --- Assets (Icons/Images) ---
+  let imgHtml = '';
+  if (isRoot && node.image_path) {
+    imgHtml = `<img src="${node.image_path}" alt="${node.name}" class="w-8 h-8 rounded inline-block mr-2" onerror="this.style.display='none'">`;
+  } else if (itemHasRecipe && itemRecipe && itemRecipe.image_path) {
+    imgHtml = `<img src="${itemRecipe.image_path}" alt="${node.name}" class="w-6 h-6 rounded inline-block mr-1" onerror="this.style.display='none'">`;
+  }
+  
+  let iconClass = isRaw ? 'fa-leaf' : (itemHasRecipe ? 'fa-cogs' : 'fa-cube');
+  let iconColor = isRaw ? 'text-green-400' : (itemHasRecipe ? 'text-wlBlue' : 'text-wlPurple');
+
+  // Time & Tool
+  let timeValue = 0;
+  if (node.time) {
+    const timeMatch = node.time.toString().match(/(\d+)/);
+    if (timeMatch) timeValue = parseInt(timeMatch[1], 10);
+  }
+  let timeDisplay = timeValue > 0 ? `<span class="text-xs text-wlYellow ml-2 flex items-center gap-1"><i class="fas fa-clock"></i> ${batchesNeeded * timeValue} min</span>` : '';
+  let toolDisplay = node.tool ? `<span class="text-xs text-wlBlue ml-2 flex items-center gap-1"><i class="fas fa-tools"></i> ${node.tool}</span>` : '';
+
+  let html = `<div class="${stepClass}" id="${id}" style="margin-left:${depth * 1.2}rem;">
+    <label class="flex items-center gap-2 cursor-pointer">
+      <input type="checkbox" data-id="${id}" ${checked[id] ? 'checked' : ''}>
+      ${imgHtml}<span class="font-bold flex items-center gap-2 ${isRaw ? 'text-green-400' : ''}">
+        <i class="fas ${iconClass} ${iconColor}"></i> ${node.name}${qtyLabel}
+      </span>
+      ${toolDisplay}
+      ${timeDisplay}
+      ${itemHasRecipe ? `<button class="ml-2 text-wlBlue tree-toggle" data-toggle="${id}"><i class="fas fa-chevron-${isExpanded ? 'down' : 'right'}"></i></button>` : ''}
+    </label>`;
+
+  if (itemHasRecipe && isExpanded) {
+    // Crucial: Use the ingredients from the current node/recipe
+    const ingredients = node.ingredients || (itemRecipe ? itemRecipe.ingredients : []);
+    
+    if (ingredients.length > 0) {
+      html += `<div class="children mt-2 space-y-2">`;
+      ingredients.forEach(ing => {
+        // Pass 'ing.data' as the next node, but KEEP the root quantityMultiplier.
+        // We do NOT multiply 'batchesNeeded' here because 'ing.qty' is already scaled in your JSON.
+        const nextNode = ing.data || { name: ing.name, qty: ing.qty };
+        nextNode.qty = ing.qty; // Ensure the ingredient requirement is carried over
+        
+        html += renderProcessTree(nextNode, id, checked, expanded, depth + 1, false, quantityMultiplier);
+      });
+      html += `</div>`;
+    }
+  }
+  
+  html += `</div>`;
+  return html;
+}
+// --- Checklist Progress (all checkboxes, with parent completion logic) ---
+function getChecklistProgress() {
+  const allSteps = document.querySelectorAll('#processTree input[type=checkbox]');
+  if (!allSteps.length) return { percent: 0, checked: 0, total: 0 };
+  
+  let checkedCount = 0;
+  let totalCount = allSteps.length;
+  
+  // Build a map of parent-child relationships
+  const parentMap = {}; // childId -> parentId
+  const childMap = {}; // parentId -> [childIds]
+  
+  allSteps.forEach(cb => {
+    const id = cb.getAttribute('data-id');
+    const stepEl = cb.closest('.process-step');
+    const parentEl = stepEl ? stepEl.parentElement.closest('.process-step') : null;
+    if (parentEl) {
+      const parentId = parentEl.id;
+      parentMap[id] = parentId;
+      if (!childMap[parentId]) childMap[parentId] = [];
+      childMap[parentId].push(id);
+    }
+  });
+  
+  // Check each checkbox
+  allSteps.forEach(cb => {
+    const id = cb.getAttribute('data-id');
+    
+    // If directly checked, count it
+    if (cb.checked) {
+      checkedCount++;
+      return;
+    }
+    
+    // Check if any parent is checked (then this counts as done)
+    let currentId = id;
+    while (parentMap[currentId]) {
+      const parentId = parentMap[currentId];
+      const parentCb = document.querySelector(`input[data-id="${parentId}"]`);
+      if (parentCb && parentCb.checked) {
+        checkedCount++;
+        return;
+      }
+      currentId = parentId;
+    }
+  });
+  
+  return {
+    percent: Math.round((checkedCount / totalCount) * 100),
+    checked: checkedCount,
+    total: totalCount
+  };
+}
+// --- Calculate Raw Materials and Total Time (with recursive recipe lookup) ---
+// Get first-level ingredients and total time for a recipe
+// This shows the direct ingredients needed (not fully expanded raw materials)
+// Total time includes all nested ingredient times (each unique item counted once, multiplied by quantity)
+// If expandAll is true, will show all raw materials (items with no ingredients) from the tree at base recipe quantities
+function getRawMaterialsAndTime(node, quantity = 1, expandAll = false) {
+  if (!node) return { materials: [], rawMaterials: [], time: 0 };
+  
+  const materials = []; // First-level craftable ingredients
+  const rawMaterials = []; // First-level raw materials (items with no ingredients) or all raw materials if expandAll
+  
+  // Use a Map to track unique items and their total time contribution
+  const timeCache = new Map();
+  
+  // Recursive function to sum all unique times in the tree
+  function sumAllTimes(item) {
+    if (!item) return 0;
+    if (timeCache.has(item.name)) return timeCache.get(item.name);
+    
+    let total = 0;
+    // Add this item's time
+    if (item.time) {
+      const match = item.time.toString().match(/(\d+)/);
+      if (match) total += parseInt(match[1], 10);
+    }
+    
+    // Add times from all ingredients
+    const ings = item.ingredients || [];
+    for (const ing of ings) {
+      if (ing.data) {
+        total += sumAllTimes(ing.data);
+      }
+    }
+    
+    timeCache.set(item.name, total);
+    return total;
+  }
+  
+  // Calculate total time (sum all unique times, then multiply by quantity)
+  const totalTime = sumAllTimes(node) * quantity;
+  
+  // If expandAll is true, collect ALL raw materials from the tree at base recipe quantities
+  // (list each raw material once, multiplied by the production quantity)
+  if (expandAll) {
+    const rawMaterialsMap = new Map();
+    
+    // Recursive function to find all raw materials (items with no ingredients)
+    // Multiply base quantity by the production quantity
+    function findRawMaterials(item, multiplier) {
+      const ingData = item.data;
+      if (!ingData) return;
+      
+      const ingName = ingData.name;
+      const ingQty = (item.qty || 1) * multiplier; // Base quantity * production quantity
+      const ingIngredients = ingData.ingredients || [];
+      
+      if (ingIngredients.length === 0) {
+        // This is a raw material - add at calculated quantity
+        const current = rawMaterialsMap.get(ingName) || 0;
+        rawMaterialsMap.set(ingName, current + ingQty);
+      } else {
+        // This is craftable - recurse into its ingredients with same multiplier
+        for (const subIng of ingIngredients) {
+          findRawMaterials(subIng, multiplier);
+        }
+      }
+    }
+    
+    // Start from the root node's ingredients
+    const rootIngredients = node.ingredients || [];
+    for (const ing of rootIngredients) {
+      findRawMaterials(ing, quantity);
+    }
+    
+    // Convert map to array
+    for (const [name, qty] of rawMaterialsMap) {
+      rawMaterials.push({ name, qty });
+    }
+  } else {
+    // Default mode: show first-level ingredients only (craftable vs raw)
+    const ingredients = node.ingredients || [];
+    
+    for (const ing of ingredients) {
+      if (!ing.data) continue;
+      
+      const name = ing.data.name;
+      const qty = (ing.qty || 1) * quantity;
+      
+      // Check if this ingredient has its own ingredients (is craftable vs raw)
+      const ingIngredients = ing.data.ingredients || [];
+      const isCraftable = ingIngredients.length > 0;
+      
+      // Add to appropriate list based on whether it has ingredients
+      if (isCraftable) {
+        materials.push({ name: name, qty: qty });
+      } else {
+        rawMaterials.push({ name: name, qty: qty });
+      }
+    }
+  }
+  
+  return { materials, rawMaterials, time: totalTime };
+}
+// --- Update Summary and Progress ---
+let currentQuantity = 1;
+
+function updateSummary(node, quantity = 1) {
+  const {materials, rawMaterials, time} = getRawMaterialsAndTime(node, quantity, showFullSummary);
+  
+  // Apply time reduction if enabled (reduce by 23% = multiply by 0.77)
+  let displayTime = time;
+  if (reduceTime) {
+    displayTime = Math.round(time * 0.77);
+  }
+  
+  // Sort both arrays by name for consistent display
+  materials.sort((a, b) => a.name.localeCompare(b.name));
+  rawMaterials.sort((a, b) => a.name.localeCompare(b.name));
+  
+  // Build HTML for craftable items
+  const craftableList = materials.map(m =>
+    `<li class="flex items-center gap-2 mb-1"><i class='fas fa-tools text-wlBlue'></i> <span class='font-semibold'>${m.name}</span> <span class='text-wlBlue ml-1'>x${m.qty}</span></li>`
+  ).join('');
+  
+  // Build HTML for raw materials
+  const rawList = rawMaterials.map(m =>
+    `<li class="flex items-center gap-2 mb-1"><i class='fas fa-cube text-wlPurple'></i> <span class='font-semibold'>${m.name}</span> <span class='text-wlBlue ml-1'>x${m.qty}</span></li>`
+  ).join('');
+  
+  const quantityDisplay = quantity > 1 ? `<span class="text-wlYellow ml-2">(x${quantity} items)</span>` : '';
+  
+  // Build the summary HTML
+  let summaryHTML = '';
+  if (craftableList) {
+    summaryHTML += `<div class="mb-2 font-semibold text-wlBlue">Craftable Ingredients:${quantityDisplay}</div><ul class="pl-4 list-none">${craftableList}</ul>`;
+  }
+  if (rawList) {
+    summaryHTML += `<div class="mt-3 mb-2 font-semibold text-wlPurple">Raw Materials Required:${quantityDisplay}</div><ul class="pl-4 list-none">${rawList}</ul>`;
+  }
+  
+  document.getElementById('summaryRaw').innerHTML = summaryHTML;
+  
+  // Format time nicely (show hours if > 60 min)
+  let timeDisplay = '';
+  if (displayTime >= 60) {
+    const hours = Math.floor(displayTime / 60);
+    const mins = displayTime % 60;
+    timeDisplay = `${hours}h ${mins}m`;
+  } else {
+    timeDisplay = `${displayTime} min`;
+  }
+  
+  // Show reduction indicator if enabled
+  if (reduceTime) {
+    timeDisplay += ` <span class="text-wlGreen text-xs">(reduced 23%)</span>`;
+  }
+  
+  document.getElementById('summaryTime').innerHTML =
+    `<div class="mt-2 font-semibold text-wlPurple flex items-center gap-2"><i class='fas fa-clock'></i> Total Time: <span class='ml-1 text-wlYellow'>${timeDisplay}</span></div>`;
+  // Progress
+  const progress = getChecklistProgress();
+  document.getElementById('progressBar').style.width = progress.percent + '%';
+  document.getElementById('progressPercent').textContent = progress.percent + '%';
+  document.getElementById('progressCount').textContent = `${progress.checked} / ${progress.total} steps completed`;
+}
+// --- Expand/Collapse All (with recursive recipe lookup) ---
+let expandedState = {};
+function expandAll(node, path = '', visited = new Set()) {
+  const id = (path ? path + '-' : '') + node.name.replace(/\s+/g, '_');
+  
+  // Prevent infinite recursion
+  if (visited.has(id)) return;
+  visited.add(id);
+  
+  expandedState[id] = true;
+  
+  // Get filtered materials for this node (only craftable or raw)
+  let subMaterials = getDirectMaterialsForDisplay(node);
+  
+  // Recursively expand all craftable materials
+  for (const mat of subMaterials) {
+    if (mat.hasRecipe) {
+      const recipe = getRecipe(mat.name);
+      if (recipe) {
+        expandAll(recipe, id, visited);
+      }
+    }
+  }
+}
+function collapseAll(node, path = '', visited = new Set()) {
+  const id = (path ? path + '-' : '') + node.name.replace(/\s+/g, '_');
+  
+  // Prevent infinite recursion
+  if (visited.has(id)) return;
+  visited.add(id);
+  
+  expandedState[id] = false;
+  
+  // Get filtered materials for this node (only craftable or raw)
+  let subMaterials = getDirectMaterialsForDisplay(node);
+  
+  // Recursively collapse all craftable materials
+  for (const mat of subMaterials) {
+    if (mat.hasRecipe) {
+      const recipe = getRecipe(mat.name);
+      if (recipe) {
+        collapseAll(recipe, id, visited);
+      }
+    }
+  }
+}
+// --- Select Furniture ---
+function bindProcessTreeEvents(node, name) {
+  // Checklist logic with parent-child completion
+  document.querySelectorAll('#processTree input[type=checkbox]').forEach(cb => {
+    cb.addEventListener('change', function() {
+      const stepEl = this.closest('.process-step');
+      const isChecked = this.checked;
+      
+      // Toggle opacity for this item
+      stepEl.classList.toggle('opacity-50', isChecked);
+      
+      // If checked, also mark all children as visually completed
+      if (isChecked) {
+        const childSteps = stepEl.querySelectorAll('.process-step');
+        childSteps.forEach(child => {
+          child.classList.add('opacity-50');
+        });
+      } else {
+        // If unchecked, remove visual completion from children
+        const childSteps = stepEl.querySelectorAll('.process-step');
+        childSteps.forEach(child => {
+          // Only remove if the child's own checkbox is not checked
+          const childCb = child.querySelector('input[type=checkbox]');
+          if (childCb && !childCb.checked) {
+            child.classList.remove('opacity-50');
+          }
+        });
+      }
+      
+      if (window.selectedFurniture && manufactureData[window.selectedFurniture]) {
+        updateSummary(manufactureData[window.selectedFurniture], currentQuantity);
+      }
+      saveChecklist();
+    });
+  });
+  // Always re-bind expand/collapse event delegation after each render
+  const processTree = document.getElementById('processTree');
+  if (processTree) {
+    processTree.onclick = function(e) {
+      const btn = e.target.closest('.tree-toggle');
+      if (btn) {
+        e.preventDefault();
+        const id = btn.getAttribute('data-toggle');
+        expandedState[id] = !expandedState[id];
+        const scrollY = window.scrollY;
+        document.getElementById('processTree').innerHTML = renderProcessTree(manufactureData[window.selectedFurniture], '', getChecklist(), expandedState, 0, true, currentQuantity);
+        bindProcessTreeEvents(node, name);
+        window.scrollTo({ top: scrollY });
+      }
+    };
+  }
+}
+
+window.selectFurniture = function(name) {
+  const node = manufactureData[name];
+  if (!node) {
+    window.selectedFurniture = null;
+    document.getElementById('selectedItemHeader').style.display = 'none';
+    document.getElementById('processTree').innerHTML = '<div class="text-wlRed p-4">No items found for this category.</div>';
+    document.getElementById('summaryRaw').innerHTML = '';
+    document.getElementById('summaryTime').innerHTML = '';
+    document.getElementById('progressBar').style.width = '0%';
+    document.getElementById('progressPercent').textContent = '';
+    return;
+  }
+  // Reset expanded state for new selection - only root expanded by default
+  if (window.selectedFurniture !== name) {
+    expandedState = {};
+    // Reset quantity when selecting a new item
+    currentQuantity = 1;
+    document.getElementById('quantityInput').value = 1;
+  }
+  window.selectedFurniture = name;
+  
+  // Add to history
+  addToHistory(name);
+  
+  // Update selected item header
+  const header = document.getElementById('selectedItemHeader');
+  const itemImage = document.getElementById('selectedItemImage');
+  const itemName = document.getElementById('selectedItemName');
+  const itemType = document.getElementById('selectedItemType');
+  
+  if (node.image_path) {
+    itemImage.src = node.image_path;
+    itemImage.style.display = 'block';
+    itemImage.onerror = function() { this.style.display = 'none'; };
+  } else {
+    itemImage.style.display = 'none';
+  }
+  itemName.textContent = node.name;
+  itemType.textContent = node.type || 'Furniture';
+  header.style.display = 'flex';
+  
+  document.getElementById('processTree').innerHTML = renderProcessTree(node, '', getChecklist(), expandedState, 0, true, currentQuantity);
+  updateSummary(node, currentQuantity);
+  bindProcessTreeEvents(node, name);
+  // Restore checklist state
+  restoreChecklist();
+};
+// --- Checklist Save/Load ---
+function getChecklist() {
+  try { return JSON.parse(localStorage.getItem('manufactureChecklist')||'{}'); } catch { return {}; }
+}
+function saveChecklist() {
+  const checked = {};
+  document.querySelectorAll('#processTree input[type=checkbox]').forEach(cb => {
+    checked[cb.getAttribute('data-id')] = cb.checked;
+  });
+  localStorage.setItem('manufactureChecklist', JSON.stringify(checked));
+}
+function restoreChecklist() {
+  const checked = getChecklist();
+  
+  // First pass: restore checkbox states
+  document.querySelectorAll('#processTree input[type=checkbox]').forEach(cb => {
+    const id = cb.getAttribute('data-id');
+    if (checked[id]) {
+      cb.checked = true;
+      cb.closest('.process-step').classList.add('opacity-50');
+    }
+  });
+  
+  // Second pass: apply visual completion to children of checked parents
+  document.querySelectorAll('#processTree input[type=checkbox]:checked').forEach(cb => {
+    const stepEl = cb.closest('.process-step');
+    const childSteps = stepEl.querySelectorAll('.process-step');
+    childSteps.forEach(child => {
+      child.classList.add('opacity-50');
+    });
+  });
+  
+  updateSummary(manufactureData[window.selectedFurniture], currentQuantity);
+}
+// --- Sidebar FAB (Menu) ---
+document.getElementById('sidebarFab').addEventListener('click', function() {
+  alert('Sidebar actions (navigation) would go here.');
+});
+// --- Expand/Collapse All Buttons ---
+document.getElementById('expandAllBtn').addEventListener('click', function() {
+  if (!window.selectedFurniture) return;
+  expandAll(manufactureData[window.selectedFurniture]);
+  document.getElementById('processTree').innerHTML = renderProcessTree(manufactureData[window.selectedFurniture], '', getChecklist(), expandedState, 0, true, currentQuantity);
+  window.selectFurniture(window.selectedFurniture);
+});
+document.getElementById('collapseAllBtn').addEventListener('click', function() {
+  if (!window.selectedFurniture) return;
+  collapseAll(manufactureData[window.selectedFurniture]);
+  document.getElementById('processTree').innerHTML = renderProcessTree(manufactureData[window.selectedFurniture], '', getChecklist(), expandedState, 0, true, currentQuantity);
+  window.selectFurniture(window.selectedFurniture);
+});
+
+// --- Settings Dropdown Toggle ---
+document.getElementById('settingsToggleBtn').addEventListener('click', function(e) {
+  e.stopPropagation();
+  const dropdown = document.getElementById('settingsDropdown');
+  dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+});
+document.addEventListener('click', function(e) {
+  const dropdown = document.getElementById('settingsDropdown');
+  const toggleBtn = document.getElementById('settingsToggleBtn');
+  if (!dropdown.contains(e.target) && e.target !== toggleBtn) {
+    dropdown.style.display = 'none';
+  }
+});
+
+// --- Settings Checkboxes ---
+let showFullSummary = false;
+let reduceTime = false;
+document.getElementById('showFullSummary').addEventListener('change', function() {
+  showFullSummary = this.checked;
+  if (window.selectedFurniture) {
+    window.selectFurniture(window.selectedFurniture);
+  }
+});
+document.getElementById('reduceTime').addEventListener('change', function() {
+  reduceTime = this.checked;
+  if (window.selectedFurniture) {
+    window.selectFurniture(window.selectedFurniture);
+  }
+});
+// --- Quantity Input Handler ---
+document.getElementById('quantityBtn').addEventListener('click', function() {
+  const qty = parseInt(document.getElementById('quantityInput').value, 10);
+  if (qty && qty > 0 && qty <= 999) {
+    currentQuantity = qty;
+    if (window.selectedFurniture && manufactureData[window.selectedFurniture]) {
+      // Re-render the process tree with new quantity
+      document.getElementById('processTree').innerHTML = renderProcessTree(manufactureData[window.selectedFurniture], '', getChecklist(), expandedState, 0, true, currentQuantity);
+      updateSummary(manufactureData[window.selectedFurniture], currentQuantity);
+      bindProcessTreeEvents(manufactureData[window.selectedFurniture], window.selectedFurniture);
+      restoreChecklist();
+    }
+  }
+});
+document.getElementById('quantityInput').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    document.getElementById('quantityBtn').click();
+  }
+});
+// Also update on input change for convenience
+document.getElementById('quantityInput').addEventListener('change', function() {
+  const qty = parseInt(this.value, 10);
+  if (qty && qty > 0 && qty <= 999) {
+    currentQuantity = qty;
+    if (window.selectedFurniture && manufactureData[window.selectedFurniture]) {
+      // Re-render the process tree with new quantity
+      document.getElementById('processTree').innerHTML = renderProcessTree(manufactureData[window.selectedFurniture], '', getChecklist(), expandedState, 0, true, currentQuantity);
+      updateSummary(manufactureData[window.selectedFurniture], currentQuantity);
+      bindProcessTreeEvents(manufactureData[window.selectedFurniture], window.selectedFurniture);
+      restoreChecklist();
+    }
+  }
+});
+// --- Item History Management ---
+const HISTORY_KEY = 'manufactureHistory';
+const HISTORY_TOGGLE_KEY = 'manufactureHistoryToggle';
+let itemHistory = [];
+let historyIndex = -1; // Current position in history
+let isNavigatingHistory = false; // Flag to prevent re-adding when navigating
+
+// Load history from localStorage
+function loadHistory() {
+  try {
+    const saved = localStorage.getItem(HISTORY_KEY);
+    if (saved) {
+      itemHistory = JSON.parse(saved);
+      historyIndex = itemHistory.length - 1;
+    }
+  } catch (e) {
+    itemHistory = [];
+    historyIndex = -1;
+  }
+}
+
+// Save history to localStorage
+function saveHistory() {
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(itemHistory));
+}
+
+// Add item to history
+function addToHistory(itemName) {
+  // Skip if we're navigating through history
+  if (isNavigatingHistory) return;
+  if (!itemName || !manufactureData[itemName]) return;
+  
+  // If we're not at the end of history, truncate forward history
+  if (historyIndex < itemHistory.length - 1) {
+    itemHistory = itemHistory.slice(0, historyIndex + 1);
+  }
+  
+  // Remove existing occurrence of this item
+  itemHistory = itemHistory.filter(item => item.name !== itemName);
+  
+  // Add item to end of history
+  const item = manufactureData[itemName];
+  itemHistory.push({
+    name: itemName,
+    type: item.type || 'Furniture',
+    image_path: item.image_path || ''
+  });
+  
+  // Limit history to 20 items
+  if (itemHistory.length > 20) {
+    itemHistory = itemHistory.slice(-20);
+  }
+  
+  historyIndex = itemHistory.length - 1;
+  saveHistory();
+  renderHistoryBar();
+}
+
+// Navigate to previous item in history
+function historyBack() {
+  if (historyIndex > 0) {
+    historyIndex--;
+    const item = itemHistory[historyIndex];
+    navigateToHistoryItem(item.name);
+  }
+}
+
+// Navigate to next item in history
+function historyForward() {
+  if (historyIndex < itemHistory.length - 1) {
+    historyIndex++;
+    const item = itemHistory[historyIndex];
+    navigateToHistoryItem(item.name);
+  }
+}
+
+// Navigate to a history item
+function navigateToHistoryItem(itemName) {
+  if (!manufactureData[itemName]) return;
+  
+  // Set flag to prevent re-adding to history
+  isNavigatingHistory = true;
+  
+  // Update dropdown and search
+  document.getElementById('furnitureSearch').value = itemName;
+  searchTerm = itemName;
+  setDropdownSelected(itemName);
+  
+  // Select the item
+  window.selectedFurniture = itemName;
+  window.selectFurniture(itemName);
+  
+  // Reset flag
+  isNavigatingHistory = false;
+  
+  renderHistoryBar();
+}
+
+// Remove item from history
+function removeFromHistory(itemName, e) {
+  e.stopPropagation();
+  
+  const idx = itemHistory.findIndex(item => item.name === itemName);
+  if (idx !== -1) {
+    itemHistory.splice(idx, 1);
+    
+    // Adjust historyIndex
+    if (historyIndex >= itemHistory.length) {
+      historyIndex = itemHistory.length - 1;
+    } else if (historyIndex > idx) {
+      historyIndex--;
+    }
+    
+    saveHistory();
+    renderHistoryBar();
+  }
+}
+
+// Clear all history
+function clearHistory() {
+  if (confirm('Clear all item history?')) {
+    itemHistory = [];
+    historyIndex = -1;
+    saveHistory();
+    renderHistoryBar();
+  }
+}
+
+// Render history bar
+function renderHistoryBar() {
+  const historyItems = document.getElementById('historyItems');
+  const historyBar = document.getElementById('historyBar');
+  const backBtn = document.getElementById('historyBackBtn');
+  const forwardBtn = document.getElementById('historyForwardBtn');
+  
+  if (!itemHistory.length) {
+    historyItems.innerHTML = '<span class="text-sm text-gray-500">No items in history</span>';
+  } else {
+    historyItems.innerHTML = itemHistory.map((item, idx) => {
+      const isActive = idx === historyIndex;
+      const imgHtml = item.image_path ? 
+        `<img src="${item.image_path}" alt="${item.name}" onerror="this.style.display='none'">` : 
+        '<i class="fas fa-cube text-wlPurple"></i>';
+      
+      return `<div class="history-item ${isActive ? 'active' : ''}" data-name="${item.name}" title="${item.name} (${item.type})">
+        ${imgHtml}
+        <span>${item.name}</span>
+        <span class="remove-btn" data-remove="${item.name}"><i class="fas fa-times"></i></span>
+      </div>`;
+    }).join('');
+  }
+  
+  // Update navigation buttons
+  backBtn.disabled = historyIndex <= 0;
+  forwardBtn.disabled = historyIndex >= itemHistory.length - 1;
+}
+
+// Initialize history toggle
+function initHistoryToggle() {
+  const toggle = document.getElementById('historyToggle');
+  const historyBar = document.getElementById('historyBar');
+  
+  // Load saved preference
+  const savedPref = localStorage.getItem(HISTORY_TOGGLE_KEY);
+  if (savedPref === 'true') {
+    toggle.checked = true;
+    historyBar.classList.add('visible');
+  }
+  
+  toggle.addEventListener('change', function() {
+    localStorage.setItem(HISTORY_TOGGLE_KEY, this.checked);
+    historyBar.classList.toggle('visible', this.checked);
+  });
+}
+
+// Setup history event listeners
+function setupHistoryListeners() {
+  // History item click
+  document.getElementById('historyItems').addEventListener('click', function(e) {
+    const removeBtn = e.target.closest('.remove-btn');
+    if (removeBtn) {
+      removeFromHistory(removeBtn.getAttribute('data-remove'), e);
+      return;
+    }
+    
+    const item = e.target.closest('.history-item');
+    if (item) {
+      const itemName = item.getAttribute('data-name');
+      const idx = itemHistory.findIndex(h => h.name === itemName);
+      if (idx !== -1) {
+        historyIndex = idx;
+        navigateToHistoryItem(itemName);
+      }
+    }
+  });
+  
+  // Navigation buttons
+  document.getElementById('historyBackBtn').addEventListener('click', historyBack);
+  document.getElementById('historyForwardBtn').addEventListener('click', historyForward);
+  document.getElementById('historyClearBtn').addEventListener('click', clearHistory);
+  
+  // Keyboard shortcuts for history navigation
+  document.addEventListener('keydown', function(e) {
+    // Alt+Left = Back, Alt+Right = Forward
+    if (e.altKey && e.key === 'ArrowLeft') {
+      e.preventDefault();
+      historyBack();
+    } else if (e.altKey && e.key === 'ArrowRight') {
+      e.preventDefault();
+      historyForward();
+    }
+  });
+}
+
+// --- Initial Load ---
+async function initializeApp() {
+  await loadManufactureDataFromJSON();
+  renderDropdown();
+  
+  // Initialize history
+  loadHistory();
+  initHistoryToggle();
+  setupHistoryListeners();
+  renderHistoryBar();
+  
+  window.selectedFurniture = null;
+  // Auto-select first item in current filter
+  let items = Object.values(manufactureData);
+  if (searchTerm.trim()) {
+    items = items.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+  } else if (currentFilter !== 'All') {
+    items = items.filter(item => (item.type || 'Furniture') === currentFilter);
+  }
+  items.sort((a, b) => a.name.localeCompare(b.name));
+  if (items.length) updateFurnitureSelection(items[0].name);
+}
+initializeApp();
+  </script>
+  <script>
+      // Theme Toggle
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+      
+      if (localStorage.getItem('theme') === 'light') {
+          body.classList.add('light-mode');
+          themeToggle.classList.add('light');
+          themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+      }
+      
+      themeToggle.addEventListener('click', () => {
+          body.classList.toggle('light-mode');
+          themeToggle.classList.toggle('light');
+          const icon = themeToggle.querySelector('i');
+          
+          if (body.classList.contains('light-mode')) {
+              icon.classList.replace('fa-moon', 'fa-sun');
+              localStorage.setItem('theme', 'light');
+          } else {
+              icon.classList.replace('fa-sun', 'fa-moon');
+              localStorage.setItem('theme', 'dark');
+          }
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "id": 8262,
+  "name": "South Island C",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Commemorative cards issued by amusement park",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8262.png",
+  "file": "questprop-8262.json"
+}

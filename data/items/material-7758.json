@@ -1,0 +1,15 @@
+{
+  "id": 7758,
+  "name": "Shell Flower's Venom",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fluid / Venom",
+  "description": "Poisonous liquid from a shell flower",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7758.png",
+  "file": "material-7758.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1805,
+  "name": "Canvas",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Shoes which are made from cloth and are soft",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 1
+  },
+  "image": "data/images/shoes-1805.png",
+  "file": "shoes-1805.json"
+}

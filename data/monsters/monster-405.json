@@ -1,0 +1,27 @@
+{
+  "id": 405,
+  "name": "Flame Snow Bear",
+  "location": "Underground Pathway",
+  "image": "data/Monster_Images/monster-405.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 5800,
+    "sp": 369,
+    "catchable": "Yes",
+    "spd": 145,
+    "str": 30,
+    "con": 25,
+    "int": 35,
+    "wis": 25,
+    "agi": 35
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 803,
+  "name": "Imperial Malet",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is one of the used weapons ancient times. Crit rate of 30%, every forging +10 burst rate increased by 1%, up to 40%; and other martial arts chivalry series equipment can be equipped at the same time to enhance the damage of the sword, mallet.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-803.png",
+  "file": "weapon-803.json"
+}

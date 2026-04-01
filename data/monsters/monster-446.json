@@ -1,0 +1,45 @@
+{
+  "id": 446,
+  "name": "Snow Mammoth",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-446.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Maize",
+      "itemId": 7431,
+      "itemFile": "material-7431.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ivory",
+      "itemId": 7805,
+      "itemFile": "material-7805.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    }
+  ],
+  "stats": {
+    "level": 95,
+    "hp": 1166,
+    "sp": 978,
+    "catchable": "Unknown",
+    "spd": 248.5,
+    "str": 51,
+    "con": 67,
+    "int": 54,
+    "wis": 60,
+    "agi": 53
+  }
+}

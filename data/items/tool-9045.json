@@ -1,0 +1,15 @@
+{
+  "id": 9045,
+  "name": "Work Platform",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used for the study or process.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/tool-9045.png",
+  "file": "tool-9045.json"
+}

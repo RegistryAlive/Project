@@ -1,0 +1,18 @@
+{
+  "id": 1548,
+  "name": "Fairy Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 4,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "N/A",
+  "description": "Special for Charlotte, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 42,
+    "MaxSP": 440
+  },
+  "image": "data/images/helmet-1548.png",
+  "file": "helmet-1548.json"
+}

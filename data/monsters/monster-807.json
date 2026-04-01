@@ -1,0 +1,27 @@
+{
+  "id": 807,
+  "name": "Mannix",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-807.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 136,
+    "hp": 2065,
+    "sp": 929,
+    "catchable": "Unknown",
+    "spd": 414,
+    "str": 102,
+    "con": 107,
+    "int": 45,
+    "wis": 49,
+    "agi": 105
+  }
+}

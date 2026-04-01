@@ -1,0 +1,27 @@
+{
+  "id": 642,
+  "name": "Darkness Lan",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-642.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 11000,
+    "sp": 1057,
+    "catchable": "Unknown",
+    "spd": 450,
+    "str": 45,
+    "con": 45,
+    "int": 75,
+    "wis": 60,
+    "agi": 135
+  }
+}

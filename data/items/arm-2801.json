@@ -1,0 +1,18 @@
+{
+  "id": 2801,
+  "name": "Kunlun Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "Armguard having good defense.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 21,
+    "MDEF": 7
+  },
+  "image": "data/images/arm-2801.png",
+  "file": "arm-2801.json"
+}

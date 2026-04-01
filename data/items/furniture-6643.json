@@ -1,0 +1,15 @@
+{
+  "id": 6643,
+  "name": "Sakura Tree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A cherry Blossom tree full of pink petals",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6643.png",
+  "file": "furniture-6643.json"
+}

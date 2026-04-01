@@ -1,0 +1,15 @@
+{
+  "id": 8348,
+  "name": "Love Candy",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A necessary ingredient for making Precious Chocolates",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8348.png",
+  "file": "questprop-8348.json"
+}

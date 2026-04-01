@@ -1,0 +1,17 @@
+{
+  "id": 1492,
+  "name": "Dark Wizard Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Leather / Magic",
+  "description": "Made of animal fur and black magic dye.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 28
+  },
+  "image": "data/images/helmet-1492.png",
+  "file": "helmet-1492.json"
+}

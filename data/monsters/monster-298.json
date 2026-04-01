@@ -1,0 +1,51 @@
+{
+  "id": 298,
+  "name": "Blue Pterosaur",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-298.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Bird Meat",
+      "itemId": 7501,
+      "itemFile": "material-7501.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Duck Egg",
+      "itemId": 7503,
+      "itemFile": "material-7503.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wing Claw",
+      "itemId": 7808,
+      "itemFile": "material-7808.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chrysanthemum",
+      "itemId": 7353,
+      "itemFile": "material-7353.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 57,
+    "hp": 514,
+    "sp": 488,
+    "catchable": "Unknown",
+    "spd": 157.5,
+    "str": 36,
+    "con": 33,
+    "int": 33,
+    "wis": 33,
+    "agi": 36
+  }
+}

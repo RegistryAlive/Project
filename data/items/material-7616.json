@@ -1,0 +1,15 @@
+{
+  "id": 7616,
+  "name": "Bullion",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "It is best for making silver items",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7616.png",
+  "file": "material-7616.json"
+}

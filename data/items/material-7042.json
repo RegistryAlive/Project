@@ -1,0 +1,18 @@
+{
+  "id": 7042,
+  "name": "Seafood Dish",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish / Vegetable / Egg",
+  "description": "A dish made of assorted seafood",
+  "size": "1x1",
+  "attributes": {
+    "HP": 240,
+    "SP": 160
+  },
+  "image": "data/images/material-7042.png",
+  "file": "material-7042.json"
+}

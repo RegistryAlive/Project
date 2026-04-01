@@ -1,0 +1,17 @@
+{
+  "id": 7526,
+  "name": "Flour Ball",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Delicious food.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 20
+  },
+  "image": "data/images/material-7526.png",
+  "file": "material-7526.json"
+}

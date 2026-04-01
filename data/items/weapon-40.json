@@ -1,0 +1,18 @@
+{
+  "id": 40,
+  "name": "Warrior's Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "An indispensable side arm for any warrior.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "DEF": 15
+  },
+  "image": "data/images/weapon-40.png",
+  "file": "weapon-40.json"
+}

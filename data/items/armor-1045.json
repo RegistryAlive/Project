@@ -1,0 +1,17 @@
+{
+  "id": 1045,
+  "name": "Green Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Leaf / Flower",
+  "description": "Can conceal things with its distinct pattern.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 29
+  },
+  "image": "data/images/armor-1045.png",
+  "file": "armor-1045.json"
+}

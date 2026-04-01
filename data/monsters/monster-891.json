@@ -1,0 +1,27 @@
+{
+  "id": 891,
+  "name": "Scorpion Lord (Quest)",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-891.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 15000,
+    "sp": 1600,
+    "catchable": "Unknown",
+    "spd": 326,
+    "str": 67,
+    "con": 106,
+    "int": 52,
+    "wis": 62,
+    "agi": 73
+  }
+}

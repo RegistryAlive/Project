@@ -1,0 +1,15 @@
+{
+  "id": 6241,
+  "name": "Automatic Filter",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can purify saltwater to Pure Water.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6241.png",
+  "file": "furniture-6241.json"
+}

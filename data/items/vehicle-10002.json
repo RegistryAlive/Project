@@ -1,0 +1,15 @@
+{
+  "id": 10002,
+  "name": "Boat",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "Simple navigational tool made of wood",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/vehicle-10002.png",
+  "file": "vehicle-10002.json"
+}

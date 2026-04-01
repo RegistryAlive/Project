@@ -1,0 +1,27 @@
+{
+  "id": 457,
+  "name": "Ginkgo Papilionidae",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-457.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Pest Tentacles",
+      "itemId": 7790,
+      "itemFile": "material-7790.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 555,
+    "sp": 691,
+    "catchable": "Unknown",
+    "spd": 196,
+    "str": 38,
+    "con": 41,
+    "int": 48,
+    "wis": 45,
+    "agi": 44
+  }
+}

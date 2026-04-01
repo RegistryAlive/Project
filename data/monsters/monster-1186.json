@@ -1,0 +1,33 @@
+{
+  "id": 1186,
+  "name": "River Seaflower",
+  "location": "North Island Beach",
+  "image": "data/Monster_Images/monster-1186.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 3,
+    "hp": 43,
+    "sp": 100,
+    "catchable": null,
+    "spd": 8.5,
+    "str": 1,
+    "con": 1,
+    "int": 2,
+    "wis": 3,
+    "agi": 2
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": 333,
+  "name": "Evil-Eyed Bat",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-333.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Muskmelon",
+      "itemId": 7446,
+      "itemFile": "material-7446.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    }
+  ],
+  "stats": {
+    "level": 105,
+    "hp": 1393,
+    "sp": 936,
+    "catchable": "No",
+    "spd": 287.5,
+    "str": 62,
+    "con": 78,
+    "int": 55,
+    "wis": 55,
+    "agi": 65
+  }
+}

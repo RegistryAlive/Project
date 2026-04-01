@@ -1,0 +1,18 @@
+{
+  "id": 1875,
+  "name": "Winged Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Boots that can raise attack power effectively.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "MATK": 10
+  },
+  "image": "data/images/shoes-1875.png",
+  "file": "shoes-1875.json"
+}

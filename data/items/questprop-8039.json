@@ -1,0 +1,15 @@
+{
+  "id": 8039,
+  "name": "Elderly's Trou",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Santa Claus's fat trousers",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8039.png",
+  "file": "questprop-8039.json"
+}

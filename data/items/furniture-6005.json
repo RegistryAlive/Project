@@ -1,0 +1,15 @@
+{
+  "id": 6005,
+  "name": "Medium Wooden Gear",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "It is made of wood",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6005.png",
+  "file": "furniture-6005.json"
+}

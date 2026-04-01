@@ -1,0 +1,15 @@
+{
+  "id": 7648,
+  "name": "Oak Wood",
+  "type": "MaterialWood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "Made of a oak",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7648.png",
+  "file": "material-7648.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1897,
+  "name": "Green Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Grass / Flower / Iron",
+  "description": "Boots that have very good flexibility.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 25
+  },
+  "image": "data/images/shoes-1897.png",
+  "file": "shoes-1897.json"
+}

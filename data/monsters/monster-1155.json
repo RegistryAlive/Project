@@ -1,0 +1,27 @@
+{
+  "id": 1155,
+  "name": "Holy Elephant Numen (Quest)",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-1156.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Ivory",
+      "itemId": 7805,
+      "itemFile": "material-7805.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 112,
+    "hp": 4535,
+    "sp": 1094,
+    "catchable": "Unknown",
+    "spd": 240,
+    "str": 76,
+    "con": 98,
+    "int": 62,
+    "wis": 64,
+    "agi": 36
+  }
+}

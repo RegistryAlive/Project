@@ -1,0 +1,18 @@
+{
+  "id": 1339,
+  "name": "Eternal Allies",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dreamy eyes cut autumn water. Male-only, +2 per forge, +1 extra SPD, up to +50",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 500,
+    "SPD": 10
+  },
+  "image": "data/images/armor-1339.png",
+  "file": "armor-1339.json"
+}

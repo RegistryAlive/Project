@@ -1,0 +1,17 @@
+{
+  "id": 2290,
+  "name": "Fury Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "An Armlet of Fury exclusively used by pet men.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50
+  },
+  "image": "data/images/special-2290.png",
+  "file": "special-2290.json"
+}

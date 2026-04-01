@@ -1,0 +1,17 @@
+{
+  "id": 2285,
+  "name": "Bulletproof Vest",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A bulletproof vest.",
+  "size": "1x1",
+  "attributes": {
+    "DefShoot": 60
+  },
+  "image": "data/images/special-2285.png",
+  "file": "special-2285.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 785,
+  "name": "Jack",
+  "location": "Kelan Village",
+  "image": "data/Monster_Images/monster-785.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 37,
+    "hp": 272,
+    "sp": 276,
+    "catchable": "Unknown",
+    "spd": 123.5,
+    "str": 19,
+    "con": 22,
+    "int": 16,
+    "wis": 20,
+    "agi": 34
+  }
+}

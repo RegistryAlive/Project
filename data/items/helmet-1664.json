@@ -1,0 +1,18 @@
+{
+  "id": 1664,
+  "name": "Christmas Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The classic Christmas hat, once you put it on, you can feel the festive atmosphere",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 10
+  },
+  "image": "data/images/helmet-1664.png",
+  "file": "helmet-1664.json"
+}

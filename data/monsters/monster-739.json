@@ -1,0 +1,27 @@
+{
+  "id": 739,
+  "name": "Half Beast Man",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-739.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 143,
+    "hp": 22314,
+    "sp": 1545,
+    "catchable": "Unknown",
+    "spd": 360.5,
+    "str": 96,
+    "con": 90,
+    "int": 84,
+    "wis": 86,
+    "agi": 73
+  }
+}

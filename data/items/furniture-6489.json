@@ -1,0 +1,15 @@
+{
+  "id": 6489,
+  "name": "Pink Series So",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 16,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Pink Series Sofa. Favoured by young girls.",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6489.png",
+  "file": "furniture-6489.json"
+}

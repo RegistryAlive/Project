@@ -1,0 +1,17 @@
+{
+  "id": 272,
+  "name": "War Copper Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "A halberd made from copper.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20
+  },
+  "image": "data/images/weapon-272.png",
+  "file": "weapon-272.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 1594,
+  "name": "Gray Bunny Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Limited edition collector's item!",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1594.png",
+  "file": "helmet-1594.json"
+}

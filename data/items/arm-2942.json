@@ -1,0 +1,17 @@
+{
+  "id": 2942,
+  "name": "Sky Bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Feathers of angels float down(if you change the appearance of the bracelet the effect will dissapear)",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 350
+  },
+  "image": "data/images/arm-2942.png",
+  "file": "arm-2942.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 2097,
+  "name": "Stone Ball",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Rock",
+  "description": "A heavy stone weight. Equipping this will reduce speed.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2097.png",
+  "file": "special-2097.json"
+}

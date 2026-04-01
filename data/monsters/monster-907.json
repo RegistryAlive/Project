@@ -1,0 +1,27 @@
+{
+  "id": 907,
+  "name": "Sledge Wolf (Quest)",
+  "location": "South Pole",
+  "image": "data/Monster_Images/monster-907.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 782,
+    "sp": 604,
+    "catchable": "Unknown",
+    "spd": 181,
+    "str": 44,
+    "con": 49,
+    "int": 40,
+    "wis": 39,
+    "agi": 38
+  }
+}

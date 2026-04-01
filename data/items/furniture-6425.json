@@ -1,0 +1,15 @@
+{
+  "id": 6425,
+  "name": "White Sofa",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A soft leather sofa made with White Sheepskin",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6425.png",
+  "file": "furniture-6425.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 285,
+  "name": "Goblin Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "Haunted by powerful goblin spirit.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 46
+  },
+  "image": "data/images/weapon-285.png",
+  "file": "weapon-285.json"
+}

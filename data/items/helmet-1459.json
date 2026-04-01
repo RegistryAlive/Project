@@ -1,0 +1,18 @@
+{
+  "id": 1459,
+  "name": "Legendary Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Titanium / Magic",
+  "description": "The Crown worn by the Legendary King.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "SPD": 11
+  },
+  "image": "data/images/helmet-1459.png",
+  "file": "helmet-1459.json"
+}

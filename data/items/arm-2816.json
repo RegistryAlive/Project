@@ -1,0 +1,18 @@
+{
+  "id": 2816,
+  "name": "Water Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Flower",
+  "description": "Gloves which can make good use of the magic.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 6,
+    "MDEF": 6
+  },
+  "image": "data/images/arm-2816.png",
+  "file": "arm-2816.json"
+}

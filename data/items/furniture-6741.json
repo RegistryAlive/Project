@@ -1,0 +1,15 @@
+{
+  "id": 6741,
+  "name": "Lazy Pilow Bed",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The large log bed, piled high with pillows, is so big you won't want to leave once you've sunk into it.",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6741.png",
+  "file": "furniture-6741.json"
+}

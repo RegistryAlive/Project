@@ -1,0 +1,18 @@
+{
+  "id": 1898,
+  "name": "Blue Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Grass / Iron",
+  "description": "Soul boots made from seaweed fibre and spun gold.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 12,
+    "MDEF": 9
+  },
+  "image": "data/images/shoes-1898.png",
+  "file": "shoes-1898.json"
+}

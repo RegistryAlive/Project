@@ -1,0 +1,18 @@
+{
+  "id": 2234,
+  "name": "Soul Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Silver / Grass",
+  "description": "The ring of agreement with Arez",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 78,
+    "MaxHP": 300
+  },
+  "image": "data/images/special-2234.png",
+  "file": "special-2234.json"
+}

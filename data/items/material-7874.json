@@ -1,0 +1,18 @@
+{
+  "id": 7874,
+  "name": "Fried Mooli (Glaze Table)",
+  "type": "Material",
+  "category": "material",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Nutritious fried radish",
+  "size": "1x1",
+  "attributes": {
+    "HP": 90,
+    "SP": 20
+  },
+  "image": "data/images/material-7874.png",
+  "file": "material-7874.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7668,
+  "name": "Yellow Fox Fur",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fur",
+  "description": "Fur of a yellow fox",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7668.png",
+  "file": "material-7668.json"
+}

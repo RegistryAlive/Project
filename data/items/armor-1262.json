@@ -1,0 +1,18 @@
+{
+  "id": 1262,
+  "name": "R.Formal Wear",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Outstanding people often wear clothing on formal occasions",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "SPD": 40
+  },
+  "image": "data/images/armor-1262.png",
+  "file": "armor-1262.json"
+}

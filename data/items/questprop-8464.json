@@ -1,0 +1,17 @@
+{
+  "id": 8464,
+  "name": "Delicious fish",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Only catch at a certain time, very delicious fish",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100
+  },
+  "image": "data/images/questprop-8464.png",
+  "file": "questprop-8464.json"
+}

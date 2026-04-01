@@ -1,0 +1,18 @@
+{
+  "id": 417,
+  "name": "Cursed Crossbow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Wood / Grass",
+  "description": "Made by beast people, it has both range and power.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "SPD": 12
+  },
+  "image": "data/images/weapon-417.png",
+  "file": "weapon-417.json"
+}

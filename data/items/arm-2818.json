@@ -1,0 +1,17 @@
+{
+  "id": 2818,
+  "name": "Vine Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Grass / Leather",
+  "description": "Made of tender flower vine and leather fibre.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 19
+  },
+  "image": "data/images/arm-2818.png",
+  "file": "arm-2818.json"
+}

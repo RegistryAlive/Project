@@ -1,0 +1,18 @@
+{
+  "id": 222,
+  "name": "Snow Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Iron / Copper / Steel",
+  "description": "Frozen sword with a sharp blade",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "DEF": 30
+  },
+  "image": "data/images/weapon-222.png",
+  "file": "weapon-222.json"
+}

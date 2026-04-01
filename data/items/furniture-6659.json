@@ -1,0 +1,15 @@
+{
+  "id": 6659,
+  "name": "Ocean Wall",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The shallow sea-style wallpaper allows players to change into different wall colors.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6659.png",
+  "file": "furniture-6659.json"
+}

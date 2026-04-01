@@ -1,0 +1,17 @@
+{
+  "id": 7898,
+  "name": "Steel Hammer 99",
+  "type": "Material",
+  "category": "material",
+  "rank": 10,
+  "level": 20,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Speed -99 after equiping it, both characters and pet can use it. can be traded",
+  "size": "1x1",
+  "attributes": {
+    "SPD": -99
+  },
+  "image": "data/images/material-7898.png",
+  "file": "material-7898.json"
+}

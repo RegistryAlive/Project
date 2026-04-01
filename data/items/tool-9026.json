@@ -1,0 +1,15 @@
+{
+  "id": 9026,
+  "name": "Assembly Basin",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used to make items which are not so steady.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/tool-9026.png",
+  "file": "tool-9026.json"
+}

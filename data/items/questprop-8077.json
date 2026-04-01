@@ -1,0 +1,15 @@
+{
+  "id": 8077,
+  "name": "Isle Boy Card",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It makes a Revival Isle Boy become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8077.png",
+  "file": "questprop-8077.json"
+}

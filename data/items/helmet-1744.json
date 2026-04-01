@@ -1,0 +1,18 @@
+{
+  "id": 1744,
+  "name": "Soulguard Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Smaller lenses are used to more accurately detect the presence of spirits; additional outfit effects can be gained when equipped with other Soul Guard series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MaxHP": 200
+  },
+  "image": "data/images/helmet-1744.png",
+  "file": "helmet-1744.json"
+}

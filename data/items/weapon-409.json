@@ -1,0 +1,18 @@
+{
+  "id": 409,
+  "name": "Hunter's Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Wood / Grass",
+  "description": "A bow used by hunters for its durability.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 6,
+    "SPD": 4
+  },
+  "image": "data/images/weapon-409.png",
+  "file": "weapon-409.json"
+}

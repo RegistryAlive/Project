@@ -1,0 +1,15 @@
+{
+  "id": 8315,
+  "name": "Wedding Invita",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Wedding invitation from Ling",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8315.png",
+  "file": "questprop-8315.json"
+}

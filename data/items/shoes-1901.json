@@ -1,0 +1,18 @@
+{
+  "id": 1901,
+  "name": "Leather Net Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Leaf / Leather",
+  "description": "Light boots made from firm vine and leather.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "DEF": 16
+  },
+  "image": "data/images/shoes-1901.png",
+  "file": "shoes-1901.json"
+}

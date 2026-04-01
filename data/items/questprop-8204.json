@@ -1,0 +1,15 @@
+{
+  "id": 8204,
+  "name": "Androsphinx Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Makes an Androsphinx Beast become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8204.png",
+  "file": "questprop-8204.json"
+}

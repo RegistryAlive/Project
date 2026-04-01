@@ -1,0 +1,15 @@
+{
+  "id": 6709,
+  "name": "Blue Snow Tile",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The dark blue snowflake floor tiles allow players to change to different floor patterns.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6709.png",
+  "file": "furniture-6709.json"
+}

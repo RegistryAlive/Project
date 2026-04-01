@@ -1,0 +1,18 @@
+{
+  "id": 1857,
+  "name": "Sky Blue Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Iron",
+  "description": "Skyblue long fighting boots",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20,
+    "MDEF": 7
+  },
+  "image": "data/images/shoes-1857.png",
+  "file": "shoes-1857.json"
+}

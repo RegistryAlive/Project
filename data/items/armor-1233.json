@@ -1,0 +1,18 @@
+{
+  "id": 1233,
+  "name": "Blue Yin Yang",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Especially choose clean colors, fresh and neat clothes, with 10% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "Special": 10,
+    "MaxHP": 250
+  },
+  "image": "data/images/armor-1233.png",
+  "file": "armor-1233.json"
+}

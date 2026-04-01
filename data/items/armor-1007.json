@@ -1,0 +1,18 @@
+{
+  "id": 1007,
+  "name": "Purple Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "A gown which is accreted magic power",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 12,
+    "MATK": 5
+  },
+  "image": "data/images/armor-1007.png",
+  "file": "armor-1007.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8291,
+  "name": "Key to the Dungeon",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Key to the dungeon somewhere",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8291.png",
+  "file": "questprop-8291.json"
+}

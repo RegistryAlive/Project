@@ -1,0 +1,27 @@
+{
+  "id": 578,
+  "name": "Black Horse",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-578.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 73,
+    "hp": 908,
+    "sp": 545,
+    "catchable": "Unknown",
+    "spd": 217.5,
+    "str": 41,
+    "con": 57,
+    "int": 33,
+    "wis": 34,
+    "agi": 54
+  }
+}

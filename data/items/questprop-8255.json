@@ -1,0 +1,15 @@
+{
+  "id": 8255,
+  "name": "Sapphire Ring",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Passed down by Claud with Lia's name etched thereon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8255.png",
+  "file": "questprop-8255.json"
+}

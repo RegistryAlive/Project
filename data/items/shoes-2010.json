@@ -1,0 +1,18 @@
+{
+  "id": 2010,
+  "name": "bunny girl sho",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Burgundy leather shoes; when equipped with other bunny series equipment, an additional set effect can be obtained",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 120,
+    "SPD": 10
+  },
+  "image": "data/images/shoes-2010.png",
+  "file": "shoes-2010.json"
+}

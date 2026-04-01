@@ -1,0 +1,15 @@
+{
+  "id": 7744,
+  "name": "Full Bird Nest",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Created using shreds of bird nest ready to serve.~",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7744.png",
+  "file": "material-7744.json"
+}

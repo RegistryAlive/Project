@@ -1,0 +1,17 @@
+{
+  "id": 1457,
+  "name": "Mage Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Titanium / Magic",
+  "description": "A magic crown used by the Magic king.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 27
+  },
+  "image": "data/images/helmet-1457.png",
+  "file": "helmet-1457.json"
+}

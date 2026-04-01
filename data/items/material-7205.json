@@ -1,0 +1,17 @@
+{
+  "id": 7205,
+  "name": "Big Custard Tart",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Egg / Dairy Product",
+  "description": "It's a bakery treat made from egg",
+  "size": "1x1",
+  "attributes": {
+    "HP": 280
+  },
+  "image": "data/images/material-7205.png",
+  "file": "material-7205.json"
+}

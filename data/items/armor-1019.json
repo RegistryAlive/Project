@@ -1,0 +1,18 @@
+{
+  "id": 1019,
+  "name": "Qi Pao",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Flower",
+  "description": "Famous clothes of a certain country in east",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 9,
+    "DEF": 4
+  },
+  "image": "data/images/armor-1019.png",
+  "file": "armor-1019.json"
+}

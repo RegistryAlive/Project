@@ -1,0 +1,18 @@
+{
+  "id": 1047,
+  "name": "Silk Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Gold / Flower",
+  "description": "A masked costume made of spun gold and silk.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17,
+    "SPD": 13
+  },
+  "image": "data/images/armor-1047.png",
+  "file": "armor-1047.json"
+}

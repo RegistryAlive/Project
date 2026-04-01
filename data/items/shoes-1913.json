@@ -1,0 +1,18 @@
+{
+  "id": 1913,
+  "name": "Nether World Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Leather / Grass",
+  "description": "Processed from the hide of netherworld sea lion.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17,
+    "SPD": 12
+  },
+  "image": "data/images/shoes-1913.png",
+  "file": "shoes-1913.json"
+}

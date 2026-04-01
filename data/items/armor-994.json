@@ -1,0 +1,18 @@
+{
+  "id": 994,
+  "name": "Clear Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Steel / Leather",
+  "description": "Armor for the Lord who is favored by Mars Athena",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "DEF": 10
+  },
+  "image": "data/images/armor-994.png",
+  "file": "armor-994.json"
+}

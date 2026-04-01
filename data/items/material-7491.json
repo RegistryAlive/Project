@@ -1,0 +1,18 @@
+{
+  "id": 7491,
+  "name": "Tuna",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "A kind of super sashimi with red color",
+  "size": "1x1",
+  "attributes": {
+    "SP": 40,
+    "HP": 30
+  },
+  "image": "data/images/material-7491.png",
+  "file": "material-7491.json"
+}

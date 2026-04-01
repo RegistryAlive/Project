@@ -1,0 +1,18 @@
+{
+  "id": 7224,
+  "name": "Crisp Shrimp",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "Shrimp cooked with rice wine",
+  "size": "1x1",
+  "attributes": {
+    "SP": 250,
+    "HP": 55
+  },
+  "image": "data/images/material-7224.png",
+  "file": "material-7224.json"
+}

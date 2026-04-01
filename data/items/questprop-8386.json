@@ -1,0 +1,15 @@
+{
+  "id": 8386,
+  "name": "Bigfoot ex vo",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A voucher that can exchange bigfoot to become your partner, it is not tradeable.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8386.png",
+  "file": "questprop-8386.json"
+}

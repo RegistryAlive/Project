@@ -1,0 +1,18 @@
+{
+  "id": 99,
+  "name": "Sunlight Saber",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A high-tech light saber that is as red as a blazing star, with a powerful cutting ability and a 46% chance of crit.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-99.png",
+  "file": "weapon-99.json"
+}

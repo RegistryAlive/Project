@@ -1,0 +1,18 @@
+{
+  "id": 2,
+  "name": "Violin",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A western classical instrument, light, melodious.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 1,
+    "DEF": 1
+  },
+  "image": "data/images/weapon-2.png",
+  "file": "weapon-2.json"
+}

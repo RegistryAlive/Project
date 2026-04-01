@@ -1,0 +1,18 @@
+{
+  "id": 7036,
+  "name": "Egg Fried Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rice / Egg",
+  "description": "Egg fried rice.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 170,
+    "SP": 80
+  },
+  "image": "data/images/material-7036.png",
+  "file": "material-7036.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6244,
+  "name": "Coconut Basin",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can temper some materials.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6244.png",
+  "file": "furniture-6244.json"
+}

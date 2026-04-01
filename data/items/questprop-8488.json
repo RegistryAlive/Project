@@ -1,0 +1,15 @@
+{
+  "id": 8488,
+  "name": "Winter Sled ex",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can be exchanged for Christmas sleigh tickets.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8488.png",
+  "file": "questprop-8488.json"
+}

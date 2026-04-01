@@ -1,0 +1,27 @@
+{
+  "id": 576,
+  "name": "Bimbashi",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-576.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 81,
+    "hp": 7800,
+    "sp": 621,
+    "catchable": "Unknown",
+    "spd": 187.5,
+    "str": 74,
+    "con": 61,
+    "int": 37,
+    "wis": 38,
+    "agi": 33
+  }
+}

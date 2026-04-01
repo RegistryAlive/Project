@@ -1,0 +1,15 @@
+{
+  "id": 7746,
+  "name": "Crab Pincer",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Tissue",
+  "description": "Pincers of crabs, can be made into a weapon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7746.png",
+  "file": "material-7746.json"
+}

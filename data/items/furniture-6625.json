@@ -1,0 +1,15 @@
+{
+  "id": 6625,
+  "name": "G Dragon Colum",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Pillars decorated in golden dragon shape",
+  "size": "2x5",
+  "attributes": {},
+  "image": "data/images/furniture-6625.png",
+  "file": "furniture-6625.json"
+}

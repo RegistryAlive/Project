@@ -1,0 +1,18 @@
+{
+  "id": 5,
+  "name": "Bronze Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Copper / Wood",
+  "description": "A knife made from bronze",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3,
+    "DEF": 3
+  },
+  "image": "data/images/weapon-5.png",
+  "file": "weapon-5.json"
+}

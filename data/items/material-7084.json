@@ -1,0 +1,18 @@
+{
+  "id": 7084,
+  "name": "Salmon Sushi",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish / Rice",
+  "description": "The Nigiri Sushi with salmon roe",
+  "size": "1x1",
+  "attributes": {
+    "SP": 200,
+    "HP": 100
+  },
+  "image": "data/images/material-7084.png",
+  "file": "material-7084.json"
+}

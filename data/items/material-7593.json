@@ -1,0 +1,15 @@
+{
+  "id": 7593,
+  "name": "Emerald",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Corundum",
+  "description": "A Rare emerald",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7593.png",
+  "file": "material-7593.json"
+}

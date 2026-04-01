@@ -1,0 +1,17 @@
+{
+  "id": 7102,
+  "name": "Millet Wine",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Rice",
+  "description": "A wine made from millet",
+  "size": "1x1",
+  "attributes": {
+    "SP": 100
+  },
+  "image": "data/images/material-7102.png",
+  "file": "material-7102.json"
+}

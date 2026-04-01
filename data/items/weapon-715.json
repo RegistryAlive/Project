@@ -1,0 +1,17 @@
+{
+  "id": 715,
+  "name": "Twin Dark Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Axe made by demons smith, instills fear when attacking.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 63
+  },
+  "image": "data/images/weapon-715.png",
+  "file": "weapon-715.json"
+}

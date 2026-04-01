@@ -1,0 +1,18 @@
+{
+  "id": 2072,
+  "name": "Honor Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Iron / Silver",
+  "description": "A medal which can adding lives",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "MaxHP": 80
+  },
+  "image": "data/images/special-2072.png",
+  "file": "special-2072.json"
+}

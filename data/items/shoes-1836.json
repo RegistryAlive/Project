@@ -1,0 +1,18 @@
+{
+  "id": 1836,
+  "name": "Great Knight Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Superior knight's special boots",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20,
+    "MATK": 10
+  },
+  "image": "data/images/shoes-1836.png",
+  "file": "shoes-1836.json"
+}

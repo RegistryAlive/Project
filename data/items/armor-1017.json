@@ -1,0 +1,18 @@
+{
+  "id": 1017,
+  "name": "Warm Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Flower",
+  "description": "Made from layers of cotton woven for warmth.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 5,
+    "DEF": 8
+  },
+  "image": "data/images/armor-1017.png",
+  "file": "armor-1017.json"
+}

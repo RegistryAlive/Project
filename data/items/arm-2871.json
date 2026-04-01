@@ -1,0 +1,17 @@
+{
+  "id": 2871,
+  "name": "Plasma Machine",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 3,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "N/A",
+  "description": "Special for Elin, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40
+  },
+  "image": "data/images/arm-2871.png",
+  "file": "arm-2871.json"
+}

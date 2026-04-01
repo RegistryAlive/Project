@@ -1,0 +1,15 @@
+{
+  "id": 1164,
+  "name": "New White Day",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Elegant female dress just for White Day",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1164.png",
+  "file": "armor-1164.json"
+}

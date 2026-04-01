@@ -1,0 +1,18 @@
+{
+  "id": 7093,
+  "name": "Fugu Nigiri Sushi",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish / Rice",
+  "description": "The Nigiri Sushi with Fugu roe",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 150
+  },
+  "image": "data/images/material-7093.png",
+  "file": "material-7093.json"
+}

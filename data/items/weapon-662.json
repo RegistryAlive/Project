@@ -1,0 +1,18 @@
+{
+  "id": 662,
+  "name": "Twin Rings",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Round, made from steel, can be swung freely.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28,
+    "DEF": 24
+  },
+  "image": "data/images/weapon-662.png",
+  "file": "weapon-662.json"
+}

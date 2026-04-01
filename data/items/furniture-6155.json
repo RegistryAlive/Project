@@ -1,0 +1,15 @@
+{
+  "id": 6155,
+  "name": "Body of Steam Ship",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 11,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Main structure of a steam ship",
+  "size": "5x4",
+  "attributes": {},
+  "image": "data/images/furniture-6155.png",
+  "file": "furniture-6155.json"
+}

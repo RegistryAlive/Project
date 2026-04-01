@@ -1,0 +1,27 @@
+{
+  "id": 666,
+  "name": "Dog Mania",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-666.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 6500,
+    "sp": 600,
+    "catchable": "Unknown",
+    "spd": 187,
+    "str": 42,
+    "con": 39,
+    "int": 50,
+    "wis": 38,
+    "agi": 41
+  }
+}

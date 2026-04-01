@@ -1,0 +1,18 @@
+{
+  "id": 870,
+  "name": "Twin Swords (Instance)",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "SPD": 32
+  },
+  "image": "data/images/weapon-870.png",
+  "file": "weapon-870.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 1082,
+  "name": "Mayan Rocket Man",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-1083.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Crude Oil",
+      "itemId": 7821,
+      "itemFile": "material-7821.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gasoline",
+      "itemId": 7822,
+      "itemFile": "material-7822.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 43,
+    "hp": 413,
+    "sp": 303,
+    "catchable": "Unknown",
+    "spd": 124.5,
+    "str": 24,
+    "con": 29,
+    "int": 25,
+    "wis": 21,
+    "agi": 30
+  }
+}

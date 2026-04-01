@@ -1,0 +1,51 @@
+{
+  "id": 363,
+  "name": "Deadwood Starfish",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-363.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Starfish Tentacles",
+      "itemId": 7795,
+      "itemFile": "material-7795.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sea Water",
+      "itemId": 7891,
+      "itemFile": "material-7891.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 3,
+    "hp": 48,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 8.5,
+    "str": 1,
+    "con": 2,
+    "int": 2,
+    "wis": 2,
+    "agi": 2
+  }
+}

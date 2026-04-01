@@ -1,0 +1,15 @@
+{
+  "id": 7566,
+  "name": "Iron Material",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Iron",
+  "description": "Iron material with little carbon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7566.png",
+  "file": "material-7566.json"
+}

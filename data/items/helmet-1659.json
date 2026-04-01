@@ -1,0 +1,17 @@
+{
+  "id": 1659,
+  "name": "Combat Goggles",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Glasses that can analyze the enemy's force and improve its own combat effectiveness",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25
+  },
+  "image": "data/images/helmet-1659.png",
+  "file": "helmet-1659.json"
+}

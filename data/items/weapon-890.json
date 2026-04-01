@@ -1,0 +1,18 @@
+{
+  "id": 890,
+  "name": "Sky Sword +2",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "30% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "SPD": 12
+  },
+  "image": "data/images/weapon-890.png",
+  "file": "weapon-890.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 7017,
+  "name": "Stuffed Buns",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat / Meat",
+  "description": "A Steamed bun with meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200
+  },
+  "image": "data/images/material-7017.png",
+  "file": "material-7017.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1344,
+  "name": "Perfect White",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is named after the color of purity and innocence; it is used exclusively by women, and can be worn in conjunction with other equipment in the White Immaculate series to gain an additional coat effect.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200
+  },
+  "image": "data/images/armor-1344.png",
+  "file": "armor-1344.json"
+}

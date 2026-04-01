@@ -1,0 +1,15 @@
+{
+  "id": 6031,
+  "name": "Filament",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Gives off heat and light by burning",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6031.png",
+  "file": "furniture-6031.json"
+}

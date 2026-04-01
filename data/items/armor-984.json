@@ -1,0 +1,18 @@
+{
+  "id": 984,
+  "name": "Blue Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Pure Iron / Titanium",
+  "description": "Vibrant blue steel armor of high quality.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 26,
+    "MDEF": 6
+  },
+  "image": "data/images/armor-984.png",
+  "file": "armor-984.json"
+}

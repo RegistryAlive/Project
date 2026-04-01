@@ -1,0 +1,27 @@
+{
+  "id": 602,
+  "name": "Blue ET",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-602.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 3003,
+    "sp": 1304,
+    "catchable": "Unknown",
+    "spd": 270,
+    "str": 32,
+    "con": 55,
+    "int": 72,
+    "wis": 81,
+    "agi": 60
+  }
+}

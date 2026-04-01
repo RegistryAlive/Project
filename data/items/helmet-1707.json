@@ -1,0 +1,17 @@
+{
+  "id": 1707,
+  "name": "Captain hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "In order to show the identity of the leader deliberately made a big hat.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1707.png",
+  "file": "helmet-1707.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6731,
+  "name": "Green Cocoa Tu",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The bittersweet and slightly spicy cinnamon cocoa bath agent is used, and the white floating ball like cotton candy is used, and the mug-shaped bathtub is full of winter atmosphere.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6731.png",
+  "file": "furniture-6731.json"
+}

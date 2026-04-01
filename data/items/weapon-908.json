@@ -1,0 +1,18 @@
+{
+  "id": 908,
+  "name": "Beast Fork +7",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "+40% critical (upgradeable with strong scrolls)",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 42,
+    "MAXHP": 400
+  },
+  "image": "data/images/weapon-908.png",
+  "file": "weapon-908.json"
+}

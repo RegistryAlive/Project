@@ -1,0 +1,18 @@
+{
+  "id": 562,
+  "name": "Polished Wand+7",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets, 40% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 42,
+    "MaxSP": 400
+  },
+  "image": "data/images/weapon-562.png",
+  "file": "weapon-562.json"
+}

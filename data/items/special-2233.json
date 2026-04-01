@@ -1,0 +1,17 @@
+{
+  "id": 2233,
+  "name": "VIP Card",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass / Magic",
+  "description": "Buy items from NPCs at a 50% discount, 10 times. Can be traded.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 50
+  },
+  "image": "data/images/special-2233.png",
+  "file": "special-2233.json"
+}

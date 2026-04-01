@@ -1,0 +1,18 @@
+{
+  "id": 2860,
+  "name": "Thorn Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Steel / Iron",
+  "description": "Cuffs which are made from heavy metal",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 24,
+    "ATK": 13
+  },
+  "image": "data/images/arm-2860.png",
+  "file": "arm-2860.json"
+}

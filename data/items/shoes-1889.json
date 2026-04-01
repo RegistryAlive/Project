@@ -1,0 +1,17 @@
+{
+  "id": 1889,
+  "name": "Thieves boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": null,
+  "description": "Boots obtained from the robber leader",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/shoes-1889.png",
+  "file": "shoes-1889.json"
+}

@@ -1,0 +1,32 @@
+{
+  "id": 1026,
+  "name": "Zhuang Zhi",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-1026.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "1% EXP Bolus",
+      "itemId": null,
+      "itemFile": null
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 823,
+    "sp": 376,
+    "catchable": "Unknown",
+    "spd": 213,
+    "str": 56,
+    "con": 52,
+    "int": 26,
+    "wis": 22,
+    "agi": 54
+  }
+}

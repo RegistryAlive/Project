@@ -1,0 +1,15 @@
+{
+  "id": 9007,
+  "name": "Carpenter's La",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can cut and process wood.",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/tool-9007.png",
+  "file": "tool-9007.json"
+}

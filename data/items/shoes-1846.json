@@ -1,0 +1,18 @@
+{
+  "id": 1846,
+  "name": "Fur Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Leather / Fur",
+  "description": "Boots processed from hides and furs.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 5,
+    "SPD": 8
+  },
+  "image": "data/images/shoes-1846.png",
+  "file": "shoes-1846.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 666,
+  "name": "Honor Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Copper",
+  "description": "A token claw for honoring junior warriors.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 2,
+    "SPD": 2
+  },
+  "image": "data/images/weapon-666.png",
+  "file": "weapon-666.json"
+}

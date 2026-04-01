@@ -1,0 +1,15 @@
+{
+  "id": 6257,
+  "name": "Needle",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Used on the work platform to sew the clothes.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6257.png",
+  "file": "furniture-6257.json"
+}

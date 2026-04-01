@@ -1,0 +1,27 @@
+{
+  "id": 567,
+  "name": "Aunt Zhuang",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-567.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 618,
+    "sp": 742,
+    "catchable": "Unknown",
+    "spd": 194.5,
+    "str": 32,
+    "con": 37,
+    "int": 51,
+    "wis": 49,
+    "agi": 44
+  }
+}

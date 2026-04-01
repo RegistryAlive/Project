@@ -1,0 +1,15 @@
+{
+  "id": 7714,
+  "name": "Tiger Bone",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Tiger bone from a tiger.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7714.png",
+  "file": "material-7714.json"
+}

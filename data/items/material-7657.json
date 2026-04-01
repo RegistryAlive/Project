@@ -1,0 +1,15 @@
+{
+  "id": 7657,
+  "name": "Delicate Wood",
+  "type": "MaterialWood",
+  "category": "material",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wood",
+  "description": "A Cutted and slippery wood",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7657.png",
+  "file": "material-7657.json"
+}

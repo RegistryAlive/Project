@@ -1,0 +1,17 @@
+{
+  "id": 1819,
+  "name": "Great Copper Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Steel",
+  "description": "Firm steel shoes which are refined carefully.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 12
+  },
+  "image": "data/images/shoes-1819.png",
+  "file": "shoes-1819.json"
+}

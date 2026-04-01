@@ -1,0 +1,15 @@
+{
+  "id": 8279,
+  "name": "Aunt Inchon's",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The lost purse of Aunt Inchon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8279.png",
+  "file": "questprop-8279.json"
+}

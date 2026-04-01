@@ -1,0 +1,39 @@
+{
+  "id": 238,
+  "name": "Fire Scopion",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-238.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Orange",
+      "itemId": 7435,
+      "itemFile": "material-7435.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 83,
+    "hp": 897,
+    "sp": 852,
+    "catchable": "Unknown",
+    "spd": 208.5,
+    "str": 55,
+    "con": 53,
+    "int": 45,
+    "wis": 54,
+    "agi": 42
+  }
+}

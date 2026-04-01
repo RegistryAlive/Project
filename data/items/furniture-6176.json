@@ -1,0 +1,15 @@
+{
+  "id": 6176,
+  "name": "Flat Cable",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Conducts electricity through wire",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6176.png",
+  "file": "furniture-6176.json"
+}

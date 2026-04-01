@@ -1,0 +1,27 @@
+{
+  "id": 712,
+  "name": "Giant Monster (Quest)",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-712.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 75,
+    "hp": 8000,
+    "sp": 701,
+    "catchable": "Unknown",
+    "spd": 182.5,
+    "str": 50,
+    "con": 70,
+    "int": 25,
+    "wis": 45,
+    "agi": 35
+  }
+}

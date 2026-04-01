@@ -1,0 +1,15 @@
+{
+  "id": 6495,
+  "name": "E Bunny Butler",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Easter Bunny Robot that can command your human shape pet to manufacture.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6495.png",
+  "file": "furniture-6495.json"
+}

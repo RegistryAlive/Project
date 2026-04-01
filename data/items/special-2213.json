@@ -1,0 +1,18 @@
+{
+  "id": 2213,
+  "name": "Power Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Armlet increasing efficiency of attacks.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 75,
+    "MaxHP": 400
+  },
+  "image": "data/images/special-2213.png",
+  "file": "special-2213.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 799,
+  "name": "Liyi (Quest)",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-799.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 13580,
+    "sp": 1366,
+    "catchable": "Unknown",
+    "spd": 340,
+    "str": 30,
+    "con": 70,
+    "int": 100,
+    "wis": 80,
+    "agi": 80
+  }
+}

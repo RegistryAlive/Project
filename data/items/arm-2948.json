@@ -1,0 +1,18 @@
+{
+  "id": 2948,
+  "name": "Underworld Arm",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Using the bracer of the deep sea monster's magic tooth can reduce the damage received by 1%. When equipped with other Nethersea series equipment at the same time, you can get an additional set effect.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 40,
+    "MDEF": 30
+  },
+  "image": "data/images/arm-2948.png",
+  "file": "arm-2948.json"
+}

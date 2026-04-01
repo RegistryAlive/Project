@@ -1,0 +1,15 @@
+{
+  "id": 8528,
+  "name": "wordless book",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The heavenly book given by an expert outside the world, it is said that it can reveal its secrets in a certain way",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8528.png",
+  "file": "questprop-8528.json"
+}

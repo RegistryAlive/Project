@@ -1,0 +1,17 @@
+{
+  "id": 268,
+  "name": "Bronze Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Copper / Wood",
+  "description": "A spear made from bronze.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12
+  },
+  "image": "data/images/weapon-268.png",
+  "file": "weapon-268.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2024,
+  "name": "Ritual Clogs",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clogs worn on special occasions; additional outfit effects can be obtained when equipped together with other White Immaculate Series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MaxSP": 100
+  },
+  "image": "data/images/shoes-2024.png",
+  "file": "shoes-2024.json"
+}

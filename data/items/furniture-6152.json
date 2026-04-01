@@ -1,0 +1,15 @@
+{
+  "id": 6152,
+  "name": "Assistant Device",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Assistant power device of a jalor",
+  "size": "4x2",
+  "attributes": {},
+  "image": "data/images/furniture-6152.png",
+  "file": "furniture-6152.json"
+}

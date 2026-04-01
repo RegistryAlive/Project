@@ -1,0 +1,45 @@
+{
+  "id": 433,
+  "name": "White Bear",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-433.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tuna",
+      "itemId": 7491,
+      "itemFile": "material-7491.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 734,
+    "sp": 840,
+    "catchable": "Yes",
+    "spd": 178,
+    "str": 43,
+    "con": 45,
+    "int": 37,
+    "wis": 56,
+    "agi": 35
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6502,
+  "name": "Azure Se. Sofa",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Azure Series Sofa to eliminate loneliness.",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6502.png",
+  "file": "furniture-6502.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 987,
+  "name": "Wang",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-987.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 89,
+    "hp": 1090,
+    "sp": 843,
+    "catchable": "Unknown",
+    "spd": 217.5,
+    "str": 61,
+    "con": 64,
+    "int": 48,
+    "wis": 52,
+    "agi": 42
+  }
+}

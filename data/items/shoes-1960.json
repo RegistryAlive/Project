@@ -1,0 +1,18 @@
+{
+  "id": 1960,
+  "name": "M-Dream Xmas Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Xmas boots for boys",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "DEF": 10
+  },
+  "image": "data/images/shoes-1960.png",
+  "file": "shoes-1960.json"
+}

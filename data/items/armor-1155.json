@@ -1,0 +1,18 @@
+{
+  "id": 1155,
+  "name": "Dark Feather Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Fur / Feather",
+  "description": "Light suit that can increase DEF power",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 16,
+    "DEF": 15
+  },
+  "image": "data/images/armor-1155.png",
+  "file": "armor-1155.json"
+}

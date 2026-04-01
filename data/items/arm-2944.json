@@ -1,0 +1,18 @@
+{
+  "id": 2944,
+  "name": "F Rudolph Mitt",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A warm pair of mittens. For female only. Set Effect : MaxHP +450.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 50,
+    "SPD": 50
+  },
+  "image": "data/images/arm-2944.png",
+  "file": "arm-2944.json"
+}

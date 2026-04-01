@@ -1,0 +1,39 @@
+{
+  "id": 390,
+  "name": "Greedy Skeleton",
+  "location": "Ghost Ship",
+  "image": "data/Monster_Images/monster-390.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Angry Skeleton",
+      "itemId": 7806,
+      "itemFile": "material-7806.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cinnamon",
+      "itemId": 7419,
+      "itemFile": "material-7419.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pink Crystal",
+      "itemId": 7598,
+      "itemFile": "material-7598.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 981,
+    "sp": 604,
+    "catchable": "Unknown",
+    "spd": 243.5,
+    "str": 53,
+    "con": 58,
+    "int": 50,
+    "wis": 36,
+    "agi": 58
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 589,
+  "name": "Sacred Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": "Silver / Iron / Steel / Jade / Corundum",
+  "description": "Holy wand with unbelievable power",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 60,
+    "MDEF": 22
+  },
+  "image": "data/images/weapon-589.png",
+  "file": "weapon-589.json"
+}

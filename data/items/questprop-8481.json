@@ -1,0 +1,15 @@
+{
+  "id": 8481,
+  "name": "Girl's Dream T",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "You can redeem a ticket for a girl?s dream",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8481.png",
+  "file": "questprop-8481.json"
+}

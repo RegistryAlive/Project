@@ -1,0 +1,18 @@
+{
+  "id": 561,
+  "name": "Gold Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Tin / Corundum",
+  "description": "A staff with gold feathers that has magical powers.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 42,
+    "MaxSP": 80
+  },
+  "image": "data/images/weapon-561.png",
+  "file": "weapon-561.json"
+}

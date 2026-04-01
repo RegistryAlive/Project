@@ -1,0 +1,18 @@
+{
+  "id": 659,
+  "name": "Demon Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Blessed are those that wield it.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "MATK": 12
+  },
+  "image": "data/images/weapon-659.png",
+  "file": "weapon-659.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 9028,
+  "name": "(???)",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "??",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/tool-9028.png",
+  "file": "tool-9028.json"
+}

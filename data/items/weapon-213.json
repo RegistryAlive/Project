@@ -1,0 +1,18 @@
+{
+  "id": 213,
+  "name": "Lord Sword +9",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cannot be socketed and traded,44% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 78,
+    "SPD": 78
+  },
+  "image": "data/images/weapon-213.png",
+  "file": "weapon-213.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2051,
+  "name": "Yellow Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal) / Grass",
+  "description": "A ring which is given by Yellowstone gaffer",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 12,
+    "DEF": 8
+  },
+  "image": "data/images/special-2051.png",
+  "file": "special-2051.json"
+}

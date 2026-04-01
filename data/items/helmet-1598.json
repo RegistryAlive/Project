@@ -1,0 +1,18 @@
+{
+  "id": 1598,
+  "name": "Indigo Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Steel / Iron / Pure Iron",
+  "description": "A head gear crafted from mysterious alloy. With both defensive and aggressive capabilities.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18,
+    "ATK": 12
+  },
+  "image": "data/images/helmet-1598.png",
+  "file": "helmet-1598.json"
+}

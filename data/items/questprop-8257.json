@@ -1,0 +1,15 @@
+{
+  "id": 8257,
+  "name": "Red Wool",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used to weave red stockings in X'mas",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8257.png",
+  "file": "questprop-8257.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2825,
+  "name": "White Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Aluminum",
+  "description": "light metal gloves made from marcasite.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 21
+  },
+  "image": "data/images/arm-2825.png",
+  "file": "arm-2825.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 762,
+  "name": "Thorn Pestle",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Steel / Wood",
+  "description": "A pontil which bestrewed with iron thorn",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 23,
+    "DEF": 25
+  },
+  "image": "data/images/weapon-762.png",
+  "file": "weapon-762.json"
+}

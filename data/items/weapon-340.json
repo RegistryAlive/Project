@@ -1,0 +1,18 @@
+{
+  "id": 340,
+  "name": "ThunderSpear+1",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 8,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "Cannot be socketed and traded,26% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "MaxSP": 60
+  },
+  "image": "data/images/weapon-340.png",
+  "file": "weapon-340.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 343,
+  "name": "Grave Scopian",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-343.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Cantaloupe",
+      "itemId": 7447,
+      "itemFile": "material-7447.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Scorpion'S Venom",
+      "itemId": 7760,
+      "itemFile": "material-7760.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 55,
+    "hp": 532,
+    "sp": 444,
+    "catchable": "Yes",
+    "spd": 152.5,
+    "str": 35,
+    "con": 35,
+    "int": 35,
+    "wis": 30,
+    "agi": 35
+  }
+}

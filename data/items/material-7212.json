@@ -1,0 +1,18 @@
+{
+  "id": 7212,
+  "name": "Seafood Pizza",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Meat / Fish and Shellfish",
+  "description": "An Italian specialty perfected in America",
+  "size": "1x1",
+  "attributes": {
+    "HP": 210,
+    "SP": 90
+  },
+  "image": "data/images/material-7212.png",
+  "file": "material-7212.json"
+}

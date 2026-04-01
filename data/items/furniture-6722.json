@@ -1,0 +1,15 @@
+{
+  "id": 6722,
+  "name": "Biscuit Bed",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "gingerbread style bed",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6722.png",
+  "file": "furniture-6722.json"
+}

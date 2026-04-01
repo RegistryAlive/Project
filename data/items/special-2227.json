@@ -1,0 +1,18 @@
+{
+  "id": 2227,
+  "name": "Swift Scroll",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Grass / Mercury",
+  "description": "A scroll enhancing speed.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 75,
+    "MaxSP": 400
+  },
+  "image": "data/images/special-2227.png",
+  "file": "special-2227.json"
+}

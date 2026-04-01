@@ -1,0 +1,15 @@
+{
+  "id": 8146,
+  "name": "Dalis's Oracle",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is a scroll with dalis' oracle",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8146.png",
+  "file": "questprop-8146.json"
+}

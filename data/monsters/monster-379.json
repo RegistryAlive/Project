@@ -1,0 +1,45 @@
+{
+  "id": 379,
+  "name": "Reckless Spirit",
+  "location": "Ghost Ship",
+  "image": "data/Monster_Images/monster-379.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Lucid Glue",
+      "itemId": 7709,
+      "itemFile": "material-7709.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cotton",
+      "itemId": 7358,
+      "itemFile": "material-7358.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Harl Grass",
+      "itemId": 7359,
+      "itemFile": "material-7359.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 985,
+    "sp": 776,
+    "catchable": "Unknown",
+    "spd": 233,
+    "str": 56,
+    "con": 58,
+    "int": 44,
+    "wis": 48,
+    "agi": 52
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6563,
+  "name": "G candlesticks",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Gothic style candlestick, light swaying slightly in the dark",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6563.png",
+  "file": "furniture-6563.json"
+}

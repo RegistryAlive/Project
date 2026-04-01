@@ -1,0 +1,18 @@
+{
+  "id": 764,
+  "name": "Big Hammer",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A large mallet made of high-density iron block",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "DEF": 27
+  },
+  "image": "data/images/weapon-764.png",
+  "file": "weapon-764.json"
+}

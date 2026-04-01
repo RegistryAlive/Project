@@ -1,0 +1,17 @@
+{
+  "id": 845,
+  "name": "Great Gun",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Iron / Wood",
+  "description": "A very ancient gun",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15
+  },
+  "image": "data/images/weapon-845.png",
+  "file": "weapon-845.json"
+}

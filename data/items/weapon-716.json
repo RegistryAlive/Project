@@ -1,0 +1,17 @@
+{
+  "id": 716,
+  "name": "Crystal Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A very rare axe with amazing power, refined using crystals.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 65
+  },
+  "image": "data/images/weapon-716.png",
+  "file": "weapon-716.json"
+}

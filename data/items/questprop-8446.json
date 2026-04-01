@@ -1,0 +1,15 @@
+{
+  "id": 8446,
+  "name": "Wing fabric",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Collect 70 wing fabric to exchange for a white wing suit",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8446.png",
+  "file": "questprop-8446.json"
+}

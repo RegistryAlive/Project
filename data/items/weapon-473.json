@@ -1,0 +1,18 @@
+{
+  "id": 473,
+  "name": "Dreaming Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Tin / Quartz (Crystal)",
+  "description": "Made while the enchanter prays.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 13,
+    "MDEF": 13
+  },
+  "image": "data/images/weapon-473.png",
+  "file": "weapon-473.json"
+}

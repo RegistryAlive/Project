@@ -1,0 +1,15 @@
+{
+  "id": 6342,
+  "name": "Telescope",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Used to observe the heavens and the movement of heavenly bodies.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6342.png",
+  "file": "furniture-6342.json"
+}

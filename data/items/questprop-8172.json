@@ -1,0 +1,15 @@
+{
+  "id": 8172,
+  "name": "Ma Stone",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "One of the three weapons",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8172.png",
+  "file": "questprop-8172.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 5032,
+  "name": "Wolf Deity Bean",
+  "type": "ItemPetFruit",
+  "category": "accessory",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Adds 1 to Sam's ability. You can get it by compounding. Cannot be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5032.png",
+  "file": "accessory-5032.json"
+}

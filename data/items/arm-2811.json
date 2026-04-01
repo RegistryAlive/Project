@@ -1,0 +1,15 @@
+{
+  "id": 2811,
+  "name": "Broken Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leather",
+  "description": "Broken Aemguard which is been\\ overused",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/arm-2811.png",
+  "file": "arm-2811.json"
+}

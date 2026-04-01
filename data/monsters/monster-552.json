@@ -1,0 +1,27 @@
+{
+  "id": 552,
+  "name": "Angela",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-552.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 56,
+    "hp": 407,
+    "sp": 587,
+    "catchable": "Unknown",
+    "spd": 168,
+    "str": 15,
+    "con": 31,
+    "int": 39,
+    "wis": 41,
+    "agi": 42
+  }
+}

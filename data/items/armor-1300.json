@@ -1,0 +1,18 @@
+{
+  "id": 1300,
+  "name": "Cyan Uniform",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The color of clothing used to recognize identity is azure, which represents calmness.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "MaxSP": 200
+  },
+  "image": "data/images/armor-1300.png",
+  "file": "armor-1300.json"
+}

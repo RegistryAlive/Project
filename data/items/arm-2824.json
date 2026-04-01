@@ -1,0 +1,18 @@
+{
+  "id": 2824,
+  "name": "Leather Gloves-2",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Leather / Flower",
+  "description": "Made from massive leather and steel threads.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MDEF": 7
+  },
+  "image": "data/images/arm-2824.png",
+  "file": "arm-2824.json"
+}

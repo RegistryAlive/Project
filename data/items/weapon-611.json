@@ -1,0 +1,18 @@
+{
+  "id": 611,
+  "name": "Gold Niflheim",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Niss special weapon, a Staff made from gold.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 75,
+    "MaxHP": 200
+  },
+  "image": "data/images/weapon-611.png",
+  "file": "weapon-611.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 615,
+  "name": "Casino Bodyguard",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-615.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 1059,
+    "sp": 688,
+    "catchable": "Unknown",
+    "spd": 198,
+    "str": 57,
+    "con": 65,
+    "int": 36,
+    "wis": 43,
+    "agi": 39
+  }
+}

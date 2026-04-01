@@ -1,0 +1,27 @@
+{
+  "id": 964,
+  "name": "Ulysses",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-964.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 34,
+    "hp": 282,
+    "sp": 201,
+    "catchable": "Unknown",
+    "spd": 99,
+    "str": 26,
+    "con": 24,
+    "int": 14,
+    "wis": 14,
+    "agi": 24
+  }
+}

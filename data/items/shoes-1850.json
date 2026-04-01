@@ -1,0 +1,18 @@
+{
+  "id": 1850,
+  "name": "Silvery Winged Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Platinum / Gold",
+  "description": "They channel magic potential.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 9,
+    "MATK": 9
+  },
+  "image": "data/images/shoes-1850.png",
+  "file": "shoes-1850.json"
+}

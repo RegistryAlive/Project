@@ -1,0 +1,18 @@
+{
+  "id": 2109,
+  "name": "Magic Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "It can raise magic attack power and magic defense.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 4,
+    "MDEF": 2
+  },
+  "image": "data/images/special-2109.png",
+  "file": "special-2109.json"
+}

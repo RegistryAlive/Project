@@ -1,0 +1,18 @@
+{
+  "id": 1227,
+  "name": "Crimson Fur Cl",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Red silk is woven into handsome and beautiful clothing, with white wings to make the look more dazzling",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "MaxHP": 70
+  },
+  "image": "data/images/armor-1227.png",
+  "file": "armor-1227.json"
+}

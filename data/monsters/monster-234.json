@@ -1,0 +1,33 @@
+{
+  "id": 234,
+  "name": "Tiger",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-234.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Beef",
+      "itemId": 7472,
+      "itemFile": "material-7472.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tiger Meat",
+      "itemId": 7476,
+      "itemFile": "material-7476.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 84,
+    "hp": 887,
+    "sp": 756,
+    "catchable": "Yes",
+    "spd": 230,
+    "str": 56,
+    "con": 52,
+    "int": 45,
+    "wis": 47,
+    "agi": 52
+  }
+}

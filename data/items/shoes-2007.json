@@ -1,0 +1,18 @@
+{
+  "id": 2007,
+  "name": "Darktide Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Boots sewn with deep-sea exotic animal leather can reduce damage received by 1%, and can obtain additional set effects when equipped with other dark tide series equipment at the same time",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 40,
+    "DEF": 30
+  },
+  "image": "data/images/shoes-2007.png",
+  "file": "shoes-2007.json"
+}

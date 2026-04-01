@@ -1,0 +1,15 @@
+{
+  "id": 8044,
+  "name": "Hot-Air Balloon Design",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can be exchange for hot-air ballon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8044.png",
+  "file": "questprop-8044.json"
+}

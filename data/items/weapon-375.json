@@ -1,0 +1,18 @@
+{
+  "id": 375,
+  "name": "Plat Gshield+1",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 16,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A gun shield made of platinum, has anti seal resistance.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 6,
+    "MATK": 25
+  },
+  "image": "data/images/weapon-375.png",
+  "file": "weapon-375.json"
+}

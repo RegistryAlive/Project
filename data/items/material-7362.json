@@ -1,0 +1,15 @@
+{
+  "id": 7362,
+  "name": "Vine",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leaf",
+  "description": "able to weave many items",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7362.png",
+  "file": "material-7362.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2079,
+  "name": "Black Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Magic / Quartz (Crystal) / Platinum / Crystallization",
+  "description": "A pure black magic ring which has powerful magic.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20
+  },
+  "image": "data/images/special-2079.png",
+  "file": "special-2079.json"
+}

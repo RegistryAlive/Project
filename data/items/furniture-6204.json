@@ -1,0 +1,15 @@
+{
+  "id": 6204,
+  "name": "Devil's Spar Piece",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Magic",
+  "description": "They were scattered all over the world.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6204.png",
+  "file": "furniture-6204.json"
+}

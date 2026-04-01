@@ -1,0 +1,18 @@
+{
+  "id": 761,
+  "name": "Thorn Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Wood / Gum",
+  "description": "A wooden Gavel which bestrewed with agnails",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 22,
+    "DEF": 24
+  },
+  "image": "data/images/weapon-761.png",
+  "file": "weapon-761.json"
+}

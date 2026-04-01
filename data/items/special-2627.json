@@ -1,0 +1,18 @@
+{
+  "id": 2627,
+  "name": "Angel's Wing+5",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 56,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It cannot be socketed",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 32,
+    "MDEF": 32
+  },
+  "image": "data/images/special-2627.png",
+  "file": "special-2627.json"
+}

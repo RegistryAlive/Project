@@ -1,0 +1,27 @@
+{
+  "id": 998,
+  "name": "White Horse",
+  "location": "Kyoto",
+  "image": "data/Monster_Images/monster-998.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 73,
+    "hp": 753,
+    "sp": 599,
+    "catchable": "Unknown",
+    "spd": 227.5,
+    "str": 44,
+    "con": 46,
+    "int": 32,
+    "wis": 38,
+    "agi": 59
+  }
+}

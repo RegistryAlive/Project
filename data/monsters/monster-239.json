@@ -1,0 +1,39 @@
+{
+  "id": 239,
+  "name": "Golden Leopard",
+  "location": "Athens",
+  "image": "data/Monster_Images/monster-239.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ostrich Meat",
+      "itemId": 7480,
+      "itemFile": "material-7480.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 126,
+    "hp": 1588,
+    "sp": 1122,
+    "catchable": "Unknown",
+    "spd": 343,
+    "str": 89,
+    "con": 83,
+    "int": 66,
+    "wis": 63,
+    "agi": 77
+  }
+}

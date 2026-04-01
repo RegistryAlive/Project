@@ -1,0 +1,18 @@
+{
+  "id": 554,
+  "name": "Light Wand+6",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 14,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets, 38% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 34,
+    "MaxSP": 320
+  },
+  "image": "data/images/weapon-554.png",
+  "file": "weapon-554.json"
+}

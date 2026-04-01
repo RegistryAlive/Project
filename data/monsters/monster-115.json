@@ -1,0 +1,39 @@
+{
+  "id": 115,
+  "name": "Blue Fox",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-115.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Fox Fur",
+      "itemId": 7668,
+      "itemFile": "material-7668.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 62,
+    "hp": 585,
+    "sp": 554,
+    "catchable": "Yes",
+    "spd": 169,
+    "str": 35,
+    "con": 37,
+    "int": 39,
+    "wis": 37,
+    "agi": 38
+  }
+}

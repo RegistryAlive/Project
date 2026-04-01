@@ -1,0 +1,15 @@
+{
+  "id": 7663,
+  "name": "Parrot's Feath",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Feather of a parrot",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7663.png",
+  "file": "material-7663.json"
+}

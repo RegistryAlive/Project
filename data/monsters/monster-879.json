@@ -1,0 +1,27 @@
+{
+  "id": 879,
+  "name": "Ruka the Bird God (Quest)",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-879.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 140,
+    "hp": 25480,
+    "sp": 1534,
+    "catchable": "Unknown",
+    "spd": 404,
+    "str": 74,
+    "con": 78,
+    "int": 85,
+    "wis": 86,
+    "agi": 97
+  }
+}

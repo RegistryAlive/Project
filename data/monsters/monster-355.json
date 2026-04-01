@@ -1,0 +1,45 @@
+{
+  "id": 355,
+  "name": "Forest Spider",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-355.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Poisonous Juice",
+      "itemId": 7711,
+      "itemFile": "material-7711.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Spider Net",
+      "itemId": 7765,
+      "itemFile": "material-7765.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Widow's Venom",
+      "itemId": 7759,
+      "itemFile": "material-7759.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 53,
+    "hp": 474,
+    "sp": 464,
+    "catchable": "Yes",
+    "spd": 143.5,
+    "str": 32,
+    "con": 31,
+    "int": 32,
+    "wis": 32,
+    "agi": 32
+  }
+}

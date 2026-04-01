@@ -1,0 +1,18 @@
+{
+  "id": 2752,
+  "name": "Dark Evil Wings+9",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 96,
+  "level": 192,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 48,
+    "MATK": 48
+  },
+  "image": "data/images/special-2752.png",
+  "file": "special-2752.json"
+}

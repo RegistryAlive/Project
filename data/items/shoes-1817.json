@@ -1,0 +1,18 @@
+{
+  "id": 1817,
+  "name": "Vine Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Grass",
+  "description": "Shoes which are made from vines",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 4,
+    "SPD": 4
+  },
+  "image": "data/images/shoes-1817.png",
+  "file": "shoes-1817.json"
+}

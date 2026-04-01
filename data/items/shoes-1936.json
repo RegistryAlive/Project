@@ -1,0 +1,18 @@
+{
+  "id": 1936,
+  "name": "Dusk Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Grass / Leather",
+  "description": "Glimmers at dusk. Protects the ankles.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18,
+    "MDEF": 8
+  },
+  "image": "data/images/shoes-1936.png",
+  "file": "shoes-1936.json"
+}

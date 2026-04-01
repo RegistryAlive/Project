@@ -1,0 +1,18 @@
+{
+  "id": 1829,
+  "name": "Copper Clogs",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Wood / Copper",
+  "description": "Boots made from half-copper. It has good defense.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 11,
+    "SPD": 4
+  },
+  "image": "data/images/shoes-1829.png",
+  "file": "shoes-1829.json"
+}

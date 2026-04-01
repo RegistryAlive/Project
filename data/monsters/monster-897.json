@@ -1,0 +1,27 @@
+{
+  "id": 897,
+  "name": "Server",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-897.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 57,
+    "hp": 430,
+    "sp": 603,
+    "catchable": "Unknown",
+    "spd": 143.5,
+    "str": 23,
+    "con": 33,
+    "int": 44,
+    "wis": 42,
+    "agi": 29
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": 139,
+  "name": "Green Beetle",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-139.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Emerald",
+      "itemId": 7593,
+      "itemFile": "material-7593.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dry Clay",
+      "itemId": 7646,
+      "itemFile": "material-7646.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 53,
+    "hp": 499,
+    "sp": 464,
+    "catchable": "Unknown",
+    "spd": 147.5,
+    "str": 32,
+    "con": 33,
+    "int": 28,
+    "wis": 32,
+    "agi": 34
+  }
+}

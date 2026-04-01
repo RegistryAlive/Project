@@ -1,0 +1,15 @@
+{
+  "id": 6583,
+  "name": "Teacher W Maid",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Wearing a teachers costume, a high-tech robot that can help you guide pets",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6583.png",
+  "file": "furniture-6583.json"
+}

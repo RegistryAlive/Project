@@ -1,0 +1,17 @@
+{
+  "id": 1494,
+  "name": "Cloud Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Aluminum / Steel",
+  "description": "Specific horn made from lightweight aluminium.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20
+  },
+  "image": "data/images/helmet-1494.png",
+  "file": "helmet-1494.json"
+}

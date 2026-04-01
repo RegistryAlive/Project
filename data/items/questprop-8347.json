@@ -1,0 +1,15 @@
+{
+  "id": 8347,
+  "name": "Cacao Bean",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "An ingredient needed to make Valentine's Chocolates.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8347.png",
+  "file": "questprop-8347.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1545,
+  "name": "Thunder Hairpin",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Special for Niss, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 480,
+    "MaxSP": 264
+  },
+  "image": "data/images/helmet-1545.png",
+  "file": "helmet-1545.json"
+}

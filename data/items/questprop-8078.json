@@ -1,0 +1,15 @@
+{
+  "id": 8078,
+  "name": "Isle Man Card",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It makes a Revival Isle Man become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8078.png",
+  "file": "questprop-8078.json"
+}

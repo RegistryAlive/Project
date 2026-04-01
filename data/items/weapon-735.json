@@ -1,0 +1,18 @@
+{
+  "id": 735,
+  "name": "Gold Tomahawk",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A huge, eye-catching weapon made of polished demonic bones as a handle, with a blade made of slightly reddish gold ore. 46% crit hit potential.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "MaxHP": 250
+  },
+  "image": "data/images/weapon-735.png",
+  "file": "weapon-735.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2796,
+  "name": "Beast Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leather / Iron",
+  "description": "Armguard made from fur of a Holy animal.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 19,
+    "SPD": 6
+  },
+  "image": "data/images/arm-2796.png",
+  "file": "arm-2796.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2047,
+  "name": "Evil Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Jade / Grass",
+  "description": "A spooky black ring which is black evil's favorite",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "MATK": 11
+  },
+  "image": "data/images/special-2047.png",
+  "file": "special-2047.json"
+}

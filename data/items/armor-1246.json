@@ -1,0 +1,18 @@
+{
+  "id": 1246,
+  "name": "Red Autumn",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Beautiful costume with the colors of autumn leaves.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 300,
+    "SPD": 35
+  },
+  "image": "data/images/armor-1246.png",
+  "file": "armor-1246.json"
+}

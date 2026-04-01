@@ -1,0 +1,18 @@
+{
+  "id": 1528,
+  "name": "Energy Halo+5",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 44,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets. Its numerical value can advance",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 220,
+    "MaxSP": 220
+  },
+  "image": "data/images/helmet-1528.png",
+  "file": "helmet-1528.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8463,
+  "name": "Cabriolet exc",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can exchange voucher for Cabriolet.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8463.png",
+  "file": "questprop-8463.json"
+}

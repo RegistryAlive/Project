@@ -1,0 +1,15 @@
+{
+  "id": 6506,
+  "name": "Xmas Bed",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Silver white Christmas furniture, sleigh shape and cute reindeer pattern.",
+  "size": "5x4",
+  "attributes": {},
+  "image": "data/images/furniture-6506.png",
+  "file": "furniture-6506.json"
+}

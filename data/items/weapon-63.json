@@ -1,0 +1,18 @@
+{
+  "id": 63,
+  "name": "Shadowy Sickle",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Copper / Pure Iron / Steel / Titanium",
+  "description": "A nasty-looking sickle with a sharp, blackened edge.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "SPD": 28
+  },
+  "image": "data/images/weapon-63.png",
+  "file": "weapon-63.json"
+}

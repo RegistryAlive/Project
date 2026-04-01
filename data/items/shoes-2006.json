@@ -1,0 +1,18 @@
+{
+  "id": 2006,
+  "name": "New Tiger Shoe",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The Year Of The Tiger. New Year Tiger Set. Four-piece Set Effect : Critical Damage +5%.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 10
+  },
+  "image": "data/images/shoes-2006.png",
+  "file": "shoes-2006.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 702,
+  "name": "Silvery Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Silver / Wood",
+  "description": "An expensive silver axe.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 37
+  },
+  "image": "data/images/weapon-702.png",
+  "file": "weapon-702.json"
+}

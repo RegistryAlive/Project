@@ -1,0 +1,17 @@
+{
+  "id": 1818,
+  "name": "Grass Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Grass",
+  "description": "Shoes which are made from haulm",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 3
+  },
+  "image": "data/images/shoes-1818.png",
+  "file": "shoes-1818.json"
+}

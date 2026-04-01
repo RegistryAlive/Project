@@ -1,0 +1,15 @@
+{
+  "id": 8428,
+  "name": "Prisons Key",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Prison key stolen from the guard.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8428.png",
+  "file": "questprop-8428.json"
+}

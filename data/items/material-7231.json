@@ -1,0 +1,17 @@
+{
+  "id": 7231,
+  "name": "Marinated Egg",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Egg",
+  "description": "An egg with a special taste",
+  "size": "1x1",
+  "attributes": {
+    "HP": 285
+  },
+  "image": "data/images/material-7231.png",
+  "file": "material-7231.json"
+}

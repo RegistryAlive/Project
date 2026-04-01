@@ -1,0 +1,17 @@
+{
+  "id": 690,
+  "name": "Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Copper / Grass / Wood",
+  "description": "It is usually used by axman",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 13
+  },
+  "image": "data/images/weapon-690.png",
+  "file": "weapon-690.json"
+}

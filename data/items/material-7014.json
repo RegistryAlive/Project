@@ -1,0 +1,18 @@
+{
+  "id": 7014,
+  "name": "Danish Bread",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat",
+  "description": "Danish bread.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 180,
+    "SP": 70
+  },
+  "image": "data/images/material-7014.png",
+  "file": "material-7014.json"
+}

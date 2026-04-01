@@ -1,0 +1,15 @@
+{
+  "id": 6216,
+  "name": "Steel String",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A steel string",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6216.png",
+  "file": "furniture-6216.json"
+}

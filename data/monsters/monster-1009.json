@@ -1,0 +1,27 @@
+{
+  "id": 1009,
+  "name": "Wind Evil Spirit",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-1009.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 59,
+    "hp": 534,
+    "sp": 520,
+    "catchable": "Unknown",
+    "spd": 172.5,
+    "str": 32,
+    "con": 34,
+    "int": 34,
+    "wis": 35,
+    "agi": 42
+  }
+}

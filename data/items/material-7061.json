@@ -1,0 +1,17 @@
+{
+  "id": 7061,
+  "name": "Meat Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Meat",
+  "description": "Noodles with assorted meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 700
+  },
+  "image": "data/images/material-7061.png",
+  "file": "material-7061.json"
+}

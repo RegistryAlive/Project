@@ -1,0 +1,18 @@
+{
+  "id": 600,
+  "name": "Staff of Prodigy",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Tin / Iron / Jade",
+  "description": "A staff cast with jade. Increases magic defense.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 36,
+    "MATK": 30
+  },
+  "image": "data/images/weapon-600.png",
+  "file": "weapon-600.json"
+}

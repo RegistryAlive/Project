@@ -1,0 +1,17 @@
+{
+  "id": 2276,
+  "name": "Spirit Bead",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": "Titanium / Mercury / Magic",
+  "description": "A bead giving the wearer the energy to increase.",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 20
+  },
+  "image": "data/images/special-2276.png",
+  "file": "special-2276.json"
+}

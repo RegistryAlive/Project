@@ -1,0 +1,18 @@
+{
+  "id": 1513,
+  "name": "Wit Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leather / Pure Iron / Iron",
+  "description": "Wit's leather hat. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "MDEF": 10
+  },
+  "image": "data/images/helmet-1513.png",
+  "file": "helmet-1513.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2134,
+  "name": "Quick Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To evenly upgrade magic defense and agility",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 3,
+    "SPD": 3
+  },
+  "image": "data/images/special-2134.png",
+  "file": "special-2134.json"
+}

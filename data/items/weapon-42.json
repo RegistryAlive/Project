@@ -1,0 +1,18 @@
+{
+  "id": 42,
+  "name": "Killer Sword",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A true instrument of death. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "SPD": 20
+  },
+  "image": "data/images/weapon-42.png",
+  "file": "weapon-42.json"
+}

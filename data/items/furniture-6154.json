@@ -1,0 +1,15 @@
+{
+  "id": 6154,
+  "name": "Engine of Ship",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Starts the burning engine of steam ship",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6154.png",
+  "file": "furniture-6154.json"
+}

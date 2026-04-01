@@ -1,0 +1,15 @@
+{
+  "id": 8540,
+  "name": "15% EXP Bolus",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 8,
+  "level": 16,
+  "rarity": "uncommon",
+  "base": "Chemical",
+  "description": "Increases the pet's EXP by 15%",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8540.png",
+  "file": "questprop-8540.json"
+}

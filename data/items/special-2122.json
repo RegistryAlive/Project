@@ -1,0 +1,18 @@
+{
+  "id": 2122,
+  "name": "Impulsive Meda",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To upgrade agility and minor magic attack power",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 4,
+    "MATK": 2
+  },
+  "image": "data/images/special-2122.png",
+  "file": "special-2122.json"
+}

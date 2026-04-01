@@ -1,0 +1,15 @@
+{
+  "id": 6628,
+  "name": "Easter Deco",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "lovely eggs lined up in a row on a wreath",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6628.png",
+  "file": "furniture-6628.json"
+}

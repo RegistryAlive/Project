@@ -1,0 +1,15 @@
+{
+  "id": 494,
+  "name": "Broken Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Tin / Quartz (Crystal) / Steel / Hard Tissue / Magic",
+  "description": "Damaged wand after excessive use.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-494.png",
+  "file": "weapon-494.json"
+}

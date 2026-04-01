@@ -1,0 +1,51 @@
+{
+  "id": 397,
+  "name": "Slamdoo",
+  "location": "Sea Monster",
+  "image": "data/Monster_Images/monster-397.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Stool",
+      "itemId": 7817,
+      "itemFile": "material-7817.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grey Clay",
+      "itemId": 7645,
+      "itemFile": "material-7645.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dry Clay",
+      "itemId": 7646,
+      "itemFile": "material-7646.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 21,
+    "hp": 134,
+    "sp": 151,
+    "catchable": "Unknown",
+    "spd": 59.5,
+    "str": 12,
+    "con": 10,
+    "int": 15,
+    "wis": 12,
+    "agi": 14
+  }
+}

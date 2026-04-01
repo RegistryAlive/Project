@@ -1,0 +1,18 @@
+{
+  "id": 7087,
+  "name": "Braised Stingray",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "Braised Yellow Croaker in a Brown Sauce",
+  "size": "1x1",
+  "attributes": {
+    "SP": 120,
+    "HP": 80
+  },
+  "image": "data/images/material-7087.png",
+  "file": "material-7087.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1399,
+  "name": "Hero's Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Iron / Aluminum",
+  "description": "A helmet for a Paladin.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 16,
+    "MDEF": 6
+  },
+  "image": "data/images/helmet-1399.png",
+  "file": "helmet-1399.json"
+}

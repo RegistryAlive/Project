@@ -1,0 +1,15 @@
+{
+  "id": 6103,
+  "name": "Buoyancy Devic",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Controls the float force",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6103.png",
+  "file": "furniture-6103.json"
+}

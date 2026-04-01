@@ -1,0 +1,15 @@
+{
+  "id": 1668,
+  "name": "Panda headgear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Transform into a panda shape to show cute and adorable feeling.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1668.png",
+  "file": "helmet-1668.json"
+}

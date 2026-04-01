@@ -1,0 +1,27 @@
+{
+  "id": 974,
+  "name": "Villager",
+  "location": "Kelan Village",
+  "image": "data/Monster_Images/monster-974.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 52,
+    "hp": 316,
+    "sp": 586,
+    "catchable": "Unknown",
+    "spd": 126,
+    "str": 19,
+    "con": 23,
+    "int": 48,
+    "wis": 42,
+    "agi": 24
+  }
+}

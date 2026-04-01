@@ -1,0 +1,15 @@
+{
+  "id": 8147,
+  "name": "Sky Jade",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is mysterious bead given by Goddess Erina",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8147.png",
+  "file": "questprop-8147.json"
+}

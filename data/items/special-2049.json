@@ -1,0 +1,18 @@
+{
+  "id": 2049,
+  "name": "White Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Jade / Grass",
+  "description": "A ring which is rubbed from white soul stone",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 11,
+    "MATK": 8
+  },
+  "image": "data/images/special-2049.png",
+  "file": "special-2049.json"
+}

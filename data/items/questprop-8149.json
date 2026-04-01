@@ -1,0 +1,15 @@
+{
+  "id": 8149,
+  "name": "Bloody Armlet",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A bloody armlet",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8149.png",
+  "file": "questprop-8149.json"
+}

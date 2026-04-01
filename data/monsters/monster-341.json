@@ -1,0 +1,27 @@
+{
+  "id": 341,
+  "name": "Purple Icy Bat",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-341.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 26,
+    "hp": 204,
+    "sp": 173,
+    "catchable": "No",
+    "spd": 69,
+    "str": 18,
+    "con": 15,
+    "int": 17,
+    "wis": 13,
+    "agi": 15
+  }
+}

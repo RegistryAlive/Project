@@ -1,0 +1,15 @@
+{
+  "id": 8076,
+  "name": "Isle Girl Card",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Makes a Revival Isle Girl become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8076.png",
+  "file": "questprop-8076.json"
+}

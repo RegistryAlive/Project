@@ -1,0 +1,15 @@
+{
+  "id": 7822,
+  "name": "Gasoline",
+  "type": "MaterialOil",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Oil",
+  "description": "Extracted from crude oil, used as common fuel.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7822.png",
+  "file": "material-7822.json"
+}

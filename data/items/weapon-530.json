@@ -1,0 +1,18 @@
+{
+  "id": 530,
+  "name": "Sapphire Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Pure Iron / Jade",
+  "description": "A magic wand made of crimson metal and sapphire.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 21,
+    "DEF": 21
+  },
+  "image": "data/images/weapon-530.png",
+  "file": "weapon-530.json"
+}

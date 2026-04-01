@@ -1,0 +1,15 @@
+{
+  "id": 6651,
+  "name": "Whale Cushion",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Ocean Overlord shrank into a fluffy and lovely cushion",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6651.png",
+  "file": "furniture-6651.json"
+}

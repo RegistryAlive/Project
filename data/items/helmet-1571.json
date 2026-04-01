@@ -1,0 +1,15 @@
+{
+  "id": 1571,
+  "name": "White Day Veil",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "Suitable for female on White Day",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1571.png",
+  "file": "helmet-1571.json"
+}

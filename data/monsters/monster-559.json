@@ -1,0 +1,27 @@
+{
+  "id": 559,
+  "name": "Aston",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-559.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 38,
+    "hp": 302,
+    "sp": 209,
+    "catchable": "Unknown",
+    "spd": 127,
+    "str": 26,
+    "con": 25,
+    "int": 14,
+    "wis": 14,
+    "agi": 35
+  }
+}

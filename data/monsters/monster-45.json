@@ -1,0 +1,39 @@
+{
+  "id": 45,
+  "name": "Triceratops Lord (Quest)",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-45.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Small Cucumber",
+      "itemId": 7425,
+      "itemFile": "material-7425.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Vine Grass",
+      "itemId": 7363,
+      "itemFile": "material-7363.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 8000,
+    "sp": 573,
+    "catchable": "Unknown",
+    "spd": 233,
+    "str": 81,
+    "con": 71,
+    "int": 36,
+    "wis": 33,
+    "agi": 49
+  }
+}

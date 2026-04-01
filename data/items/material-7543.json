@@ -1,0 +1,18 @@
+{
+  "id": 7543,
+  "name": "Yoyo Grape",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "Restrores a little SP&HP.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 15,
+    "HP": 5
+  },
+  "image": "data/images/material-7543.png",
+  "file": "material-7543.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6331,
+  "name": "Sink",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "where you can wash your hands",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6331.png",
+  "file": "furniture-6331.json"
+}

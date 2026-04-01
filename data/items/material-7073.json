@@ -1,0 +1,17 @@
+{
+  "id": 7073,
+  "name": "Gum",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Gum",
+  "description": "Sweet food that can't be swallowed",
+  "size": "1x1",
+  "attributes": {
+    "SP": 50
+  },
+  "image": "data/images/material-7073.png",
+  "file": "material-7073.json"
+}

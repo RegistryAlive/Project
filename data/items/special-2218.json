@@ -1,0 +1,18 @@
+{
+  "id": 2218,
+  "name": "Red Ribbon sna",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Red silk ribbon snake, man-private partnership",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "MaxSP": 350
+  },
+  "image": "data/images/special-2218.png",
+  "file": "special-2218.json"
+}

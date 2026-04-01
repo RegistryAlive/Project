@@ -1,0 +1,17 @@
+{
+  "id": 271,
+  "name": "Steel Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Steel / Wood",
+  "description": "A spear made from steel.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18
+  },
+  "image": "data/images/weapon-271.png",
+  "file": "weapon-271.json"
+}

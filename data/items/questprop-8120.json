@@ -1,0 +1,15 @@
+{
+  "id": 8120,
+  "name": "Sky Dragon Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Makes a Sky Green Dragon become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8120.png",
+  "file": "questprop-8120.json"
+}

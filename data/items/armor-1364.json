@@ -1,0 +1,18 @@
+{
+  "id": 1364,
+  "name": "Purple Wing Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Obtained from item mall",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 10,
+    "MAXHP": 100
+  },
+  "image": "data/images/armor-1364.png",
+  "file": "armor-1364.json"
+}

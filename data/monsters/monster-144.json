@@ -1,0 +1,39 @@
+{
+  "id": 144,
+  "name": "Spirit",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-144.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cotton Cloth",
+      "itemId": 6106,
+      "itemFile": "furniture-6106.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Unknown",
+      "itemId": 7892,
+      "itemFile": "material-7892.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 361,
+    "sp": 455,
+    "catchable": "Unknown",
+    "spd": 135,
+    "str": 28,
+    "con": 28,
+    "int": 32,
+    "wis": 32,
+    "agi": 30
+  }
+}

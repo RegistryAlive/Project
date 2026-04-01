@@ -1,0 +1,15 @@
+{
+  "id": 7786,
+  "name": "Chameleon Skin",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "A Skin of a chameleon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7786.png",
+  "file": "material-7786.json"
+}

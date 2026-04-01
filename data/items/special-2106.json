@@ -1,0 +1,18 @@
+{
+  "id": 2106,
+  "name": "War Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "A medal which can enhance magic attacking and some physical attacking",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 4,
+    "ATK": 2
+  },
+  "image": "data/images/special-2106.png",
+  "file": "special-2106.json"
+}

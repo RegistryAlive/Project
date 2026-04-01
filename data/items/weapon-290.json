@@ -1,0 +1,17 @@
+{
+  "id": 290,
+  "name": "Iron Trident",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Iron",
+  "description": "Forged precisely with iron, has 3 heads.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 56
+  },
+  "image": "data/images/weapon-290.png",
+  "file": "weapon-290.json"
+}

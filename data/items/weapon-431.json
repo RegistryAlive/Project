@@ -1,0 +1,18 @@
+{
+  "id": 431,
+  "name": "Soul Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The power diminishes depending on the user's spiritual power, absorbs the user's soul.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 28,
+    "SPD": 26
+  },
+  "image": "data/images/weapon-431.png",
+  "file": "weapon-431.json"
+}

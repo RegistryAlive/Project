@@ -1,0 +1,18 @@
+{
+  "id": 2846,
+  "name": "Water Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "Magic gloves made from blue water threads.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 12,
+    "SPD": 12
+  },
+  "image": "data/images/arm-2846.png",
+  "file": "arm-2846.json"
+}

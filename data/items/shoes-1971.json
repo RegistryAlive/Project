@@ -1,0 +1,17 @@
+{
+  "id": 1971,
+  "name": "Obsidian Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Steel / Copper",
+  "description": "An exquisite pair of sturdy steel boots",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20
+  },
+  "image": "data/images/shoes-1971.png",
+  "file": "shoes-1971.json"
+}

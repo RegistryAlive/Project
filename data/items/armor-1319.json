@@ -1,0 +1,18 @@
+{
+  "id": 1319,
+  "name": "bunny dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Vest-style burgundy light armor, paired with sultry black stockings; when equipped with other bunny series equipment at the same time, an additional set effect can be obtained",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 280,
+    "SPD": 15
+  },
+  "image": "data/images/armor-1319.png",
+  "file": "armor-1319.json"
+}

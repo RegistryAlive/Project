@@ -1,0 +1,18 @@
+{
+  "id": 224,
+  "name": "Evil Dragon Blades",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Crystallization / Pure Iron / Tin / Steel / Titanium",
+  "description": "Blades radiating greenish light",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 54,
+    "SPD": 34
+  },
+  "image": "data/images/weapon-224.png",
+  "file": "weapon-224.json"
+}

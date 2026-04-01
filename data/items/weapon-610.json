@@ -1,0 +1,18 @@
+{
+  "id": 610,
+  "name": "Holy Feather",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Saint Angela exclusive weapon after reincarnation",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 56,
+    "SPD": 40
+  },
+  "image": "data/images/weapon-610.png",
+  "file": "weapon-610.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8065,
+  "name": "Yacht Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can be exchanged for the yacht.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8065.png",
+  "file": "questprop-8065.json"
+}

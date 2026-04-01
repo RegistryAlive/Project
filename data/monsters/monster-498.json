@@ -1,0 +1,33 @@
+{
+  "id": 498,
+  "name": "Yellow Shark",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-498.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Fruit Berry Syrup",
+      "itemId": 7300,
+      "itemFile": "material-7300.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 142,
+    "hp": 947,
+    "sp": 733,
+    "catchable": "No",
+    "spd": 303,
+    "str": 48,
+    "con": 43,
+    "int": 40,
+    "wis": 36,
+    "agi": 45
+  }
+}

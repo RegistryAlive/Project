@@ -1,0 +1,15 @@
+{
+  "id": 6102,
+  "name": "Small Engine",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made of small motor",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6102.png",
+  "file": "furniture-6102.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 1136,
+  "name": "Cateran II",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-1137.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Carrot",
+      "itemId": 7430,
+      "itemFile": "material-7430.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1034,
+    "sp": 889,
+    "catchable": "Unknown",
+    "spd": 217,
+    "str": 61,
+    "con": 60,
+    "int": 53,
+    "wis": 55,
+    "agi": 41
+  }
+}

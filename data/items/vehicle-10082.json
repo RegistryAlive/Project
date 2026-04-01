@@ -1,0 +1,15 @@
+{
+  "id": 10082,
+  "name": "Cabriolet (convertible)",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 16,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A kind of engine powered vehicle with four wheels",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/vehicle-10082.png",
+  "file": "vehicle-10082.json"
+}

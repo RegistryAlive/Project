@@ -1,0 +1,27 @@
+{
+  "id": 458,
+  "name": "Pink Papilionidae",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-458.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pest Tentacles",
+      "itemId": 7790,
+      "itemFile": "material-7790.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 585,
+    "sp": 661,
+    "catchable": "Unknown",
+    "spd": 200.5,
+    "str": 39,
+    "con": 44,
+    "int": 40,
+    "wis": 473,
+    "agi": 47
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1302,
+  "name": "Rudolph Outfit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A reindeer costume, warm and comfortable, for men. Set Effect : MaxHP +450",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 250
+  },
+  "image": "data/images/armor-1302.png",
+  "file": "armor-1302.json"
+}

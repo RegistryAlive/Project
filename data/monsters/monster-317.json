@@ -1,0 +1,45 @@
+{
+  "id": 317,
+  "name": "Blue Moai",
+  "location": "Revival Isle",
+  "image": "data/Monster_Images/monster-317.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Huge Hand",
+      "itemId": 7816,
+      "itemFile": "material-7816.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Clay",
+      "itemId": 7642,
+      "itemFile": "material-7642.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sapphire",
+      "itemId": 7594,
+      "itemFile": "material-7594.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 75,
+    "hp": 889,
+    "sp": 564,
+    "catchable": "Yes",
+    "spd": 192.5,
+    "str": 45,
+    "con": 55,
+    "int": 50,
+    "wis": 35,
+    "agi": 40
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": 279,
+  "name": "Guo Ginseng Monster",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-279.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Ginseng",
+      "itemId": 7396,
+      "itemFile": "material-7396.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gyrophora",
+      "itemId": 7398,
+      "itemFile": "material-7398.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Paper Grass",
+      "itemId": 7364,
+      "itemFile": "material-7364.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Great Ginseng",
+      "itemId": 7174,
+      "itemFile": "material-7174.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 82,
+    "hp": 893,
+    "sp": 792,
+    "catchable": "Unknown",
+    "spd": 223,
+    "str": 45,
+    "con": 53,
+    "int": 48,
+    "wis": 50,
+    "agi": 50
+  }
+}

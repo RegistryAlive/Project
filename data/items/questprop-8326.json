@@ -1,0 +1,15 @@
+{
+  "id": 8326,
+  "name": "Golden Pocket Watch",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A possible clue to a case",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8326.png",
+  "file": "questprop-8326.json"
+}

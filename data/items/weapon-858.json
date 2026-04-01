@@ -1,0 +1,17 @@
+{
+  "id": 858,
+  "name": "Plasma Wafer",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 11,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A wafer which is implanted in Elin's arm",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55
+  },
+  "image": "data/images/weapon-858.png",
+  "file": "weapon-858.json"
+}

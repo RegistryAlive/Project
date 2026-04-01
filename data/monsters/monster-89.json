@@ -1,0 +1,51 @@
+{
+  "id": 89,
+  "name": "Vulture",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-89.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Feather",
+      "itemId": 7659,
+      "itemFile": "material-7659.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Funny Feather",
+      "itemId": 7661,
+      "itemFile": "material-7661.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 51,
+    "hp": 364,
+    "sp": 471,
+    "catchable": "Yes",
+    "spd": 146.5,
+    "str": 25,
+    "con": 28,
+    "int": 32,
+    "wis": 33,
+    "agi": 35
+  }
+}

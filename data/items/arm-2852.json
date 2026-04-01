@@ -1,0 +1,18 @@
+{
+  "id": 2852,
+  "name": "Knight's Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Iron / Titanium / Copper",
+  "description": "Knight's favorite gloves. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "DEF": 10
+  },
+  "image": "data/images/arm-2852.png",
+  "file": "arm-2852.json"
+}

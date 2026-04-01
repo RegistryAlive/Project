@@ -1,0 +1,18 @@
+{
+  "id": 977,
+  "name": "Koraka Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Nylon / Flower",
+  "description": "Designed for the Kouga Ninja.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18,
+    "SPD": 7
+  },
+  "image": "data/images/armor-977.png",
+  "file": "armor-977.json"
+}

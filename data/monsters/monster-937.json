@@ -1,0 +1,27 @@
+{
+  "id": 937,
+  "name": "Stone of Protection (Trojan War)",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-937.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 160,
+    "hp": 65000,
+    "sp": 3504,
+    "catchable": "Unknown",
+    "spd": 240,
+    "str": 0,
+    "con": 280,
+    "int": 0,
+    "wis": 200,
+    "agi": 0
+  }
+}

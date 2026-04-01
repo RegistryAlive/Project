@@ -1,0 +1,18 @@
+{
+  "id": 7501,
+  "name": "Bird Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Hard-won moa meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 50,
+    "SP": 30
+  },
+  "image": "data/images/material-7501.png",
+  "file": "material-7501.json"
+}

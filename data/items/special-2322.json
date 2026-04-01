@@ -1,0 +1,18 @@
+{
+  "id": 2322,
+  "name": "Ribbon filamen",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Ultra-slim silk satin soft, man-private partnership",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 50,
+    "MaxSP": 350
+  },
+  "image": "data/images/special-2322.png",
+  "file": "special-2322.json"
+}

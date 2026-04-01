@@ -1,0 +1,18 @@
+{
+  "id": 146,
+  "name": "Curly Iron Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Pure Iron / Copper",
+  "description": "Made from pure iron, wave formed blade",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-146.png",
+  "file": "weapon-146.json"
+}

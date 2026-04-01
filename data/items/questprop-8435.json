@@ -1,0 +1,15 @@
+{
+  "id": 8435,
+  "name": "Blue Pega Exch",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket to exchange for Blue Pegasus as your partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8435.png",
+  "file": "questprop-8435.json"
+}

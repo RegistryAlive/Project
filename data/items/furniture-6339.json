@@ -1,0 +1,15 @@
+{
+  "id": 6339,
+  "name": "Garage",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Used to park vehicles.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6339.png",
+  "file": "furniture-6339.json"
+}

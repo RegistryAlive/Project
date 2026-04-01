@@ -1,0 +1,18 @@
+{
+  "id": 1603,
+  "name": "Whitestone Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Rock / Magic",
+  "description": "A magical white stone crown featuring a gem",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20,
+    "DEF": 8
+  },
+  "image": "data/images/helmet-1603.png",
+  "file": "helmet-1603.json"
+}

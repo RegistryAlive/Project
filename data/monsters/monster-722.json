@@ -1,0 +1,27 @@
+{
+  "id": 722,
+  "name": "Green ET",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-722.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 3003,
+    "sp": 1215,
+    "catchable": "Unknown",
+    "spd": 290,
+    "str": 35,
+    "con": 55,
+    "int": 65,
+    "wis": 75,
+    "agi": 70
+  }
+}

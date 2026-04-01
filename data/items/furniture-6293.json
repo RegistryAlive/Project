@@ -1,0 +1,15 @@
+{
+  "id": 6293,
+  "name": "Cabinet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 19,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A general cabinet that can hold a number of items.",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6293.png",
+  "file": "furniture-6293.json"
+}

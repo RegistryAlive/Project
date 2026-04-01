@@ -1,0 +1,18 @@
+{
+  "id": 1179,
+  "name": "Wolfsilva Batt",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A spectacular silver battle gear, with the strength of the strongest lycans sealed within. Increases agility and attack.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28,
+    "ATK": 16
+  },
+  "image": "data/images/armor-1179.png",
+  "file": "armor-1179.json"
+}

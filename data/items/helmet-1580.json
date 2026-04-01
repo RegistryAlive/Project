@@ -1,0 +1,18 @@
+{
+  "id": 1580,
+  "name": "Ice Crystal Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Crystallization / Diamond",
+  "description": "Icy Crystal Helmet",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "DEF": 9
+  },
+  "image": "data/images/helmet-1580.png",
+  "file": "helmet-1580.json"
+}

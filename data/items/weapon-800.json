@@ -1,0 +1,15 @@
+{
+  "id": 800,
+  "name": "Blue Memory",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A bouquet of roses can be used as a weapon, except for bow and gun weapons.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-800.png",
+  "file": "weapon-800.json"
+}

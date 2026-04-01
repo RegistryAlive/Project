@@ -1,0 +1,27 @@
+{
+  "id": 930,
+  "name": "Spirit",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-930.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 547,
+    "sp": 1102,
+    "catchable": "Unknown",
+    "spd": 235,
+    "str": 34,
+    "con": 37,
+    "int": 63,
+    "wis": 71,
+    "agi": 53
+  }
+}

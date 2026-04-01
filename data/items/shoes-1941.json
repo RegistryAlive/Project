@@ -1,0 +1,17 @@
+{
+  "id": 1941,
+  "name": "Dark Green Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Aluminum / Steel",
+  "description": "Increases DEF after equipping",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30
+  },
+  "image": "data/images/shoes-1941.png",
+  "file": "shoes-1941.json"
+}

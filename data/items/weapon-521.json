@@ -1,0 +1,18 @@
+{
+  "id": 521,
+  "name": "Tin Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Tin / Diamond",
+  "description": "Delicate and graceful as a string of pearls.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 32,
+    "DEF": 16
+  },
+  "image": "data/images/weapon-521.png",
+  "file": "weapon-521.json"
+}

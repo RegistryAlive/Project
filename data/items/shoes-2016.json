@@ -1,0 +1,18 @@
+{
+  "id": 2016,
+  "name": "Sea Salt Clogs",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Summer clogs in fresh colors.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MaxHP": 50
+  },
+  "image": "data/images/shoes-2016.png",
+  "file": "shoes-2016.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 1013,
+  "name": "Wind Spirit (Quest)",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-1013.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 67,
+    "hp": 1104,
+    "sp": 662,
+    "catchable": "Unknown",
+    "spd": 164.5,
+    "str": 43,
+    "con": 42,
+    "int": 40,
+    "wis": 44,
+    "agi": 32
+  }
+}

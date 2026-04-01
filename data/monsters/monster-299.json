@@ -1,0 +1,33 @@
+{
+  "id": 299,
+  "name": "Flattened Starfish",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-299.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Duck Egg",
+      "itemId": 7503,
+      "itemFile": "material-7503.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Starfish Tentacles",
+      "itemId": 7795,
+      "itemFile": "material-7795.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 51,
+    "hp": 516,
+    "sp": 384,
+    "catchable": "Unknown",
+    "spd": 134.5,
+    "str": 31,
+    "con": 35,
+    "int": 32,
+    "wis": 26,
+    "agi": 29
+  }
+}

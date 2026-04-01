@@ -1,0 +1,15 @@
+{
+  "id": 8472,
+  "name": "Dog Sled ticke",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can be exchanged for a dog sled ticket",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8472.png",
+  "file": "questprop-8472.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1681,
+  "name": "Combat glasses",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The glasses made by mysterious technology will automatically project the data needed for combat into the air during combat. Each forging +1, MaxHP extra +2, up to 200",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "MaxHP": 200
+  },
+  "image": "data/images/helmet-1681.png",
+  "file": "helmet-1681.json"
+}

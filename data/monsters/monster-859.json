@@ -1,0 +1,27 @@
+{
+  "id": 859,
+  "name": "Premier Karl",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-859.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 593,
+    "sp": 578,
+    "catchable": "Unknown",
+    "spd": 185,
+    "str": 46,
+    "con": 45,
+    "int": 42,
+    "wis": 37,
+    "agi": 40
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1604,
+  "name": "Apprentice's Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Feather / Flower",
+  "description": "A hat made from feathers and mystic flowers",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 10,
+    "DEF": 7
+  },
+  "image": "data/images/helmet-1604.png",
+  "file": "helmet-1604.json"
+}

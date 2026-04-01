@@ -1,0 +1,15 @@
+{
+  "id": 8368,
+  "name": "Trilobite Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Use this to have a Trilobite for a companion!",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8368.png",
+  "file": "questprop-8368.json"
+}

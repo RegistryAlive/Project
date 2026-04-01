@@ -1,0 +1,18 @@
+{
+  "id": 337,
+  "name": "Beast Fork +9",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Cannot be socketed and traded,44% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 58,
+    "MaxHP": 560
+  },
+  "image": "data/images/weapon-337.png",
+  "file": "weapon-337.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8216,
+  "name": "Angeka's Letter",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The letter replied from Angeka to Kita",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8216.png",
+  "file": "questprop-8216.json"
+}

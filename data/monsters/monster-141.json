@@ -1,0 +1,39 @@
+{
+  "id": 141,
+  "name": "Platinum Beetle",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-141.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fresh Apple",
+      "itemId": 7519,
+      "itemFile": "material-7519.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dry Clay",
+      "itemId": 7646,
+      "itemFile": "material-7646.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 66,
+    "hp": 641,
+    "sp": 606,
+    "catchable": "Unknown",
+    "spd": 179,
+    "str": 20,
+    "con": 40,
+    "int": 58,
+    "wis": 40,
+    "agi": 40
+  }
+}

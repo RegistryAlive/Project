@@ -1,0 +1,15 @@
+{
+  "id": 8438,
+  "name": "GoldenTurtle T",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make the Golden Tortoise a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8438.png",
+  "file": "questprop-8438.json"
+}

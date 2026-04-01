@@ -1,0 +1,18 @@
+{
+  "id": 1454,
+  "name": "Stone Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Leaf / Grass",
+  "description": "Inlaid with stone for firmness.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 7
+  },
+  "image": "data/images/helmet-1454.png",
+  "file": "helmet-1454.json"
+}

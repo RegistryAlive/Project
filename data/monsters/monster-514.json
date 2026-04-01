@@ -1,0 +1,51 @@
+{
+  "id": 514,
+  "name": "Frog",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-514.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Fungus",
+      "itemId": 7521,
+      "itemFile": "material-7521.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Su Mushroom",
+      "itemId": 7525,
+      "itemFile": "material-7525.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lucid Glue",
+      "itemId": 7709,
+      "itemFile": "material-7709.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 19,
+    "hp": 145,
+    "sp": 136,
+    "catchable": "Unknown",
+    "spd": 52.5,
+    "str": 12,
+    "con": 12,
+    "int": 10,
+    "wis": 11,
+    "agi": 12
+  }
+}

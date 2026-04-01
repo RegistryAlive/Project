@@ -1,0 +1,18 @@
+{
+  "id": 1349,
+  "name": "Magica Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Where the soul and its core are located, it effectively strengthens the physical body; when equipped together with other magical girl series equipment, it can obtain additional outfit effects.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "DEF": 20
+  },
+  "image": "data/images/armor-1349.png",
+  "file": "armor-1349.json"
+}

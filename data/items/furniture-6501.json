@@ -1,0 +1,15 @@
+{
+  "id": 6501,
+  "name": "Azure TV Cabin",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Azure Series TV Cabinet with a modern feel.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6501.png",
+  "file": "furniture-6501.json"
+}

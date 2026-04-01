@@ -1,0 +1,18 @@
+{
+  "id": 2837,
+  "name": "Mysterious Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Platinum",
+  "description": "High-density Cuffs which are founded by mystique",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "ATK": 9
+  },
+  "image": "data/images/arm-2837.png",
+  "file": "arm-2837.json"
+}

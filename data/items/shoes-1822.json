@@ -1,0 +1,18 @@
+{
+  "id": 1822,
+  "name": "Beast Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Leather / Quartz (Crystal)",
+  "description": "Shoes made from toke off fur of the holy animal.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 9,
+    "MDEF": 3
+  },
+  "image": "data/images/shoes-1822.png",
+  "file": "shoes-1822.json"
+}

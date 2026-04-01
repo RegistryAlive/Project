@@ -1,0 +1,18 @@
+{
+  "id": 7049,
+  "name": "Black Forestcake",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Egg / Dairy Product",
+  "description": "A cake made from chocolate and butter",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 200
+  },
+  "image": "data/images/material-7049.png",
+  "file": "material-7049.json"
+}

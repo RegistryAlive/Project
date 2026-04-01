@@ -1,0 +1,18 @@
+{
+  "id": 1301,
+  "name": "V Butler Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A butler's uniform as elegant as a violet flower. Has 5% anti-seal effect.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "MDEF": 30
+  },
+  "image": "data/images/armor-1301.png",
+  "file": "armor-1301.json"
+}

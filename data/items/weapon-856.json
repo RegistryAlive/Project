@@ -1,0 +1,17 @@
+{
+  "id": 856,
+  "name": "Shotgun",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A shotgun given by Uncle Hunter.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50
+  },
+  "image": "data/images/weapon-856.png",
+  "file": "weapon-856.json"
+}

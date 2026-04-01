@@ -1,0 +1,27 @@
+{
+  "id": 1001,
+  "name": "White Tiger",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-1001.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 103,
+    "hp": 15000,
+    "sp": 544,
+    "catchable": "Unknown",
+    "spd": 322.5,
+    "str": 93,
+    "con": 76,
+    "int": 27,
+    "wis": 29,
+    "agi": 84
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8168,
+  "name": "Mars Aerolith",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Special stone from Mars",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8168.png",
+  "file": "questprop-8168.json"
+}

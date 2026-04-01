@@ -1,0 +1,18 @@
+{
+  "id": 7245,
+  "name": "Boiled Shrimp",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "A Shell its a kind of seafood",
+  "size": "1x1",
+  "attributes": {
+    "SP": 80,
+    "HP": 30
+  },
+  "image": "data/images/material-7245.png",
+  "file": "material-7245.json"
+}

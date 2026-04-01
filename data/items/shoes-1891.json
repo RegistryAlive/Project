@@ -1,0 +1,18 @@
+{
+  "id": 1891,
+  "name": "Leaf Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Leaf / Flower / Grass",
+  "description": "Boots made from secret leaves, flowers and vines.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 13,
+    "SPD": 11
+  },
+  "image": "data/images/shoes-1891.png",
+  "file": "shoes-1891.json"
+}

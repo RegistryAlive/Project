@@ -1,0 +1,27 @@
+{
+  "id": 623,
+  "name": "Chengheng",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-623.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 970,
+    "sp": 833,
+    "catchable": "Unknown",
+    "spd": 211,
+    "str": 61,
+    "con": 57,
+    "int": 47,
+    "wis": 52,
+    "agi": 41
+  }
+}

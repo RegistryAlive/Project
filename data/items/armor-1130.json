@@ -1,0 +1,18 @@
+{
+  "id": 1130,
+  "name": "Shadow Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Copper / Iron / Steel",
+  "description": "Armor made of steel sewn with silver thread",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28,
+    "ATK": 12
+  },
+  "image": "data/images/armor-1130.png",
+  "file": "armor-1130.json"
+}

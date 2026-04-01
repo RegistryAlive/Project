@@ -1,0 +1,18 @@
+{
+  "id": 2834,
+  "name": "Sharp Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Silver",
+  "description": "Large thorn cuff which is assembled from silver",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 9,
+    "MATK": 9
+  },
+  "image": "data/images/arm-2834.png",
+  "file": "arm-2834.json"
+}

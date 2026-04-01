@@ -1,0 +1,15 @@
+{
+  "id": 6589,
+  "name": "Xmas Snowman",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Snowman decorations can be seen everywhere on Christmas road, full of Christmas atmosphere",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6589.png",
+  "file": "furniture-6589.json"
+}

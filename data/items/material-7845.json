@@ -1,0 +1,15 @@
+{
+  "id": 7845,
+  "name": "Bottled Boiled Water",
+  "type": "MaterialWater",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 1)",
+  "description": "Boiled water, can be drank",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7845.png",
+  "file": "material-7845.json"
+}

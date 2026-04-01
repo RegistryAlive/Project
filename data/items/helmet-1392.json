@@ -1,0 +1,18 @@
+{
+  "id": 1392,
+  "name": "Copper Hairwear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Copper / Tin",
+  "description": "A light headband made from bronze.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "SPD": 6
+  },
+  "image": "data/images/helmet-1392.png",
+  "file": "helmet-1392.json"
+}

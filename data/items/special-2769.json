@@ -1,0 +1,18 @@
+{
+  "id": 2769,
+  "name": "Angel Wings+6",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 72,
+  "level": 144,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 36,
+    "MDEF": 36
+  },
+  "image": "data/images/special-2769.png",
+  "file": "special-2769.json"
+}

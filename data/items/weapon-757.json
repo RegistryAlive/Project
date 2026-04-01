@@ -1,0 +1,18 @@
+{
+  "id": 757,
+  "name": "Bronze Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "A gavel refined from bronze.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "DEF": 20
+  },
+  "image": "data/images/weapon-757.png",
+  "file": "weapon-757.json"
+}

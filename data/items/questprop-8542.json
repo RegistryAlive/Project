@@ -1,0 +1,15 @@
+{
+  "id": 8542,
+  "name": "Xaohui`s Portrait",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A portrait of the hotel boss`s daughter",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8542.png",
+  "file": "questprop-8542.json"
+}

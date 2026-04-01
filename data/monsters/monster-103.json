@@ -1,0 +1,39 @@
+{
+  "id": 103,
+  "name": "Dust Shark",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-103.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Tuna",
+      "itemId": 7491,
+      "itemFile": "material-7491.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Salmon",
+      "itemId": 7489,
+      "itemFile": "material-7489.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fugu",
+      "itemId": 7492,
+      "itemFile": "material-7492.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 151,
+    "hp": 2118,
+    "sp": 1556,
+    "catchable": "Unknown",
+    "spd": 384.5,
+    "str": 101,
+    "con": 105,
+    "int": 83,
+    "wis": 85,
+    "agi": 79
+  }
+}

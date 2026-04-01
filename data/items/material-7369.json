@@ -1,0 +1,15 @@
+{
+  "id": 7369,
+  "name": "Areca",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leaf",
+  "description": "one of the fruits, able to eat in kinds of ways",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7369.png",
+  "file": "material-7369.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7294,
+  "name": "He Riceball",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Japanese riceball",
+  "size": "1x1",
+  "attributes": {
+    "HP": 1200,
+    "SP": 600
+  },
+  "image": "data/images/material-7294.png",
+  "file": "material-7294.json"
+}

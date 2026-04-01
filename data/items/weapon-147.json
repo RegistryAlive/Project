@@ -1,0 +1,18 @@
+{
+  "id": 147,
+  "name": "Wave Steel Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Steel / Iron",
+  "description": "Forged in backfire, a wave formed blade.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 31,
+    "SPD": 31
+  },
+  "image": "data/images/weapon-147.png",
+  "file": "weapon-147.json"
+}

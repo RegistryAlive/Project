@@ -1,0 +1,15 @@
+{
+  "id": 7800,
+  "name": "Jelly Fish",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Canine",
+  "description": "It is made of a jellyfish",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7800.png",
+  "file": "material-7800.json"
+}

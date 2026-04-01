@@ -1,0 +1,15 @@
+{
+  "id": 5008,
+  "name": "Energy Halo Box",
+  "type": "ItemBox",
+  "category": "accessory",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "MaxHP+80, MaxSP+80, can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5008.png",
+  "file": "accessory-5008.json"
+}

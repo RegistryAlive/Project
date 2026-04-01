@@ -1,0 +1,18 @@
+{
+  "id": 1842,
+  "name": "Black Clogs",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Wood / Fur",
+  "description": "They cling to the feet while wearing.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "MATK": 5
+  },
+  "image": "data/images/shoes-1842.png",
+  "file": "shoes-1842.json"
+}

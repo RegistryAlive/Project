@@ -1,0 +1,15 @@
+{
+  "id": 6323,
+  "name": "Air Condition",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "It is best in summer.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6323.png",
+  "file": "furniture-6323.json"
+}

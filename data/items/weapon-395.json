@@ -1,0 +1,18 @@
+{
+  "id": 395,
+  "name": "WarriorGShield",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 14,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The favorite gun shield used by the Warrior, can be used for both offensive and defensive. Can be forged. Set : Double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 80,
+    "ATK": 30
+  },
+  "image": "data/images/weapon-395.png",
+  "file": "weapon-395.json"
+}

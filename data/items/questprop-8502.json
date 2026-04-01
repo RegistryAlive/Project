@@ -1,0 +1,15 @@
+{
+  "id": 8502,
+  "name": "Ball Bunny Tic",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The cute rabbit balloon exchange coupon can be exchanged for the cute rabbit hot air balloon ticket",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8502.png",
+  "file": "questprop-8502.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 898,
+  "name": "Shading Puppet Lord (Quest)",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-898.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 160,
+    "hp": 35000,
+    "sp": 2500,
+    "catchable": "Unknown",
+    "spd": 424,
+    "str": 90,
+    "con": 100,
+    "int": 100,
+    "wis": 98,
+    "agi": 92
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2034,
+  "name": "Green Boots-3",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Feather / Grass / Nylon",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "MDEF": 20
+  },
+  "image": "data/images/shoes-2034.png",
+  "file": "shoes-2034.json"
+}

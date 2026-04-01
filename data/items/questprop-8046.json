@@ -1,0 +1,15 @@
+{
+  "id": 8046,
+  "name": "Labor Plane Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can be exchange for labor plane",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8046.png",
+  "file": "questprop-8046.json"
+}

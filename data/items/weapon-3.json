@@ -1,0 +1,18 @@
+{
+  "id": 3,
+  "name": "Syringe",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Used to inject medicines into the body.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 1,
+    "DEF": 1
+  },
+  "image": "data/images/weapon-3.png",
+  "file": "weapon-3.json"
+}

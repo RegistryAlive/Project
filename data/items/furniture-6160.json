@@ -1,0 +1,15 @@
+{
+  "id": 6160,
+  "name": "Steam Engine",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Iron",
+  "description": "Generates steam after burning",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6160.png",
+  "file": "furniture-6160.json"
+}

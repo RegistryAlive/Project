@@ -1,0 +1,33 @@
+{
+  "id": 157,
+  "name": "Junior Guard",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-157.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Bread",
+      "itemId": 7010,
+      "itemFile": "material-7010.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "French Bread",
+      "itemId": 7015,
+      "itemFile": "material-7015.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 58,
+    "hp": 443,
+    "sp": 376,
+    "catchable": "Unknown",
+    "spd": 137,
+    "str": 38,
+    "con": 34,
+    "int": 24,
+    "wis": 24,
+    "agi": 25
+  }
+}

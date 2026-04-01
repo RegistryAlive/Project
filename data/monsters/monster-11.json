@@ -1,0 +1,51 @@
+{
+  "id": 11,
+  "name": "Cold-Skinned Monster",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-11.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Common Stone",
+      "itemId": 7630,
+      "itemFile": "material-7630.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coprinus",
+      "itemId": 7483,
+      "itemFile": "material-7483.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Oak",
+      "itemId": 7652,
+      "itemFile": "material-7652.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 106,
+    "hp": 1450,
+    "sp": 1163,
+    "catchable": "No",
+    "spd": 279,
+    "str": 60,
+    "con": 63,
+    "int": 65,
+    "wis": 70,
+    "agi": 60
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2277,
+  "name": "Silvery Spell Bead",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Titanium / Mercury / Magic",
+  "description": "A white orb leading magic into holder's body.",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 40
+  },
+  "image": "data/images/special-2277.png",
+  "file": "special-2277.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6466,
+  "name": "Tumbler Toy",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A tumbler toy",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6466.png",
+  "file": "furniture-6466.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2126,
+  "name": "Celerity Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To evenly upgrade attack power and agility",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3,
+    "SPD": 3
+  },
+  "image": "data/images/special-2126.png",
+  "file": "special-2126.json"
+}

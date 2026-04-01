@@ -1,0 +1,17 @@
+{
+  "id": 7451,
+  "name": "Gooseberry",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "SP": 30
+  },
+  "image": "data/images/material-7451.png",
+  "file": "material-7451.json"
+}

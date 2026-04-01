@@ -1,0 +1,39 @@
+{
+  "id": 30,
+  "name": "Tyrannosaur",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-30.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Areca",
+      "itemId": 7369,
+      "itemFile": "material-7369.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lei Dragon Thigh",
+      "itemId": 7813,
+      "itemFile": "material-7813.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 78,
+    "hp": 1468,
+    "sp": 420,
+    "catchable": "Yes",
+    "spd": 163,
+    "str": 69,
+    "con": 94,
+    "int": 24,
+    "wis": 24,
+    "agi": 23
+  }
+}

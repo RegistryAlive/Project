@@ -1,0 +1,18 @@
+{
+  "id": 688,
+  "name": "Night?s Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The claws are made of pitch-black black iron, like the claws of a beast lurking in the night. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "SPD": 40
+  },
+  "image": "data/images/weapon-688.png",
+  "file": "weapon-688.json"
+}

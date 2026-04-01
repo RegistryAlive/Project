@@ -1,0 +1,15 @@
+{
+  "id": 6467,
+  "name": "Lovely Octopus",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A lovely octopus",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6467.png",
+  "file": "furniture-6467.json"
+}

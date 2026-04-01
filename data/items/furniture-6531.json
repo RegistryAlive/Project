@@ -1,0 +1,15 @@
+{
+  "id": 6531,
+  "name": "Summer Chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, vacation style cool lounge chair",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6531.png",
+  "file": "furniture-6531.json"
+}

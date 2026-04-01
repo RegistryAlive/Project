@@ -1,0 +1,18 @@
+{
+  "id": 2924,
+  "name": "C.Bubble Brac",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Colorful bubbles surround the side, as if the wonderful feeling of being on the bottom of the sea. When attacked by a water-based enemy, the damage is reduced by 3% (the effect will disappear if you change the shape of the bracelet)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MaxHP": 350
+  },
+  "image": "data/images/arm-2924.png",
+  "file": "arm-2924.json"
+}

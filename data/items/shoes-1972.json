@@ -1,0 +1,17 @@
+{
+  "id": 1972,
+  "name": "Black Quill Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Feather",
+  "description": "A pair of shoes woven from feathers",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10
+  },
+  "image": "data/images/shoes-1972.png",
+  "file": "shoes-1972.json"
+}

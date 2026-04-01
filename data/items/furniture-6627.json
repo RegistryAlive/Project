@@ -1,0 +1,15 @@
+{
+  "id": 6627,
+  "name": "Lover bathtub",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Valentine's style, bathtub with rose aroma",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6627.png",
+  "file": "furniture-6627.json"
+}

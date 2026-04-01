@@ -1,0 +1,33 @@
+{
+  "id": 213,
+  "name": "Yellow Rock",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-213.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Fugu Hot Pot",
+      "itemId": 7175,
+      "itemFile": "material-7175.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 92,
+    "hp": 552,
+    "sp": 434,
+    "catchable": "Unknown",
+    "spd": 188,
+    "str": 37,
+    "con": 28,
+    "int": 24,
+    "wis": 23,
+    "agi": 25
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2719,
+  "name": "Succubus Wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Gorgeous devil-shaped wings with eye-catching colors can be inlaid",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15
+  },
+  "image": "data/images/special-2719.png",
+  "file": "special-2719.json"
+}

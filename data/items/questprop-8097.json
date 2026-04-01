@@ -1,0 +1,15 @@
+{
+  "id": 8097,
+  "name": "Key of Gold Box",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The key to all mysterious golden boxes throughout the world. It can be used only once. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8097.png",
+  "file": "questprop-8097.json"
+}

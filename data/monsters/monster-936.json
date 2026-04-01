@@ -1,0 +1,27 @@
+{
+  "id": 936,
+  "name": "Stone Moai",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-936.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1141,
+    "sp": 731,
+    "catchable": "Unknown",
+    "spd": 241,
+    "str": 56,
+    "con": 67,
+    "int": 50,
+    "wis": 44,
+    "agi": 53
+  }
+}

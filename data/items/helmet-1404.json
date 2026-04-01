@@ -1,0 +1,18 @@
+{
+  "id": 1404,
+  "name": "Pirate's Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Copper",
+  "description": "A general hat for a common sea robber",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 16,
+    "ATK": 5
+  },
+  "image": "data/images/helmet-1404.png",
+  "file": "helmet-1404.json"
+}

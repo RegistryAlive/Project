@@ -1,0 +1,15 @@
+{
+  "id": 8107,
+  "name": "Fairy Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a Fairy become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8107.png",
+  "file": "questprop-8107.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 994,
+  "name": "Water Dragon",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-994.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 130,
+    "hp": 9525,
+    "sp": 1008,
+    "catchable": "Unknown",
+    "spd": 355,
+    "str": 95,
+    "con": 100,
+    "int": 60,
+    "wis": 55,
+    "agi": 80
+  }
+}

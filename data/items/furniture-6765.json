@@ -1,0 +1,15 @@
+{
+  "id": 6765,
+  "name": "Game Machine",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 5,
+  "level": 10,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A simple game machine, double click game to start",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6765.png",
+  "file": "furniture-6765.json"
+}

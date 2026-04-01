@@ -1,0 +1,18 @@
+{
+  "id": 1965,
+  "name": "Dainty Clogs",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Wood / Nylon",
+  "description": "A pair of cute pink clogs",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "SPD": 8
+  },
+  "image": "data/images/shoes-1965.png",
+  "file": "shoes-1965.json"
+}

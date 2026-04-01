@@ -1,0 +1,15 @@
+{
+  "id": 6324,
+  "name": "Bookcase",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "used to hold books.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6324.png",
+  "file": "furniture-6324.json"
+}

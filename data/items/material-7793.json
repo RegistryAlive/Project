@@ -1,0 +1,15 @@
+{
+  "id": 7793,
+  "name": "Conch Shell",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Canine",
+  "description": "A Hard shell of a conch",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7793.png",
+  "file": "material-7793.json"
+}

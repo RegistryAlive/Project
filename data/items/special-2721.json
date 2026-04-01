@@ -1,0 +1,18 @@
+{
+  "id": 2721,
+  "name": "Pink smurfwing",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The pink and blue wings are made to imitate the appearance of the elf.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 25,
+    "MaxHP": 300
+  },
+  "image": "data/images/special-2721.png",
+  "file": "special-2721.json"
+}

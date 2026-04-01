@@ -1,0 +1,15 @@
+{
+  "id": 1642,
+  "name": "Don't Sell",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Free to use, for Langrisser.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1642.png",
+  "file": "helmet-1642.json"
+}

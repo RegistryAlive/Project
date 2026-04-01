@@ -1,0 +1,15 @@
+{
+  "id": 8298,
+  "name": "Lambkin Gem",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Gem that lambkin wants you to give to Xao Wen",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8298.png",
+  "file": "questprop-8298.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 765,
+  "name": "Huge Sandworm",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-765.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 130,
+    "hp": 1139,
+    "sp": 1324,
+    "catchable": "Unknown",
+    "spd": 349,
+    "str": 88,
+    "con": 75,
+    "int": 75,
+    "wis": 75,
+    "agi": 77
+  }
+}

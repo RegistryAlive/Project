@@ -1,0 +1,15 @@
+{
+  "id": 6649,
+  "name": "Hammock capsul",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A bed made of cloth rope, suspended in mid-air",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6649.png",
+  "file": "furniture-6649.json"
+}

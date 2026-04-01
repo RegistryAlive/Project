@@ -1,0 +1,17 @@
+{
+  "id": 10016,
+  "name": "Submarine",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 11,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "It can go deep into the water",
+  "size": "5x5",
+  "attributes": {
+    "SPECIAL": 37148
+  },
+  "image": "data/images/vehicle-10016.png",
+  "file": "vehicle-10016.json"
+}

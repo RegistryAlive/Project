@@ -1,0 +1,27 @@
+{
+  "id": 731,
+  "name": "Guard",
+  "location": "Athens",
+  "image": "data/Monster_Images/monster-731.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 88,
+    "hp": 1025,
+    "sp": 825,
+    "catchable": "Unknown",
+    "spd": 240,
+    "str": 59,
+    "con": 60,
+    "int": 40,
+    "wis": 51,
+    "agi": 54
+  }
+}

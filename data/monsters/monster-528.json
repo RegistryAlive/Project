@@ -1,0 +1,39 @@
+{
+  "id": 528,
+  "name": "Gem Lizard",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-528.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Common Grass",
+      "itemId": 7365,
+      "itemFile": "material-7365.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Claw",
+      "itemId": 7775,
+      "itemFile": "material-7775.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Bone",
+      "itemId": 7776,
+      "itemFile": "material-7776.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 743,
+    "sp": 903,
+    "catchable": "Unknown",
+    "spd": 237,
+    "str": 53,
+    "con": 53,
+    "int": 57,
+    "wis": 56,
+    "agi": 51
+  }
+}

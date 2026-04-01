@@ -1,0 +1,17 @@
+{
+  "id": 1000,
+  "name": "Perfect Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Titanium / Copper / Iron",
+  "description": "Very strong, durable, mobile...perfection.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 32
+  },
+  "image": "data/images/armor-1000.png",
+  "file": "armor-1000.json"
+}

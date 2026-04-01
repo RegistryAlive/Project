@@ -1,0 +1,17 @@
+{
+  "id": 2827,
+  "name": "Gray Steel Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Titanium",
+  "description": "An armguard which is made from firm grey steel",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 24
+  },
+  "image": "data/images/arm-2827.png",
+  "file": "arm-2827.json"
+}

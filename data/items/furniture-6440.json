@@ -1,0 +1,15 @@
+{
+  "id": 6440,
+  "name": "Snow Ground Tile",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Tiles used for the floor.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6440.png",
+  "file": "furniture-6440.json"
+}

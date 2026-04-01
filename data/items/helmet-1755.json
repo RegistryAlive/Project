@@ -1,0 +1,18 @@
+{
+  "id": 1755,
+  "name": "Rogue Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Protect you from wind and rain. Dmg +1% when using sword,spear or halberd.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 25,
+    "SPD": 20
+  },
+  "image": "data/images/helmet-1755.png",
+  "file": "helmet-1755.json"
+}

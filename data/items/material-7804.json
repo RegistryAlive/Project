@@ -1,0 +1,15 @@
+{
+  "id": 7804,
+  "name": "Dye",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Water (Type 2)",
+  "description": "Rough and original dye",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7804.png",
+  "file": "material-7804.json"
+}

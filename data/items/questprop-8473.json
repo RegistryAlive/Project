@@ -1,0 +1,15 @@
+{
+  "id": 8473,
+  "name": "Tauren voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make Minotaur a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8473.png",
+  "file": "questprop-8473.json"
+}

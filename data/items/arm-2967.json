@@ -1,0 +1,18 @@
+{
+  "id": 2967,
+  "name": "Hattori Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Leather / Grass",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "SPD": 4
+  },
+  "image": "data/images/arm-2967.png",
+  "file": "arm-2967.json"
+}

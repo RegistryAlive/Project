@@ -1,0 +1,17 @@
+{
+  "id": 1373,
+  "name": "Nurse's Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The symbol of their speciality.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/helmet-1373.png",
+  "file": "helmet-1373.json"
+}

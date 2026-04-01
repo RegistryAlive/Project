@@ -1,0 +1,15 @@
+{
+  "id": 7797,
+  "name": "Ant Antennae",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Canine",
+  "description": "The antennae of ant",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7797.png",
+  "file": "material-7797.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1181,
+  "name": "Shimmeros Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": "Platinum / Silver / Pure Iron / Steel / Crystallization",
+  "description": "An elaborate suit of armor forged from a strange shimmering alloy.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 41
+  },
+  "image": "data/images/armor-1181.png",
+  "file": "armor-1181.json"
+}

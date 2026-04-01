@@ -1,0 +1,45 @@
+{
+  "id": 1091,
+  "name": "Cypress Devil",
+  "location": "Kelan Village's Woods",
+  "image": "data/Monster_Images/monster-1092.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cypress",
+      "itemId": 7654,
+      "itemFile": "material-7654.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Brazil Mushroom",
+      "itemId": 7522,
+      "itemFile": "material-7522.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Original Rubber",
+      "itemId": 6029,
+      "itemFile": "furniture-6029.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Cypress Wood",
+      "itemId": 7650,
+      "itemFile": "material-7650.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 6,
+    "hp": 75,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 11,
+    "str": 4,
+    "con": 6,
+    "int": 3,
+    "wis": 4,
+    "agi": 1
+  }
+}

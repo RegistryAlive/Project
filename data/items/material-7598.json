@@ -1,0 +1,15 @@
+{
+  "id": 7598,
+  "name": "Pink Crystal",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Quartz (Crystal)",
+  "description": "A Rare pink crystal",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7598.png",
+  "file": "material-7598.json"
+}

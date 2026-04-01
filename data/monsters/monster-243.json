@@ -1,0 +1,51 @@
+{
+  "id": 243,
+  "name": "Red Velociraptor",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-243.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Roo Meat",
+      "itemId": 7479,
+      "itemFile": "material-7479.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Tooth",
+      "itemId": 7809,
+      "itemFile": "material-7809.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dragon Tooth",
+      "itemId": 7725,
+      "itemFile": "material-7725.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 59,
+    "hp": 547,
+    "sp": 520,
+    "catchable": "Unknown",
+    "spd": 172.5,
+    "str": 30,
+    "con": 35,
+    "int": 35,
+    "wis": 35,
+    "agi": 42
+  }
+}

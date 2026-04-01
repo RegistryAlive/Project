@@ -1,0 +1,15 @@
+{
+  "id": 6243,
+  "name": "Water Desalination",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make seawater to be fresh water.",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6243.png",
+  "file": "furniture-6243.json"
+}

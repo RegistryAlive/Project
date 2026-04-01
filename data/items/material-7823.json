@@ -1,0 +1,15 @@
+{
+  "id": 7823,
+  "name": "Naphtha",
+  "type": "MaterialOil",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable Oil",
+  "description": "Extracted from crude oil,used as effective fuel.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7823.png",
+  "file": "material-7823.json"
+}

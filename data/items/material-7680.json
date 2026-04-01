@@ -1,0 +1,15 @@
+{
+  "id": 7680,
+  "name": "Black Vicugna Fur",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fur",
+  "description": "Black fur of a vicugna",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7680.png",
+  "file": "material-7680.json"
+}

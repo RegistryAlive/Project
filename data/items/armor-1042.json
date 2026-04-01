@@ -1,0 +1,17 @@
+{
+  "id": 1042,
+  "name": "Dark Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Nylon / Flower",
+  "description": "Dark magic silk allow Ninja's to hide at night.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28
+  },
+  "image": "data/images/armor-1042.png",
+  "file": "armor-1042.json"
+}

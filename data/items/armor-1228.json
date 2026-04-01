@@ -1,0 +1,18 @@
+{
+  "id": 1228,
+  "name": "Jazz dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 35,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Fit and handsome shape, simple dress that makes people feel light and neat",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 27,
+    "MaxHP": 100
+  },
+  "image": "data/images/armor-1228.png",
+  "file": "armor-1228.json"
+}

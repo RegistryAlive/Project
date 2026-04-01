@@ -1,0 +1,15 @@
+{
+  "id": 1990,
+  "name": "Arale Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "For testing",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1990.png",
+  "file": "shoes-1990.json"
+}

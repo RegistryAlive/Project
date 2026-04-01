@@ -1,0 +1,27 @@
+{
+  "id": 1153,
+  "name": "Ancient Chameleon",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-1154.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Chameleon Tongue",
+      "itemId": 7785,
+      "itemFile": "material-7785.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 61,
+    "hp": 568,
+    "sp": 551,
+    "catchable": "Yes",
+    "spd": 171.5,
+    "str": 35,
+    "con": 36,
+    "int": 35,
+    "wis": 37,
+    "agi": 40
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2073,
+  "name": "Spirit Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Iron / Silver",
+  "description": "A medal which can enhance magic",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "MaxSP": 90
+  },
+  "image": "data/images/special-2073.png",
+  "file": "special-2073.json"
+}

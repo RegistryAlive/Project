@@ -1,0 +1,18 @@
+{
+  "id": 442,
+  "name": "Shadow Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 22,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A bow used by Kanako",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "SPD": 19
+  },
+  "image": "data/images/weapon-442.png",
+  "file": "weapon-442.json"
+}

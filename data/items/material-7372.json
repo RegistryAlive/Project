@@ -1,0 +1,15 @@
+{
+  "id": 7372,
+  "name": "Small Daisy",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "A yellow flower",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7372.png",
+  "file": "material-7372.json"
+}

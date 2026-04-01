@@ -1,0 +1,18 @@
+{
+  "id": 997,
+  "name": "Pretty Qi Pao",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "Chinese formal wear with elaborate decorations.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 10,
+    "DEF": 8
+  },
+  "image": "data/images/armor-997.png",
+  "file": "armor-997.json"
+}

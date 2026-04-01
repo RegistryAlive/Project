@@ -1,0 +1,17 @@
+{
+  "id": 1018,
+  "name": "Leather Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Iron / Leather",
+  "description": "Fur-armour which has certain toughness",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 16
+  },
+  "image": "data/images/armor-1018.png",
+  "file": "armor-1018.json"
+}

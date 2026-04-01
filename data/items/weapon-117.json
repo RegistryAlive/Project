@@ -1,0 +1,18 @@
+{
+  "id": 117,
+  "name": "Iron Big Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A sword made from iron, its quite wide.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "SPD": 14
+  },
+  "image": "data/images/weapon-117.png",
+  "file": "weapon-117.json"
+}

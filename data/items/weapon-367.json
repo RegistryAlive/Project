@@ -1,0 +1,18 @@
+{
+  "id": 367,
+  "name": "Knight Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Imitated the appearance of the legendary weapon, the halberd with powerful destructive power, 46% critical strike possibility",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 75,
+    "MaxHP": 330
+  },
+  "image": "data/images/weapon-367.png",
+  "file": "weapon-367.json"
+}

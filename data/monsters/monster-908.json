@@ -1,0 +1,27 @@
+{
+  "id": 908,
+  "name": "Snake Charmer",
+  "location": "Calcutta",
+  "image": "data/Monster_Images/monster-908.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 96,
+    "hp": 937,
+    "sp": 937,
+    "catchable": "Unknown",
+    "spd": 268,
+    "str": 60,
+    "con": 52,
+    "int": 57,
+    "wis": 57,
+    "agi": 62
+  }
+}

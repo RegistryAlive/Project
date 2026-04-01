@@ -1,0 +1,18 @@
+{
+  "id": 519,
+  "name": "Scale Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Tin / Jade / Leather",
+  "description": "Made of dragon scale and possessing an evil gem.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 26,
+    "ATK": 18
+  },
+  "image": "data/images/weapon-519.png",
+  "file": "weapon-519.json"
+}

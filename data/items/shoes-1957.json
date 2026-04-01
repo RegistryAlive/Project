@@ -1,0 +1,18 @@
+{
+  "id": 1957,
+  "name": "Orange Leather Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Leather / Feather / Nylon",
+  "description": "Awesome boots",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25,
+    "SPD": 15
+  },
+  "image": "data/images/shoes-1957.png",
+  "file": "shoes-1957.json"
+}

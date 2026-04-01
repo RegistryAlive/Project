@@ -1,0 +1,17 @@
+{
+  "id": 1351,
+  "name": "Defence Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 50,
+  "level": 100,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "From the item mall game \"Jigsaw\".",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 50
+  },
+  "image": "data/images/armor-1351.png",
+  "file": "armor-1351.json"
+}

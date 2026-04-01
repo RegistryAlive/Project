@@ -1,0 +1,18 @@
+{
+  "id": 7165,
+  "name": "Pineapple Popsicle",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Water (Type 1) / Fruit",
+  "description": "Frozen pineapple popsicle",
+  "size": "1x1",
+  "attributes": {
+    "SP": 180,
+    "HP": 70
+  },
+  "image": "data/images/material-7165.png",
+  "file": "material-7165.json"
+}

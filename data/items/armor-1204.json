@@ -1,0 +1,18 @@
+{
+  "id": 1204,
+  "name": "Phoenix Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A phoenix robe relic, that has mysterious powers after further investigation. Only for woman.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 199,
+    "SPD": 199
+  },
+  "image": "data/images/armor-1204.png",
+  "file": "armor-1204.json"
+}

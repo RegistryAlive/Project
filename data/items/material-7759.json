@@ -1,0 +1,15 @@
+{
+  "id": 7759,
+  "name": "Black Widow's Venom",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Venom",
+  "description": "Poisonous liquid from a Black Widow",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7759.png",
+  "file": "material-7759.json"
+}

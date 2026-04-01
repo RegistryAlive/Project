@@ -1,0 +1,18 @@
+{
+  "id": 618,
+  "name": "Holy Cane",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 50,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A cane protected by the power of holiness. Forging +2 increases critical strike by 1% (up to 50%)",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 45,
+    "MaxHP": 550
+  },
+  "image": "data/images/weapon-618.png",
+  "file": "weapon-618.json"
+}

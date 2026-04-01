@@ -1,0 +1,17 @@
+{
+  "id": 7290,
+  "name": "Brown Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Good noodles with sauce soup",
+  "size": "1x1",
+  "attributes": {
+    "HP": 550
+  },
+  "image": "data/images/material-7290.png",
+  "file": "material-7290.json"
+}

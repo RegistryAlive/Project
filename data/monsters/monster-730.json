@@ -1,0 +1,27 @@
+{
+  "id": 730,
+  "name": "Guard",
+  "location": "Kelan Village",
+  "image": "data/Monster_Images/monster-730.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 58,
+    "hp": 587,
+    "sp": 414,
+    "catchable": "Unknown",
+    "spd": 133,
+    "str": 54,
+    "con": 48,
+    "int": 22,
+    "wis": 27,
+    "agi": 23
+  }
+}

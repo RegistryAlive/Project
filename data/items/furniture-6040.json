@@ -1,0 +1,15 @@
+{
+  "id": 6040,
+  "name": "Integrated Flavor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Flower",
+  "description": "Extracted from many flowers",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6040.png",
+  "file": "furniture-6040.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6544,
+  "name": "Heart Fountain",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Valentine's style, love heart shaped fountain",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6544.png",
+  "file": "furniture-6544.json"
+}

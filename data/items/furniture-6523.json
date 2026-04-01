@@ -1,0 +1,15 @@
+{
+  "id": 6523,
+  "name": "Rose Basket",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Bright red roses are best for expressing love",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6523.png",
+  "file": "furniture-6523.json"
+}

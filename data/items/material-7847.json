@@ -1,0 +1,18 @@
+{
+  "id": 7847,
+  "name": "Fried Rice Noodles",
+  "type": "Material",
+  "category": "material",
+  "rank": 3,
+  "level": 6,
+  "rarity": "common",
+  "base": "Rice",
+  "description": "Fried rice noodles with a unique cooking technique",
+  "size": "1x1",
+  "attributes": {
+    "HP": 130,
+    "SP": 20
+  },
+  "image": "data/images/material-7847.png",
+  "file": "material-7847.json"
+}

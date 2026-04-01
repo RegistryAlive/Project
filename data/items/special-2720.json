@@ -1,0 +1,18 @@
+{
+  "id": 2720,
+  "name": "butterfly wing",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Decorated with gorgeously colored butterfly wings, lightly tapping it as if it is about to dance, can be inlaid",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MaxHP": 300
+  },
+  "image": "data/images/special-2720.png",
+  "file": "special-2720.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 535,
+  "name": "Ox-headed Demon",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-535.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Yo BBQ Sauce",
+      "itemId": 7309,
+      "itemFile": "material-7309.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 184,
+    "hp": 51463,
+    "sp": 2500,
+    "catchable": "Unknown",
+    "spd": 912,
+    "str": 426,
+    "con": 456,
+    "int": 234,
+    "wis": 222,
+    "agi": 318
+  }
+}

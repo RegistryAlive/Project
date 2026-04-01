@@ -1,0 +1,18 @@
+{
+  "id": 2949,
+  "name": "Dandelion brac",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Slightly increases the chance of counterattack in battle. (If you change the shape of the bracelet, the effect will disappear together)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "DEF": 50
+  },
+  "image": "data/images/arm-2949.png",
+  "file": "arm-2949.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2629,
+  "name": "Archangel's Wi",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 60,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It cannot be socketed",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 60
+  },
+  "image": "data/images/special-2629.png",
+  "file": "special-2629.json"
+}

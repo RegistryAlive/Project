@@ -1,0 +1,18 @@
+{
+  "id": 2885,
+  "name": "Delicate Silk",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Magic gloves used by Goddess",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 23,
+    "DEF": 9
+  },
+  "image": "data/images/arm-2885.png",
+  "file": "arm-2885.json"
+}

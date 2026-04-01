@@ -1,0 +1,15 @@
+{
+  "id": 6366,
+  "name": "Wit Maid",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "can help you direct your pets",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6366.png",
+  "file": "furniture-6366.json"
+}

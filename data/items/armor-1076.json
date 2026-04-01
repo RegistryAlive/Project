@@ -1,0 +1,17 @@
+{
+  "id": 1076,
+  "name": "King's Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Titanium / Gold / Steel",
+  "description": "Finest leather adorned with purest steel scales.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 36
+  },
+  "image": "data/images/armor-1076.png",
+  "file": "armor-1076.json"
+}

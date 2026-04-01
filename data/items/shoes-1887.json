@@ -1,0 +1,18 @@
+{
+  "id": 1887,
+  "name": "Blue Net Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "Shoes made from seaflowers and skyagress's fibres.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 23,
+    "MATK": 7
+  },
+  "image": "data/images/shoes-1887.png",
+  "file": "shoes-1887.json"
+}

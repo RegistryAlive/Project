@@ -1,0 +1,33 @@
+{
+  "id": 217,
+  "name": "Panda",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-217.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Bamboo",
+      "itemId": 7367,
+      "itemFile": "material-7367.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 1090,
+    "sp": 748,
+    "catchable": "Unknown",
+    "spd": 223,
+    "str": 49,
+    "con": 65,
+    "int": 51,
+    "wis": 46,
+    "agi": 47
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2813,
+  "name": "Gold Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Thin cuff which is made from gold",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 5,
+    "MDEF": 5
+  },
+  "image": "data/images/arm-2813.png",
+  "file": "arm-2813.json"
+}

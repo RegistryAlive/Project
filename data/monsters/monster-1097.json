@@ -1,0 +1,39 @@
+{
+  "id": 1097,
+  "name": "The Chief Mate",
+  "location": "Cook's Fleet",
+  "image": "data/Monster_Images/monster-1098.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Taro",
+      "itemId": 7432,
+      "itemFile": "material-7432.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 67,
+    "hp": 477,
+    "sp": 609,
+    "catchable": "Yes",
+    "spd": 186.5,
+    "str": 43,
+    "con": 35,
+    "int": 40,
+    "wis": 40,
+    "agi": 43
+  }
+}

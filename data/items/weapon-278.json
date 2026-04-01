@@ -1,0 +1,17 @@
+{
+  "id": 278,
+  "name": "Rider's Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A long spear used by riders.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 32
+  },
+  "image": "data/images/weapon-278.png",
+  "file": "weapon-278.json"
+}

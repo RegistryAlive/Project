@@ -1,0 +1,27 @@
+{
+  "id": 680,
+  "name": "Elliott",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-680.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 57,
+    "hp": 542,
+    "sp": 412,
+    "catchable": "Unknown",
+    "spd": 149.5,
+    "str": 42,
+    "con": 44,
+    "int": 26,
+    "wis": 27,
+    "agi": 32
+  }
+}

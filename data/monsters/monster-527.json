@@ -1,0 +1,39 @@
+{
+  "id": 527,
+  "name": "Fire Lizard",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-527.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Common Grass",
+      "itemId": 7365,
+      "itemFile": "material-7365.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Claw",
+      "itemId": 7775,
+      "itemFile": "material-7775.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Bone",
+      "itemId": 7776,
+      "itemFile": "material-7776.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 91,
+    "hp": 781,
+    "sp": 863,
+    "catchable": "Unknown",
+    "spd": 244.5,
+    "str": 57,
+    "con": 56,
+    "int": 53,
+    "wis": 53,
+    "agi": 54
+  }
+}

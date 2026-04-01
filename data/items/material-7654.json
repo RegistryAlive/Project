@@ -1,0 +1,15 @@
+{
+  "id": 7654,
+  "name": "Cypress",
+  "type": "MaterialWood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "Heavy wood of a cypress",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7654.png",
+  "file": "material-7654.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6542,
+  "name": "Love Tiles",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Valentine's style, love-shaped floor tiles on the ground",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6542.png",
+  "file": "furniture-6542.json"
+}

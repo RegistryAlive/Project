@@ -1,0 +1,17 @@
+{
+  "id": 295,
+  "name": "Long Falchion",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Extended length makes it more balanced.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 400
+  },
+  "image": "data/images/weapon-295.png",
+  "file": "weapon-295.json"
+}

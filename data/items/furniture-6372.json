@@ -1,0 +1,15 @@
+{
+  "id": 6372,
+  "name": "Bookshelf",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Open shelves",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6372.png",
+  "file": "furniture-6372.json"
+}

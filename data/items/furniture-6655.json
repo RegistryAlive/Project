@@ -1,0 +1,15 @@
+{
+  "id": 6655,
+  "name": "Shell WallLamp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Shell-shaped white wall lamp",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6655.png",
+  "file": "furniture-6655.json"
+}

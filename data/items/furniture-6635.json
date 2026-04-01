@@ -1,0 +1,15 @@
+{
+  "id": 6635,
+  "name": "Easter deco",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "2021 Easter hanging paintings",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6635.png",
+  "file": "furniture-6635.json"
+}

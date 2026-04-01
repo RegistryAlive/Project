@@ -1,0 +1,27 @@
+{
+  "id": 1138,
+  "name": "Pirate",
+  "location": "Blackwind Cave",
+  "image": "data/Monster_Images/monster-1139.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 724,
+    "sp": 563,
+    "catchable": "Unknown",
+    "spd": 232,
+    "str": 57,
+    "con": 54,
+    "int": 39,
+    "wis": 34,
+    "agi": 56
+  }
+}

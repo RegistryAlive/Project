@@ -1,0 +1,18 @@
+{
+  "id": 2800,
+  "name": "Eagle Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Iron",
+  "description": "Armguard made of the claws of a red eagle.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 22,
+    "SPD": 7
+  },
+  "image": "data/images/arm-2800.png",
+  "file": "arm-2800.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8376,
+  "name": "Sheep exch v",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can exchange for Sheep to be your partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8376.png",
+  "file": "questprop-8376.json"
+}

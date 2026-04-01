@@ -1,0 +1,15 @@
+{
+  "id": 6712,
+  "name": "Tiger Spring",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A drawing of the Tiger, for Yingchun.",
+  "size": "2x5",
+  "attributes": {},
+  "image": "data/images/furniture-6712.png",
+  "file": "furniture-6712.json"
+}

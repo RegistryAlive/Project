@@ -1,0 +1,18 @@
+{
+  "id": 895,
+  "name": "Sky Sword +7",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "40% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 54,
+    "SPD": 54
+  },
+  "image": "data/images/weapon-895.png",
+  "file": "weapon-895.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1143,
+  "name": "Girly Yukata",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 10,
+  "rarity": "common",
+  "base": null,
+  "description": "Special holiday costume obtained at the Summer Festival, limited to girls.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "MDEF": 3
+  },
+  "image": "data/images/armor-1143.png",
+  "file": "armor-1143.json"
+}

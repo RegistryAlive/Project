@@ -1,0 +1,33 @@
+{
+  "id": 414,
+  "name": "Orangutang",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-414.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 81,
+    "hp": 962,
+    "sp": 705,
+    "catchable": "Yes",
+    "spd": 227.5,
+    "str": 45,
+    "con": 58,
+    "int": 48,
+    "wis": 42,
+    "agi": 53
+  }
+}

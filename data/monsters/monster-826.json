@@ -1,0 +1,27 @@
+{
+  "id": 826,
+  "name": "Mystic Old Man",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-826.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 170,
+    "hp": 2129,
+    "sp": 2043,
+    "catchable": "Unknown",
+    "spd": 455,
+    "str": 100,
+    "con": 100,
+    "int": 100,
+    "wis": 110,
+    "agi": 100
+  }
+}

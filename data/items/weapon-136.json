@@ -1,0 +1,18 @@
+{
+  "id": 136,
+  "name": "Rip Bronze Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "Made from bronze forged into a three edged blade.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 23,
+    "SPD": 23
+  },
+  "image": "data/images/weapon-136.png",
+  "file": "weapon-136.json"
+}

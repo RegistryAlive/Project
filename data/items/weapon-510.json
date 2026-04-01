@@ -1,0 +1,18 @@
+{
+  "id": 510,
+  "name": "Polished Wand+1",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "No sockets, 24% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 12,
+    "MaxSP": 100
+  },
+  "image": "data/images/weapon-510.png",
+  "file": "weapon-510.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 953,
+  "name": "Tower (Trojan War)",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-953.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 10000,
+    "sp": 3437,
+    "catchable": "Unknown",
+    "spd": 225,
+    "str": 0,
+    "con": 250,
+    "int": 0,
+    "wis": 200,
+    "agi": 0
+  }
+}

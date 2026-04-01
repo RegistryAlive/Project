@@ -1,0 +1,15 @@
+{
+  "id": 6385,
+  "name": "Modular Stereos",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "An electric product changes the music in the tent.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6385.png",
+  "file": "furniture-6385.json"
+}

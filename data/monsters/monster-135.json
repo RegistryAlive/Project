@@ -1,0 +1,39 @@
+{
+  "id": 135,
+  "name": "Fire Brown Horse",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-135.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Soya",
+      "itemId": 7469,
+      "itemFile": "material-7469.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 734,
+    "sp": 800,
+    "catchable": "Unknown",
+    "spd": 188,
+    "str": 40,
+    "con": 45,
+    "int": 38,
+    "wis": 53,
+    "agi": 40
+  }
+}

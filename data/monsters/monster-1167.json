@@ -1,0 +1,51 @@
+{
+  "id": 1167,
+  "name": "Pig",
+  "location": "Maya",
+  "image": "data/Monster_Images/monster-1167.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Water Spinach",
+      "itemId": 7412,
+      "itemFile": "material-7412.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Green Garlic",
+      "itemId": 7415,
+      "itemFile": "material-7415.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cole",
+      "itemId": 7406,
+      "itemFile": "material-7406.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Noodles",
+      "itemId": 7515,
+      "itemFile": "material-7515.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pig Skin",
+      "itemId": 7777,
+      "itemFile": "material-7777.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 0,
+    "sp": 0,
+    "catchable": null,
+    "spd": 182,
+    "str": 48,
+    "con": 50,
+    "int": 41,
+    "wis": 40,
+    "agi": 37
+  }
+}

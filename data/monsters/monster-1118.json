@@ -1,0 +1,39 @@
+{
+  "id": 1118,
+  "name": "Yellow Mantis",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1119.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Cole",
+      "itemId": 7406,
+      "itemFile": "material-7406.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Claw",
+      "itemId": 7775,
+      "itemFile": "material-7775.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Hard Shell",
+      "itemId": 7789,
+      "itemFile": "material-7789.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 69,
+    "hp": 680,
+    "sp": 642,
+    "catchable": "Unknown",
+    "spd": 183.5,
+    "str": 42,
+    "con": 42,
+    "int": 41,
+    "wis": 42,
+    "agi": 40
+  }
+}

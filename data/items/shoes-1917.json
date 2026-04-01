@@ -1,0 +1,18 @@
+{
+  "id": 1917,
+  "name": "Long Purple Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Grass / Leaf",
+  "description": "Boots which are made up from silk",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 16,
+    "MDEF": 14
+  },
+  "image": "data/images/shoes-1917.png",
+  "file": "shoes-1917.json"
+}

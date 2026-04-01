@@ -1,0 +1,17 @@
+{
+  "id": 7524,
+  "name": "Ha Mushroom",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "A Mushroom like flower",
+  "size": "1x1",
+  "attributes": {
+    "HP": 20
+  },
+  "image": "data/images/material-7524.png",
+  "file": "material-7524.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7749,
+  "name": "Hornet Comb",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Beehive",
+  "description": "It is made of yellow honeycomb pieces",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7749.png",
+  "file": "material-7749.json"
+}

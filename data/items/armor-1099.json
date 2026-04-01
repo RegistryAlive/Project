@@ -1,0 +1,17 @@
+{
+  "id": 1099,
+  "name": "Bride's Wear",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass / Leaf",
+  "description": "Bride's clothes which are worn in weddings",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-1099.png",
+  "file": "armor-1099.json"
+}

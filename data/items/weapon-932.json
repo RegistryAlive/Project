@@ -1,0 +1,18 @@
+{
+  "id": 932,
+  "name": "Thunder Spear+5",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 26,
+    "MAXSP": 180
+  },
+  "image": "data/images/weapon-932.png",
+  "file": "weapon-932.json"
+}

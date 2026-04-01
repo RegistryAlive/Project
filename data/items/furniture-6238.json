@@ -1,0 +1,15 @@
+{
+  "id": 6238,
+  "name": "Auto Loom",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The evolvement of the Loom to save time.",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/furniture-6238.png",
+  "file": "furniture-6238.json"
+}

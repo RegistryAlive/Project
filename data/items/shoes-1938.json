@@ -1,0 +1,18 @@
+{
+  "id": 1938,
+  "name": "Green Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Grass / Flower / Iron",
+  "description": "Made of hide and herbs",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 8,
+    "SPD": 3
+  },
+  "image": "data/images/shoes-1938.png",
+  "file": "shoes-1938.json"
+}

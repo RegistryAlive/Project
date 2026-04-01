@@ -1,0 +1,18 @@
+{
+  "id": 2934,
+  "name": "Ghostfire Ring",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The cold phosphorous fire wafted on his side. When attacked by a fire attribute enemy, the damage is reduced by 3% (if stitched as a numerical equipment, the shape effect of the bracelet will disappear after stitching)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "SPD": 46
+  },
+  "image": "data/images/arm-2934.png",
+  "file": "arm-2934.json"
+}

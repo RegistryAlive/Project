@@ -1,0 +1,39 @@
+{
+  "id": 107,
+  "name": "Jumping Shark",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-107.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Salmon",
+      "itemId": 7489,
+      "itemFile": "material-7489.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tuna",
+      "itemId": 7491,
+      "itemFile": "material-7491.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fugu",
+      "itemId": 7492,
+      "itemFile": "material-7492.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 151,
+    "hp": 2100,
+    "sp": 1409,
+    "catchable": "Unknown",
+    "spd": 384.5,
+    "str": 101,
+    "con": 105,
+    "int": 83,
+    "wis": 85,
+    "agi": 79
+  }
+}

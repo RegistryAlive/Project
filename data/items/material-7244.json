@@ -1,0 +1,18 @@
+{
+  "id": 7244,
+  "name": "Boiled Sepia",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "Spits inky liquid in the water to escape attack.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 300,
+    "SP": 85
+  },
+  "image": "data/images/material-7244.png",
+  "file": "material-7244.json"
+}

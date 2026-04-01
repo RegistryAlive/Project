@@ -1,0 +1,18 @@
+{
+  "id": 210,
+  "name": "Dragon Rage Sw",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dragon-shaped blade. Adds greatly to attack power",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 48,
+    "SPD": 32
+  },
+  "image": "data/images/weapon-210.png",
+  "file": "weapon-210.json"
+}

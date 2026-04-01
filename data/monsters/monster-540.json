@@ -1,0 +1,27 @@
+{
+  "id": 540,
+  "name": "Aer",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-540.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 57,
+    "hp": 522,
+    "sp": 399,
+    "catchable": "Unknown",
+    "spd": 149.5,
+    "str": 44,
+    "con": 42,
+    "int": 27,
+    "wis": 26,
+    "agi": 32
+  }
+}

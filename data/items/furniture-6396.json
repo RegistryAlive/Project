@@ -1,0 +1,15 @@
+{
+  "id": 6396,
+  "name": "Wall Furnace",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used to keep the room warm",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6396.png",
+  "file": "furniture-6396.json"
+}

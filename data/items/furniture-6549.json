@@ -1,0 +1,15 @@
+{
+  "id": 6549,
+  "name": "Star seat",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The star-shaped seat seems to be sitting on the starry sky.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6549.png",
+  "file": "furniture-6549.json"
+}

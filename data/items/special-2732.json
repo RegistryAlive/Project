@@ -1,0 +1,18 @@
+{
+  "id": 2732,
+  "name": "Sky Fairy Ribb",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Light and fluttering ribbons. It has 15% anti-seal effect and can be inlaid.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 15,
+    "SPD": 20
+  },
+  "image": "data/images/special-2732.png",
+  "file": "special-2732.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1087,
+  "name": "Seer's Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It can guide magic well. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "MATK": 10
+  },
+  "image": "data/images/armor-1087.png",
+  "file": "armor-1087.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6003,
+  "name": "Wooden Winch",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "It is made of wood",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6003.png",
+  "file": "furniture-6003.json"
+}

@@ -1,0 +1,57 @@
+{
+  "id": 367,
+  "name": "Echinate Starfish",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-367.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Starfish Tentacles",
+      "itemId": 7795,
+      "itemFile": "material-7795.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sea Water",
+      "itemId": 7891,
+      "itemFile": "material-7891.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    }
+  ],
+  "stats": {
+    "level": 54,
+    "hp": 515,
+    "sp": 454,
+    "catchable": "Yes",
+    "spd": 145,
+    "str": 34,
+    "con": 34,
+    "int": 31,
+    "wis": 31,
+    "agi": 32
+  }
+}

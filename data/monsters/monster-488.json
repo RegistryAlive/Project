@@ -1,0 +1,33 @@
+{
+  "id": 488,
+  "name": "Forest Parrot",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-488.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Black Forestcake",
+      "itemId": 7049,
+      "itemFile": "material-7049.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 41,
+    "hp": 232,
+    "sp": 180,
+    "catchable": "No",
+    "spd": 89.5,
+    "str": 14,
+    "con": 14,
+    "int": 9,
+    "wis": 11,
+    "agi": 14
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 10034,
+  "name": "Hot Air Ballon",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Gigantic and special flying equipment that is powered by the hot air it produces.",
+  "size": "4x5",
+  "attributes": {
+    "SPECIAL": 36975
+  },
+  "image": "data/images/vehicle-10034.png",
+  "file": "vehicle-10034.json"
+}

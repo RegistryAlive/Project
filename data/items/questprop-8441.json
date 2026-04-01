@@ -1,0 +1,15 @@
+{
+  "id": 8441,
+  "name": "Canghai Harpy",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make Canghai Harpy a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8441.png",
+  "file": "questprop-8441.json"
+}

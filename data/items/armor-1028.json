@@ -1,0 +1,17 @@
+{
+  "id": 1028,
+  "name": "War Demon Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Nylon / Flower / Steel",
+  "description": "Standard armor for War Demons.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 36
+  },
+  "image": "data/images/armor-1028.png",
+  "file": "armor-1028.json"
+}

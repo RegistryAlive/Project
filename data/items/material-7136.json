@@ -1,0 +1,17 @@
+{
+  "id": 7136,
+  "name": "Thousand-Leaves Cake",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Rice / Wheat",
+  "description": "Spring House's delicious cake",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200
+  },
+  "image": "data/images/material-7136.png",
+  "file": "material-7136.json"
+}

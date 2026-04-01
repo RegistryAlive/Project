@@ -1,0 +1,17 @@
+{
+  "id": 1206,
+  "name": "Sunshine Hani",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 45,
+  "level": 90,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Designer clothing, made with precious materials. Luxurious casual clothes.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50
+  },
+  "image": "data/images/armor-1206.png",
+  "file": "armor-1206.json"
+}

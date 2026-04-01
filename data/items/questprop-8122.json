@@ -1,0 +1,15 @@
+{
+  "id": 8122,
+  "name": "Registration Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can be used for registering all kind of regular activitives during the event period.Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8122.png",
+  "file": "questprop-8122.json"
+}

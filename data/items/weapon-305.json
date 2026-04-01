@@ -1,0 +1,18 @@
+{
+  "id": 305,
+  "name": "Beast Fork",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "ATK+10,MaxHp+80,+24% Critical. Can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "MaxHP": 80
+  },
+  "image": "data/images/weapon-305.png",
+  "file": "weapon-305.json"
+}

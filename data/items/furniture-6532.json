@@ -1,0 +1,15 @@
+{
+  "id": 6532,
+  "name": "Summer Table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, round table covered with white tablecloths and refreshing drinks",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6532.png",
+  "file": "furniture-6532.json"
+}

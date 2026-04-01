@@ -1,0 +1,15 @@
+{
+  "id": 6056,
+  "name": "Nail",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Rock",
+  "description": "It Fixes things",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6056.png",
+  "file": "furniture-6056.json"
+}

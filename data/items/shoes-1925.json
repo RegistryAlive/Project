@@ -1,0 +1,18 @@
+{
+  "id": 1925,
+  "name": "Light Blue Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Nylon / Leather",
+  "description": "Good-shaped chemical boots.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 27,
+    "MaxSP": 100
+  },
+  "image": "data/images/shoes-1925.png",
+  "file": "shoes-1925.json"
+}

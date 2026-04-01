@@ -1,0 +1,15 @@
+{
+  "id": 7602,
+  "name": "White Silvery",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Platinum",
+  "description": "Valuable white silver",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7602.png",
+  "file": "material-7602.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7154,
+  "name": "Roasted Goose",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Meat",
+  "description": "Roasted goose meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150,
+    "SP": 50
+  },
+  "image": "data/images/material-7154.png",
+  "file": "material-7154.json"
+}

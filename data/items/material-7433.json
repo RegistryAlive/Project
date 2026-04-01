@@ -1,0 +1,17 @@
+{
+  "id": 7433,
+  "name": "Apple",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "HP": 40
+  },
+  "image": "data/images/material-7433.png",
+  "file": "material-7433.json"
+}

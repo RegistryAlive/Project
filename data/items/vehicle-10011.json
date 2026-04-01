@@ -1,0 +1,17 @@
+{
+  "id": 10011,
+  "name": "Yacht",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Small boat with high speed",
+  "size": "5x4",
+  "attributes": {
+    "SPECIAL": 46912
+  },
+  "image": "data/images/vehicle-10011.png",
+  "file": "vehicle-10011.json"
+}

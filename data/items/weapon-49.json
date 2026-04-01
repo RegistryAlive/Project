@@ -1,0 +1,18 @@
+{
+  "id": 49,
+  "name": "Lotus Falcon",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Copper / Iron",
+  "description": "A crimson army broadsword made out of copper",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "DEF": 6
+  },
+  "image": "data/images/weapon-49.png",
+  "file": "weapon-49.json"
+}

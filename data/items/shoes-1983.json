@@ -1,0 +1,17 @@
+{
+  "id": 1983,
+  "name": "Camelia Sandal",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The shoe is made of japanese camellia representing ideal love, irreplaceable and must be different.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 50
+  },
+  "image": "data/images/shoes-1983.png",
+  "file": "shoes-1983.json"
+}

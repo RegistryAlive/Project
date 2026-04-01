@@ -1,0 +1,17 @@
+{
+  "id": 7306,
+  "name": "Holy Water",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Heals physical strength",
+  "size": "1x1",
+  "attributes": {
+    "HP": 0
+  },
+  "image": "data/images/material-7306.png",
+  "file": "material-7306.json"
+}

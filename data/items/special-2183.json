@@ -1,0 +1,17 @@
+{
+  "id": 2183,
+  "name": "Swift Waistban",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A waistband enhance the wearer's agility",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 80
+  },
+  "image": "data/images/special-2183.png",
+  "file": "special-2183.json"
+}

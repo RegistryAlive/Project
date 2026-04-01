@@ -1,0 +1,17 @@
+{
+  "id": 7340,
+  "name": "Ruyi Persimmon",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The sweet and plump yellow fruits are the raw material for making Chinese New Year furniture.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150
+  },
+  "image": "data/images/material-7340.png",
+  "file": "material-7340.json"
+}

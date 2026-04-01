@@ -1,0 +1,18 @@
+{
+  "id": 2947,
+  "name": "Darktide Arm",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Using the bracer of the fangs of the deep-sea alien beast can reduce the damage received by 1%. When equipped with other dark tide series equipment at the same time, you can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "DEF": 30
+  },
+  "image": "data/images/arm-2947.png",
+  "file": "arm-2947.json"
+}

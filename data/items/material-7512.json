@@ -1,0 +1,17 @@
+{
+  "id": 7512,
+  "name": "Vicuna's Milk",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Dairy Product",
+  "description": "Milk of a vicuna,usually be found in Inca",
+  "size": "1x1",
+  "attributes": {
+    "SP": 120
+  },
+  "image": "data/images/material-7512.png",
+  "file": "material-7512.json"
+}

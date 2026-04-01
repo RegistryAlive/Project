@@ -1,0 +1,17 @@
+{
+  "id": 7186,
+  "name": "Millet Liqueur",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A wine made from millet",
+  "size": "1x1",
+  "attributes": {
+    "SP": 165
+  },
+  "image": "data/images/material-7186.png",
+  "file": "material-7186.json"
+}

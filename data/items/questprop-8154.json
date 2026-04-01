@@ -1,0 +1,15 @@
+{
+  "id": 8154,
+  "name": "Gold Foil",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A kind of palette can be used on porcelain",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8154.png",
+  "file": "questprop-8154.json"
+}

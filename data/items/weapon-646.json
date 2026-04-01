@@ -1,0 +1,18 @@
+{
+  "id": 646,
+  "name": "Bronze Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Copper",
+  "description": "A claw made from Bronze",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 2,
+    "SPD": 4
+  },
+  "image": "data/images/weapon-646.png",
+  "file": "weapon-646.json"
+}

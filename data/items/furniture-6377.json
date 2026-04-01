@@ -1,0 +1,15 @@
+{
+  "id": 6377,
+  "name": "Cherry Door",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "can go to the cherry world",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6377.png",
+  "file": "furniture-6377.json"
+}

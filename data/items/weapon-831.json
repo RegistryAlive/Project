@@ -1,0 +1,18 @@
+{
+  "id": 831,
+  "name": "Feather D. Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The folding fan made of extremely light and thin metal, the dual-handed fan is also light and dexterous. 46% critical strike possible",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 90,
+    "MATK": 30
+  },
+  "image": "data/images/weapon-831.png",
+  "file": "weapon-831.json"
+}

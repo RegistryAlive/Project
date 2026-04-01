@@ -1,0 +1,17 @@
+{
+  "id": 7015,
+  "name": "French Bread",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat",
+  "description": "French bread.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 150
+  },
+  "image": "data/images/material-7015.png",
+  "file": "material-7015.json"
+}

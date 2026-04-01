@@ -1,0 +1,15 @@
+{
+  "id": 6300,
+  "name": "Storeroom",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "can be used to store items.",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6300.png",
+  "file": "furniture-6300.json"
+}

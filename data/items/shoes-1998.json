@@ -1,0 +1,15 @@
+{
+  "id": 1998,
+  "name": "Doctors Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Shoes worn by doctors, for men",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1998.png",
+  "file": "shoes-1998.json"
+}

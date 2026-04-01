@@ -1,0 +1,18 @@
+{
+  "id": 424,
+  "name": "Fury Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Bow has been modified, speed and precision are unmatched, power is amazing.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 21,
+    "SPD": 19
+  },
+  "image": "data/images/weapon-424.png",
+  "file": "weapon-424.json"
+}

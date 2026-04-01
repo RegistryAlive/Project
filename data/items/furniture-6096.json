@@ -1,0 +1,15 @@
+{
+  "id": 6096,
+  "name": "Lamp",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Silicon",
+  "description": "It can be used for lighting",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6096.png",
+  "file": "furniture-6096.json"
+}

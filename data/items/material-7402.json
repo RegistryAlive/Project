@@ -1,0 +1,17 @@
+{
+  "id": 7402,
+  "name": "Sugar",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Crystallization",
+  "description": "A purified sweet item, distilled from honey.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 10
+  },
+  "image": "data/images/material-7402.png",
+  "file": "material-7402.json"
+}

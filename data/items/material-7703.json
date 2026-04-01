@@ -1,0 +1,15 @@
+{
+  "id": 7703,
+  "name": "Pure Drop",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 2)",
+  "description": "A Pure drop from a jelly monster",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7703.png",
+  "file": "material-7703.json"
+}

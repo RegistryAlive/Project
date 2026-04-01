@@ -1,0 +1,15 @@
+{
+  "id": 5043,
+  "name": "ice snowflake",
+  "type": "ItemPetFruit",
+  "category": "accessory",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Allows the snow girl to randomly increase the ability value by one point, and can only be synthesized with the partner's enhanced props",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5043.png",
+  "file": "accessory-5043.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 65,
+  "name": "Gold Dracoblade",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Gold / Iron",
+  "description": "The huge blade gives off a golden gleam that reminds you of a gold dragon and it has a high attack power to match that gleam.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 36
+  },
+  "image": "data/images/weapon-65.png",
+  "file": "weapon-65.json"
+}

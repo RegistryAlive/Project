@@ -1,0 +1,15 @@
+{
+  "id": 7740,
+  "name": "Common Snake G",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Snake gall extracted from a common snake.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7740.png",
+  "file": "material-7740.json"
+}

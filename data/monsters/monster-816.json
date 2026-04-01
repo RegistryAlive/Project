@@ -1,0 +1,27 @@
+{
+  "id": 816,
+  "name": "Mary Lou",
+  "location": "Kelan Village",
+  "image": "data/Monster_Images/monster-816.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 33,
+    "hp": 182,
+    "sp": 310,
+    "catchable": "Unknown",
+    "spd": 97.5,
+    "str": 12,
+    "con": 13,
+    "int": 26,
+    "wis": 24,
+    "agi": 24
+  }
+}

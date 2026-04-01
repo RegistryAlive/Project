@@ -1,0 +1,15 @@
+{
+  "id": 8508,
+  "name": "Emerald Turt T",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket to make the Emerald Turtle a companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8508.png",
+  "file": "questprop-8508.json"
+}

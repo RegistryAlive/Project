@@ -1,0 +1,15 @@
+{
+  "id": 6452,
+  "name": "Love Tile",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Floor tiles",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6452.png",
+  "file": "furniture-6452.json"
+}

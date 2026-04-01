@@ -1,0 +1,27 @@
+{
+  "id": 1133,
+  "name": "Pirate",
+  "location": "Blackwind Cave",
+  "image": "data/Monster_Images/monster-1134.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 7247,
+    "sp": 563,
+    "catchable": "Yes",
+    "spd": 232,
+    "str": 57,
+    "con": 54,
+    "int": 39,
+    "wis": 34,
+    "agi": 56
+  }
+}

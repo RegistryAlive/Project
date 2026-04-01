@@ -1,0 +1,15 @@
+{
+  "id": 771,
+  "name": "Broken Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Steel / Wood",
+  "description": "A damaged gavel after excessive use.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-771.png",
+  "file": "weapon-771.json"
+}

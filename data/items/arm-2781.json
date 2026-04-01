@@ -1,0 +1,17 @@
+{
+  "id": 2781,
+  "name": "Leather Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Gloves which are made of hide",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10
+  },
+  "image": "data/images/arm-2781.png",
+  "file": "arm-2781.json"
+}

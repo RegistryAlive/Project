@@ -1,0 +1,15 @@
+{
+  "id": 8034,
+  "name": "Socks",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Santa Claus will stuff these socks on Christmas.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8034.png",
+  "file": "questprop-8034.json"
+}

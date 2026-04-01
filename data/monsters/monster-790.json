@@ -1,0 +1,27 @@
+{
+  "id": 790,
+  "name": "La. Tim (Quest)",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-790.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 9500,
+    "sp": 685,
+    "catchable": "Unknown",
+    "spd": 195,
+    "str": 35,
+    "con": 41,
+    "int": 44,
+    "wis": 45,
+    "agi": 45
+  }
+}

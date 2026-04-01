@@ -1,0 +1,39 @@
+{
+  "id": 387,
+  "name": "Frenzy Skeleton",
+  "location": "Ghost Ship",
+  "image": "data/Monster_Images/monster-387.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Angry Skeleton",
+      "itemId": 7806,
+      "itemFile": "material-7806.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Energy Stone",
+      "itemId": 7815,
+      "itemFile": "material-7815.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pink Crystal",
+      "itemId": 7598,
+      "itemFile": "material-7598.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 87,
+    "hp": 960,
+    "sp": 751,
+    "catchable": "Unknown",
+    "spd": 238.5,
+    "str": 53,
+    "con": 56,
+    "int": 52,
+    "wis": 45,
+    "agi": 54
+  }
+}

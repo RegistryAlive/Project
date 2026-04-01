@@ -1,0 +1,18 @@
+{
+  "id": 1284,
+  "name": "Dinner Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A blue dinner suit with protective magic attached. Reduces magic damage taken by 5%",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 300,
+    "SPD": 20
+  },
+  "image": "data/images/armor-1284.png",
+  "file": "armor-1284.json"
+}

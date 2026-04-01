@@ -1,0 +1,15 @@
+{
+  "id": 6132,
+  "name": "Cabin of Airship",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 15,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "It is the space of operation and seat",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6132.png",
+  "file": "furniture-6132.json"
+}

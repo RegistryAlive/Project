@@ -1,0 +1,18 @@
+{
+  "id": 2895,
+  "name": "Platimum Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Platinum / Iron / Steel",
+  "description": "A pair of sturdy bracers crafted from platimum",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28,
+    "ATK": 9
+  },
+  "image": "data/images/arm-2895.png",
+  "file": "arm-2895.json"
+}

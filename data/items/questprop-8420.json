@@ -1,0 +1,15 @@
+{
+  "id": 8420,
+  "name": "L Dolphin vouc",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make loving dolphins a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8420.png",
+  "file": "questprop-8420.json"
+}

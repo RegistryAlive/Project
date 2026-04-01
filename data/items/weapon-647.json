@@ -1,0 +1,18 @@
+{
+  "id": 647,
+  "name": "Iron Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Iron",
+  "description": "A claw made from iron.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3,
+    "SPD": 5
+  },
+  "image": "data/images/weapon-647.png",
+  "file": "weapon-647.json"
+}

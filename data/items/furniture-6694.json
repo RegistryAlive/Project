@@ -1,0 +1,15 @@
+{
+  "id": 6694,
+  "name": "Yew blue CTree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A Christmas tree decorated with blue and gold decorations. There are gifts from Santa claus beside it.",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6694.png",
+  "file": "furniture-6694.json"
+}

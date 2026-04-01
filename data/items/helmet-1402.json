@@ -1,0 +1,18 @@
+{
+  "id": 1402,
+  "name": "Mage's Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A magic hat which is made from specific hide",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 8,
+    "MDEF": 5
+  },
+  "image": "data/images/helmet-1402.png",
+  "file": "helmet-1402.json"
+}

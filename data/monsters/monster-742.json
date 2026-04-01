@@ -1,0 +1,27 @@
+{
+  "id": 742,
+  "name": "Hat",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-742.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 65,
+    "hp": 642,
+    "sp": 484,
+    "catchable": "Unknown",
+    "spd": 169.5,
+    "str": 48,
+    "con": 51,
+    "int": 29,
+    "wis": 31,
+    "agi": 36
+  }
+}

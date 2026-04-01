@@ -1,0 +1,18 @@
+{
+  "id": 998,
+  "name": "Golden Qi Pao",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Flower / Gold",
+  "description": "Cheong-sam ,its patterns are made up by spun gold",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 11,
+    "MDEF": 10
+  },
+  "image": "data/images/armor-998.png",
+  "file": "armor-998.json"
+}

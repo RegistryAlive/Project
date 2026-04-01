@@ -1,0 +1,18 @@
+{
+  "id": 1280,
+  "name": "Evil Heart",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "An ominous black battle suit that can gain the power of the evil god when worn. +2 per forge, additional +1 to SPD, up to +50",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 32,
+    "ATK": 30
+  },
+  "image": "data/images/armor-1280.png",
+  "file": "armor-1280.json"
+}

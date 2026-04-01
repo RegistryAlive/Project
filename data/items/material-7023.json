@@ -1,0 +1,17 @@
+{
+  "id": 7023,
+  "name": "Steamed Buns",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat",
+  "description": "A Bun made from flour",
+  "size": "1x1",
+  "attributes": {
+    "HP": 50
+  },
+  "image": "data/images/material-7023.png",
+  "file": "material-7023.json"
+}

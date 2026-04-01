@@ -1,0 +1,15 @@
+{
+  "id": 8029,
+  "name": "Master's Wine",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The Brewing master's wine with good quality.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8029.png",
+  "file": "questprop-8029.json"
+}

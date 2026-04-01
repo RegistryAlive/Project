@@ -1,0 +1,18 @@
+{
+  "id": 1839,
+  "name": "Death Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Leather / Magic",
+  "description": "They can help the wearer to defend any enemy.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 21,
+    "MATK": 9
+  },
+  "image": "data/images/shoes-1839.png",
+  "file": "shoes-1839.json"
+}

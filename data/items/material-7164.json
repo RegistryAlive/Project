@@ -1,0 +1,18 @@
+{
+  "id": 7164,
+  "name": "Fruit Sundaes",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Water (Type 1) / Fruit",
+  "description": "Delicious fruit sundaes",
+  "size": "1x1",
+  "attributes": {
+    "SP": 350,
+    "HP": 150
+  },
+  "image": "data/images/material-7164.png",
+  "file": "material-7164.json"
+}

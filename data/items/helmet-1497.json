@@ -1,0 +1,18 @@
+{
+  "id": 1497,
+  "name": "Sun Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Gold / Diamond",
+  "description": "A crown which emanates a little red light.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 16,
+    "MATK": 9
+  },
+  "image": "data/images/helmet-1497.png",
+  "file": "helmet-1497.json"
+}

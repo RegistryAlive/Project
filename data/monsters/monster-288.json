@@ -1,0 +1,39 @@
+{
+  "id": 288,
+  "name": "Mayan Red Race",
+  "location": "Mayan Forest",
+  "image": "data/Monster_Images/monster-288.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Crystal",
+      "itemId": 7597,
+      "itemFile": "material-7597.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 958,
+    "sp": 817,
+    "catchable": "Yes",
+    "spd": 245,
+    "str": 55,
+    "con": 55,
+    "int": 55,
+    "wis": 50,
+    "agi": 55
+  }
+}

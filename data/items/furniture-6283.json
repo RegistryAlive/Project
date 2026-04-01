@@ -1,0 +1,15 @@
+{
+  "id": 6283,
+  "name": "Hammock",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "made of cloth and hanged in mind air.",
+  "size": "5x4",
+  "attributes": {},
+  "image": "data/images/furniture-6283.png",
+  "file": "furniture-6283.json"
+}

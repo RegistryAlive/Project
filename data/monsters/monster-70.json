@@ -1,0 +1,51 @@
+{
+  "id": 70,
+  "name": "Hard Shell Snail",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-70.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Grume of Snail",
+      "itemId": 7799,
+      "itemFile": "material-7799.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Spring Onion",
+      "itemId": 7414,
+      "itemFile": "material-7414.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Soybean",
+      "itemId": 7465,
+      "itemFile": "material-7465.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 8,
+    "hp": 68,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 24,
+    "str": 5,
+    "con": 4,
+    "int": 4,
+    "wis": 5,
+    "agi": 6
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8020,
+  "name": "Meng's Hazelnu",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Squirrel's favorite fruit",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8020.png",
+  "file": "questprop-8020.json"
+}

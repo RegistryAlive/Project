@@ -1,0 +1,17 @@
+{
+  "id": 1847,
+  "name": "Copper Woven Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Heavy defensive boots made from copper threads.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 13
+  },
+  "image": "data/images/shoes-1847.png",
+  "file": "shoes-1847.json"
+}

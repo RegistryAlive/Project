@@ -1,0 +1,18 @@
+{
+  "id": 782,
+  "name": "Hematite Mallet",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Pure Iron / Wood",
+  "description": "Made out of Hematite ore and wood",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "DEF": 6
+  },
+  "image": "data/images/weapon-782.png",
+  "file": "weapon-782.json"
+}

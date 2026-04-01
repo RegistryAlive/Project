@@ -1,0 +1,18 @@
+{
+  "id": 1858,
+  "name": "Long Copper Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Copper",
+  "description": "Long fighting boots which are made from bronze",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "DEF": 6
+  },
+  "image": "data/images/shoes-1858.png",
+  "file": "shoes-1858.json"
+}

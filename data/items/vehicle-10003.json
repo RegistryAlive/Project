@@ -1,0 +1,17 @@
+{
+  "id": 10003,
+  "name": "Mighty Plane",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Flies by a driving helix",
+  "size": "4x3",
+  "attributes": {
+    "SPECIAL": 59909
+  },
+  "image": "data/images/vehicle-10003.png",
+  "file": "vehicle-10003.json"
+}

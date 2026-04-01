@@ -1,0 +1,17 @@
+{
+  "id": 2452,
+  "name": "Wit's Cape",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A cape used by Wits and available to socket",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 54
+  },
+  "image": "data/images/special-2452.png",
+  "file": "special-2452.json"
+}

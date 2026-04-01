@@ -1,0 +1,15 @@
+{
+  "id": 6621,
+  "name": "Party Tiles",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "New Years party-style floor tiles allow players to change to different floor designs",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6621.png",
+  "file": "furniture-6621.json"
+}

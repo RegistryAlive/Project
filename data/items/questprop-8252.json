@@ -1,0 +1,15 @@
+{
+  "id": 8252,
+  "name": "Pumpkin Seed",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Seed",
+  "description": "Plant it to bear Halloween Pumpkin",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8252.png",
+  "file": "questprop-8252.json"
+}

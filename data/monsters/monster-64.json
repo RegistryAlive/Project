@@ -1,0 +1,51 @@
+{
+  "id": 64,
+  "name": "Green Snowman",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-64.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Dye",
+      "itemId": 7804,
+      "itemFile": "material-7804.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snow Crystal",
+      "itemId": 7803,
+      "itemFile": "material-7803.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Watermelon",
+      "itemId": 7440,
+      "itemFile": "material-7440.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cypress",
+      "itemId": 7654,
+      "itemFile": "material-7654.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Galena Sand",
+      "itemId": 7577,
+      "itemFile": "material-7577.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 67,
+    "hp": 672,
+    "sp": 609,
+    "catchable": "Yes",
+    "spd": 180.5,
+    "str": 41,
+    "con": 42,
+    "int": 38,
+    "wis": 40,
+    "agi": 40
+  }
+}

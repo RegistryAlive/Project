@@ -1,0 +1,17 @@
+{
+  "id": 266,
+  "name": "War Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Wood",
+  "description": "A simple and efficient weapon of war.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 8
+  },
+  "image": "data/images/weapon-266.png",
+  "file": "weapon-266.json"
+}

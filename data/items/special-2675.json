@@ -1,0 +1,15 @@
+{
+  "id": 2675,
+  "name": "Tenacity Saddle",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Ride on this to increase your constitution",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2675.png",
+  "file": "special-2675.json"
+}

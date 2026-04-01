@@ -1,0 +1,18 @@
+{
+  "id": 61,
+  "name": "Draconic Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Iron / Pure Iron / Steel / Titanium / Hard Tissue",
+  "description": "An impressive knife forged by the dragon slayer",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 56,
+    "DEF": 32
+  },
+  "image": "data/images/weapon-61.png",
+  "file": "weapon-61.json"
+}

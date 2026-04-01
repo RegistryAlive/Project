@@ -1,0 +1,15 @@
+{
+  "id": 6689,
+  "name": "Pumpkin Tower",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Pumpkins skillfully stacked to form a tower.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6689.png",
+  "file": "furniture-6689.json"
+}

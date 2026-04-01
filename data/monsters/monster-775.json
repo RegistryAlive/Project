@@ -1,0 +1,27 @@
+{
+  "id": 775,
+  "name": "Immortal Mummy (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-775.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 87,
+    "hp": 5350,
+    "sp": 730,
+    "catchable": "Unknown",
+    "spd": 222.5,
+    "str": 71,
+    "con": 69,
+    "int": 39,
+    "wis": 36,
+    "agi": 46
+  }
+}

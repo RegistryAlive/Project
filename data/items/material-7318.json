@@ -1,0 +1,18 @@
+{
+  "id": 7318,
+  "name": "Chicken with R",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 24,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Nourishment for the PvP server",
+  "size": "1x1",
+  "attributes": {
+    "HP": 300,
+    "SP": 300
+  },
+  "image": "data/images/material-7318.png",
+  "file": "material-7318.json"
+}

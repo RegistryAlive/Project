@@ -1,0 +1,18 @@
+{
+  "id": 307,
+  "name": "Beast Fork+1",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "No sockets,24% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "MaxHP": 100
+  },
+  "image": "data/images/weapon-307.png",
+  "file": "weapon-307.json"
+}

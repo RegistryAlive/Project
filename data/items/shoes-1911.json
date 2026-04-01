@@ -1,0 +1,17 @@
+{
+  "id": 1911,
+  "name": "Magic Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Leaf / Fur",
+  "description": "Magic shoes. Set: 50% chance to resist sealed",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 15
+  },
+  "image": "data/images/shoes-1911.png",
+  "file": "shoes-1911.json"
+}

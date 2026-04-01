@@ -1,0 +1,15 @@
+{
+  "id": 7662,
+  "name": "Ostrich's Feather",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Feather",
+  "description": "Feather of an ostrich.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7662.png",
+  "file": "material-7662.json"
+}

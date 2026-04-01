@@ -1,0 +1,18 @@
+{
+  "id": 2004,
+  "name": "F Rudolph Shoe",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A imitation of reindeer hooves. For female only. Set Effect : MaxHP +450.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 50,
+    "DEF": 10
+  },
+  "image": "data/images/shoes-2004.png",
+  "file": "shoes-2004.json"
+}

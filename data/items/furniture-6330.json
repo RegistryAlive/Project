@@ -1,0 +1,15 @@
+{
+  "id": 6330,
+  "name": "Toilet Bowl",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 21,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Sit on it and make some Organic Muck",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6330.png",
+  "file": "furniture-6330.json"
+}

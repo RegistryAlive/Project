@@ -1,0 +1,18 @@
+{
+  "id": 1878,
+  "name": "Dragon Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Made from the tough skin of the green dragon.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 14,
+    "MDEF": 8
+  },
+  "image": "data/images/shoes-1878.png",
+  "file": "shoes-1878.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7721,
+  "name": "Eagle Claw",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "Claws of a Eagle",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7721.png",
+  "file": "material-7721.json"
+}

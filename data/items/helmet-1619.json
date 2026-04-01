@@ -1,0 +1,15 @@
+{
+  "id": 1619,
+  "name": "Grey Cat Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Grey Cat Ears that are meant for decorating purposes but can be equipped.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1619.png",
+  "file": "helmet-1619.json"
+}

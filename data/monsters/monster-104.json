@@ -1,0 +1,39 @@
+{
+  "id": 104,
+  "name": "Flag Waver",
+  "location": "Cook's Fleet",
+  "image": "data/Monster_Images/monster-104.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Salmon",
+      "itemId": 7489,
+      "itemFile": "material-7489.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lobster",
+      "itemId": 7496,
+      "itemFile": "material-7496.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 67,
+    "hp": 563,
+    "sp": 556,
+    "catchable": "Unknown",
+    "spd": 180.5,
+    "str": 44,
+    "con": 43,
+    "int": 38,
+    "wis": 36,
+    "agi": 40
+  }
+}

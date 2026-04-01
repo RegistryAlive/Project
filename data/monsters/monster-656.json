@@ -1,0 +1,27 @@
+{
+  "id": 656,
+  "name": "Deadly Flower",
+  "location": "Mayan Forest",
+  "image": "data/Monster_Images/monster-656.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 79,
+    "hp": 763,
+    "sp": 782,
+    "catchable": "Unknown",
+    "spd": 206.5,
+    "str": 48,
+    "con": 45,
+    "int": 50,
+    "wis": 50,
+    "agi": 44
+  }
+}

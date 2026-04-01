@@ -1,0 +1,27 @@
+{
+  "id": 715,
+  "name": "Girl",
+  "location": "Kyoto",
+  "image": "data/Monster_Images/monster-715.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 91,
+    "hp": 748,
+    "sp": 978,
+    "catchable": "Unknown",
+    "spd": 266.5,
+    "str": 39,
+    "con": 41,
+    "int": 67,
+    "wis": 61,
+    "agi": 65
+  }
+}

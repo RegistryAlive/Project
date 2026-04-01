@@ -1,0 +1,15 @@
+{
+  "id": 8180,
+  "name": "Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can be used in convenience stores.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8180.png",
+  "file": "questprop-8180.json"
+}

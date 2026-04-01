@@ -1,0 +1,18 @@
+{
+  "id": 2056,
+  "name": "Jade Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Jade / Silver",
+  "description": "Ear rings which are rubbed from balas of volcano",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 12,
+    "MDEF": 9
+  },
+  "image": "data/images/special-2056.png",
+  "file": "special-2056.json"
+}

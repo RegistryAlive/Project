@@ -1,0 +1,15 @@
+{
+  "id": 8129,
+  "name": "Iron Medicine",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is bought from drugstore boss",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8129.png",
+  "file": "questprop-8129.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2292,
+  "name": "Quiet Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Armlet of quietness exclusively used by a pet man.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 50
+  },
+  "image": "data/images/special-2292.png",
+  "file": "special-2292.json"
+}

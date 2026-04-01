@@ -1,0 +1,18 @@
+{
+  "id": 1021,
+  "name": "Grey Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Flower / Grass / Fur",
+  "description": "Suitable for both magic power and defending power",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 7,
+    "MDEF": 8
+  },
+  "image": "data/images/armor-1021.png",
+  "file": "armor-1021.json"
+}

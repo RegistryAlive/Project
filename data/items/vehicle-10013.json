@@ -1,0 +1,17 @@
+{
+  "id": 10013,
+  "name": "Robot",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Automaton",
+  "size": "4x5",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10013.png",
+  "file": "vehicle-10013.json"
+}

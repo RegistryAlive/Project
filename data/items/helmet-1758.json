@@ -1,0 +1,18 @@
+{
+  "id": 1758,
+  "name": "M.Art Headgear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Focuses the mind into the realm of selflessness; increases the damage of swords and mallets when equipped together with other martial arts chivalry series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MDEF": 20
+  },
+  "image": "data/images/helmet-1758.png",
+  "file": "helmet-1758.json"
+}

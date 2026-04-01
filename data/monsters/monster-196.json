@@ -1,0 +1,33 @@
+{
+  "id": 196,
+  "name": "Hot Bat",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-196.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Olla Noodles",
+      "itemId": 7065,
+      "itemFile": "material-7065.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 69,
+    "hp": 352,
+    "sp": 267,
+    "catchable": "Unknown",
+    "spd": 151.5,
+    "str": 25,
+    "con": 23,
+    "int": 16,
+    "wis": 14,
+    "agi": 24
+  }
+}

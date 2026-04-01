@@ -1,0 +1,18 @@
+{
+  "id": 1435,
+  "name": "Red Lord Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Leather / Grass",
+  "description": "A hat made of higher-qulity cloth through magic",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 18,
+    "MATK": 6
+  },
+  "image": "data/images/helmet-1435.png",
+  "file": "helmet-1435.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 7058,
+  "name": "Lyme Liquor",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Liquor",
+  "description": "It's made from lyme",
+  "size": "1x1",
+  "attributes": {
+    "SP": 250
+  },
+  "image": "data/images/material-7058.png",
+  "file": "material-7058.json"
+}

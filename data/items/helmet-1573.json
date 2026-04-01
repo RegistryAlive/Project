@@ -1,0 +1,17 @@
+{
+  "id": 1573,
+  "name": "Iron Helmet2",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": null,
+  "description": "Functional and fashionable",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 5
+  },
+  "image": "data/images/helmet-1573.png",
+  "file": "helmet-1573.json"
+}

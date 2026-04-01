@@ -1,0 +1,18 @@
+{
+  "id": 1763,
+  "name": "Reindeer's Antler",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 8,
+  "level": 0,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "A hat decorated with antlers and worn at Christmas",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 4,
+    "MDEF": 4
+  },
+  "image": "data/images/helmet-1763.png",
+  "file": "helmet-1763.json"
+}

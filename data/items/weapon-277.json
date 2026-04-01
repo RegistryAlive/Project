@@ -1,0 +1,17 @@
+{
+  "id": 277,
+  "name": "Long Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A long spear used by riders.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30
+  },
+  "image": "data/images/weapon-277.png",
+  "file": "weapon-277.json"
+}

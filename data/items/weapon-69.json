@@ -1,0 +1,18 @@
+{
+  "id": 69,
+  "name": "Onikiri",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "[Twin blades used by famous generals, said to be able to exorcise evil spirits. 46% chance of critical strike]",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 90,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-69.png",
+  "file": "weapon-69.json"
+}

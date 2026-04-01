@@ -1,0 +1,18 @@
+{
+  "id": 2131,
+  "name": "Full Evil Meda",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "It can raise magic attack power and magic defense.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 3,
+    "MDEF": 3
+  },
+  "image": "data/images/special-2131.png",
+  "file": "special-2131.json"
+}

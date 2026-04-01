@@ -1,0 +1,18 @@
+{
+  "id": 7008,
+  "name": "Ham",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Meat",
+  "description": "Smoke it first and then bake it",
+  "size": "1x1",
+  "attributes": {
+    "HP": 80,
+    "SP": 70
+  },
+  "image": "data/images/material-7008.png",
+  "file": "material-7008.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 55,
+  "name": "Lethal Scorpion",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-55.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 91,
+    "hp": 1146,
+    "sp": 964,
+    "catchable": "Unknown",
+    "spd": 222.5,
+    "str": 53,
+    "con": 67,
+    "int": 50,
+    "wis": 60,
+    "agi": 43
+  }
+}

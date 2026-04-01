@@ -1,0 +1,17 @@
+{
+  "id": 1460,
+  "name": "Smart Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Iron / Flower",
+  "description": "A helmet usually worn to fight beasts or men.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 29
+  },
+  "image": "data/images/helmet-1460.png",
+  "file": "helmet-1460.json"
+}

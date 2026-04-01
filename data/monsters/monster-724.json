@@ -1,0 +1,27 @@
+{
+  "id": 724,
+  "name": "Green Rock Monster",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-724.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 26,
+    "hp": 312,
+    "sp": 131,
+    "catchable": "Unknown",
+    "spd": 59,
+    "str": 24,
+    "con": 26,
+    "int": 9,
+    "wis": 9,
+    "agi": 10
+  }
+}

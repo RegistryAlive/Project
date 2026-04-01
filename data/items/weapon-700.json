@@ -1,0 +1,17 @@
+{
+  "id": 700,
+  "name": "Pure Iron Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Pure Iron / Wood",
+  "description": "A single blade pure iron axe.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 33
+  },
+  "image": "data/images/weapon-700.png",
+  "file": "weapon-700.json"
+}

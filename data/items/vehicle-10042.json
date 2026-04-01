@@ -1,0 +1,17 @@
+{
+  "id": 10042,
+  "name": "Yellow Ducklin",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A cute marine vehicle imitating the shape of a duckling, uses diesel as fuel.",
+  "size": "3x3",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10042.png",
+  "file": "vehicle-10042.json"
+}

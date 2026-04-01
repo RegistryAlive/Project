@@ -1,0 +1,18 @@
+{
+  "id": 1754,
+  "name": "Wide-Brim Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A handmade hat that is lightweight but still polite and loved by all; for men, it has a 5% anti-blocking effect, and can be worn with other White Unsullied equipment to gain additional coat effects.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "SPD": 15
+  },
+  "image": "data/images/helmet-1754.png",
+  "file": "helmet-1754.json"
+}

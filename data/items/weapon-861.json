@@ -1,0 +1,17 @@
+{
+  "id": 861,
+  "name": "Plasma Wafer",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Special weapon for Elin after her rebirth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 75
+  },
+  "image": "data/images/weapon-861.png",
+  "file": "weapon-861.json"
+}

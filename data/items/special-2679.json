@@ -1,0 +1,17 @@
+{
+  "id": 2679,
+  "name": "Green Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Crystallization / Iron",
+  "description": "Increases DEF slightly",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17
+  },
+  "image": "data/images/special-2679.png",
+  "file": "special-2679.json"
+}

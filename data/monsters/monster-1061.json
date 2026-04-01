@@ -1,0 +1,51 @@
+{
+  "id": 1061,
+  "name": "Worker Bee",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-1062.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Pollen",
+      "itemId": 7528,
+      "itemFile": "material-7528.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Nectar",
+      "itemId": 7529,
+      "itemFile": "material-7529.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bee Spine",
+      "itemId": 7715,
+      "itemFile": "material-7715.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Comb",
+      "itemId": 7747,
+      "itemFile": "material-7747.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Juice",
+      "itemId": 7711,
+      "itemFile": "material-7711.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 26,
+    "hp": 226,
+    "sp": 162,
+    "catchable": "Yes",
+    "spd": 73,
+    "str": 18,
+    "con": 20,
+    "int": 11,
+    "wis": 12,
+    "agi": 17
+  }
+}

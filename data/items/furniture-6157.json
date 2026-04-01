@@ -1,0 +1,15 @@
+{
+  "id": 6157,
+  "name": "Frame of Steam Ship",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The framework of a steam ship",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6157.png",
+  "file": "furniture-6157.json"
+}

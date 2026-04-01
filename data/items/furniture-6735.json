@@ -1,0 +1,15 @@
+{
+  "id": 6735,
+  "name": "Teal Rose Set",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A collection of exotic coloured flowers and plants",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6735.png",
+  "file": "furniture-6735.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1477,
+  "name": "Kitten Hairwear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "A female kitty headgear made from hide.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 19
+  },
+  "image": "data/images/helmet-1477.png",
+  "file": "helmet-1477.json"
+}

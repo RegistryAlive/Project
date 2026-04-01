@@ -1,0 +1,18 @@
+{
+  "id": 7033,
+  "name": "Spa Egg",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Egg",
+  "description": "The eggs are steamed in a hot spring",
+  "size": "1x1",
+  "attributes": {
+    "HP": 110,
+    "SP": 40
+  },
+  "image": "data/images/material-7033.png",
+  "file": "material-7033.json"
+}

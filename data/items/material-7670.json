@@ -1,0 +1,15 @@
+{
+  "id": 7670,
+  "name": "White Fox Fur",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fur",
+  "description": "Pure fur of a white fox",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7670.png",
+  "file": "material-7670.json"
+}

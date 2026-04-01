@@ -1,0 +1,15 @@
+{
+  "id": 6599,
+  "name": "M. Round Table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Candles, magic books, incomprehensible symbols, are magic circles? Or is it just the owner's random movement?",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6599.png",
+  "file": "furniture-6599.json"
+}

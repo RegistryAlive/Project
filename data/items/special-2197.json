@@ -1,0 +1,17 @@
+{
+  "id": 2197,
+  "name": "Scale Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Armlet with magic energy of protection.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 125
+  },
+  "image": "data/images/special-2197.png",
+  "file": "special-2197.json"
+}

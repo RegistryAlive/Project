@@ -1,0 +1,15 @@
+{
+  "id": 6400,
+  "name": "Wallpaper",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "It can change the design and color of the wall.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6400.png",
+  "file": "furniture-6400.json"
+}

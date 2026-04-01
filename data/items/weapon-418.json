@@ -1,0 +1,18 @@
+{
+  "id": 418,
+  "name": "Blessed Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Titanium / Grass / Nylon",
+  "description": "Release the power of the welkin.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "ATK": 10
+  },
+  "image": "data/images/weapon-418.png",
+  "file": "weapon-418.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7864,
+  "name": "Yellow Croaker (Glaze Table)",
+  "type": "Material",
+  "category": "material",
+  "rank": 4,
+  "level": 8,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "It's an expensive dish",
+  "size": "1x1",
+  "attributes": {
+    "HP": 160,
+    "SP": 60
+  },
+  "image": "data/images/material-7864.png",
+  "file": "material-7864.json"
+}

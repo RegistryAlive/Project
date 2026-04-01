@@ -1,0 +1,17 @@
+{
+  "id": 1397,
+  "name": "Footman's Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Iron",
+  "description": "A helmet which is usually worn by walking army",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 23
+  },
+  "image": "data/images/helmet-1397.png",
+  "file": "helmet-1397.json"
+}

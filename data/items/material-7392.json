@@ -1,0 +1,15 @@
+{
+  "id": 7392,
+  "name": "Fine Leaf",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leaf",
+  "description": "A processed flexible leaf used for weaving",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7392.png",
+  "file": "material-7392.json"
+}

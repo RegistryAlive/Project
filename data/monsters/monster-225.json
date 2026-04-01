@@ -1,0 +1,45 @@
+{
+  "id": 225,
+  "name": "Flame Aurochs",
+  "location": "Madagascar",
+  "image": "data/Monster_Images/monster-225.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Common Grass",
+      "itemId": 7365,
+      "itemFile": "material-7365.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beef",
+      "itemId": 7472,
+      "itemFile": "material-7472.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Urus Skin",
+      "itemId": 7692,
+      "itemFile": "material-7692.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 906,
+    "sp": 872,
+    "catchable": "Yes",
+    "spd": 233.5,
+    "str": 56,
+    "con": 53,
+    "int": 38,
+    "wis": 55,
+    "agi": 53
+  }
+}

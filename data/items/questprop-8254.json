@@ -1,0 +1,15 @@
+{
+  "id": 8254,
+  "name": "Black Medicine",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The medicine that House longs for",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8254.png",
+  "file": "questprop-8254.json"
+}

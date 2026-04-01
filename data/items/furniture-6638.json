@@ -1,0 +1,15 @@
+{
+  "id": 6638,
+  "name": "Sakura Wallpap",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Cherry-colored wallpaper allows players to change the color of the wall",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6638.png",
+  "file": "furniture-6638.json"
+}

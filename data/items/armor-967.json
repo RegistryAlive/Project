@@ -1,0 +1,18 @@
+{
+  "id": 967,
+  "name": "Light Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Canine / Grass",
+  "description": "Made of fur and leather, it is very tough.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 12,
+    "SPD": 3
+  },
+  "image": "data/images/armor-967.png",
+  "file": "armor-967.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7117,
+  "name": "Stewed Crabroes",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "Autumn crab is the most delicious",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150,
+    "SP": 150
+  },
+  "image": "data/images/material-7117.png",
+  "file": "material-7117.json"
+}

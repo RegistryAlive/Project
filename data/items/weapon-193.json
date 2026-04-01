@@ -1,0 +1,18 @@
+{
+  "id": 193,
+  "name": "Wolf Soul",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Special for Sam",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "MaxHP": 100
+  },
+  "image": "data/images/weapon-193.png",
+  "file": "weapon-193.json"
+}

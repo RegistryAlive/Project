@@ -1,0 +1,18 @@
+{
+  "id": 2655,
+  "name": "Dark Demon Win",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 96,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cannot be socketed and traded.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 48,
+    "MATK": 48
+  },
+  "image": "data/images/special-2655.png",
+  "file": "special-2655.json"
+}

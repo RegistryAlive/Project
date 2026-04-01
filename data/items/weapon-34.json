@@ -1,0 +1,18 @@
+{
+  "id": 34,
+  "name": "Gods Blade",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The weapon used by Gods during the ancient times. It's power has increased over the years.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 32,
+    "DEF": 32
+  },
+  "image": "data/images/weapon-34.png",
+  "file": "weapon-34.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8429,
+  "name": "Armor unicorn",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can exchange Armor Unicorn to be your partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8429.png",
+  "file": "questprop-8429.json"
+}

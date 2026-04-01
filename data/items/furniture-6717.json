@@ -1,0 +1,15 @@
+{
+  "id": 6717,
+  "name": "Persimmon Tree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The fruitful persimmon tree, may all things go well.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6717.png",
+  "file": "furniture-6717.json"
+}

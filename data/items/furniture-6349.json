@@ -1,0 +1,15 @@
+{
+  "id": 6349,
+  "name": "Red Carpet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Red Carpet",
+  "size": "4x2",
+  "attributes": {},
+  "image": "data/images/furniture-6349.png",
+  "file": "furniture-6349.json"
+}

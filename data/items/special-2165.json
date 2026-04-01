@@ -1,0 +1,18 @@
+{
+  "id": 2165,
+  "name": "Swift Demon Ba",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To evenly upgrade slight magic defense and agility",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 2,
+    "SPD": 2
+  },
+  "image": "data/images/special-2165.png",
+  "file": "special-2165.json"
+}

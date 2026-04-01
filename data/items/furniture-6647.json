@@ -1,0 +1,15 @@
+{
+  "id": 6647,
+  "name": "S.Street View",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A street filled with blooming cherry blossom trees",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6647.png",
+  "file": "furniture-6647.json"
+}

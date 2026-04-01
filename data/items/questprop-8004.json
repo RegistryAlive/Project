@@ -1,0 +1,15 @@
+{
+  "id": 8004,
+  "name": "Key for Cellar",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The key for the cellar in the church",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8004.png",
+  "file": "questprop-8004.json"
+}

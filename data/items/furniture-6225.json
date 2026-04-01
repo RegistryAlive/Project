@@ -1,0 +1,15 @@
+{
+  "id": 6225,
+  "name": "Bench Saw",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "one of the instrument used to cut items.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6225.png",
+  "file": "furniture-6225.json"
+}

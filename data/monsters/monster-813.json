@@ -1,0 +1,27 @@
+{
+  "id": 813,
+  "name": "Martian",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-813.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 125,
+    "hp": 8021,
+    "sp": 1369,
+    "catchable": "Unknown",
+    "spd": 339.5,
+    "str": 80,
+    "con": 62,
+    "int": 78,
+    "wis": 79,
+    "agi": 76
+  }
+}

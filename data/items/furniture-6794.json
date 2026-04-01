@@ -1,0 +1,15 @@
+{
+  "id": 6794,
+  "name": "Mail Box",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 6,
+  "rarity": "common",
+  "base": null,
+  "description": "Can deliver letters to others",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6794.png",
+  "file": "furniture-6794.json"
+}

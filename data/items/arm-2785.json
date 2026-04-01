@@ -1,0 +1,17 @@
+{
+  "id": 2785,
+  "name": "Iron Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Flower / Iron",
+  "description": "Dark black Gloves which are made from iron",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 16
+  },
+  "image": "data/images/arm-2785.png",
+  "file": "arm-2785.json"
+}

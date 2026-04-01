@@ -1,0 +1,15 @@
+{
+  "id": 7354,
+  "name": "Yaro Safflower",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "red flowers",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7354.png",
+  "file": "material-7354.json"
+}

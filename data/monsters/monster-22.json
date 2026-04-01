@@ -1,0 +1,33 @@
+{
+  "id": 22,
+  "name": "Ancient Rock Monster",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-22.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Basalt",
+      "itemId": 7636,
+      "itemFile": "material-7636.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Clay",
+      "itemId": 7642,
+      "itemFile": "material-7642.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 87,
+    "hp": 900,
+    "sp": 836,
+    "catchable": "Unknown",
+    "spd": 242.5,
+    "str": 50,
+    "con": 52,
+    "int": 51,
+    "wis": 52,
+    "agi": 56
+  }
+}

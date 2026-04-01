@@ -1,0 +1,18 @@
+{
+  "id": 169,
+  "name": "God Slayer",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 66,
+  "level": 132,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword forged for a demon, with the capabilities of killing even the gods and immortals.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 66,
+    "SPD": 66
+  },
+  "image": "data/images/weapon-169.png",
+  "file": "weapon-169.json"
+}

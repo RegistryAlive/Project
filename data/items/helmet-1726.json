@@ -1,0 +1,18 @@
+{
+  "id": 1726,
+  "name": "bunny girl hea",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 50,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A must-have headband for a bunny girl; when equipped with other bunny girl series equipment at the same time, an additional set effect can be obtained",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 45,
+    "MATK": 10
+  },
+  "image": "data/images/helmet-1726.png",
+  "file": "helmet-1726.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 2570,
+  "name": "Magic Saddle",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Transfers 1/3 MATK of the riding pet to the character. Only beast pets can equip it. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2570.png",
+  "file": "special-2570.json"
+}

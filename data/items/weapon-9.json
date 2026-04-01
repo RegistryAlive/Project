@@ -1,0 +1,18 @@
+{
+  "id": 9,
+  "name": "Copper Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Copper / Wood",
+  "description": "A Falchion made from copper",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 7,
+    "DEF": 7
+  },
+  "image": "data/images/weapon-9.png",
+  "file": "weapon-9.json"
+}

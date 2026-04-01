@@ -1,0 +1,17 @@
+{
+  "id": 41,
+  "name": "Steel Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 80,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Made of steel, it fuels men's fierce attacks.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 120
+  },
+  "image": "data/images/weapon-41.png",
+  "file": "weapon-41.json"
+}

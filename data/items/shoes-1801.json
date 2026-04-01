@@ -1,0 +1,17 @@
+{
+  "id": 1801,
+  "name": "Leisure Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Nylon",
+  "description": "Portable shoes which are soft",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/shoes-1801.png",
+  "file": "shoes-1801.json"
+}

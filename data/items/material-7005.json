@@ -1,0 +1,18 @@
+{
+  "id": 7005,
+  "name": "Pork beehoon",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A dish made with rice noodles and shredded meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 180,
+    "SP": 20
+  },
+  "image": "data/images/material-7005.png",
+  "file": "material-7005.json"
+}

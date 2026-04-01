@@ -1,0 +1,18 @@
+{
+  "id": 1092,
+  "name": "Green Woolen Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Leaf / Leather",
+  "description": "One-piece clothes made of animal hair and brows.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 21,
+    "DEF": 8
+  },
+  "image": "data/images/armor-1092.png",
+  "file": "armor-1092.json"
+}

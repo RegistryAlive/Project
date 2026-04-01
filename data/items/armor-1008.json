@@ -1,0 +1,18 @@
+{
+  "id": 1008,
+  "name": "Wooden Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "Made from leaves & bark, sewn together with vines.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 14,
+    "DEF": 5
+  },
+  "image": "data/images/armor-1008.png",
+  "file": "armor-1008.json"
+}

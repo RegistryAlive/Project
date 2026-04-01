@@ -1,0 +1,15 @@
+{
+  "id": 8532,
+  "name": "1.5X Holy EXP Potion",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 10,
+  "level": 20,
+  "rarity": "uncommon",
+  "base": "Leaf / Magic",
+  "description": "Obtains 1.5x exp for 2 hours",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8532.png",
+  "file": "questprop-8532.json"
+}

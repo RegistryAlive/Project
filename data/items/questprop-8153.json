@@ -1,0 +1,15 @@
+{
+  "id": 8153,
+  "name": "Hope Necklace",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The relic of Yanasi",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8153.png",
+  "file": "questprop-8153.json"
+}

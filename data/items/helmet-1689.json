@@ -1,0 +1,18 @@
+{
+  "id": 1689,
+  "name": "New Year Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A New year styled hat. Worn for a year full of prosperity.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 10
+  },
+  "image": "data/images/helmet-1689.png",
+  "file": "helmet-1689.json"
+}

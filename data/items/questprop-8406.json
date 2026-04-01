@@ -1,0 +1,15 @@
+{
+  "id": 8406,
+  "name": "Abyssal W.H. T",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make the Abyssal Warhorse a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8406.png",
+  "file": "questprop-8406.json"
+}

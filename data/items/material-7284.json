@@ -1,0 +1,17 @@
+{
+  "id": 7284,
+  "name": "Turkey",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 16,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Delicious big turkey",
+  "size": "1x1",
+  "attributes": {
+    "HP": 800
+  },
+  "image": "data/images/material-7284.png",
+  "file": "material-7284.json"
+}

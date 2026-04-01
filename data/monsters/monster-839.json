@@ -1,0 +1,27 @@
+{
+  "id": 839,
+  "name": "Phtoncide Frog",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-839.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 21,
+    "hp": 170,
+    "sp": 131,
+    "catchable": "Unknown",
+    "spd": 59.5,
+    "str": 13,
+    "con": 13,
+    "int": 13,
+    "wis": 10,
+    "agi": 14
+  }
+}

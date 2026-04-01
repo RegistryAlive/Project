@@ -1,0 +1,18 @@
+{
+  "id": 7024,
+  "name": "Shandong Buns",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat",
+  "description": "Shandong Sticky Bun",
+  "size": "1x1",
+  "attributes": {
+    "HP": 45,
+    "SP": 5
+  },
+  "image": "data/images/material-7024.png",
+  "file": "material-7024.json"
+}

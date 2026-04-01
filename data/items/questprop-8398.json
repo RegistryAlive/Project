@@ -1,0 +1,15 @@
+{
+  "id": 8398,
+  "name": "Ocean heart",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Smaller gem fragments, which seemingly allows you to enter a special space.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8398.png",
+  "file": "questprop-8398.json"
+}

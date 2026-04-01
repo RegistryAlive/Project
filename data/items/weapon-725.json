@@ -1,0 +1,17 @@
+{
+  "id": 725,
+  "name": "Sharp Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Hard Tissue / Grass / Wood",
+  "description": "Ground with a hard sharp bone bones made of sheet",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 9
+  },
+  "image": "data/images/weapon-725.png",
+  "file": "weapon-725.json"
+}

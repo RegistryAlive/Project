@@ -1,0 +1,18 @@
+{
+  "id": 2080,
+  "name": "Bright Feather",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A shining arcane feather",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "ATK": 8
+  },
+  "image": "data/images/special-2080.png",
+  "file": "special-2080.json"
+}

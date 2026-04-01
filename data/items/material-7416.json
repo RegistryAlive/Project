@@ -1,0 +1,17 @@
+{
+  "id": 7416,
+  "name": "Onion",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "A Sauce",
+  "size": "1x1",
+  "attributes": {
+    "SP": 30
+  },
+  "image": "data/images/material-7416.png",
+  "file": "material-7416.json"
+}

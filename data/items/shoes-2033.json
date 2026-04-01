@@ -1,0 +1,18 @@
+{
+  "id": 2033,
+  "name": "Green Boots-2",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Grass / Leather",
+  "description": "Made of hide and herbs",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 8,
+    "SPD": 3
+  },
+  "image": "data/images/shoes-2033.png",
+  "file": "shoes-2033.json"
+}

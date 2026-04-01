@@ -1,0 +1,17 @@
+{
+  "id": 328,
+  "name": "Fire Aurora Sword",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "Suit:Adds damage on Wind enemies;-50% damage on Water enemies.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50
+  },
+  "image": "data/images/weapon-328.png",
+  "file": "weapon-328.json"
+}

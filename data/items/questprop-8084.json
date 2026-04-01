@@ -1,0 +1,15 @@
+{
+  "id": 8084,
+  "name": "Jade Rabbit Vo",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a Jade Rabbit become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8084.png",
+  "file": "questprop-8084.json"
+}

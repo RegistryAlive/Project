@@ -1,0 +1,15 @@
+{
+  "id": 448,
+  "name": "Lethal Moon Bo",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Crafted with pieces of meteorite, every arrow has the ability to scratch the sky and penetrate the moon.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-448.png",
+  "file": "weapon-448.json"
+}

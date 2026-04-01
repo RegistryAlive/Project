@@ -1,0 +1,17 @@
+{
+  "id": 2771,
+  "name": "Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Gloves usually used by waiters. Usually white.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/arm-2771.png",
+  "file": "arm-2771.json"
+}

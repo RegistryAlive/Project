@@ -1,0 +1,15 @@
+{
+  "id": 6658,
+  "name": "Wave Floor",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The shallow sea-style floor tiles allow players to change to different floor designs.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6658.png",
+  "file": "furniture-6658.json"
+}

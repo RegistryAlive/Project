@@ -1,0 +1,15 @@
+{
+  "id": 8460,
+  "name": "Rhodes exc",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can exchange voucher for Locomotive.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8460.png",
+  "file": "questprop-8460.json"
+}

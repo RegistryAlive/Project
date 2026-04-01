@@ -1,0 +1,15 @@
+{
+  "id": 6482,
+  "name": "Saffron Bonsai",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Saffron Bonsai. Placed at home to increase greenness.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6482.png",
+  "file": "furniture-6482.json"
+}

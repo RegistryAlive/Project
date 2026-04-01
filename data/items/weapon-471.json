@@ -1,0 +1,18 @@
+{
+  "id": 471,
+  "name": "Yellow Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Tin / Jade",
+  "description": "A staff with carbuncle jade embeded on the top.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 11,
+    "MDEF": 11
+  },
+  "image": "data/images/weapon-471.png",
+  "file": "weapon-471.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1187,
+  "name": "Draconian Battlerobe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Leather / Nylon / Fur",
+  "description": "Increases ATK and increases AGI slightly",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 28,
+    "SPD": 12
+  },
+  "image": "data/images/armor-1187.png",
+  "file": "armor-1187.json"
+}

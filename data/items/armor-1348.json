@@ -1,0 +1,18 @@
+{
+  "id": 1348,
+  "name": "Chef's Dream",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Only when you are serious about what you are doing will you be able to create a dish that is full of dreams; you can get an additional outfit effect when you equip it together with other Chef's Dream series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "MATK": 20
+  },
+  "image": "data/images/armor-1348.png",
+  "file": "armor-1348.json"
+}

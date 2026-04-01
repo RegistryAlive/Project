@@ -1,0 +1,15 @@
+{
+  "id": 8477,
+  "name": "B HP Broom Vou",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "You can redeem a voucher for the magic feather broom",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8477.png",
+  "file": "questprop-8477.json"
+}

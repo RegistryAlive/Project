@@ -1,0 +1,18 @@
+{
+  "id": 1330,
+  "name": "summer charm",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "When it comes to summer, you think of swimwear, come and experience the charming swimwear! ; When equipped with other Summer Boom series equipment at the same time, you can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MaxHP": 200
+  },
+  "image": "data/images/armor-1330.png",
+  "file": "armor-1330.json"
+}

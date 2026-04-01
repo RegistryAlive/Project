@@ -1,0 +1,18 @@
+{
+  "id": 2216,
+  "name": "Original Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Armlet adding magic energy.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 75,
+    "MaxHP": 400
+  },
+  "image": "data/images/special-2216.png",
+  "file": "special-2216.json"
+}

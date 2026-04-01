@@ -1,0 +1,18 @@
+{
+  "id": 1249,
+  "name": "Romantic Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Sweet and lovely elegant clothing, after wearing it, it will feel like serving others",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 450,
+    "SPD": 25
+  },
+  "image": "data/images/armor-1249.png",
+  "file": "armor-1249.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7704,
+  "name": "Dragon Spine",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "A Bone of a Flying Dragon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7704.png",
+  "file": "material-7704.json"
+}

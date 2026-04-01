@@ -1,0 +1,27 @@
+{
+  "id": 564,
+  "name": "Attendant (Quest)",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-564.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1187,
+    "sp": 961,
+    "catchable": "Unknown",
+    "spd": 215,
+    "str": 65,
+    "con": 70,
+    "int": 35,
+    "wis": 60,
+    "agi": 40
+  }
+}

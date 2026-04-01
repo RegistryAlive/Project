@@ -1,0 +1,18 @@
+{
+  "id": 626,
+  "name": "Wisteria Coin",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A dark-colored prayer staff used by witches that can be used to dispel magic, with a 5% anti-blocking effect.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 55,
+    "MaxSP": 150
+  },
+  "image": "data/images/weapon-626.png",
+  "file": "weapon-626.json"
+}

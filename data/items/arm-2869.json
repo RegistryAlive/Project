@@ -1,0 +1,18 @@
+{
+  "id": 2869,
+  "name": "Hard Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Copper / Titanium",
+  "description": "Great high-tech bracers.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "DEF": 18
+  },
+  "image": "data/images/arm-2869.png",
+  "file": "arm-2869.json"
+}

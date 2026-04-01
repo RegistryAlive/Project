@@ -1,0 +1,18 @@
+{
+  "id": 1406,
+  "name": "Pure Iron Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "A hat which is inlaid in hamatite sheet",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17,
+    "ATK": 6
+  },
+  "image": "data/images/helmet-1406.png",
+  "file": "helmet-1406.json"
+}

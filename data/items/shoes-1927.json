@@ -1,0 +1,17 @@
+{
+  "id": 1927,
+  "name": "Light Purple Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Flower / Leaf",
+  "description": "Nice light purple boots.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 28
+  },
+  "image": "data/images/shoes-1927.png",
+  "file": "shoes-1927.json"
+}

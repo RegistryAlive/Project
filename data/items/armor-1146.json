@@ -1,0 +1,18 @@
+{
+  "id": 1146,
+  "name": "Delicate Kimono",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 18,
+  "level": 10,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Casual summer wear",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "MDEF": 3
+  },
+  "image": "data/images/armor-1146.png",
+  "file": "armor-1146.json"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 357,
+  "name": "Spider",
+  "location": "Stoowa Isle (Subterranean Maze)",
+  "image": "data/Monster_Images/monster-357.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Poisonous Juice",
+      "itemId": 7711,
+      "itemFile": "material-7711.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Spider Net",
+      "itemId": 7765,
+      "itemFile": "material-7765.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Widow's Venom",
+      "itemId": 7759,
+      "itemFile": "material-7759.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 40,
+    "hp": 298,
+    "sp": 330,
+    "catchable": "Yes",
+    "spd": 108,
+    "str": 24,
+    "con": 24,
+    "int": 24,
+    "wis": 24,
+    "agi": 24
+  }
+}

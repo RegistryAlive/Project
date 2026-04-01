@@ -1,0 +1,1363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsters - Wonderland Online DB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wlBlue: '#3b82f6',
+                        wlPurple: '#8b5cf6',
+                        wlGreen: '#10b981',
+                        wlRed: '#ef4444',
+                        wlYellow: '#f59e0b',
+                        wlDark: '#1e293b',
+                        wlDarker: '#0f172a',
+                        wlLight: '#f1f5f9', // Using the softer off-white (slate-100 equivalent)
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-fast': 'float 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'modal-scale-in': 'modalScaleIn 0.3s ease-out forwards',
+                        'modal-fade-in': 'modalFadeIn 0.3s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        modalScaleIn: {
+                            '0%': { opacity: 0, transform: 'scale(0.95) translateY(10px)' },
+                            '100%': { opacity: 1, transform: 'scale(1) translateY(0)' },
+                        },
+                        modalFadeIn: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%),
+                url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            min-height: 100vh;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02) rotateX(1deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.5); 
+        }
+        
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: 0; left: 0; background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        
+        .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        
+        .tooltip { position: relative; }
+        .tooltip:hover .tooltip-text { visibility: visible; opacity: 1; transform: translateY(0); }
+        .tooltip-text {
+            visibility: hidden; opacity: 0; position: absolute; z-index: 10;
+            bottom: 125%; left: 50%; transform: translateX(-50%) translateY(10px);
+            background-color: #1e293b; color: white; text-align: center;
+            padding: 5px 10px; border-radius: 6px; transition: all 0.3s ease;
+            width: max-content; max-width: 200px; font-size: 0.8rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+        }
+        .tooltip-text::after {
+            content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px;
+            border-width: 5px; border-style: solid; border-color: #1e293b transparent transparent transparent;
+        }
+        
+        .fade-in { animation: fadeIn 0.5s ease-in forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .sidebar { transition: transform 0.3s ease; }
+        .sidebar-hidden { transform: translateX(100%); }
+        .sidebar-visible { transform: translateX(0); }
+        
+        .dark-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.5); z-index: 40; opacity: 0;
+            pointer-events: none; transition: opacity 0.3s ease;
+        }
+        .dark-overlay-visible { opacity: 1; pointer-events: auto; }
+
+        .no-results { 
+            text-align: center; 
+            padding: 20px; 
+            /* color: #wlLight; <-- This was incorrect. Color is inherited from body.text-wlLight */
+            opacity: 0.7; 
+        }
+        .filter-select {
+            background-color: #1e293b; border: 1px solid rgba(241, 245, 249, 0.2); /* Updated to match new wlLight */
+            /* color will be inherited or use text-wlLight class */
+            padding: 0.5rem 1rem; border-radius: 0.375rem;
+            font-size: 0.875rem; transition: border-color 0.3s ease;
+            cursor: pointer;
+            min-height: 42px;
+            min-width: 140px;
+            position: relative;
+            z-index: 10;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.5rem center;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+        }
+        .filter-select:hover { border-color: #ef4444; }
+        .filter-select:focus {
+            outline: none; border-color: #ef4444;
+            box-shadow: 0 0 0 2px rgba(239,68,68,0.3);
+        }
+        .filter-select option {
+            padding: 8px;
+            cursor: pointer;
+            background-color: #0f172a;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed; inset: 0;
+            background-color: rgba(15, 23, 42, 0.8); 
+            backdrop-filter: blur(4px);
+            z-index: 50; display: flex; align-items: center; justify-content: center;
+            padding: 1rem; animation: modalFadeIn 0.3s ease-out forwards;
+        }
+        .modal-content {
+            background-color: #1e293b; 
+            padding: 1.5rem; 
+            border-radius: 0.75rem; 
+            border: 1px solid rgba(241, 245, 249, 0.2); /* Updated to match current wlLight (#f1f5f9 -> rgb(241,245,249)) */
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            width: 100%; max-width: 600px; max-height: 90vh;
+            overflow-y: auto; position: relative;
+            animation: modalScaleIn 0.3s ease-out forwards;
+        }
+        .modal-close-button {
+            position: absolute; top: 0.75rem; right: 0.75rem;
+            color: #9ca3af; 
+            transition: color 0.2s ease;
+        }
+        .modal-close-button:hover {
+            color: #f1f5f9; /* Uses the hex of wlLight directly here, which is fine */
+        }
+        .modal-hidden { display: none; }
+
+        /* Level Filter Styles */
+        .level-filter-container {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
+            border: 1px solid rgba(241, 245, 249, 0.2);
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            min-width: 280px;
+        }
+        .level-filter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .level-filter-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .level-filter-label i {
+            color: #8b5cf6;
+        }
+        .level-range-display {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #3b82f6;
+            background: rgba(59, 130, 246, 0.15);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+        }
+        .level-slider-container {
+            position: relative;
+            height: 40px;
+            margin: 0.5rem 0;
+        }
+        .level-slider {
+            position: absolute;
+            width: 100%;
+            height: 6px;
+            top: 8px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            pointer-events: none;
+            z-index: 2;
+        }
+        .level-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            cursor: pointer;
+            pointer-events: auto;
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+            border: 2px solid #fff;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .level-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.6);
+        }
+        .level-slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            cursor: pointer;
+            pointer-events: auto;
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+            border: 2px solid #fff;
+        }
+        .slider-track {
+            position: absolute;
+            width: 100%;
+            height: 6px;
+            top: 8px;
+            background: rgba(100, 116, 139, 0.3);
+            border-radius: 3px;
+            z-index: 1;
+        }
+        .slider-range {
+            position: absolute;
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+            border-radius: 3px;
+        }
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.65rem;
+            color: rgba(241, 245, 249, 0.5);
+            margin-top: 1.25rem;
+            padding: 0 2px;
+        }
+        .level-quick-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: 0.75rem;
+        }
+        .level-quick-btn {
+            font-size: 0.7rem;
+            padding: 0.3rem 0.6rem;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 1rem;
+            color: #f1f5f9;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .level-quick-btn:hover {
+            background: rgba(59, 130, 246, 0.25);
+            border-color: #3b82f6;
+        }
+        .level-quick-btn.active {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            border-color: #8b5cf6;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .level-filter-container {
+                min-width: 100%;
+            }
+            .level-quick-buttons {
+                justify-content: center;
+            }
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, #1e293b, #3b82f6);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-ball {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle.light .theme-toggle-ball {
+            transform: translateX(30px);
+        }
+        
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e2e8f0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f8fafc !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #1e293b !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #cbd5e1 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+
+        /* Light mode - Monsters page specific */
+        body.light-mode .filter-select {
+            background-color: #e2e8f0 !important;
+            color: #1e293b !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .filter-select option {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .modal-content {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .tooltip-text {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .tooltip-text::after {
+            border-color: #f1f5f9 transparent transparent transparent !important;
+        }
+        body.light-mode .level-filter-container {
+            background: linear-gradient(135deg, rgba(226,232,240,0.9), rgba(241,245,249,0.9)) !important;
+        }
+        body.light-mode .level-filter-label {
+            color: #1e293b !important;
+        }
+        body.light-mode .level-quick-btn {
+            color: #1e293b !important;
+            background-color: #e2e8f0 !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .level-quick-btn:hover,
+        body.light-mode .level-quick-btn.active {
+            background-color: #3b82f6 !important;
+            color: white !important;
+        }
+        body.light-mode select {
+            background-color: #e2e8f0 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode select option {
+            background-color: #f1f5f9 !important;
+            color: #1e293b !important;
+        }
+    </style>
+</head>
+<body class="text-wlLight"> 
+    <div id="darkOverlay" class="dark-overlay"></div>
+    <div id="mobileSidebar" class="sidebar sidebar-hidden fixed inset-y-0 right-0 w-64 bg-wlDarker z-50 shadow-2xl p-4 overflow-y-auto">
+        <div class="flex justify-between items-center mb-8">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                <i class="fas fa-dragon text-xl text-white"></i>
+            </div>
+            <button id="closeSidebar" class="hover:text-wlRed">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="space-y-4">
+            <a href="index.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Home</a>
+            <a href="Item.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Items</a>
+            <a href="quests.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Quests</a>
+            <a href="monsters.html" class="block px-4 py-2 rounded-md font-medium bg-wlDark bg-opacity-50 text-wlBlue transition">Monsters</a>
+            <a href="Locations.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Locations</a>
+            <a href="tier-list.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Tier-List</a>
+            <a href="shops.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Shops</a>
+            <a href="manufacture.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Manufacture</a>
+            <a href="Resources.html" class="block px-4 py-2 rounded-md font-medium text-wlPurple hover:bg-wlDark hover:bg-opacity-50 transition">Resources</a>
+        </nav>
+        <div class="mt-8 pt-4 border-t border-wlLight border-opacity-20">
+            <h4 class="font-medium mb-4">Quick Links</h4>
+            <div class="space-y-2">
+                <a href="#" class="block text-sm text-opacity-70 hover:text-wlBlue transition">Updates</a>
+                <a href="#" class="block text-sm text-opacity-70 hover:text-wlBlue transition">Patch Notes</a>
+                <a href="#" class="block text-sm text-opacity-70 hover:text-wlBlue transition">Community</a>
+                <a href="#" class="block text-sm text-opacity-70 hover:text-wlBlue transition">API</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-wlDark bg-opacity-90 blur-bg shadow-lg sticky top-0 z-30">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <a href="index.html" class="flex items-center space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i>
+                            </div>
+                            <h1 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                                Wonderland Online DB
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6 items-center">
+                        <div class="relative group">
+                            <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium flex items-center">
+                                Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+                            </a>
+                            <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                                <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-lg flex items-center justify-between">
+                                    Roadmap <i class="fas fa-route text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="Item.html" class="nav-link px-3 py-2 text-sm font-medium">Items</a>
+                        <a href="quests.html" class="nav-link px-3 py-2 text-sm font-medium">Quests</a>
+                        <a href="monsters.html" class="nav-link px-3 py-2 text-sm font-medium text-wlBlue">Monsters</a>
+                        <a href="Locations.html" class="nav-link px-3 py-2 text-sm font-medium">Locations</a>
+                        <a href="tier-list.html" class="nav-link px-3 py-2 text-sm font-medium">Tier-List</a>
+                        <a href="shops.html" class="nav-link px-3 py-2 text-sm font-medium">Shops</a>
+                        <a href="manufacture.html" class="nav-link px-3 py-2 text-sm font-medium">Manufacture</a>
+                        <a href="Resources.html" class="nav-link px-3 py-2 text-sm font-medium">Resources</a>
+                        <!-- Theme Toggle -->
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                            <div class="theme-toggle-ball">
+                                <i class="fas fa-moon text-xs text-wlDark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="openSidebar" class="focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <section class="text-center mb-12">
+                <div class="max-w-4xl mx-auto relative">
+                    <div class="absolute -top-20 -left-20 w-40 h-40 bg-wlRed rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    <div class="absolute -bottom-20 -right-20 w-40 h-40 bg-wlPurple rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-wlRed to-wlPurple gradient-text glow">
+                        Explore the Bestiary
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8"> 
+                        Browse and search for monsters across Wonderland. Discover their stats, drops, and locations.
+                    </p>
+                    <div class="max-w-2xl mx-auto relative">
+                        <input type="text" id="monsterSearchInput" placeholder="Search by name, element, location..." 
+                               class="search-input w-full px-6 py-4 rounded-full bg-wlDark border-wlLight border-opacity-30 focus:border-wlRed transition duration-300">
+                        <button class="absolute right-3 top-3 bg-gradient-to-r from-wlRed to-wlPurple text-white p-2 rounded-full hover:opacity-90 transition tooltip">
+                            <i class="fas fa-search"></i>
+                            <span class="tooltip-text">Press Enter or type to search</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-6 gap-4 md:gap-6">
+                    <h3 class="text-2xl font-semibold whitespace-nowrap">All Monsters (<span id="monsterCount">0</span>)</h3>
+                    <div class="flex flex-wrap justify-center md:justify-end gap-2 md:gap-4 w-full">
+                        <select id="filterLocation" class="filter-select text-wlLight">
+                            <option value="" class="bg-wlDarker">All Locations</option>
+                        </select>
+                        <select id="filterElement" class="filter-select text-wlLight">
+                            <option value="" class="bg-wlDarker">All Elements</option>
+                            <option value="Fire" class="bg-wlDarker">Fire</option>
+                            <option value="Water" class="bg-wlDarker">Water</option>
+                            <option value="Wind" class="bg-wlDarker">Wind</option>
+                            <option value="Earth" class="bg-wlDarker">Earth</option>
+                            <option value="Null" class="bg-wlDarker">Null</option>
+                        </select>
+                        <div class="level-filter-container">
+                            <div class="level-filter-header">
+                                <span class="level-filter-label"><i class="fas fa-layer-group"></i> Level</span>
+                                <span id="levelRangeDisplay" class="level-range-display">All Levels</span>
+                            </div>
+                            <div class="level-slider-container">
+                                <input type="range" id="levelMinSlider" class="level-slider" min="1" max="200" value="1">
+                                <input type="range" id="levelMaxSlider" class="level-slider" min="1" max="200" value="200">
+                                <div class="slider-track">
+                                    <div id="sliderRange" class="slider-range"></div>
+                                </div>
+                                <div class="slider-labels">
+                                    <span>1</span>
+                                    <span>50</span>
+                                    <span>100</span>
+                                    <span>150</span>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                            <div class="level-quick-buttons">
+                                <button class="level-quick-btn" data-min="1" data-max="20">1-20</button>
+                                <button class="level-quick-btn" data-min="20" data-max="50">20-50</button>
+                                <button class="level-quick-btn" data-min="50" data-max="100">50-100</button>
+                                <button class="level-quick-btn" data-min="100" data-max="150">100-150</button>
+                                <button class="level-quick-btn" data-min="150" data-max="200">150+</button>
+                                <button class="level-quick-btn active" data-min="1" data-max="200">All</button>
+                            </div>
+                        </div>
+                        <select id="filterType" class="filter-select text-wlLight hidden">
+                            <option value="" class="bg-wlDarker">All Types</option>
+                        </select>
+                        <div class="relative">
+                            <button id="sortMonstersButton" class="flex items-center space-x-2 text-sm hover:text-wlRed transition px-4 py-2 bg-wlDark bg-opacity-50 rounded-md border border-wlLight border-opacity-20 h-full">
+                                <span id="sortButtonText">Sort by: Name (A-Z)</span>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </button>
+                            <div id="sortMonstersDropdown" class="hidden absolute right-0 mt-2 w-48 bg-wlDark rounded-md shadow-lg z-20 py-1 border border-wlLight border-opacity-20">
+                                <a href="#" class="block px-4 py-2 text-sm hover:bg-wlDarker" data-sort="name_asc">Name (A-Z)</a>
+                                <a href="#" class="block px-4 py-2 text-sm hover:bg-wlDarker" data-sort="name_desc">Name (Z-A)</a>
+                                <a href="#" class="block px-4 py-2 text-sm hover:bg-wlDarker" data-sort="level_asc">Level (Low-High)</a>
+                                <a href="#" class="block px-4 py-2 text-sm hover:bg-wlDarker" data-sort="level_desc">Level (High-Low)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="loadingIndicator" class="text-center py-12">
+                    <i class="fas fa-spinner fa-spin text-4xl text-wlPurple mb-4"></i>
+                    <p class="text-lg">Loading monsters...</p>
+                </div>
+                <div id="monsterGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+                <div id="noResultsMessage" class="hidden no-results">
+                    <i class="fas fa-dragon text-4xl mb-4 text-wlPurple"></i>
+                    <p class="text-xl">No monsters found matching your criteria.</p>
+                    <p>Try adjusting your search or filter options.</p>
+                </div>
+                
+                <!-- Pagination Controls -->
+                <div id="paginationControls" class="mt-8 flex flex-col items-center gap-4">
+                    <div id="paginationInfo" class="text-sm text-opacity-70"></div>
+                    <div class="flex items-center gap-2 flex-wrap justify-center">
+                        <button id="firstPageBtn" class="px-3 py-2 bg-wlDark bg-opacity-70 rounded-md border border-wlLight border-opacity-20 hover:border-wlRed transition disabled:opacity-50 disabled:cursor-not-allowed" title="First Page">
+                            <i class="fas fa-angle-double-left"></i>
+                        </button>
+                        <button id="prevPageBtn" class="px-3 py-2 bg-wlDark bg-opacity-70 rounded-md border border-wlLight border-opacity-20 hover:border-wlRed transition disabled:opacity-50 disabled:cursor-not-allowed" title="Previous Page">
+                            <i class="fas fa-angle-left"></i>
+                        </button>
+                        <div id="pageNumbers" class="flex items-center gap-1"></div>
+                        <button id="nextPageBtn" class="px-3 py-2 bg-wlDark bg-opacity-70 rounded-md border border-wlLight border-opacity-20 hover:border-wlRed transition disabled:opacity-50 disabled:cursor-not-allowed" title="Next Page">
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+                        <button id="lastPageBtn" class="px-3 py-2 bg-wlDark bg-opacity-70 rounded-md border border-wlLight border-opacity-20 hover:border-wlRed transition disabled:opacity-50 disabled:cursor-not-allowed" title="Last Page">
+                            <i class="fas fa-angle-double-right"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <label for="perPageSelect" class="text-sm text-opacity-70">Monsters per page:</label>
+                        <select id="perPageSelect" class="filter-select text-wlLight">
+                            <option value="10" class="bg-wlDarker">10</option>
+                            <option value="25" class="bg-wlDarker">25</option>
+                            <option value="50" class="bg-wlDarker" selected>50</option>
+                            <option value="100" class="bg-wlDarker">100</option>
+                            <option value="250" class="bg-wlDarker">250</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-wlDark bg-opacity-90 blur-bg py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i></div>
+                            <h3 class="text-lg font-semibold">Wonderland Online DB</h3>
+                        </div>
+                        <p class="text-sm text-opacity-70">Your ultimate resource for Wonderland Online game data.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Quick Nav</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html" class="text-opacity-70 hover:text-wlBlue transition">Home</a></li>
+                            <li><a href="Item.html" class="text-opacity-70 hover:text-wlBlue transition">Items</a></li>
+                            <li><a href="monsters.html" class="text-opacity-70 hover:text-wlBlue transition">Monsters</a></li>
+                            <li><a href="quests.html" class="text-opacity-70 hover:text-wlBlue transition">Quests</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Community</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Forums</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Discord</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Contribute</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Privacy Policy</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-wlLight border-opacity-20 pt-8 text-center text-sm text-opacity-50">
+                    &copy; 2024 Wonderland Online DB. All rights reserved. Game content and materials are trademarks and copyrights of their respective publisher and its licensors.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="monsterModal" class="modal-overlay modal-hidden">
+        <div class="modal-content">
+            <button id="modalCloseButton" class="modal-close-button text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
+                <div id="modalMonsterIcon" class="w-24 h-24 sm:w-32 sm:h-32 rounded-lg bg-wlDarker flex items-center justify-center text-wlRed text-5xl flex-shrink-0"></div>
+                <div class="text-center sm:text-left">
+                    <h2 id="modalMonsterName" class="text-3xl font-bold mb-1"></h2>
+                    <p id="modalMonsterSubtitle" class="text-sm text-opacity-70"></p>
+                </div>
+            </div>
+            <div id="modalMonsterStats" class="mb-6"></div>
+            <div>
+                <h4 class="text-lg font-semibold mb-2">Notable Drops</h4>
+                <ul id="modalMonsterDrops" class="text-sm text-opacity-80 space-y-1"></ul>
+                <p id="modalNoDrops" class="text-sm text-opacity-60 hidden">No notable drops listed.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        let allMonsters = [];
+        let filteredMonsters = []; // Store filtered/sorted monsters for pagination
+        let monsterDetails = {}; // Cache for full monster details
+        let itemsIndex = null; // Lazy loaded items index (for drop images)
+        
+        // Pagination state
+        let currentPage = 1;
+        let itemsPerPage = 50;
+        
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const monsterGrid = document.getElementById('monsterGrid');
+        const paginationControls = document.getElementById('paginationControls');
+        const paginationInfo = document.getElementById('paginationInfo');
+        const pageNumbersContainer = document.getElementById('pageNumbers');
+        const firstPageBtn = document.getElementById('firstPageBtn');
+        const prevPageBtn = document.getElementById('prevPageBtn');
+        const nextPageBtn = document.getElementById('nextPageBtn');
+        const lastPageBtn = document.getElementById('lastPageBtn');
+        const perPageSelect = document.getElementById('perPageSelect');
+        
+        // Function to load items index only when needed (lazy loading)
+        async function getItemsIndex() {
+            if (itemsIndex) return itemsIndex;
+            try {
+                // Use the smaller lookup file for faster loading
+                const itemsResponse = await fetch('data/items-lookup.json');
+                itemsIndex = await itemsResponse.json();
+                console.log(`Loaded ${Object.keys(itemsIndex).length} items for drop images`);
+                return itemsIndex;
+            } catch (error) {
+                console.warn('Could not load items lookup:', error);
+                return {};
+            }
+        }
+        
+        // Fetch monsters from JSON
+        try {
+            const response = await fetch('data/monsters-index.json');
+            const data = await response.json();
+            allMonsters = data.monsters.map(m => ({
+                ...m,
+                level: m.level || 0,
+                hp: m.hp || 0,
+                spd: m.spd || 0,
+                type: 'Monster',
+                element: m.element || 'Null'
+            }));
+            console.log(`Loaded ${allMonsters.length} monsters`);
+            
+            // Initially show all monsters
+            filteredMonsters = [...allMonsters];
+            
+            // Hide loading indicator
+            if (loadingIndicator) loadingIndicator.classList.add('hidden');
+        } catch (error) {
+            console.error('Error loading monsters:', error);
+            if (loadingIndicator) loadingIndicator.innerHTML = '<p class="text-red-500">Error loading monsters. Please refresh the page.</p>';
+            return;
+        }
+        
+        let currentSort = { column: 'name', order: 'asc' };
+        let currentFilters = { element: '', type: '', location: '', levelMin: null, levelMax: null };
+
+        const monsterCountSpan = document.getElementById('monsterCount');
+        const searchInput = document.getElementById('monsterSearchInput');
+        const sortButton = document.getElementById('sortMonstersButton');
+        const sortButtonText = document.getElementById('sortButtonText');
+        const sortDropdown = document.getElementById('sortMonstersDropdown');
+        const filterElementSelect = document.getElementById('filterElement');
+        const filterTypeSelect = document.getElementById('filterType');
+        const noResultsMessage = document.getElementById('noResultsMessage');
+        const monsterModal = document.getElementById('monsterModal');
+        
+        // Check for search parameter in URL and apply filter
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchParam = urlParams.get('search');
+        if (searchParam && searchInput) {
+            searchInput.value = decodeURIComponent(searchParam);
+            // Apply the search filter
+            filteredMonsters = allMonsters.filter(monster =>
+                monster.name.toLowerCase().includes(searchParam.toLowerCase()) ||
+                (monster.location && monster.location.toLowerCase().includes(searchParam.toLowerCase())) ||
+                (monster.drops && monster.drops.some(drop => drop.name.toLowerCase().includes(searchParam.toLowerCase())))
+            );
+            // Update the display
+            currentPage = 1;
+        }
+        const modalCloseButton = document.getElementById('modalCloseButton');
+        const modalMonsterIcon = document.getElementById('modalMonsterIcon');
+        const modalMonsterName = document.getElementById('modalMonsterName');
+        const modalMonsterSubtitle = document.getElementById('modalMonsterSubtitle');
+        const modalMonsterDrops = document.getElementById('modalMonsterDrops');
+        const modalNoDrops = document.getElementById('modalNoDrops');
+
+        function getUniqueValues(data, key) {
+            const unique = new Set(data.map(item => item[key]));
+            return Array.from(unique).sort();
+        }
+
+        function populateFilterDropdown(selectElement, values) {
+            if (!selectElement) return;
+            values.forEach(value => {
+                const option = document.createElement('option');
+                option.value = value;
+                option.textContent = value;
+                option.classList.add('bg-wlDarker');
+                selectElement.appendChild(option);
+            });
+        }
+        
+        function getElementIcon(element) {
+            // Return colored element icon based on element type
+            const elementColors = {
+                'Fire': { bg: 'bg-orange-500', text: 'text-white', icon: 'fa-fire' },
+                'Water': { bg: 'bg-blue-500', text: 'text-white', icon: 'fa-droplet' },
+                'Wind': { bg: 'bg-green-500', text: 'text-white', icon: 'fa-wind' },
+                'Earth': { bg: 'bg-amber-600', text: 'text-white', icon: 'fa-mountain' },
+                'Null': { bg: 'bg-gray-500', text: 'text-white', icon: 'fa-circle' }
+            };
+            const el = elementColors[element] || elementColors['Null'];
+            return `<span class="inline-flex items-center justify-center w-6 h-6 rounded-full ${el.bg} ${el.text} text-xs mr-2 flex-shrink-0" title="${element}"><i class="fas ${el.icon}"></i></span>`;
+        }
+        
+        function renderMonsterCard(monster) {
+            const imageHtml = monster.image 
+                ? `<img src="${monster.image}" alt="${monster.name}" class="w-16 h-16 object-contain" onerror="this.parentElement.innerHTML='<i class=\\'fas fa-dragon text-3xl text-wlRed\\'></i>'">`
+                : `<i class="fas fa-dragon text-3xl text-wlRed"></i>`;
+            
+            const dropsPreview = monster.drops && monster.drops.length > 0 
+                ? monster.drops.slice(0, 2).map(d => d.name).join(', ') + (monster.drops.length > 2 ? '...' : '')
+                : 'No drops';
+            
+            const elementIcon = getElementIcon(monster.element);
+            
+            return `
+                <div class="bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlRed transition duration-300 card-hover group fade-in">
+                    <div class="flex items-start mb-4">
+                        <div class="w-16 h-16 rounded-md bg-wlDarker flex items-center justify-center mr-4 group-hover:animate-pulse-slow flex-shrink-0 overflow-hidden">
+                            ${imageHtml}
+                        </div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="text-xl font-medium mb-1 flex items-center truncate" title="${monster.name}">${elementIcon}<span class="truncate">${monster.name}</span></h4>
+                            <p class="text-xs text-opacity-70 truncate">Level: ${monster.level || 'N/A'} | ${monster.location || 'Unknown'}</p>
+                        </div>
+                    </div>
+                    <div class="mb-3 space-y-1 text-sm">
+                        <div class="flex gap-4">
+                            <p><strong class="font-medium text-opacity-70">HP:</strong> <span class="text-wlRed">${(monster.hp || 0).toLocaleString()}</span></p>
+                            <p><strong class="font-medium text-opacity-70">SPD:</strong> <span class="text-wlPurple">${monster.spd || 'N/A'}</span></p>
+                        </div>
+                        <p class="truncate"><strong class="font-medium text-opacity-70">Drops:</strong> ${dropsPreview}</p>
+                    </div>
+                    <div class="mt-4 flex justify-end">
+                        <a href="#" data-monster-id="${monster.id}" class="view-details-link text-wlRed text-sm font-medium hover:underline flex items-center">
+                            View Details <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+                </div>`;
+        }
+
+        function displayMonsters(monstersToDisplay) {
+            if (!monsterGrid || !monsterCountSpan || !noResultsMessage) return;
+            
+            // Store filtered monsters for pagination
+            filteredMonsters = monstersToDisplay;
+            
+            // Calculate pagination
+            const totalPages = Math.ceil(filteredMonsters.length / itemsPerPage);
+            if (currentPage > totalPages && totalPages > 0) {
+                currentPage = totalPages;
+            }
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = Math.min(startIndex + itemsPerPage, filteredMonsters.length);
+            const monstersOnPage = filteredMonsters.slice(startIndex, endIndex);
+            
+            monsterGrid.innerHTML = ''; 
+            noResultsMessage.classList.toggle('hidden', filteredMonsters.length > 0);
+            monsterGrid.classList.toggle('hidden', filteredMonsters.length === 0);
+            paginationControls.classList.toggle('hidden', filteredMonsters.length === 0);
+            
+            // Batch rendering for better performance
+            const batchSize = 50;
+            let currentIndex = 0;
+            
+            function renderBatch() {
+                const fragment = document.createDocumentFragment();
+                const endIndexBatch = Math.min(currentIndex + batchSize, monstersOnPage.length);
+                
+                for (let i = currentIndex; i < endIndexBatch; i++) {
+                    const monster = monstersOnPage[i];
+                    const cardHtml = renderMonsterCard(monster);
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = cardHtml.trim();
+                    const cardElement = tempDiv.firstChild;
+                    if (cardElement) {
+                        cardElement.style.animationDelay = `${i * 0.02}s`;
+                        fragment.appendChild(cardElement);
+                    }
+                }
+                
+                monsterGrid.appendChild(fragment);
+                currentIndex = endIndexBatch;
+                
+                if (currentIndex < monstersOnPage.length) {
+                    requestAnimationFrame(renderBatch);
+                }
+            }
+            
+            requestAnimationFrame(renderBatch);
+            monsterCountSpan.textContent = filteredMonsters.length;
+            
+            // Update pagination info
+            if (filteredMonsters.length > 0) {
+                paginationInfo.textContent = `Showing ${startIndex + 1}-${endIndex} of ${filteredMonsters.length} monsters`;
+            }
+            
+            // Update pagination controls
+            updatePaginationControls(totalPages);
+        }
+        
+        function updatePaginationControls(totalPages) {
+            // Update button states
+            firstPageBtn.disabled = currentPage === 1;
+            prevPageBtn.disabled = currentPage === 1;
+            nextPageBtn.disabled = currentPage === totalPages || totalPages === 0;
+            lastPageBtn.disabled = currentPage === totalPages || totalPages === 0;
+            
+            // Generate page numbers
+            pageNumbersContainer.innerHTML = '';
+            const maxVisiblePages = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+            let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+            
+            if (endPage - startPage + 1 < maxVisiblePages) {
+                startPage = Math.max(1, endPage - maxVisiblePages + 1);
+            }
+            
+            // Add first page + ellipsis if needed
+            if (startPage > 1) {
+                pageNumbersContainer.appendChild(createPageButton(1));
+                if (startPage > 2) {
+                    const ellipsis = document.createElement('span');
+                    ellipsis.className = 'px-2 text-opacity-50';
+                    ellipsis.textContent = '...';
+                    pageNumbersContainer.appendChild(ellipsis);
+                }
+            }
+            
+            // Add page numbers
+            for (let i = startPage; i <= endPage; i++) {
+                pageNumbersContainer.appendChild(createPageButton(i));
+            }
+            
+            // Add last page + ellipsis if needed
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    const ellipsis = document.createElement('span');
+                    ellipsis.className = 'px-2 text-opacity-50';
+                    ellipsis.textContent = '...';
+                    pageNumbersContainer.appendChild(ellipsis);
+                }
+                pageNumbersContainer.appendChild(createPageButton(totalPages));
+            }
+        }
+        
+        function createPageButton(pageNum) {
+            const btn = document.createElement('button');
+            btn.className = `px-3 py-1 rounded-md transition ${pageNum === currentPage 
+                ? 'bg-wlRed text-white' 
+                : 'bg-wlDark bg-opacity-70 border border-wlLight border-opacity-20 hover:border-wlRed'}`;
+            btn.textContent = pageNum;
+            btn.addEventListener('click', () => {
+                currentPage = pageNum;
+                displayMonsters(filteredMonsters);
+                // Scroll to top of grid
+                monsterGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+            return btn;
+        }
+        
+        function goToPage(page) {
+            const totalPages = Math.ceil(filteredMonsters.length / itemsPerPage);
+            currentPage = Math.max(1, Math.min(page, totalPages));
+            displayMonsters(filteredMonsters);
+            monsterGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+        function applyFiltersSortAndSearch() {
+            let processedMonsters = [...allMonsters];
+            if (currentFilters.element) {
+                processedMonsters = processedMonsters.filter(m => m.element === currentFilters.element);
+            }
+            if (currentFilters.type) {
+                processedMonsters = processedMonsters.filter(m => m.type === currentFilters.type);
+            }
+            if (currentFilters.location) {
+                processedMonsters = processedMonsters.filter(m => m.location === currentFilters.location);
+            }
+            // Level range filter
+            if (currentFilters.levelMin !== null) {
+                processedMonsters = processedMonsters.filter(m => (m.level || 0) >= currentFilters.levelMin);
+            }
+            if (currentFilters.levelMax !== null) {
+                processedMonsters = processedMonsters.filter(m => (m.level || 0) <= currentFilters.levelMax);
+            }
+            const searchTerm = searchInput ? searchInput.value.toLowerCase() : "";
+            if (searchTerm) {
+                processedMonsters = processedMonsters.filter(monster => 
+                    monster.name.toLowerCase().includes(searchTerm) ||
+                    (monster.location && monster.location.toLowerCase().includes(searchTerm)) ||
+                    (monster.drops && monster.drops.some(drop => drop.name.toLowerCase().includes(searchTerm)))
+                );
+            }
+            processedMonsters.sort((a, b) => {
+                let valA = a[currentSort.column]; let valB = b[currentSort.column];
+                if (valA === null || valA === undefined) valA = currentSort.column === 'level' ? 0 : '';
+                if (valB === null || valB === undefined) valB = currentSort.column === 'level' ? 0 : '';
+                if (typeof valA === 'string') { valA = valA.toLowerCase(); valB = valB.toLowerCase(); }
+                if (valA < valB) return currentSort.order === 'asc' ? -1 : 1;
+                if (valA > valB) return currentSort.order === 'asc' ? 1 : -1;
+                return 0;
+            });
+            displayMonsters(processedMonsters);
+        }
+
+        async function openMonsterModal(monsterId) {
+            const monster = allMonsters.find(m => m.id === parseInt(monsterId));
+            if (!monster || !monsterModal) return;
+
+            // Load full monster details if not cached
+            let fullMonster = monsterDetails[monsterId];
+            if (!fullMonster && monster.file) {
+                try {
+                    const response = await fetch(`data/monsters/${monster.file}`);
+                    fullMonster = await response.json();
+                    monsterDetails[monsterId] = fullMonster;
+                } catch (error) {
+                    console.error('Error loading monster details:', error);
+                    fullMonster = monster;
+                }
+            }
+            
+            const stats = fullMonster?.stats || {};
+            
+            // Set monster image
+            if (monster.image) {
+                modalMonsterIcon.innerHTML = `<img src="${monster.image}" alt="${monster.name}" class="w-full h-full object-contain" onerror="this.parentElement.innerHTML='<i class=\\'fas fa-dragon text-5xl text-wlRed\\'></i>'">`;
+            } else {
+                modalMonsterIcon.innerHTML = `<i class="fas fa-dragon text-5xl text-wlRed"></i>`;
+            }
+            
+            modalMonsterName.textContent = monster.name;
+            const elementDisplay = monster.element ? ` | Element: ${monster.element}` : '';
+            modalMonsterSubtitle.textContent = `Level: ${stats.level || monster.level || 'N/A'} | Location: ${monster.location || 'Unknown'}${elementDisplay}`;
+            
+            // Consolidated stats display
+            const statsHtml = `
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+                    <div class="bg-wlDarker rounded-lg p-2 text-center">
+                        <div class="text-xs text-opacity-60">HP</div>
+                        <div class="font-bold text-wlRed">${(stats.hp || monster.hp || 0).toLocaleString()}</div>
+                    </div>
+                    <div class="bg-wlDarker rounded-lg p-2 text-center">
+                        <div class="text-xs text-opacity-60">SP</div>
+                        <div class="font-bold text-wlBlue">${stats.sp || 'N/A'}</div>
+                    </div>
+                    <div class="bg-wlDarker rounded-lg p-2 text-center">
+                        <div class="text-xs text-opacity-60">SPD</div>
+                        <div class="font-bold text-wlPurple">${stats.spd || 'N/A'}</div>
+                    </div>
+                    <div class="bg-wlDarker rounded-lg p-2 text-center">
+                        <div class="text-xs text-opacity-60">STR</div>
+                        <div class="font-bold">${stats.str || 'N/A'}</div>
+                    </div>
+                    <div class="bg-wlDarker rounded-lg p-2 text-center">
+                        <div class="text-xs text-opacity-60">CON</div>
+                        <div class="font-bold">${stats.con || 'N/A'}</div>
+                    </div>
+                    <div class="bg-wlDarker rounded-lg p-2 text-center">
+                        <div class="text-xs text-opacity-60">INT</div>
+                        <div class="font-bold">${stats.int || 'N/A'}</div>
+                    </div>
+                    <div class="bg-wlDarker rounded-lg p-2 text-center">
+                        <div class="text-xs text-opacity-60">WIS</div>
+                        <div class="font-bold">${stats.wis || 'N/A'}</div>
+                    </div>
+                    <div class="bg-wlDarker rounded-lg p-2 text-center">
+                        <div class="text-xs text-opacity-60">AGI</div>
+                        <div class="font-bold">${stats.agi || 'N/A'}</div>
+                    </div>
+                    <div class="bg-wlDarker rounded-lg p-2 text-center">
+                        <div class="text-xs text-opacity-60">Catchable</div>
+                        <div class="font-bold ${stats.catchable === 'Yes' ? 'text-wlGreen' : 'text-wlRed'}">${stats.catchable || 'N/A'}</div>
+                    </div>
+                </div>
+            `;
+            
+            // Update modal stats section
+            const modalStatsSection = document.getElementById('modalMonsterStats');
+            if (modalStatsSection) {
+                modalStatsSection.innerHTML = statsHtml;
+            } else {
+                // Create stats section if it doesn't exist
+                const statsDiv = document.createElement('div');
+                statsDiv.id = 'modalMonsterStats';
+                statsDiv.className = 'mb-6';
+                statsDiv.innerHTML = statsHtml;
+                modalMonsterDrops.parentElement.insertBefore(statsDiv, modalMonsterDrops.parentElement.firstChild);
+            }
+
+            // Display drops with item images and links
+            modalMonsterDrops.innerHTML = '';
+            const drops = fullMonster?.drops || monster.drops || [];
+            modalNoDrops.classList.toggle('hidden', drops.length > 0);
+            modalMonsterDrops.classList.toggle('hidden', drops.length === 0);
+            
+            if (drops.length > 0) {
+                // Load items index lazily when needed
+                const itemsIdx = await getItemsIndex();
+                
+                drops.forEach(drop => {
+                    const li = document.createElement('li');
+                    li.className = 'flex items-center gap-2 py-1';
+                    
+                    // Get item image from items index
+                    let itemImage = null;
+                    if (drop.itemId && itemsIdx[drop.itemId]) {
+                        const item = itemsIdx[drop.itemId];
+                        const category = item.category || 'item';
+                        itemImage = `data/images/${category}-${drop.itemId}.png`;
+                    }
+                    
+                    const imgHtml = itemImage 
+                        ? `<img src="${itemImage}" alt="${drop.name}" class="w-6 h-6 object-contain bg-wlDarker rounded" onerror="this.style.display='none'">`
+                        : `<div class="w-6 h-6 bg-wlDarker rounded flex items-center justify-center text-xs"><i class="fas fa-cube text-wlPurple"></i></div>`;
+                    
+                    if (drop.itemId && drop.itemFile) {
+                        li.innerHTML = `${imgHtml}<a href="Item.html?search=${encodeURIComponent(drop.name)}" class="text-wlBlue hover:underline text-sm">${drop.name}</a>`;
+                    } else {
+                        li.innerHTML = `${imgHtml}<span class="text-sm">${drop.name}</span>`;
+                    }
+                    modalMonsterDrops.appendChild(li);
+                });
+            }
+            
+            // Remove any existing extra stats section
+            const existingExtraStats = modalMonsterDrops.parentElement.querySelector('.monster-extra-stats');
+            if (existingExtraStats) existingExtraStats.remove();
+            
+            monsterModal.classList.remove('modal-hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMonsterModal() {
+            if (!monsterModal) return;
+            monsterModal.classList.add('modal-hidden');
+            document.body.style.overflow = '';
+        }
+
+        const openSidebarButton = document.getElementById('openSidebar');
+        const closeSidebarButton = document.getElementById('closeSidebar');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const pageDarkOverlay = document.getElementById('darkOverlay');
+
+        function toggleSidebar(visible) {
+            if (!mobileSidebar || !pageDarkOverlay) return;
+            mobileSidebar.classList.toggle('sidebar-hidden', !visible);
+            mobileSidebar.classList.toggle('sidebar-visible', visible);
+            pageDarkOverlay.classList.toggle('dark-overlay-visible', visible);
+        }
+
+        if (openSidebarButton) openSidebarButton.addEventListener('click', () => toggleSidebar(true));
+        if (closeSidebarButton) closeSidebarButton.addEventListener('click', () => toggleSidebar(false));
+        if (pageDarkOverlay) pageDarkOverlay.addEventListener('click', () => toggleSidebar(false));
+        
+        if (sortButton && sortDropdown && sortButtonText) {
+            sortButton.addEventListener('click', (event) => { event.stopPropagation(); sortDropdown.classList.toggle('hidden'); });
+            document.addEventListener('click', (event) => {
+                if (!sortButton.contains(event.target) && !sortDropdown.contains(event.target)) { sortDropdown.classList.add('hidden'); }
+            });
+            sortDropdown.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); const [column, order] = this.dataset.sort.split('_');
+                    currentSort = { column, order }; sortButtonText.textContent = `Sort by: ${this.textContent}`;
+                    sortDropdown.classList.add('hidden'); 
+                    currentPage = 1;
+                    applyFiltersSortAndSearch();
+                });
+            });
+        }
+        
+        if (searchInput) {
+            let searchTimeout;
+            searchInput.addEventListener('input', () => {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    currentPage = 1;
+                    applyFiltersSortAndSearch();
+                }, 300);
+            });
+        }
+        if (filterElementSelect) filterElementSelect.addEventListener('change', (e) => { currentFilters.element = e.target.value; currentPage = 1; applyFiltersSortAndSearch(); });
+        if (filterTypeSelect) filterTypeSelect.addEventListener('change', (e) => { currentFilters.type = e.target.value; currentPage = 1; applyFiltersSortAndSearch(); });
+        
+        // Level filter with sliders
+        const levelMinSlider = document.getElementById('levelMinSlider');
+        const levelMaxSlider = document.getElementById('levelMaxSlider');
+        const levelRangeDisplay = document.getElementById('levelRangeDisplay');
+        const sliderRange = document.getElementById('sliderRange');
+        const quickButtons = document.querySelectorAll('.level-quick-btn');
+        
+        function updateSliderVisuals() {
+            if (!levelMinSlider || !levelMaxSlider || !sliderRange || !levelRangeDisplay) return;
+            
+            const min = parseInt(levelMinSlider.value);
+            const max = parseInt(levelMaxSlider.value);
+            const percent1 = ((min - 1) / 199) * 100;
+            const percent2 = ((max - 1) / 199) * 100;
+            
+            sliderRange.style.left = percent1 + '%';
+            sliderRange.style.width = (percent2 - percent1) + '%';
+            
+            // Update display
+            if (min === 1 && max === 200) {
+                levelRangeDisplay.textContent = 'All Levels';
+            } else if (min === max) {
+                levelRangeDisplay.textContent = `Level ${min}`;
+            } else {
+                levelRangeDisplay.textContent = `Lv ${min} - ${max}`;
+            }
+            
+            // Update quick buttons active state
+            quickButtons.forEach(btn => {
+                const btnMin = parseInt(btn.dataset.min);
+                const btnMax = parseInt(btn.dataset.max);
+                btn.classList.toggle('active', min === btnMin && max === btnMax);
+            });
+        }
+        
+        function applyLevelFilter() {
+            if (!levelMinSlider || !levelMaxSlider) return;
+            
+            let min = parseInt(levelMinSlider.value);
+            let max = parseInt(levelMaxSlider.value);
+            
+            // Ensure min doesn't exceed max
+            if (min > max) {
+                if (this === levelMinSlider) {
+                    levelMaxSlider.value = min;
+                    max = min;
+                } else {
+                    levelMinSlider.value = max;
+                    min = max;
+                }
+            }
+            
+            currentFilters.levelMin = min > 1 ? min : null;
+            currentFilters.levelMax = max < 200 ? max : null;
+            
+            updateSliderVisuals();
+            currentPage = 1;
+            applyFiltersSortAndSearch();
+        }
+        
+        if (levelMinSlider) {
+            levelMinSlider.addEventListener('input', applyLevelFilter);
+        }
+        if (levelMaxSlider) {
+            levelMaxSlider.addEventListener('input', applyLevelFilter);
+        }
+        
+        // Quick buttons
+        quickButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const min = parseInt(btn.dataset.min);
+                const max = parseInt(btn.dataset.max);
+                if (levelMinSlider) levelMinSlider.value = min;
+                if (levelMaxSlider) levelMaxSlider.value = max;
+                
+                currentFilters.levelMin = min > 1 ? min : null;
+                currentFilters.levelMax = max < 200 ? max : null;
+                
+                updateSliderVisuals();
+                currentPage = 1;
+                applyFiltersSortAndSearch();
+            });
+        });
+        
+        // Initialize slider visuals
+        updateSliderVisuals();
+        
+        // Pagination event listeners
+        if (firstPageBtn) firstPageBtn.addEventListener('click', () => goToPage(1));
+        if (prevPageBtn) prevPageBtn.addEventListener('click', () => goToPage(currentPage - 1));
+        if (nextPageBtn) nextPageBtn.addEventListener('click', () => goToPage(currentPage + 1));
+        if (lastPageBtn) lastPageBtn.addEventListener('click', () => goToPage(Math.ceil(filteredMonsters.length / itemsPerPage)));
+        if (perPageSelect) {
+            perPageSelect.addEventListener('change', (e) => {
+                itemsPerPage = parseInt(e.target.value);
+                currentPage = 1;
+                displayMonsters(filteredMonsters);
+            });
+        }
+
+        if (monsterGrid) {
+            monsterGrid.addEventListener('click', (event) => {
+                const link = event.target.closest('.view-details-link');
+                if (link && link.dataset.monsterId) { event.preventDefault(); openMonsterModal(link.dataset.monsterId); }
+            });
+        }
+        if (modalCloseButton) modalCloseButton.addEventListener('click', closeMonsterModal);
+        if (monsterModal) monsterModal.addEventListener('click', (event) => { if (event.target === monsterModal) { closeMonsterModal(); } });
+        document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !monsterModal.classList.contains('modal-hidden')) { closeMonsterModal(); } });
+
+        // Element filter is already populated in HTML, just add event listener
+        if (filterElementSelect) {
+            filterElementSelect.addEventListener('change', (e) => { 
+                currentFilters.element = e.target.value;
+                currentPage = 1;
+                applyFiltersSortAndSearch(); 
+            });
+        }
+        
+        // Add location filter
+        const filterLocationSelect = document.getElementById('filterLocation');
+        if (filterLocationSelect) {
+            const locations = [...new Set(allMonsters.filter(m => m.location).map(m => m.location))].sort();
+            populateFilterDropdown(filterLocationSelect, locations);
+            filterLocationSelect.addEventListener('change', (e) => { 
+                currentFilters.location = e.target.value;
+                currentPage = 1;
+                applyFiltersSortAndSearch(); 
+            });
+        }
+        
+        applyFiltersSortAndSearch();
+    });
+    </script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('light');
+            themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('light');
+            const icon = themeToggle.querySelector('i');
+            
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>

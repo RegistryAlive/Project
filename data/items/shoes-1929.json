@@ -1,0 +1,17 @@
+{
+  "id": 1929,
+  "name": "Bloody War Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Pure Iron / Grass / Titanium",
+  "description": "The boots which are useful in fighting.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20
+  },
+  "image": "data/images/shoes-1929.png",
+  "file": "shoes-1929.json"
+}

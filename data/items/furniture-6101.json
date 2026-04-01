@@ -1,0 +1,15 @@
+{
+  "id": 6101,
+  "name": "Linen Rope",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made of linen thread",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6101.png",
+  "file": "furniture-6101.json"
+}

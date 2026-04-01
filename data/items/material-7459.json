@@ -1,0 +1,17 @@
+{
+  "id": 7459,
+  "name": "Coconut",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "A Fruit with stiff shell",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30
+  },
+  "image": "data/images/material-7459.png",
+  "file": "material-7459.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6213,
+  "name": "Pail",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The item which can carry water.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6213.png",
+  "file": "furniture-6213.json"
+}

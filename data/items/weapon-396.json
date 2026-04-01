@@ -1,0 +1,18 @@
+{
+  "id": 396,
+  "name": "Divine Pistol",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The shadow behind the divine light. For each forging +2, Critical rate +1% up to a maximum of 50%. Can't be embedded with a Critical Bomb.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-396.png",
+  "file": "weapon-396.json"
+}

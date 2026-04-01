@@ -1,0 +1,18 @@
+{
+  "id": 1558,
+  "name": "Energy Halo+8",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 68,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 340,
+    "MaxSP": 340
+  },
+  "image": "data/images/helmet-1558.png",
+  "file": "helmet-1558.json"
+}

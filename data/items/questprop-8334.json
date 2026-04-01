@@ -1,0 +1,15 @@
+{
+  "id": 8334,
+  "name": "Cough Drop",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Soothes the throat",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8334.png",
+  "file": "questprop-8334.json"
+}

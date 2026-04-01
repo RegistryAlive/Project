@@ -1,0 +1,17 @@
+{
+  "id": 823,
+  "name": "Eternal book",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The above eternal life filled with magic book",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20
+  },
+  "image": "data/images/weapon-823.png",
+  "file": "weapon-823.json"
+}

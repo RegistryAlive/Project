@@ -1,0 +1,18 @@
+{
+  "id": 921,
+  "name": "Dragon Fan (Instance)",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 2,
+  "level": 80,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A dragon fan with 14% crit",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 35,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-921.png",
+  "file": "weapon-921.json"
+}

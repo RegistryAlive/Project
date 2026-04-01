@@ -1,0 +1,39 @@
+{
+  "id": 385,
+  "name": "Chaotic Skeleton",
+  "location": "Ghost Ship",
+  "image": "data/Monster_Images/monster-385.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Angry Skeleton",
+      "itemId": 7806,
+      "itemFile": "material-7806.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cinnamon",
+      "itemId": 7419,
+      "itemFile": "material-7419.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pink Crystal",
+      "itemId": 7598,
+      "itemFile": "material-7598.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 865,
+    "sp": 904,
+    "catchable": "Unknown",
+    "spd": 219,
+    "str": 54,
+    "con": 50,
+    "int": 52,
+    "wis": 57,
+    "agi": 45
+  }
+}

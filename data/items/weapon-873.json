@@ -1,0 +1,15 @@
+{
+  "id": 873,
+  "name": "Attack Pestle",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Cuts the enemy and drains their SP.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-873.png",
+  "file": "weapon-873.json"
+}

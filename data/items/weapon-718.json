@@ -1,0 +1,17 @@
+{
+  "id": 718,
+  "name": "Chiron axe",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Created using rare dragons as the core, it is made by researching and casting using the mold of a dragon.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 69
+  },
+  "image": "data/images/weapon-718.png",
+  "file": "weapon-718.json"
+}

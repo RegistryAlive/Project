@@ -1,0 +1,17 @@
+{
+  "id": 10035,
+  "name": "Hot Air Capsul",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Gigantic and special flying equipment that is powered by hot air it produces. (Capsule)",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 36975
+  },
+  "image": "data/images/vehicle-10035.png",
+  "file": "vehicle-10035.json"
+}

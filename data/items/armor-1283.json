@@ -1,0 +1,18 @@
+{
+  "id": 1283,
+  "name": "Crimson Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A crimson dinner suit with protective magic attached. Physical damage received is reduced by 5%",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 300,
+    "SPD": 20
+  },
+  "image": "data/images/armor-1283.png",
+  "file": "armor-1283.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 988,
+  "name": "Colorful Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Iron / Leather",
+  "description": "Cyanine armor",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28,
+    "SPD": 8
+  },
+  "image": "data/images/armor-988.png",
+  "file": "armor-988.json"
+}

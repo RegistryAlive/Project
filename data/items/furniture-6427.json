@@ -1,0 +1,15 @@
+{
+  "id": 6427,
+  "name": "Potion Cabinet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A special cabinet used to store various potions",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6427.png",
+  "file": "furniture-6427.json"
+}

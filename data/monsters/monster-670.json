@@ -1,0 +1,27 @@
+{
+  "id": 670,
+  "name": "Dwarf",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-670.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 413,
+    "sp": 319,
+    "catchable": "Unknown",
+    "spd": 141,
+    "str": 45,
+    "con": 27,
+    "int": 24,
+    "wis": 21,
+    "agi": 33
+  }
+}

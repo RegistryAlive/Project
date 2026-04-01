@@ -1,0 +1,15 @@
+{
+  "id": 7789,
+  "name": "Hard Shell",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Canine",
+  "description": "A Shell of a creature",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7789.png",
+  "file": "material-7789.json"
+}

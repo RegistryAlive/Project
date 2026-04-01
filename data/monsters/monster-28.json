@@ -1,0 +1,39 @@
+{
+  "id": 28,
+  "name": "Spraying Tyrannosaur",
+  "location": "Hezrou Island",
+  "image": "data/Monster_Images/monster-28.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Cantaloupe",
+      "itemId": 7447,
+      "itemFile": "material-7447.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lei Dragon Thigh",
+      "itemId": 7813,
+      "itemFile": "material-7813.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 78,
+    "hp": 1019,
+    "sp": 724,
+    "catchable": "Yes",
+    "spd": 187,
+    "str": 55,
+    "con": 63,
+    "int": 35,
+    "wis": 46,
+    "agi": 35
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7834,
+  "name": "Delicate Nylon",
+  "type": "MaterialOil",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Nylon",
+  "description": "Delicate polymer with flexibility and durability.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7834.png",
+  "file": "material-7834.json"
+}

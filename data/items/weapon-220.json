@@ -1,0 +1,18 @@
+{
+  "id": 220,
+  "name": "Sky Sword +10",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets, 46% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 90,
+    "SPD": 90
+  },
+  "image": "data/images/weapon-220.png",
+  "file": "weapon-220.json"
+}

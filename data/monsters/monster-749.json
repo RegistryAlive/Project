@@ -1,0 +1,27 @@
+{
+  "id": 749,
+  "name": "Holy Eagle (Quest)",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-749.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 98,
+    "hp": 3802,
+    "sp": 856,
+    "catchable": "Unknown",
+    "spd": 299,
+    "str": 62,
+    "con": 56,
+    "int": 49,
+    "wis": 51,
+    "agi": 76
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2704,
+  "name": "Magic Clock +9",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 96,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A clockwork glowing with mysterious magical powers.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 48,
+    "MDEF": 48
+  },
+  "image": "data/images/special-2704.png",
+  "file": "special-2704.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8289,
+  "name": "Key to Treasur",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can unlock the dungeon underneath Persian palace",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8289.png",
+  "file": "questprop-8289.json"
+}

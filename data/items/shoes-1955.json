@@ -1,0 +1,18 @@
+{
+  "id": 1955,
+  "name": "Blue Rider Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Nylon / Feather / Magic",
+  "description": "Boots that can resist physical and magical attacks",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18,
+    "MDEF": 18
+  },
+  "image": "data/images/shoes-1955.png",
+  "file": "shoes-1955.json"
+}

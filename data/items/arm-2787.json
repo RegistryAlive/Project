@@ -1,0 +1,18 @@
+{
+  "id": 2787,
+  "name": "Iga Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Leather / Grass",
+  "description": "Special gloves for Japanese fighter Iga.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 5,
+    "SPD": 11
+  },
+  "image": "data/images/arm-2787.png",
+  "file": "arm-2787.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1022,
+  "name": "Copper Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Copper",
+  "description": "Scale armor made of copper. Good defense.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 9,
+    "MDEF": 5
+  },
+  "image": "data/images/armor-1022.png",
+  "file": "armor-1022.json"
+}

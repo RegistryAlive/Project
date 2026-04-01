@@ -1,0 +1,15 @@
+{
+  "id": 6341,
+  "name": "Game Mechine",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A simple game machine,double click to start game.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6341.png",
+  "file": "furniture-6341.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 152,
+  "name": "Guard",
+  "location": "Stoowa Isle (Subterranean Maze)",
+  "image": "data/Monster_Images/monster-152.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Bread",
+      "itemId": 7010,
+      "itemFile": "material-7010.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 40,
+    "hp": 362,
+    "sp": 225,
+    "catchable": "Unknown",
+    "spd": 104,
+    "str": 35,
+    "con": 31,
+    "int": 17,
+    "wis": 15,
+    "agi": 22
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6747,
+  "name": "Simple Candle",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A simple candle for the living room.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6747.png",
+  "file": "furniture-6747.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 677,
+  "name": "Golden Rings+9",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 37,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It has 22% seal resistance, cannot be fastened",
+  "size": "1x1",
+  "attributes": {
+    "Special": 22,
+    "SPD": 75
+  },
+  "image": "data/images/weapon-677.png",
+  "file": "weapon-677.json"
+}

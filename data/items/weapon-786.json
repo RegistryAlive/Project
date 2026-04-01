@@ -1,0 +1,18 @@
+{
+  "id": 786,
+  "name": "Scarlet Mace",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Lead / Pure Iron",
+  "description": "A heavy mace with a bright red glow",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "DEF": 8
+  },
+  "image": "data/images/weapon-786.png",
+  "file": "weapon-786.json"
+}

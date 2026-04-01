@@ -1,0 +1,39 @@
+{
+  "id": 1074,
+  "name": "Twilight Cactus",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1075.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Nectar",
+      "itemId": 7529,
+      "itemFile": "material-7529.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Nectar",
+      "itemId": 7531,
+      "itemFile": "material-7531.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 106,
+    "hp": 1398,
+    "sp": 984,
+    "catchable": "Unknown",
+    "spd": 275,
+    "str": 58,
+    "con": 78,
+    "int": 66,
+    "wis": 58,
+    "agi": 58
+  }
+}

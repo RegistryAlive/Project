@@ -1,0 +1,15 @@
+{
+  "id": 5013,
+  "name": "Angel Wings Box",
+  "type": "ItemBox",
+  "category": "accessory",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "DEF+12,MDEF+12, can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5013.png",
+  "file": "accessory-5013.json"
+}

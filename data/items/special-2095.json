@@ -1,0 +1,18 @@
+{
+  "id": 2095,
+  "name": "Wind Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Stranded with bloody teeth of a wing-wolf.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 3,
+    "ATK": 1
+  },
+  "image": "data/images/special-2095.png",
+  "file": "special-2095.json"
+}

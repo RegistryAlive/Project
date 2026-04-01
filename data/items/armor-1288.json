@@ -1,0 +1,18 @@
+{
+  "id": 1288,
+  "name": "Hacker costume",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Technological clothing full of rebellious feeling, made of strong and easy to move materials, can move flexibly after wearing.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MaxHP": 300
+  },
+  "image": "data/images/armor-1288.png",
+  "file": "armor-1288.json"
+}

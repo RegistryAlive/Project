@@ -1,0 +1,27 @@
+{
+  "id": 911,
+  "name": "Snake Lord (Quest)",
+  "location": "Calcutta",
+  "image": "data/Monster_Images/monster-911.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 94,
+    "hp": 18000,
+    "sp": 641,
+    "catchable": "Unknown",
+    "spd": 225,
+    "str": 81,
+    "con": 85,
+    "int": 37,
+    "wis": 37,
+    "agi": 42
+  }
+}

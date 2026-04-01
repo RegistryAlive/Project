@@ -1,0 +1,15 @@
+{
+  "id": 6032,
+  "name": "360 Periscope",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "Circumference of 360 degree",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6032.png",
+  "file": "furniture-6032.json"
+}

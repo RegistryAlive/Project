@@ -1,0 +1,15 @@
+{
+  "id": 8251,
+  "name": "Halloween Pumpkin",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Produced from Pumpkin Seed.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8251.png",
+  "file": "questprop-8251.json"
+}

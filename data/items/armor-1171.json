@@ -1,0 +1,18 @@
+{
+  "id": 1171,
+  "name": "Crystal Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal) / Steel / Titanium",
+  "description": "Loricae with defensive powers",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 35,
+    "ATK": 4
+  },
+  "image": "data/images/armor-1171.png",
+  "file": "armor-1171.json"
+}

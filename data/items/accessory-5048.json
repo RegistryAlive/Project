@@ -1,0 +1,17 @@
+{
+  "id": 5048,
+  "name": "Prepared Chinese Ink",
+  "type": "ItemBattle",
+  "category": "accessory",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fluid",
+  "description": "Makes the sneaky people visible.",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 0
+  },
+  "image": "data/images/accessory-5048.png",
+  "file": "accessory-5048.json"
+}

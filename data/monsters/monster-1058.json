@@ -1,0 +1,39 @@
+{
+  "id": 1058,
+  "name": "Little Spider",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-1059.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Poisonous Juice",
+      "itemId": 7711,
+      "itemFile": "material-7711.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Spider Net",
+      "itemId": 7765,
+      "itemFile": "material-7765.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 19,
+    "hp": 130,
+    "sp": 165,
+    "catchable": "Yes",
+    "spd": 46.5,
+    "str": 9,
+    "con": 10,
+    "int": 15,
+    "wis": 14,
+    "agi": 9
+  }
+}

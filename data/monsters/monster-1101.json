@@ -1,0 +1,39 @@
+{
+  "id": 1101,
+  "name": "Hippocampus",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-1102.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Crab Roes",
+      "itemId": 7498,
+      "itemFile": "material-7498.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sepia",
+      "itemId": 7495,
+      "itemFile": "material-7495.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 135,
+    "hp": 1758,
+    "sp": 1580,
+    "catchable": "Yes",
+    "spd": 312.5,
+    "str": 74,
+    "con": 90,
+    "int": 96,
+    "wis": 90,
+    "agi": 55
+  }
+}

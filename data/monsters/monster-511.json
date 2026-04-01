@@ -1,0 +1,39 @@
+{
+  "id": 511,
+  "name": "Plain Barbarian",
+  "location": "Madagascar",
+  "image": "data/Monster_Images/monster-511.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Paper Grass",
+      "itemId": 7364,
+      "itemFile": "material-7364.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Noodles",
+      "itemId": 7515,
+      "itemFile": "material-7515.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 84,
+    "hp": 812,
+    "sp": 869,
+    "catchable": "Unknown",
+    "spd": 234,
+    "str": 41,
+    "con": 47,
+    "int": 55,
+    "wis": 55,
+    "agi": 54
+  }
+}

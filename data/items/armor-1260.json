@@ -1,0 +1,15 @@
+{
+  "id": 1260,
+  "name": "White WingSuit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "White Wing Suit",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1260.png",
+  "file": "armor-1260.json"
+}

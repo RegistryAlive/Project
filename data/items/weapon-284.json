@@ -1,0 +1,17 @@
+{
+  "id": 284,
+  "name": "Ghost Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A long halberd used by beast's people clan.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 44
+  },
+  "image": "data/images/weapon-284.png",
+  "file": "weapon-284.json"
+}

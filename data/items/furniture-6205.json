@@ -1,0 +1,15 @@
+{
+  "id": 6205,
+  "name": "1 Day Fishing",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It was made from superior batten,used for 1 day.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6205.png",
+  "file": "furniture-6205.json"
+}

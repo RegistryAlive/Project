@@ -1,0 +1,18 @@
+{
+  "id": 245,
+  "name": "Blazing Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A magical short sword forged by an elven craftsman, which incorporates fire elements. After being equipped, you can use the skill \"Yan Slash\", with a 46% chance of a critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 75,
+    "MaxHP": 300
+  },
+  "image": "data/images/weapon-245.png",
+  "file": "weapon-245.json"
+}

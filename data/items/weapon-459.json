@@ -1,0 +1,18 @@
+{
+  "id": 459,
+  "name": "Red Wine Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A heavy bow imitating the appearance of a corkscrew, with an elegant smell of red wine; it can ignore the bow resistance of monsters, and when equipped with other bunny series equipment at the same time, it can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45,
+    "MaxHP": 150
+  },
+  "image": "data/images/weapon-459.png",
+  "file": "weapon-459.json"
+}

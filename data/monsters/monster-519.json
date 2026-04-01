@@ -1,0 +1,45 @@
+{
+  "id": 519,
+  "name": "Flood Caterpillar",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-519.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Garlic",
+      "itemId": 7417,
+      "itemFile": "material-7417.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Leek",
+      "itemId": 7410,
+      "itemFile": "material-7410.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Waxgourd",
+      "itemId": 7421,
+      "itemFile": "material-7421.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 44,
+    "hp": 428,
+    "sp": 353,
+    "catchable": "No",
+    "spd": 110,
+    "str": 24,
+    "con": 30,
+    "int": 31,
+    "wis": 25,
+    "agi": 22
+  }
+}

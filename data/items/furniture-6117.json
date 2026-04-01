@@ -1,0 +1,15 @@
+{
+  "id": 6117,
+  "name": "Landing Plate",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The support base for a space craft's landing",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6117.png",
+  "file": "furniture-6117.json"
+}

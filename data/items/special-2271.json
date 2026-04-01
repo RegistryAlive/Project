@@ -1,0 +1,17 @@
+{
+  "id": 2271,
+  "name": "Cherish Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Titanium / Mercury / Magic",
+  "description": "Cross necklace leading out wearer's life energy.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 40
+  },
+  "image": "data/images/special-2271.png",
+  "file": "special-2271.json"
+}

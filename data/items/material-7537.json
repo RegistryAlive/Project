@@ -1,0 +1,18 @@
+{
+  "id": 7537,
+  "name": "Big Muskmelon",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "HP": 40,
+    "SP": 10
+  },
+  "image": "data/images/material-7537.png",
+  "file": "material-7537.json"
+}

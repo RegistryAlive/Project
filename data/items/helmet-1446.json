@@ -1,0 +1,18 @@
+{
+  "id": 1446,
+  "name": "Green Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 6,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Grass / Tissue",
+  "description": "Its shaped like an ear from the green evil's head",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 3,
+    "MDEF": 3
+  },
+  "image": "data/images/helmet-1446.png",
+  "file": "helmet-1446.json"
+}

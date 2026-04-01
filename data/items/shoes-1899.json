@@ -1,0 +1,18 @@
+{
+  "id": 1899,
+  "name": "Long Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Leather / Flower",
+  "description": "Boots which are made up from leather",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17,
+    "SPD": 16
+  },
+  "image": "data/images/shoes-1899.png",
+  "file": "shoes-1899.json"
+}

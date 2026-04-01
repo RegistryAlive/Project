@@ -1,0 +1,15 @@
+{
+  "id": 6469,
+  "name": "Wall Painting",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pretty Wall Painting",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6469.png",
+  "file": "furniture-6469.json"
+}

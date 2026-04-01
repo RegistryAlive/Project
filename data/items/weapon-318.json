@@ -1,0 +1,18 @@
+{
+  "id": 318,
+  "name": "Evil Fork",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A fork specially used by little devil.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "MATK": 25
+  },
+  "image": "data/images/weapon-318.png",
+  "file": "weapon-318.json"
+}

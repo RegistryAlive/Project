@@ -1,0 +1,18 @@
+{
+  "id": 629,
+  "name": "C. Moon Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A long staff infused with crimson moonlight, a mysterious force flows and transforms in it. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 50,
+    "MATK": 35
+  },
+  "image": "data/images/weapon-629.png",
+  "file": "weapon-629.json"
+}

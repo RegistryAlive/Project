@@ -1,0 +1,15 @@
+{
+  "id": 6259,
+  "name": "(???)",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "??",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6259.png",
+  "file": "furniture-6259.json"
+}

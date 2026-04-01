@@ -1,0 +1,17 @@
+{
+  "id": 1768,
+  "name": "Bow Hair Tie",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 1,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/helmet-1768.png",
+  "file": "helmet-1768.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 694,
+  "name": "Iron Adze",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Iron / Wood",
+  "description": "The iron axe has two blades.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 21
+  },
+  "image": "data/images/weapon-694.png",
+  "file": "weapon-694.json"
+}

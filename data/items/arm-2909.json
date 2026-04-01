@@ -1,0 +1,18 @@
+{
+  "id": 2909,
+  "name": "C. Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Contradictory gloves.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 25,
+    "SPD": 20
+  },
+  "image": "data/images/arm-2909.png",
+  "file": "arm-2909.json"
+}

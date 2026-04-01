@@ -1,0 +1,15 @@
+{
+  "id": 6558,
+  "name": "Gothic sofa",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Gothic style black small sofa",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6558.png",
+  "file": "furniture-6558.json"
+}

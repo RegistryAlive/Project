@@ -1,0 +1,17 @@
+{
+  "id": 825,
+  "name": "Circular Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 2,
+  "level": 10,
+  "rarity": "common",
+  "base": null,
+  "description": "The obtained cold summer festival fan, above a beautiful painting",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3
+  },
+  "image": "data/images/weapon-825.png",
+  "file": "weapon-825.json"
+}

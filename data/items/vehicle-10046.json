@@ -1,0 +1,17 @@
+{
+  "id": 10046,
+  "name": "Pumpkin Car",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A magic driven car. Magic wool ball can be used for fuel.",
+  "size": "5x4",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10046.png",
+  "file": "vehicle-10046.json"
+}

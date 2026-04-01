@@ -1,0 +1,39 @@
+{
+  "id": 33,
+  "name": "Tyrannosaur Lord (Quest)",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-33.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Areca",
+      "itemId": 7369,
+      "itemFile": "material-7369.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lei Dragon Thigh",
+      "itemId": 7813,
+      "itemFile": "material-7813.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 110,
+    "hp": 25000,
+    "sp": 664,
+    "catchable": "Yes",
+    "spd": 211,
+    "str": 110,
+    "con": 123,
+    "int": 38,
+    "wis": 36,
+    "agi": 23
+  }
+}

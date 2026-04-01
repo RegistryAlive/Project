@@ -1,0 +1,18 @@
+{
+  "id": 1409,
+  "name": "Yellow Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Copper / Iron",
+  "description": "Made from copper and thin iron fused material.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "ATK": 10
+  },
+  "image": "data/images/helmet-1409.png",
+  "file": "helmet-1409.json"
+}

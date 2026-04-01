@@ -1,0 +1,18 @@
+{
+  "id": 7201,
+  "name": "BBQ Pork Over Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat / Wheat",
+  "description": "Spareribs and BBQ. Pork Rice",
+  "size": "1x1",
+  "attributes": {
+    "HP": 320,
+    "SP": 160
+  },
+  "image": "data/images/material-7201.png",
+  "file": "material-7201.json"
+}

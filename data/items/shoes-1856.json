@@ -1,0 +1,18 @@
+{
+  "id": 1856,
+  "name": "Long Red Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "Crimson long fighting boots",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18,
+    "ATK": 7
+  },
+  "image": "data/images/shoes-1856.png",
+  "file": "shoes-1856.json"
+}

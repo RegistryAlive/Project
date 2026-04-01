@@ -1,0 +1,27 @@
+{
+  "id": 945,
+  "name": "Sunlight God (Quest)",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-945.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 200,
+    "hp": 40000,
+    "sp": 13000,
+    "catchable": "Unknown",
+    "spd": 440,
+    "str": 130,
+    "con": 90,
+    "int": 150,
+    "wis": 160,
+    "agi": 70
+  }
+}

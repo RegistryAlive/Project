@@ -1,0 +1,27 @@
+{
+  "id": 1017,
+  "name": "Wuge Guard",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-1017.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 88,
+    "hp": 979,
+    "sp": 768,
+    "catchable": "Unknown",
+    "spd": 238,
+    "str": 63,
+    "con": 57,
+    "int": 44,
+    "wis": 47,
+    "agi": 53
+  }
+}

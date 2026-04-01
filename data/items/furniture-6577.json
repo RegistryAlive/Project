@@ -1,0 +1,15 @@
+{
+  "id": 6577,
+  "name": "Class. windows",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Imitate the windows made in ordinary classrooms",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6577.png",
+  "file": "furniture-6577.json"
+}

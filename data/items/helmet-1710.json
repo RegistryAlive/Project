@@ -1,0 +1,17 @@
+{
+  "id": 1710,
+  "name": "L.Devil headph",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A headset decorated with bat wings and devil horns. Increases damage by 1% when HP drops below 50%.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25
+  },
+  "image": "data/images/helmet-1710.png",
+  "file": "helmet-1710.json"
+}

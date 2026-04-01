@@ -1,0 +1,17 @@
+{
+  "id": 1304,
+  "name": "Travel Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clothing that is widely favored with people who enjoys travelling.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28
+  },
+  "image": "data/images/armor-1304.png",
+  "file": "armor-1304.json"
+}

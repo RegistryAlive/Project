@@ -1,0 +1,18 @@
+{
+  "id": 7079,
+  "name": "Crabroe Congee",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish / Rice",
+  "description": "Congee cooked with crab roe",
+  "size": "1x1",
+  "attributes": {
+    "SP": 175,
+    "HP": 75
+  },
+  "image": "data/images/material-7079.png",
+  "file": "material-7079.json"
+}

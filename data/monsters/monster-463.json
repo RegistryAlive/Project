@@ -1,0 +1,45 @@
+{
+  "id": 463,
+  "name": "Leviathan (Quest)",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-463.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Unknown",
+      "itemId": 7892,
+      "itemFile": "material-7892.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dragon Tooth",
+      "itemId": 7725,
+      "itemFile": "material-7725.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dragon Claw",
+      "itemId": 7726,
+      "itemFile": "material-7726.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dragon Squama",
+      "itemId": 7723,
+      "itemFile": "material-7723.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 160,
+    "hp": 21000,
+    "sp": 1603,
+    "catchable": "Unknown",
+    "spd": 430,
+    "str": 102,
+    "con": 106,
+    "int": 91,
+    "wis": 86,
+    "agi": 95
+  }
+}

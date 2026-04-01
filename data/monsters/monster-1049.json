@@ -1,0 +1,39 @@
+{
+  "id": 1049,
+  "name": "Grass Mammoth",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-1050.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Small Daisy",
+      "itemId": 7372,
+      "itemFile": "material-7372.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ivory",
+      "itemId": 7805,
+      "itemFile": "material-7805.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 95,
+    "hp": 1182,
+    "sp": 832,
+    "catchable": "Unknown",
+    "spd": 262.5,
+    "str": 60,
+    "con": 68,
+    "int": 47,
+    "wis": 50,
+    "agi": 60
+  }
+}

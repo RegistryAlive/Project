@@ -1,0 +1,15 @@
+{
+  "id": 6113,
+  "name": "Small Fuel Tank",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "A Small fuel tank, cannot bear high heat",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6113.png",
+  "file": "furniture-6113.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 787,
+  "name": "Kanako",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-787.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 44,
+    "hp": 452,
+    "sp": 401,
+    "catchable": "Unknown",
+    "spd": 114,
+    "str": 25,
+    "con": 32,
+    "int": 22,
+    "wis": 29,
+    "agi": 24
+  }
+}

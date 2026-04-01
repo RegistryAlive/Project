@@ -1,0 +1,39 @@
+{
+  "id": 529,
+  "name": "Green Sandworm",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-529.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Bone",
+      "itemId": 7776,
+      "itemFile": "material-7776.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Common Grass",
+      "itemId": 7365,
+      "itemFile": "material-7365.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 94,
+    "hp": 755,
+    "sp": 902,
+    "catchable": "Unknown",
+    "spd": 271,
+    "str": 56,
+    "con": 53,
+    "int": 53,
+    "wis": 55,
+    "agi": 65
+  }
+}

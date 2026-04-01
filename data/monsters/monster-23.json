@@ -1,0 +1,51 @@
+{
+  "id": 23,
+  "name": "Earth Stone Monster",
+  "location": "Kelan Village's Cave",
+  "image": "data/Monster_Images/monster-23.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Copper Ore",
+      "itemId": 7556,
+      "itemFile": "material-7556.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Basalt",
+      "itemId": 7636,
+      "itemFile": "material-7636.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Saltpeter",
+      "itemId": 7611,
+      "itemFile": "material-7611.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pink Crystal",
+      "itemId": 7598,
+      "itemFile": "material-7598.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 3,
+    "hp": 48,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 6.5,
+    "str": 3,
+    "con": 2,
+    "int": 2,
+    "wis": 1,
+    "agi": 1
+  }
+}

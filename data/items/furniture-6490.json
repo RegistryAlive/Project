@@ -1,0 +1,15 @@
+{
+  "id": 6490,
+  "name": "Pink Round Ta.",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Pink Series Round Table. Favoured by young girls.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6490.png",
+  "file": "furniture-6490.json"
+}

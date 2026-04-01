@@ -1,0 +1,18 @@
+{
+  "id": 1873,
+  "name": "Rock Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Magic / Titanium",
+  "description": "Made from arcane black rock sheets and lines.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 19,
+    "ATK": 10
+  },
+  "image": "data/images/shoes-1873.png",
+  "file": "shoes-1873.json"
+}

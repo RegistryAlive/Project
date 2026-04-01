@@ -1,0 +1,18 @@
+{
+  "id": 342,
+  "name": "ThunderSpear+3",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cannot be socketed and traded,30% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "MaxSP": 120
+  },
+  "image": "data/images/weapon-342.png",
+  "file": "weapon-342.json"
+}

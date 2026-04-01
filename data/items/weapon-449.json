@@ -1,0 +1,18 @@
+{
+  "id": 449,
+  "name": "Gold Blue Moon",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Kanako's special weapon, a sword made from gold.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55,
+    "SPD": 35
+  },
+  "image": "data/images/weapon-449.png",
+  "file": "weapon-449.json"
+}

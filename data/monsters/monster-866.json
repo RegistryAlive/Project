@@ -1,0 +1,27 @@
+{
+  "id": 866,
+  "name": "Qlaya",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-866.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 26,
+    "hp": 164,
+    "sp": 257,
+    "catchable": "Unknown",
+    "spd": 63,
+    "str": 6,
+    "con": 11,
+    "int": 28,
+    "wis": 21,
+    "agi": 12
+  }
+}

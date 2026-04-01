@@ -1,0 +1,39 @@
+{
+  "id": 1172,
+  "name": "Fury Crocodile",
+  "location": "Maya",
+  "image": "data/Monster_Images/monster-1172.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Dinosaur Tooth",
+      "itemId": 7809,
+      "itemFile": "material-7809.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Claw",
+      "itemId": 7775,
+      "itemFile": "material-7775.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 78,
+    "hp": 0,
+    "sp": 0,
+    "catchable": null,
+    "spd": 211,
+    "str": 47,
+    "con": 52,
+    "int": 43,
+    "wis": 45,
+    "agi": 47
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6034,
+  "name": "Compressor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Contains a frozen instrument inside",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6034.png",
+  "file": "furniture-6034.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 226,
+  "name": "Damascus Sword (Instance)",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 2,
+  "level": 80,
+  "rarity": "common",
+  "base": "Steel",
+  "description": "14% chance of a critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-226.png",
+  "file": "weapon-226.json"
+}

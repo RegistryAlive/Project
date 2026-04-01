@@ -1,0 +1,18 @@
+{
+  "id": 1389,
+  "name": "Vine Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Wood / Grass",
+  "description": "A bamboo hat which is made up of cirrus",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 7,
+    "MDEF": 7
+  },
+  "image": "data/images/helmet-1389.png",
+  "file": "helmet-1389.json"
+}

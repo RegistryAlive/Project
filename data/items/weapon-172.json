@@ -1,0 +1,15 @@
+{
+  "id": 172,
+  "name": "Broken Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Steel / Copper",
+  "description": "Damaged sword after excessive use.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-172.png",
+  "file": "weapon-172.json"
+}

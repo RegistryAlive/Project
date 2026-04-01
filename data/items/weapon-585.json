@@ -1,0 +1,18 @@
+{
+  "id": 585,
+  "name": "Sharp Eagle Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Corundum / Silver / Jade / Magic",
+  "description": "Magic wand with an eagle on top",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 44,
+    "MDEF": 28
+  },
+  "image": "data/images/weapon-585.png",
+  "file": "weapon-585.json"
+}

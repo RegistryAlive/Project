@@ -1,0 +1,27 @@
+{
+  "id": 861,
+  "name": "Priest",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-861.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 539,
+    "sp": 578,
+    "catchable": "Unknown",
+    "spd": 195,
+    "str": 40,
+    "con": 40,
+    "int": 48,
+    "wis": 37,
+    "agi": 45
+  }
+}

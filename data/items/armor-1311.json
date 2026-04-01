@@ -1,0 +1,18 @@
+{
+  "id": 1311,
+  "name": "Darktide Tabar",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clothing sewn with deep-sea exotic animal leather can reduce damage received by 1%, and additional suit effects can be obtained when equipped with other Dark Tide series equipment at the same time",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 40,
+    "ATK": 30
+  },
+  "image": "data/images/armor-1311.png",
+  "file": "armor-1311.json"
+}

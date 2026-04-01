@@ -1,0 +1,15 @@
+{
+  "id": 6269,
+  "name": "Pliers",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Used on the work platform to nip materials.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6269.png",
+  "file": "furniture-6269.json"
+}

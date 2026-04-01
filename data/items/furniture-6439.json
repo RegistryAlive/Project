@@ -1,0 +1,15 @@
+{
+  "id": 6439,
+  "name": "Night Sky Tile",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Tiles used for the floor.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6439.png",
+  "file": "furniture-6439.json"
+}

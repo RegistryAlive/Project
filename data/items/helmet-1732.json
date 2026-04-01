@@ -1,0 +1,18 @@
+{
+  "id": 1732,
+  "name": "Lucky Cat Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 70,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cute cat ears with bells; additional set effects can be obtained when equipped with other Taisho Ranman series equipment",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "MATK": 30
+  },
+  "image": "data/images/helmet-1732.png",
+  "file": "helmet-1732.json"
+}

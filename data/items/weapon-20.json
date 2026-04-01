@@ -1,0 +1,18 @@
+{
+  "id": 20,
+  "name": "Crystal Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal)",
+  "description": "A Knife made from crystal",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "DEF": 18
+  },
+  "image": "data/images/weapon-20.png",
+  "file": "weapon-20.json"
+}

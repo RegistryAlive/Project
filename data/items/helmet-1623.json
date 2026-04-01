@@ -1,0 +1,15 @@
+{
+  "id": 1623,
+  "name": "Dark Bunny Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Dark Bunny Ears that are meant for decorating purposes but can be equipped.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1623.png",
+  "file": "helmet-1623.json"
+}

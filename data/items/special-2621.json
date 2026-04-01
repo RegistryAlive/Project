@@ -1,0 +1,18 @@
+{
+  "id": 2621,
+  "name": "Solid Collar",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 16,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is used for beast pet only, with defense effect",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 250,
+    "DEF": 25
+  },
+  "image": "data/images/special-2621.png",
+  "file": "special-2621.json"
+}

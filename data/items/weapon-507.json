@@ -1,0 +1,18 @@
+{
+  "id": 507,
+  "name": "Polished Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "SPD+10,MaxSp+80,+24% Critical. Can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MaxSP": 80
+  },
+  "image": "data/images/weapon-507.png",
+  "file": "weapon-507.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 218,
+  "name": "Swirling Blade",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Gold / Copper / Iron",
+  "description": "Swirl shaped sword made of gold",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "DEF": 16
+  },
+  "image": "data/images/weapon-218.png",
+  "file": "weapon-218.json"
+}

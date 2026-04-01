@@ -1,0 +1,15 @@
+{
+  "id": 1567,
+  "name": "Steel Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "The helmet made with silver and steel",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1567.png",
+  "file": "helmet-1567.json"
+}

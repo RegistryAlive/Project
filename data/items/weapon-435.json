@@ -1,0 +1,18 @@
+{
+  "id": 435,
+  "name": "Crescent Bow+3",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 11,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets, 32% chance of critical strike.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "SPD": 14
+  },
+  "image": "data/images/weapon-435.png",
+  "file": "weapon-435.json"
+}

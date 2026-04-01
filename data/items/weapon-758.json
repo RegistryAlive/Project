@@ -1,0 +1,18 @@
+{
+  "id": 758,
+  "name": "Iron Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A gavel refined from iron.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 19,
+    "DEF": 21
+  },
+  "image": "data/images/weapon-758.png",
+  "file": "weapon-758.json"
+}

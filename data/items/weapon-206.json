@@ -1,0 +1,18 @@
+{
+  "id": 206,
+  "name": "Immense Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Iron / Pure Iron / Steel",
+  "description": "An incredibly sharp ancient Chinese sword",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 44,
+    "DEF": 22
+  },
+  "image": "data/images/weapon-206.png",
+  "file": "weapon-206.json"
+}

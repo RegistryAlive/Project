@@ -1,0 +1,17 @@
+{
+  "id": 7500,
+  "name": "Pigeon Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Roast little pigeon",
+  "size": "1x1",
+  "attributes": {
+    "HP": 50
+  },
+  "image": "data/images/material-7500.png",
+  "file": "material-7500.json"
+}

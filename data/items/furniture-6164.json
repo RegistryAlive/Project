@@ -1,0 +1,15 @@
+{
+  "id": 6164,
+  "name": "Water Tank",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Stores water",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6164.png",
+  "file": "furniture-6164.json"
+}

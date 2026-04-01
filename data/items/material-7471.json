@@ -1,0 +1,17 @@
+{
+  "id": 7471,
+  "name": "Sesame Oil",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable Oil",
+  "description": "Extracted from a sesame",
+  "size": "1x1",
+  "attributes": {
+    "HP": 20
+  },
+  "image": "data/images/material-7471.png",
+  "file": "material-7471.json"
+}

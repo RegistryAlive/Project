@@ -1,0 +1,15 @@
+{
+  "id": 1652,
+  "name": "Black Cat Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pure black cat ear ornament",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1652.png",
+  "file": "helmet-1652.json"
+}

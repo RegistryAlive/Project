@@ -1,0 +1,27 @@
+{
+  "id": 579,
+  "name": "Blaze Moai",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-579.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1004,
+    "sp": 831,
+    "catchable": "Unknown",
+    "spd": 223,
+    "str": 58,
+    "con": 58,
+    "int": 59,
+    "wis": 51,
+    "agi": 44
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2005,
+  "name": "Immortal Shoe",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It symbolizes that the pale hurricane can blow away all troubles; when the wearer's HP is lower than 50%, the damage can be increased by 2%, and additional set effects can be obtained when equipped with other indestructible series equipment at the same t",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "DEF": 35
+  },
+  "image": "data/images/shoes-2005.png",
+  "file": "shoes-2005.json"
+}

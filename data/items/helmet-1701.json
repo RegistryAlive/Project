@@ -1,0 +1,15 @@
+{
+  "id": 1701,
+  "name": "Medical Mask",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Fight the epidemic, unite ourselves, Wuhan, come on, China come on! References to Covid-19",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1701.png",
+  "file": "helmet-1701.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6622,
+  "name": "Taurus",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Decorations during Chinese New Year",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6622.png",
+  "file": "furniture-6622.json"
+}

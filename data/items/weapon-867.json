@@ -1,0 +1,18 @@
+{
+  "id": 867,
+  "name": "Killer Falchion",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Iron / Titanium / Wood",
+  "description": "A true instrument of death",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "SPD": 20
+  },
+  "image": "data/images/weapon-867.png",
+  "file": "weapon-867.json"
+}

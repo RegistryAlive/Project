@@ -1,0 +1,18 @@
+{
+  "id": 7535,
+  "name": "Big Grape",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "SP": 40,
+    "HP": 10
+  },
+  "image": "data/images/material-7535.png",
+  "file": "material-7535.json"
+}

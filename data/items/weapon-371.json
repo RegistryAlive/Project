@@ -1,0 +1,18 @@
+{
+  "id": 371,
+  "name": "Xmas Fork",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "A magic fork made with winter snow and Christmas atmosphere. 24% critical strike chance, and the damage caused by a critical strike is greatly increased.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "SPD": 12
+  },
+  "image": "data/images/weapon-371.png",
+  "file": "weapon-371.json"
+}

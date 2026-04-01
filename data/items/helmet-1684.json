@@ -1,0 +1,17 @@
+{
+  "id": 1684,
+  "name": "Red zombie hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "There is a charm on the front of the red hat, which has a 5% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5
+  },
+  "image": "data/images/helmet-1684.png",
+  "file": "helmet-1684.json"
+}

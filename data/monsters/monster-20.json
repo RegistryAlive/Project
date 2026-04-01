@@ -1,0 +1,33 @@
+{
+  "id": 20,
+  "name": "Ancient Rock Monster",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-20.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Basalt",
+      "itemId": 7636,
+      "itemFile": "material-7636.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 951,
+    "sp": 816,
+    "catchable": "Unknown",
+    "spd": 223.5,
+    "str": 50,
+    "con": 56,
+    "int": 50,
+    "wis": 51,
+    "agi": 48
+  }
+}

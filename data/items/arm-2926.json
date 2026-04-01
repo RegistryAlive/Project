@@ -1,0 +1,18 @@
+{
+  "id": 2926,
+  "name": "Firework Brace",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "After wearing, there will be fireworks blooming beside you, and the damage caused by critical strikes will increase slightly",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MaxHP": 350
+  },
+  "image": "data/images/arm-2926.png",
+  "file": "arm-2926.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 35,
+  "name": "Yong Tyrannosaur",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-35.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Tobacco",
+      "itemId": 7360,
+      "itemFile": "material-7360.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lei Dragon Thigh",
+      "itemId": 7813,
+      "itemFile": "material-7813.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tea",
+      "itemId": 7361,
+      "itemFile": "material-7361.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 74,
+    "hp": 1239,
+    "sp": 807,
+    "catchable": "Yes",
+    "spd": 131,
+    "str": 44,
+    "con": 80,
+    "int": 35,
+    "wis": 53,
+    "agi": 10
+  }
+}

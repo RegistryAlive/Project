@@ -1,0 +1,18 @@
+{
+  "id": 2169,
+  "name": "Quick Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To evenly raise magic attack power and agility.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 2,
+    "SPD": 2
+  },
+  "image": "data/images/special-2169.png",
+  "file": "special-2169.json"
+}

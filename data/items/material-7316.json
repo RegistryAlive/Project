@@ -1,0 +1,18 @@
+{
+  "id": 7316,
+  "name": "Nian Congee",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 26,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The food that must be eaten in Spring Festival",
+  "size": "1x1",
+  "attributes": {
+    "HP": 800,
+    "SP": 500
+  },
+  "image": "data/images/material-7316.png",
+  "file": "material-7316.json"
+}

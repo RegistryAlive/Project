@@ -1,0 +1,15 @@
+{
+  "id": 6126,
+  "name": "Airship Framework",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The whole framework of a airship",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6126.png",
+  "file": "furniture-6126.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7305,
+  "name": "Curry Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 36,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "An Indian dish",
+  "size": "1x1",
+  "attributes": {
+    "HP": 1200,
+    "SP": 600
+  },
+  "image": "data/images/material-7305.png",
+  "file": "material-7305.json"
+}

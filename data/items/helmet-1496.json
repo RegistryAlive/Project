@@ -1,0 +1,18 @@
+{
+  "id": 1496,
+  "name": "Swan Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "This helmet features a delicate swan crest.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 8
+  },
+  "image": "data/images/helmet-1496.png",
+  "file": "helmet-1496.json"
+}

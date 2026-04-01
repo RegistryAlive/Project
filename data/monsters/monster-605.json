@@ -1,0 +1,27 @@
+{
+  "id": 605,
+  "name": "Blueberry Icedrop",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-605.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 13,
+    "hp": 137,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 35.5,
+    "str": 6,
+    "con": 12,
+    "int": 6,
+    "wis": 7,
+    "agi": 8
+  }
+}

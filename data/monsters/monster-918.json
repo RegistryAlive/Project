@@ -1,0 +1,27 @@
+{
+  "id": 918,
+  "name": "Sphinx (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-918.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 22500,
+    "sp": 10000,
+    "catchable": "Unknown",
+    "spd": 244,
+    "str": 92,
+    "con": 98,
+    "int": 71,
+    "wis": 67,
+    "agi": 32
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2891,
+  "name": "Superior Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": "Steel / Iron",
+  "description": "Good quality bracers",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28,
+    "ATK": 13
+  },
+  "image": "data/images/arm-2891.png",
+  "file": "arm-2891.json"
+}

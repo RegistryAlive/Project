@@ -1,0 +1,18 @@
+{
+  "id": 1405,
+  "name": "Bronze Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Copper / Hard Tissue",
+  "description": "A hat which is made from bronze sheetmetal",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17,
+    "SPD": 5
+  },
+  "image": "data/images/helmet-1405.png",
+  "file": "helmet-1405.json"
+}

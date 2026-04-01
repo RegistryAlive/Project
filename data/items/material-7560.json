@@ -1,0 +1,15 @@
+{
+  "id": 7560,
+  "name": "Bronze Material",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Copper",
+  "description": "It is made of copper and stannum",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7560.png",
+  "file": "material-7560.json"
+}

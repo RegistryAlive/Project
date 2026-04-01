@@ -1,0 +1,39 @@
+{
+  "id": 128,
+  "name": "Flood Adder",
+  "location": "Taiwan (Carnie) - Pleasure Island",
+  "image": "data/Monster_Images/monster-128.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Gooseberry",
+      "itemId": 7451,
+      "itemFile": "material-7451.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Liquid",
+      "itemId": 7755,
+      "itemFile": "material-7755.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Skin",
+      "itemId": 7787,
+      "itemFile": "material-7787.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 62,
+    "hp": 572,
+    "sp": 489,
+    "catchable": "Unknown",
+    "spd": 181,
+    "str": 37,
+    "con": 36,
+    "int": 37,
+    "wis": 32,
+    "agi": 44
+  }
+}

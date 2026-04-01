@@ -1,0 +1,18 @@
+{
+  "id": 1071,
+  "name": "Wild Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Flower / Leather",
+  "description": "The Fury's favorite clothes. High agility.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 26,
+    "ATK": 8
+  },
+  "image": "data/images/armor-1071.png",
+  "file": "armor-1071.json"
+}

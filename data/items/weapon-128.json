@@ -1,0 +1,18 @@
+{
+  "id": 128,
+  "name": "Skinny Iron Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Pure Iron / Hard Tissue",
+  "description": "A sword made from pure iron and animal bones.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "SPD": 20
+  },
+  "image": "data/images/weapon-128.png",
+  "file": "weapon-128.json"
+}

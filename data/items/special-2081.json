@@ -1,0 +1,15 @@
+{
+  "id": 2081,
+  "name": "Broken Adornment",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "An ornament which is in a state of dis-repair.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2081.png",
+  "file": "special-2081.json"
+}

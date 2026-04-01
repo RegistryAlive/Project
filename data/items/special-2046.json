@@ -1,0 +1,17 @@
+{
+  "id": 2046,
+  "name": "Spirit Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Diamond / Grass",
+  "description": "A ring which sends draws out spirits sometimes.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40
+  },
+  "image": "data/images/special-2046.png",
+  "file": "special-2046.json"
+}

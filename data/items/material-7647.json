@@ -1,0 +1,15 @@
+{
+  "id": 7647,
+  "name": "Ordinary Wood",
+  "type": "MaterialWood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "Made of a common log",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7647.png",
+  "file": "material-7647.json"
+}

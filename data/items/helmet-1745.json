@@ -1,0 +1,18 @@
+{
+  "id": 1745,
+  "name": "Inari Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A headdress that is part of the Omikami Emissary's body, whose true form is not visible to the naked eye; when equipped with other Fushimi Inari equipment, you can obtain an additional outfit effect.",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 200,
+    "MDEF": 30
+  },
+  "image": "data/images/helmet-1745.png",
+  "file": "helmet-1745.json"
+}

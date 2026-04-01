@@ -1,0 +1,45 @@
+{
+  "id": 281,
+  "name": "Gu Ginseng Monster",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-281.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Ginseng",
+      "itemId": 7396,
+      "itemFile": "material-7396.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Paper Grass",
+      "itemId": 7364,
+      "itemFile": "material-7364.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pumpkin",
+      "itemId": 7423,
+      "itemFile": "material-7423.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Great Ginseng",
+      "itemId": 7174,
+      "itemFile": "material-7174.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 82,
+    "hp": 834,
+    "sp": 820,
+    "catchable": "Unknown",
+    "spd": 223,
+    "str": 45,
+    "con": 49,
+    "int": 50,
+    "wis": 52,
+    "agi": 50
+  }
+}

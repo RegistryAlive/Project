@@ -1,0 +1,15 @@
+{
+  "id": 8415,
+  "name": "Bludolf Coupon",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket to make a blue-nosed elk a buddy",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8415.png",
+  "file": "questprop-8415.json"
+}

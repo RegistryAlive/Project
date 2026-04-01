@@ -1,0 +1,17 @@
+{
+  "id": 2773,
+  "name": "Beast Fur Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Leather",
+  "description": "Cuffs which are made from wild animal's skin",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 2
+  },
+  "image": "data/images/arm-2773.png",
+  "file": "arm-2773.json"
+}

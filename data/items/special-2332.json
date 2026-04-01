@@ -1,0 +1,15 @@
+{
+  "id": 2332,
+  "name": "Respirator",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Equipt it to get trinkets after killing NPC.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2332.png",
+  "file": "special-2332.json"
+}

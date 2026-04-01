@@ -1,0 +1,27 @@
+{
+  "id": 647,
+  "name": "Darkness Roca",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-647.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 127,
+    "hp": 22000,
+    "sp": 1329,
+    "catchable": "Unknown",
+    "spd": 310.5,
+    "str": 80,
+    "con": 90,
+    "int": 75,
+    "wis": 76,
+    "agi": 60
+  }
+}

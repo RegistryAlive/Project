@@ -1,0 +1,17 @@
+{
+  "id": 1570,
+  "name": "Grey Feather Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Feather",
+  "description": "Hat made of feathers",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 8
+  },
+  "image": "data/images/helmet-1570.png",
+  "file": "helmet-1570.json"
+}

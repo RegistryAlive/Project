@@ -1,0 +1,18 @@
+{
+  "id": 1256,
+  "name": "P.Wizard Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Light and fluttering classical clothing, the fabric used is as light and soft as a fairy feather garment",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 500,
+    "SPD": 15
+  },
+  "image": "data/images/armor-1256.png",
+  "file": "armor-1256.json"
+}

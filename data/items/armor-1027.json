@@ -1,0 +1,18 @@
+{
+  "id": 1027,
+  "name": "Downy Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "clothes which is twisted by rabbit hairs",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 19,
+    "SPD": 12
+  },
+  "image": "data/images/armor-1027.png",
+  "file": "armor-1027.json"
+}

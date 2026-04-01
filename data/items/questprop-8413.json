@@ -1,0 +1,15 @@
+{
+  "id": 8413,
+  "name": "Fine Scapel",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The name of \"Agsund\" is engraved on it",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8413.png",
+  "file": "questprop-8413.json"
+}

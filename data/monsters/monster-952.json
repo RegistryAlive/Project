@@ -1,0 +1,27 @@
+{
+  "id": 952,
+  "name": "Torch (Trojan War)",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-952.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 145,
+    "hp": 50000,
+    "sp": 8276,
+    "catchable": "Unknown",
+    "spd": 1217.5,
+    "str": 500,
+    "con": 500,
+    "int": 500,
+    "wis": 500,
+    "agi": 500
+  }
+}

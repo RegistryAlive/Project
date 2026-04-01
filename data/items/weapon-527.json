@@ -1,0 +1,17 @@
+{
+  "id": 527,
+  "name": "Fly Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Corundum / Feather",
+  "description": "An evil gem within absorbs the energy of dragons.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 40
+  },
+  "image": "data/images/weapon-527.png",
+  "file": "weapon-527.json"
+}

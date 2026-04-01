@@ -1,0 +1,18 @@
+{
+  "id": 731,
+  "name": "Berserker's Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 43,
+  "level": 86,
+  "rarity": "legendary",
+  "base": null,
+  "description": "This axe is imbued with legendary destructive powers.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 46,
+    "DEF": 40
+  },
+  "image": "data/images/weapon-731.png",
+  "file": "weapon-731.json"
+}

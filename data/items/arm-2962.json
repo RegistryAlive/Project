@@ -1,0 +1,18 @@
+{
+  "id": 2962,
+  "name": "Rose Ribbon",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "When you attach it to your hand, rose petals will fall from the sky, so you can enjoy the romantic beauty of roses whenever and wherever you want",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20,
+    "SPD": 20
+  },
+  "image": "data/images/arm-2962.png",
+  "file": "arm-2962.json"
+}

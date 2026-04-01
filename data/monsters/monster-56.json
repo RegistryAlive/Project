@@ -1,0 +1,51 @@
+{
+  "id": 56,
+  "name": "Mouth Chameleon",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-56.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chameleon Tongue",
+      "itemId": 7785,
+      "itemFile": "material-7785.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chameleon Skin",
+      "itemId": 7786,
+      "itemFile": "material-7786.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 51,
+    "hp": 578,
+    "sp": 334,
+    "catchable": "Unknown",
+    "spd": 156.5,
+    "str": 30,
+    "con": 40,
+    "int": 21,
+    "wis": 22,
+    "agi": 40
+  }
+}

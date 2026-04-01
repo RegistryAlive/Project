@@ -1,0 +1,18 @@
+{
+  "id": 588,
+  "name": "Moonlight Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Tin / Steel / Jade / Corundum / Magic",
+  "description": "Magic wand compounded by gem and holy feather",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 55,
+    "MDEF": 25
+  },
+  "image": "data/images/weapon-588.png",
+  "file": "weapon-588.json"
+}

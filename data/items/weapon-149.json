@@ -1,0 +1,18 @@
+{
+  "id": 149,
+  "name": "Thorn Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Steel / Copper",
+  "description": "Strengthens the blades toughness.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 34,
+    "SPD": 32
+  },
+  "image": "data/images/weapon-149.png",
+  "file": "weapon-149.json"
+}

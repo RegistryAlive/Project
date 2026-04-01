@@ -1,0 +1,18 @@
+{
+  "id": 486,
+  "name": "Holy Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Platinum / Quartz (Crystal) / Magic",
+  "description": "Bound to Heaven, created of purity and sacrifice.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 23,
+    "ATK": 23
+  },
+  "image": "data/images/weapon-486.png",
+  "file": "weapon-486.json"
+}

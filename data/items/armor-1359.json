@@ -1,0 +1,18 @@
+{
+  "id": 1359,
+  "name": "Iron Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 8,
+    "MDEF": 9
+  },
+  "image": "data/images/armor-1359.png",
+  "file": "armor-1359.json"
+}

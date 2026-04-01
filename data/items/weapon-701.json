@@ -1,0 +1,17 @@
+{
+  "id": 701,
+  "name": "Steel Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Steel / Wood",
+  "description": "A single blade steel axe.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35
+  },
+  "image": "data/images/weapon-701.png",
+  "file": "weapon-701.json"
+}

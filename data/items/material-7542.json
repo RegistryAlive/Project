@@ -1,0 +1,17 @@
+{
+  "id": 7542,
+  "name": "Yoyo Orange",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "Restrores a little HP.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 40
+  },
+  "image": "data/images/material-7542.png",
+  "file": "material-7542.json"
+}

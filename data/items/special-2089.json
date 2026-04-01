@@ -1,0 +1,18 @@
+{
+  "id": 2089,
+  "name": "Wolf Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Jade / Grass",
+  "description": "Made from wolf teeth and the tutelary's power.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 5,
+    "DEF": 1
+  },
+  "image": "data/images/special-2089.png",
+  "file": "special-2089.json"
+}

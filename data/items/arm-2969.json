@@ -1,0 +1,18 @@
+{
+  "id": 2969,
+  "name": "Gold Golves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 60,
+  "level": 120,
+  "rarity": "legendary",
+  "base": "Gold / Magic",
+  "description": "Can raise 30 points of attacking power.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "MATK": 30
+  },
+  "image": "data/images/arm-2969.png",
+  "file": "arm-2969.json"
+}

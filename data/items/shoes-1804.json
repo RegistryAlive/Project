@@ -1,0 +1,17 @@
+{
+  "id": 1804,
+  "name": "Student's Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Shoes usually worn by high school students.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/shoes-1804.png",
+  "file": "shoes-1804.json"
+}

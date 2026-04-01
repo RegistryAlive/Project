@@ -1,0 +1,15 @@
+{
+  "id": 5007,
+  "name": "Attack Pestle",
+  "type": "ItemBox",
+  "category": "accessory",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Reduces the character's attack by 50% and also the target's SP by 50%. Can be enhanced but not socketed. However, its durability will diminish quickly during fights with monsters or players. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5007.png",
+  "file": "accessory-5007.json"
+}

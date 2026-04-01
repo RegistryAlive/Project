@@ -1,0 +1,17 @@
+{
+  "id": 2823,
+  "name": "Resistent Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Flower / Silver",
+  "description": "Gloves that hide materials defense against evil.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 31
+  },
+  "image": "data/images/arm-2823.png",
+  "file": "arm-2823.json"
+}

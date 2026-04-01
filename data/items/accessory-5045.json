@@ -1,0 +1,15 @@
+{
+  "id": 5045,
+  "name": "Mysterious Pum",
+  "type": "Item",
+  "category": "accessory",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Light it to win mysterious gifts",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5045.png",
+  "file": "accessory-5045.json"
+}

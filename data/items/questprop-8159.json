@@ -1,0 +1,15 @@
+{
+  "id": 8159,
+  "name": "Safety Bell",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The bell can help protect its owner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8159.png",
+  "file": "questprop-8159.json"
+}

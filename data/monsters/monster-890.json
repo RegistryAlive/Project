@@ -1,0 +1,27 @@
+{
+  "id": 890,
+  "name": "Scorpion Lord",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-890.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 171,
+    "hp": 51000,
+    "sp": 10000,
+    "catchable": "Unknown",
+    "spd": 680.5,
+    "str": 218,
+    "con": 230,
+    "int": 182,
+    "wis": 184,
+    "agi": 212
+  }
+}

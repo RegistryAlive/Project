@@ -1,0 +1,17 @@
+{
+  "id": 298,
+  "name": "Dragon's Wing",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 45,
+  "level": 90,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A long spear forged using gems and monster blades.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 90
+  },
+  "image": "data/images/weapon-298.png",
+  "file": "weapon-298.json"
+}

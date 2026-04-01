@@ -1,0 +1,27 @@
+{
+  "id": 832,
+  "name": "Old Woman",
+  "location": "Kelan Village",
+  "image": "data/Monster_Images/monster-832.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 41,
+    "hp": 235,
+    "sp": 439,
+    "catchable": "Unknown",
+    "spd": 93.5,
+    "str": 19,
+    "con": 17,
+    "int": 38,
+    "wis": 33,
+    "agi": 16
+  }
+}

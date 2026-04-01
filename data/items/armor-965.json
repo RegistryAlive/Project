@@ -1,0 +1,18 @@
+{
+  "id": 965,
+  "name": "Color Clothes (Stained Cloth)",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "clotheses which is colored by common clotheses",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MDEF": 3
+  },
+  "image": "data/images/armor-965.png",
+  "file": "armor-965.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 1142,
+  "name": "Rock Cave Barbarian",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-1143.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Egg",
+      "itemId": 7502,
+      "itemFile": "material-7502.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 76,
+    "hp": 823,
+    "sp": 704,
+    "catchable": "No",
+    "spd": 198,
+    "str": 50,
+    "con": 50,
+    "int": 41,
+    "wis": 45,
+    "agi": 42
+  }
+}

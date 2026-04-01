@@ -1,0 +1,18 @@
+{
+  "id": 261,
+  "name": "B.G Umbrella",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The black washi paper umbrella with snake eyes pattern is full of details in its simplicity, and the exquisite workmanship is amazing. Forging +2 can increase the crit rate by 1%, up to 50%, and cannot be inlaid with explosive diamonds.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 75,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-261.png",
+  "file": "weapon-261.json"
+}

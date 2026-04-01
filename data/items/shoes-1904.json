@@ -1,0 +1,18 @@
+{
+  "id": 1904,
+  "name": "Warrior Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Iron / Titanium / Copper",
+  "description": "Warrior's favorite boots. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "ATK": 10
+  },
+  "image": "data/images/shoes-1904.png",
+  "file": "shoes-1904.json"
+}

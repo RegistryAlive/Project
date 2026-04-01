@@ -1,0 +1,15 @@
+{
+  "id": 7776,
+  "name": "Beast Bone",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Hard Tissue",
+  "description": "An animal's bone",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7776.png",
+  "file": "material-7776.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1945,
+  "name": "Cowboy Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Boots made from beast fur",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 33
+  },
+  "image": "data/images/shoes-1945.png",
+  "file": "shoes-1945.json"
+}

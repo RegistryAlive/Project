@@ -1,0 +1,15 @@
+{
+  "id": 2887,
+  "name": "White Day Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Feather",
+  "description": "Gloves can be used by male/female on White Day",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/arm-2887.png",
+  "file": "arm-2887.json"
+}

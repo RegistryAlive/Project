@@ -1,0 +1,18 @@
+{
+  "id": 2819,
+  "name": "Shield Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Corundum / Steel / Titanium",
+  "description": "Good defensive gloves which are light.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "SPD": 5
+  },
+  "image": "data/images/arm-2819.png",
+  "file": "arm-2819.json"
+}

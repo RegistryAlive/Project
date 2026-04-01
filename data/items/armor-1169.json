@@ -1,0 +1,18 @@
+{
+  "id": 1169,
+  "name": "Rainbow Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Fur / Leather / Feather",
+  "description": "Light cloth",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30,
+    "ATK": 6
+  },
+  "image": "data/images/armor-1169.png",
+  "file": "armor-1169.json"
+}

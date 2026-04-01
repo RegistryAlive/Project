@@ -1,0 +1,18 @@
+{
+  "id": 2219,
+  "name": "Purple ribbon",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Hard purple silk ribbon compiled, dedicated man-partner",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 50,
+    "MaxSP": 350
+  },
+  "image": "data/images/special-2219.png",
+  "file": "special-2219.json"
+}

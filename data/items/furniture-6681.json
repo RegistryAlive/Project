@@ -1,0 +1,15 @@
+{
+  "id": 6681,
+  "name": "Halloween Mail",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The letter furniture that can send letters to anyone once you have it.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6681.png",
+  "file": "furniture-6681.json"
+}

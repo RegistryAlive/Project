@@ -1,0 +1,15 @@
+{
+  "id": 6753,
+  "name": "Joy Drag Bath",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Joyful bathtub decorated with dragon heads",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6753.png",
+  "file": "furniture-6753.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 609,
+  "name": "Light Star",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Angela exclusive weapon after reincarnation",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 32,
+    "SPD": 28
+  },
+  "image": "data/images/weapon-609.png",
+  "file": "weapon-609.json"
+}

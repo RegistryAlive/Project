@@ -1,0 +1,18 @@
+{
+  "id": 586,
+  "name": "Peaceful Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Silver / Tin / Magic",
+  "description": "Delicate wand made of silver with wings on it",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 35,
+    "MATK": 27
+  },
+  "image": "data/images/weapon-586.png",
+  "file": "weapon-586.json"
+}

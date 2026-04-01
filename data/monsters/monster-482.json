@@ -1,0 +1,33 @@
+{
+  "id": 482,
+  "name": "Dark Water Demon",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-482.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fruit Berry Syrup",
+      "itemId": 7300,
+      "itemFile": "material-7300.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 148,
+    "hp": 1039,
+    "sp": 713,
+    "catchable": "No",
+    "spd": 308,
+    "str": 52,
+    "con": 47,
+    "int": 45,
+    "wis": 34,
+    "agi": 43
+  }
+}

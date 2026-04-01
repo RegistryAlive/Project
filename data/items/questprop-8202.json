@@ -1,0 +1,15 @@
+{
+  "id": 8202,
+  "name": "Purple Silk",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Soft silk clothes",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8202.png",
+  "file": "questprop-8202.json"
+}

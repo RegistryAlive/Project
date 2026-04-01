@@ -1,0 +1,18 @@
+{
+  "id": 1636,
+  "name": "Dragon Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A Dragon Crown relic, has a mysterious power after further investigation. Only for men.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 199,
+    "DEF": 199
+  },
+  "image": "data/images/helmet-1636.png",
+  "file": "helmet-1636.json"
+}

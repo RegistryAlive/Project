@@ -1,0 +1,15 @@
+{
+  "id": 6428,
+  "name": "Katana Display Panel",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A display panel used to hold Katana's",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6428.png",
+  "file": "furniture-6428.json"
+}

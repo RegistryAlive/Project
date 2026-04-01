@@ -1,0 +1,15 @@
+{
+  "id": 7761,
+  "name": "Pufferfish Venom",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fluid / Venom",
+  "description": "Poisonous liquid from a fugu",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7761.png",
+  "file": "material-7761.json"
+}

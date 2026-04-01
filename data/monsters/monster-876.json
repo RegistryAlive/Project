@@ -1,0 +1,27 @@
+{
+  "id": 876,
+  "name": "Rock Scorpion (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-876.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 110,
+    "hp": 5870,
+    "sp": 2300,
+    "catchable": "Unknown",
+    "spd": 285,
+    "str": 68,
+    "con": 65,
+    "int": 71,
+    "wis": 66,
+    "agi": 60
+  }
+}

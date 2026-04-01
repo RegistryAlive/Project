@@ -1,0 +1,17 @@
+{
+  "id": 947,
+  "name": "Restaurant Uniform",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Comfortable and rugged.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-947.png",
+  "file": "armor-947.json"
+}

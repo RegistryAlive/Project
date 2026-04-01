@@ -1,0 +1,18 @@
+{
+  "id": 2886,
+  "name": "Purple Flame Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Leaf / Leather",
+  "description": "Defensive gloves made with purple leaves and fur",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25,
+    "MDEF": 6
+  },
+  "image": "data/images/arm-2886.png",
+  "file": "arm-2886.json"
+}

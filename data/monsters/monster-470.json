@@ -1,0 +1,33 @@
+{
+  "id": 470,
+  "name": "Huge Stone Monster",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-470.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Pork Bone Noodles",
+      "itemId": 7172,
+      "itemFile": "material-7172.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "1.5X Holy EXP Potion",
+      "itemId": 8532,
+      "itemFile": "questprop-8532.json",
+      "itemCategory": "questprop"
+    }
+  ],
+  "stats": {
+    "level": 75,
+    "hp": 376,
+    "sp": 345,
+    "catchable": "No",
+    "spd": 158.5,
+    "str": 27,
+    "con": 24,
+    "int": 18,
+    "wis": 19,
+    "agi": 23
+  }
+}

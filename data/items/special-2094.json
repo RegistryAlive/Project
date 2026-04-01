@@ -1,0 +1,18 @@
+{
+  "id": 2094,
+  "name": "Cat's Eye Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Silver / Grass",
+  "description": "Arcane ring inlaid with a pattern of a cat's eye.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 3,
+    "MaxSP": 30
+  },
+  "image": "data/images/special-2094.png",
+  "file": "special-2094.json"
+}

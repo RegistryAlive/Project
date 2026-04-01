@@ -1,0 +1,18 @@
+{
+  "id": 685,
+  "name": "Snow Demon Rin",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Snow Demon Double Rings. Enhanced rings for Kana. Cannot be repaired.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 65,
+    "SPD": 15
+  },
+  "image": "data/images/weapon-685.png",
+  "file": "weapon-685.json"
+}

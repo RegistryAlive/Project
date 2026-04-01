@@ -1,0 +1,17 @@
+{
+  "id": 1679,
+  "name": "Christmas Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Fashionable Christmas Hat. Set: Critical damage increase.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 150
+  },
+  "image": "data/images/helmet-1679.png",
+  "file": "helmet-1679.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2309,
+  "name": "Rock Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "A black rigid armlet exclusively used by pet men.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 50,
+    "MaxHP": 350
+  },
+  "image": "data/images/special-2309.png",
+  "file": "special-2309.json"
+}

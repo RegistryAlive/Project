@@ -1,0 +1,45 @@
+{
+  "id": 467,
+  "name": "Red Stone Monster",
+  "location": "Kelan Village's Cave",
+  "image": "data/Monster_Images/monster-467.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Coal Ore",
+      "itemId": 7586,
+      "itemFile": "material-7586.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Granite",
+      "itemId": 7635,
+      "itemFile": "material-7635.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pure Iron Ore",
+      "itemId": 7568,
+      "itemFile": "material-7568.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 4,
+    "hp": 55,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 10,
+    "str": 2,
+    "con": 3,
+    "int": 3,
+    "wis": 2,
+    "agi": 2
+  }
+}

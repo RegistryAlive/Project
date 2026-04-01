@@ -1,0 +1,18 @@
+{
+  "id": 604,
+  "name": "Flaming Eagle Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Jade / Titanium / Pure Iron",
+  "description": "A mysterious wand with a flaming eagle tip",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 58,
+    "MDEF": 22
+  },
+  "image": "data/images/weapon-604.png",
+  "file": "weapon-604.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2009,
+  "name": "Bright Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 42,
+  "level": 84,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Defense boots made from mysterious feathers with high magic defense.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 42
+  },
+  "image": "data/images/shoes-2009.png",
+  "file": "shoes-2009.json"
+}

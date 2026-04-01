@@ -1,0 +1,17 @@
+{
+  "id": 7418,
+  "name": "Nutmeg (Prep)",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Fruit and vegetables.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30
+  },
+  "image": "data/images/material-7418.png",
+  "file": "material-7418.json"
+}

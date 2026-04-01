@@ -1,0 +1,17 @@
+{
+  "id": 2878,
+  "name": "Jade Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Aluminum / Titanium",
+  "description": "Powerful bracers made with a special Alloy",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 23
+  },
+  "image": "data/images/arm-2878.png",
+  "file": "arm-2878.json"
+}

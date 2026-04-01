@@ -1,0 +1,18 @@
+{
+  "id": 1902,
+  "name": "Yellow Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Nylon / Fur",
+  "description": "Yellow boots that can raise a posthorse's agility.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 8,
+    "MDEF": 4
+  },
+  "image": "data/images/shoes-1902.png",
+  "file": "shoes-1902.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6187,
+  "name": "Blue Stone",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Corundum",
+  "description": "An original blue stone with a little impurity",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6187.png",
+  "file": "furniture-6187.json"
+}

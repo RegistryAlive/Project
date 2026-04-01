@@ -1,0 +1,18 @@
+{
+  "id": 160,
+  "name": "Demon Blade",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 57,
+  "level": 114,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The sword used by the Demon King. Has a strong and malicious aura.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 57,
+    "SPD": 57
+  },
+  "image": "data/images/weapon-160.png",
+  "file": "weapon-160.json"
+}

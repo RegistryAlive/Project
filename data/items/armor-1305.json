@@ -1,0 +1,18 @@
+{
+  "id": 1305,
+  "name": "Silk Cheongsam",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The cheongsam made of snow-white silk is dignified and elegant. When attacked by water attribute enemies, damage is reduced by 3%",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "MDEF": 15
+  },
+  "image": "data/images/armor-1305.png",
+  "file": "armor-1305.json"
+}

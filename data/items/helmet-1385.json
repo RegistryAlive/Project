@@ -1,0 +1,17 @@
+{
+  "id": 1385,
+  "name": "Blue Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal) / Grass",
+  "description": "A laurel which is made of blue crystal",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1385.png",
+  "file": "helmet-1385.json"
+}

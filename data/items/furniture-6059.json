@@ -1,0 +1,15 @@
+{
+  "id": 6059,
+  "name": "Rivet",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Rock",
+  "description": "A round nail",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6059.png",
+  "file": "furniture-6059.json"
+}

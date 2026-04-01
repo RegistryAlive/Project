@@ -1,0 +1,17 @@
+{
+  "id": 1500,
+  "name": "Jade Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Titanium / Jade",
+  "description": "It's deep green appearance is haunting.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 26
+  },
+  "image": "data/images/helmet-1500.png",
+  "file": "helmet-1500.json"
+}

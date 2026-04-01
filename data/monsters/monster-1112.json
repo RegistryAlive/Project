@@ -1,0 +1,39 @@
+{
+  "id": 1112,
+  "name": "Pink Snow Monkey",
+  "location": "Shayii Hill",
+  "image": "data/Monster_Images/monster-1113.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Latania",
+      "itemId": 7441,
+      "itemFile": "material-7441.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Banana",
+      "itemId": 7437,
+      "itemFile": "material-7437.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pinecone",
+      "itemId": 7456,
+      "itemFile": "material-7456.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 31,
+    "hp": 239,
+    "sp": 216,
+    "catchable": "Yes",
+    "spd": 80.5,
+    "str": 26,
+    "con": 17,
+    "int": 17,
+    "wis": 16,
+    "agi": 17
+  }
+}

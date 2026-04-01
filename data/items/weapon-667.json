@@ -1,0 +1,18 @@
+{
+  "id": 667,
+  "name": "Golden Rings+10",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "It cannot be socketed,it has 6% seal resistance effect. Can be traded. Cannot be traded after being opened.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 6,
+    "SPD": 35
+  },
+  "image": "data/images/weapon-667.png",
+  "file": "weapon-667.json"
+}

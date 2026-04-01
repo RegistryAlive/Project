@@ -1,0 +1,15 @@
+{
+  "id": 6749,
+  "name": "Snow Globe",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Snow globe jewellery made of imitation ice crystals",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6749.png",
+  "file": "furniture-6749.json"
+}

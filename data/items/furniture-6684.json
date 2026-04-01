@@ -1,0 +1,15 @@
+{
+  "id": 6684,
+  "name": "Ghost Balloon",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Expressionless balloon floating in the air.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6684.png",
+  "file": "furniture-6684.json"
+}

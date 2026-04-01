@@ -1,0 +1,18 @@
+{
+  "id": 841,
+  "name": "Snow Twin Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A thin, lightweight folding fan made of rare cyan metal, with an elegant violet-colored lacquer finish. 40% crit possible.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 45,
+    "MATK": 55
+  },
+  "image": "data/images/weapon-841.png",
+  "file": "weapon-841.json"
+}

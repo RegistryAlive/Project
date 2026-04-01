@@ -1,0 +1,18 @@
+{
+  "id": 2805,
+  "name": "Huang Wu",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Yellow wu died at the left hand guard, which if remaining on the soul, mysterious effect",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 26,
+    "SPD": 8
+  },
+  "image": "data/images/arm-2805.png",
+  "file": "arm-2805.json"
+}

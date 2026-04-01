@@ -1,0 +1,39 @@
+{
+  "id": 71,
+  "name": "Ivory Wolf (Quest)",
+  "location": "South Pole",
+  "image": "data/Monster_Images/monster-71.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wolf Meat",
+      "itemId": 7463,
+      "itemFile": "material-7463.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wolf Tooth",
+      "itemId": 7724,
+      "itemFile": "material-7724.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 5500,
+    "sp": 524,
+    "catchable": "Unknown",
+    "spd": 197,
+    "str": 46,
+    "con": 40,
+    "int": 45,
+    "wis": 33,
+    "agi": 46
+  }
+}

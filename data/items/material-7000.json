@@ -1,0 +1,17 @@
+{
+  "id": 7000,
+  "name": "White Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Rice",
+  "description": "Obtained after cooking rice fragrant rice",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100
+  },
+  "image": "data/images/material-7000.png",
+  "file": "material-7000.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 615,
+  "name": "Honor Baton",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The baton used by the Guard Of Honor makes people feel confident when they swing",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30
+  },
+  "image": "data/images/weapon-615.png",
+  "file": "weapon-615.json"
+}

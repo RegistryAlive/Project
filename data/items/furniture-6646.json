@@ -1,0 +1,15 @@
+{
+  "id": 6646,
+  "name": "Sakura Window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Open the pink curtains and you can see the cherry trees outside the window.",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6646.png",
+  "file": "furniture-6646.json"
+}

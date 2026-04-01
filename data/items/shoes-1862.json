@@ -1,0 +1,18 @@
+{
+  "id": 1862,
+  "name": "Mud Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Rock / Leather",
+  "description": "Firm leather boots made from leather.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 12,
+    "SPD": 6
+  },
+  "image": "data/images/shoes-1862.png",
+  "file": "shoes-1862.json"
+}

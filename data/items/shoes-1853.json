@@ -1,0 +1,18 @@
+{
+  "id": 1853,
+  "name": "Rough Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "They are portable and have specific magic power.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 9,
+    "MATK": 6
+  },
+  "image": "data/images/shoes-1853.png",
+  "file": "shoes-1853.json"
+}

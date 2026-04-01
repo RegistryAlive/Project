@@ -1,0 +1,15 @@
+{
+  "id": 6179,
+  "name": "Filtering Circuit",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Filtrates an electrical wave",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6179.png",
+  "file": "furniture-6179.json"
+}

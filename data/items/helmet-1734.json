@@ -1,0 +1,15 @@
+{
+  "id": 1734,
+  "name": "Crispy Eggs",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Crispy Eggs on the Edge",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1734.png",
+  "file": "helmet-1734.json"
+}

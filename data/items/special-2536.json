@@ -1,0 +1,17 @@
+{
+  "id": 2536,
+  "name": "Seer's Cape",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A cape used by Prophets and available to socket",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30
+  },
+  "image": "data/images/special-2536.png",
+  "file": "special-2536.json"
+}

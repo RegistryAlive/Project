@@ -1,0 +1,17 @@
+{
+  "id": 7529,
+  "name": "Nectar",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "Bee collected it from flowers",
+  "size": "1x1",
+  "attributes": {
+    "SP": 20
+  },
+  "image": "data/images/material-7529.png",
+  "file": "material-7529.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 302,
+  "name": "Broken Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Steel / Wood",
+  "description": "Damaged halberd after excessive use.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-302.png",
+  "file": "weapon-302.json"
+}

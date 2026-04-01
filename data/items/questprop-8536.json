@@ -1,0 +1,15 @@
+{
+  "id": 8536,
+  "name": "Seal Bead",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "It is the Bead with memory of Niss",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8536.png",
+  "file": "questprop-8536.json"
+}

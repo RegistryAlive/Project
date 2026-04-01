@@ -1,0 +1,18 @@
+{
+  "id": 7018,
+  "name": "Fried Buns",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat / Meat",
+  "description": "A Bun with cabbage and pork",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150,
+    "SP": 50
+  },
+  "image": "data/images/material-7018.png",
+  "file": "material-7018.json"
+}

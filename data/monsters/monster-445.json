@@ -1,0 +1,27 @@
+{
+  "id": 445,
+  "name": "Snow Evil Spirit",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-445.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    }
+  ],
+  "stats": {
+    "level": 58,
+    "hp": 495,
+    "sp": 584,
+    "catchable": "Unknown",
+    "spd": 163,
+    "str": 29,
+    "con": 31,
+    "int": 39,
+    "wis": 40,
+    "agi": 38
+  }
+}

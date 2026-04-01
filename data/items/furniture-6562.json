@@ -1,0 +1,15 @@
+{
+  "id": 6562,
+  "name": "Pumpkin Candle",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Decorative candlelight with pumpkins",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6562.png",
+  "file": "furniture-6562.json"
+}

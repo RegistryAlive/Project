@@ -1,0 +1,17 @@
+{
+  "id": 1369,
+  "name": "Flower Headdre",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Something used to tangle hairs.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/helmet-1369.png",
+  "file": "helmet-1369.json"
+}

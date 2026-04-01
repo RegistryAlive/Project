@@ -1,0 +1,18 @@
+{
+  "id": 1190,
+  "name": "Ferocious Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Increases both DEF and AGI slightly",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "SPD": 5
+  },
+  "image": "data/images/armor-1190.png",
+  "file": "armor-1190.json"
+}

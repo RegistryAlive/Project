@@ -1,0 +1,17 @@
+{
+  "id": 10077,
+  "name": "Dragonboat Cap",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "???????????????????????????????????",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10077.png",
+  "file": "vehicle-10077.json"
+}

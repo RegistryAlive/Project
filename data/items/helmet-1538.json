@@ -1,0 +1,18 @@
+{
+  "id": 1538,
+  "name": "Fire Aurora Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Pure Iron",
+  "description": "Suit: Damages Wind enemies;-50% damage to Water enemies.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1538.png",
+  "file": "helmet-1538.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 822,
+  "name": "Medusa",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-822.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 177,
+    "hp": 45000,
+    "sp": 10000,
+    "catchable": "Unknown",
+    "spd": 733.5,
+    "str": 230,
+    "con": 226,
+    "int": 184,
+    "wis": 188,
+    "agi": 234
+  }
+}

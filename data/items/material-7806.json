@@ -1,0 +1,15 @@
+{
+  "id": 7806,
+  "name": "Angry Skeleton",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "One piece of bone from a skeleton",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7806.png",
+  "file": "material-7806.json"
+}

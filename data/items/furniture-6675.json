@@ -1,0 +1,15 @@
+{
+  "id": 6675,
+  "name": "Carrot pillow",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The cute pillow in the shape of carrot is the favorite of rabbits.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6675.png",
+  "file": "furniture-6675.json"
+}

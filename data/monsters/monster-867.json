@@ -1,0 +1,27 @@
+{
+  "id": 867,
+  "name": "Red ET",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-867.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 3003,
+    "sp": 1215,
+    "catchable": "Unknown",
+    "spd": 260,
+    "str": 32,
+    "con": 55,
+    "int": 83,
+    "wis": 75,
+    "agi": 55
+  }
+}

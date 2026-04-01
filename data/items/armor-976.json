@@ -1,0 +1,18 @@
+{
+  "id": 976,
+  "name": "Iga Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Nylon / Flower",
+  "description": "A dress for Iga Ninja in IGA",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 19,
+    "MDEF": 5
+  },
+  "image": "data/images/armor-976.png",
+  "file": "armor-976.json"
+}

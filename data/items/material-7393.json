@@ -1,0 +1,15 @@
+{
+  "id": 7393,
+  "name": "Big Fruit Leaf",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leaf",
+  "description": "A big leaf which can be eaten",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7393.png",
+  "file": "material-7393.json"
+}

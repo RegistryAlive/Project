@@ -1,0 +1,17 @@
+{
+  "id": 1815,
+  "name": "Grass Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Grass",
+  "description": "Shoes which are made from toughness grass",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 6
+  },
+  "image": "data/images/shoes-1815.png",
+  "file": "shoes-1815.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1421,
+  "name": "Dragon Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Titanium / Gold",
+  "description": "Made of the undead fire of the fiery dragon.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "SPD": 14
+  },
+  "image": "data/images/helmet-1421.png",
+  "file": "helmet-1421.json"
+}

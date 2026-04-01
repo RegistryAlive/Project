@@ -1,0 +1,18 @@
+{
+  "id": 2068,
+  "name": "Xaolan's Jade",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 21,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "Jade which is worn by Lan since she was born",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 11,
+    "DEF": 10
+  },
+  "image": "data/images/special-2068.png",
+  "file": "special-2068.json"
+}

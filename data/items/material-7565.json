@@ -1,0 +1,15 @@
+{
+  "id": 7565,
+  "name": "Iron Fillet",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Iron",
+  "description": "It is made of iron sand",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7565.png",
+  "file": "material-7565.json"
+}

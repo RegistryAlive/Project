@@ -1,0 +1,39 @@
+{
+  "id": 1117,
+  "name": "Jump Mantis",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1118.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Pachyrhizus",
+      "itemId": 7516,
+      "itemFile": "material-7516.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Claw",
+      "itemId": 7775,
+      "itemFile": "material-7775.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Hard Shell",
+      "itemId": 7789,
+      "itemFile": "material-7789.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 740,
+    "sp": 645,
+    "catchable": "Unknown",
+    "spd": 185,
+    "str": 43,
+    "con": 46,
+    "int": 39,
+    "wis": 42,
+    "agi": 40
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1751,
+  "name": "Sakura Antler",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The antlers of the King of Deer that blossom with cherry blossoms. Has a 5% anti-blocking effect",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "MaxSP": 150
+  },
+  "image": "data/images/helmet-1751.png",
+  "file": "helmet-1751.json"
+}

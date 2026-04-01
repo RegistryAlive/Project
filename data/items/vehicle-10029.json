@@ -1,0 +1,17 @@
+{
+  "id": 10029,
+  "name": "Yacht Capsule",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Small boat with high speed",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 46912
+  },
+  "image": "data/images/vehicle-10029.png",
+  "file": "vehicle-10029.json"
+}

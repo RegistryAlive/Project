@@ -1,0 +1,27 @@
+{
+  "id": 870,
+  "name": "Red Horse",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-870.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 720,
+    "sp": 556,
+    "catchable": "Unknown",
+    "spd": 232,
+    "str": 40,
+    "con": 44,
+    "int": 35,
+    "wis": 35,
+    "agi": 62
+  }
+}

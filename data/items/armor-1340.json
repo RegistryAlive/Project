@@ -1,0 +1,18 @@
+{
+  "id": 1340,
+  "name": "Three Destiny",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The Marital Union has been in place for 100 years. Female-only, +1 extra SPD for every +2 forged, up to +50",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 500,
+    "SPD": 10
+  },
+  "image": "data/images/armor-1340.png",
+  "file": "armor-1340.json"
+}

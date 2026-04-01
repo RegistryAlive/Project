@@ -1,0 +1,17 @@
+{
+  "id": 7010,
+  "name": "Bread",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat",
+  "description": "It's made from flour",
+  "size": "1x1",
+  "attributes": {
+    "HP": 50
+  },
+  "image": "data/images/material-7010.png",
+  "file": "material-7010.json"
+}

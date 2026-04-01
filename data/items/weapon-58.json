@@ -1,0 +1,18 @@
+{
+  "id": 58,
+  "name": "Scythe of Wrath",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Copper / Steel / Titanium",
+  "description": "A powerful scythe that's rumored to strike fear in even the most powerful Gods. With extremely high attack and defense.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "DEF": 40
+  },
+  "image": "data/images/weapon-58.png",
+  "file": "weapon-58.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2639,
+  "name": "Dark Evil Wings+6",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 72,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "It is improved but not socketed.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 36,
+    "MATK": 36
+  },
+  "image": "data/images/special-2639.png",
+  "file": "special-2639.json"
+}

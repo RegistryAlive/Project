@@ -1,0 +1,18 @@
+{
+  "id": 457,
+  "name": "Wisteria Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 14,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A magic-breaking arrow blessed by a sorceress. 38% Crit Possibility, ignores a monster's resistance to bows.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55,
+    "MaxSP": 150
+  },
+  "image": "data/images/weapon-457.png",
+  "file": "weapon-457.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7633,
+  "name": "Mica Rock",
+  "type": "MaterialRock",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Rock",
+  "description": "Contains a lot of white crystals",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7633.png",
+  "file": "material-7633.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 1039,
+  "name": "Red Gurnard",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-1040.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Shrimp",
+      "itemId": 7497,
+      "itemFile": "material-7497.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lobster",
+      "itemId": 7496,
+      "itemFile": "material-7496.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 139,
+    "hp": 1886,
+    "sp": 1434,
+    "catchable": "Unknown",
+    "spd": 350.5,
+    "str": 87,
+    "con": 96,
+    "int": 83,
+    "wis": 80,
+    "agi": 71
+  }
+}

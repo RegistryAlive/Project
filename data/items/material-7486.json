@@ -1,0 +1,17 @@
+{
+  "id": 7486,
+  "name": "Fish",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "Fried Fish for growing children",
+  "size": "1x1",
+  "attributes": {
+    "HP": 10
+  },
+  "image": "data/images/material-7486.png",
+  "file": "material-7486.json"
+}

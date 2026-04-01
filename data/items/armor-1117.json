@@ -1,0 +1,18 @@
+{
+  "id": 1117,
+  "name": "Water Aurora Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Suit: Damages Fire enemies;-50% damage to Earth enemies.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "MDEF": 10
+  },
+  "image": "data/images/armor-1117.png",
+  "file": "armor-1117.json"
+}

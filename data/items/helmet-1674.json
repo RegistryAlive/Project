@@ -1,0 +1,17 @@
+{
+  "id": 1674,
+  "name": "Sunny",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The world is so beautiful, the damage of being attacked by fire attributes is reduced by 2%.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 2
+  },
+  "image": "data/images/helmet-1674.png",
+  "file": "helmet-1674.json"
+}

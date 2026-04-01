@@ -1,0 +1,17 @@
+{
+  "id": 273,
+  "name": "War Bronze Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "A halberd made from bronze.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 22
+  },
+  "image": "data/images/weapon-273.png",
+  "file": "weapon-273.json"
+}

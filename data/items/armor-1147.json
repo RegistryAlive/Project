@@ -1,0 +1,18 @@
+{
+  "id": 1147,
+  "name": "Wind Demon Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Feather / Nylon",
+  "description": "Made with feathers, tailored for low level ninja",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "DEF": 6
+  },
+  "image": "data/images/armor-1147.png",
+  "file": "armor-1147.json"
+}

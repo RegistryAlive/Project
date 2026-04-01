@@ -1,0 +1,15 @@
+{
+  "id": 8132,
+  "name": "Crystal Ball",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Cha Park Jeong's crystal ball",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8132.png",
+  "file": "questprop-8132.json"
+}

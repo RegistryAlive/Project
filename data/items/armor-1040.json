@@ -1,0 +1,17 @@
+{
+  "id": 1040,
+  "name": "Gray Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "Made from raw grey silk thread for durability.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25
+  },
+  "image": "data/images/armor-1040.png",
+  "file": "armor-1040.json"
+}

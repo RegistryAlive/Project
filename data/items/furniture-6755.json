@@ -1,0 +1,15 @@
+{
+  "id": 6755,
+  "name": "Rui Long Sculp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Welcome stone sculpture in the form of a dragon's head",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6755.png",
+  "file": "furniture-6755.json"
+}

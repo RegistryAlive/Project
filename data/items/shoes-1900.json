@@ -1,0 +1,18 @@
+{
+  "id": 1900,
+  "name": "Amber Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Grass / Leaf",
+  "description": "Amber boots which are light-footed and magic",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "MATK": 14
+  },
+  "image": "data/images/shoes-1900.png",
+  "file": "shoes-1900.json"
+}

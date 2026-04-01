@@ -1,0 +1,27 @@
+{
+  "id": 823,
+  "name": "Monkey",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-823.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 5,
+    "hp": 62,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 17.5,
+    "str": 2,
+    "con": 4,
+    "int": 2,
+    "wis": 2,
+    "agi": 5
+  }
+}

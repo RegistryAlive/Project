@@ -1,0 +1,18 @@
+{
+  "id": 15,
+  "name": "Bronze Saber",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A Saber made from bronze",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 13,
+    "DEF": 13
+  },
+  "image": "data/images/weapon-15.png",
+  "file": "weapon-15.json"
+}

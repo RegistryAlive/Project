@@ -1,0 +1,18 @@
+{
+  "id": 2249,
+  "name": "Evil Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To slightly raise defense and less magic defense",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 3,
+    "MDEF": 1
+  },
+  "image": "data/images/special-2249.png",
+  "file": "special-2249.json"
+}

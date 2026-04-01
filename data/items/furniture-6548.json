@@ -1,0 +1,15 @@
+{
+  "id": 6548,
+  "name": "Star wall lamp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "As if under the stars",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6548.png",
+  "file": "furniture-6548.json"
+}

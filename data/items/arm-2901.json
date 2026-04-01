@@ -1,0 +1,18 @@
+{
+  "id": 2901,
+  "name": "Heliotrope Armlet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Feather / Grass / Magic",
+  "description": "An arm accessory crafted from rare magical crystals and talismans",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 27,
+    "SPD": 10
+  },
+  "image": "data/images/arm-2901.png",
+  "file": "arm-2901.json"
+}

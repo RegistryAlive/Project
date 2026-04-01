@@ -1,0 +1,18 @@
+{
+  "id": 1885,
+  "name": "War Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Gold / Steel / Titanium",
+  "description": "Boots made from mixed metal and mixed steel.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 22,
+    "ATK": 9
+  },
+  "image": "data/images/shoes-1885.png",
+  "file": "shoes-1885.json"
+}

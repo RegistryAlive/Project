@@ -1,0 +1,17 @@
+{
+  "id": 801,
+  "name": "golden cudgel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The weapon carried by the little monkey after reincarnation is said to have magical power",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 80
+  },
+  "image": "data/images/weapon-801.png",
+  "file": "weapon-801.json"
+}

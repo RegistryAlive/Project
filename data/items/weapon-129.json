@@ -1,0 +1,18 @@
+{
+  "id": 129,
+  "name": "Skeleton Steel Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Steel / Hard Tissue",
+  "description": "A sword made from steel and animal bones.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 21,
+    "SPD": 21
+  },
+  "image": "data/images/weapon-129.png",
+  "file": "weapon-129.json"
+}

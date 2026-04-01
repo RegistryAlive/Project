@@ -1,0 +1,17 @@
+{
+  "id": 7464,
+  "name": "Peanut Oil",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Vegetable Oil",
+  "description": "Oil refined from a peanut with good smell",
+  "size": "1x1",
+  "attributes": {
+    "HP": 70
+  },
+  "image": "data/images/material-7464.png",
+  "file": "material-7464.json"
+}

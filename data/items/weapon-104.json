@@ -1,0 +1,18 @@
+{
+  "id": 104,
+  "name": "Dual Stinger",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Carefully selected wood carvings; Crit rate of 30%, every forging +10 burst rate increased by 1%, up to 40%, and other chef's dream series equipment at the same time equipment can be additional coat effect",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 300,
+    "ATK": 50
+  },
+  "image": "data/images/weapon-104.png",
+  "file": "weapon-104.json"
+}

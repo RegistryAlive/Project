@@ -1,0 +1,18 @@
+{
+  "id": 1852,
+  "name": "Alga Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "Shoes which have good magical effects.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 10,
+    "SPD": 4
+  },
+  "image": "data/images/shoes-1852.png",
+  "file": "shoes-1852.json"
+}

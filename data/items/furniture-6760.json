@@ -1,0 +1,15 @@
+{
+  "id": 6760,
+  "name": "Stone Eagle Totem",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "For trojan war, reduce waiting time before defender participates in battle.",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6760.png",
+  "file": "furniture-6760.json"
+}

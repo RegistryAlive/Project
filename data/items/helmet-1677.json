@@ -1,0 +1,18 @@
+{
+  "id": 1677,
+  "name": "BlueDevil Horn",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Ornaments imitating the shape of devil horns",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "SPD": 30
+  },
+  "image": "data/images/helmet-1677.png",
+  "file": "helmet-1677.json"
+}

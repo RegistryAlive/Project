@@ -1,0 +1,15 @@
+{
+  "id": 6072,
+  "name": "Brick",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Red Clay",
+  "description": "Building material",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6072.png",
+  "file": "furniture-6072.json"
+}

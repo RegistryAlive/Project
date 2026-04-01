@@ -1,0 +1,18 @@
+{
+  "id": 1512,
+  "name": "Knight Cap",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Iron / Grass",
+  "description": "Knight's forehead cap. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "DEF": 10
+  },
+  "image": "data/images/helmet-1512.png",
+  "file": "helmet-1512.json"
+}

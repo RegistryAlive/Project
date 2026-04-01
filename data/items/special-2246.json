@@ -1,0 +1,18 @@
+{
+  "id": 2246,
+  "name": "Protective Bad",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To slightly upgrade defense and less attack power",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 3,
+    "ATK": 1
+  },
+  "image": "data/images/special-2246.png",
+  "file": "special-2246.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 995,
+  "name": "Fierce Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "Holy armor which is guarded by Door-god Ares",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 23,
+    "ATK": 12
+  },
+  "image": "data/images/armor-995.png",
+  "file": "armor-995.json"
+}

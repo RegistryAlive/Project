@@ -1,0 +1,51 @@
+{
+  "id": 65,
+  "name": "Red Snowman",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-65.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Dye",
+      "itemId": 7804,
+      "itemFile": "material-7804.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snow Crystal",
+      "itemId": 7803,
+      "itemFile": "material-7803.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pineapple",
+      "itemId": 7445,
+      "itemFile": "material-7445.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lauan",
+      "itemId": 7653,
+      "itemFile": "material-7653.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tin Sand",
+      "itemId": 7573,
+      "itemFile": "material-7573.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 66,
+    "hp": 641,
+    "sp": 579,
+    "catchable": "Yes",
+    "spd": 183,
+    "str": 39,
+    "con": 40,
+    "int": 39,
+    "wis": 38,
+    "agi": 42
+  }
+}

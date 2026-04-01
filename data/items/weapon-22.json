@@ -1,0 +1,18 @@
+{
+  "id": 22,
+  "name": "Moon Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A Steel knife shaped like the moon.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "DEF": 20
+  },
+  "image": "data/images/weapon-22.png",
+  "file": "weapon-22.json"
+}

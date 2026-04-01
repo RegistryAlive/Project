@@ -1,0 +1,17 @@
+{
+  "id": 7302,
+  "name": "QQ Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 27,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Fish and Shellfish / Vegetable / Egg",
+  "description": "Fast noodles with plenty of other things",
+  "size": "1x1",
+  "attributes": {
+    "HP": 1500
+  },
+  "image": "data/images/material-7302.png",
+  "file": "material-7302.json"
+}

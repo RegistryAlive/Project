@@ -1,0 +1,27 @@
+{
+  "id": 697,
+  "name": "Fire Spirit (Quest)",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-697.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 1066,
+    "sp": 639,
+    "catchable": "Unknown",
+    "spd": 174,
+    "str": 42,
+    "con": 40,
+    "int": 44,
+    "wis": 42,
+    "agi": 36
+  }
+}

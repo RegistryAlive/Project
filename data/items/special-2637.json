@@ -1,0 +1,18 @@
+{
+  "id": 2637,
+  "name": "Friendship Bro",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Double ATK and MATK after equipped by human pets with amity at 100. Can be intensified and traded.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 100,
+    "MaxHP": 150
+  },
+  "image": "data/images/special-2637.png",
+  "file": "special-2637.json"
+}

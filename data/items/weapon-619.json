@@ -1,0 +1,17 @@
+{
+  "id": 619,
+  "name": "Snake Rod",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A gift from demeter, wand decorated with wings and twin snakes. Can summon demeter to assist.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50
+  },
+  "image": "data/images/weapon-619.png",
+  "file": "weapon-619.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1669,
+  "name": "Cat Muppet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The cat is lying on its head, and it looks so lazy and cute. Slightly increase the chance of counterattack in battle.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "ATK": 15
+  },
+  "image": "data/images/helmet-1669.png",
+  "file": "helmet-1669.json"
+}

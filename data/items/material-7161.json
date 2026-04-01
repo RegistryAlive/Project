@@ -1,0 +1,18 @@
+{
+  "id": 7161,
+  "name": "Pizza",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat / Meat / Fish and Shellfish",
+  "description": "Recovers HP and SP at most",
+  "size": "1x1",
+  "attributes": {
+    "HP": 0,
+    "SP": 0
+  },
+  "image": "data/images/material-7161.png",
+  "file": "material-7161.json"
+}

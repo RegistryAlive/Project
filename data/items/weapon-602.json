@@ -1,0 +1,18 @@
+{
+  "id": 602,
+  "name": "Alabaster Mace",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Tin / Steel / Corundum / Magic",
+  "description": "Snow-white energies swirl around this ruby-encrusted staff",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 58,
+    "MATK": 30
+  },
+  "image": "data/images/weapon-602.png",
+  "file": "weapon-602.json"
+}

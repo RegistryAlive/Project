@@ -1,0 +1,27 @@
+{
+  "id": 574,
+  "name": "Bi-heads Snake (Quest)",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-574.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 38950,
+    "sp": 8500,
+    "catchable": "Unknown",
+    "spd": 225,
+    "str": 127,
+    "con": 90,
+    "int": 128,
+    "wis": 105,
+    "agi": 0
+  }
+}

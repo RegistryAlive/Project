@@ -1,0 +1,15 @@
+{
+  "id": 7747,
+  "name": "Comb",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Beehive",
+  "description": "It is made of honeycomb pieces",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7747.png",
+  "file": "material-7747.json"
+}

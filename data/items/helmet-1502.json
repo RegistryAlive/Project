@@ -1,0 +1,18 @@
+{
+  "id": 1502,
+  "name": "Snow Mask",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Corundum",
+  "description": "Pure white; its defense is good.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1502.png",
+  "file": "helmet-1502.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 739,
+  "name": "Craftsman's Pestle",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "It is usually used by craftsman.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 0,
+    "DEF": 2
+  },
+  "image": "data/images/weapon-739.png",
+  "file": "weapon-739.json"
+}

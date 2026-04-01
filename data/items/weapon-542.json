@@ -1,0 +1,17 @@
+{
+  "id": 542,
+  "name": "Smooth Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Corundum / Feather",
+  "description": "Smooth to touch, but woven from the finest materials.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 46
+  },
+  "image": "data/images/weapon-542.png",
+  "file": "weapon-542.json"
+}

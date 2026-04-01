@@ -1,0 +1,18 @@
+{
+  "id": 773,
+  "name": "Fine Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "A stick which is made from oak",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 1,
+    "DEF": 3
+  },
+  "image": "data/images/weapon-773.png",
+  "file": "weapon-773.json"
+}

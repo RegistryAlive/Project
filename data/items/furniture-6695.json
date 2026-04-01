@@ -1,0 +1,15 @@
+{
+  "id": 6695,
+  "name": "Yew blue Chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The sled is placed indoors as a sofa chair for those who want to experience sledding but are afraid of the cold and do not want to go out.",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6695.png",
+  "file": "furniture-6695.json"
+}

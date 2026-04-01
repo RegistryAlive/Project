@@ -1,0 +1,18 @@
+{
+  "id": 622,
+  "name": "Sakura Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A cherry-colored prayer staff used by the witch, it can be used for exorcism. Forging +2 increases critical strike by 1% (up to 50%)",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "MaxSP": 200
+  },
+  "image": "data/images/weapon-622.png",
+  "file": "weapon-622.json"
+}

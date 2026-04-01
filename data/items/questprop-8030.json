@@ -1,0 +1,15 @@
+{
+  "id": 8030,
+  "name": "Significant Item",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A love gift between Sano and princess",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8030.png",
+  "file": "questprop-8030.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7115,
+  "name": "Roasted Lobster",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "It's armored body with tender meat inside.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 160,
+    "SP": 140
+  },
+  "image": "data/images/material-7115.png",
+  "file": "material-7115.json"
+}

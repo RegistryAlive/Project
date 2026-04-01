@@ -1,0 +1,18 @@
+{
+  "id": 982,
+  "name": "Bronze Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Copper / Flower",
+  "description": "Armor which is made from bronze",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 24,
+    "SPD": 5
+  },
+  "image": "data/images/armor-982.png",
+  "file": "armor-982.json"
+}

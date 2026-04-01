@@ -1,0 +1,18 @@
+{
+  "id": 630,
+  "name": "Cotton Candy",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Cotton candy bought at shrine festivals have a magical power for some reason. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "MaxSP": 250
+  },
+  "image": "data/images/weapon-630.png",
+  "file": "weapon-630.json"
+}

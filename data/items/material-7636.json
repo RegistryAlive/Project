@@ -1,0 +1,15 @@
+{
+  "id": 7636,
+  "name": "Basalt",
+  "type": "MaterialRock",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rock",
+  "description": "Accumulate by high pressure of seabed",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7636.png",
+  "file": "material-7636.json"
+}

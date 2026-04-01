@@ -1,0 +1,17 @@
+{
+  "id": 1909,
+  "name": "Clog",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Wood / Fur / Flower",
+  "description": "Gear which contain generous Warrior's spirit",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 18
+  },
+  "image": "data/images/shoes-1909.png",
+  "file": "shoes-1909.json"
+}

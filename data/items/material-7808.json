@@ -1,0 +1,15 @@
+{
+  "id": 7808,
+  "name": "Wing Claw",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "A Claw connected with wing",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7808.png",
+  "file": "material-7808.json"
+}

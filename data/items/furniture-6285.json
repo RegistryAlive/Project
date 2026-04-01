@@ -1,0 +1,15 @@
+{
+  "id": 6285,
+  "name": "Rattan bed",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 11,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Woven with vines and portable beds",
+  "size": "5x3",
+  "attributes": {},
+  "image": "data/images/furniture-6285.png",
+  "file": "furniture-6285.json"
+}

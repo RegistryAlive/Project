@@ -1,0 +1,17 @@
+{
+  "id": 2713,
+  "name": "High-pe Cl +8",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 95,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A high efficiency clockwork produced for work efficiency.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 95
+  },
+  "image": "data/images/special-2713.png",
+  "file": "special-2713.json"
+}

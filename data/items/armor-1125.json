@@ -1,0 +1,18 @@
+{
+  "id": 1125,
+  "name": "Kanako's Jaket",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 5,
+  "level": 0,
+  "rarity": "rare",
+  "base": "N/A",
+  "description": "Special for Kanako, cannot be repaired.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 60,
+    "SPD": 30
+  },
+  "image": "data/images/armor-1125.png",
+  "file": "armor-1125.json"
+}

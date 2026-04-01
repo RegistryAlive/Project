@@ -1,0 +1,15 @@
+{
+  "id": 9048,
+  "name": "Pliers",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Used on the work platform to nip materials.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/tool-9048.png",
+  "file": "tool-9048.json"
+}

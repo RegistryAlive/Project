@@ -1,0 +1,18 @@
+{
+  "id": 454,
+  "name": "Karma Feather",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The divine bow favored by the God of Karma has a 30% chance of critical hits, and can ignore the monster's bow resistance.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "MaxHP": 450
+  },
+  "image": "data/images/weapon-454.png",
+  "file": "weapon-454.json"
+}

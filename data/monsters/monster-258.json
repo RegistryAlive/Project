@@ -1,0 +1,57 @@
+{
+  "id": 258,
+  "name": "Mayan Blue Race",
+  "location": "Mayan Forest",
+  "image": "data/Monster_Images/monster-258.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tiger Meat",
+      "itemId": 7476,
+      "itemFile": "material-7476.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ruby",
+      "itemId": 7595,
+      "itemFile": "material-7595.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Galena",
+      "itemId": 7576,
+      "itemFile": "material-7576.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 89,
+    "hp": 893,
+    "sp": 886,
+    "catchable": "Unknown",
+    "spd": 243.5,
+    "str": 45,
+    "con": 51,
+    "int": 61,
+    "wis": 55,
+    "agi": 55
+  }
+}

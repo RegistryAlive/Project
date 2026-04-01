@@ -1,0 +1,18 @@
+{
+  "id": 7319,
+  "name": "Salmon with Ri",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 24,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Nourishment for the PvP server",
+  "size": "1x1",
+  "attributes": {
+    "HP": 1500,
+    "SP": 500
+  },
+  "image": "data/images/material-7319.png",
+  "file": "material-7319.json"
+}

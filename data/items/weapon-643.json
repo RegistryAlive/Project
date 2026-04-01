@@ -1,0 +1,18 @@
+{
+  "id": 643,
+  "name": "Army Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Fan used by generals in ancient times. Additional effect when used in a set.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 60,
+    "SPD": 40
+  },
+  "image": "data/images/weapon-643.png",
+  "file": "weapon-643.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6364,
+  "name": "Wire Game Machine",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "can directly use all kinds of games in the park.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6364.png",
+  "file": "furniture-6364.json"
+}

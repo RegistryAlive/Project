@@ -1,0 +1,15 @@
+{
+  "id": 6134,
+  "name": "Aircraft Engine",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 17,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Large engine for planes",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6134.png",
+  "file": "furniture-6134.json"
+}

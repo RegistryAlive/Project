@@ -1,0 +1,18 @@
+{
+  "id": 199,
+  "name": "Guard's Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Steel / Copper",
+  "description": "Special for Guard.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 32,
+    "DEF": 28
+  },
+  "image": "data/images/weapon-199.png",
+  "file": "weapon-199.json"
+}

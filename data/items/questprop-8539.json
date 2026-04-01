@@ -1,0 +1,15 @@
+{
+  "id": 8539,
+  "name": "5X Holy EXP Potion",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 10,
+  "level": 20,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Obtain 5x EXP for 2 hours",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8539.png",
+  "file": "questprop-8539.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 954,
+  "name": "Town Guard (Trojan War)",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-954.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 94,
+    "hp": 1564,
+    "sp": 409,
+    "catchable": "Unknown",
+    "spd": 257,
+    "str": 75,
+    "con": 93,
+    "int": 35,
+    "wis": 21,
+    "agi": 58
+  }
+}

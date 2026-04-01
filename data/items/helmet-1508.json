@@ -1,0 +1,18 @@
+{
+  "id": 1508,
+  "name": "Perfect Headscarf",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Gold / Flower / Grass",
+  "description": "A shining headscarf made of spun gold and fibre.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 19,
+    "DEF": 8
+  },
+  "image": "data/images/helmet-1508.png",
+  "file": "helmet-1508.json"
+}

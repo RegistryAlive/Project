@@ -1,0 +1,18 @@
+{
+  "id": 1410,
+  "name": "Sea Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Steel / Iron",
+  "description": "A heavy helmet which is made from mixed steel",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 22,
+    "MDEF": 9
+  },
+  "image": "data/images/helmet-1410.png",
+  "file": "helmet-1410.json"
+}

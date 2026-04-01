@@ -1,0 +1,33 @@
+{
+  "id": 487,
+  "name": "Fog Spider",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-487.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Milk Tea",
+      "itemId": 7232,
+      "itemFile": "material-7232.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 118,
+    "hp": 687,
+    "sp": 651,
+    "catchable": "No",
+    "spd": 263,
+    "str": 30,
+    "con": 32,
+    "int": 37,
+    "wis": 34,
+    "agi": 43
+  }
+}

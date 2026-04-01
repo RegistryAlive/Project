@@ -1,0 +1,15 @@
+{
+  "id": 8434,
+  "name": "Pink Pega Exch",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket to exchange for Pink Pegasus as your partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8434.png",
+  "file": "questprop-8434.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 19,
+  "name": "Ancient Rock Monster",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-19.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Basalt",
+      "itemId": 7636,
+      "itemFile": "material-7636.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 87,
+    "hp": 930,
+    "sp": 822,
+    "catchable": "Unknown",
+    "spd": 230.5,
+    "str": 56,
+    "con": 54,
+    "int": 50,
+    "wis": 51,
+    "agi": 50
+  }
+}

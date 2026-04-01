@@ -1,0 +1,15 @@
+{
+  "id": 6478,
+  "name": "Red Fl. Bonsai",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Red Flower Bonsai. Placed at home to increase greenness.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6478.png",
+  "file": "furniture-6478.json"
+}

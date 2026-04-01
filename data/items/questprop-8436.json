@@ -1,0 +1,15 @@
+{
+  "id": 8436,
+  "name": "Black Kirin Ti",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make Black kirin a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8436.png",
+  "file": "questprop-8436.json"
+}

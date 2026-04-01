@@ -1,0 +1,17 @@
+{
+  "id": 1910,
+  "name": "Leg Wrappings",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Leaf / Fur / Flower",
+  "description": "Arcane leg wrappings made from sealed Shikigami.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25
+  },
+  "image": "data/images/shoes-1910.png",
+  "file": "shoes-1910.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6067,
+  "name": "Acrylic Plate",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made from rubber",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6067.png",
+  "file": "furniture-6067.json"
+}

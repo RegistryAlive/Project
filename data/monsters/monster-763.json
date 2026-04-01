@@ -1,0 +1,27 @@
+{
+  "id": 763,
+  "name": "Huge Moai",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-763.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 140,
+    "hp": 32000,
+    "sp": 1099,
+    "catchable": "Unknown",
+    "spd": 340,
+    "str": 116,
+    "con": 120,
+    "int": 60,
+    "wis": 59,
+    "agi": 65
+  }
+}

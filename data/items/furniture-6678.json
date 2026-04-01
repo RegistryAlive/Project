@@ -1,0 +1,15 @@
+{
+  "id": 6678,
+  "name": "Death Hourglas",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The hourglass in the shape of the Grim Reaper. Production time shortened to 10% of original.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6678.png",
+  "file": "furniture-6678.json"
+}

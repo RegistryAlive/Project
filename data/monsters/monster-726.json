@@ -1,0 +1,27 @@
+{
+  "id": 726,
+  "name": "Green Woman (Quest)",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-726.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 65,
+    "hp": 7650,
+    "sp": 471,
+    "catchable": "Unknown",
+    "spd": 187.5,
+    "str": 40,
+    "con": 45,
+    "int": 35,
+    "wis": 30,
+    "agi": 45
+  }
+}

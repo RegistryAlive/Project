@@ -1,0 +1,27 @@
+{
+  "id": 860,
+  "name": "Presbyter' Pawn",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-860.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 10,
+    "hp": 110,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 23,
+    "str": 10,
+    "con": 10,
+    "int": 3,
+    "wis": 3,
+    "agi": 4
+  }
+}

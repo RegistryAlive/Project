@@ -1,0 +1,39 @@
+{
+  "id": 1047,
+  "name": "Frenzy Mantis",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1048.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Pineapple",
+      "itemId": 7445,
+      "itemFile": "material-7445.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Claw",
+      "itemId": 7775,
+      "itemFile": "material-7775.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Hard Shell",
+      "itemId": 7789,
+      "itemFile": "material-7789.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 712,
+    "sp": 631,
+    "catchable": "Unknown",
+    "spd": 185,
+    "str": 46,
+    "con": 44,
+    "int": 39,
+    "wis": 41,
+    "agi": 40
+  }
+}

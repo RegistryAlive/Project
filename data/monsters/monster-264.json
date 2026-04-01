@@ -1,0 +1,45 @@
+{
+  "id": 264,
+  "name": "Poisonous Snake",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-264.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Yellow Snake Skin",
+      "itemId": 7697,
+      "itemFile": "material-7697.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Meat",
+      "itemId": 7482,
+      "itemFile": "material-7482.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Liquid",
+      "itemId": 7755,
+      "itemFile": "material-7755.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Tooth",
+      "itemId": 7734,
+      "itemFile": "material-7734.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 986,
+    "sp": 716,
+    "catchable": "Yes",
+    "spd": 230,
+    "str": 40,
+    "con": 60,
+    "int": 40,
+    "wis": 45,
+    "agi": 55
+  }
+}

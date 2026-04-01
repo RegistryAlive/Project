@@ -1,0 +1,17 @@
+{
+  "id": 10040,
+  "name": "Justice Superm",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Flying equipment that is specially crafted that contains the sense of justice and compassion. It is fully of positive energy.",
+  "size": "4x5",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10040.png",
+  "file": "vehicle-10040.json"
+}

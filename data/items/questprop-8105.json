@@ -1,0 +1,15 @@
+{
+  "id": 8105,
+  "name": "Wild Pup Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a Wild Pup become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8105.png",
+  "file": "questprop-8105.json"
+}

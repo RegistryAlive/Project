@@ -1,0 +1,17 @@
+{
+  "id": 7150,
+  "name": "Roasted Chicken",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Meat",
+  "description": "Tender roasted chicken",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200
+  },
+  "image": "data/images/material-7150.png",
+  "file": "material-7150.json"
+}

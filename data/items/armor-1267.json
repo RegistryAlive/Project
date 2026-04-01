@@ -1,0 +1,15 @@
+{
+  "id": 1267,
+  "name": "New year Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": null,
+  "description": "The costume for the new year.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1267.png",
+  "file": "armor-1267.json"
+}

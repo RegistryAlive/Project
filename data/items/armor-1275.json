@@ -1,0 +1,15 @@
+{
+  "id": 1275,
+  "name": "Uniform",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Indigo team uniform, representing the glory of the organization.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1275.png",
+  "file": "armor-1275.json"
+}

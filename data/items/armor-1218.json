@@ -1,0 +1,18 @@
+{
+  "id": 1218,
+  "name": "Flamenco dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 35,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Bright and eye-catching colors, showing passionate and gorgeous dresses",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 27,
+    "MaxHP": 100
+  },
+  "image": "data/images/armor-1218.png",
+  "file": "armor-1218.json"
+}

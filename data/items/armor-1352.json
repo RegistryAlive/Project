@@ -1,0 +1,17 @@
+{
+  "id": 1352,
+  "name": "Sailor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Iris starting equipment",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-1352.png",
+  "file": "armor-1352.json"
+}

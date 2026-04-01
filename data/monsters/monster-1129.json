@@ -1,0 +1,27 @@
+{
+  "id": 1129,
+  "name": "Pirate",
+  "location": "Blackwind Cave",
+  "image": "data/Monster_Images/monster-1130.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 724,
+    "sp": 563,
+    "catchable": "No",
+    "spd": 232,
+    "str": 57,
+    "con": 54,
+    "int": 39,
+    "wis": 34,
+    "agi": 56
+  }
+}

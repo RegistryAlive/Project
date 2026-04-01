@@ -1,0 +1,17 @@
+{
+  "id": 2735,
+  "name": "Forsaken Wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Blazing red angel wings can be inlaid.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 450
+  },
+  "image": "data/images/special-2735.png",
+  "file": "special-2735.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1918,
+  "name": "Long White Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Boots shaped well and have very good defense",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "MaxHP": 50
+  },
+  "image": "data/images/shoes-1918.png",
+  "file": "shoes-1918.json"
+}

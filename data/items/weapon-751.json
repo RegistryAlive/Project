@@ -1,0 +1,18 @@
+{
+  "id": 751,
+  "name": "Meteorite Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Rock / Grass / Wood",
+  "description": "It is made of meteorolite.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "DEF": 14
+  },
+  "image": "data/images/weapon-751.png",
+  "file": "weapon-751.json"
+}

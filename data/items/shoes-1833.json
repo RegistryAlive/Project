@@ -1,0 +1,17 @@
+{
+  "id": 1833,
+  "name": "Copper Winged Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Short-wing boots made from steel, firm and heavy.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20
+  },
+  "image": "data/images/shoes-1833.png",
+  "file": "shoes-1833.json"
+}

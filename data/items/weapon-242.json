@@ -1,0 +1,18 @@
+{
+  "id": 242,
+  "name": "Tough Broadswo",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The broad-bladed sword that looked rather heavy was swung with unexpected dexterity. 46% critical strike possible",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 900,
+    "SPD": 20
+  },
+  "image": "data/images/weapon-242.png",
+  "file": "weapon-242.json"
+}

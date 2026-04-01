@@ -1,0 +1,18 @@
+{
+  "id": 481,
+  "name": "Sea Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Tin / Corundum",
+  "description": "A magic wand used by Water Fairy.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20,
+    "ATK": 20
+  },
+  "image": "data/images/weapon-481.png",
+  "file": "weapon-481.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2912,
+  "name": "Holy Ring",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Angela's special enhanced equipment can enhance the effect of the special holy healing light after wearing",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "MDEF": 15
+  },
+  "image": "data/images/arm-2912.png",
+  "file": "arm-2912.json"
+}

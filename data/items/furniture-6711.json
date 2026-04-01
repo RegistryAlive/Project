@@ -1,0 +1,15 @@
+{
+  "id": 6711,
+  "name": "Tiger Fan",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Ornate paper fans with tigers painted on them can be hung on the wall as decoration.",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6711.png",
+  "file": "furniture-6711.json"
+}

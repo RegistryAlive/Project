@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quests Forum - Wonderland Online DB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <!-- Responsive Modal Script (moved to end of body) -->
+            <!-- New Quest Modal -->
+            <div id="newQuestModal" style="display:none;" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
+                <div class="bg-[#232946] rounded-2xl shadow-2xl p-8 w-full max-w-lg border-2 border-wlBlue relative">
+                    <button id="closeNewQuest" class="absolute top-4 right-4 text-wlLight hover:text-wlRed text-2xl"><i class="fas fa-times"></i></button>
+                    <h2 class="text-2xl font-bold mb-6 text-wlBlue">New Quest Thread</h2>
+                    <form id="newQuestForm" class="space-y-5">
+                        <div>
+                            <label class="block text-wlLight font-semibold mb-1">Your Name</label>
+                            <input type="text" id="newQuestUser" class="w-full px-4 py-2 rounded-lg bg-wlDark border border-wlBlue text-wlLight focus:border-wlPurple outline-none" maxlength="16" required>
+                        </div>
+                        <div>
+                            <label class="block text-wlLight font-semibold mb-1">Title</label>
+                            <input type="text" id="newQuestTitle" class="w-full px-4 py-2 rounded-lg bg-wlDark border border-wlBlue text-wlLight focus:border-wlPurple outline-none" maxlength="64" required>
+                        </div>
+                        <div>
+                            <label class="block text-wlLight font-semibold mb-1">Message</label>
+                            <textarea id="newQuestContent" class="w-full px-4 py-2 rounded-lg bg-wlDark border border-wlBlue text-wlLight focus:border-wlPurple outline-none" rows="4" maxlength="400" required></textarea>
+                        </div>
+                        <button type="submit" class="forum-new-btn w-full mt-2"><i class="fas fa-paper-plane mr-2"></i>Post Quest</button>
+                    </form>
+                </div>
+            </div>
+            <script>
+            // Modal logic
+            const modal = document.getElementById('newQuestModal');
+            const openBtn = document.querySelector('.forum-new-btn');
+            const closeBtn = document.getElementById('closeNewQuest');
+            openBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            });
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+            // New Quest submission
+            document.getElementById('newQuestForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const user = document.getElementById('newQuestUser').value.trim() || 'Anonymous';
+                const title = document.getElementById('newQuestTitle').value.trim();
+                const content = document.getElementById('newQuestContent').value.trim();
+                if (!title || !content) return;
+                const avatar = user[0] ? user[0].toUpperCase() : '?';
+                const now = new Date();
+                const time = 'just now';
+                const newThread = {
+                    avatar, user, time,
+                    title,
+                    content,
+                    reactions: []
+                };
+                forumData[currentChannel].threads.unshift(newThread);
+                renderForum(currentChannel, document.getElementById('forumSearch').value);
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+                this.reset();
+            });
+            </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wlBlue: '#3b82f6',
+                        wlPurple: '#8b5cf6',
+                        wlGreen: '#10b981',
+                        wlRed: '#ef4444',
+                        wlYellow: '#f59e0b',
+                        wlDark: '#1e293b',
+                        wlDarker: '#0f172a',
+                        wlLight: '#f1f5f9',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%),
+                url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            min-height: 100vh;
+        }
+        .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        .forum-sidebar {
+            background: #1e293b;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 24px 0 rgba(59,130,246,0.13);
+            padding: 2rem 1.2rem 2rem 2rem;
+            min-width: 220px;
+            max-width: 260px;
+        }
+        .forum-channel {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            padding: 0.6rem 1rem;
+            border-radius: 0.7rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            opacity: 0.85;
+            cursor: pointer;
+            margin-bottom: 0.2rem;
+            transition: background 0.15s, color 0.15s;
+        }
+        .forum-channel.active, .forum-channel:hover {
+            background: linear-gradient(90deg, #3b82f6 60%, #8b5cf6 100%);
+            color: #fff;
+            opacity: 1;
+        }
+        .forum-main {
+            background: linear-gradient(120deg, rgba(30,41,59,0.93) 80%, rgba(139,92,246,0.07) 100%);
+            border-radius: 1.5rem;
+            box-shadow: 0 6px 32px 0 rgba(59,130,246,0.13);
+            padding: 2.7rem 2.7rem 2.2rem 2.7rem;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            border: 1.5px solid #232946;
+        }
+        .forum-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2.2rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1.5px solid #232946;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+        @media (max-width: 600px) {
+            .forum-header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.7rem;
+            }
+            .forum-header .flex.items-center.gap-3 {
+                flex-direction: row !important;
+                justify-content: flex-start;
+                margin-bottom: 0.2rem;
+            }
+            .forum-header .forum-search,
+            .forum-header .forum-new-btn {
+                width: 100%;
+                min-width: 0;
+                margin-left: 0 !important;
+            }
+        }
+        .forum-search {
+            width: 260px;
+            padding: 0.6rem 1.2rem;
+            border-radius: 9999px;
+            background: #0f172a;
+            border: 1.5px solid #8b5cf6;
+            color: #f1f5f9;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.18s;
+        }
+        .forum-search:focus {
+            border-color: #f59e0b;
+        }
+        .forum-thread {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            margin-bottom: 2.7rem;
+            position: relative;
+        }
+        .forum-avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #8b5cf6 40%, #3b82f6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            color: #fff;
+            font-weight: bold;
+            box-shadow: 0 2px 12px 0 rgba(139,92,246,0.18);
+            border: 3px solid #232946;
+            position: relative;
+            z-index: 2;
+            margin-right: -18px;
+        }
+        .forum-message {
+            background: #232946;
+            border-radius: 1.2rem;
+            padding: 1.6rem 2.2rem 1.6rem 2.8rem;
+            color: #f1f5f9;
+            box-shadow: 0 4px 18px 0 rgba(59,130,246,0.13);
+            min-width: 0;
+            flex: 1;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: box-shadow 0.18s, background 0.18s;
+        }
+        .forum-message:hover {
+            background: #2d3350;
+            box-shadow: 0 8px 32px 0 rgba(139,92,246,0.18);
+        }
+        .forum-message .forum-meta {
+            font-size: 0.95rem;
+            color: #8b5cf6;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        .forum-message .forum-time {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-left: 0.7rem;
+            font-weight: 400;
+        }
+        .forum-message .forum-title {
+            font-size: 1.22rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #f59e0b;
+            letter-spacing: 0.01em;
+        }
+        .forum-message .forum-content {
+            font-size: 1.09rem;
+            margin-bottom: 0.7rem;
+            line-height: 1.7;
+        }
+        .forum-message .forum-reactions {
+            display: flex;
+            gap: 0.7rem;
+            margin-top: 0.4rem;
+        }
+        .forum-message .forum-reaction {
+            background: #1e293b;
+            color: #8b5cf6;
+            border-radius: 9999px;
+            padding: 0.25rem 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+            box-shadow: 0 1px 4px 0 rgba(139,92,246,0.08);
+        }
+        .forum-message .forum-reaction:hover {
+            background: #8b5cf6;
+            color: #fff;
+        }
+        .forum-new-btn {
+            background: linear-gradient(90deg, #3b82f6 60%, #8b5cf6 100%);
+            color: #fff;
+            font-weight: 700;
+            border: none;
+            border-radius: 9999px;
+            padding: 0.8rem 2.1rem;
+            font-size: 1.13rem;
+            box-shadow: 0 2px 12px 0 rgba(59,130,246,0.13);
+            cursor: pointer;
+            transition: background 0.18s, box-shadow 0.18s;
+            margin-left: 0.7rem;
+        }
+        .forum-new-btn:hover {
+            background: linear-gradient(90deg, #8b5cf6 60%, #3b82f6 100%);
+            box-shadow: 0 4px 20px 0 rgba(139,92,246,0.18);
+        }
+        @media (max-width: 900px) {
+            .forum-main { padding: 1.2rem 0.5rem 1.2rem 0.5rem; }
+            .forum-sidebar { min-width: 0; max-width: 100vw; padding: 1.2rem 0.5rem; }
+        }
+        @media (max-width: 700px) {
+            .forum-layout { flex-direction: column; }
+            .forum-sidebar { margin-bottom: 1.7rem; }
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, #1e293b, #3b82f6);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-ball {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle.light .theme-toggle-ball {
+            transform: translateX(30px);
+        }
+        
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e2e8f0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f8fafc !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #1e293b !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #cbd5e1 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+
+        /* Light mode - Quests page specific */
+        body.light-mode .forum-sidebar {
+            background: #f1f5f9 !important;
+        }
+        body.light-mode .forum-main {
+            background: linear-gradient(120deg, rgba(241,245,249,0.93), rgba(226,232,240,0.93)) !important;
+        }
+        body.light-mode .forum-main,
+        body.light-mode .forum-header {
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .forum-search {
+            background: #e2e8f0 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .forum-avatar {
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .forum-message {
+            background: #e2e8f0 !important;
+            color: #1e293b !important;
+        }
+        body.light-mode .forum-message:hover {
+            background: #dde3eb !important;
+        }
+        body.light-mode .forum-message .forum-reaction {
+            background: #f1f5f9 !important;
+        }
+        body.light-mode .forum-channel {
+            color: #1e293b !important;
+        }
+        body.light-mode .forum-channel:hover {
+            background-color: #e2e8f0 !important;
+        }
+        body.light-mode .forum-channel.active {
+            background-color: rgba(59, 130, 246, 0.15) !important;
+        }
+        body.light-mode .forum-section-label {
+            color: #475569 !important;
+        }
+        body.light-mode .forum-message .forum-message-content {
+            color: #334155 !important;
+        }
+        body.light-mode .forum-message .forum-timestamp {
+            color: #64748b !important;
+        }
+        body.light-mode .bg-\[\#232946\] {
+            background-color: #f1f5f9 !important;
+        }
+        body.light-mode .forum-new-btn {
+            background-color: #3b82f6 !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body class="text-wlLight">
+    <!-- New Quest Modal -->
+    <div id="newQuestModal" style="display:none;" class="fixed inset-0 z-[1000] flex items-center justify-center bg-black bg-opacity-60">
+        <div class="bg-[#232946] rounded-2xl shadow-2xl p-3 sm:p-8 w-full max-w-md sm:max-w-lg border-2 border-wlBlue relative overflow-y-auto max-h-screen mx-2 flex flex-col justify-center">
+            <button id="closeNewQuest" class="absolute top-4 right-4 text-wlLight hover:text-wlRed text-2xl"><i class="fas fa-times"></i></button>
+            <h2 class="text-2xl font-bold mb-6 text-wlBlue">New Quest Thread</h2>
+            <form id="newQuestForm" class="space-y-4 sm:space-y-5">
+                <div>
+                    <label class="block text-wlLight font-semibold mb-1">Your Name</label>
+                    <input type="text" id="newQuestUser" class="w-full px-4 sm:px-5 py-3 rounded-lg bg-wlDark border border-wlBlue text-wlLight focus:border-wlPurple outline-none text-base" maxlength="16" required>
+                </div>
+                <div>
+                    <label class="block text-wlLight font-semibold mb-1">Title</label>
+                    <input type="text" id="newQuestTitle" class="w-full px-4 sm:px-5 py-3 rounded-lg bg-wlDark border border-wlBlue text-wlLight focus:border-wlPurple outline-none text-base" maxlength="64" required>
+                </div>
+                <div>
+                    <label class="block text-wlLight font-semibold mb-1">Message</label>
+                    <textarea id="newQuestContent" class="w-full px-4 sm:px-5 py-3 rounded-lg bg-wlDark border border-wlBlue text-wlLight focus:border-wlPurple outline-none text-base" rows="4" maxlength="400" required></textarea>
+                </div>
+                <button type="submit" class="forum-new-btn w-full mt-2 text-base py-3"><i class="fas fa-paper-plane mr-2"></i>Post Quest</button>
+            </form>
+        </div>
+    </div>
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-wlDark bg-opacity-90 blur-bg shadow-lg sticky top-0 z-30">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <a href="index.html" class="flex items-center space-x-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i>
+                            </div>
+                            <h1 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                                Wonderland Online DB
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6 items-center">
+                        <div class="relative group">
+                            <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium flex items-center">
+                                Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+                            </a>
+                            <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                                <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-lg flex items-center justify-between">
+                                    Roadmap <i class="fas fa-route text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="Item.html" class="nav-link px-3 py-2 text-sm font-medium">Items</a>
+                        <a href="quests.html" class="nav-link px-3 py-2 text-sm font-medium text-wlBlue">Quests</a>
+                        <a href="monsters.html" class="nav-link px-3 py-2 text-sm font-medium">Monsters</a>
+                        <a href="Locations.html" class="nav-link px-3 py-2 text-sm font-medium">Locations</a>
+                        <a href="tier-list.html" class="nav-link px-3 py-2 text-sm font-medium">Tier-List</a>
+                        <a href="shops.html" class="nav-link px-3 py-2 text-sm font-medium">Shops</a>
+                        <a href="manufacture.html" class="nav-link px-3 py-2 text-sm font-medium">Manufacture</a>
+                        <a href="Resources.html" class="nav-link px-3 py-2 text-sm font-medium">Resources</a>
+                        <!-- Theme Toggle -->
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                            <div class="theme-toggle-ball">
+                                <i class="fas fa-moon text-xs text-wlDark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="openSidebar" class="focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <section class="mb-12">
+                <div class="max-w-6xl mx-auto forum-layout flex gap-8">
+                    <!-- Sidebar -->
+                    <aside class="forum-sidebar">
+                        <div class="text-wlLight text-lg font-bold mb-4 pl-1 tracking-wide opacity-90">Quest Channels</div>
+                        <div class="forum-channel active" data-channel="main"><i class="fas fa-star"></i> Main Quests</div>
+                        <div class="forum-channel" data-channel="side"><i class="fas fa-fire"></i> Side Quests</div>
+                        <div class="forum-channel" data-channel="event"><i class="fas fa-gem"></i> Event Quests</div>
+                        <div class="forum-channel" data-channel="party"><i class="fas fa-users"></i> Party Quests</div>
+                        <div class="forum-channel" data-channel="help"><i class="fas fa-question"></i> Help & Tips</div>
+                    </aside>
+                    <!-- Main Forum Area -->
+                    <div class="forum-main flex-1">
+                        <div class="forum-header" id="forumHeader">
+                            <div class="flex items-center gap-3" id="forumHeaderTitle">
+                                <i class="fas fa-star text-wlYellow text-2xl"></i>
+                                <span class="text-2xl font-bold tracking-wide text-wlLight">Main Quests</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <input class="forum-search" type="text" placeholder="Search quests..." id="forumSearch">
+                                <button class="forum-new-btn"><i class="fas fa-plus mr-2"></i>New Quest</button>
+                            </div>
+                        </div>
+                        <div id="forumThreads"></div>
+                    </div>
+                </div>
+            </section>
+            <script>
+            // Demo data for channels and threads
+            const forumData = {
+                main: {
+                    icon: '<i class=\'fas fa-star text-wlYellow text-2xl\'></i>',
+                    name: 'Main Quests',
+                    threads: [
+                        {
+                            avatar: 'A', user: 'Alice', time: '2 hours ago',
+                            title: '[Guide] How to start the main questline?',
+                            content: "Can someone explain how to begin the main quest? I just started and I'm a bit lost. Any tips appreciated!",
+                            reactions: [{icon: 'fa-thumbs-up', count: 5}, {icon: 'fa-heart', count: 2}]
+                        },
+                        {
+                            avatar: 'B', user: 'Bob', time: '1 hour ago',
+                            title: '[Info] Main quest boss locations',
+                            content: "Here's a list of all main quest bosses and where to find them. Hope this helps others!",
+                            reactions: [{icon: 'fa-thumbs-up', count: 3}]
+                        },
+                        {
+                            avatar: 'C', user: 'Cathy', time: 'just now',
+                            title: '[Question] Can I skip any main quests?',
+                            content: "Is it possible to skip some main quests and come back later, or do I have to do them in order?",
+                            reactions: [{icon: 'fa-thumbs-up', count: 1}, {icon: 'fa-question', count: 1}]
+                        }
+                    ]
+                },
+                side: {
+                    icon: '<i class=\'fas fa-fire text-wlRed text-2xl\'></i>',
+                    name: 'Side Quests',
+                    threads: [
+                        {
+                            avatar: 'D', user: 'Diana', time: '3 hours ago',
+                            title: '[Help] Where to find rare herbs?',
+                            content: "Looking for rare herbs for a side quest. Any good farming spots?",
+                            reactions: [{icon: 'fa-leaf', count: 2}]
+                        },
+                        {
+                            avatar: 'E', user: 'Eli', time: '1 hour ago',
+                            title: '[Guide] Side quest rewards',
+                            content: "Compiled a list of all side quest rewards. Let me know if I missed any!",
+                            reactions: [{icon: 'fa-gift', count: 4}]
+                        }
+                    ]
+                },
+                event: {
+                    icon: '<i class=\'fas fa-gem text-wlPurple text-2xl\'></i>',
+                    name: 'Event Quests',
+                    threads: [
+                        {
+                            avatar: 'F', user: 'Fay', time: 'yesterday',
+                            title: '[Event] Spring Festival questline',
+                            content: "Anyone finished the Spring Festival event? Stuck on the last boss.",
+                            reactions: [{icon: 'fa-bolt', count: 1}]
+                        }
+                    ]
+                },
+                party: {
+                    icon: '<i class=\'fas fa-users text-wlGreen text-2xl\'></i>',
+                    name: 'Party Quests',
+                    threads: [
+                        {
+                            avatar: 'G', user: 'Gina', time: '5 min ago',
+                            title: '[Looking for Group] Party for Dragon Cave',
+                            content: "Need 2 more for Dragon Cave party quest. Anyone up?",
+                            reactions: [{icon: 'fa-user-friends', count: 3}]
+                        }
+                    ]
+                },
+                help: {
+                    icon: '<i class=\'fas fa-question text-wlBlue text-2xl\'></i>',
+                    name: 'Help & Tips',
+                    threads: [
+                        {
+                            avatar: 'H', user: 'Hank', time: '10 min ago',
+                            title: '[Tip] Fastest way to level up',
+                            content: "Share your best tips for fast leveling!",
+                            reactions: [{icon: 'fa-lightbulb', count: 5}]
+                        }
+                    ]
+                }
+            };
+
+            function renderForum(channel, search = '') {
+                const header = document.getElementById('forumHeaderTitle');
+                const threadsDiv = document.getElementById('forumThreads');
+                const data = forumData[channel];
+                header.innerHTML = `${data.icon} <span class="text-2xl font-bold tracking-wide text-wlLight">${data.name}</span>`;
+                let threads = data.threads;
+                if (search) {
+                    const s = search.toLowerCase();
+                    threads = threads.filter(t =>
+                        t.title.toLowerCase().includes(s) ||
+                        t.content.toLowerCase().includes(s) ||
+                        t.user.toLowerCase().includes(s)
+                    );
+                }
+                if (!threads.length) {
+                    threadsDiv.innerHTML = '<div class="text-center text-lg opacity-70 py-12">No threads found.</div>';
+                    return;
+                }
+                threadsDiv.innerHTML = threads.map(t => `
+                    <div class="forum-thread">
+                        <div class="forum-avatar">${t.avatar}</div>
+                        <div class="forum-message">
+                            <div class="forum-meta">${t.user} <span class="forum-time">${t.time}</span></div>
+                            <div class="forum-title">${t.title}</div>
+                            <div class="forum-content">${t.content}</div>
+                            <div class="forum-reactions">
+                                ${t.reactions.map(r => `<div class="forum-reaction"><i class="fas ${r.icon}"></i> ${r.count}</div>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            let currentChannel = 'main';
+            renderForum(currentChannel);
+
+            // Channel switching
+            document.querySelectorAll('.forum-channel').forEach(el => {
+                el.addEventListener('click', function() {
+                    document.querySelectorAll('.forum-channel').forEach(c => c.classList.remove('active'));
+                    this.classList.add('active');
+                    currentChannel = this.getAttribute('data-channel');
+                    renderForum(currentChannel, document.getElementById('forumSearch').value);
+                });
+            });
+            // Search
+            document.getElementById('forumSearch').addEventListener('input', function() {
+                renderForum(currentChannel, this.value);
+            });
+            </script>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-wlDark bg-opacity-90 blur-bg py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i></div>
+                            <h3 class="text-lg font-semibold">Wonderland Online DB</h3>
+                        </div>
+                        <p class="text-sm text-opacity-70">Your ultimate resource for Wonderland Online game data.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Quick Nav</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html" class="text-opacity-70 hover:text-wlBlue transition">Home</a></li>
+                            <li><a href="Item.html" class="text-opacity-70 hover:text-wlBlue transition">Items</a></li>
+                            <li><a href="monsters.html" class="text-opacity-70 hover:text-wlBlue transition">Monsters</a></li>
+                            <li><a href="quests.html" class="text-opacity-70 hover:text-wlBlue transition">Quests</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Community</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Forums</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Discord</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Contribute</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-4">Legal</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Privacy Policy</a></li>
+                            <li><a href="#" class="text-opacity-70 hover:text-wlBlue transition">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-wlLight border-opacity-20 pt-8 text-center text-sm text-opacity-50">
+                    &copy; 2024 Wonderland Online DB. All rights reserved. Game content and materials are trademarks and copyrights of their respective publisher and its licensors.
+                </div>
+            </div>
+        </footer>
+    </div>
+<script>
+    // Modal logic for New Quest (runs after DOM is loaded)
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('newQuestModal');
+        const openBtn = document.querySelector('.forum-header .forum-new-btn');
+        const closeBtn = document.getElementById('closeNewQuest');
+        if (openBtn) {
+            openBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        }
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            });
+        }
+        if (modal) {
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+        // New Quest submission
+        const form = document.getElementById('newQuestForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const user = document.getElementById('newQuestUser').value.trim() || 'Anonymous';
+                const title = document.getElementById('newQuestTitle').value.trim();
+                const content = document.getElementById('newQuestContent').value.trim();
+                if (!title || !content) return;
+                const avatar = user[0] ? user[0].toUpperCase() : '?';
+                const time = 'just now';
+                const newThread = {
+                    avatar, user, time,
+                    title,
+                    content,
+                    reactions: []
+                };
+                forumData[currentChannel].threads.unshift(newThread);
+                renderForum(currentChannel, document.getElementById('forumSearch').value);
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+                this.reset();
+            });
+        }
+    });
+    </script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('light');
+            themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('light');
+            const icon = themeToggle.querySelector('i');
+            
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>

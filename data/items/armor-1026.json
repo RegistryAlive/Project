@@ -1,0 +1,17 @@
+{
+  "id": 1026,
+  "name": "Power Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Flower / Magic",
+  "description": "Magical silk thread interwoven into it for power.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30
+  },
+  "image": "data/images/armor-1026.png",
+  "file": "armor-1026.json"
+}

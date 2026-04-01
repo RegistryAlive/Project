@@ -1,0 +1,15 @@
+{
+  "id": 8282,
+  "name": "Pegasus Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Make Pegasus be your pet",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8282.png",
+  "file": "questprop-8282.json"
+}

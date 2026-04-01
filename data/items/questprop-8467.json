@@ -1,0 +1,15 @@
+{
+  "id": 8467,
+  "name": "P airplane tic",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can be exchanged for paper airplane tickets",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8467.png",
+  "file": "questprop-8467.json"
+}

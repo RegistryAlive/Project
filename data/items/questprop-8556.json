@@ -1,0 +1,15 @@
+{
+  "id": 8556,
+  "name": "Super Reunion Pack",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "Double click to get the special event item.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8556.png",
+  "file": "questprop-8556.json"
+}

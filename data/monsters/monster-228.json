@@ -1,0 +1,39 @@
+{
+  "id": 228,
+  "name": "Little Dairy Cattle",
+  "location": "Calcutta",
+  "image": "data/Monster_Images/monster-228.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Beef",
+      "itemId": 7472,
+      "itemFile": "material-7472.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Milk",
+      "itemId": 7509,
+      "itemFile": "material-7509.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 791,
+    "sp": 674,
+    "catchable": "Yes",
+    "spd": 196,
+    "str": 60,
+    "con": 60,
+    "int": 40,
+    "wis": 42,
+    "agi": 38
+  }
+}

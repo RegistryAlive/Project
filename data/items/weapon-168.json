@@ -1,0 +1,18 @@
+{
+  "id": 168,
+  "name": "Excalibur",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 65,
+  "level": 130,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The divine sword used by ancient saints, forged by a secret master.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 65,
+    "SPD": 65
+  },
+  "image": "data/images/weapon-168.png",
+  "file": "weapon-168.json"
+}

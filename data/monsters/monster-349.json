@@ -1,0 +1,51 @@
+{
+  "id": 349,
+  "name": "Golden Rabbit",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-349.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Carrot",
+      "itemId": 7430,
+      "itemFile": "material-7430.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mooli",
+      "itemId": 7429,
+      "itemFile": "material-7429.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wild Rabbit Fur",
+      "itemId": 7671,
+      "itemFile": "material-7671.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Nectar",
+      "itemId": 7531,
+      "itemFile": "material-7531.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 10,
+    "hp": 77,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 31,
+    "str": 5,
+    "con": 5,
+    "int": 6,
+    "wis": 6,
+    "agi": 8
+  }
+}

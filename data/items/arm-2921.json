@@ -1,0 +1,18 @@
+{
+  "id": 2921,
+  "name": "Music Bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A musical Bracelet with capable soundwaves.(Changing item appearance will remove effect)",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 250,
+    "MaxSP": 100
+  },
+  "image": "data/images/arm-2921.png",
+  "file": "arm-2921.json"
+}

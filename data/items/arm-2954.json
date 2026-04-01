@@ -1,0 +1,18 @@
+{
+  "id": 2954,
+  "name": "Cat glove",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cat's exclusive equipment, the hand that hosts the cat's ancestor power can guide the cat's real power; when equipped with other cat's series of equipment at the same time, it can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 50,
+    "MDEF": 50
+  },
+  "image": "data/images/arm-2954.png",
+  "file": "arm-2954.json"
+}

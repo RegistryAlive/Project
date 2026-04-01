@@ -1,0 +1,18 @@
+{
+  "id": 746,
+  "name": "Thorn Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Wood",
+  "description": "It is made of spined wood.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 7,
+    "DEF": 9
+  },
+  "image": "data/images/weapon-746.png",
+  "file": "weapon-746.json"
+}

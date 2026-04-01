@@ -1,0 +1,17 @@
+{
+  "id": 816,
+  "name": "Magic fire",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Fire attribute magic book",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 13
+  },
+  "image": "data/images/weapon-816.png",
+  "file": "weapon-816.json"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 376,
+  "name": "Cirrus",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-376.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Fruit Pollen",
+      "itemId": 7530,
+      "itemFile": "material-7530.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Nectar",
+      "itemId": 7531,
+      "itemFile": "material-7531.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Paper Grass",
+      "itemId": 7364,
+      "itemFile": "material-7364.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cotton",
+      "itemId": 7358,
+      "itemFile": "material-7358.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 42,
+    "hp": 284,
+    "sp": 348,
+    "catchable": "Unknown",
+    "spd": 111,
+    "str": 26,
+    "con": 22,
+    "int": 29,
+    "wis": 25,
+    "agi": 24
+  }
+}

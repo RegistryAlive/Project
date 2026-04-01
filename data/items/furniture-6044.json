@@ -1,0 +1,15 @@
+{
+  "id": 6044,
+  "name": "Flower Flavor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made from a Yaro Safflower",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6044.png",
+  "file": "furniture-6044.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 432,
+  "name": "Tornado XBow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Demon bow with the magic power of a wind demon, instils fear into humans.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 29,
+    "SPD": 27
+  },
+  "image": "data/images/weapon-432.png",
+  "file": "weapon-432.json"
+}

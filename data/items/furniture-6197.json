@@ -1,0 +1,15 @@
+{
+  "id": 6197,
+  "name": "Demon Fur",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Made from various furs",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6197.png",
+  "file": "furniture-6197.json"
+}

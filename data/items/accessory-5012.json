@@ -1,0 +1,15 @@
+{
+  "id": 5012,
+  "name": "Dark Evil Wing Box",
+  "type": "ItemBox",
+  "category": "accessory",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "ATK+12, MATK+12, can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5012.png",
+  "file": "accessory-5012.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 9009,
+  "name": "Melting Furnace",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "one of the instrument which can melt the material.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/tool-9009.png",
+  "file": "tool-9009.json"
+}

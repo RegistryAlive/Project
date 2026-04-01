@@ -1,0 +1,18 @@
+{
+  "id": 1240,
+  "name": "Galaxy dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Gorgeous clothing made with the concept of Galaxy",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "MaxSP": 100
+  },
+  "image": "data/images/armor-1240.png",
+  "file": "armor-1240.json"
+}

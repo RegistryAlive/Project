@@ -1,0 +1,18 @@
+{
+  "id": 408,
+  "name": "Pretty Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Wood",
+  "description": "A short bow with intense power at close range.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 5,
+    "SPD": 3
+  },
+  "image": "data/images/weapon-408.png",
+  "file": "weapon-408.json"
+}

@@ -1,0 +1,50 @@
+{
+  "id": 97,
+  "name": "Red Moai",
+  "location": "Revival Isle",
+  "image": "data/Monster_Images/monster-97.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Huge Hand",
+      "itemId": 7816,
+      "itemFile": "material-7816.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Clay",
+      "itemId": 7643,
+      "itemFile": "material-7643.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Clay",
+      "itemId": 7642,
+      "itemFile": "material-7642.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ruby",
+      "itemId": 7595,
+      "itemFile": "material-7595.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clear Devil's Spar",
+      "itemId": null,
+      "itemFile": null
+    }
+  ],
+  "stats": {
+    "level": 74,
+    "hp": 870,
+    "sp": 630,
+    "catchable": "Unknown",
+    "spd": 181,
+    "str": 44,
+    "con": 54,
+    "int": 49,
+    "wis": 40,
+    "agi": 35
+  }
+}

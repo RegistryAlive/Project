@@ -1,0 +1,15 @@
+{
+  "id": 7835,
+  "name": "Thin Nylon",
+  "type": "MaterialOil",
+  "category": "material",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Nylon",
+  "description": "Refined polymer with flexibility and durability.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7835.png",
+  "file": "material-7835.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 182,
+  "name": "Lord Sword+3",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 11,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Can't be socketed.32% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 14,
+    "SPD": 14
+  },
+  "image": "data/images/weapon-182.png",
+  "file": "weapon-182.json"
+}

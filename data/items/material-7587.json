@@ -1,0 +1,15 @@
+{
+  "id": 7587,
+  "name": "Coal Sand",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Coal",
+  "description": "Rare coal sand",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7587.png",
+  "file": "material-7587.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 233,
+  "name": "Purgatory Blad",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Shadow Fred exclusive weapon after reincarnation",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 55,
+    "SPD": 55
+  },
+  "image": "data/images/weapon-233.png",
+  "file": "weapon-233.json"
+}

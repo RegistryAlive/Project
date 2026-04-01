@@ -1,0 +1,27 @@
+{
+  "id": 824,
+  "name": "Mooter (Quest)",
+  "location": "Stoowa Isle (Subterranean Maze)",
+  "image": "data/Monster_Images/monster-824.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 25000,
+    "sp": 1553,
+    "catchable": "Unknown",
+    "spd": 395,
+    "str": 95,
+    "con": 90,
+    "int": 95,
+    "wis": 85,
+    "agi": 85
+  }
+}

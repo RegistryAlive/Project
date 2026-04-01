@@ -1,0 +1,45 @@
+{
+  "id": 322,
+  "name": "Cute Jellyfish",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-322.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Sea Water",
+      "itemId": 7891,
+      "itemFile": "material-7891.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lucid Glue",
+      "itemId": 7709,
+      "itemFile": "material-7709.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Jelly Fish",
+      "itemId": 7800,
+      "itemFile": "material-7800.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 14,
+    "hp": 98,
+    "sp": 115,
+    "catchable": "Yes",
+    "spd": 37,
+    "str": 6,
+    "con": 7,
+    "int": 11,
+    "wis": 10,
+    "agi": 8
+  }
+}

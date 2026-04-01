@@ -1,0 +1,15 @@
+{
+  "id": 8246,
+  "name": "Wen Chicken",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Delicous chicken.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8246.png",
+  "file": "questprop-8246.json"
+}

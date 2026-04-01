@@ -1,0 +1,15 @@
+{
+  "id": 7576,
+  "name": "Galena",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Lead",
+  "description": "Rare galena",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7576.png",
+  "file": "material-7576.json"
+}

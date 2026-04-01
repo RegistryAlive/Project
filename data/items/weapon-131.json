@@ -1,0 +1,18 @@
+{
+  "id": 131,
+  "name": "C.Slayer Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword made of bronze, blessed by the servant of god.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 28,
+    "SPD": 28
+  },
+  "image": "data/images/weapon-131.png",
+  "file": "weapon-131.json"
+}

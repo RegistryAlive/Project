@@ -1,0 +1,15 @@
+{
+  "id": 7577,
+  "name": "Galena Sand",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Lead",
+  "description": "Rare galena sand",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7577.png",
+  "file": "material-7577.json"
+}

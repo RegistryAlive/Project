@@ -1,0 +1,18 @@
+{
+  "id": 1159,
+  "name": "Fire Kung-Fu Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Flower / Leather",
+  "description": "Red armor that improves speed",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "SPD": 10
+  },
+  "image": "data/images/armor-1159.png",
+  "file": "armor-1159.json"
+}

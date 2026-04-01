@@ -1,0 +1,17 @@
+{
+  "id": 10017,
+  "name": "Space Craft",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The first airship to land on other planets",
+  "size": "5x5",
+  "attributes": {
+    "SPECIAL": 37149
+  },
+  "image": "data/images/vehicle-10017.png",
+  "file": "vehicle-10017.json"
+}

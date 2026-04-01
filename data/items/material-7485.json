@@ -1,0 +1,17 @@
+{
+  "id": 7485,
+  "name": "Tilapia",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "A common family dish",
+  "size": "1x1",
+  "attributes": {
+    "HP": 20
+  },
+  "image": "data/images/material-7485.png",
+  "file": "material-7485.json"
+}

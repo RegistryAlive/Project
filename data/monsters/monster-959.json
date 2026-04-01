@@ -1,0 +1,27 @@
+{
+  "id": 959,
+  "name": "Trace Sealord",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-959.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 180,
+    "hp": 32000,
+    "sp": 3629,
+    "catchable": "Unknown",
+    "spd": 450,
+    "str": 550,
+    "con": 400,
+    "int": 400,
+    "wis": 200,
+    "agi": 90
+  }
+}

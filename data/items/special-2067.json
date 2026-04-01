@@ -1,0 +1,17 @@
+{
+  "id": 2067,
+  "name": "Evil Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal)",
+  "description": "Necklace which is twisted by evil",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 45
+  },
+  "image": "data/images/special-2067.png",
+  "file": "special-2067.json"
+}

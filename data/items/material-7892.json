@@ -1,0 +1,15 @@
+{
+  "id": 7892,
+  "name": "Unknown",
+  "type": "Material",
+  "category": "material",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "An Unknown Drop. Please replace with correct item if you know what it is.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7892.png",
+  "file": "material-7892.json"
+}

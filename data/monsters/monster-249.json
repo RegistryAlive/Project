@@ -1,0 +1,39 @@
+{
+  "id": 249,
+  "name": "White Leopard",
+  "location": "Athens",
+  "image": "data/Monster_Images/monster-249.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ostrich Meat",
+      "itemId": 7480,
+      "itemFile": "material-7480.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 121,
+    "hp": 1510,
+    "sp": 1060,
+    "catchable": "Unknown",
+    "spd": 335.5,
+    "str": 81,
+    "con": 80,
+    "int": 65,
+    "wis": 60,
+    "agi": 77
+  }
+}

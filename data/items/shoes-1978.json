@@ -1,0 +1,15 @@
+{
+  "id": 1978,
+  "name": "P. Lovers Shoe",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pure Lovers Shoes. For the ladies.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1978.png",
+  "file": "shoes-1978.json"
+}

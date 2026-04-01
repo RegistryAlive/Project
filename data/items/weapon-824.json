@@ -1,0 +1,17 @@
+{
+  "id": 824,
+  "name": "Whisper ofGod",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Code Word of God described above",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 21
+  },
+  "image": "data/images/weapon-824.png",
+  "file": "weapon-824.json"
+}

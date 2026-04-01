@@ -1,0 +1,27 @@
+{
+  "id": 562,
+  "name": "Athena",
+  "location": "Cursed Palace",
+  "image": "data/Monster_Images/monster-562.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 200,
+    "hp": 65535,
+    "sp": 9547,
+    "catchable": "Unknown",
+    "spd": 732,
+    "str": 572,
+    "con": 584,
+    "int": 500,
+    "wis": 528,
+    "agi": 216
+  }
+}

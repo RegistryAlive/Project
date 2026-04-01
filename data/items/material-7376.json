@@ -1,0 +1,15 @@
+{
+  "id": 7376,
+  "name": "Red Flower",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "A red flower with the shape of a ball",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7376.png",
+  "file": "material-7376.json"
+}

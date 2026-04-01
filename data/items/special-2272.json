@@ -1,0 +1,17 @@
+{
+  "id": 2272,
+  "name": "Guard Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Titanium / Mercury / Magic",
+  "description": "Guard necklace implying life enery",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 60
+  },
+  "image": "data/images/special-2272.png",
+  "file": "special-2272.json"
+}

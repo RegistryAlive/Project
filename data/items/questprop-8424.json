@@ -1,0 +1,15 @@
+{
+  "id": 8424,
+  "name": "Silver Mag Lio",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make the White Lion as a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8424.png",
+  "file": "questprop-8424.json"
+}

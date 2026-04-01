@@ -1,0 +1,17 @@
+{
+  "id": 804,
+  "name": "Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A cooling fan bought at the celebration, has beautiful paintings on it.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 1
+  },
+  "image": "data/images/weapon-804.png",
+  "file": "weapon-804.json"
+}

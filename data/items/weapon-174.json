@@ -1,0 +1,18 @@
+{
+  "id": 174,
+  "name": "Magellan's Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 12,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A sword commonly used by Magellan.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 24,
+    "MaxHP": 50
+  },
+  "image": "data/images/weapon-174.png",
+  "file": "weapon-174.json"
+}

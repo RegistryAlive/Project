@@ -1,0 +1,18 @@
+{
+  "id": 30,
+  "name": "Violet Falchio",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It appears when purple light shines from Heaven.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "DEF": 16
+  },
+  "image": "data/images/weapon-30.png",
+  "file": "weapon-30.json"
+}

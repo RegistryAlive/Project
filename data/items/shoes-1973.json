@@ -1,0 +1,18 @@
+{
+  "id": 1973,
+  "name": "Dream Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dream Christmas shoes enhanced, for men.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "MDEF": 15
+  },
+  "image": "data/images/shoes-1973.png",
+  "file": "shoes-1973.json"
+}

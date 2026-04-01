@@ -1,0 +1,15 @@
+{
+  "id": 6555,
+  "name": "Rabbit Lamp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A standing lamp in the shape of a jade rabbit with rabbit ears on it",
+  "size": "1x3",
+  "attributes": {},
+  "image": "data/images/furniture-6555.png",
+  "file": "furniture-6555.json"
+}

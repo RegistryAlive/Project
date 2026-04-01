@@ -1,0 +1,15 @@
+{
+  "id": 8509,
+  "name": "Touki Coupon",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make the Toukiden as a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8509.png",
+  "file": "questprop-8509.json"
+}

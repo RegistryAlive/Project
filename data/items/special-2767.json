@@ -1,0 +1,18 @@
+{
+  "id": 2767,
+  "name": "Angel Wings+4",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 56,
+  "level": 112,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28,
+    "MDEF": 28
+  },
+  "image": "data/images/special-2767.png",
+  "file": "special-2767.json"
+}

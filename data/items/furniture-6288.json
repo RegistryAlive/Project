@@ -1,0 +1,15 @@
+{
+  "id": 6288,
+  "name": "Elevator",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 30,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Small elevator",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6288.png",
+  "file": "furniture-6288.json"
+}

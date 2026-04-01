@@ -1,0 +1,18 @@
+{
+  "id": 1168,
+  "name": "Dreaming Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Feather / Nylon / Fur",
+  "description": "Orange dress",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20,
+    "DEF": 20
+  },
+  "image": "data/images/armor-1168.png",
+  "file": "armor-1168.json"
+}

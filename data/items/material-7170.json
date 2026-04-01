@@ -1,0 +1,18 @@
+{
+  "id": 7170,
+  "name": "Peach Ice Cream",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 1) / Fruit",
+  "description": "Peach flavored ice cream",
+  "size": "1x1",
+  "attributes": {
+    "SP": 100,
+    "HP": 100
+  },
+  "image": "data/images/material-7170.png",
+  "file": "material-7170.json"
+}

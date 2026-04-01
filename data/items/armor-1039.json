@@ -1,0 +1,18 @@
+{
+  "id": 1039,
+  "name": "Night Wear",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "Classy, formal banquet wear,usually uncomfortable.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 17,
+    "SPD": 12
+  },
+  "image": "data/images/armor-1039.png",
+  "file": "armor-1039.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6573,
+  "name": "Snow table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A small round table covered with snow",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6573.png",
+  "file": "furniture-6573.json"
+}

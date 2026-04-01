@@ -1,0 +1,18 @@
+{
+  "id": 2882,
+  "name": "Flame Thorn Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Leather / Iron / Pure Iron",
+  "description": "Great bracers made with fur and metal",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 22,
+    "ATK": 10
+  },
+  "image": "data/images/arm-2882.png",
+  "file": "arm-2882.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2710,
+  "name": "High-perf Cl+5",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 65,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A high efficiency clockwork produced for work efficiency.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 65
+  },
+  "image": "data/images/special-2710.png",
+  "file": "special-2710.json"
+}

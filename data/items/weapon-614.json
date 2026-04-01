@@ -1,0 +1,18 @@
+{
+  "id": 614,
+  "name": "Love stick",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The pink heart shape is very popular among people who like cute styles. 46% critical strike possible",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 55,
+    "MaxHP": 350
+  },
+  "image": "data/images/weapon-614.png",
+  "file": "weapon-614.json"
+}

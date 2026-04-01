@@ -1,0 +1,15 @@
+{
+  "id": 6758,
+  "name": "Tsiji",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "For Trojan War, Fortify the fortifications of the defending side's cavalry giants",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6758.png",
+  "file": "furniture-6758.json"
+}

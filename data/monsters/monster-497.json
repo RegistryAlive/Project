@@ -1,0 +1,33 @@
+{
+  "id": 497,
+  "name": "Spider Demon",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-497.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Milk Tea",
+      "itemId": 7232,
+      "itemFile": "material-7232.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 743,
+    "sp": 625,
+    "catchable": "No",
+    "spd": 258,
+    "str": 34,
+    "con": 35,
+    "int": 39,
+    "wis": 32,
+    "agi": 39
+  }
+}

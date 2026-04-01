@@ -1,0 +1,15 @@
+{
+  "id": 6171,
+  "name": "Front Sight",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "sights set of a gun",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6171.png",
+  "file": "furniture-6171.json"
+}

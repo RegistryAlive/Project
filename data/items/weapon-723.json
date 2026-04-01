@@ -1,0 +1,17 @@
+{
+  "id": 723,
+  "name": "Shiraiwa Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Made with relatively hard stone into firewood with an ax",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 9
+  },
+  "image": "data/images/weapon-723.png",
+  "file": "weapon-723.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6170,
+  "name": "Wooden Handle",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is used as a pikestaff",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6170.png",
+  "file": "furniture-6170.json"
+}

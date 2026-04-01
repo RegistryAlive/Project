@@ -1,0 +1,18 @@
+{
+  "id": 1426,
+  "name": "Black Earrings",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leather / Fur / Saltpeter / Vegetable Oil / White/Yellow Clay",
+  "description": "An ornament which shapes like a black cat's ear",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 13,
+    "MDEF": 12
+  },
+  "image": "data/images/helmet-1426.png",
+  "file": "helmet-1426.json"
+}

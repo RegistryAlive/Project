@@ -1,0 +1,18 @@
+{
+  "id": 1020,
+  "name": "Ninja Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Nylon / Flower",
+  "description": "Ninja's clothes",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MATK": 4
+  },
+  "image": "data/images/armor-1020.png",
+  "file": "armor-1020.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7661,
+  "name": "Funny Feather",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Feather",
+  "description": "Feather of a funny bird",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7661.png",
+  "file": "material-7661.json"
+}

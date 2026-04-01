@@ -1,0 +1,39 @@
+{
+  "id": 73,
+  "name": "Little Steel Beetle",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-73.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Iron Ore",
+      "itemId": 7562,
+      "itemFile": "material-7562.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 52,
+    "hp": 520,
+    "sp": 436,
+    "catchable": "Unknown",
+    "spd": 136,
+    "str": 34,
+    "con": 35,
+    "int": 28,
+    "wis": 30,
+    "agi": 29
+  }
+}

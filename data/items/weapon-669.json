@@ -1,0 +1,18 @@
+{
+  "id": 669,
+  "name": "Golden Rings+3",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets, 10% chance of resisting seal.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 10,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-669.png",
+  "file": "weapon-669.json"
+}

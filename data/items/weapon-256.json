@@ -1,0 +1,18 @@
+{
+  "id": 256,
+  "name": "Sky Lightsaber",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A high-tech beam saber that shines like the sky, with powerful cutting ability. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 35,
+    "SPD": 50
+  },
+  "image": "data/images/weapon-256.png",
+  "file": "weapon-256.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 743,
+  "name": "Heracles (Quest)",
+  "location": "Kyoto",
+  "image": "data/Monster_Images/monster-743.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 111,
+    "hp": 10700,
+    "sp": 636,
+    "catchable": "Unknown",
+    "spd": 236.5,
+    "str": 121,
+    "con": 113,
+    "int": 30,
+    "wis": 34,
+    "agi": 35
+  }
+}

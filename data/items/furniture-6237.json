@@ -1,0 +1,15 @@
+{
+  "id": 6237,
+  "name": "Loom",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make material to goods.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6237.png",
+  "file": "furniture-6237.json"
+}

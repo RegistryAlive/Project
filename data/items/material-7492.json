@@ -1,0 +1,18 @@
+{
+  "id": 7492,
+  "name": "Fugu",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "Its body will swell when it is attacked.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 65,
+    "HP": 15
+  },
+  "image": "data/images/material-7492.png",
+  "file": "material-7492.json"
+}

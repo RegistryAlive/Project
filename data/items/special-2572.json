@@ -1,0 +1,18 @@
+{
+  "id": 2572,
+  "name": "Amber Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Silver",
+  "description": "Made of amber and reduces 5% sealing effects.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "MaxHP": 150
+  },
+  "image": "data/images/special-2572.png",
+  "file": "special-2572.json"
+}

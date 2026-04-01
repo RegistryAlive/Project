@@ -1,0 +1,27 @@
+{
+  "id": 733,
+  "name": "Guard",
+  "location": "Revival Isle",
+  "image": "data/Monster_Images/monster-733.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 26,
+    "hp": 276,
+    "sp": 500,
+    "catchable": "Unknown",
+    "spd": 69,
+    "str": 24,
+    "con": 26,
+    "int": 8,
+    "wis": 5,
+    "agi": 15
+  }
+}

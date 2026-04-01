@@ -1,0 +1,15 @@
+{
+  "id": 8136,
+  "name": "Treasure Scrol",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is proof of passing National Treasure",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8136.png",
+  "file": "questprop-8136.json"
+}

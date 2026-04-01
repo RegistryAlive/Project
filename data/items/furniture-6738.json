@@ -1,0 +1,15 @@
+{
+  "id": 6738,
+  "name": "Silent Bird C",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The crystal skull suspended in the birdcage sings silently.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6738.png",
+  "file": "furniture-6738.json"
+}

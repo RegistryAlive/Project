@@ -1,0 +1,18 @@
+{
+  "id": 7026,
+  "name": "Super Buns",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat",
+  "description": "The biggest bun",
+  "size": "1x1",
+  "attributes": {
+    "HP": 180,
+    "SP": 20
+  },
+  "image": "data/images/material-7026.png",
+  "file": "material-7026.json"
+}

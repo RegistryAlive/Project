@@ -1,0 +1,15 @@
+{
+  "id": 7380,
+  "name": "Snow Grass",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Grass",
+  "description": "A silvery white bine",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7380.png",
+  "file": "material-7380.json"
+}

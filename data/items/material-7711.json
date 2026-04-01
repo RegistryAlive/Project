@@ -1,0 +1,15 @@
+{
+  "id": 7711,
+  "name": "Poisonous Juice",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 2)",
+  "description": "Poisonous liquid from a creature",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7711.png",
+  "file": "material-7711.json"
+}

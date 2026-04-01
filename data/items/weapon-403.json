@@ -1,0 +1,18 @@
+{
+  "id": 403,
+  "name": "Inari Naginata",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A naginata assigned to the messenger of the gods, the weapon of the guardian of the gods. 46% crit attack; additional coat effect when equipped with other Fushimi Inari equipment.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "MaxHP": 200
+  },
+  "image": "data/images/weapon-403.png",
+  "file": "weapon-403.json"
+}

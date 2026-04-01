@@ -1,0 +1,18 @@
+{
+  "id": 7029,
+  "name": "Meatballs",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "A Fried meatball",
+  "size": "1x1",
+  "attributes": {
+    "HP": 230,
+    "SP": 20
+  },
+  "image": "data/images/material-7029.png",
+  "file": "material-7029.json"
+}

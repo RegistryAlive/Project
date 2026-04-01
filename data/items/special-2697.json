@@ -1,0 +1,18 @@
+{
+  "id": 2697,
+  "name": "Magic Clock +2",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 40,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A clockwork glowing with mysterious magical powers.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20,
+    "MDEF": 20
+  },
+  "image": "data/images/special-2697.png",
+  "file": "special-2697.json"
+}

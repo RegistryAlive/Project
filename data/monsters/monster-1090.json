@@ -1,0 +1,45 @@
+{
+  "id": 1090,
+  "name": "Willow Devil",
+  "location": "Kelan Village's Woods",
+  "image": "data/Monster_Images/monster-1091.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Lauan",
+      "itemId": 7653,
+      "itemFile": "material-7653.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fungus",
+      "itemId": 7521,
+      "itemFile": "material-7521.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lauan Wood",
+      "itemId": 7649,
+      "itemFile": "material-7649.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 5,
+    "hp": 68,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 9.5,
+    "str": 3,
+    "con": 5,
+    "int": 3,
+    "wis": 3,
+    "agi": 1
+  }
+}

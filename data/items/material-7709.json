@@ -1,0 +1,15 @@
+{
+  "id": 7709,
+  "name": "Lucid Glue",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Gum",
+  "description": "Glue with high temper and good elasticity",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7709.png",
+  "file": "material-7709.json"
+}

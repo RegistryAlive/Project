@@ -1,0 +1,18 @@
+{
+  "id": 325,
+  "name": "Beast Fork+6",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 14,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets, 38% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 34,
+    "MaxHP": 320
+  },
+  "image": "data/images/weapon-325.png",
+  "file": "weapon-325.json"
+}

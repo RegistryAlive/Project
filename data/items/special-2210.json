@@ -1,0 +1,18 @@
+{
+  "id": 2210,
+  "name": "Belly Chain Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "A belly chain necklace having holy power.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50,
+    "MaxHP": 350
+  },
+  "image": "data/images/special-2210.png",
+  "file": "special-2210.json"
+}

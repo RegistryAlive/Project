@@ -1,0 +1,18 @@
+{
+  "id": 38,
+  "name": "Cold Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A cleaver forged by pure iron at low temperature.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "MATK": 5
+  },
+  "image": "data/images/weapon-38.png",
+  "file": "weapon-38.json"
+}

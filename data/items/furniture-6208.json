@@ -1,0 +1,15 @@
+{
+  "id": 6208,
+  "name": "30 Days Luxury",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It was made from luxury batten, used for 30 days.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6208.png",
+  "file": "furniture-6208.json"
+}

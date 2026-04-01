@@ -1,0 +1,18 @@
+{
+  "id": 351,
+  "name": "Mars Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Wood / Iron / Aluminum / Steel",
+  "description": "Increases ATK&DEF when equipped",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 56,
+    "DEF": 18
+  },
+  "image": "data/images/weapon-351.png",
+  "file": "weapon-351.json"
+}

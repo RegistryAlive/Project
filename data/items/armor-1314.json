@@ -1,0 +1,18 @@
+{
+  "id": 1314,
+  "name": "Pink Ghost Rob",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Robe of light pink and red silk.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 22,
+    "MDEF": 11
+  },
+  "image": "data/images/armor-1314.png",
+  "file": "armor-1314.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8037,
+  "name": "Elderly's Wais",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Santa Claus's waistband for fixing coats and pants",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8037.png",
+  "file": "questprop-8037.json"
+}

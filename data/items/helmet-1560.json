@@ -1,0 +1,17 @@
+{
+  "id": 1560,
+  "name": "Gold Ears+9",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 100,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cannot be socketed and traded.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 100
+  },
+  "image": "data/images/helmet-1560.png",
+  "file": "helmet-1560.json"
+}

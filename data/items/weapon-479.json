@@ -1,0 +1,17 @@
+{
+  "id": 479,
+  "name": "Soul Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Tin / Platinum / Magic",
+  "description": "Beautiful silver accents conceal its dark powers.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 38
+  },
+  "image": "data/images/weapon-479.png",
+  "file": "weapon-479.json"
+}

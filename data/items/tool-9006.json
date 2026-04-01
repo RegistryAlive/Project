@@ -1,0 +1,15 @@
+{
+  "id": 9006,
+  "name": "Manual Blender",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can churn up some chemistry items.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/tool-9006.png",
+  "file": "tool-9006.json"
+}

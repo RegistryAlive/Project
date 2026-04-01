@@ -1,0 +1,33 @@
+{
+  "id": 410,
+  "name": "Lion (Quest)",
+  "location": "African Villages",
+  "image": "data/Monster_Images/monster-410.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lion Claw",
+      "itemId": 7732,
+      "itemFile": "material-7732.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 985,
+    "sp": 564,
+    "catchable": "Yes",
+    "spd": 253,
+    "str": 74,
+    "con": 58,
+    "int": 31,
+    "wis": 33,
+    "agi": 62
+  }
+}

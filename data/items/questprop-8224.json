@@ -1,0 +1,15 @@
+{
+  "id": 8224,
+  "name": "Guard's Letter",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The family letter from the Guard to his wife",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8224.png",
+  "file": "questprop-8224.json"
+}

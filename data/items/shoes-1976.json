@@ -1,0 +1,18 @@
+{
+  "id": 1976,
+  "name": "Droll F. Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Droll Female Xmas Shoes.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30,
+    "ATK": 20
+  },
+  "image": "data/images/shoes-1976.png",
+  "file": "shoes-1976.json"
+}

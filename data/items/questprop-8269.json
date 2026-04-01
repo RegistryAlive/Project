@@ -1,0 +1,15 @@
+{
+  "id": 8269,
+  "name": "4-Deity Beast Ring",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Credential for defeating 4-deity beast",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8269.png",
+  "file": "questprop-8269.json"
+}

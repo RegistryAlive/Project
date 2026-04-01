@@ -1,0 +1,15 @@
+{
+  "id": 6261,
+  "name": "Kitchen Range",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "used to make fire in the common kitchen.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6261.png",
+  "file": "furniture-6261.json"
+}

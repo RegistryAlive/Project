@@ -1,0 +1,15 @@
+{
+  "id": 8155,
+  "name": "Crystal",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can release the inside power completely",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8155.png",
+  "file": "questprop-8155.json"
+}

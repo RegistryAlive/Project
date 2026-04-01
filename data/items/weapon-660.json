@@ -1,0 +1,18 @@
+{
+  "id": 660,
+  "name": "Crescent Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Copper",
+  "description": "Blessed by the power of wind, it creates thunder.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 16,
+    "SPD": 18
+  },
+  "image": "data/images/weapon-660.png",
+  "file": "weapon-660.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7655,
+  "name": "Cutted Fruit Tree",
+  "type": "MaterialWood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wood",
+  "description": "A Cutted fruit tree",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7655.png",
+  "file": "material-7655.json"
+}

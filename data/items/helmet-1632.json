@@ -1,0 +1,15 @@
+{
+  "id": 1632,
+  "name": "Grey Bunny Ear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Grey Bunny Ears that are meant for decorating purposes but can be equipped.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1632.png",
+  "file": "helmet-1632.json"
+}

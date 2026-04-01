@@ -1,0 +1,17 @@
+{
+  "id": 1680,
+  "name": "Party Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Hat prepared for the grand party. Designed to be the main attraction of everyone's focus.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1680.png",
+  "file": "helmet-1680.json"
+}

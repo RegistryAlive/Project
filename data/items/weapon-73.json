@@ -1,0 +1,18 @@
+{
+  "id": 73,
+  "name": "Soul's Reapers",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "The sickle of light, made with surpassing contemporary technology, only shows its life-threatening edge in battle. 24% of critical strikes are possible, and the damage caused by critical strikes is greatly increased.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 55,
+    "MaxHP": 450
+  },
+  "image": "data/images/weapon-73.png",
+  "file": "weapon-73.json"
+}

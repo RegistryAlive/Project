@@ -1,0 +1,18 @@
+{
+  "id": 88,
+  "name": "Unextinguished",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 3,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The immortal flame, which symbolizes the eradication of all evil, is like a flaming rosy glow; when the wearer's HP is lower than 50%, the damage can be increased by 3%. When equipped with other inextinguishable series equipment at the same time, additio",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "MATK": 35
+  },
+  "image": "data/images/weapon-88.png",
+  "file": "weapon-88.json"
+}

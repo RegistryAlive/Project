@@ -1,0 +1,17 @@
+{
+  "id": 7478,
+  "name": "Dog Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Unsalted dog meat.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 90
+  },
+  "image": "data/images/material-7478.png",
+  "file": "material-7478.json"
+}

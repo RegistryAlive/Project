@@ -1,0 +1,15 @@
+{
+  "id": 8417,
+  "name": "Silver Dodo T.",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make Silver Dodo a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8417.png",
+  "file": "questprop-8417.json"
+}

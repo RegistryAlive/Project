@@ -1,0 +1,18 @@
+{
+  "id": 570,
+  "name": "Snow Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "For Niss's exclusive use after her rebirth",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 48,
+    "MaxHP": 100
+  },
+  "image": "data/images/weapon-570.png",
+  "file": "weapon-570.json"
+}

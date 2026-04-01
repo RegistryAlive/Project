@@ -1,0 +1,15 @@
+{
+  "id": 7562,
+  "name": "Iron Ore",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Common iron ore",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7562.png",
+  "file": "material-7562.json"
+}

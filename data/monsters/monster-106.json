@@ -1,0 +1,39 @@
+{
+  "id": 106,
+  "name": "Flying Sailor",
+  "location": "Cook's Fleet",
+  "image": "data/Monster_Images/monster-106.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Salmon",
+      "itemId": 7489,
+      "itemFile": "material-7489.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tuna",
+      "itemId": 7491,
+      "itemFile": "material-7491.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 555,
+    "sp": 652,
+    "catchable": "Unknown",
+    "spd": 174,
+    "str": 41,
+    "con": 42,
+    "int": 42,
+    "wis": 43,
+    "agi": 36
+  }
+}

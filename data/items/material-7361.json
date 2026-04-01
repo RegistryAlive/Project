@@ -1,0 +1,15 @@
+{
+  "id": 7361,
+  "name": "Tea",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leaf",
+  "description": "can be made into a kind of drink",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7361.png",
+  "file": "material-7361.json"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 25,
+  "name": "Yellow Rock Monster",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-25.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Copper Ore",
+      "itemId": 7556,
+      "itemFile": "material-7556.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Basalt",
+      "itemId": 7636,
+      "itemFile": "material-7636.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pink Crystal",
+      "itemId": 7598,
+      "itemFile": "material-7598.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 76,
+    "hp": 751,
+    "sp": 663,
+    "catchable": "Unknown",
+    "spd": 210,
+    "str": 47,
+    "con": 45,
+    "int": 46,
+    "wis": 42,
+    "agi": 48
+  }
+}

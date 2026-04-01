@@ -1,0 +1,18 @@
+{
+  "id": 1069,
+  "name": "Bright Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Leaf / Flower",
+  "description": "Be impossible to miss in this bright outfit.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 13,
+    "MATK": 10
+  },
+  "image": "data/images/armor-1069.png",
+  "file": "armor-1069.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1235,
+  "name": "Gladiator's BG",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Strong armor worn by fighters, focusing on defense",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 50
+  },
+  "image": "data/images/armor-1235.png",
+  "file": "armor-1235.json"
+}

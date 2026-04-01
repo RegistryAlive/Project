@@ -1,0 +1,15 @@
+{
+  "id": 6728,
+  "name": "xmas cupcake",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Christmas tree cupcake",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6728.png",
+  "file": "furniture-6728.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7575,
+  "name": "Tin Material",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Tin",
+  "description": "Pure tin",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7575.png",
+  "file": "material-7575.json"
+}

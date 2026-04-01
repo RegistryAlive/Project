@@ -1,0 +1,15 @@
+{
+  "id": 6557,
+  "name": "Halloween bed",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Its rumored to be a place where vampires sleep. It feels gloomy.",
+  "size": "5x4",
+  "attributes": {},
+  "image": "data/images/furniture-6557.png",
+  "file": "furniture-6557.json"
+}

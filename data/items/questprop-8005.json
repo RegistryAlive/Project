@@ -1,0 +1,15 @@
+{
+  "id": 8005,
+  "name": "Key for Channe",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The key for the Channel",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8005.png",
+  "file": "questprop-8005.json"
+}

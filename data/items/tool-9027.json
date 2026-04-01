@@ -1,0 +1,15 @@
+{
+  "id": 9027,
+  "name": "Brand Iron",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used on work platform to melt delicate materials.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/tool-9027.png",
+  "file": "tool-9027.json"
+}

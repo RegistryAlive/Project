@@ -1,0 +1,15 @@
+{
+  "id": 6348,
+  "name": "Gas Furnace",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used for cooking. Consumes gas.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6348.png",
+  "file": "furniture-6348.json"
+}

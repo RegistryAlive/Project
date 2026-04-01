@@ -1,0 +1,18 @@
+{
+  "id": 560,
+  "name": "Aurora Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Corundum / Silver",
+  "description": "A staff made of deity feathers and gems.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 38,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-560.png",
+  "file": "weapon-560.json"
+}

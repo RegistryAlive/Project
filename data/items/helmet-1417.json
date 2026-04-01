@@ -1,0 +1,18 @@
+{
+  "id": 1417,
+  "name": "Goose Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Copper / Platinum",
+  "description": "A holy helmet which is sealed in the Swan Lake",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 27,
+    "DEF": 8
+  },
+  "image": "data/images/helmet-1417.png",
+  "file": "helmet-1417.json"
+}

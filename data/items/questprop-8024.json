@@ -1,0 +1,15 @@
+{
+  "id": 8024,
+  "name": "Stone Carving",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The key for unlocking the secret door",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8024.png",
+  "file": "questprop-8024.json"
+}

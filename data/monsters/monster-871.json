@@ -1,0 +1,27 @@
+{
+  "id": 871,
+  "name": "Red Rock Monster",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-871.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 26,
+    "hp": 312,
+    "sp": 131,
+    "catchable": "Unknown",
+    "spd": 59,
+    "str": 24,
+    "con": 26,
+    "int": 9,
+    "wis": 9,
+    "agi": 10
+  }
+}

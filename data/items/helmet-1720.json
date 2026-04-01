@@ -1,0 +1,18 @@
+{
+  "id": 1720,
+  "name": "Silver Racoon",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Furry cute raccoon dress up. With 5% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "MaxSP": 100
+  },
+  "image": "data/images/helmet-1720.png",
+  "file": "helmet-1720.json"
+}

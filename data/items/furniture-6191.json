@@ -1,0 +1,15 @@
+{
+  "id": 6191,
+  "name": "Pure Ruby",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Corundum",
+  "description": "A Processd red stone",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6191.png",
+  "file": "furniture-6191.json"
+}

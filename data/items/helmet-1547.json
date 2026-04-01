@@ -1,0 +1,18 @@
+{
+  "id": 1547,
+  "name": "Deity Headscarf",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 3,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "N/A",
+  "description": "Special for Roca, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 47,
+    "MaxSP": 48
+  },
+  "image": "data/images/helmet-1547.png",
+  "file": "helmet-1547.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1863,
+  "name": "Flax Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Grass / Leather",
+  "description": "Shoes made from tender grass and leaves.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 12,
+    "MDEF": 7
+  },
+  "image": "data/images/shoes-1863.png",
+  "file": "shoes-1863.json"
+}

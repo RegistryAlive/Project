@@ -1,0 +1,17 @@
+{
+  "id": 2196,
+  "name": "Guard Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Armlet guarded by a guard spirit.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 50
+  },
+  "image": "data/images/special-2196.png",
+  "file": "special-2196.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7741,
+  "name": "Poisonous Gall",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Snake gall extracted from a poisonous snake.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7741.png",
+  "file": "material-7741.json"
+}

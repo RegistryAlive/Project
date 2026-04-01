@@ -1,0 +1,17 @@
+{
+  "id": 875,
+  "name": "Double Rings (CP)",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Feather",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 32
+  },
+  "image": "data/images/weapon-875.png",
+  "file": "weapon-875.json"
+}

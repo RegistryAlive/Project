@@ -1,0 +1,18 @@
+{
+  "id": 7126,
+  "name": "Pineapple Juice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "Juice extracted from pineapples",
+  "size": "1x1",
+  "attributes": {
+    "HP": 180,
+    "SP": 70
+  },
+  "image": "data/images/material-7126.png",
+  "file": "material-7126.json"
+}

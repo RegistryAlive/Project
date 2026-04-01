@@ -1,0 +1,15 @@
+{
+  "id": 8321,
+  "name": "Sherry",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Looks like just another boring book",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8321.png",
+  "file": "questprop-8321.json"
+}

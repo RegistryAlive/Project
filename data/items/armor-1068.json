@@ -1,0 +1,18 @@
+{
+  "id": 1068,
+  "name": "Wave Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Leaf / Grass",
+  "description": "Decorated with kelp leaves and wave patterns.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 15,
+    "MATK": 5
+  },
+  "image": "data/images/armor-1068.png",
+  "file": "armor-1068.json"
+}

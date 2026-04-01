@@ -1,0 +1,18 @@
+{
+  "id": 215,
+  "name": "Silver Epee",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Platinum / Iron",
+  "description": "Light silver sword",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "SPD": 6
+  },
+  "image": "data/images/weapon-215.png",
+  "file": "weapon-215.json"
+}

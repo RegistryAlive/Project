@@ -1,0 +1,17 @@
+{
+  "id": 2274,
+  "name": "Holy Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": null,
+  "description": "It is said only saint has the right to hold it.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 100
+  },
+  "image": "data/images/special-2274.png",
+  "file": "special-2274.json"
+}

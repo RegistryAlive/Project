@@ -1,0 +1,17 @@
+{
+  "id": 957,
+  "name": "Great Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Leather / Grass",
+  "description": "Elegant tiger fur coat.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 5
+  },
+  "image": "data/images/armor-957.png",
+  "file": "armor-957.json"
+}

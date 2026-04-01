@@ -1,0 +1,18 @@
+{
+  "id": 2729,
+  "name": "Mech teddybear",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The bear puppet, which uses mechanical automatic operation, is very cute and lifelike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "MATK": 10
+  },
+  "image": "data/images/special-2729.png",
+  "file": "special-2729.json"
+}

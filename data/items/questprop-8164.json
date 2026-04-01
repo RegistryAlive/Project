@@ -1,0 +1,15 @@
+{
+  "id": 8164,
+  "name": "Rainbow Drop",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Recovers the gold man",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8164.png",
+  "file": "questprop-8164.json"
+}

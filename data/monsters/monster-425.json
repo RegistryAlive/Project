@@ -1,0 +1,51 @@
+{
+  "id": 425,
+  "name": "Squirrel",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-425.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Mango Seed",
+      "itemId": 7384,
+      "itemFile": "material-7384.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Hazelnut",
+      "itemId": 7442,
+      "itemFile": "material-7442.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Maize",
+      "itemId": 7431,
+      "itemFile": "material-7431.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Luffa",
+      "itemId": 7420,
+      "itemFile": "material-7420.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 35,
+    "hp": 249,
+    "sp": 260,
+    "catchable": "Yes",
+    "spd": 100.5,
+    "str": 21,
+    "con": 20,
+    "int": 21,
+    "wis": 19,
+    "agi": 24
+  }
+}

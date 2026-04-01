@@ -1,0 +1,15 @@
+{
+  "id": 7901,
+  "name": "Fuel Bank",
+  "type": "Material",
+  "category": "material",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "Right click to open the Fuel interface that stores all kinds of vehicles. Double click on the tank to top up your fuel.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7901.png",
+  "file": "material-7901.json"
+}

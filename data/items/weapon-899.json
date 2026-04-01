@@ -1,0 +1,15 @@
+{
+  "id": 899,
+  "name": "Attack Pestle +2",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 1,
+  "level": 1,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Cuts the enemy and drains their SP.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-899.png",
+  "file": "weapon-899.json"
+}

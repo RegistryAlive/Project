@@ -1,0 +1,27 @@
+{
+  "id": 762,
+  "name": "Huge Flower (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-762.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 15000,
+    "sp": 1800,
+    "catchable": "Unknown",
+    "spd": 286,
+    "str": 77,
+    "con": 100,
+    "int": 60,
+    "wis": 70,
+    "agi": 53
+  }
+}

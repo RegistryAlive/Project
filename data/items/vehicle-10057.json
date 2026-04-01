@@ -1,0 +1,17 @@
+{
+  "id": 10057,
+  "name": "Dog sled caps",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The cute sled dogs are pulling hard on the sled and can use magic yarn balls as a substitute for wear and tear",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10057.png",
+  "file": "vehicle-10057.json"
+}

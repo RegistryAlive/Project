@@ -1,0 +1,18 @@
+{
+  "id": 2041,
+  "name": "Lucky Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Silver / Grass",
+  "description": "By angel's blessing, the ring can enhance luck",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 3,
+    "DEF": 2
+  },
+  "image": "data/images/special-2041.png",
+  "file": "special-2041.json"
+}

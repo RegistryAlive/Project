@@ -1,0 +1,15 @@
+{
+  "id": 1985,
+  "name": "Bless Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "In absolute zero. Gods gifted the nordic viking descendants boots, exclusively for men.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1985.png",
+  "file": "shoes-1985.json"
+}

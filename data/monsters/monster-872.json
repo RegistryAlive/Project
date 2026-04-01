@@ -1,0 +1,27 @@
+{
+  "id": 872,
+  "name": "Roca",
+  "location": "Kelan Village",
+  "image": "data/Monster_Images/monster-872.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 12,
+    "hp": 115,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 34,
+    "str": 9,
+    "con": 10,
+    "int": 4,
+    "wis": 5,
+    "agi": 8
+  }
+}

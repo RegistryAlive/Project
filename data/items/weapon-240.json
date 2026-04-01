@@ -1,0 +1,18 @@
+{
+  "id": 240,
+  "name": "Guardian Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The great sword called the \"Guardian\". Made of gold, the complex texture of the blade is a testament to the craftsman's meticulous production. 46% critical strike possible",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "MaxHP": 600
+  },
+  "image": "data/images/weapon-240.png",
+  "file": "weapon-240.json"
+}

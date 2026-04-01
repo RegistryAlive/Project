@@ -1,0 +1,27 @@
+{
+  "id": 830,
+  "name": "Nine-tail Fox (Quest)",
+  "location": "Yamataikoku",
+  "image": "data/Monster_Images/monster-830.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 180,
+    "hp": 49580,
+    "sp": 28569,
+    "catchable": "Unknown",
+    "spd": 270,
+    "str": 180,
+    "con": 150,
+    "int": 250,
+    "wis": 140,
+    "agi": 0
+  }
+}

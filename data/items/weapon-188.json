@@ -1,0 +1,18 @@
+{
+  "id": 188,
+  "name": "Dragon Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 2,
+  "level": 70,
+  "rarity": "common",
+  "base": "Magic",
+  "description": "A great dragon's soul dwells within.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30,
+    "ATK": 15
+  },
+  "image": "data/images/weapon-188.png",
+  "file": "weapon-188.json"
+}

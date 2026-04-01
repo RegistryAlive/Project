@@ -1,0 +1,18 @@
+{
+  "id": 8466,
+  "name": "Ocean Essence",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The essence of sea water can be full of vitality after drinking",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 200
+  },
+  "image": "data/images/questprop-8466.png",
+  "file": "questprop-8466.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 48,
+  "name": "Bully Wild Horse",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-48.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Soybean",
+      "itemId": 7465,
+      "itemFile": "material-7465.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Persian Mum",
+      "itemId": 7374,
+      "itemFile": "material-7374.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 777,
+    "sp": 705,
+    "catchable": "Unknown",
+    "spd": 184,
+    "str": 46,
+    "con": 48,
+    "int": 38,
+    "wis": 46,
+    "agi": 38
+  }
+}

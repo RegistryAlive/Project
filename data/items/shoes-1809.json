@@ -1,0 +1,17 @@
+{
+  "id": 1809,
+  "name": "Wooden Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood / Fur",
+  "description": "Wood shoes usually seen in Japan.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/shoes-1809.png",
+  "file": "shoes-1809.json"
+}

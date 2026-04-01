@@ -1,0 +1,18 @@
+{
+  "id": 7037,
+  "name": "Rice With Roast Pork",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rice / Meat",
+  "description": "Put the barbecued pork on the rice",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 150
+  },
+  "image": "data/images/material-7037.png",
+  "file": "material-7037.json"
+}

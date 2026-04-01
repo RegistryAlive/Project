@@ -1,0 +1,18 @@
+{
+  "id": 67,
+  "name": "Imperial Scimi",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Special weapon for Empire Roca after her rebirth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "DEF": 26
+  },
+  "image": "data/images/weapon-67.png",
+  "file": "weapon-67.json"
+}

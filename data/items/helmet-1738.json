@@ -1,0 +1,18 @@
+{
+  "id": 1738,
+  "name": "summer style",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "In the scorching summer, coupled with the offensive of the sun, you need indispensable accessories! ; When equipped with other Summer Boom series equipment at the same time, you can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "MATK": 20
+  },
+  "image": "data/images/helmet-1738.png",
+  "file": "helmet-1738.json"
+}

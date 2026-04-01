@@ -1,0 +1,15 @@
+{
+  "id": 6391,
+  "name": "Piggy Bank",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Red Clay",
+  "description": "You can save money by using it",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6391.png",
+  "file": "furniture-6391.json"
+}

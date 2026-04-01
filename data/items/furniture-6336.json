@@ -1,0 +1,15 @@
+{
+  "id": 6336,
+  "name": "Maid Robot",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "When players start to manufacture, a window will pop up. Players can direct a pet to do it. Can be traded.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6336.png",
+  "file": "furniture-6336.json"
+}

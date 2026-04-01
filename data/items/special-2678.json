@@ -1,0 +1,18 @@
+{
+  "id": 2678,
+  "name": "Sterling Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Silver / Jade / Platinum",
+  "description": "Earrings made of pure sterling silver",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20,
+    "MATK": 20
+  },
+  "image": "data/images/special-2678.png",
+  "file": "special-2678.json"
+}

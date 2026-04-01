@@ -1,0 +1,27 @@
+{
+  "id": 610,
+  "name": "Breeze Moai",
+  "location": "National Treasure",
+  "image": "data/Monster_Images/monster-610.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 66,
+    "hp": 832,
+    "sp": 540,
+    "catchable": "Unknown",
+    "spd": 143,
+    "str": 46,
+    "con": 54,
+    "int": 41,
+    "wis": 35,
+    "agi": 22
+  }
+}

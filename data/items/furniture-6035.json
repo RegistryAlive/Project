@@ -1,0 +1,15 @@
+{
+  "id": 6035,
+  "name": "Black Bomb",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Sulfur / Saltpeter",
+  "description": "Creates an explosion and frame",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6035.png",
+  "file": "furniture-6035.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2660,
+  "name": "7 Blessing Guard",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Grass",
+  "description": "Protected by the guard of 7 blessings",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 10
+  },
+  "image": "data/images/special-2660.png",
+  "file": "special-2660.json"
+}

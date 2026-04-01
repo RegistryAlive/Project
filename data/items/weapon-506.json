@@ -1,0 +1,18 @@
+{
+  "id": 506,
+  "name": "Golden Stick",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "A whole stick made of gold.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 24,
+    "MDEF": 20
+  },
+  "image": "data/images/weapon-506.png",
+  "file": "weapon-506.json"
+}

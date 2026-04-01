@@ -1,0 +1,27 @@
+{
+  "id": 658,
+  "name": "Defensive Monster (Quest)",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-658.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 60,
+    "hp": 2200,
+    "sp": 500,
+    "catchable": "Unknown",
+    "spd": 186,
+    "str": 55,
+    "con": 30,
+    "int": 25,
+    "wis": 22,
+    "agi": 48
+  }
+}

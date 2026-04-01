@@ -1,0 +1,18 @@
+{
+  "id": 869,
+  "name": "Twin Rings (CP)",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Platinum",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 24,
+    "SPD": 28
+  },
+  "image": "data/images/weapon-869.png",
+  "file": "weapon-869.json"
+}

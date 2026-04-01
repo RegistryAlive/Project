@@ -1,0 +1,18 @@
+{
+  "id": 1914,
+  "name": "Long Blue Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Leather / Flower",
+  "description": "Boots processed from azure blue fur of sea animal.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 19,
+    "MDEF": 9
+  },
+  "image": "data/images/shoes-1914.png",
+  "file": "shoes-1914.json"
+}

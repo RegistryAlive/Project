@@ -1,0 +1,17 @@
+{
+  "id": 2280,
+  "name": "Tight Waistband",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": "Leather / Copper / Gum",
+  "description": "A tight waistband to increase speed.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20
+  },
+  "image": "data/images/special-2280.png",
+  "file": "special-2280.json"
+}

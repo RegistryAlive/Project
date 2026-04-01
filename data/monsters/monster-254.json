@@ -1,0 +1,51 @@
+{
+  "id": 254,
+  "name": "Scorpion",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-254.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Apple",
+      "itemId": 7433,
+      "itemFile": "material-7433.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sparrow Meat",
+      "itemId": 7499,
+      "itemFile": "material-7499.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Scorpion'S Venom",
+      "itemId": 7760,
+      "itemFile": "material-7760.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Unknown",
+      "itemId": 7892,
+      "itemFile": "material-7892.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1141,
+    "sp": 731,
+    "catchable": "Yes",
+    "spd": 241,
+    "str": 56,
+    "con": 67,
+    "int": 50,
+    "wis": 44,
+    "agi": 53
+  }
+}

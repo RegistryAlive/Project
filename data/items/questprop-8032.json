@@ -1,0 +1,15 @@
+{
+  "id": 8032,
+  "name": "Honeycomb",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made of honeycomb pieces",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8032.png",
+  "file": "questprop-8032.json"
+}

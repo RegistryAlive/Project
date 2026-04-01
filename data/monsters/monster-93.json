@@ -1,0 +1,39 @@
+{
+  "id": 93,
+  "name": "Little Bat",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-93.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bird Claw",
+      "itemId": 7731,
+      "itemFile": "material-7731.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wolf Meat",
+      "itemId": 7463,
+      "itemFile": "material-7463.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 63,
+    "hp": 508,
+    "sp": 479,
+    "catchable": "Unknown",
+    "spd": 184.5,
+    "str": 44,
+    "con": 31,
+    "int": 38,
+    "wis": 33,
+    "agi": 45
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2946,
+  "name": "New Tiger Glov",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Furry tiger dress up. Complete four-piece set effect: Critical strike damage +5%",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 5,
+    "MATK": 5
+  },
+  "image": "data/images/arm-2946.png",
+  "file": "arm-2946.json"
+}

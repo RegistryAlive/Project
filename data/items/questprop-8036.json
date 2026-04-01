@@ -1,0 +1,15 @@
+{
+  "id": 8036,
+  "name": "Elderly's Hat",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "One of Santa Claus's gear,a warm hat",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8036.png",
+  "file": "questprop-8036.json"
+}

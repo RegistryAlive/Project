@@ -1,0 +1,15 @@
+{
+  "id": 8058,
+  "name": "Dragon Bead",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is needed by the Old Dragon Man",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8058.png",
+  "file": "questprop-8058.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 472,
+  "name": "Emerald Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Tin / Jade",
+  "description": "Embedded in it is a magical emerald.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 12,
+    "MDEF": 12
+  },
+  "image": "data/images/weapon-472.png",
+  "file": "weapon-472.json"
+}

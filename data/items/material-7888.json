@@ -1,0 +1,15 @@
+{
+  "id": 7888,
+  "name": "Raptor Tooth",
+  "type": "Material",
+  "category": "material",
+  "rank": 9,
+  "level": 18,
+  "rarity": "uncommon",
+  "base": "Canine",
+  "description": "A Huge and sharp tooth of a raptor",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7888.png",
+  "file": "material-7888.json"
+}

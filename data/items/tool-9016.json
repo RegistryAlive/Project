@@ -1,0 +1,15 @@
+{
+  "id": 9016,
+  "name": "Loom",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make material to goods.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/tool-9016.png",
+  "file": "tool-9016.json"
+}

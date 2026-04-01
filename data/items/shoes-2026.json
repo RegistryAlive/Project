@@ -1,0 +1,18 @@
+{
+  "id": 2026,
+  "name": "Chef's Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Recommended in the culinary world due to its high CP value; additional outfit effect can be obtained when equipped together with other Chef's Dream series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "MDEF": 20
+  },
+  "image": "data/images/shoes-2026.png",
+  "file": "shoes-2026.json"
+}

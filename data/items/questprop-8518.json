@@ -1,0 +1,15 @@
+{
+  "id": 8518,
+  "name": "Ebony Drag Tix",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that can make Ebony Dragon Jr. a companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8518.png",
+  "file": "questprop-8518.json"
+}

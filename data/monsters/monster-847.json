@@ -1,0 +1,27 @@
+{
+  "id": 847,
+  "name": "Poisonous Snake",
+  "location": "Rome",
+  "image": "data/Monster_Images/monster-847.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 3000,
+    "sp": 729,
+    "catchable": "Unknown",
+    "spd": 270,
+    "str": 88,
+    "con": 65,
+    "int": 45,
+    "wis": 42,
+    "agi": 60
+  }
+}

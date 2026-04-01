@@ -1,0 +1,15 @@
+{
+  "id": 7621,
+  "name": "Bluestone",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rock",
+  "description": "A Dark ore with slight radiate rays",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7621.png",
+  "file": "material-7621.json"
+}

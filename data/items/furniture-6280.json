@@ -1,0 +1,15 @@
+{
+  "id": 6280,
+  "name": "Iron bathtub",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 11,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Iron chain to the system, people can bath apparatus",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6280.png",
+  "file": "furniture-6280.json"
+}

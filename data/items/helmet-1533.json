@@ -1,0 +1,17 @@
+{
+  "id": 1533,
+  "name": "Stand Ears+6",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 70,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 70
+  },
+  "image": "data/images/helmet-1533.png",
+  "file": "helmet-1533.json"
+}

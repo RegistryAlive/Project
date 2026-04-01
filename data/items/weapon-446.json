@@ -1,0 +1,18 @@
+{
+  "id": 446,
+  "name": "Phantasm Wing",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A legendary bow, rumored to be the bow used by the master archer [Kairon] himself. Equip this to gain great attack power and agility.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "SPD": 25
+  },
+  "image": "data/images/weapon-446.png",
+  "file": "weapon-446.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 333,
+  "name": "Athena's Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 50,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Athena's spear with % counter-seal ability",
+  "size": "1x1",
+  "attributes": {
+    "Special": 35,
+    "MATK": 85
+  },
+  "image": "data/images/weapon-333.png",
+  "file": "weapon-333.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2812,
+  "name": "Teeth Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Leather",
+  "description": "Leather Cuff which is inlaid animal's teeth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 5,
+    "SPD": 3
+  },
+  "image": "data/images/arm-2812.png",
+  "file": "arm-2812.json"
+}

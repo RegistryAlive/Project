@@ -1,0 +1,27 @@
+{
+  "id": 873,
+  "name": "Rock Guard (Quest)",
+  "location": "Stoowa Isle (Subterranean Maze)",
+  "image": "data/Monster_Images/monster-873.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 76,
+    "hp": 7500,
+    "sp": 580,
+    "catchable": "Unknown",
+    "spd": 198,
+    "str": 70,
+    "con": 35,
+    "int": 45,
+    "wis": 36,
+    "agi": 42
+  }
+}

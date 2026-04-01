@@ -1,0 +1,18 @@
+{
+  "id": 202,
+  "name": "Twin Bluemoon Blades",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Titanium / Iron / Pure Iron / Steel",
+  "description": "Radiating blue light, these fearsome blades are deadly to their enemies.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 43,
+    "ATK": 35
+  },
+  "image": "data/images/weapon-202.png",
+  "file": "weapon-202.json"
+}

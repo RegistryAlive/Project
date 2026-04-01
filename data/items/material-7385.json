@@ -1,0 +1,15 @@
+{
+  "id": 7385,
+  "name": "White Rose",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Flower",
+  "description": "Beautiful, redolent and white flowers",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7385.png",
+  "file": "material-7385.json"
+}

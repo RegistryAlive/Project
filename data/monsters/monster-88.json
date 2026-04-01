@@ -1,0 +1,51 @@
+{
+  "id": 88,
+  "name": "Vulture",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-88.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Feather",
+      "itemId": 7659,
+      "itemFile": "material-7659.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Salmon",
+      "itemId": 7489,
+      "itemFile": "material-7489.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Funny Feather",
+      "itemId": 7661,
+      "itemFile": "material-7661.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 52,
+    "hp": 386,
+    "sp": 461,
+    "catchable": "Yes",
+    "spd": 150,
+    "str": 25,
+    "con": 30,
+    "int": 33,
+    "wis": 32,
+    "agi": 36
+  }
+}

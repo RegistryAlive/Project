@@ -1,0 +1,17 @@
+{
+  "id": 695,
+  "name": "Pure Iron Adze",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Pure Iron / Wood",
+  "description": "The pure ironl axe has two blades.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 23
+  },
+  "image": "data/images/weapon-695.png",
+  "file": "weapon-695.json"
+}

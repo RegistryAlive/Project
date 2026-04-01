@@ -1,0 +1,18 @@
+{
+  "id": 657,
+  "name": "Silvery Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Silver",
+  "description": "Made of silver it enhances both magic and attacks.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "MATK": 10
+  },
+  "image": "data/images/weapon-657.png",
+  "file": "weapon-657.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 338,
+  "name": "Green Bat",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-338.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 41,
+    "hp": 347,
+    "sp": 321,
+    "catchable": "No",
+    "spd": 117.5,
+    "str": 25,
+    "con": 24,
+    "int": 23,
+    "wis": 23,
+    "agi": 28
+  }
+}

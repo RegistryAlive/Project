@@ -1,0 +1,15 @@
+{
+  "id": 6166,
+  "name": "DC Generator",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Generates DC",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6166.png",
+  "file": "furniture-6166.json"
+}

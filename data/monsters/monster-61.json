@@ -1,0 +1,39 @@
+{
+  "id": 61,
+  "name": "Shadow Scorpion",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-61.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 92,
+    "hp": 1289,
+    "sp": 967,
+    "catchable": "Unknown",
+    "spd": 224,
+    "str": 47,
+    "con": 76,
+    "int": 50,
+    "wis": 60,
+    "agi": 43
+  }
+}

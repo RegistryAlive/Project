@@ -1,0 +1,15 @@
+{
+  "id": 2037,
+  "name": "Valentine Shoes (Female)",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Feather",
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-2037.png",
+  "file": "shoes-2037.json"
+}

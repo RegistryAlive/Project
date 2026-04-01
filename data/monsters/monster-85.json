@@ -1,0 +1,45 @@
+{
+  "id": 85,
+  "name": "Old Hen",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-85.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Feather",
+      "itemId": 7659,
+      "itemFile": "material-7659.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Rice",
+      "itemId": 7403,
+      "itemFile": "material-7403.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Egg",
+      "itemId": 7502,
+      "itemFile": "material-7502.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 11,
+    "hp": 0,
+    "sp": 0,
+    "catchable": "Yes",
+    "spd": 32.5,
+    "str": 4,
+    "con": 4,
+    "int": 8,
+    "wis": 9,
+    "agi": 8
+  }
+}

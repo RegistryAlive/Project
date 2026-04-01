@@ -1,0 +1,27 @@
+{
+  "id": 732,
+  "name": "Guard",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-732.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 28,
+    "hp": 307,
+    "sp": 500,
+    "catchable": "Unknown",
+    "spd": 72,
+    "str": 27,
+    "con": 29,
+    "int": 8,
+    "wis": 5,
+    "agi": 15
+  }
+}

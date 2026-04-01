@@ -1,0 +1,17 @@
+{
+  "id": 952,
+  "name": "Craftsman's Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Very durable. More for protection than style.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-952.png",
+  "file": "armor-952.json"
+}

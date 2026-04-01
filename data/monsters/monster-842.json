@@ -1,0 +1,27 @@
+{
+  "id": 842,
+  "name": "Poisonous Snake",
+  "location": "Calcutta",
+  "image": "data/Monster_Images/monster-842.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 662,
+    "sp": 572,
+    "catchable": "Unknown",
+    "spd": 186,
+    "str": 47,
+    "con": 41,
+    "int": 38,
+    "wis": 36,
+    "agi": 42
+  }
+}

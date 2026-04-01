@@ -1,0 +1,18 @@
+{
+  "id": 1906,
+  "name": "Wit Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leather / Leaf / Flower",
+  "description": "Wit's favorite boots. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "MDEF": 10
+  },
+  "image": "data/images/shoes-1906.png",
+  "file": "shoes-1906.json"
+}

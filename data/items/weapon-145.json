@@ -1,0 +1,18 @@
+{
+  "id": 145,
+  "name": "Wave Iron Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Iron",
+  "description": "Made from iron, wave formed blade",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 29,
+    "SPD": 29
+  },
+  "image": "data/images/weapon-145.png",
+  "file": "weapon-145.json"
+}

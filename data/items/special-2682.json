@@ -1,0 +1,18 @@
+{
+  "id": 2682,
+  "name": "Passion Clockw",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 24,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A clockwork that grows with physical passion.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "DEF": 12
+  },
+  "image": "data/images/special-2682.png",
+  "file": "special-2682.json"
+}

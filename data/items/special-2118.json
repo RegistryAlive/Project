@@ -1,0 +1,18 @@
+{
+  "id": 2118,
+  "name": "Quiet Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To upgrade magic defense and minor defense",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 4,
+    "DEF": 2
+  },
+  "image": "data/images/special-2118.png",
+  "file": "special-2118.json"
+}

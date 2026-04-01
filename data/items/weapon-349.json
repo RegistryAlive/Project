@@ -1,0 +1,18 @@
+{
+  "id": 349,
+  "name": "Dusk War Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Gold / Iron",
+  "description": "Powerful halberd that radiates yellow light",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "DEF": 18
+  },
+  "image": "data/images/weapon-349.png",
+  "file": "weapon-349.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 1106,
+  "name": "Grass Dairy Cattle",
+  "location": "Calcutta",
+  "image": "data/Monster_Images/monster-1107.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cow Dung",
+      "itemId": 7773,
+      "itemFile": "material-7773.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Milk",
+      "itemId": 7509,
+      "itemFile": "material-7509.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 81,
+    "hp": 795,
+    "sp": 677,
+    "catchable": "Unknown",
+    "spd": 195.5,
+    "str": 64,
+    "con": 60,
+    "int": 40,
+    "wis": 42,
+    "agi": 37
+  }
+}

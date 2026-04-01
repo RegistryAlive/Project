@@ -1,0 +1,45 @@
+{
+  "id": 505,
+  "name": "Senior Banyan Devil",
+  "location": "Jungle",
+  "image": "data/Monster_Images/monster-505.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Wood",
+      "itemId": 7651,
+      "itemFile": "material-7651.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sun Mushroom",
+      "itemId": 7523,
+      "itemFile": "material-7523.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Original Rubber",
+      "itemId": 6029,
+      "itemFile": "furniture-6029.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Ordinary Wood",
+      "itemId": 7647,
+      "itemFile": "material-7647.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 17,
+    "hp": 148,
+    "sp": 122,
+    "catchable": "Yes",
+    "spd": 43.5,
+    "str": 9,
+    "con": 13,
+    "int": 10,
+    "wis": 10,
+    "agi": 9
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7178,
+  "name": "Ginseng Chicke",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 15,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "It is made of Ginseng and chicken",
+  "size": "1x1",
+  "attributes": {
+    "SP": 600,
+    "HP": 150
+  },
+  "image": "data/images/material-7178.png",
+  "file": "material-7178.json"
+}

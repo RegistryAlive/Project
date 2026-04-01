@@ -1,0 +1,18 @@
+{
+  "id": 7081,
+  "name": "Rice wine Shr",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Shrimp cooked with rice wine",
+  "size": "1x1",
+  "attributes": {
+    "SP": 230,
+    "HP": 20
+  },
+  "image": "data/images/material-7081.png",
+  "file": "material-7081.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6468,
+  "name": "Cannon Toy",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A toy cannon",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6468.png",
+  "file": "furniture-6468.json"
+}

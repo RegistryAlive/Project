@@ -1,0 +1,15 @@
+{
+  "id": 6196,
+  "name": "Original Spar",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Quartz (Crystal)",
+  "description": "Refined from energy stone",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6196.png",
+  "file": "furniture-6196.json"
+}

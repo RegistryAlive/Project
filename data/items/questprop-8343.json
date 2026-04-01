@@ -1,0 +1,15 @@
+{
+  "id": 8343,
+  "name": "Merchant's Stash",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Loaded with loot",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8343.png",
+  "file": "questprop-8343.json"
+}

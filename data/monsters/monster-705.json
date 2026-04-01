@@ -1,0 +1,27 @@
+{
+  "id": 705,
+  "name": "General",
+  "location": "Great Wall",
+  "image": "data/Monster_Images/monster-705.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 679,
+    "sp": 674,
+    "catchable": "Unknown",
+    "spd": 206,
+    "str": 55,
+    "con": 50,
+    "int": 50,
+    "wis": 42,
+    "agi": 43
+  }
+}

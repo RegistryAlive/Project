@@ -1,0 +1,18 @@
+{
+  "id": 1360,
+  "name": "Ninja Suit-2",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Nylon / Flower",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17,
+    "SPD": 6
+  },
+  "image": "data/images/armor-1360.png",
+  "file": "armor-1360.json"
+}

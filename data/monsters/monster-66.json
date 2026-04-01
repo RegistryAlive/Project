@@ -1,0 +1,51 @@
+{
+  "id": 66,
+  "name": "Yellow Snowman",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-66.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Dye",
+      "itemId": 7804,
+      "itemFile": "material-7804.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snow Crystal",
+      "itemId": 7803,
+      "itemFile": "material-7803.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Banana",
+      "itemId": 7437,
+      "itemFile": "material-7437.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wood",
+      "itemId": 7651,
+      "itemFile": "material-7651.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Copper Sand",
+      "itemId": 7557,
+      "itemFile": "material-7557.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 635,
+    "sp": 625,
+    "catchable": "Yes",
+    "spd": 186,
+    "str": 41,
+    "con": 39,
+    "int": 41,
+    "wis": 41,
+    "agi": 42
+  }
+}

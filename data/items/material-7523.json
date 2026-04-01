@@ -1,0 +1,17 @@
+{
+  "id": 7523,
+  "name": "Sun Mushroom",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "An Innoxious mushroom",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30
+  },
+  "image": "data/images/material-7523.png",
+  "file": "material-7523.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1814,
+  "name": "Red Vine Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Copper",
+  "description": "Vine shoes which are made from red copper",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 4,
+    "DEF": 1
+  },
+  "image": "data/images/shoes-1814.png",
+  "file": "shoes-1814.json"
+}

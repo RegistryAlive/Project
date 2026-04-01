@@ -1,0 +1,17 @@
+{
+  "id": 1848,
+  "name": "Wooden Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Wood / Fur",
+  "description": "Wooden shoes",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 14
+  },
+  "image": "data/images/shoes-1848.png",
+  "file": "shoes-1848.json"
+}

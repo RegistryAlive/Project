@@ -1,0 +1,18 @@
+{
+  "id": 1095,
+  "name": "Yellow Mantle",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Gold / Steel",
+  "description": "Battle clothes made of spun gold.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20,
+    "DEF": 12
+  },
+  "image": "data/images/armor-1095.png",
+  "file": "armor-1095.json"
+}

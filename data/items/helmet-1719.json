@@ -1,0 +1,17 @@
+{
+  "id": 1719,
+  "name": "New Tiger Hood",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The Year Of The Tiger, New Year's Tiger Set. A cute Tiger's Head, used for Cosplay. Four-piece Set Effect : Critical Damage +5%.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1719.png",
+  "file": "helmet-1719.json"
+}

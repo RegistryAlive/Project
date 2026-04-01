@@ -1,0 +1,15 @@
+{
+  "id": 6226,
+  "name": "Crystal Furnace",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It makes crystal items and magic enclosed items.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6226.png",
+  "file": "furniture-6226.json"
+}

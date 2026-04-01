@@ -1,0 +1,39 @@
+{
+  "id": 378,
+  "name": "Lust Spirit",
+  "location": "Ghost Ship",
+  "image": "data/Monster_Images/monster-378.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Lucid Glue",
+      "itemId": 7709,
+      "itemFile": "material-7709.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cotton",
+      "itemId": 7358,
+      "itemFile": "material-7358.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Harl Grass",
+      "itemId": 7359,
+      "itemFile": "material-7359.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 955,
+    "sp": 734,
+    "catchable": "Unknown",
+    "spd": 225,
+    "str": 60,
+    "con": 56,
+    "int": 49,
+    "wis": 45,
+    "agi": 48
+  }
+}

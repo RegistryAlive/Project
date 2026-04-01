@@ -1,0 +1,15 @@
+{
+  "id": 6739,
+  "name": "Soul Fire Lamp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A light that never goes out when it's sealed into the soul's flame.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6739.png",
+  "file": "furniture-6739.json"
+}

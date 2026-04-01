@@ -1,0 +1,27 @@
+{
+  "id": 990,
+  "name": "Warrior",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-990.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 53,
+    "hp": 399,
+    "sp": 464,
+    "catchable": "Unknown",
+    "spd": 143.5,
+    "str": 32,
+    "con": 31,
+    "int": 32,
+    "wis": 32,
+    "agi": 32
+  }
+}

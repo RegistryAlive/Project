@@ -1,0 +1,15 @@
+{
+  "id": 6253,
+  "name": "Wooden Saw",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Used on the work platform to cut wood.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6253.png",
+  "file": "furniture-6253.json"
+}

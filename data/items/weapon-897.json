@@ -1,0 +1,18 @@
+{
+  "id": 897,
+  "name": "Golden Wand-2",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Corundum / Flower / Gold / Tin / Magic",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50,
+    "MDEF": 28
+  },
+  "image": "data/images/weapon-897.png",
+  "file": "weapon-897.json"
+}

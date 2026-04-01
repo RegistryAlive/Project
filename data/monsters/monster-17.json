@@ -1,0 +1,51 @@
+{
+  "id": 17,
+  "name": "Thick Monster",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-17.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Common Stone",
+      "itemId": 7630,
+      "itemFile": "material-7630.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coprinus",
+      "itemId": 7483,
+      "itemFile": "material-7483.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wood",
+      "itemId": 7651,
+      "itemFile": "material-7651.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 107,
+    "hp": 1780,
+    "sp": 1092,
+    "catchable": "No",
+    "spd": 280.5,
+    "str": 66,
+    "con": 80,
+    "int": 50,
+    "wis": 65,
+    "agi": 60
+  }
+}

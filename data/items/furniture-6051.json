@@ -1,0 +1,15 @@
+{
+  "id": 6051,
+  "name": "Liquid Gas",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A substitute fuel for the Hot-air Balloon. Double click to use it while using Hot-air Balloon. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6051.png",
+  "file": "furniture-6051.json"
+}

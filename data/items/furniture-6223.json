@@ -1,0 +1,15 @@
+{
+  "id": 6223,
+  "name": "Grinding Equipment",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can mill metal into a shape.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6223.png",
+  "file": "furniture-6223.json"
+}

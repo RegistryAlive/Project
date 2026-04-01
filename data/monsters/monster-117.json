@@ -1,0 +1,39 @@
+{
+  "id": 117,
+  "name": "Red Fox",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-117.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Fox Fur",
+      "itemId": 7669,
+      "itemFile": "material-7669.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 61,
+    "hp": 554,
+    "sp": 564,
+    "catchable": "Yes",
+    "spd": 163.5,
+    "str": 33,
+    "con": 35,
+    "int": 41,
+    "wis": 38,
+    "agi": 36
+  }
+}

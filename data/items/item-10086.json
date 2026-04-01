@@ -1,0 +1,15 @@
+{
+  "id": 10086,
+  "name": "Alchemy Book 4",
+  "type": "Item",
+  "category": "item",
+  "rank": 4,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Grass",
+  "description": "A super book that upgrades an item's upper limit.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/item-10086.png",
+  "file": "item-10086.json"
+}

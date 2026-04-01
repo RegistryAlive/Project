@@ -1,0 +1,15 @@
+{
+  "id": 1268,
+  "name": "Sakura Kimono",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Soft and cute pink kimono, wear it to participate in the cherry blossom festival.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1268.png",
+  "file": "armor-1268.json"
+}

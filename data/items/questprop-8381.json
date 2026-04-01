@@ -1,0 +1,15 @@
+{
+  "id": 8381,
+  "name": "Yang Ticket",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket to make Yang Lan a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8381.png",
+  "file": "questprop-8381.json"
+}

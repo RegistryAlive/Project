@@ -1,0 +1,18 @@
+{
+  "id": 2666,
+  "name": "Magical Earbobs",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Jade",
+  "description": "Made with Jade",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20,
+    "SPD": 16
+  },
+  "image": "data/images/special-2666.png",
+  "file": "special-2666.json"
+}

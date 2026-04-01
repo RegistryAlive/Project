@@ -1,0 +1,15 @@
+{
+  "id": 1214,
+  "name": "Snow Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A Snow coat, that protects against the cold. For women only.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1214.png",
+  "file": "armor-1214.json"
+}

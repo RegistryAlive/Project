@@ -1,0 +1,17 @@
+{
+  "id": 941,
+  "name": "Harness Pants",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Nifty Pants-gallus.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-941.png",
+  "file": "armor-941.json"
+}

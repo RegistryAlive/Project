@@ -1,0 +1,39 @@
+{
+  "id": 1096,
+  "name": "Steerer",
+  "location": "Cook's Fleet",
+  "image": "data/Monster_Images/monster-1097.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sepia",
+      "itemId": 7495,
+      "itemFile": "material-7495.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 533,
+    "sp": 612,
+    "catchable": "Yes",
+    "spd": 188,
+    "str": 40,
+    "con": 40,
+    "int": 41,
+    "wis": 40,
+    "agi": 43
+  }
+}

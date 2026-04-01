@@ -1,0 +1,15 @@
+{
+  "id": 1984,
+  "name": "Flower Sandals",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 45,
+  "level": 90,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The shoe is made of camellia, that represents virtue and cuteness, which is a favorite of young females.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1984.png",
+  "file": "shoes-1984.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 212,
+  "name": "Yellow Flying Dragon",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-212.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Fugu Hot Pot",
+      "itemId": 7175,
+      "itemFile": "material-7175.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 97,
+    "hp": 675,
+    "sp": 473,
+    "catchable": "Unknown",
+    "spd": 197.5,
+    "str": 31,
+    "con": 35,
+    "int": 27,
+    "wis": 25,
+    "agi": 26
+  }
+}

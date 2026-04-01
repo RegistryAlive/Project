@@ -1,0 +1,38 @@
+{
+  "id": 215,
+  "name": "Panda",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-215.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Bamboo",
+      "itemId": 7367,
+      "itemFile": "material-7367.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clear Devil's Spar",
+      "itemId": null,
+      "itemFile": null
+    }
+  ],
+  "stats": {
+    "level": 86,
+    "hp": 1090,
+    "sp": 748,
+    "catchable": "Unknown",
+    "spd": 223,
+    "str": 49,
+    "con": 65,
+    "int": 51,
+    "wis": 46,
+    "agi": 47
+  }
+}

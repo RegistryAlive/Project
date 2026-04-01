@@ -1,0 +1,17 @@
+{
+  "id": 7001,
+  "name": "Rice Wine",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Rice",
+  "description": "Wine made from millet",
+  "size": "1x1",
+  "attributes": {
+    "SP": 150
+  },
+  "image": "data/images/material-7001.png",
+  "file": "material-7001.json"
+}

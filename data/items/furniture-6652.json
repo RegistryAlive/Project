@@ -1,0 +1,15 @@
+{
+  "id": 6652,
+  "name": "Shell sofa",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Elegant two-seater sofa with the back of the chair designed in the shape of a shell.",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6652.png",
+  "file": "furniture-6652.json"
+}

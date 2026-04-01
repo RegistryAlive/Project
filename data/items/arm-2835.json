@@ -1,0 +1,18 @@
+{
+  "id": 2835,
+  "name": "Black Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Steel / Copper",
+  "description": "Copper Cuffs accreted with black steel thorns.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 11,
+    "DEF": 7
+  },
+  "image": "data/images/arm-2835.png",
+  "file": "arm-2835.json"
+}

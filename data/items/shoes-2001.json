@@ -1,0 +1,18 @@
+{
+  "id": 2001,
+  "name": "Sky Cat Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clear sky blue cat shoes Rumored to be the shoes worn by the blue cat messenger in the devil world",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "SPD": 20
+  },
+  "image": "data/images/shoes-2001.png",
+  "file": "shoes-2001.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1946,
+  "name": "Emerald Clogs",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Wood / Nylon",
+  "description": "Magic clogs with emerald held in center",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 22,
+    "DEF": 5
+  },
+  "image": "data/images/shoes-1946.png",
+  "file": "shoes-1946.json"
+}

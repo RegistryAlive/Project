@@ -1,0 +1,18 @@
+{
+  "id": 398,
+  "name": "Elf Lance",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The fantasy spear used by the elves has a faint fragrance of flowers in the wind when it is swung. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-398.png",
+  "file": "weapon-398.json"
+}

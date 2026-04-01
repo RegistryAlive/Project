@@ -1,0 +1,15 @@
+{
+  "id": 8490,
+  "name": "TigerBalloon E",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Exchange for a Tiger Balloon.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8490.png",
+  "file": "questprop-8490.json"
+}

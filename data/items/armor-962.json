@@ -1,0 +1,17 @@
+{
+  "id": 962,
+  "name": "Red Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Leather / Flower",
+  "description": "clothes which is made of red leather",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10
+  },
+  "image": "data/images/armor-962.png",
+  "file": "armor-962.json"
+}

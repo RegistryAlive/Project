@@ -1,0 +1,27 @@
+{
+  "id": 1015,
+  "name": "Wino Cai",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-1015.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 17150,
+    "sp": 1010,
+    "catchable": "Unknown",
+    "spd": 285,
+    "str": 95,
+    "con": 86,
+    "int": 63,
+    "wis": 56,
+    "agi": 75
+  }
+}

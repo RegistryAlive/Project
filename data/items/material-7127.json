@@ -1,0 +1,17 @@
+{
+  "id": 7127,
+  "name": "Lemonade",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "Juice extracted from lemons",
+  "size": "1x1",
+  "attributes": {
+    "SP": 300
+  },
+  "image": "data/images/material-7127.png",
+  "file": "material-7127.json"
+}

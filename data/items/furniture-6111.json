@@ -1,0 +1,15 @@
+{
+  "id": 6111,
+  "name": "Gold Coin",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made of pure gold",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6111.png",
+  "file": "furniture-6111.json"
+}

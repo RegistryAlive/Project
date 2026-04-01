@@ -1,0 +1,18 @@
+{
+  "id": 2306,
+  "name": "Quick Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Armlet incresing magic attack speed.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 50,
+    "MATK": 50
+  },
+  "image": "data/images/special-2306.png",
+  "file": "special-2306.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 237,
+  "name": "Frozen D Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The double-edged swords made of unmelting ice are characterized by lightness and dexterity. 46% critical strike possible",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 90,
+    "ATK": 30
+  },
+  "image": "data/images/weapon-237.png",
+  "file": "weapon-237.json"
+}

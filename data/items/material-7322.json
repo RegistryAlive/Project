@@ -1,0 +1,18 @@
+{
+  "id": 7322,
+  "name": "Pizza A",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Nourishment for the PvP server",
+  "size": "1x1",
+  "attributes": {
+    "HP": 0,
+    "SP": 0
+  },
+  "image": "data/images/material-7322.png",
+  "file": "material-7322.json"
+}

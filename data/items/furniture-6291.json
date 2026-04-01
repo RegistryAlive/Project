@@ -1,0 +1,15 @@
+{
+  "id": 6291,
+  "name": "Golden Candles",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 17,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "With gold refinement, extremely expensive Candlestick",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6291.png",
+  "file": "furniture-6291.json"
+}

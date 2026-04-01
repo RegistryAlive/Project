@@ -1,0 +1,17 @@
+{
+  "id": 1054,
+  "name": "Subtle Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Leaf / Flower / Leather",
+  "description": "clothes which are convenience for wrestles",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28
+  },
+  "image": "data/images/armor-1054.png",
+  "file": "armor-1054.json"
+}

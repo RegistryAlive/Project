@@ -1,0 +1,18 @@
+{
+  "id": 370,
+  "name": "Absolute Zero",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "A double-headed blade engulfed in ice. 24% chance of critical strike. Damage caused by critical greatly increased.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50,
+    "MaxHP": 450
+  },
+  "image": "data/images/weapon-370.png",
+  "file": "weapon-370.json"
+}

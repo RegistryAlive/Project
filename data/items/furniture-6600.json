@@ -1,0 +1,15 @@
+{
+  "id": 6600,
+  "name": "Mystery chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "High-end leather chairs are indispensable for magicians who sit and work all day.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6600.png",
+  "file": "furniture-6600.json"
+}

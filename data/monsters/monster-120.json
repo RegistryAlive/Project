@@ -1,0 +1,51 @@
+{
+  "id": 120,
+  "name": "Monster Claw Crab",
+  "location": "Philippine",
+  "image": "data/Monster_Images/monster-120.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Crab Roes",
+      "itemId": 7498,
+      "itemFile": "material-7498.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Octopus",
+      "itemId": 7493,
+      "itemFile": "material-7493.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Crab Pincer",
+      "itemId": 7746,
+      "itemFile": "material-7746.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Crab Shell",
+      "itemId": 7792,
+      "itemFile": "material-7792.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 55,
+    "hp": 506,
+    "sp": 482,
+    "catchable": "Yes",
+    "spd": 148.5,
+    "str": 33,
+    "con": 33,
+    "int": 33,
+    "wis": 33,
+    "agi": 33
+  }
+}

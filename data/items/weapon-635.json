@@ -1,0 +1,18 @@
+{
+  "id": 635,
+  "name": "Blue Rose Staf",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The dazzling blue magic staff, with the intention in mind, performed a miraculous blow! 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 60,
+    "MaxSP": 350
+  },
+  "image": "data/images/weapon-635.png",
+  "file": "weapon-635.json"
+}

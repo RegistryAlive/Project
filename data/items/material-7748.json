@@ -1,0 +1,15 @@
+{
+  "id": 7748,
+  "name": "Fox Leaf",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leaf",
+  "description": "A Fox uses it to shapeshife",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7748.png",
+  "file": "material-7748.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6386,
+  "name": "Cushion",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A soft, comfortable and beautiful cotton cushion.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6386.png",
+  "file": "furniture-6386.json"
+}

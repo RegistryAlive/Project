@@ -1,0 +1,33 @@
+{
+  "id": 496,
+  "name": "Sealed Water Demon",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-496.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Fruit Berry Syrup",
+      "itemId": 7300,
+      "itemFile": "material-7300.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 147,
+    "hp": 1017,
+    "sp": 728,
+    "catchable": "No",
+    "spd": 310.5,
+    "str": 51,
+    "con": 46,
+    "int": 44,
+    "wis": 35,
+    "agi": 45
+  }
+}

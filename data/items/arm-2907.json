@@ -1,0 +1,18 @@
+{
+  "id": 2907,
+  "name": "Straight Brace",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Bracers made of steel are both defensive and flexible.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25,
+    "DEF": 20
+  },
+  "image": "data/images/arm-2907.png",
+  "file": "arm-2907.json"
+}

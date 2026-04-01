@@ -1,0 +1,51 @@
+{
+  "id": 1075,
+  "name": "Big Tiger (Quest)",
+  "location": "Kama Cave",
+  "image": "data/Monster_Images/monster-1076.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Straw Mushroom",
+      "itemId": 7399,
+      "itemFile": "material-7399.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mushroom",
+      "itemId": 7400,
+      "itemFile": "material-7400.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Barley",
+      "itemId": 7401,
+      "itemFile": "material-7401.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sugar",
+      "itemId": 7402,
+      "itemFile": "material-7402.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Celery",
+      "itemId": 7407,
+      "itemFile": "material-7407.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 18,
+    "hp": 180,
+    "sp": 105,
+    "catchable": "Yes",
+    "spd": 51,
+    "str": 12,
+    "con": 13,
+    "int": 9,
+    "wis": 8,
+    "agi": 12
+  }
+}

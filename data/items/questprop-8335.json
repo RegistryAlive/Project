@@ -1,0 +1,15 @@
+{
+  "id": 8335,
+  "name": "Guiding Stone",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Stone that can lead the correct path",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8335.png",
+  "file": "questprop-8335.json"
+}

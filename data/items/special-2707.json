@@ -1,0 +1,17 @@
+{
+  "id": 2707,
+  "name": "High-per Cl +2",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 35,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A high efficiency clockwork produced for work efficiency.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 35
+  },
+  "image": "data/images/special-2707.png",
+  "file": "special-2707.json"
+}

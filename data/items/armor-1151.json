@@ -1,0 +1,18 @@
+{
+  "id": 1151,
+  "name": "Duke Shadow Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Nylon / Leaf / Leather / Feather",
+  "description": "Formal suit",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "MDEF": 20
+  },
+  "image": "data/images/armor-1151.png",
+  "file": "armor-1151.json"
+}

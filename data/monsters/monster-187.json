@@ -1,0 +1,33 @@
+{
+  "id": 187,
+  "name": "Lavender Vine",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-187.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Rice With Roast Pork",
+      "itemId": 7037,
+      "itemFile": "material-7037.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 20,
+    "hp": 122,
+    "sp": 100,
+    "catchable": "No",
+    "spd": 42,
+    "str": 4,
+    "con": 8,
+    "int": 5,
+    "wis": 7,
+    "agi": 6
+  }
+}

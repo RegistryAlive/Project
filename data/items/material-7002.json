@@ -1,0 +1,18 @@
+{
+  "id": 7002,
+  "name": "Rice flour",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Noodles made with rice, full of taste, loved by others.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 80,
+    "SP": 20
+  },
+  "image": "data/images/material-7002.png",
+  "file": "material-7002.json"
+}

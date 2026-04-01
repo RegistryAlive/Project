@@ -1,0 +1,27 @@
+{
+  "id": 631,
+  "name": "Cool Ronin (Quest)",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-631.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 116,
+    "hp": 1601,
+    "sp": 1060,
+    "catchable": "Unknown",
+    "spd": 292,
+    "str": 82,
+    "con": 87,
+    "int": 59,
+    "wis": 61,
+    "agi": 59
+  }
+}

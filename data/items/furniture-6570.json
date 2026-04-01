@@ -1,0 +1,15 @@
+{
+  "id": 6570,
+  "name": "C. wallpaper",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Christmas Eve style wallpaper, allowing players to change into different wall colors",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6570.png",
+  "file": "furniture-6570.json"
+}

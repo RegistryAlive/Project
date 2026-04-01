@@ -1,0 +1,33 @@
+{
+  "id": 490,
+  "name": "Green Parrot",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-490.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Black Forestcake",
+      "itemId": 7049,
+      "itemFile": "material-7049.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 43,
+    "hp": 260,
+    "sp": 160,
+    "catchable": "No",
+    "spd": 96.5,
+    "str": 15,
+    "con": 16,
+    "int": 9,
+    "wis": 9,
+    "agi": 16
+  }
+}

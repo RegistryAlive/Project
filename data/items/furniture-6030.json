@@ -1,0 +1,15 @@
+{
+  "id": 6030,
+  "name": "AC Motor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Receives an alternating current",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6030.png",
+  "file": "furniture-6030.json"
+}

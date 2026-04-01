@@ -1,0 +1,15 @@
+{
+  "id": 8549,
+  "name": "Silver Bell",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "A kind of bell used for making a wish.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8549.png",
+  "file": "questprop-8549.json"
+}

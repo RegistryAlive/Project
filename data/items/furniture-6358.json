@@ -1,0 +1,15 @@
+{
+  "id": 6358,
+  "name": "Red Window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pretty red window",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6358.png",
+  "file": "furniture-6358.json"
+}

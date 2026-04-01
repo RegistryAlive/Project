@@ -1,0 +1,15 @@
+{
+  "id": 6378,
+  "name": "Beach Door",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "can go to the Beach Door",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6378.png",
+  "file": "furniture-6378.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1423,
+  "name": "Scale Hairwear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Titanium / Gold / Steel",
+  "description": "A helmet with the Black dragon sealed in it.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 24,
+    "ATK": 10
+  },
+  "image": "data/images/helmet-1423.png",
+  "file": "helmet-1423.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 840,
+  "name": "Pink Snowtree",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-840.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 49,
+    "hp": 398,
+    "sp": 452,
+    "catchable": "Unknown",
+    "spd": 121.5,
+    "str": 33,
+    "con": 26,
+    "int": 32,
+    "wis": 32,
+    "agi": 24
+  }
+}

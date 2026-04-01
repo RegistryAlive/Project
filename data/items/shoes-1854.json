@@ -1,0 +1,18 @@
+{
+  "id": 1854,
+  "name": "Net Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Copper / Grass",
+  "description": "Shoes made from copper threads and twines",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 9,
+    "DEF": 7
+  },
+  "image": "data/images/shoes-1854.png",
+  "file": "shoes-1854.json"
+}

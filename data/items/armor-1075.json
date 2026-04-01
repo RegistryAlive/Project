@@ -1,0 +1,18 @@
+{
+  "id": 1075,
+  "name": "War Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Made of very thick leather for max protection.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18,
+    "SPD": 9
+  },
+  "image": "data/images/armor-1075.png",
+  "file": "armor-1075.json"
+}

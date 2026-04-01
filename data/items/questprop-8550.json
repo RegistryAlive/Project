@@ -1,0 +1,15 @@
+{
+  "id": 8550,
+  "name": "Key of Hell Power",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Key of treasure box in the dungeon holding down Apollo",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8550.png",
+  "file": "questprop-8550.json"
+}

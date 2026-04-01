@@ -1,0 +1,17 @@
+{
+  "id": 5000,
+  "name": "Phoenix Feather",
+  "type": "ItemBattle",
+  "category": "accessory",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Rare phoenix's feather. It can raise the dead",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100
+  },
+  "image": "data/images/accessory-5000.png",
+  "file": "accessory-5000.json"
+}

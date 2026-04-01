@@ -1,0 +1,17 @@
+{
+  "id": 1724,
+  "name": "Tiger Head",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Furry tiger dress up. Complete four-piece set effect: Critical strike damage +5%",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1724.png",
+  "file": "helmet-1724.json"
+}

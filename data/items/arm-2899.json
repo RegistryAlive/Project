@@ -1,0 +1,18 @@
+{
+  "id": 2899,
+  "name": "Ragesteel Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Iron / Gold / Pure Iron",
+  "description": "A pair of bracers forged from steel imbued with mighty rage.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "SPD": 15
+  },
+  "image": "data/images/arm-2899.png",
+  "file": "arm-2899.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 10058,
+  "name": "Motorbike caps",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A cool-looking two-wheeled vehicle, enjoy the thrill of being fast and electric, using diesel as fuel.",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 46913
+  },
+  "image": "data/images/vehicle-10058.png",
+  "file": "vehicle-10058.json"
+}

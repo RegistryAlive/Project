@@ -1,0 +1,27 @@
+{
+  "id": 793,
+  "name": "Lime Icedrop Monster",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-793.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 12,
+    "hp": 119,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 34,
+    "str": 5,
+    "con": 10,
+    "int": 6,
+    "wis": 7,
+    "agi": 8
+  }
+}

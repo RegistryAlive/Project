@@ -1,0 +1,15 @@
+{
+  "id": 6768,
+  "name": "Tatami 1",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": null,
+  "description": "Put on floor, warm in winter and cold in summer.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6768.png",
+  "file": "furniture-6768.json"
+}

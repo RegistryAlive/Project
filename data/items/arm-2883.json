@@ -1,0 +1,18 @@
+{
+  "id": 2883,
+  "name": "Cyanine Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "Gorgeous gloves made with blue silk",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 21,
+    "DEF": 10
+  },
+  "image": "data/images/arm-2883.png",
+  "file": "arm-2883.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1753,
+  "name": "Foam Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Silk-cotton hat worn by the bride at a wedding; exclusively for women, with a 5% anti-blocking effect, and an additional outfit effect when equipped alongside other White Immaculate Series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "SPD": 15
+  },
+  "image": "data/images/helmet-1753.png",
+  "file": "helmet-1753.json"
+}

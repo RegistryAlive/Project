@@ -1,0 +1,27 @@
+{
+  "id": 798,
+  "name": "Little Huan (Quest)",
+  "location": "Athens",
+  "image": "data/Monster_Images/monster-798.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 54,
+    "hp": 3492,
+    "sp": 1391,
+    "catchable": "Unknown",
+    "spd": 129,
+    "str": 38,
+    "con": 40,
+    "int": 34,
+    "wis": 26,
+    "agi": 24
+  }
+}

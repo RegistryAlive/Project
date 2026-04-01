@@ -1,0 +1,18 @@
+{
+  "id": 7301,
+  "name": "Dodo Cheese",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Dairy Product",
+  "description": "It is fermented from milk",
+  "size": "1x1",
+  "attributes": {
+    "SP": 105,
+    "HP": 45
+  },
+  "image": "data/images/material-7301.png",
+  "file": "material-7301.json"
+}

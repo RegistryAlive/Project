@@ -1,0 +1,15 @@
+{
+  "id": 8226,
+  "name": "Fairy Grass",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It looks common but with magic power",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8226.png",
+  "file": "questprop-8226.json"
+}

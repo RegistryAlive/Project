@@ -1,0 +1,18 @@
+{
+  "id": 2568,
+  "name": "Fairy Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 44,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Armlet used by Elves,adding Charlotte's ability.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "SPD": 200
+  },
+  "image": "data/images/special-2568.png",
+  "file": "special-2568.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 863,
+  "name": "Battle Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 2,
+    "SPD": 2
+  },
+  "image": "data/images/weapon-863.png",
+  "file": "weapon-863.json"
+}

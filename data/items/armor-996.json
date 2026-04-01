@@ -1,0 +1,18 @@
+{
+  "id": 996,
+  "name": "Silk Qi Pao",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "Traditional silk Chinese female formal wear.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 10,
+    "MDEF": 6
+  },
+  "image": "data/images/armor-996.png",
+  "file": "armor-996.json"
+}

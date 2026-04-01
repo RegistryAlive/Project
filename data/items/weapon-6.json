@@ -1,0 +1,18 @@
+{
+  "id": 6,
+  "name": "Iron Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Iron / Wood",
+  "description": "A knife made from iron",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 4,
+    "DEF": 4
+  },
+  "image": "data/images/weapon-6.png",
+  "file": "weapon-6.json"
+}

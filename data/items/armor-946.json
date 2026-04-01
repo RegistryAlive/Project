@@ -1,0 +1,17 @@
+{
+  "id": 946,
+  "name": "Uniform",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A High School students' uniform.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-946.png",
+  "file": "armor-946.json"
+}

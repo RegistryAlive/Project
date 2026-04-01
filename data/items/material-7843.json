@@ -1,0 +1,15 @@
+{
+  "id": 7843,
+  "name": "Hot Water",
+  "type": "MaterialWater",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 2)",
+  "description": "A substitute fuel for the Mighty Plane. Double click to use it while using the Mighty Plane. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7843.png",
+  "file": "material-7843.json"
+}

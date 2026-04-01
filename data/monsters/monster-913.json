@@ -1,0 +1,27 @@
+{
+  "id": 913,
+  "name": "Snow Goddess",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-913.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 60,
+    "hp": 521,
+    "sp": 458,
+    "catchable": "Unknown",
+    "spd": 160,
+    "str": 44,
+    "con": 41,
+    "int": 30,
+    "wis": 30,
+    "agi": 35
+  }
+}

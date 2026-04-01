@@ -1,0 +1,18 @@
+{
+  "id": 2826,
+  "name": "Steel Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Steel / Iron",
+  "description": "Armguard made from specific stainless steel.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 18,
+    "MDEF": 5
+  },
+  "image": "data/images/arm-2826.png",
+  "file": "arm-2826.json"
+}

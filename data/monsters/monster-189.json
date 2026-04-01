@@ -1,0 +1,33 @@
+{
+  "id": 189,
+  "name": "Roce Vine",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-189.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Rice With Roast Pork",
+      "itemId": 7037,
+      "itemFile": "material-7037.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 19,
+    "hp": 93,
+    "sp": 107,
+    "catchable": "No",
+    "spd": 36.5,
+    "str": 8,
+    "con": 5,
+    "int": 4,
+    "wis": 8,
+    "agi": 4
+  }
+}

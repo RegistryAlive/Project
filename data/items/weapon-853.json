@@ -1,0 +1,15 @@
+{
+  "id": 853,
+  "name": "Cylindric Gun",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 26,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Primarily a large cylinder firing shrapnel.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-853.png",
+  "file": "weapon-853.json"
+}

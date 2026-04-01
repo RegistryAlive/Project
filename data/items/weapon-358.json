@@ -1,0 +1,18 @@
+{
+  "id": 358,
+  "name": "Ghost Halberd (2)",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": "Wood / Iron / Steel",
+  "description": "Equipped with a ghost-like weapon, it can increase attack power and mobility",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 62,
+    "SPD": 20
+  },
+  "image": "data/images/weapon-358.png",
+  "file": "weapon-358.json"
+}

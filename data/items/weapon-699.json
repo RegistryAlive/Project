@@ -1,0 +1,17 @@
+{
+  "id": 699,
+  "name": "Iron Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A single blade iron axe.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 31
+  },
+  "image": "data/images/weapon-699.png",
+  "file": "weapon-699.json"
+}

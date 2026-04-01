@@ -1,0 +1,33 @@
+{
+  "id": 184,
+  "name": "Green Tree",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-184.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Rice With Roast Pork",
+      "itemId": 7037,
+      "itemFile": "material-7037.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 24,
+    "hp": 150,
+    "sp": 100,
+    "catchable": "No",
+    "spd": 52,
+    "str": 9,
+    "con": 10,
+    "int": 5,
+    "wis": 4,
+    "agi": 8
+  }
+}

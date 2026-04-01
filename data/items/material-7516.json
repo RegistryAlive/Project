@@ -1,0 +1,17 @@
+{
+  "id": 7516,
+  "name": "Pachyrhizus",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "A Vegetable",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30
+  },
+  "image": "data/images/material-7516.png",
+  "file": "material-7516.json"
+}

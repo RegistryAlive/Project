@@ -1,0 +1,18 @@
+{
+  "id": 236,
+  "name": "Gold Twin blad",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Victoria's special weapon, twin swords made from gold.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55,
+    "SPD": 40
+  },
+  "image": "data/images/weapon-236.png",
+  "file": "weapon-236.json"
+}

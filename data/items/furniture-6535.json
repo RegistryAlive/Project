@@ -1,0 +1,15 @@
+{
+  "id": 6535,
+  "name": "Coconut Tree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, you can easily create a beach atmosphere with coconut tree shaped wall stickers",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6535.png",
+  "file": "furniture-6535.json"
+}

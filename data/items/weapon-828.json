@@ -1,0 +1,15 @@
+{
+  "id": 828,
+  "name": "Broken Fan",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Broken fan",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-828.png",
+  "file": "weapon-828.json"
+}

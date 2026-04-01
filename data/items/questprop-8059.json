@@ -1,0 +1,15 @@
+{
+  "id": 8059,
+  "name": "Picture Blade",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is from fresco",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8059.png",
+  "file": "questprop-8059.json"
+}

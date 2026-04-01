@@ -1,0 +1,15 @@
+{
+  "id": 6566,
+  "name": "Tombstone",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Western-style tombstone in the shape of small decorative",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6566.png",
+  "file": "furniture-6566.json"
+}

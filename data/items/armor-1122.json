@@ -1,0 +1,18 @@
+{
+  "id": 1122,
+  "name": "Gloomy Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Steel / Copper / Titanium",
+  "description": "The loricae used to help in an attack.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 33,
+    "ATK": 6
+  },
+  "image": "data/images/armor-1122.png",
+  "file": "armor-1122.json"
+}

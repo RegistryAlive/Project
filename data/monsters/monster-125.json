@@ -1,0 +1,39 @@
+{
+  "id": 125,
+  "name": "Big Sand Crab",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-125.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Crab Pincer",
+      "itemId": 7746,
+      "itemFile": "material-7746.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Crab Roes",
+      "itemId": 7498,
+      "itemFile": "material-7498.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tilapia",
+      "itemId": 7485,
+      "itemFile": "material-7485.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 48,
+    "hp": 504,
+    "sp": 290,
+    "catchable": "No",
+    "spd": 146,
+    "str": 33,
+    "con": 35,
+    "int": 20,
+    "wis": 19,
+    "agi": 37
+  }
+}

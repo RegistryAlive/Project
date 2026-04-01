@@ -1,0 +1,27 @@
+{
+  "id": 858,
+  "name": "Potato Monster (Quest)",
+  "location": "Revival Isle",
+  "image": "data/Monster_Images/monster-858.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 31,
+    "hp": 364,
+    "sp": 260,
+    "catchable": "Unknown",
+    "spd": 78.5,
+    "str": 15,
+    "con": 29,
+    "int": 13,
+    "wis": 20,
+    "agi": 16
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1790,
+  "name": "Golden Ears +5",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 60
+  },
+  "image": "data/images/helmet-1790.png",
+  "file": "helmet-1790.json"
+}

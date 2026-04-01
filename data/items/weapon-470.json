@@ -1,0 +1,18 @@
+{
+  "id": 470,
+  "name": "Jade Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Tin / Jade",
+  "description": "A staff with yellow jade embeded on the top.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 10,
+    "MDEF": 10
+  },
+  "image": "data/images/weapon-470.png",
+  "file": "weapon-470.json"
+}

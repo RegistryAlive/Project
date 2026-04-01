@@ -1,0 +1,18 @@
+{
+  "id": 33,
+  "name": "Magic Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Magic dragon Brock uses it's magic bones to transform into a broad sword. Can dispel all divine power. Can dispel all divine power.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 31,
+    "DEF": 31
+  },
+  "image": "data/images/weapon-33.png",
+  "file": "weapon-33.json"
+}

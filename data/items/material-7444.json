@@ -1,0 +1,17 @@
+{
+  "id": 7444,
+  "name": "Tomato",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "SP": 30
+  },
+  "image": "data/images/material-7444.png",
+  "file": "material-7444.json"
+}

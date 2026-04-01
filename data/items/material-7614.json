@@ -1,0 +1,15 @@
+{
+  "id": 7614,
+  "name": "Refined Iron Sand",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Pure Iron",
+  "description": "Semi finished iron sand",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7614.png",
+  "file": "material-7614.json"
+}

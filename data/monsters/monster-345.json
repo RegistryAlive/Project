@@ -1,0 +1,51 @@
+{
+  "id": 345,
+  "name": "Giant Holy Spirit (Quest)",
+  "location": "Stoowa Isle (Subterranean Maze)",
+  "image": "data/Monster_Images/monster-345.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Huge Hand",
+      "itemId": 7816,
+      "itemFile": "material-7816.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Quartz",
+      "itemId": 7605,
+      "itemFile": "material-7605.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Copper Ore",
+      "itemId": 7556,
+      "itemFile": "material-7556.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Emerald",
+      "itemId": 7593,
+      "itemFile": "material-7593.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 8500,
+    "sp": 860,
+    "catchable": "Unknown",
+    "spd": 237,
+    "str": 52,
+    "con": 58,
+    "int": 56,
+    "wis": 53,
+    "agi": 51
+  }
+}

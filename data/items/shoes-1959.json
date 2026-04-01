@@ -1,0 +1,18 @@
+{
+  "id": 1959,
+  "name": "Dark Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Fur",
+  "description": "Boots with defensive powers",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 22,
+    "SPD": 10
+  },
+  "image": "data/images/shoes-1959.png",
+  "file": "shoes-1959.json"
+}

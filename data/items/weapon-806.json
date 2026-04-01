@@ -1,0 +1,17 @@
+{
+  "id": 806,
+  "name": "The crystal ba",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "There are the properties of crystal ball",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3
+  },
+  "image": "data/images/weapon-806.png",
+  "file": "weapon-806.json"
+}

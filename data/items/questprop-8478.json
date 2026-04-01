@@ -1,0 +1,15 @@
+{
+  "id": 8478,
+  "name": "Flying Nimbus",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can be exchanged for Flying Nimbus tickets",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8478.png",
+  "file": "questprop-8478.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 944,
+  "name": "Sailor's Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Sailorwoman's uniform, very sultry and appealing.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-944.png",
+  "file": "armor-944.json"
+}

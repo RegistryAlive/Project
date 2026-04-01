@@ -1,0 +1,15 @@
+{
+  "id": 6576,
+  "name": "Classroom door",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Imitate the decorative sliding doors made in ordinary classrooms",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6576.png",
+  "file": "furniture-6576.json"
+}

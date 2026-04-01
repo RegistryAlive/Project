@@ -1,0 +1,18 @@
+{
+  "id": 21,
+  "name": "Crescent Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A Knife used specially to front cavalvy.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 19,
+    "DEF": 19
+  },
+  "image": "data/images/weapon-21.png",
+  "file": "weapon-21.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1980,
+  "name": "Phoenix boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A Phoenix shoes relic, mysterious effect after further investigation, only for women.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 199,
+    "SPD": 199
+  },
+  "image": "data/images/shoes-1980.png",
+  "file": "shoes-1980.json"
+}

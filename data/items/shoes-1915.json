@@ -1,0 +1,17 @@
+{
+  "id": 1915,
+  "name": "Groom's Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass / Leaf",
+  "description": "Groom's boots which is worn in weddings",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/shoes-1915.png",
+  "file": "shoes-1915.json"
+}

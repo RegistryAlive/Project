@@ -1,0 +1,15 @@
+{
+  "id": 8520,
+  "name": "7-Day Scroll",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Rare rewards can be exchanged with the Exchange Ambassador on the 1st floor of the Capitol Building.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8520.png",
+  "file": "questprop-8520.json"
+}

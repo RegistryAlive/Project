@@ -1,0 +1,45 @@
+{
+  "id": 49,
+  "name": "Chameleon",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-49.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Pineapple",
+      "itemId": 7445,
+      "itemFile": "material-7445.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 63,
+    "hp": 642,
+    "sp": 505,
+    "catchable": "Unknown",
+    "spd": 162.5,
+    "str": 44,
+    "con": 41,
+    "int": 37,
+    "wis": 33,
+    "agi": 34
+  }
+}

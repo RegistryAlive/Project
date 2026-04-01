@@ -1,0 +1,17 @@
+{
+  "id": 2069,
+  "name": "Resistent Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal)",
+  "description": "A necklace which can reflect magic",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 40
+  },
+  "image": "data/images/special-2069.png",
+  "file": "special-2069.json"
+}

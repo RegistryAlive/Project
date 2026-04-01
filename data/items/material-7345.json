@@ -1,0 +1,17 @@
+{
+  "id": 7345,
+  "name": "Ice Candy",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A blue Christmas candy in the shape of a cane, which can be used to craft Christmas furniture for a limited time.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 100
+  },
+  "image": "data/images/material-7345.png",
+  "file": "material-7345.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8151,
+  "name": "Luna's Key",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is the key for Luna",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8151.png",
+  "file": "questprop-8151.json"
+}

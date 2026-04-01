@@ -1,0 +1,15 @@
+{
+  "id": 8433,
+  "name": "Renamed Eraser",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "An item that can change the name of the player's character, will be destroyed immediately after use.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8433.png",
+  "file": "questprop-8433.json"
+}

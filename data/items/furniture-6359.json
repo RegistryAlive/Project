@@ -1,0 +1,15 @@
+{
+  "id": 6359,
+  "name": "Blue Window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pretty blue window",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6359.png",
+  "file": "furniture-6359.json"
+}

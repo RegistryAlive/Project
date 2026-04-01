@@ -1,0 +1,33 @@
+{
+  "id": 185,
+  "name": "Horrible Tree",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-185.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Rice With Roast Pork",
+      "itemId": 7037,
+      "itemFile": "material-7037.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 21,
+    "hp": 134,
+    "sp": 100,
+    "catchable": "No",
+    "spd": 47.5,
+    "str": 7,
+    "con": 9,
+    "int": 8,
+    "wis": 6,
+    "agi": 8
+  }
+}

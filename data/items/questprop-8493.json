@@ -1,0 +1,15 @@
+{
+  "id": 8493,
+  "name": "Rainsleep Tick",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can be exchanged for a ticket to listen to Yumian, and the transportation after it is issued cannot be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8493.png",
+  "file": "questprop-8493.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 582,
+  "name": "Wave Shifting Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Crystallization / Tin",
+  "description": "Magic wand made with a precious gem",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 26,
+    "MDEF": 12
+  },
+  "image": "data/images/weapon-582.png",
+  "file": "weapon-582.json"
+}

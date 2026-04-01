@@ -1,0 +1,15 @@
+{
+  "id": 2659,
+  "name": "Spirit Saddle",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "To upgrade magic defense",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2659.png",
+  "file": "special-2659.json"
+}

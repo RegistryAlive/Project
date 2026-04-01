@@ -1,0 +1,15 @@
+{
+  "id": 6704,
+  "name": "Frosty C Tree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The frosty white Christmas tree is covered with golden ornaments.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6704.png",
+  "file": "furniture-6704.json"
+}

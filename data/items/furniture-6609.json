@@ -1,0 +1,15 @@
+{
+  "id": 6609,
+  "name": "Xmas wis Maid",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Wearing Christmas costumes, high-tech robots that can help you guide pets",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6609.png",
+  "file": "furniture-6609.json"
+}

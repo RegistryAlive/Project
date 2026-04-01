@@ -1,0 +1,17 @@
+{
+  "id": 276,
+  "name": "War Steel Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Steel / Wood",
+  "description": "A halberd made from steel.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 28
+  },
+  "image": "data/images/weapon-276.png",
+  "file": "weapon-276.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8225,
+  "name": "Key of Babylon",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is said to be the key to the Hanging Garden",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8225.png",
+  "file": "questprop-8225.json"
+}

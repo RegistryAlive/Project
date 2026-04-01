@@ -1,0 +1,17 @@
+{
+  "id": 2904,
+  "name": "Forsaken Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Aluminum / Steel",
+  "description": "Forged with the best aluminum and steel",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 31
+  },
+  "image": "data/images/arm-2904.png",
+  "file": "arm-2904.json"
+}

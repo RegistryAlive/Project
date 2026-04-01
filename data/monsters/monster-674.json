@@ -1,0 +1,27 @@
+{
+  "id": 674,
+  "name": "Earth Hood Spirit (Quest)",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-674.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 69,
+    "hp": 1094,
+    "sp": 655,
+    "catchable": "Unknown",
+    "spd": 183.5,
+    "str": 44,
+    "con": 41,
+    "int": 39,
+    "wis": 43,
+    "agi": 40
+  }
+}

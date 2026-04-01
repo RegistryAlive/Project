@@ -1,0 +1,15 @@
+{
+  "id": 6700,
+  "name": "Christmas W.De",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Stars and colorful balls dangle between the leaves of the climbing vines.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6700.png",
+  "file": "furniture-6700.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6140,
+  "name": "Wooden Pedals",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 19,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wood",
+  "description": "Generates motion by human force",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6140.png",
+  "file": "furniture-6140.json"
+}

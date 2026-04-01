@@ -1,0 +1,15 @@
+{
+  "id": 7814,
+  "name": "River Boy Leaf",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leaf",
+  "description": "A Leaf in River Boy's hand with healing function.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7814.png",
+  "file": "material-7814.json"
+}

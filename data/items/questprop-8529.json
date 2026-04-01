@@ -1,0 +1,15 @@
+{
+  "id": 8529,
+  "name": "flint",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "One of the spar materials that can manifest the Wordless Book of Heaven",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8529.png",
+  "file": "questprop-8529.json"
+}

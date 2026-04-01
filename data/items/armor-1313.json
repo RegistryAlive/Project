@@ -1,0 +1,18 @@
+{
+  "id": 1313,
+  "name": "BG Evening Gow",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The formal dress used for the dinner is carefully sewn with top-quality fabrics. Each forging +1, MaxHP additional +2, up to 200",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "MDEF": 20
+  },
+  "image": "data/images/armor-1313.png",
+  "file": "armor-1313.json"
+}

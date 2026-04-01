@@ -1,0 +1,18 @@
+{
+  "id": 7055,
+  "name": "Ma Po Beancurd",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Bean / Meat",
+  "description": "Beancurd fried with lots of cayenne",
+  "size": "1x1",
+  "attributes": {
+    "HP": 125,
+    "SP": 125
+  },
+  "image": "data/images/material-7055.png",
+  "file": "material-7055.json"
+}

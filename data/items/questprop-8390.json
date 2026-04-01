@@ -1,0 +1,15 @@
+{
+  "id": 8390,
+  "name": "Bird god ex vo",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A voucher that can exchange bird god to become your partner, it is not tradeable.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8390.png",
+  "file": "questprop-8390.json"
+}

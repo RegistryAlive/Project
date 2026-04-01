@@ -1,0 +1,17 @@
+{
+  "id": 503,
+  "name": "Tear Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Crystallization / Titanium / Magic",
+  "description": "Countless tears, combined to release their power.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30
+  },
+  "image": "data/images/weapon-503.png",
+  "file": "weapon-503.json"
+}

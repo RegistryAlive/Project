@@ -1,0 +1,17 @@
+{
+  "id": 2255,
+  "name": "Smart Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To slightly upgrade agility",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 4
+  },
+  "image": "data/images/special-2255.png",
+  "file": "special-2255.json"
+}

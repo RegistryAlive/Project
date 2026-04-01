@@ -1,0 +1,51 @@
+{
+  "id": 244,
+  "name": "Sheep",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-244.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chinese Cabbage",
+      "itemId": 7405,
+      "itemFile": "material-7405.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bay Leaves",
+      "itemId": 7409,
+      "itemFile": "material-7409.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sheepskin",
+      "itemId": 7683,
+      "itemFile": "material-7683.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 45,
+    "hp": 348,
+    "sp": 344,
+    "catchable": "Unknown",
+    "spd": 125.5,
+    "str": 28,
+    "con": 28,
+    "int": 36,
+    "wis": 24,
+    "agi": 29
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2919,
+  "name": "Maple Bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Keep the beautiful scenery of falling red leaves by your side forever. (If you change the shape of the bracelet, the special effects will disappear together)",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/arm-2919.png",
+  "file": "arm-2919.json"
+}

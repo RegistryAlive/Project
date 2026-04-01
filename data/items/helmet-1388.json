@@ -1,0 +1,18 @@
+{
+  "id": 1388,
+  "name": "Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Wood / Grass",
+  "description": "A bamboo hat which is made up of bamboo leaves",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 9,
+    "ATK": 4
+  },
+  "image": "data/images/helmet-1388.png",
+  "file": "helmet-1388.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 611,
+  "name": "Businessman",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-611.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 647,
+    "sp": 564,
+    "catchable": "Unknown",
+    "spd": 187,
+    "str": 43,
+    "con": 50,
+    "int": 40,
+    "wis": 36,
+    "agi": 41
+  }
+}

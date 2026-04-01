@@ -1,0 +1,18 @@
+{
+  "id": 1896,
+  "name": "Purple Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Flower / Gold",
+  "description": "Boots that have excellent flexibility and defence.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 16,
+    "MATK": 8
+  },
+  "image": "data/images/shoes-1896.png",
+  "file": "shoes-1896.json"
+}

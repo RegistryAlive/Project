@@ -1,0 +1,15 @@
+{
+  "id": 7810,
+  "name": "Dinosaur Bone",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "A Huge bone of a dinosaur",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7810.png",
+  "file": "material-7810.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1077,
+  "name": "Jade Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Copper / Steel / Titanium",
+  "description": "Scales of gold and adamantine for good power.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 37
+  },
+  "image": "data/images/armor-1077.png",
+  "file": "armor-1077.json"
+}

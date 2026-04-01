@@ -1,0 +1,18 @@
+{
+  "id": 1230,
+  "name": "Demon costume",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dark blue armor with silver ornaments, dress imitating the shape of a devil, is popular with those who love cold style",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 30,
+    "DefShoot": 0
+  },
+  "image": "data/images/armor-1230.png",
+  "file": "armor-1230.json"
+}

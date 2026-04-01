@@ -1,0 +1,27 @@
+{
+  "id": 869,
+  "name": "Red Evil Spirit",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-869.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 58,
+    "hp": 504,
+    "sp": 555,
+    "catchable": "Unknown",
+    "spd": 157,
+    "str": 27,
+    "con": 32,
+    "int": 42,
+    "wis": 38,
+    "agi": 35
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 554,
+  "name": "Anubis",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-554.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 173,
+    "hp": 57000,
+    "sp": 10000,
+    "catchable": "Unknown",
+    "spd": 659.5,
+    "str": 222,
+    "con": 230,
+    "int": 190,
+    "wis": 196,
+    "agi": 200
+  }
+}

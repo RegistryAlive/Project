@@ -1,0 +1,17 @@
+{
+  "id": 810,
+  "name": "Earth scrolls",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": null,
+  "description": "Earthy blessing scrolls",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 7
+  },
+  "image": "data/images/weapon-810.png",
+  "file": "weapon-810.json"
+}

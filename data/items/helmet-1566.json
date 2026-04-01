@@ -1,0 +1,18 @@
+{
+  "id": 1566,
+  "name": "Purple Headband",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Fur / Leather",
+  "description": "Purple headband made from beast fur",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 22,
+    "SPD": 5
+  },
+  "image": "data/images/helmet-1566.png",
+  "file": "helmet-1566.json"
+}

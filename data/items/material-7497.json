@@ -1,0 +1,17 @@
+{
+  "id": 7497,
+  "name": "Shrimp",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "A Shell kind of seafood",
+  "size": "1x1",
+  "attributes": {
+    "HP": 10
+  },
+  "image": "data/images/material-7497.png",
+  "file": "material-7497.json"
+}

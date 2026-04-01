@@ -1,0 +1,18 @@
+{
+  "id": 499,
+  "name": "Special Stick",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Tin / Quartz (Crystal)",
+  "description": "A cane built specialy for celebrities in India",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 11,
+    "MDEF": 11
+  },
+  "image": "data/images/weapon-499.png",
+  "file": "weapon-499.json"
+}

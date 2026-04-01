@@ -1,0 +1,15 @@
+{
+  "id": 6402,
+  "name": "Material Cabinet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Cabinet used to keep materials",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6402.png",
+  "file": "furniture-6402.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 854,
+  "name": "Emmagee",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 21,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A powerful rigid gun",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30
+  },
+  "image": "data/images/weapon-854.png",
+  "file": "weapon-854.json"
+}

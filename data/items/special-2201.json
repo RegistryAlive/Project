@@ -1,0 +1,18 @@
+{
+  "id": 2201,
+  "name": "Fierce Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Armlet making the wearer tough.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 75,
+    "DEF": 75
+  },
+  "image": "data/images/special-2201.png",
+  "file": "special-2201.json"
+}

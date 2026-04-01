@@ -1,0 +1,18 @@
+{
+  "id": 51,
+  "name": "Crescent Machete",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Wood / Steel / Titanium",
+  "description": "Made of wood and steel, this simple weapon is a fearsome sight.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 48,
+    "DEF": 10
+  },
+  "image": "data/images/weapon-51.png",
+  "file": "weapon-51.json"
+}

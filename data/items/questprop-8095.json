@@ -1,0 +1,15 @@
+{
+  "id": 8095,
+  "name": "Key of Blue Box",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is the key to the mysterious blue box",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8095.png",
+  "file": "questprop-8095.json"
+}

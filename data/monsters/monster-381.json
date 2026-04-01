@@ -1,0 +1,45 @@
+{
+  "id": 381,
+  "name": "Yellow Triceratops",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-381.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Luffa",
+      "itemId": 7420,
+      "itemFile": "material-7420.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cotton",
+      "itemId": 7358,
+      "itemFile": "material-7358.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Fur",
+      "itemId": 7812,
+      "itemFile": "material-7812.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 69,
+    "hp": 736,
+    "sp": 628,
+    "catchable": "Unknown",
+    "spd": 173.5,
+    "str": 44,
+    "con": 46,
+    "int": 41,
+    "wis": 41,
+    "agi": 35
+  }
+}

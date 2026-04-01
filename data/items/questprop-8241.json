@@ -1,0 +1,15 @@
+{
+  "id": 8241,
+  "name": "Common Pail",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A pail full of clear water.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8241.png",
+  "file": "questprop-8241.json"
+}

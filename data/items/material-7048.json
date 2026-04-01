@@ -1,0 +1,18 @@
+{
+  "id": 7048,
+  "name": "Souffles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "French confection",
+  "size": "1x1",
+  "attributes": {
+    "HP": 130,
+    "SP": 70
+  },
+  "image": "data/images/material-7048.png",
+  "file": "material-7048.json"
+}

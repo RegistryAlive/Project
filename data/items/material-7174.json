@@ -1,0 +1,17 @@
+{
+  "id": 7174,
+  "name": "Great Ginseng",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Herbal Medicine",
+  "description": "It is invigorant to refresh oneself",
+  "size": "1x1",
+  "attributes": {
+    "SP": 400
+  },
+  "image": "data/images/material-7174.png",
+  "file": "material-7174.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 727,
+  "name": "Long ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": null,
+  "description": "To ax made of stone with magic stones",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 27
+  },
+  "image": "data/images/weapon-727.png",
+  "file": "weapon-727.json"
+}

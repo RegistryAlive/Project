@@ -1,0 +1,18 @@
+{
+  "id": 1329,
+  "name": "Emerald Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Light and airy classical dress, embroidered with emerald green flowers on silk. For every +2 forged, an additional +1 to SPD, up to a maximum of +50.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 250,
+    "SPD": 20
+  },
+  "image": "data/images/armor-1329.png",
+  "file": "armor-1329.json"
+}

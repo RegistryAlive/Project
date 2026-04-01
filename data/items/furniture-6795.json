@@ -1,0 +1,15 @@
+{
+  "id": 6795,
+  "name": "Carpenters Lathe",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": null,
+  "description": "It can cut and process wood",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6795.png",
+  "file": "furniture-6795.json"
+}

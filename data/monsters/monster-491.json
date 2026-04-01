@@ -1,0 +1,33 @@
+{
+  "id": 491,
+  "name": "Green Shark",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-491.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Fruit Berry Syrup",
+      "itemId": 7300,
+      "itemFile": "material-7300.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 145,
+    "hp": 1029,
+    "sp": 691,
+    "catchable": "No",
+    "spd": 309.5,
+    "str": 48,
+    "con": 47,
+    "int": 43,
+    "wis": 33,
+    "agi": 46
+  }
+}

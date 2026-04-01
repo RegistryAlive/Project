@@ -1,0 +1,17 @@
+{
+  "id": 1843,
+  "name": "Grain Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "Shoes which are made up by haulm",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 2
+  },
+  "image": "data/images/shoes-1843.png",
+  "file": "shoes-1843.json"
+}

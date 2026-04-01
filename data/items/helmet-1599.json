@@ -1,0 +1,17 @@
+{
+  "id": 1599,
+  "name": "Goldgleam Helm",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Gold / Steel",
+  "description": "A warrior helm forged from solid gold.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 24
+  },
+  "image": "data/images/helmet-1599.png",
+  "file": "helmet-1599.json"
+}

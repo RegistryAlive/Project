@@ -1,0 +1,15 @@
+{
+  "id": 8214,
+  "name": "Chaos Book",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Four tidies books",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8214.png",
+  "file": "questprop-8214.json"
+}

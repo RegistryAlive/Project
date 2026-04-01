@@ -1,0 +1,18 @@
+{
+  "id": 101,
+  "name": "Nutcracker",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A tough blade that has survived many battles; when equipped with other Nutcracker series equipment, it can increase the damage of swords and muskets.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "SPD": 25
+  },
+  "image": "data/images/weapon-101.png",
+  "file": "weapon-101.json"
+}

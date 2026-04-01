@@ -1,0 +1,17 @@
+{
+  "id": 7487,
+  "name": "Sardine",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "Common fish, from a can",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30
+  },
+  "image": "data/images/material-7487.png",
+  "file": "material-7487.json"
+}

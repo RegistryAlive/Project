@@ -1,0 +1,15 @@
+{
+  "id": 6782,
+  "name": "French Window-1",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": null,
+  "description": "It can extend from the floor. Used for clear air.",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6782.png",
+  "file": "furniture-6782.json"
+}

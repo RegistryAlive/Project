@@ -1,0 +1,15 @@
+{
+  "id": 8459,
+  "name": "Copper coins",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Collect a certain amount of rare copper coins that can be exchanged for prizes",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8459.png",
+  "file": "questprop-8459.json"
+}

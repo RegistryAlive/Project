@@ -1,0 +1,15 @@
+{
+  "id": 6727,
+  "name": "BG Macaron Sea",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Macaron-shaped chair cushions in Christmas colors",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6727.png",
+  "file": "furniture-6727.json"
+}

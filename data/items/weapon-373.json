@@ -1,0 +1,18 @@
+{
+  "id": 373,
+  "name": "Fire Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The legendary spear full of heat. 40% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "MaxHP": 480
+  },
+  "image": "data/images/weapon-373.png",
+  "file": "weapon-373.json"
+}

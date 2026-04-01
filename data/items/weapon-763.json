@@ -1,0 +1,18 @@
+{
+  "id": 763,
+  "name": "Hammer",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A mallet made of high-density iron block",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 24,
+    "DEF": 26
+  },
+  "image": "data/images/weapon-763.png",
+  "file": "weapon-763.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 1723,
+  "name": "Plush Kitten",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The cat on your head stays with you through the winter, and everyone who passes by has to take a second look at you.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1723.png",
+  "file": "helmet-1723.json"
+}

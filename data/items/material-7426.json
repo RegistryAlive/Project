@@ -1,0 +1,18 @@
+{
+  "id": 7426,
+  "name": "String Beens..",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Type of bean that is grow every season.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 10,
+    "SP": 10
+  },
+  "image": "data/images/material-7426.png",
+  "file": "material-7426.json"
+}

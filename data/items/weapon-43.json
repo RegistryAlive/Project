@@ -1,0 +1,18 @@
+{
+  "id": 43,
+  "name": "Warm Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Steel / Magic",
+  "description": "Exuding warmth, it has unmatched cutting ability.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "SPD": 16
+  },
+  "image": "data/images/weapon-43.png",
+  "file": "weapon-43.json"
+}

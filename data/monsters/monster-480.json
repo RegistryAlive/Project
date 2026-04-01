@@ -1,0 +1,33 @@
+{
+  "id": 480,
+  "name": "Blue Shark",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-480.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fruit Berry Syrup",
+      "itemId": 7300,
+      "itemFile": "material-7300.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 143,
+    "hp": 968,
+    "sp": 719,
+    "catchable": "No",
+    "spd": 300.5,
+    "str": 50,
+    "con": 44,
+    "int": 41,
+    "wis": 35,
+    "agi": 43
+  }
+}

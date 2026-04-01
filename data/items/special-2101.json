@@ -1,0 +1,18 @@
+{
+  "id": 2101,
+  "name": "Fighting Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "A medal which can enhance attack and defense.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 4,
+    "DEF": 2
+  },
+  "image": "data/images/special-2101.png",
+  "file": "special-2101.json"
+}

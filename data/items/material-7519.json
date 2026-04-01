@@ -1,0 +1,17 @@
+{
+  "id": 7519,
+  "name": "Fresh Apple",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "The bad queen used it to frame a more pretty lady.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30
+  },
+  "image": "data/images/material-7519.png",
+  "file": "material-7519.json"
+}

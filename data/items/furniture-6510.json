@@ -1,0 +1,15 @@
+{
+  "id": 6510,
+  "name": "Candlestick",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The Christmas candlestick decorated with gorgeous ornaments makes people feel warm and relaxed under the flickering candlelight",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6510.png",
+  "file": "furniture-6510.json"
+}

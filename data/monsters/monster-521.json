@@ -1,0 +1,45 @@
+{
+  "id": 521,
+  "name": "Fierce Hippo",
+  "location": "Taiwan (Carnie) - Pleasure Island",
+  "image": "data/Monster_Images/monster-521.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lemon",
+      "itemId": 7449,
+      "itemFile": "material-7449.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tomato",
+      "itemId": 7444,
+      "itemFile": "material-7444.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 660,
+    "sp": 675,
+    "catchable": "Unknown",
+    "spd": 196.5,
+    "str": 36,
+    "con": 40,
+    "int": 48,
+    "wis": 44,
+    "agi": 45
+  }
+}

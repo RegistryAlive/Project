@@ -1,0 +1,33 @@
+{
+  "id": 174,
+  "name": "Skeleton Leader",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-174.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Bread",
+      "itemId": 7010,
+      "itemFile": "material-7010.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "French Bread",
+      "itemId": 7015,
+      "itemFile": "material-7015.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 94,
+    "hp": 731,
+    "sp": 670,
+    "catchable": "Unknown",
+    "spd": 231,
+    "str": 57,
+    "con": 51,
+    "int": 43,
+    "wis": 39,
+    "agi": 45
+  }
+}

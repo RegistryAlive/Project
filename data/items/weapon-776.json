@@ -1,0 +1,15 @@
+{
+  "id": 776,
+  "name": "Attack Pestl+2",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 19,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Reduces the character's attack by 50% and also the target's SP by 80%. Can be enhanced but not socketed. However, its durability will diminish quickly during fights with monsters or players. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-776.png",
+  "file": "weapon-776.json"
+}

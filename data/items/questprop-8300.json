@@ -1,0 +1,15 @@
+{
+  "id": 8300,
+  "name": "Amber Necklace",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Breaks an evil spell, will be disappear after use",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8300.png",
+  "file": "questprop-8300.json"
+}

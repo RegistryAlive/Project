@@ -1,0 +1,15 @@
+{
+  "id": 6081,
+  "name": "AD Converter",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Transfers DC to AC",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6081.png",
+  "file": "furniture-6081.json"
+}

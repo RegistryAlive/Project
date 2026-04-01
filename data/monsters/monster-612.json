@@ -1,0 +1,27 @@
+{
+  "id": 612,
+  "name": "Camel",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-612.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 64,
+    "hp": 714,
+    "sp": 481,
+    "catchable": "Unknown",
+    "spd": 140,
+    "str": 35,
+    "con": 46,
+    "int": 58,
+    "wis": 31,
+    "agi": 22
+  }
+}

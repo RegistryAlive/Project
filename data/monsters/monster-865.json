@@ -1,0 +1,27 @@
+{
+  "id": 865,
+  "name": "Pucca",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-865.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 10,
+    "hp": 97,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 25,
+    "str": 6,
+    "con": 8,
+    "int": 6,
+    "wis": 5,
+    "agi": 5
+  }
+}

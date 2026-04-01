@@ -1,0 +1,15 @@
+{
+  "id": 7743,
+  "name": "Bird N. Shreds",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Cannot be consumed as shreds",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7743.png",
+  "file": "material-7743.json"
+}

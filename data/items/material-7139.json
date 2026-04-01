@@ -1,0 +1,17 @@
+{
+  "id": 7139,
+  "name": "Fried Cabbage",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Delicious fried Cabbage",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100
+  },
+  "image": "data/images/material-7139.png",
+  "file": "material-7139.json"
+}

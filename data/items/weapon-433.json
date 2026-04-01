@@ -1,0 +1,18 @@
+{
+  "id": 433,
+  "name": "Thor Xbow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Rumoured to be the bow held by Thor",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "SPD": 28
+  },
+  "image": "data/images/weapon-433.png",
+  "file": "weapon-433.json"
+}

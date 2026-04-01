@@ -1,0 +1,15 @@
+{
+  "id": 6664,
+  "name": "TanabataBamboo",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The various short books that carry people's wishes are hung high, I wonder if the stars can be heard.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6664.png",
+  "file": "furniture-6664.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 137,
+  "name": "Rip Iron Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "Made from iron forged into a three edged blade.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 24,
+    "SPD": 24
+  },
+  "image": "data/images/weapon-137.png",
+  "file": "weapon-137.json"
+}

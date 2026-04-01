@@ -1,0 +1,15 @@
+{
+  "id": 9033,
+  "name": "Whetstone",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used on the work platform to mill sword.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/tool-9033.png",
+  "file": "tool-9033.json"
+}

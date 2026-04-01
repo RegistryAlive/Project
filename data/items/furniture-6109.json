@@ -1,0 +1,15 @@
+{
+  "id": 6109,
+  "name": "Bottle",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is melted from glass",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6109.png",
+  "file": "furniture-6109.json"
+}

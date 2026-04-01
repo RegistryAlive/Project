@@ -1,0 +1,18 @@
+{
+  "id": 324,
+  "name": "Athena's Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 50,
+  "level": 100,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Spear used by the goddess Athena.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "MATK": 50
+  },
+  "image": "data/images/weapon-324.png",
+  "file": "weapon-324.json"
+}

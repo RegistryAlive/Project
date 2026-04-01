@@ -1,0 +1,18 @@
+{
+  "id": 743,
+  "name": "Big Oak Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Wood",
+  "description": "It is made of an oak, and the size is bigger than usual.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 4,
+    "DEF": 6
+  },
+  "image": "data/images/weapon-743.png",
+  "file": "weapon-743.json"
+}

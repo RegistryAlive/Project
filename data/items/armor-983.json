@@ -1,0 +1,18 @@
+{
+  "id": 983,
+  "name": "Knight's Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Iron / Copper",
+  "description": "Armor made from pure steel,decorated with symbols.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 24,
+    "ATK": 7
+  },
+  "image": "data/images/armor-983.png",
+  "file": "armor-983.json"
+}

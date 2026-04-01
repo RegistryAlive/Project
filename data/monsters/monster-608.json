@@ -1,0 +1,27 @@
+{
+  "id": 608,
+  "name": "Boy",
+  "location": "Mayan Tribe",
+  "image": "data/Monster_Images/monster-608.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 126,
+    "hp": 1622,
+    "sp": 934,
+    "catchable": "Unknown",
+    "spd": 395,
+    "str": 82,
+    "con": 85,
+    "int": 57,
+    "wis": 51,
+    "agi": 103
+  }
+}

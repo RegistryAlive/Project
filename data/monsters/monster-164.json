@@ -1,0 +1,27 @@
+{
+  "id": 164,
+  "name": "Pirate",
+  "location": "Ancient Yazhou City",
+  "image": "data/Monster_Images/monster-164.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Bread",
+      "itemId": 7010,
+      "itemFile": "material-7010.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 629,
+    "sp": 459,
+    "catchable": "Unknown",
+    "spd": 202.5,
+    "str": 56,
+    "con": 48,
+    "int": 33,
+    "wis": 28,
+    "agi": 48
+  }
+}

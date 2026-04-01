@@ -1,0 +1,17 @@
+{
+  "id": 2893,
+  "name": "Dreaming Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Feather / Flower / Magic",
+  "description": "Bracers with magic powers",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 33
+  },
+  "image": "data/images/arm-2893.png",
+  "file": "arm-2893.json"
+}

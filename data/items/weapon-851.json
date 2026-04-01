@@ -1,0 +1,17 @@
+{
+  "id": 851,
+  "name": "Great Bazooka",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Iron / Wood",
+  "description": "Bazooka added the foresight",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45
+  },
+  "image": "data/images/weapon-851.png",
+  "file": "weapon-851.json"
+}

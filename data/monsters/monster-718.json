@@ -1,0 +1,27 @@
+{
+  "id": 718,
+  "name": "Gold Eagle (Trojan War)",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-718.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 145,
+    "hp": 65000,
+    "sp": 9900,
+    "catchable": "Unknown",
+    "spd": 217.5,
+    "str": 0,
+    "con": 1000,
+    "int": 0,
+    "wis": 600,
+    "agi": 0
+  }
+}

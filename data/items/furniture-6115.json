@@ -1,0 +1,15 @@
+{
+  "id": 6115,
+  "name": "Life Crystal",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Magic",
+  "description": "Melted with a tear crystal, contains mana.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6115.png",
+  "file": "furniture-6115.json"
+}

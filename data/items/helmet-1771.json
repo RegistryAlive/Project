@@ -1,0 +1,18 @@
+{
+  "id": 1771,
+  "name": "Sage's Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Flower / Copper",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 6,
+    "MDEF": 12
+  },
+  "image": "data/images/helmet-1771.png",
+  "file": "helmet-1771.json"
+}

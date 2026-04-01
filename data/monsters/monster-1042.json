@@ -1,0 +1,39 @@
+{
+  "id": 1042,
+  "name": "Donatello",
+  "location": "Turtle Isle",
+  "image": "data/Monster_Images/monster-1043.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 113,
+    "hp": 1145,
+    "sp": 1218,
+    "catchable": "Unknown",
+    "spd": 237.5,
+    "str": 76,
+    "con": 80,
+    "int": 77,
+    "wis": 72,
+    "agi": 34
+  }
+}

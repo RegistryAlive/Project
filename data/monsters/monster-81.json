@@ -1,0 +1,51 @@
+{
+  "id": 81,
+  "name": "Chicken",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-81.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Funny Feather",
+      "itemId": 7661,
+      "itemFile": "material-7661.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cole",
+      "itemId": 7406,
+      "itemFile": "material-7406.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Egg",
+      "itemId": 7502,
+      "itemFile": "material-7502.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Feather",
+      "itemId": 7659,
+      "itemFile": "material-7659.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 13,
+    "hp": 110,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 35.5,
+    "str": 8,
+    "con": 9,
+    "int": 7,
+    "wis": 7,
+    "agi": 8
+  }
+}

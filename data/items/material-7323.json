@@ -1,0 +1,18 @@
+{
+  "id": 7323,
+  "name": "Takoyaki",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Nosh from Japan that has mysterious effect.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 700,
+    "HP": 300
+  },
+  "image": "data/images/material-7323.png",
+  "file": "material-7323.json"
+}

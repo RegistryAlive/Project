@@ -1,0 +1,15 @@
+{
+  "id": 2736,
+  "name": "Archange wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Imitate the gorgeous wings made by an archangel",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2736.png",
+  "file": "special-2736.json"
+}

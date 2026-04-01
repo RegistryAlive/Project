@@ -1,0 +1,17 @@
+{
+  "id": 7225,
+  "name": "Garlic Sepia",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "Delicious Roast Cuttlefish",
+  "size": "1x1",
+  "attributes": {
+    "HP": 410
+  },
+  "image": "data/images/material-7225.png",
+  "file": "material-7225.json"
+}

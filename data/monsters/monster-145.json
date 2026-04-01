@@ -1,0 +1,39 @@
+{
+  "id": 145,
+  "name": "Swift Horse",
+  "location": "Korea (Inchon)",
+  "image": "data/Monster_Images/monster-145.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Red Bean",
+      "itemId": 7467,
+      "itemFile": "material-7467.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Persian Mum",
+      "itemId": 7374,
+      "itemFile": "material-7374.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 73,
+    "hp": 753,
+    "sp": 667,
+    "catchable": "Unknown",
+    "spd": 211.5,
+    "str": 43,
+    "con": 46,
+    "int": 36,
+    "wis": 43,
+    "agi": 51
+  }
+}

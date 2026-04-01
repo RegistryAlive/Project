@@ -1,0 +1,18 @@
+{
+  "id": 2000,
+  "name": "Plum cat shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is rumored that the shoes worn by the pink cat messenger in the devil world",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "SPD": 20
+  },
+  "image": "data/images/shoes-2000.png",
+  "file": "shoes-2000.json"
+}

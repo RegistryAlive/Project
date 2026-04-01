@@ -1,0 +1,18 @@
+{
+  "id": 421,
+  "name": "Impact Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The body of the bow has been specially modified, to accelerate further due to reduced wind resistance after launch.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "SPD": 16
+  },
+  "image": "data/images/weapon-421.png",
+  "file": "weapon-421.json"
+}

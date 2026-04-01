@@ -1,0 +1,15 @@
+{
+  "id": 7641,
+  "name": "Red Clay",
+  "type": "MaterialClay",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Red Clay",
+  "description": "Used for making a bucket",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7641.png",
+  "file": "material-7641.json"
+}

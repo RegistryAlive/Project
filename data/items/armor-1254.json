@@ -1,0 +1,17 @@
+{
+  "id": 1254,
+  "name": "Chinese clothi",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Traditional costumes that have been passed down for many years in the ancient countries of the Far East. Each forging +1, MaxHP extra +2, up to 200",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 430
+  },
+  "image": "data/images/armor-1254.png",
+  "file": "armor-1254.json"
+}

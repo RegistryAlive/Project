@@ -1,0 +1,18 @@
+{
+  "id": 14,
+  "name": "Copper Saber",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A Saber made from copper",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "DEF": 12
+  },
+  "image": "data/images/weapon-14.png",
+  "file": "weapon-14.json"
+}

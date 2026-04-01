@@ -1,0 +1,17 @@
+{
+  "id": 2170,
+  "name": "White Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": "Titanium / Mercury / Magic",
+  "description": "Cross necklace hiding strong life energy",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 20
+  },
+  "image": "data/images/special-2170.png",
+  "file": "special-2170.json"
+}

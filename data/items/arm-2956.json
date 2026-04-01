@@ -1,0 +1,18 @@
+{
+  "id": 2956,
+  "name": "Summer Bracele",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Sunshine, sea, and dolphins are another midsummer coming; the anti-seal effect is 10% (if you change the shape of the bracelet, the effect will disappear together)",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "Special": 10
+  },
+  "image": "data/images/arm-2956.png",
+  "file": "arm-2956.json"
+}

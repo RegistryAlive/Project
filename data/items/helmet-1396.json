@@ -1,0 +1,17 @@
+{
+  "id": 1396,
+  "name": "Gold Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Gold / Iron / Quartz (Crystal)",
+  "description": "A helmet made of pure gold having good ductibility",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20
+  },
+  "image": "data/images/helmet-1396.png",
+  "file": "helmet-1396.json"
+}

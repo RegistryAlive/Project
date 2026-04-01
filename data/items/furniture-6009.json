@@ -1,0 +1,15 @@
+{
+  "id": 6009,
+  "name": "Round Saw",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "A thin metal blade with a sharp toothed edge.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6009.png",
+  "file": "furniture-6009.json"
+}

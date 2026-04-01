@@ -1,0 +1,18 @@
+{
+  "id": 1776,
+  "name": "Energy Halo +1",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 1,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Strenghtened Energy Halo.",
+  "size": "1x1",
+  "attributes": {
+    "MAXHP": 100,
+    "MAXSP": 100
+  },
+  "image": "data/images/helmet-1776.png",
+  "file": "helmet-1776.json"
+}

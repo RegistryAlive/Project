@@ -1,0 +1,18 @@
+{
+  "id": 964,
+  "name": "Hemp Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "clothes which is made form burlap",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 7,
+    "MDEF": 5
+  },
+  "image": "data/images/armor-964.png",
+  "file": "armor-964.json"
+}

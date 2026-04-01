@@ -1,0 +1,17 @@
+{
+  "id": 963,
+  "name": "Golden Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Leather / Flower",
+  "description": "clothes which is made of golden yellow leather",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 11
+  },
+  "image": "data/images/armor-963.png",
+  "file": "armor-963.json"
+}

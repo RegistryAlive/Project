@@ -1,0 +1,17 @@
+{
+  "id": 721,
+  "name": "Holy Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A relic of the past, ax used by ancient gods, no one was able to exert it's full potential.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 75
+  },
+  "image": "data/images/weapon-721.png",
+  "file": "weapon-721.json"
+}

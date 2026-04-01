@@ -1,0 +1,18 @@
+{
+  "id": 1383,
+  "name": "Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Leaf / Grass",
+  "description": "A laurel which is made up by commom leaf",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 5,
+    "MDEF": 3
+  },
+  "image": "data/images/helmet-1383.png",
+  "file": "helmet-1383.json"
+}

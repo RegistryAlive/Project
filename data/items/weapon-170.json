@@ -1,0 +1,18 @@
+{
+  "id": 170,
+  "name": "Gan-jiang",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 67,
+  "level": 134,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword forged by a swordsmith couple. Using flesh and blood, has the ability to penetrate the earth.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 67,
+    "SPD": 67
+  },
+  "image": "data/images/weapon-170.png",
+  "file": "weapon-170.json"
+}

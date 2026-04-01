@@ -1,0 +1,18 @@
+{
+  "id": 1316,
+  "name": "college unifo",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cut from blue fabric, this is a youthful academy uniform. Every forging +1, MaxHP extra +2, up to 200",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 300,
+    "SPD": 15
+  },
+  "image": "data/images/armor-1316.png",
+  "file": "armor-1316.json"
+}

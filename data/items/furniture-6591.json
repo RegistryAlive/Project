@@ -1,0 +1,15 @@
+{
+  "id": 6591,
+  "name": "Christmas Tree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "An indispensable decoration in the Christmas home, symbolizing the coming of Christmas",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6591.png",
+  "file": "furniture-6591.json"
+}

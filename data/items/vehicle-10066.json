@@ -1,0 +1,17 @@
+{
+  "id": 10066,
+  "name": "Rabbit Balloon",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A rabbit-shaped hot air balloon that uses liquid gas as fuel.",
+  "size": "4x7",
+  "attributes": {
+    "SPECIAL": 36975
+  },
+  "image": "data/images/vehicle-10066.png",
+  "file": "vehicle-10066.json"
+}

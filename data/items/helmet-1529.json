@@ -1,0 +1,18 @@
+{
+  "id": 1529,
+  "name": "Rainy Doll",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Flower / Jade",
+  "description": "The broken jade inside can beckon rain.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 21,
+    "MaxSP": 50
+  },
+  "image": "data/images/helmet-1529.png",
+  "file": "helmet-1529.json"
+}

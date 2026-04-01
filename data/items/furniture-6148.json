@@ -1,0 +1,15 @@
+{
+  "id": 6148,
+  "name": "Mast",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Fixes the canvas",
+  "size": "4x2",
+  "attributes": {},
+  "image": "data/images/furniture-6148.png",
+  "file": "furniture-6148.json"
+}

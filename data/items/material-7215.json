@@ -1,0 +1,17 @@
+{
+  "id": 7215,
+  "name": "Pork Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Vegetable / Meat",
+  "description": "Noodles with assorted vegetable and Meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 590
+  },
+  "image": "data/images/material-7215.png",
+  "file": "material-7215.json"
+}

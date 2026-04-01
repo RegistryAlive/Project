@@ -1,0 +1,18 @@
+{
+  "id": 11,
+  "name": "Iron Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Iron / Wood",
+  "description": "A Falchion made from iron",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 9,
+    "DEF": 9
+  },
+  "image": "data/images/weapon-11.png",
+  "file": "weapon-11.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6654,
+  "name": "Ocean Window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The round viewing window allows you to enjoy the beautiful scenery of the underwater sea.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6654.png",
+  "file": "furniture-6654.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6153,
+  "name": "Power of Jalor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Main power device of a jalor",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6153.png",
+  "file": "furniture-6153.json"
+}

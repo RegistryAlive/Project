@@ -1,0 +1,18 @@
+{
+  "id": 2913,
+  "name": "Breezy Ring",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The metal bracelet from the ancient country of Dongying will feel cool when the skin touches the bracelet. Complete four-piece suit effect: SPD+100",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MaxSP": 30
+  },
+  "image": "data/images/arm-2913.png",
+  "file": "arm-2913.json"
+}

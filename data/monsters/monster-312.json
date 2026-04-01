@@ -1,0 +1,51 @@
+{
+  "id": 312,
+  "name": "Blue Flower",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-312.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Fresh Apple",
+      "itemId": 7519,
+      "itemFile": "material-7519.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Nectar",
+      "itemId": 7531,
+      "itemFile": "material-7531.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Golden Apple",
+      "itemId": 7517,
+      "itemFile": "material-7517.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Vine",
+      "itemId": 7362,
+      "itemFile": "material-7362.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Paper Grass",
+      "itemId": 7364,
+      "itemFile": "material-7364.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 684,
+    "sp": 658,
+    "catchable": "Yes",
+    "spd": 177,
+    "str": 45,
+    "con": 42,
+    "int": 44,
+    "wis": 43,
+    "agi": 36
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 872,
+  "name": "Samurai Katana (Instance)",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 2,
+  "level": 40,
+  "rarity": "common",
+  "base": "Iron / Wood",
+  "description": "The sword that made japans warriors feared",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 24,
+    "DEF": 9
+  },
+  "image": "data/images/weapon-872.png",
+  "file": "weapon-872.json"
+}

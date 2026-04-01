@@ -1,0 +1,18 @@
+{
+  "id": 1126,
+  "name": "Red Bellyband",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 6,
+  "level": 0,
+  "rarity": "rare",
+  "base": "N/A",
+  "description": "Special for Victoria, cannot be repaired.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "MaxHP": 200
+  },
+  "image": "data/images/armor-1126.png",
+  "file": "armor-1126.json"
+}

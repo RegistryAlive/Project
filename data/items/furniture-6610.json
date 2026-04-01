@@ -1,0 +1,15 @@
+{
+  "id": 6610,
+  "name": "Wallpaper",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "beautiful and redolent flowers.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6610.png",
+  "file": "furniture-6610.json"
+}

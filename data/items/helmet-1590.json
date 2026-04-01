@@ -1,0 +1,15 @@
+{
+  "id": 1590,
+  "name": "White Cat Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Limited edition collector's item!",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1590.png",
+  "file": "helmet-1590.json"
+}

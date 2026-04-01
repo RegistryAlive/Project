@@ -1,0 +1,18 @@
+{
+  "id": 7921,
+  "name": "Thunder Spear+7",
+  "type": "Material",
+  "category": "material",
+  "rank": 15,
+  "level": 30,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 42,
+    "SP": 240
+  },
+  "image": "data/images/material-7921.png",
+  "file": "material-7921.json"
+}

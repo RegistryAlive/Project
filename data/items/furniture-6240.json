@@ -1,0 +1,15 @@
+{
+  "id": 6240,
+  "name": "Crude Oil Equipment",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can purify crude oil.",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/furniture-6240.png",
+  "file": "furniture-6240.json"
+}

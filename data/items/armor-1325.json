@@ -1,0 +1,18 @@
+{
+  "id": 1325,
+  "name": "Starry Night",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Crafted from shimmering fabric, this blue gown is as elegant as a still starry night. Crafted from shimmering fabric, this blue gown is as elegant as a still starry night. When using bow weapons, attack damage +3%.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "ATK": 25
+  },
+  "image": "data/images/armor-1325.png",
+  "file": "armor-1325.json"
+}

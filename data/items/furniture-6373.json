@@ -1,0 +1,15 @@
+{
+  "id": 6373,
+  "name": "Prepared for",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Adjustable height position of the chair",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6373.png",
+  "file": "furniture-6373.json"
+}

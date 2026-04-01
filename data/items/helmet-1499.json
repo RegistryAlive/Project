@@ -1,0 +1,18 @@
+{
+  "id": 1499,
+  "name": "Bluish Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Iron / Titanium",
+  "description": "A helmet made from coldiron and mixed metals.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 18,
+    "DEF": 8
+  },
+  "image": "data/images/helmet-1499.png",
+  "file": "helmet-1499.json"
+}

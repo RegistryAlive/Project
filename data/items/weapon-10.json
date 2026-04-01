@@ -1,0 +1,18 @@
+{
+  "id": 10,
+  "name": "Bronze Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Copper / Wood",
+  "description": "A Falchion made from bronze",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 8,
+    "DEF": 8
+  },
+  "image": "data/images/weapon-10.png",
+  "file": "weapon-10.json"
+}

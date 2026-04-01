@@ -1,0 +1,15 @@
+{
+  "id": 6355,
+  "name": "Glaze Table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is more convenient for cooking",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6355.png",
+  "file": "furniture-6355.json"
+}

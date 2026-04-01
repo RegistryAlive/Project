@@ -1,0 +1,15 @@
+{
+  "id": 6492,
+  "name": "Easter Gift Ca",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Card that says, \"Happy Easter!\" It is used in tent as decor.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6492.png",
+  "file": "furniture-6492.json"
+}

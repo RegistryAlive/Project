@@ -1,0 +1,15 @@
+{
+  "id": 6100,
+  "name": "Linen Thread",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "It is made of natural linen",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6100.png",
+  "file": "furniture-6100.json"
+}

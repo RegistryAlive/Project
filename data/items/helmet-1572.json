@@ -1,0 +1,15 @@
+{
+  "id": 1572,
+  "name": "White Day Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leather",
+  "description": "Suitable for male on White Day",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1572.png",
+  "file": "helmet-1572.json"
+}

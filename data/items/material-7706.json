@@ -1,0 +1,15 @@
+{
+  "id": 7706,
+  "name": "Wind Fur",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fur",
+  "description": "A Light feather of a Wind Monster",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7706.png",
+  "file": "material-7706.json"
+}

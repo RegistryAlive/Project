@@ -1,0 +1,18 @@
+{
+  "id": 2915,
+  "name": "Sakura Ribbon",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "With the cherry blossom petals falling on the hand, you can enjoy the colorful beauty of the cherry blossoms regardless of the seasons (if stitched as a numerical equipment, the falling cherry blossoms will disappear after stitching)",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "ATK": 20
+  },
+  "image": "data/images/arm-2915.png",
+  "file": "arm-2915.json"
+}

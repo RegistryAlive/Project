@@ -1,0 +1,18 @@
+{
+  "id": 455,
+  "name": "G Vine Feather",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The divine bow favored by the god of the earth has a 30% crit chance, and can ignore the monster's bow resistance.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "MaxHP": 450
+  },
+  "image": "data/images/weapon-455.png",
+  "file": "weapon-455.json"
+}

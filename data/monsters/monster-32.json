@@ -1,0 +1,39 @@
+{
+  "id": 32,
+  "name": "Tyrannosaur",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-32.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Tea",
+      "itemId": 7361,
+      "itemFile": "material-7361.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lei Dragon Thigh",
+      "itemId": 7813,
+      "itemFile": "material-7813.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 77,
+    "hp": 1432,
+    "sp": 404,
+    "catchable": "Yes",
+    "spd": 161.5,
+    "str": 70,
+    "con": 92,
+    "int": 23,
+    "wis": 23,
+    "agi": 23
+  }
+}

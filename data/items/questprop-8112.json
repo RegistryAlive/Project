@@ -1,0 +1,15 @@
+{
+  "id": 8112,
+  "name": "Elephant Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make an Elephant become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8112.png",
+  "file": "questprop-8112.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7173,
+  "name": "Pork Miso Noodle",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 30,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "HP+1000,SP+500. Bone soup with sauce, adding fine noodles to it. Can be traded",
+  "size": "1x1",
+  "attributes": {
+    "HP": 1000,
+    "SP": 500
+  },
+  "image": "data/images/material-7173.png",
+  "file": "material-7173.json"
+}

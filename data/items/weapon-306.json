@@ -1,0 +1,18 @@
+{
+  "id": 306,
+  "name": "Spiri Fork",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "No sockets, 24% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 10,
+    "MaxHP": 80
+  },
+  "image": "data/images/weapon-306.png",
+  "file": "weapon-306.json"
+}

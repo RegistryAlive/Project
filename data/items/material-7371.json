@@ -1,0 +1,15 @@
+{
+  "id": 7371,
+  "name": "Pine",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leaf",
+  "description": "used for luck in Japan",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7371.png",
+  "file": "material-7371.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1165,
+  "name": "Hero Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 42,
+  "level": 84,
+  "rarity": "legendary",
+  "base": "Leather / Copper / Steel",
+  "description": "Hero Suit",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 21,
+    "SPD": 21
+  },
+  "image": "data/images/armor-1165.png",
+  "file": "armor-1165.json"
+}

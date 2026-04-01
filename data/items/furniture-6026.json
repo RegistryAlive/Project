@@ -1,0 +1,15 @@
+{
+  "id": 6026,
+  "name": "Pail Hydrogen",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Chemical",
+  "description": "A Small pail of Hydrogen",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6026.png",
+  "file": "furniture-6026.json"
+}

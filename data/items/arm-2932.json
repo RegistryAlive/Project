@@ -1,0 +1,18 @@
+{
+  "id": 2932,
+  "name": "Star Guardian",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The brilliance of the lucky star will guard the king of the holy night, and the damage will increase by 1% on a critical strike (if the bracelet shape is changed, the effect will disappear)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 1,
+    "SPD": 10
+  },
+  "image": "data/images/arm-2932.png",
+  "file": "arm-2932.json"
+}

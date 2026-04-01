@@ -1,0 +1,18 @@
+{
+  "id": 1764,
+  "name": "Golden Antler",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A hat decorated with antlers and worn at Christmas",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 10
+  },
+  "image": "data/images/helmet-1764.png",
+  "file": "helmet-1764.json"
+}

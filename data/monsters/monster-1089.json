@@ -1,0 +1,45 @@
+{
+  "id": 1089,
+  "name": "Senior Cypress Devil",
+  "location": "Jungle",
+  "image": "data/Monster_Images/monster-1090.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cypress",
+      "itemId": 7654,
+      "itemFile": "material-7654.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Straw Mushroom",
+      "itemId": 7399,
+      "itemFile": "material-7399.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Original Rubber",
+      "itemId": 6029,
+      "itemFile": "furniture-6029.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Cypress Wood",
+      "itemId": 7650,
+      "itemFile": "material-7650.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 18,
+    "hp": 166,
+    "sp": 124,
+    "catchable": "Yes",
+    "spd": 45,
+    "str": 10,
+    "con": 15,
+    "int": 10,
+    "wis": 10,
+    "agi": 9
+  }
+}

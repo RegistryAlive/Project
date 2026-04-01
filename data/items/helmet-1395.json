@@ -1,0 +1,18 @@
+{
+  "id": 1395,
+  "name": "Crystal Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Iron / Quartz (Crystal)",
+  "description": "A helmet which is made of high-transparent crystal",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 15,
+    "MDEF": 5
+  },
+  "image": "data/images/helmet-1395.png",
+  "file": "helmet-1395.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 9019,
+  "name": "Crude Oil Equipment",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can purify crude oil.",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/tool-9019.png",
+  "file": "tool-9019.json"
+}

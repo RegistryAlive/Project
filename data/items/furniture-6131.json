@@ -1,0 +1,15 @@
+{
+  "id": 6131,
+  "name": "Hydrogen Generator",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 14,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Generates motion by burning hydrogen",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6131.png",
+  "file": "furniture-6131.json"
+}

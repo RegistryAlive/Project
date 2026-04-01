@@ -1,0 +1,18 @@
+{
+  "id": 2077,
+  "name": "White Jade Rin",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A ring made from white jade. It can raise health.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 14,
+    "DEF": 6
+  },
+  "image": "data/images/special-2077.png",
+  "file": "special-2077.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8514,
+  "name": "Arashi Scroll",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that allows you to partner with the Arashikage Winged Dragon.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8514.png",
+  "file": "questprop-8514.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6090,
+  "name": "Electric Cable",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can transmit current",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6090.png",
+  "file": "furniture-6090.json"
+}

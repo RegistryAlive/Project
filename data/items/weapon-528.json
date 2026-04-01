@@ -1,0 +1,18 @@
+{
+  "id": 528,
+  "name": "Fragrant Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Corundum",
+  "description": "Unleashing the fragrances of nature.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 21,
+    "MDEF": 21
+  },
+  "image": "data/images/weapon-528.png",
+  "file": "weapon-528.json"
+}

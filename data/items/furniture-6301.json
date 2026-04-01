@@ -1,0 +1,15 @@
+{
+  "id": 6301,
+  "name": "Stairs",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 27,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "used to go up and down floors.",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/furniture-6301.png",
+  "file": "furniture-6301.json"
+}

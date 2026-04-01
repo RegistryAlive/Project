@@ -1,0 +1,18 @@
+{
+  "id": 231,
+  "name": "Twin Dracoblade",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 44,
+  "level": 88,
+  "rarity": "legendary",
+  "base": "Titanium / Gold / Copper / Steel / Hard Tissue",
+  "description": "Increases ATK, AGI and deflects all counterattacks",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "SPD": 38
+  },
+  "image": "data/images/weapon-231.png",
+  "file": "weapon-231.json"
+}

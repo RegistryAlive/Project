@@ -1,0 +1,18 @@
+{
+  "id": 1066,
+  "name": "Purple Wing Ro",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Can be enhanced but not socketed. Can be traded. Cannot be traded after being opened.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 10,
+    "MaxHP": 100
+  },
+  "image": "data/images/armor-1066.png",
+  "file": "armor-1066.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 635,
+  "name": "Daris Fighter (Quest)",
+  "location": "Mayan Forest",
+  "image": "data/Monster_Images/monster-635.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 107,
+    "hp": 16060,
+    "sp": 1032,
+    "catchable": "Unknown",
+    "spd": 290.5,
+    "str": 65,
+    "con": 50,
+    "int": 80,
+    "wis": 61,
+    "agi": 65
+  }
+}

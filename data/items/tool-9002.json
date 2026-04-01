@@ -1,0 +1,15 @@
+{
+  "id": 9002,
+  "name": "Grinding Equipment",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can mill metal into a shape.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/tool-9002.png",
+  "file": "tool-9002.json"
+}

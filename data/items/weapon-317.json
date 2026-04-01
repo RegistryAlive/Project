@@ -1,0 +1,17 @@
+{
+  "id": 317,
+  "name": "Cross Pike",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Titanium / Copper / Steel",
+  "description": "A metal pike forged with mixed metal.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 72
+  },
+  "image": "data/images/weapon-317.png",
+  "file": "weapon-317.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 707,
+  "name": "Long Handled Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Titanium / Steel",
+  "description": "The handle is quite long.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55
+  },
+  "image": "data/images/weapon-707.png",
+  "file": "weapon-707.json"
+}

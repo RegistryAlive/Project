@@ -1,0 +1,15 @@
+{
+  "id": 8220,
+  "name": "Special Jalap",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Made by Robinson, avoiding Eunic Monster's stomach.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8220.png",
+  "file": "questprop-8220.json"
+}

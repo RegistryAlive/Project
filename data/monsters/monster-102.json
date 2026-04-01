@@ -1,0 +1,33 @@
+{
+  "id": 102,
+  "name": "Lion (Quest)",
+  "location": "African Villages",
+  "image": "data/Monster_Images/monster-102.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cougar Fur",
+      "itemId": 7682,
+      "itemFile": "material-7682.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 1010,
+    "sp": 576,
+    "catchable": "Unknown",
+    "spd": 253.5,
+    "str": 64,
+    "con": 60,
+    "int": 34,
+    "wis": 34,
+    "agi": 63
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6691,
+  "name": "Halloween Tile",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Halloween styled floor tiles that allow players to change to different patterns.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6691.png",
+  "file": "furniture-6691.json"
+}

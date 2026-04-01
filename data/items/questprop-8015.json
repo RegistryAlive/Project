@@ -1,0 +1,15 @@
+{
+  "id": 8015,
+  "name": "Survival Tool",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A Survival tool",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/questprop-8015.png",
+  "file": "questprop-8015.json"
+}

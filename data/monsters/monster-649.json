@@ -1,0 +1,27 @@
+{
+  "id": 649,
+  "name": "Darkness Spirit (Quest)",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-649.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 60,
+    "hp": 7200,
+    "sp": 574,
+    "catchable": "Unknown",
+    "spd": 162,
+    "str": 36,
+    "con": 30,
+    "int": 39,
+    "wis": 39,
+    "agi": 36
+  }
+}

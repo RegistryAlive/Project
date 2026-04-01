@@ -1,0 +1,15 @@
+{
+  "id": 6595,
+  "name": "Starfish decor",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The decorations of the starfish model are displayed, which are like stars in the sea",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6595.png",
+  "file": "furniture-6595.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 868,
+  "name": "Moon Wand (CP)",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Corundum",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 64
+  },
+  "image": "data/images/weapon-868.png",
+  "file": "weapon-868.json"
+}

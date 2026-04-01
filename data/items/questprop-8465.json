@@ -1,0 +1,17 @@
+{
+  "id": 8465,
+  "name": "Deli shellfish",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can only be caught at a certain time, very delicious shellfish",
+  "size": "1x1",
+  "attributes": {
+    "SP": 100
+  },
+  "image": "data/images/questprop-8465.png",
+  "file": "questprop-8465.json"
+}

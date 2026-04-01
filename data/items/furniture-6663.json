@@ -1,0 +1,15 @@
+{
+  "id": 6663,
+  "name": "Aquatic Wall",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The glass partition that draws the seabed landscape looks like a large aquarium at first glance.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6663.png",
+  "file": "furniture-6663.json"
+}

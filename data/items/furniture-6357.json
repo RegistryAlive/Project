@@ -1,0 +1,15 @@
+{
+  "id": 6357,
+  "name": "Decorative Dolphin",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Can be hang on the wall",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6357.png",
+  "file": "furniture-6357.json"
+}

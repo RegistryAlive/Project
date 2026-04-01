@@ -1,0 +1,39 @@
+{
+  "id": 532,
+  "name": "Rock Lizard",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-532.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Common Grass",
+      "itemId": 7365,
+      "itemFile": "material-7365.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Claw",
+      "itemId": 7775,
+      "itemFile": "material-7775.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Bone",
+      "itemId": 7776,
+      "itemFile": "material-7776.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 89,
+    "hp": 798,
+    "sp": 857,
+    "catchable": "Unknown",
+    "spd": 239.5,
+    "str": 52,
+    "con": 58,
+    "int": 51,
+    "wis": 53,
+    "agi": 53
+  }
+}

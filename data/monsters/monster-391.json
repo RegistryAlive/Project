@@ -1,0 +1,39 @@
+{
+  "id": 391,
+  "name": "Supplying Ghost",
+  "location": "Ghost Isle",
+  "image": "data/Monster_Images/monster-391.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Angry Skeleton",
+      "itemId": 7806,
+      "itemFile": "material-7806.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cinnamon",
+      "itemId": 7419,
+      "itemFile": "material-7419.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pink Crystal",
+      "itemId": 7598,
+      "itemFile": "material-7598.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 84,
+    "hp": 857,
+    "sp": 799,
+    "catchable": "Unknown",
+    "spd": 216,
+    "str": 50,
+    "con": 50,
+    "int": 57,
+    "wis": 50,
+    "agi": 45
+  }
+}

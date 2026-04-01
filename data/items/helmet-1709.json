@@ -1,0 +1,18 @@
+{
+  "id": 1709,
+  "name": "Jade Bunny",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The cute baby jade rabbit dreams of flying to the moon one day, so he always likes to stay high. It can slightly increase the chance of counterattack in battle.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "SPD": 15
+  },
+  "image": "data/images/helmet-1709.png",
+  "file": "helmet-1709.json"
+}

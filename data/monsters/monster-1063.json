@@ -1,0 +1,45 @@
+{
+  "id": 1063,
+  "name": "Fresh Mushroom",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-1064.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Spore",
+      "itemId": 7527,
+      "itemFile": "material-7527.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mushroom",
+      "itemId": 7400,
+      "itemFile": "material-7400.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sun Mushroom",
+      "itemId": 7523,
+      "itemFile": "material-7523.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Phosphorylation",
+      "itemId": 6118,
+      "itemFile": "furniture-6118.json",
+      "itemCategory": "furniture"
+    }
+  ],
+  "stats": {
+    "level": 6,
+    "hp": 52,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 17,
+    "str": 2,
+    "con": 2,
+    "int": 5,
+    "wis": 5,
+    "agi": 4
+  }
+}

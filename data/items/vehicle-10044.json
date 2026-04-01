@@ -1,0 +1,17 @@
+{
+  "id": 10044,
+  "name": "Brown HP Broom",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A magical vehicle that can fly in the air, the snowy owl will loyally accompany you, and you can use magic yarn balls as a substitute for wear",
+  "size": "3x2",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10044.png",
+  "file": "vehicle-10044.json"
+}

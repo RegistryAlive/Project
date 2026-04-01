@@ -1,0 +1,27 @@
+{
+  "id": 946,
+  "name": "Swift Door God (Quest)",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-946.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 135,
+    "hp": 25690,
+    "sp": 1149,
+    "catchable": "Unknown",
+    "spd": 442.5,
+    "str": 75,
+    "con": 80,
+    "int": 67,
+    "wis": 63,
+    "agi": 120
+  }
+}

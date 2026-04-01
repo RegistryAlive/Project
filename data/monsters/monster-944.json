@@ -1,0 +1,27 @@
+{
+  "id": 944,
+  "name": "Sun (Quest)",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-944.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 73,
+    "hp": 3200,
+    "sp": 899,
+    "catchable": "Unknown",
+    "spd": 209.5,
+    "str": 26,
+    "con": 25,
+    "int": 58,
+    "wis": 60,
+    "agi": 50
+  }
+}

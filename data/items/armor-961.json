@@ -1,0 +1,17 @@
+{
+  "id": 961,
+  "name": "Green Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Leather / Flower",
+  "description": "clothes which is made of green leather",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 9
+  },
+  "image": "data/images/armor-961.png",
+  "file": "armor-961.json"
+}

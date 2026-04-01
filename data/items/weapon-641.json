@@ -1,0 +1,18 @@
+{
+  "id": 641,
+  "name": "Vajra Staff",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "For monks the basic self-def",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "SPD": 40
+  },
+  "image": "data/images/weapon-641.png",
+  "file": "weapon-641.json"
+}

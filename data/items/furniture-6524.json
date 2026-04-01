@@ -1,0 +1,15 @@
+{
+  "id": 6524,
+  "name": "Beach Tiles",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, beach-shaped tiles on the ground",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6524.png",
+  "file": "furniture-6524.json"
+}

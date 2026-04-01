@@ -1,0 +1,17 @@
+{
+  "id": 1803,
+  "name": "Racing Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Shoes which are skidproof and wearable",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 1
+  },
+  "image": "data/images/shoes-1803.png",
+  "file": "shoes-1803.json"
+}

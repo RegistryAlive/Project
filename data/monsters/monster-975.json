@@ -1,0 +1,27 @@
+{
+  "id": 975,
+  "name": "Villager",
+  "location": "Holy Village",
+  "image": "data/Monster_Images/monster-975.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 56,
+    "hp": 427,
+    "sp": 587,
+    "catchable": "Unknown",
+    "spd": 140,
+    "str": 23,
+    "con": 33,
+    "int": 43,
+    "wis": 41,
+    "agi": 28
+  }
+}

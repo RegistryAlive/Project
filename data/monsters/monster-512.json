@@ -1,0 +1,39 @@
+{
+  "id": 512,
+  "name": "Water Race",
+  "location": "Mayan Forest",
+  "image": "data/Monster_Images/monster-512.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Noodles",
+      "itemId": 7515,
+      "itemFile": "material-7515.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Paper Grass",
+      "itemId": 7364,
+      "itemFile": "material-7364.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 84,
+    "hp": 872,
+    "sp": 883,
+    "catchable": "Unknown",
+    "spd": 226,
+    "str": 45,
+    "con": 51,
+    "int": 50,
+    "wis": 56,
+    "agi": 50
+  }
+}

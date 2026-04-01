@@ -1,0 +1,18 @@
+{
+  "id": 2251,
+  "name": "Slaughter Badg",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To slightly raise magic defense and attack power.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 3,
+    "ATK": 1
+  },
+  "image": "data/images/special-2251.png",
+  "file": "special-2251.json"
+}

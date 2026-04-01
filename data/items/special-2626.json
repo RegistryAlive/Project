@@ -1,0 +1,18 @@
+{
+  "id": 2626,
+  "name": "Dark Evil Wing",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 56,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It cannot be socketed",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 32,
+    "MATK": 32
+  },
+  "image": "data/images/special-2626.png",
+  "file": "special-2626.json"
+}

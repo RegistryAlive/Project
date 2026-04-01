@@ -1,0 +1,15 @@
+{
+  "id": 6379,
+  "name": "Notice Board",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "MesWits can be left by others",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6379.png",
+  "file": "furniture-6379.json"
+}

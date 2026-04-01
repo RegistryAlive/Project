@@ -1,0 +1,15 @@
+{
+  "id": 8544,
+  "name": "Plane Design",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8544.png",
+  "file": "questprop-8544.json"
+}

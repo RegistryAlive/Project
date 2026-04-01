@@ -1,0 +1,27 @@
+{
+  "id": 950,
+  "name": "The Status of Knight (Trojan War)",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-950.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 155,
+    "hp": 50000,
+    "sp": 3471,
+    "catchable": "Unknown",
+    "spd": 232.5,
+    "str": 0,
+    "con": 265,
+    "int": 0,
+    "wis": 200,
+    "agi": 0
+  }
+}

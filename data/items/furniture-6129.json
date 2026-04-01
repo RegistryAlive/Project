@@ -1,0 +1,15 @@
+{
+  "id": 6129,
+  "name": "Airship Balloon",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The Balloon of a airship",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6129.png",
+  "file": "furniture-6129.json"
+}

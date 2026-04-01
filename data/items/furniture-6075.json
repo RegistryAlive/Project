@@ -1,0 +1,15 @@
+{
+  "id": 6075,
+  "name": "Enamel Wire",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "One kind of copper line, insulated by paint",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6075.png",
+  "file": "furniture-6075.json"
+}

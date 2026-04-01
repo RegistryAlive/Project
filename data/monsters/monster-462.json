@@ -1,0 +1,45 @@
+{
+  "id": 462,
+  "name": "Fire Dragon (Quest)",
+  "location": "Revival Isle",
+  "image": "data/Monster_Images/monster-462.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Unknown",
+      "itemId": 7892,
+      "itemFile": "material-7892.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dragon Tooth",
+      "itemId": 7725,
+      "itemFile": "material-7725.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dragon Claw",
+      "itemId": 7726,
+      "itemFile": "material-7726.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dragon Squama",
+      "itemId": 7723,
+      "itemFile": "material-7723.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 160,
+    "hp": 30000,
+    "sp": 1670,
+    "catchable": "Unknown",
+    "spd": 448,
+    "str": 96,
+    "con": 100,
+    "int": 90,
+    "wis": 90,
+    "agi": 104
+  }
+}

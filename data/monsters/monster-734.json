@@ -1,0 +1,27 @@
+{
+  "id": 734,
+  "name": "Guard",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-734.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 58,
+    "hp": 556,
+    "sp": 414,
+    "catchable": "Unknown",
+    "spd": 153,
+    "str": 43,
+    "con": 45,
+    "int": 26,
+    "wis": 27,
+    "agi": 33
+  }
+}

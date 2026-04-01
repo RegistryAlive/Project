@@ -1,0 +1,15 @@
+{
+  "id": 6642,
+  "name": "Sakura Plant",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A Blooming Small cherry blossom bonsai",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6642.png",
+  "file": "furniture-6642.json"
+}

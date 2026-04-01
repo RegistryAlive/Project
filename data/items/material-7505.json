@@ -1,0 +1,18 @@
+{
+  "id": 7505,
+  "name": "Quail Egg",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Egg",
+  "description": "A Quail's egg ,very small egg",
+  "size": "1x1",
+  "attributes": {
+    "HP": 25,
+    "SP": 15
+  },
+  "image": "data/images/material-7505.png",
+  "file": "material-7505.json"
+}

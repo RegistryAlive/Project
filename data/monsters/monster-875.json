@@ -1,0 +1,27 @@
+{
+  "id": 875,
+  "name": "Rock Monster Lord",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-875.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 58,
+    "hp": 3900,
+    "sp": 427,
+    "catchable": "Unknown",
+    "spd": 165,
+    "str": 44,
+    "con": 41,
+    "int": 22,
+    "wis": 28,
+    "agi": 39
+  }
+}

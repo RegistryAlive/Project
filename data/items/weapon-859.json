@@ -1,0 +1,18 @@
+{
+  "id": 859,
+  "name": "Louis' Gun",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 8,
+  "level": 0,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "The Arquebus that Louis likes the most.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "MaxHP": 100
+  },
+  "image": "data/images/weapon-859.png",
+  "file": "weapon-859.json"
+}

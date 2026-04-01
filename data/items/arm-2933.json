@@ -1,0 +1,15 @@
+{
+  "id": 2933,
+  "name": "Gold bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "In the shining night, countless gold coins fell from the sky! ! (If you change the shape of the bracelet, the effect will disappear)",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/arm-2933.png",
+  "file": "arm-2933.json"
+}

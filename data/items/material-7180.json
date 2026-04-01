@@ -1,0 +1,17 @@
+{
+  "id": 7180,
+  "name": "Big Fried Cabbage",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "It is full of fragrance",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100
+  },
+  "image": "data/images/material-7180.png",
+  "file": "material-7180.json"
+}

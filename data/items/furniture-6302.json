@@ -1,0 +1,15 @@
+{
+  "id": 6302,
+  "name": "Big Coin-Op Ga",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 28,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "It can obtain unexcepted items with coins.",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6302.png",
+  "file": "furniture-6302.json"
+}

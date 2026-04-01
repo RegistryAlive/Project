@@ -1,0 +1,15 @@
+{
+  "id": 6287,
+  "name": "Deluxe double",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "There are very ornate carved headboard on special double",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6287.png",
+  "file": "furniture-6287.json"
+}

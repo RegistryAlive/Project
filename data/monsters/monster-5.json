@@ -1,0 +1,51 @@
+{
+  "id": 5,
+  "name": "Little Ant",
+  "location": "Kelan Village's Woods",
+  "image": "data/Monster_Images/monster-5.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Ant Antennae",
+      "itemId": 7797,
+      "itemFile": "material-7797.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coal Ore",
+      "itemId": 7586,
+      "itemFile": "material-7586.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tomato",
+      "itemId": 7444,
+      "itemFile": "material-7444.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Black Clay",
+      "itemId": 7642,
+      "itemFile": "material-7642.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Shale",
+      "itemId": 7631,
+      "itemFile": "material-7631.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 3,
+    "hp": 48,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 8.5,
+    "str": 3,
+    "con": 2,
+    "int": 1,
+    "wis": 1,
+    "agi": 2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2927,
+  "name": "Bat bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The loyal bat will follow you closely after wearing it. Can slightly increase the chance of counterattack in battle",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MaxHP": 100
+  },
+  "image": "data/images/arm-2927.png",
+  "file": "arm-2927.json"
+}

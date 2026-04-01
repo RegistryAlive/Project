@@ -1,0 +1,17 @@
+{
+  "id": 7533,
+  "name": "Wildpig's Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 15,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Meat of a wildpig",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150
+  },
+  "image": "data/images/material-7533.png",
+  "file": "material-7533.json"
+}

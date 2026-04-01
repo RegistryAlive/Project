@@ -1,0 +1,1796 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland Online Database</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wlBlue: '#3b82f6',
+                        wlPurple: '#8b5cf6',
+                        wlGreen: '#10b981',
+                        wlRed: '#ef4444',
+                        wlYellow: '#f59e0b',
+                        wlDark: '#1e293b',
+                        wlDarker: '#0f172a',
+                        wlLight: '#f8fafc',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-fast': 'float 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%),
+                url('https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            min-height: 100vh;
+            color: #f8fafc;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02) rotateX(1deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .glow {
+            text-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
+        }
+        
+        .category-icon {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .category-card:hover .category-icon {
+            transform: scale(1.2) rotateY(10deg);
+        }
+        
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        .blur-bg {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .floating-island {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-island:nth-child(2) {
+            animation-delay: 1s;
+        }
+        
+        .floating-island:nth-child(3) {
+            animation-delay: 2s;
+        }
+        
+        .tooltip {
+            position: relative;
+        }
+        
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            z-index: 10;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            width: max-content;
+            max-width: 200px;
+            font-size: 0.8rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #1e293b transparent transparent transparent;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .sidebar {
+            transition: transform 0.3s ease;
+        }
+        
+        .sidebar-hidden {
+            transform: translateX(100%);
+        }
+        
+        .sidebar-visible {
+            transform: translateX(0);
+        }
+        
+        .dark-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 40;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .dark-overlay-visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        /* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, #1e293b, #3b82f6);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-ball {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle.light .theme-toggle-ball {
+            transform: translateX(30px);
+        }
+        
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e2e8f0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f8fafc !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #1e293b !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #cbd5e1 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+        
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+        }
+        
+        /* Countdown timer */
+        .countdown-box {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+        
+        .countdown-number {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Featured card glow effect */
+        .featured-glow {
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+            animation: featuredPulse 3s ease-in-out infinite;
+        }
+        
+        @keyframes featuredPulse {
+            0%, 100% { box-shadow: 0 0 30px rgba(139, 92, 246, 0.3); }
+            50% { box-shadow: 0 0 50px rgba(139, 92, 246, 0.5); }
+        }
+        
+        /* Trending tags */
+        .trending-tag {
+            transition: all 0.3s ease;
+        }
+        
+        .trending-tag:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+        
+        /* Favorites bar */
+        .favorites-bar {
+            background: linear-gradient(90deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+            backdrop-filter: blur(10px);
+        }
+        
+        .favorite-item {
+            transition: all 0.3s ease;
+        }
+        
+        .favorite-item:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* Random button animation */
+        .random-btn {
+            background: linear-gradient(135deg, #f59e0b, #ef4444);
+            transition: all 0.3s ease;
+        }
+        
+        .random-btn:hover {
+            transform: scale(1.05) rotate(5deg);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+        }
+        
+        /* Stats counter animation */
+        .stat-counter {
+            transition: all 0.3s ease;
+        }
+        
+        .stat-counter:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Cookie banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(90deg, rgba(30, 41, 59, 0.98), rgba(15, 23, 42, 0.98));
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            z-index: 200;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        
+        /* Search suggestions */
+        #searchSuggestions {
+            z-index: 1000;
+            position: absolute;
+            width: 100%;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .search-suggestion-item {
+            transition: background-color 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .search-suggestion-item:hover {
+            background-color: rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="text-wlLight">
+    <!-- Dark overlay for mobile menu -->
+    <div id="darkOverlay" class="dark-overlay"></div>
+    
+    <!-- Mobile sidebar -->
+    <div id="mobileSidebar" class="sidebar sidebar-hidden fixed inset-y-0 right-0 w-64 bg-wlDarker z-50 shadow-2xl p-4 overflow-y-auto">
+        <div class="flex justify-between items-center mb-8">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                <i class="fas fa-dragon text-xl text-white"></i>
+            </div>
+            <button id="closeSidebar" class="text-wlLight hover:text-wlRed">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="space-y-4">
+            <div class="block">
+                <a href="index.html" class="block px-4 py-2 rounded-md font-medium bg-wlDark bg-opacity-50 text-wlBlue transition">Home</a>
+                <a href="roadmap.html" class="block px-4 py-2 pl-8 rounded-md font-medium text-wlLight text-opacity-80 hover:bg-wlDark hover:bg-opacity-50 transition">- Roadmap</a>
+            </div>
+            <a href="Item.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Items</a>
+            <a href="quests.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Quests</a>
+            <a href="monsters.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Monsters</a>
+            <a href="Locations.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Locations</a>
+            <a href="tier-list.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Tier-List</a>
+            <a href="shops.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Shops</a>
+            <a href="manufacture.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Manufacture</a>
+            <a href="Resources.html" class="block px-4 py-2 rounded-md font-medium text-wlPurple hover:bg-wlDark hover:bg-opacity-50 transition">Resources</a>
+        </nav>
+
+    </div>
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-wlDark bg-opacity-90 blur-bg shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                            <i class="fas fa-dragon text-xl text-white"></i>
+                        </div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                            Wonderland Online DB
+                        </h1>
+                    </div>
+                    <div class="hidden md:flex space-x-6 items-center">
+                        <div class="relative group">
+                            <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium text-wlBlue flex items-center">
+                                Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+                            </a>
+                            <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                                <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-t-lg flex items-center justify-between">
+                                    Roadmap <i class="fas fa-route text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="Item.html" class="nav-link px-3 py-2 text-sm font-medium">Items</a>
+                        <a href="quests.html" class="nav-link px-3 py-2 text-sm font-medium">Quests</a>
+                        <a href="monsters.html" class="nav-link px-3 py-2 text-sm font-medium">Monsters</a>
+                        <a href="Locations.html" class="nav-link px-3 py-2 text-sm font-medium">Locations</a>
+                        <a href="tier-list.html" class="nav-link px-3 py-2 text-sm font-medium">Tier-List</a>
+                        <a href="shops.html" class="nav-link px-3 py-2 text-sm font-medium">Shops</a>
+                        <a href="manufacture.html" class="nav-link px-3 py-2 text-sm font-medium">Manufacture</a>
+                        <a href="Resources.html" class="nav-link px-3 py-2 text-sm font-medium">Resources</a>
+                        <!-- Theme Toggle -->
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                            <div class="theme-toggle-ball">
+                                <i class="fas fa-moon text-xs text-wlDark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:hidden">
+                        <button id="openSidebar" class="text-wlLight focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <!-- Hero Section -->
+            <section class="text-center mb-12">
+                <div class="max-w-4xl mx-auto relative">
+                    <div class="absolute -top-20 -left-20 w-40 h-40 bg-wlPurple rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    <div class="absolute -bottom-20 -right-20 w-40 h-40 bg-wlBlue rounded-full filter blur-3xl opacity-20 animate-pulse-slow"></div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                        Wonderland Online Database
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                        The most comprehensive database for Wonderland Online. Find items, quests, monsters, and everything you need to master the game.
+                    </p>
+                    
+                    <!-- Search Bar -->
+                    <div class="max-w-2xl mx-auto relative" style="z-index: 100;">
+                        <input type="text" 
+                               id="mainSearchInput"
+                               placeholder="Search items, monsters, quests..." 
+                               class="search-input w-full px-6 py-4 rounded-full bg-wlDark border border-wlLight border-opacity-30 text-wlLight focus:border-wlBlue transition duration-300">
+                        <button id="mainSearchBtn" class="absolute right-3 top-3 bg-gradient-to-r from-wlBlue to-wlPurple text-white p-2 rounded-full hover:opacity-90 transition tooltip">
+                            <i class="fas fa-search"></i>
+                            <span class="tooltip-text">Press Enter to search</span>
+                        </button>
+                        <div id="searchSuggestions" class="hidden absolute left-0 right-0 mt-2 bg-wlDarker border border-wlBlue border-opacity-40 rounded-lg shadow-xl" style="z-index: 1000; max-height: 300px; overflow-y: auto;"></div>
+                    </div>
+                    
+                    <div class="mt-6 flex justify-center flex-wrap gap-2">
+                        <span class="text-sm text-wlLight text-opacity-70">Popular searches:</span>
+                        <a href="Item.html?search=Copper" class="text-sm text-wlBlue hover:underline">Copper</a>
+                        <a href="monsters.html" class="text-sm text-wlBlue hover:underline">Monsters</a>
+                        <a href="Item.html?search=Iron" class="text-sm text-wlBlue hover:underline">Iron</a>
+                    </div>
+                    
+                    <!-- Random Entry Button -->
+                    <div class="mt-6 flex justify-center">
+                        <button id="randomEntryBtn" class="random-btn px-6 py-3 rounded-full text-white font-medium flex items-center space-x-2">
+                            <i class="fas fa-random"></i>
+                            <span>Discover Random Entry</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Event Countdown Section -->
+            <section class="mb-12">
+                <div class="countdown-box rounded-xl p-6 relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-wlPurple rounded-full filter blur-3xl opacity-20"></div>
+                    <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-wlBlue rounded-full filter blur-3xl opacity-20"></div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <div class="text-center md:text-left mb-4 md:mb-0">
+                                <h3 class="text-xl font-semibold mb-2 flex items-center">
+                                    <i class="fas fa-calendar-alt text-wlPurple mr-2"></i>
+                                    Upcoming Event
+                                </h3>
+                                <p class="text-wlLight text-opacity-80">Dragon Festival - Double EXP Weekend</p>
+                            </div>
+                            <div class="flex space-x-4">
+                                <div class="text-center">
+                                    <div class="countdown-number text-3xl font-bold" id="countdownDays">00</div>
+                                    <div class="text-xs text-wlLight text-opacity-70">Days</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="countdown-number text-3xl font-bold" id="countdownHours">00</div>
+                                    <div class="text-xs text-wlLight text-opacity-70">Hours</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="countdown-number text-3xl font-bold" id="countdownMins">00</div>
+                                    <div class="text-xs text-wlLight text-opacity-70">Mins</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="countdown-number text-3xl font-bold" id="countdownSecs">00</div>
+                                    <div class="text-xs text-wlLight text-opacity-70">Secs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Free Codes Section -->
+            <section class="mb-12">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-semibold text-wlLight flex items-center">
+                        <i class="fas fa-gift text-wlGreen mr-2"></i>
+                        Free Codes
+                    </h3>
+                </div>
+                
+                <!-- Code Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                    <!-- Nian Festival Codes -->
+                    <div class="bg-wlDark bg-opacity-70 rounded-xl p-4 border border-wlYellow border-opacity-30">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlYellow to-wlRed flex items-center justify-center mr-3">
+                                <i class="fas fa-dragon text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-wlYellow">Nian Festival</h4>
+                                <span class="text-xs text-wlLight text-opacity-70">Event Codes</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">1 10x, Spring Scroll</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="D2353GQN35">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">8 Nian Noodles, 2 Lucky Grass</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="6GJSHRX5E2">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">2 Training Vouchers, 8 Nian Congee, 8 Fireworks</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="8YMNWGCVZB">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">2 Training Vouchers, 8 Nian Cake, 8 Nian Noodles</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="2JKHH3VTJY">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">2 Training Vouchers, 8 Nian Cake, 8 Nian Noodles</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="TFL5QH965C">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item Pack Codes -->
+                    <div class="bg-wlDark bg-opacity-70 rounded-xl p-4 border border-wlBlue border-opacity-30">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlBlue to-wlPurple flex items-center justify-center mr-3">
+                                <i class="fas fa-box text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-wlBlue">Item Pack Codes</h4>
+                                <span class="text-xs text-wlLight text-opacity-70">Various Rewards</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">HP Bottle (x8), SP Bottle (x8)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="DT2SVYVEI4">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">Chaos Crystal (x10), Forgotten Scroll (x10)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="BE8C3F9PNY">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">3x Holy Pot (x5)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="H9FDRBYUU6">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">Unicorn Card (x1)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="G6YBTER9P2">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">10x Exp Potion (x5)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="85AXTJSZRY">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">Motorbike</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="AYR6N7VDYI">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Extra Codes -->
+                    <div class="bg-wlDark bg-opacity-70 rounded-xl p-4 border border-wlPurple border-opacity-30">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlRed flex items-center justify-center mr-3">
+                                <i class="fas fa-gift text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-wlPurple">Extra Codes</h4>
+                                <span class="text-xs text-wlLight text-opacity-70">Bonus Rewards</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">HP Bottle (x8), SP Bottle (x8)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="2PFC3ZXHKS">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">Chaos Crystal (x10), Forgotten Scroll (x10)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="NJRU8T2YXN">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">Super Potential Pill (x1)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="S8W25WDDPZ">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">3x Holy Pot (x5)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="VYRBGYZSQJ">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">Unicorn Card (x1)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="2JGHKZV8RU">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">10x Exp Potion (x5)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="5PP8BA55LN">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">Motorbike (x1)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="6E5CQQNHA9">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">5x Exp Potion (x2), Training Fare 1hr (x4)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="5WPCAYLMZL">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="code-item bg-wlDarker bg-opacity-50 rounded-lg p-2 flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-wlLight">10x Exp Potion (x5), Training Fare 1hr (x10)</span>
+                                </div>
+                                <button class="copy-code text-wlBlue hover:text-wlPurple" data-code="F7AZWCRUK7">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Copy All Button -->
+                <div class="text-center">
+                    <button id="copyAllCodes" class="px-6 py-3 bg-gradient-to-r from-wlGreen to-wlBlue text-white rounded-lg hover:opacity-90 transition flex items-center mx-auto">
+                        <i class="fas fa-copy mr-2"></i>
+                        Copy All Codes to Clipboard
+                    </button>
+                </div>
+            </section>
+            
+            <!-- Featured Item of the Day -->
+            <section class="mb-12">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-semibold text-wlLight flex items-center">
+                        <i class="fas fa-star text-wlYellow mr-2"></i>
+                        Featured Item of the Day
+                    </h3>
+                    <button id="refreshFeatured" class="text-sm text-wlBlue hover:underline flex items-center">
+                        <i class="fas fa-sync-alt mr-1"></i> Refresh
+                    </button>
+                </div>
+                <div class="featured-glow bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlPurple border-opacity-30 relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-wlPurple rounded-full filter blur-3xl opacity-20"></div>
+                    <div id="featuredItemContent" class="flex flex-col md:flex-row items-center gap-6 relative z-10">
+                        <div class="w-32 h-32 bg-gradient-to-br from-wlPurple to-wlBlue rounded-xl flex items-center justify-center">
+                            <i class="fas fa-cube text-5xl text-white opacity-80"></i>
+                        </div>
+                        <div class="flex-grow text-center md:text-left">
+                            <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+                                <h4 id="featuredItemName" class="text-2xl font-bold text-wlLight">Loading...</h4>
+                                <span id="featuredItemRarity" class="px-2 py-1 bg-wlYellow bg-opacity-20 text-wlYellow text-xs rounded">Common</span>
+                            </div>
+                            <p id="featuredItemDesc" class="text-wlLight text-opacity-80 mb-4">Loading featured item...</p>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                                <div class="bg-wlDarker bg-opacity-50 rounded-lg p-2">
+                                    <span class="text-wlLight text-opacity-70">Level</span>
+                                    <div id="featuredItemLevel" class="text-wlRed font-bold">-</div>
+                                </div>
+                                <div class="bg-wlDarker bg-opacity-50 rounded-lg p-2">
+                                    <span class="text-wlLight text-opacity-70">Rank</span>
+                                    <div id="featuredItemRank" class="text-wlYellow font-bold">-</div>
+                                </div>
+                                <div class="bg-wlDarker bg-opacity-50 rounded-lg p-2">
+                                    <span class="text-wlLight text-opacity-70">Category</span>
+                                    <div id="featuredItemCategory" class="text-wlBlue font-bold">-</div>
+                                </div>
+                                <div class="bg-wlDarker bg-opacity-50 rounded-lg p-2">
+                                    <span class="text-wlLight text-opacity-70">ID</span>
+                                    <div id="featuredItemId" class="text-wlPurple font-bold">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <a id="featuredItemLink" href="Item.html" class="px-6 py-2 bg-gradient-to-r from-wlBlue to-wlPurple text-white rounded-lg text-center hover:opacity-90 transition">
+                                View Details
+                            </a>
+                            <button id="featuredAddFavorite" class="add-to-favorites px-6 py-2 border border-wlPurple text-wlPurple rounded-lg hover:bg-wlPurple hover:text-white transition" data-name="" data-url="Item.html">
+                                <i class="fas fa-heart mr-1"></i> Add to Favorites
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Trending Searches -->
+            <section class="mb-12">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-semibold text-wlLight flex items-center">
+                        <i class="fas fa-fire text-wlRed mr-2"></i>
+                        Popular Categories
+                    </h3>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="Item.html?search=Iron" class="trending-tag px-4 py-2 bg-wlDark bg-opacity-70 rounded-full border border-wlLight border-opacity-20 hover:border-wlBlue transition flex items-center">
+                        <span class="text-wlRed mr-2">#1</span>
+                        <span>Iron</span>
+                    </a>
+                    <a href="Item.html?search=Copper" class="trending-tag px-4 py-2 bg-wlDark bg-opacity-70 rounded-full border border-wlLight border-opacity-20 hover:border-wlBlue transition flex items-center">
+                        <span class="text-wlYellow mr-2">#2</span>
+                        <span>Copper</span>
+                    </a>
+                    <a href="monsters.html" class="trending-tag px-4 py-2 bg-wlDark bg-opacity-70 rounded-full border border-wlLight border-opacity-20 hover:border-wlBlue transition flex items-center">
+                        <span class="text-wlBlue mr-2">#3</span>
+                        <span>Monsters</span>
+                    </a>
+                    <a href="Item.html?search=Gold" class="trending-tag px-4 py-2 bg-wlDark bg-opacity-70 rounded-full border border-wlLight border-opacity-20 hover:border-wlBlue transition flex items-center">
+                        <span class="text-wlLight text-opacity-70 mr-2">#4</span>
+                        <span>Gold</span>
+                    </a>
+                    <a href="manufacture.html" class="trending-tag px-4 py-2 bg-wlDark bg-opacity-70 rounded-full border border-wlLight border-opacity-20 hover:border-wlBlue transition flex items-center">
+                        <span class="text-wlLight text-opacity-70 mr-2">#5</span>
+                        <span>Recipes</span>
+                    </a>
+                    <a href="Item.html?search=Sword" class="trending-tag px-4 py-2 bg-wlDark bg-opacity-70 rounded-full border border-wlLight border-opacity-20 hover:border-wlBlue transition flex items-center">
+                        <span class="text-wlLight text-opacity-70 mr-2">#6</span>
+                        <span>Swords</span>
+                    </a>
+                    <a href="Item.html?search=Armor" class="trending-tag px-4 py-2 bg-wlDark bg-opacity-70 rounded-full border border-wlLight border-opacity-20 hover:border-wlBlue transition flex items-center">
+                        <span class="text-wlLight text-opacity-70 mr-2">#7</span>
+                        <span>Armor</span>
+                    </a>
+                    <a href="Item.html?search=Helmet" class="trending-tag px-4 py-2 bg-wlDark bg-opacity-70 rounded-full border border-wlLight border-opacity-20 hover:border-wlBlue transition flex items-center">
+                        <span class="text-wlLight text-opacity-70 mr-2">#8</span>
+                        <span>Helmets</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Categories Grid -->
+            <section class="mb-12">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-semibold text-wlLight">Database Categories</h3>
+                    <div class="relative">
+                        <button id="sortButton" class="flex items-center space-x-2 text-sm text-wlLight hover:text-wlBlue transition">
+                            <span>Sort by</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="sortDropdown" class="hidden absolute right-0 mt-2 w-40 bg-wlDark rounded-md shadow-lg z-10">
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-wlDarker">Name (A-Z)</a>
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-wlDarker">Name (Z-A)</a>
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-wlDarker">Recently Updated</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Items -->
+                    <a href="Item.html" class="category-card bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlBlue transition duration-300 card-hover flex flex-col items-center relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-wlBlue rounded-full filter blur-xl opacity-10"></div>
+                        <div class="category-icon w-16 h-16 rounded-full bg-gradient-to-br from-wlBlue to-wlPurple flex items-center justify-center mb-4 floating-island">
+                            <i class="fas fa-cube text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-medium mb-2 text-center">Items</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 text-center">Weapons, armor, accessories & more</p>
+                        <div class="mt-4 text-xs text-wlBlue" id="catItems">5,446 entries</div>
+                    </a>
+                    
+                    <!-- Monsters -->
+                    <a href="monsters.html" class="category-card bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlRed transition duration-300 card-hover flex flex-col items-center relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-wlRed rounded-full filter blur-xl opacity-10"></div>
+                        <div class="category-icon w-16 h-16 rounded-full bg-gradient-to-br from-wlRed to-pink-500 flex items-center justify-center mb-4 floating-island">
+                            <i class="fas fa-paw text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-medium mb-2 text-center">Monsters</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 text-center">Enemies, bosses and their drops</p>
+                        <div class="mt-4 text-xs text-wlRed" id="catMonsters">1,189 entries</div>
+                    </a>
+                    
+                    <!-- Quests -->
+                    <a href="quests.html" class="category-card bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlGreen transition duration-300 card-hover flex flex-col items-center relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-wlGreen rounded-full filter blur-xl opacity-10"></div>
+                        <div class="category-icon w-16 h-16 rounded-full bg-gradient-to-br from-wlGreen to-emerald-500 flex items-center justify-center mb-4 floating-island">
+                            <i class="fas fa-scroll text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-medium mb-2 text-center">Quests</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 text-center">Main story, side quests and events</p>
+                        <div class="mt-4 text-xs text-wlGreen">Browse Quests</div>
+                    </a>
+                    
+                    <!-- Locations -->
+                    <a href="Locations.html" class="category-card bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlBlue transition duration-300 card-hover flex flex-col items-center relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-blue-400 rounded-full filter blur-xl opacity-10"></div>
+                        <div class="category-icon w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-wlBlue flex items-center justify-center mb-4 floating-island">
+                            <i class="fas fa-map-marked-alt text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-medium mb-2 text-center">Locations</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 text-center">Maps, dungeons and areas</p>
+                        <div class="mt-4 text-xs text-blue-400">View Locations</div>
+                    </a>
+                    
+                    <!-- Tier-List -->
+                    <a href="tier-list.html" class="category-card bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlPurple transition duration-300 card-hover flex flex-col items-center relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-wlPurple rounded-full filter blur-xl opacity-10"></div>
+                        <div class="category-icon w-16 h-16 rounded-full bg-gradient-to-br from-wlPurple to-violet-500 flex items-center justify-center mb-4 floating-island">
+                            <i class="fas fa-trophy text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-medium mb-2 text-center">Tier-List</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 text-center">Character rankings & builds</p>
+                        <div class="mt-4 text-xs text-wlPurple">View Rankings</div>
+                    </a>
+                    
+                    <!-- Shops -->
+                    <a href="shops.html" class="category-card bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlGreen transition duration-300 card-hover flex flex-col items-center relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-emerald-400 rounded-full filter blur-xl opacity-10"></div>
+                        <div class="category-icon w-16 h-16 rounded-full bg-gradient-to-br from-emerald-400 to-wlGreen flex items-center justify-center mb-4 floating-island">
+                            <i class="fas fa-store text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-medium mb-2 text-center">Shops</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 text-center">NPC vendors and inventories</p>
+                        <div class="mt-4 text-xs text-emerald-400">Browse Shops</div>
+                    </a>
+                    
+                    <!-- Manufacture -->
+                    <a href="manufacture.html" class="category-card bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlYellow transition duration-300 card-hover flex flex-col items-center relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-amber-400 rounded-full filter blur-xl opacity-10"></div>
+                        <div class="category-icon w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 to-wlYellow flex items-center justify-center mb-4 floating-island">
+                            <i class="fas fa-hammer text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-medium mb-2 text-center">Manufacture</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 text-center">Crafting recipes & formulas</p>
+                        <div class="mt-4 text-xs text-amber-400" id="catManufacture">576 recipes</div>
+                    </a>
+                    
+                    <!-- Resources -->
+                    <a href="Resources.html" class="category-card bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlYellow transition duration-300 card-hover flex flex-col items-center relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-amber-400 rounded-full filter blur-xl opacity-10"></div>
+                        <div class="category-icon w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 to-wlYellow flex items-center justify-center mb-4 floating-island">
+                            <i class="fas fa-gem text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-medium mb-2 text-center">Resources</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 text-center">Materials & resources</p>
+                        <div class="mt-4 text-xs text-amber-400">View Resources</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Recent Updates -->
+            <section class="mb-12">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-semibold text-wlLight">Recent Updates</h3>
+                    <a href="#" class="text-sm text-wlBlue hover:underline flex items-center">
+                        View all updates <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Update 1 -->
+                    <div class="bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlBlue transition duration-300 card-hover group">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-wlBlue to-wlPurple flex items-center justify-center mr-3 group-hover:animate-pulse">
+                                <i class="fas fa-database text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Database Expansion</h4>
+                                <p class="text-xs text-wlLight text-opacity-70">Recently</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-wlLight text-opacity-90 mb-3">
+                            Added 5000+ items to the database. While refining Alchemy section to work better with bases.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="Item.html" class="text-wlBlue text-sm font-medium hover:underline flex items-center">
+                                View Items <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                            </a>
+                            <span class="text-xs px-2 py-1 bg-wlBlue bg-opacity-20 text-wlBlue rounded">New</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Update 2 -->
+                    <div class="bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlGreen transition duration-300 card-hover group">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-wlGreen to-emerald-500 flex items-center justify-center mr-3 group-hover:animate-pulse">
+                                <i class="fas fa-bolt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Performance Update</h4>
+                                <p class="text-xs text-wlLight text-opacity-70">Recently</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-wlLight text-opacity-90 mb-3">
+                            Refractored website to run more fluidly. Overall performance should be smoother in general.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-wlGreen text-sm font-medium flex items-center">
+                                <i class="fas fa-check mr-1"></i> Complete
+                            </span>
+                            <span class="text-xs px-2 py-1 bg-wlGreen bg-opacity-20 text-wlGreen rounded">Updated</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Update 3 -->
+                    <div class="bg-wlDark bg-opacity-70 rounded-xl p-6 border border-wlLight border-opacity-20 hover:border-wlPurple transition duration-300 card-hover group">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-wlPurple to-pink-500 flex items-center justify-center mr-3 group-hover:animate-pulse">
+                                <i class="fas fa-tools text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Resources Page</h4>
+                                <p class="text-xs text-wlLight text-opacity-70">Recently</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-wlLight text-opacity-90 mb-3">
+                            Updated Resource page with new programs and tools used to aid you.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="Resources.html" class="text-wlPurple text-sm font-medium hover:underline flex items-center">
+                                View Resources <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                            </a>
+                            <span class="text-xs px-2 py-1 bg-wlPurple bg-opacity-20 text-wlPurple rounded">New</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="mb-12 bg-wlDark bg-opacity-70 rounded-xl p-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Database Statistics</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center stat-counter cursor-pointer" onclick="window.location.href='Item.html'">
+                        <div class="text-4xl font-bold mb-2 text-wlBlue" id="statItems">5,446</div>
+                        <div class="text-sm text-wlLight text-opacity-70">Items</div>
+                    </div>
+                    <div class="text-center stat-counter cursor-pointer" onclick="window.location.href='monsters.html'">
+                        <div class="text-4xl font-bold mb-2 text-wlRed" id="statMonsters">1,189</div>
+                        <div class="text-sm text-wlLight text-opacity-70">Monsters</div>
+                    </div>
+                    <div class="text-center stat-counter cursor-pointer" onclick="window.location.href='manufacture.html'">
+                        <div class="text-4xl font-bold mb-2 text-wlYellow" id="statManufacture">576</div>
+                        <div class="text-sm text-wlLight text-opacity-70">Recipes</div>
+                    </div>
+                    <div class="text-center stat-counter cursor-pointer" onclick="window.location.href='Locations.html'">
+                        <div class="text-4xl font-bold mb-2 text-wlPurple" id="statLocations">-</div>
+                        <div class="text-sm text-wlLight text-opacity-70">Locations</div>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-wlLight border-opacity-20">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
+                        <div>
+                            <span class="text-wlLight text-opacity-70">Total Entries:</span>
+                            <span class="text-wlBlue font-bold ml-1" id="totalEntries">7,211</span>
+                        </div>
+                        <div>
+                            <span class="text-wlLight text-opacity-70">Last Updated:</span>
+                            <span class="text-wlGreen font-bold ml-1">Today</span>
+                        </div>
+                        <div>
+                            <span class="text-wlLight text-opacity-70">Data Source:</span>
+                            <span class="text-wlYellow font-bold ml-1">WLO DB</span>
+                        </div>
+                        <div>
+                            <span class="text-wlLight text-opacity-70">Online Users:</span>
+                            <span class="text-wlRed font-bold ml-1" id="onlineUsers">-</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-wlDark bg-opacity-90 blur-bg py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold">Wonderland DB</h4>
+                        </div>
+                        <p class="text-sm text-wlLight text-opacity-70 mb-4">
+                            The most comprehensive database for Wonderland Online. Regularly updated with the latest game content.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-8 h-8 rounded-full bg-wlDark bg-opacity-70 border border-wlLight border-opacity-20 flex items-center justify-center hover:bg-wlBlue transition">
+                                <i class="fab fa-discord text-sm text-wlLight"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 rounded-full bg-wlDark bg-opacity-70 border border-wlLight border-opacity-20 flex items-center justify-center hover:bg-blue-400 transition">
+                                <i class="fab fa-twitter text-sm text-wlLight"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 rounded-full bg-wlDark bg-opacity-70 border border-wlLight border-opacity-20 flex items-center justify-center hover:bg-pink-500 transition">
+                                <i class="fab fa-youtube text-sm text-wlLight"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-wlLight">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Home</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Items Database</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Quest Guides</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Monster Encyclopedia</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-wlLight">Resources</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Game Updates</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Patch Notes</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Community Guides</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">API Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-wlLight">Newsletter</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 mb-4">
+                            Subscribe to get updates on new content and features.
+                        </p>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="flex-grow px-4 py-2 bg-wlDark border border-wlLight border-opacity-20 text-sm rounded-l focus:outline-none focus:border-wlBlue">
+                            <button class="px-4 py-2 bg-gradient-to-r from-wlBlue to-wlPurple text-white text-sm rounded-r hover:opacity-90 transition">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 border-t border-wlLight border-opacity-20">
+                    <p class="text-sm text-center text-wlLight text-opacity-70">
+                        © 2023 Wonderland Online DB. All game content and materials are trademarks of their respective owners.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up text-white"></i>
+    </button>
+    
+    <!-- Mobile Menu Toggle Button -->
+    <button id="mobileMenuBtn" class="fixed bottom-20 right-6 w-14 h-14 bg-gradient-to-r from-wlBlue to-wlPurple rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 z-50 shadow-lg hover:scale-110 md:hidden">
+        <i class="fas fa-bars text-white text-xl"></i>
+    </button>
+    
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center">
+                <i class="fas fa-cookie-bite text-wlYellow text-2xl mr-3"></i>
+                <p class="text-sm text-wlLight">
+                    We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
+                    <a href="#" class="text-wlBlue hover:underline">Learn more</a>
+                </p>
+            </div>
+            <div class="flex gap-2">
+                <button id="acceptCookies" class="px-4 py-2 bg-gradient-to-r from-wlBlue to-wlPurple text-white text-sm rounded hover:opacity-90 transition">
+                    Accept
+                </button>
+                <button id="declineCookies" class="px-4 py-2 border border-wlLight border-opacity-30 text-wlLight text-sm rounded hover:bg-wlDark transition">
+                    Decline
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile sidebar toggle
+        const openSidebar = document.getElementById('openSidebar');
+        const closeSidebar = document.getElementById('closeSidebar');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const darkOverlay = document.getElementById('darkOverlay');
+        
+        openSidebar.addEventListener('click', () => {
+            mobileSidebar.classList.remove('sidebar-hidden');
+            mobileSidebar.classList.add('sidebar-visible');
+            darkOverlay.classList.add('dark-overlay-visible');
+        });
+        
+        closeSidebar.addEventListener('click', () => {
+            mobileSidebar.classList.remove('sidebar-visible');
+            mobileSidebar.classList.add('sidebar-hidden');
+            darkOverlay.classList.remove('dark-overlay-visible');
+        });
+        
+        darkOverlay.addEventListener('click', () => {
+            mobileSidebar.classList.remove('sidebar-visible');
+            mobileSidebar.classList.add('sidebar-hidden');
+            darkOverlay.classList.remove('dark-overlay-visible');
+        });
+        
+        // Sort dropdown toggle
+        const sortButton = document.getElementById('sortButton');
+        const sortDropdown = document.getElementById('sortDropdown');
+        
+        sortButton.addEventListener('click', () => {
+            sortDropdown.classList.toggle('hidden');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!sortButton.contains(e.target) && !sortDropdown.contains(e.target)) {
+                sortDropdown.classList.add('hidden');
+            }
+        });
+        
+        // Search functionality - search across all data types
+        const mainSearchInput = document.getElementById('mainSearchInput');
+        const mainSearchBtn = document.getElementById('mainSearchBtn');
+        const searchSuggestions = document.getElementById('searchSuggestions');
+        let searchTimeout;
+        let allItems = [];
+        let allMonsters = [];
+        let manufactureData = {};
+        
+        // Load all data for comprehensive search
+        async function loadAllDataForSearch() {
+            try {
+                // Load items
+                const itemsResp = await fetch('data/items-index.json');
+                const itemsData = await itemsResp.json();
+                allItems = itemsData.items.slice(0, 150);
+                
+                // Load monsters
+                const monstersResp = await fetch('data/monsters-index.json');
+                const monstersData = await monstersResp.json();
+                allMonsters = monstersData.monsters || [];
+                
+                // Load manufacture data
+                const manResp = await fetch('data/manufacture-index.json');
+                const manData = await manResp.json();
+                manufactureData = manData.items || {};
+                
+            } catch (e) {
+                console.error('Failed to load data for search:', e);
+            }
+        }
+        loadAllDataForSearch();
+        
+        function performSearch(query) {
+            if (!query || !query.trim()) return;
+            
+            const searchTerm = query.trim().toLowerCase();
+            
+            // Check matches across all data types
+            const matchingMonsters = allMonsters.filter(m => 
+                m.name && m.name.toLowerCase().includes(searchTerm)
+            );
+            const matchingItems = allItems.filter(i => 
+                i.name && i.name.toLowerCase().includes(searchTerm)
+            );
+            const matchingManufacture = Object.values(manufactureData).filter(m => 
+                m.name && m.name.toLowerCase().includes(searchTerm)
+            );
+            
+            // Priority: manufacture > monsters > items
+            // Check manufacture first - if there are ANY manufacture matches, go there
+            if (matchingManufacture.length > 0) {
+                window.location.href = 'manufacture.html?search=' + encodeURIComponent(query.trim());
+            } else if (matchingMonsters.length > 0) {
+                window.location.href = 'monsters.html?search=' + encodeURIComponent(query.trim());
+            } else {
+                // Default to items page
+                window.location.href = 'Item.html?search=' + encodeURIComponent(query.trim());
+            }
+        }
+        
+        function showSearchSuggestions(query) {
+            if (!query || query.length < 2 || (allItems.length === 0 && allMonsters.length === 0 && Object.keys(manufactureData).length === 0)) {
+                searchSuggestions.classList.add('hidden');
+                return;
+            }
+            
+            const lowerQuery = query.toLowerCase();
+            
+            // Get matching items
+            const itemMatches = allItems.filter(item => 
+                item.name && item.name.toLowerCase().includes(lowerQuery)
+            ).slice(0, 4);
+            
+            // Get matching monsters
+            const monsterMatches = allMonsters.filter(monster => 
+                monster.name && monster.name.toLowerCase().includes(lowerQuery)
+            ).slice(0, 4);
+            
+            // Get matching manufacture
+            const manValues = Object.values(manufactureData);
+            const manMatches = manValues.filter(item => 
+                item.name && item.name.toLowerCase().includes(lowerQuery)
+            ).slice(0, 4);
+            
+            if (itemMatches.length === 0 && monsterMatches.length === 0 && manMatches.length === 0) {
+                searchSuggestions.classList.add('hidden');
+                return;
+            }
+            
+            let html = '';
+            
+            // Add manufacture suggestions first (highest priority)
+            if (manMatches.length > 0) {
+                html += '<div class="px-3 py-1 text-xs text-wlYellow font-semibold">MANUFACTURE (Recipes)</div>';
+                html += manMatches.map(item => `
+                    <div class="search-suggestion-item px-4 py-2 hover:bg-wlDark cursor-pointer flex items-center justify-between" data-name="${item.name}" data-type="manufacture">
+                        <span class="text-wlLight">${item.name}</span>
+                        <span class="text-xs text-wlYellow">Recipe</span>
+                    </div>
+                `).join('');
+            }
+            
+            // Add monster suggestions
+            if (monsterMatches.length > 0) {
+                html += '<div class="px-3 py-1 text-xs text-wlRed font-semibold">MONSTERS</div>';
+                html += monsterMatches.map(monster => `
+                    <div class="search-suggestion-item px-4 py-2 hover:bg-wlDark cursor-pointer flex items-center justify-between" data-name="${monster.name}" data-type="monster">
+                        <span class="text-wlLight">${monster.name}</span>
+                        <span class="text-xs text-wlRed">Lv. ${monster.level || '?'}</span>
+                    </div>
+                `).join('');
+            }
+            
+            // Add item suggestions
+            if (itemMatches.length > 0) {
+                html += '<div class="px-3 py-1 text-xs text-wlBlue font-semibold">ITEMS</div>';
+                html += itemMatches.map(item => `
+                    <div class="search-suggestion-item px-4 py-2 hover:bg-wlDark cursor-pointer flex items-center justify-between" data-name="${item.name}" data-type="item">
+                        <span class="text-wlLight">${item.name}</span>
+                        <span class="text-xs text-wlBlue">${item.category || 'item'}</span>
+                    </div>
+                `).join('');
+            }
+            
+            // Add tier-list link
+            html += '<div class="px-3 py-1 text-xs text-wlPurple font-semibold border-t border-wlLight border-opacity-10 mt-1">OTHER</div>';
+            html += `
+                <div class="search-suggestion-item px-4 py-2 hover:bg-wlDark cursor-pointer flex items-center justify-between" data-name="${query}" data-type="tierlist">
+                    <span class="text-wlLight">Search in Tier-List</span>
+                    <span class="text-xs text-wlPurple">Characters</span>
+                </div>
+            `;
+            
+            searchSuggestions.innerHTML = html;
+            searchSuggestions.classList.remove('hidden');
+            
+            // Add click handlers
+            searchSuggestions.querySelectorAll('.search-suggestion-item').forEach(el => {
+                el.addEventListener('click', () => {
+                    const name = el.dataset.name;
+                    const type = el.dataset.type;
+                    mainSearchInput.value = name;
+                    searchSuggestions.classList.add('hidden');
+                    
+                    // Redirect based on type
+                    if (type === 'monster') {
+                        window.location.href = 'monsters.html?search=' + encodeURIComponent(name);
+                    } else if (type === 'manufacture') {
+                        window.location.href = 'manufacture.html?search=' + encodeURIComponent(name);
+                    } else if (type === 'tierlist') {
+                        window.location.href = 'tier-list.html?search=' + encodeURIComponent(name);
+                    } else {
+                        window.location.href = 'Item.html?search=' + encodeURIComponent(name);
+                    }
+                });
+            });
+        }
+        
+        if (mainSearchInput) {
+            mainSearchInput.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    showSearchSuggestions(this.value);
+                }, 200);
+            });
+            
+            mainSearchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchSuggestions.classList.add('hidden');
+                    performSearch(this.value);
+                }
+            });
+            
+            mainSearchInput.addEventListener('blur', function() {
+                setTimeout(() => searchSuggestions.classList.add('hidden'), 200);
+            });
+        }
+        
+        if (mainSearchBtn) {
+            mainSearchBtn.addEventListener('click', function() {
+                performSearch(mainSearchInput.value);
+            });
+        }
+        
+        // Show a temporary notification
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'fixed bottom-4 right-4 bg-wlDark px-6 py-3 rounded-lg shadow-lg flex items-center fade-in';
+            notification.innerHTML = `
+                <i class="fas fa-search text-wlBlue mr-2"></i>
+                <span>${message}</span>
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.classList.add('opacity-0');
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+        
+        // Add hover effect to category cards
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                const icon = this.querySelector('.category-icon');
+                icon.style.transform = 'scale(1.2) rotateY(10deg)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                const icon = this.querySelector('.category-icon');
+                icon.style.transform = 'scale(1) rotateY(0)';
+            });
+        });
+        
+        // Add animation to hero section elements
+        const heroElements = document.querySelectorAll('section.text-center h2, section.text-center p, section.text-center .max-w-2xl');
+        heroElements.forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            }, 100 + (index * 100));
+        });
+        
+        // ===== NEW FEATURES =====
+        
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('light');
+            themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('light');
+            const icon = themeToggle.querySelector('i');
+            
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+        
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Countdown Timer
+        function updateCountdown() {
+            // Set event date to 7 days from now for demo
+            const eventDate = new Date();
+            eventDate.setDate(eventDate.getDate() + 7);
+            
+            const now = new Date();
+            const diff = eventDate - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const secs = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdownDays').textContent = String(days).padStart(2, '0');
+            document.getElementById('countdownHours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('countdownMins').textContent = String(mins).padStart(2, '0');
+            document.getElementById('countdownSecs').textContent = String(secs).padStart(2, '0');
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // Stats are now static, no animation needed
+        // The counts are loaded from actual database data
+        document.getElementById('statItems').textContent = '5,446';
+        document.getElementById('statMonsters').textContent = '1,189';
+        document.getElementById('statManufacture').textContent = '576';
+        document.getElementById('totalEntries').textContent = '7,211';
+        
+        // Random Entry Button - Go to random item
+        const randomEntryBtn = document.getElementById('randomEntryBtn');
+        
+        randomEntryBtn.addEventListener('click', async () => {
+            try {
+                const response = await fetch('data/items-index.json');
+                const data = await response.json();
+                const items = data.items;
+                const randomItem = items[Math.floor(Math.random() * items.length)];
+                showNotification(`Discovering: ${randomItem.name}...`);
+                setTimeout(() => {
+                    window.location.href = `Item.html?search=${encodeURIComponent(randomItem.name)}`;
+                }, 800);
+            } catch (e) {
+                showNotification('Loading random item...');
+                // Fallback to items page
+                setTimeout(() => {
+                    window.location.href = 'Item.html';
+                }, 800);
+            }
+        });
+        
+        // Cookie Consent
+        const cookieBanner = document.getElementById('cookieBanner');
+        const acceptCookies = document.getElementById('acceptCookies');
+        const declineCookies = document.getElementById('declineCookies');
+        
+        // Show cookie banner if not already accepted/declined
+        if (!localStorage.getItem('cookieConsent')) {
+            setTimeout(() => {
+                cookieBanner.classList.add('show');
+            }, 2000);
+        }
+        
+        acceptCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieBanner.classList.remove('show');
+        });
+        
+        declineCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'declined');
+            cookieBanner.classList.remove('show');
+        });
+        
+        // Favorites System
+        let favorites = JSON.parse(localStorage.getItem('wloFavorites') || '[]');
+        
+        document.querySelectorAll('.add-to-favorites').forEach(btn => {
+            const name = btn.dataset.name;
+            const url = btn.dataset.url;
+            
+            // Check if already favorited
+            if (favorites.some(f => f.name === name)) {
+                btn.innerHTML = '<i class="fas fa-heart-broken mr-1"></i> Remove from Favorites';
+                btn.classList.add('bg-wlPurple', 'text-white', 'border-wlPurple');
+            }
+            
+            btn.addEventListener('click', () => {
+                const index = favorites.findIndex(f => f.name === name);
+                
+                if (index > -1) {
+                    favorites.splice(index, 1);
+                    btn.innerHTML = '<i class="fas fa-heart mr-1"></i> Add to Favorites';
+                    btn.classList.remove('bg-wlPurple', 'text-white', 'border-wlPurple');
+                    showNotification(`${name} removed from favorites`);
+                } else {
+                    favorites.push({ name, url, addedAt: new Date().toISOString() });
+                    btn.innerHTML = '<i class="fas fa-heart-broken mr-1"></i> Remove from Favorites';
+                    btn.classList.add('bg-wlPurple', 'text-white', 'border-wlPurple');
+                    showNotification(`${name} added to favorites!`);
+                }
+                
+                localStorage.setItem('wloFavorites', JSON.stringify(favorites));
+            });
+        });
+        
+        // Featured Item of the Day - Load from actual database
+        let featuredItems = [];
+        let currentFeaturedIndex = 0;
+        
+        async function loadFeaturedItems() {
+            try {
+                const response = await fetch('data/items-index.json');
+                const data = await response.json();
+                // Get a random selection of items with different rarities
+                const items = data.items.filter(item => item.name && item.level > 0);
+                // Shuffle and take 10 items
+                featuredItems = items.sort(() => Math.random() - 0.5).slice(0, 10);
+                
+                if (featuredItems.length > 0) {
+                    // Use day of year to pick consistent featured item for the day
+                    const now = new Date();
+                    const start = new Date(now.getFullYear(), 0, 0);
+                    const diff = now - start;
+                    const oneDay = 1000 * 60 * 60 * 24;
+                    const dayOfYear = Math.floor(diff / oneDay);
+                    currentFeaturedIndex = dayOfYear % featuredItems.length;
+                    displayFeaturedItem(featuredItems[currentFeaturedIndex]);
+                }
+            } catch (e) {
+                console.error('Failed to load featured items:', e);
+                displayFeaturedItem({ name: 'Error Loading', description: 'Could not load featured item', level: '-', rank: '-', category: '-' });
+            }
+        }
+        
+        function displayFeaturedItem(item) {
+            const nameEl = document.getElementById('featuredItemName');
+            const rarityEl = document.getElementById('featuredItemRarity');
+            const descEl = document.getElementById('featuredItemDesc');
+            const levelEl = document.getElementById('featuredItemLevel');
+            const rankEl = document.getElementById('featuredItemRank');
+            const catEl = document.getElementById('featuredItemCategory');
+            const idEl = document.getElementById('featuredItemId');
+            const linkEl = document.getElementById('featuredItemLink');
+            const favBtn = document.getElementById('featuredAddFavorite');
+            
+            if (nameEl) nameEl.textContent = item.name || 'Unknown';
+            if (rarityEl) {
+                rarityEl.textContent = item.rarity || 'Common';
+                // Update rarity badge color
+                const rarityColors = {
+                    'legendary': 'bg-wlYellow',
+                    'epic': 'bg-wlPurple',
+                    'rare': 'bg-wlBlue',
+                    'uncommon': 'bg-wlGreen',
+                    'common': 'bg-wlLight'
+                };
+                const rarityClass = rarityColors[(item.rarity || 'common').toLowerCase()] || 'bg-wlLight';
+                rarityEl.className = `px-2 py-1 ${rarityClass} bg-opacity-20 text-wlYellow text-xs rounded`;
+            }
+            if (descEl) descEl.textContent = item.description || 'No description available';
+            if (levelEl) levelEl.textContent = item.level !== undefined ? item.level : '-';
+            if (rankEl) rankEl.textContent = item.rank || '-';
+            if (catEl) catEl.textContent = (item.category || 'item').charAt(0).toUpperCase() + (item.category || 'item').slice(1);
+            if (idEl) idEl.textContent = item.id || '-';
+            if (linkEl) linkEl.href = `Item.html?search=${encodeURIComponent(item.name || '')}`;
+            if (favBtn) {
+                favBtn.dataset.name = item.name || '';
+            }
+        }
+        
+        const refreshFeatured = document.getElementById('refreshFeatured');
+        if (refreshFeatured) {
+            refreshFeatured.addEventListener('click', () => {
+                if (featuredItems.length > 0) {
+                    currentFeaturedIndex = (currentFeaturedIndex + 1) % featuredItems.length;
+                    displayFeaturedItem(featuredItems[currentFeaturedIndex]);
+                    showNotification(`Featured item: ${featuredItems[currentFeaturedIndex].name}`);
+                }
+            });
+        }
+        
+        // Load featured items on page load
+        loadFeaturedItems();
+        
+        // Search suggestions are now handled by the main search functionality above
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Press '/' to focus search
+            if (e.key === '/' && document.activeElement !== mainSearchInput) {
+                e.preventDefault();
+                mainSearchInput.focus();
+            }
+            
+            // Press 'Escape' to close mobile sidebar
+            if (e.key === 'Escape') {
+                mobileSidebar.classList.remove('sidebar-visible');
+                mobileSidebar.classList.add('sidebar-hidden');
+                darkOverlay.classList.remove('dark-overlay-visible');
+            }
+        });
+        
+        // Online users simulation
+        setInterval(() => {
+            const onlineUsers = document.getElementById('onlineUsers');
+            if (onlineUsers) {
+                const current = parseInt(onlineUsers.textContent) || 0;
+                const change = Math.floor(Math.random() * 5) - 2;
+                const newCount = Math.max(5, current + change);
+                onlineUsers.textContent = newCount;
+            }
+        }, 10000);
+        
+        // Free Codes functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle individual copy buttons
+            const copyButtons = document.querySelectorAll('.copy-code');
+            copyButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const code = this.getAttribute('data-code');
+                    if (code) {
+                        navigator.clipboard.writeText(code).then(() => {
+                            // Show feedback
+                            const originalIcon = this.innerHTML;
+                            this.innerHTML = '<i class="fas fa-check text-wlGreen"></i>';
+                            setTimeout(() => {
+                                this.innerHTML = originalIcon;
+                            }, 1500);
+                        }).catch(err => {
+                            console.error('Failed to copy: ', err);
+                        });
+                    }
+                });
+            });
+            
+            // Handle "Copy All Codes" button
+            const copyAllBtn = document.getElementById('copyAllCodes');
+            if (copyAllBtn) {
+                copyAllBtn.addEventListener('click', function() {
+                    const codes = [];
+                    document.querySelectorAll('.copy-code').forEach(button => {
+                        const code = button.getAttribute('data-code');
+                        if (code) codes.push(code);
+                    });
+                    
+                    if (codes.length > 0) {
+                        navigator.clipboard.writeText(codes.join('\n')).then(() => {
+                            // Show feedback
+                            const originalText = this.innerHTML;
+                            this.innerHTML = '<i class="fas fa-check mr-2"></i> Copied!';
+                            this.classList.remove('from-wlGreen', 'to-wlBlue');
+                            this.classList.add('from-wlGreen', 'to-wlYellow');
+                            setTimeout(() => {
+                                this.innerHTML = originalText;
+                                this.classList.remove('from-wlGreen', 'to-wlYellow');
+                                this.classList.add('from-wlGreen', 'to-wlBlue');
+                            }, 2000);
+                        }).catch(err => {
+                            console.error('Failed to copy all codes: ', err);
+                        });
+                    }
+                });
+            }
+            
+            // Mobile menu button functionality
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileSidebar.classList.remove('sidebar-hidden');
+                    mobileSidebar.classList.add('sidebar-visible');
+                    darkOverlay.classList.add('dark-overlay-visible');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+</qodoArtifact>
+I have updated the file content. Let me know if you need anything else!

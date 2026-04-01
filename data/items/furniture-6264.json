@@ -1,0 +1,15 @@
+{
+  "id": 6264,
+  "name": "(???)",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "??",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6264.png",
+  "file": "furniture-6264.json"
+}

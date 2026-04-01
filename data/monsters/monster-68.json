@@ -1,0 +1,45 @@
+{
+  "id": 68,
+  "name": "Earthworm",
+  "location": "Kelan Village's Woods",
+  "image": "data/Monster_Images/monster-68.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pachyrhizus",
+      "itemId": 7516,
+      "itemFile": "material-7516.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Clay",
+      "itemId": 7643,
+      "itemFile": "material-7643.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 4,
+    "hp": 60,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 8,
+    "str": 1,
+    "con": 4,
+    "int": 3,
+    "wis": 3,
+    "agi": 1
+  }
+}

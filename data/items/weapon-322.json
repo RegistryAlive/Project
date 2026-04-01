@@ -1,0 +1,17 @@
+{
+  "id": 322,
+  "name": "Acuminate Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 2,
+  "level": 70,
+  "rarity": "common",
+  "base": "Titanium",
+  "description": "Used by Pharoah Tut. Has a 14% critical strike chance.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50
+  },
+  "image": "data/images/weapon-322.png",
+  "file": "weapon-322.json"
+}

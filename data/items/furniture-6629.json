@@ -1,0 +1,15 @@
+{
+  "id": 6629,
+  "name": "Rabbit Table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "a yellow bunny napkin on the short table",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6629.png",
+  "file": "furniture-6629.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8052,
+  "name": "Snake's Biliary",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Biliary of snake lord",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8052.png",
+  "file": "questprop-8052.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1969,
+  "name": "White Dawn Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Leaf",
+  "description": "A pair of shoes woven from freshly picked leaves",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 5,
+    "DEF": 4
+  },
+  "image": "data/images/shoes-1969.png",
+  "file": "shoes-1969.json"
+}

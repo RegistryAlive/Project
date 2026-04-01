@@ -1,0 +1,18 @@
+{
+  "id": 1931,
+  "name": "Strong Beast Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 6,
+  "level": 0,
+  "rarity": "rare",
+  "base": "N/A",
+  "description": "Special for Sam, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 38,
+    "MaxSP": 48
+  },
+  "image": "data/images/shoes-1931.png",
+  "file": "shoes-1931.json"
+}

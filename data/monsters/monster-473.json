@@ -1,0 +1,33 @@
+{
+  "id": 473,
+  "name": "Cursed Ghost",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-473.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Pork Miso Noodle",
+      "itemId": 7173,
+      "itemFile": "material-7173.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "2X Holy EXP Potion",
+      "itemId": 8533,
+      "itemFile": "questprop-8533.json",
+      "itemCategory": "questprop"
+    }
+  ],
+  "stats": {
+    "level": 125,
+    "hp": 843,
+    "sp": 604,
+    "catchable": "Unknown",
+    "spd": 271.5,
+    "str": 38,
+    "con": 40,
+    "int": 36,
+    "wis": 30,
+    "agi": 42
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 255,
+  "name": "Sun Lightsaber",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A high-tech beam saber that shines like a blazing sun, with powerful cutting capabilities. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35,
+    "SPD": 50
+  },
+  "image": "data/images/weapon-255.png",
+  "file": "weapon-255.json"
+}

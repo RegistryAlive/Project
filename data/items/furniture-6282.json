@@ -1,0 +1,15 @@
+{
+  "id": 6282,
+  "name": "Broom",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The front end of bushy whiskers, can easily dusting",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6282.png",
+  "file": "furniture-6282.json"
+}

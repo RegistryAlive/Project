@@ -1,0 +1,18 @@
+{
+  "id": 2117,
+  "name": "Spell Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "It can raise magic defense and magic attack power.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 4,
+    "MATK": 2
+  },
+  "image": "data/images/special-2117.png",
+  "file": "special-2117.json"
+}

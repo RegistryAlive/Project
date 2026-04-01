@@ -1,0 +1,17 @@
+{
+  "id": 1057,
+  "name": "Bath Shawl",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A shawl which is used in bathing",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 4
+  },
+  "image": "data/images/armor-1057.png",
+  "file": "armor-1057.json"
+}

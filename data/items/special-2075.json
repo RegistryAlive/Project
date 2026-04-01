@@ -1,0 +1,18 @@
+{
+  "id": 2075,
+  "name": "Spectacles (un",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Props that allow users to see things in the distance",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 3,
+    "DEF": 1
+  },
+  "image": "data/images/special-2075.png",
+  "file": "special-2075.json"
+}

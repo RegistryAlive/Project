@@ -1,0 +1,17 @@
+{
+  "id": 663,
+  "name": "Double Rings",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Slim and graceful as a wisp of wind.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 32
+  },
+  "image": "data/images/weapon-663.png",
+  "file": "weapon-663.json"
+}

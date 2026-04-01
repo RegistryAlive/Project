@@ -1,0 +1,18 @@
+{
+  "id": 874,
+  "name": "Shining Bow (CP)",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 15,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal)",
+  "description": "Forged with ore from the sun it shines with power.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "SPD": 22
+  },
+  "image": "data/images/weapon-874.png",
+  "file": "weapon-874.json"
+}

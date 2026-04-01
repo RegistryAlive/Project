@@ -1,0 +1,17 @@
+{
+  "id": 7210,
+  "name": "White Beancurd",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Bean / Egg",
+  "description": "Beancurd with a preserved egg",
+  "size": "1x1",
+  "attributes": {
+    "HP": 385
+  },
+  "image": "data/images/material-7210.png",
+  "file": "material-7210.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 742,
+  "name": "Cypress Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Wood",
+  "description": "It is made of Cypress.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3,
+    "DEF": 5
+  },
+  "image": "data/images/weapon-742.png",
+  "file": "weapon-742.json"
+}

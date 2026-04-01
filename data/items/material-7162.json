@@ -1,0 +1,17 @@
+{
+  "id": 7162,
+  "name": "Fruit Cake",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Vegetable / Meat / Fish and Shellfish",
+  "description": "Delicious fruit cake,HP+400.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 400
+  },
+  "image": "data/images/material-7162.png",
+  "file": "material-7162.json"
+}

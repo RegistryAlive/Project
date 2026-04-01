@@ -1,0 +1,17 @@
+{
+  "id": 2338,
+  "name": "Shopping Card",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "To buy items at a 50% discount.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 50
+  },
+  "image": "data/images/special-2338.png",
+  "file": "special-2338.json"
+}

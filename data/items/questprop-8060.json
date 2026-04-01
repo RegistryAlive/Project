@@ -1,0 +1,15 @@
+{
+  "id": 8060,
+  "name": "Cook's Badge",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is from the female emperor",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8060.png",
+  "file": "questprop-8060.json"
+}

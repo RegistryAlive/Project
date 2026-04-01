@@ -1,0 +1,15 @@
+{
+  "id": 10083,
+  "name": "Alchemy Book 1",
+  "type": "Item",
+  "category": "item",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "Primary book that upgrades an item's upper limit.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/item-10083.png",
+  "file": "item-10083.json"
+}

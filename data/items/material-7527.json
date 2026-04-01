@@ -1,0 +1,17 @@
+{
+  "id": 7527,
+  "name": "Spore",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Spore of a mushroom",
+  "size": "1x1",
+  "attributes": {
+    "HP": 20
+  },
+  "image": "data/images/material-7527.png",
+  "file": "material-7527.json"
+}

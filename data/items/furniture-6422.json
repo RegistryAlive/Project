@@ -1,0 +1,15 @@
+{
+  "id": 6422,
+  "name": "Gugu Clock",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Clock used to get the right time",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6422.png",
+  "file": "furniture-6422.json"
+}

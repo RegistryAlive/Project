@@ -1,0 +1,17 @@
+{
+  "id": 2955,
+  "name": "Rainy Bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The bracelets entangled with many ghosts make people feel that the temperature around them has dropped slightly. It can slightly increase the chance of counterattack in battle. (If you change the shape of the bracelet, the effect will disappear at the sa",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 35
+  },
+  "image": "data/images/arm-2955.png",
+  "file": "arm-2955.json"
+}

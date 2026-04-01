@@ -1,0 +1,18 @@
+{
+  "id": 754,
+  "name": "Toy Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Wood",
+  "description": "An ordinary wood gavel.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "DEF": 17
+  },
+  "image": "data/images/weapon-754.png",
+  "file": "weapon-754.json"
+}

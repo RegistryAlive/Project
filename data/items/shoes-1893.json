@@ -1,0 +1,18 @@
+{
+  "id": 1893,
+  "name": "Silver Loops",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Silver / Aluminum / Corundum / Magic",
+  "description": "Heel loops that have a 6% chance to resist seal.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 6,
+    "SPD": 8
+  },
+  "image": "data/images/shoes-1893.png",
+  "file": "shoes-1893.json"
+}

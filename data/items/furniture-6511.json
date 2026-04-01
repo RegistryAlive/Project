@@ -1,0 +1,15 @@
+{
+  "id": 6511,
+  "name": "New Yr Balloon",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The golden and white balloon decoration looks lively and luxurious",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6511.png",
+  "file": "furniture-6511.json"
+}

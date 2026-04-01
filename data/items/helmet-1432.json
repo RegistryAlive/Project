@@ -1,0 +1,18 @@
+{
+  "id": 1432,
+  "name": "Pure Iron Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Pure Iron / Corundum",
+  "description": "A magic crown made with a hematite inlaid crest.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "MATK": 10
+  },
+  "image": "data/images/helmet-1432.png",
+  "file": "helmet-1432.json"
+}

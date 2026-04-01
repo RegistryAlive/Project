@@ -1,0 +1,15 @@
+{
+  "id": 7733,
+  "name": "Red Coral",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Canine",
+  "description": "Red Coral from a cay",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7733.png",
+  "file": "material-7733.json"
+}

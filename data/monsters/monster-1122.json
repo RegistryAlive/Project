@@ -1,0 +1,33 @@
+{
+  "id": 1122,
+  "name": "Cateran III",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-1123.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Maize",
+      "itemId": 7431,
+      "itemFile": "material-7431.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 89,
+    "hp": 1045,
+    "sp": 843,
+    "catchable": "Yes",
+    "spd": 215.5,
+    "str": 66,
+    "con": 61,
+    "int": 47,
+    "wis": 52,
+    "agi": 41
+  }
+}

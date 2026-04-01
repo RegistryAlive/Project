@@ -1,0 +1,15 @@
+{
+  "id": 6586,
+  "name": "W. candlestick",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Skull decorated with candelabra, filled with atmosphere of Halloween",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6586.png",
+  "file": "furniture-6586.json"
+}

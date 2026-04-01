@@ -1,0 +1,15 @@
+{
+  "id": 7638,
+  "name": "Brown Rock",
+  "type": "MaterialRock",
+  "category": "material",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Rock",
+  "description": "Picked from brown clay thats covered with snow.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7638.png",
+  "file": "material-7638.json"
+}

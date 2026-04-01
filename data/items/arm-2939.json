@@ -1,0 +1,18 @@
+{
+  "id": 2939,
+  "name": "Nemo Bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The cute fish swims beside them, as if they are on the bottom of the sea. When attacked by a water-based enemy, the damage is reduced by 3% (the effect will disappear if you change the shape of the bracelet)",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 150,
+    "SPD": 20
+  },
+  "image": "data/images/arm-2939.png",
+  "file": "arm-2939.json"
+}

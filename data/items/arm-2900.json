@@ -1,0 +1,18 @@
+{
+  "id": 2900,
+  "name": "The Shadow Lore",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Feather / Flower / Leather",
+  "description": "These gloves were fashioned by a Shadow Master, who bestowed mystical powers upon them.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 22,
+    "MDEF": 17
+  },
+  "image": "data/images/arm-2900.png",
+  "file": "arm-2900.json"
+}

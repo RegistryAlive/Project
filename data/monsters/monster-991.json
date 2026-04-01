@@ -1,0 +1,27 @@
+{
+  "id": 991,
+  "name": "Warrior",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-991.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 103,
+    "hp": 5100,
+    "sp": 440,
+    "catchable": "Unknown",
+    "spd": 322.5,
+    "str": 101,
+    "con": 89,
+    "int": 13,
+    "wis": 22,
+    "agi": 84
+  }
+}

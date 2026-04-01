@@ -1,0 +1,18 @@
+{
+  "id": 46,
+  "name": "Warrior Katana",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 2,
+  "level": 40,
+  "rarity": "common",
+  "base": null,
+  "description": "The sword that made Japans warriors feared.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 24,
+    "DEF": 9
+  },
+  "image": "data/images/weapon-46.png",
+  "file": "weapon-46.json"
+}

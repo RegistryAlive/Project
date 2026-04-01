@@ -1,0 +1,18 @@
+{
+  "id": 2032,
+  "name": "Water Aurora Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "MDEF": 10
+  },
+  "image": "data/images/shoes-2032.png",
+  "file": "shoes-2032.json"
+}

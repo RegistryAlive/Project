@@ -1,0 +1,17 @@
+{
+  "id": 1673,
+  "name": "Sunny after ra",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "After experiencing a depression, then there is a radiance, and the damage of the non-attribute attack is reduced by 2%.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 2
+  },
+  "image": "data/images/helmet-1673.png",
+  "file": "helmet-1673.json"
+}

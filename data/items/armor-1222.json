@@ -1,0 +1,18 @@
+{
+  "id": 1222,
+  "name": "Ocean Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The beautiful sea-blue dress, it is said that wearing it can stay with the other half of your heart, with 20% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "Special": 20,
+    "SPD": 20
+  },
+  "image": "data/images/armor-1222.png",
+  "file": "armor-1222.json"
+}

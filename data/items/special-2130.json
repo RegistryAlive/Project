@@ -1,0 +1,18 @@
+{
+  "id": 2130,
+  "name": "Swift Demon Me",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To evenly upgrade magic attack power and agility",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 3,
+    "SPD": 3
+  },
+  "image": "data/images/special-2130.png",
+  "file": "special-2130.json"
+}

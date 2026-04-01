@@ -1,0 +1,51 @@
+{
+  "id": 18,
+  "name": "Troll (North to South Island Subway)",
+  "location": "Subway",
+  "image": "data/Monster_Images/monster-18.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Common Stone",
+      "itemId": 7630,
+      "itemFile": "material-7630.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coprinus",
+      "itemId": 7483,
+      "itemFile": "material-7483.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sardine",
+      "itemId": 7487,
+      "itemFile": "material-7487.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wood",
+      "itemId": 7651,
+      "itemFile": "material-7651.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 20,
+    "hp": 450,
+    "sp": 100,
+    "catchable": "No",
+    "spd": 42,
+    "str": 18,
+    "con": 25,
+    "int": 6,
+    "wis": 5,
+    "agi": 6
+  }
+}

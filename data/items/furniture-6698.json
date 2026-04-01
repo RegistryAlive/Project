@@ -1,0 +1,15 @@
+{
+  "id": 6698,
+  "name": "Gentleman Yeti",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A gentleman snowman wearing a high hat and a mustache.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6698.png",
+  "file": "furniture-6698.json"
+}

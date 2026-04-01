@@ -1,0 +1,18 @@
+{
+  "id": 1816,
+  "name": "Silvery Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Platinum",
+  "description": "Vine shoes which are made from silver",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 5,
+    "SPD": 2
+  },
+  "image": "data/images/shoes-1816.png",
+  "file": "shoes-1816.json"
+}

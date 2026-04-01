@@ -1,0 +1,18 @@
+{
+  "id": 1023,
+  "name": "Bark Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Wood / Copper",
+  "description": "Tree bark scale armor enhanced with magic.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 8,
+    "MATK": 7
+  },
+  "image": "data/images/armor-1023.png",
+  "file": "armor-1023.json"
+}

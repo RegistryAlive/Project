@@ -1,0 +1,18 @@
+{
+  "id": 1625,
+  "name": "Fanta. Xmas Ha",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Female Fantasy Xmas Hat.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "SPD": 20
+  },
+  "image": "data/images/helmet-1625.png",
+  "file": "helmet-1625.json"
+}

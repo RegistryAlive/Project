@@ -1,0 +1,27 @@
+{
+  "id": 1000,
+  "name": "White Snake (Quest)",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-1000.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 110,
+    "hp": 18500,
+    "sp": 875,
+    "catchable": "Unknown",
+    "spd": 265,
+    "str": 90,
+    "con": 80,
+    "int": 60,
+    "wis": 50,
+    "agi": 50
+  }
+}

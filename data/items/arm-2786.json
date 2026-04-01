@@ -1,0 +1,17 @@
+{
+  "id": 2786,
+  "name": "Pure Iron Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Flower / Iron",
+  "description": "Dark red gloves which are made from hematite",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17
+  },
+  "image": "data/images/arm-2786.png",
+  "file": "arm-2786.json"
+}

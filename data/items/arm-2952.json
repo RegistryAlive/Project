@@ -1,0 +1,18 @@
+{
+  "id": 2952,
+  "name": "Snowbreak Glov",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cold-resistant thick leather wristband; when equipped with other downy snow series equipment, it can increase the damage of spears and halberds",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 40,
+    "MaxHP": 150
+  },
+  "image": "data/images/arm-2952.png",
+  "file": "arm-2952.json"
+}

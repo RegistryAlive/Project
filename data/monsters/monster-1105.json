@@ -1,0 +1,33 @@
+{
+  "id": 1105,
+  "name": "Cateran IV",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-1106.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Taro",
+      "itemId": 7432,
+      "itemFile": "material-7432.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1034,
+    "sp": 846,
+    "catchable": "Unknown",
+    "spd": 235,
+    "str": 61,
+    "con": 60,
+    "int": 47,
+    "wis": 52,
+    "agi": 50
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": 327,
+  "name": "Blue Bat",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-327.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Pineapple",
+      "itemId": 7445,
+      "itemFile": "material-7445.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 64,
+    "hp": 525,
+    "sp": 481,
+    "catchable": "No",
+    "spd": 188,
+    "str": 42,
+    "con": 32,
+    "int": 41,
+    "wis": 31,
+    "agi": 46
+  }
+}

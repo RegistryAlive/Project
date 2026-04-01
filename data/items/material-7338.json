@@ -1,0 +1,17 @@
+{
+  "id": 7338,
+  "name": "SilverMoonligh",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The flowing silver moonlight is the raw material for making Mid-autumn osmanthus furniture.",
+  "size": "1x1",
+  "attributes": {
+    "SP": 120
+  },
+  "image": "data/images/material-7338.png",
+  "file": "material-7338.json"
+}

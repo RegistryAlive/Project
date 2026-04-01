@@ -1,0 +1,39 @@
+{
+  "id": 406,
+  "name": "Green Chameleon",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-406.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Small Cucumber",
+      "itemId": 7425,
+      "itemFile": "material-7425.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Silvery Ore",
+      "itemId": 7553,
+      "itemFile": "material-7553.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 66,
+    "hp": 641,
+    "sp": 593,
+    "catchable": "Yes",
+    "spd": 177,
+    "str": 40,
+    "con": 40,
+    "int": 40,
+    "wis": 39,
+    "agi": 39
+  }
+}

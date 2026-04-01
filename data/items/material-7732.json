@@ -1,0 +1,15 @@
+{
+  "id": 7732,
+  "name": "Lion Claw",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Canine",
+  "description": "A Claw of a Lion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7732.png",
+  "file": "material-7732.json"
+}

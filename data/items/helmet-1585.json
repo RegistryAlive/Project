@@ -1,0 +1,18 @@
+{
+  "id": 1585,
+  "name": "Gold Feather Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Steel / Gold / Iron",
+  "description": "Winged Helmet",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "DEF": 20
+  },
+  "image": "data/images/helmet-1585.png",
+  "file": "helmet-1585.json"
+}

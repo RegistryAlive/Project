@@ -1,0 +1,27 @@
+{
+  "id": 704,
+  "name": "Fruit Grower",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-704.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 539,
+    "sp": 307,
+    "catchable": "Unknown",
+    "spd": 111,
+    "str": 45,
+    "con": 46,
+    "int": 21,
+    "wis": 20,
+    "agi": 18
+  }
+}

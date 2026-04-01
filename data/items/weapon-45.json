@@ -1,0 +1,17 @@
+{
+  "id": 45,
+  "name": "Moon Sea Sword",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 50,
+  "level": 100,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A two-handed sword, shaped like a moon commonly used in the seas",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 100
+  },
+  "image": "data/images/weapon-45.png",
+  "file": "weapon-45.json"
+}

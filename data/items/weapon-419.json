@@ -1,0 +1,18 @@
+{
+  "id": 419,
+  "name": "Shining Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 15,
+  "level": 36,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Forged with ore from the sun it shines with power.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 22,
+    "ATK": 14
+  },
+  "image": "data/images/weapon-419.png",
+  "file": "weapon-419.json"
+}

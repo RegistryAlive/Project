@@ -1,0 +1,15 @@
+{
+  "id": 8499,
+  "name": "Silver Owl Tic",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that allows the Silver Feather Owl to become a partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8499.png",
+  "file": "questprop-8499.json"
+}

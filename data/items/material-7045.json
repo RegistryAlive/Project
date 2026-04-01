@@ -1,0 +1,17 @@
+{
+  "id": 7045,
+  "name": "Cabbage Crepe",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Vegetable",
+  "description": "Crepes with cabbage in it",
+  "size": "1x1",
+  "attributes": {
+    "HP": 350
+  },
+  "image": "data/images/material-7045.png",
+  "file": "material-7045.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2288,
+  "name": "Defence Vest",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "A defensive vest.",
+  "size": "1x1",
+  "attributes": {
+    "DefShoot": 90
+  },
+  "image": "data/images/special-2288.png",
+  "file": "special-2288.json"
+}

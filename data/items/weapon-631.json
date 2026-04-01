@@ -1,0 +1,18 @@
+{
+  "id": 631,
+  "name": "Red Rose Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The bright red magic staff, full of vitality, strikes with all its strength with enthusiasm! 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 60,
+    "MaxHP": 350
+  },
+  "image": "data/images/weapon-631.png",
+  "file": "weapon-631.json"
+}

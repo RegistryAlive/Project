@@ -1,0 +1,51 @@
+{
+  "id": 86,
+  "name": "Rice Chicken",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-86.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coprinus",
+      "itemId": 7483,
+      "itemFile": "material-7483.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Rice",
+      "itemId": 7403,
+      "itemFile": "material-7403.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Egg",
+      "itemId": 7502,
+      "itemFile": "material-7502.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Feather",
+      "itemId": 7659,
+      "itemFile": "material-7659.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 11,
+    "hp": 73,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 32.5,
+    "str": 4,
+    "con": 4,
+    "int": 8,
+    "wis": 9,
+    "agi": 8
+  }
+}

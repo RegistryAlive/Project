@@ -1,0 +1,48 @@
+{
+  "id": 442,
+  "name": "Abyssal Devil",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-442.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Clear Devil's Spar",
+      "itemId": null,
+      "itemFile": null
+    },
+    {
+      "name": "Cyan Devil's Spar",
+      "itemId": null,
+      "itemFile": null
+    },
+    {
+      "name": "Orange Devil's Spar",
+      "itemId": 7435,
+      "itemFile": "material-7435.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Green Devil's Spar",
+      "itemId": null,
+      "itemFile": null
+    }
+  ],
+  "stats": {
+    "level": 105,
+    "hp": 15000,
+    "sp": 1011,
+    "catchable": "Unknown",
+    "spd": 277.5,
+    "str": 75,
+    "con": 65,
+    "int": 55,
+    "wis": 60,
+    "agi": 60
+  }
+}

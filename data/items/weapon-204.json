@@ -1,0 +1,18 @@
+{
+  "id": 204,
+  "name": "Sky Sword+7",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets,40% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 54,
+    "SPD": 54
+  },
+  "image": "data/images/weapon-204.png",
+  "file": "weapon-204.json"
+}

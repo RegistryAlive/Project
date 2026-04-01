@@ -1,0 +1,15 @@
+{
+  "id": 6267,
+  "name": "Mill",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A giant instrument used to make a number of items.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6267.png",
+  "file": "furniture-6267.json"
+}

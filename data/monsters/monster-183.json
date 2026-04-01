@@ -1,0 +1,33 @@
+{
+  "id": 183,
+  "name": "Gentle Tree",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-183.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Rice With Roast Pork",
+      "itemId": 7037,
+      "itemFile": "material-7037.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 22,
+    "hp": 108,
+    "sp": 100,
+    "catchable": "No",
+    "spd": 43,
+    "str": 10,
+    "con": 6,
+    "int": 7,
+    "wis": 5,
+    "agi": 5
+  }
+}

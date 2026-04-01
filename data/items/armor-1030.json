@@ -1,0 +1,18 @@
+{
+  "id": 1030,
+  "name": "Blue Qi Pao",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Flower",
+  "description": "A cheong-sam which is made up by blue silk threads",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 17,
+    "DEF": 10
+  },
+  "image": "data/images/armor-1030.png",
+  "file": "armor-1030.json"
+}

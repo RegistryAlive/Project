@@ -1,0 +1,33 @@
+{
+  "id": 1028,
+  "name": "Saprozoic Vulture",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-1029.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Funny Feather",
+      "itemId": 7661,
+      "itemFile": "material-7661.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 629,
+    "sp": 607,
+    "catchable": "Yes",
+    "spd": 194.5,
+    "str": 45,
+    "con": 48,
+    "int": 37,
+    "wis": 39,
+    "agi": 44
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1531,
+  "name": "Sea Wing Helmet (Instance)",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Diamond",
+  "description": "A forehead crown which is wing-shaped",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "DEF": 10
+  },
+  "image": "data/images/helmet-1531.png",
+  "file": "helmet-1531.json"
+}

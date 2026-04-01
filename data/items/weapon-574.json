@@ -1,0 +1,18 @@
+{
+  "id": 574,
+  "name": "Golden Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Wood / Corundum",
+  "description": "Made of gold with a caste ruby in the center",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50,
+    "MDEF": 28
+  },
+  "image": "data/images/weapon-574.png",
+  "file": "weapon-574.json"
+}

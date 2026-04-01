@@ -1,0 +1,18 @@
+{
+  "id": 116,
+  "name": "Bronze Big Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "A sword made from bronze, its quite wide.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 13,
+    "SPD": 13
+  },
+  "image": "data/images/weapon-116.png",
+  "file": "weapon-116.json"
+}

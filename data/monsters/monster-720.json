@@ -1,0 +1,27 @@
+{
+  "id": 720,
+  "name": "Grannie",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-720.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 48,
+    "hp": 307,
+    "sp": 535,
+    "catchable": "Unknown",
+    "spd": 122,
+    "str": 21,
+    "con": 23,
+    "int": 36,
+    "wis": 39,
+    "agi": 25
+  }
+}

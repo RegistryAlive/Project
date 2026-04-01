@@ -1,0 +1,17 @@
+{
+  "id": 1394,
+  "name": "Blue Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Iron / Quartz (Crystal)",
+  "description": "A helmet with blue crystal embedded in it.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 19
+  },
+  "image": "data/images/helmet-1394.png",
+  "file": "helmet-1394.json"
+}

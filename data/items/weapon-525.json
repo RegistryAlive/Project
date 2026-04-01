@@ -1,0 +1,17 @@
+{
+  "id": 525,
+  "name": "Blue Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Tin / Magic",
+  "description": "Forged by tin absorbing world magic power.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 42
+  },
+  "image": "data/images/weapon-525.png",
+  "file": "weapon-525.json"
+}

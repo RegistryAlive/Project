@@ -1,0 +1,15 @@
+{
+  "id": 1166,
+  "name": "Summer Kimono",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Summer Kimono",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1166.png",
+  "file": "armor-1166.json"
+}

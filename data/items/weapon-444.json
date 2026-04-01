@@ -1,0 +1,18 @@
+{
+  "id": 444,
+  "name": "Crescent Bow+6",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 14,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets, 38% chance of critical strike.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 42,
+    "SPD": 42
+  },
+  "image": "data/images/weapon-444.png",
+  "file": "weapon-444.json"
+}

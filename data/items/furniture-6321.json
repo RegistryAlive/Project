@@ -1,0 +1,15 @@
+{
+  "id": 6321,
+  "name": "TV",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 15,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "used for killing time.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6321.png",
+  "file": "furniture-6321.json"
+}

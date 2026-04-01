@@ -1,0 +1,15 @@
+{
+  "id": 8243,
+  "name": "Sun Badge",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The badge can prove its owner is a member of Helios's Palace",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8243.png",
+  "file": "questprop-8243.json"
+}

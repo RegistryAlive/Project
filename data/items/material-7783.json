@@ -1,0 +1,15 @@
+{
+  "id": 7783,
+  "name": "Beetle Horn",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Canine",
+  "description": "The stiff horn of a beetle",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7783.png",
+  "file": "material-7783.json"
+}

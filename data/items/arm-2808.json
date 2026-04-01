@@ -1,0 +1,18 @@
+{
+  "id": 2808,
+  "name": "Fei hand gu",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Fly Fengxiang day trend, Carpenter God will protect this perfusion Fei divine hands, faster than all attacks",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 27,
+    "SPD": 10
+  },
+  "image": "data/images/arm-2808.png",
+  "file": "arm-2808.json"
+}

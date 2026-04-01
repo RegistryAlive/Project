@@ -1,0 +1,18 @@
+{
+  "id": 7196,
+  "name": "Fried Meat Ball",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Fried meatball",
+  "size": "1x1",
+  "attributes": {
+    "HP": 250,
+    "SP": 30
+  },
+  "image": "data/images/material-7196.png",
+  "file": "material-7196.json"
+}

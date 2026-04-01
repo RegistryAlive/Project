@@ -1,0 +1,15 @@
+{
+  "id": 6656,
+  "name": "Ocean bathtub",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A jacuzzi made by simulating shallow sea tides, with inflatable pillows shaped like shells.",
+  "size": "5x3",
+  "attributes": {},
+  "image": "data/images/furniture-6656.png",
+  "file": "furniture-6656.json"
+}

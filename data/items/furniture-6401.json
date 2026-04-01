@@ -1,0 +1,15 @@
+{
+  "id": 6401,
+  "name": "Tile",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tiles used for the floor.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6401.png",
+  "file": "furniture-6401.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1296,
+  "name": "Immortal Cloth",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 3,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "It symbolizes the fiery red sun, shining on the earth forever; when the wearer's HP is lower than 50%, the damage can be increased by 3%, and when it is equipped with other inextinguishable series equipment at the same time, additional set effects can be",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 35,
+    "MDEF": 35
+  },
+  "image": "data/images/armor-1296.png",
+  "file": "armor-1296.json"
+}

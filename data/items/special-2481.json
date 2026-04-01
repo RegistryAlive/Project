@@ -1,0 +1,17 @@
+{
+  "id": 2481,
+  "name": "Priest Cape",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Cape used by Priests and available to socket",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 23
+  },
+  "image": "data/images/special-2481.png",
+  "file": "special-2481.json"
+}

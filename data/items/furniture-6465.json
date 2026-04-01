@@ -1,0 +1,15 @@
+{
+  "id": 6465,
+  "name": "Love Window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Window",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6465.png",
+  "file": "furniture-6465.json"
+}

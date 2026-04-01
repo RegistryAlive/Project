@@ -1,0 +1,27 @@
+{
+  "id": 1003,
+  "name": "White Woman (Quest)",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-1003.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 7800,
+    "sp": 483,
+    "catchable": "Unknown",
+    "spd": 175,
+    "str": 55,
+    "con": 50,
+    "int": 40,
+    "wis": 30,
+    "agi": 35
+  }
+}

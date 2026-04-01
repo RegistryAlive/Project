@@ -1,0 +1,18 @@
+{
+  "id": 938,
+  "name": "Xin's Blade",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 43,
+  "level": 86,
+  "rarity": "legendary",
+  "base": "Titanium / Pure Iron / Iron / Steel / Gold",
+  "description": "A Blade made for Xin.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 51,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-938.png",
+  "file": "weapon-938.json"
+}

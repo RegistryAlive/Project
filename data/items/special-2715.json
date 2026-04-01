@@ -1,0 +1,17 @@
+{
+  "id": 2715,
+  "name": "High-p Cl +10",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 115,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A high efficiency clockwork produced for work efficiency.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 115
+  },
+  "image": "data/images/special-2715.png",
+  "file": "special-2715.json"
+}

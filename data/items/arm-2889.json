@@ -1,0 +1,18 @@
+{
+  "id": 2889,
+  "name": "Dark Bead Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Aluminum / Iron / Steel",
+  "description": "Bracers made with tin and steel",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "ATK": 9
+  },
+  "image": "data/images/arm-2889.png",
+  "file": "arm-2889.json"
+}

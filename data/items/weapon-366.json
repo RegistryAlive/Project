@@ -1,0 +1,18 @@
+{
+  "id": 366,
+  "name": "Nightmare Fork",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Night Eva exclusive weapon after reincarnation, has critical chance effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60,
+    "MATK": 60
+  },
+  "image": "data/images/weapon-366.png",
+  "file": "weapon-366.json"
+}

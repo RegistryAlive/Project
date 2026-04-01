@@ -1,0 +1,15 @@
+{
+  "id": 1703,
+  "name": "Brown bear hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cute hat with brown bear ears",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1703.png",
+  "file": "helmet-1703.json"
+}

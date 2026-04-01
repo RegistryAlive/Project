@@ -1,0 +1,18 @@
+{
+  "id": 1553,
+  "name": "Eagle Headwear",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Steel / Pure Iron / Corundum",
+  "description": "Wing-shaped headware",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 22,
+    "SPD": 14
+  },
+  "image": "data/images/helmet-1553.png",
+  "file": "helmet-1553.json"
+}

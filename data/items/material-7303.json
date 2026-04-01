@@ -1,0 +1,18 @@
+{
+  "id": 7303,
+  "name": "Soy Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 28,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Rice",
+  "description": "A Vegetable flavored dish",
+  "size": "1x1",
+  "attributes": {
+    "HP": 1100,
+    "SP": 450
+  },
+  "image": "data/images/material-7303.png",
+  "file": "material-7303.json"
+}

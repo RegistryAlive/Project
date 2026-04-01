@@ -1,0 +1,15 @@
+{
+  "id": 6286,
+  "name": "Wooden Bed",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "made of wood.",
+  "size": "5x3",
+  "attributes": {},
+  "image": "data/images/furniture-6286.png",
+  "file": "furniture-6286.json"
+}

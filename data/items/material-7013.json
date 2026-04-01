@@ -1,0 +1,17 @@
+{
+  "id": 7013,
+  "name": "Driedmeat Bread",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat / Meat",
+  "description": "Bread with dried meat in it",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200
+  },
+  "image": "data/images/material-7013.png",
+  "file": "material-7013.json"
+}

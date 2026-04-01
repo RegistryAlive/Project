@@ -1,0 +1,18 @@
+{
+  "id": 7153,
+  "name": "Roasted Tiger Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Roasted tiger meat, supply the body with protine",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150,
+    "SP": 100
+  },
+  "image": "data/images/material-7153.png",
+  "file": "material-7153.json"
+}

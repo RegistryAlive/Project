@@ -1,0 +1,18 @@
+{
+  "id": 2905,
+  "name": "Lore Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A bracer of speed and strength.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "SPD": 20
+  },
+  "image": "data/images/arm-2905.png",
+  "file": "arm-2905.json"
+}

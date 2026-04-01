@@ -1,0 +1,15 @@
+{
+  "id": 8140,
+  "name": "Truth Bridge",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is a mysterious gem to open the road of truth",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8140.png",
+  "file": "questprop-8140.json"
+}

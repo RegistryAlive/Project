@@ -1,0 +1,17 @@
+{
+  "id": 1120,
+  "name": "Purple Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Gold / Steel / Titanium",
+  "description": "Heavy loricae made by alloy.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 41
+  },
+  "image": "data/images/armor-1120.png",
+  "file": "armor-1120.json"
+}

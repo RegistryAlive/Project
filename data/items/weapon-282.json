@@ -1,0 +1,17 @@
+{
+  "id": 282,
+  "name": "Skull Long Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Iron / Wood / Hard Tissue",
+  "description": "A spear made of bone of the beast.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40
+  },
+  "image": "data/images/weapon-282.png",
+  "file": "weapon-282.json"
+}

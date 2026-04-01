@@ -1,0 +1,15 @@
+{
+  "id": 6404,
+  "name": "Christmas Tree",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 28,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A necessary item for Christmas!",
+  "size": "3x5",
+  "attributes": {},
+  "image": "data/images/furniture-6404.png",
+  "file": "furniture-6404.json"
+}

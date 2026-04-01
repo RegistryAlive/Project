@@ -1,0 +1,27 @@
+{
+  "id": 794,
+  "name": "Lina",
+  "location": "Kelan Village",
+  "image": "data/Monster_Images/monster-794.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 54,
+    "hp": 301,
+    "sp": 681,
+    "catchable": "Unknown",
+    "spd": 131,
+    "str": 22,
+    "con": 21,
+    "int": 45,
+    "wis": 49,
+    "agi": 25
+  }
+}

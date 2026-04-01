@@ -1,0 +1,18 @@
+{
+  "id": 865,
+  "name": "Bronze Sabre",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 13,
+    "DEF": 13
+  },
+  "image": "data/images/weapon-865.png",
+  "file": "weapon-865.json"
+}

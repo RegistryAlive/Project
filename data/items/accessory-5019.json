@@ -1,0 +1,15 @@
+{
+  "id": 5019,
+  "name": "Thunder Spear Box",
+  "type": "ItemBox",
+  "category": "accessory",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Unavailable in a set; 24% critical effect boost",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5019.png",
+  "file": "accessory-5019.json"
+}

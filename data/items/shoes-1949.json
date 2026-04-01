@@ -1,0 +1,17 @@
+{
+  "id": 1949,
+  "name": "Vivid Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Leather / Feather / Fur",
+  "description": "Unique defense boots",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 35
+  },
+  "image": "data/images/shoes-1949.png",
+  "file": "shoes-1949.json"
+}

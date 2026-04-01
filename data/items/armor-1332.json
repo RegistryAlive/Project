@@ -1,0 +1,18 @@
+{
+  "id": 1332,
+  "name": "Citrus Oolong",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A freshly colored teal costume. Magic damage is reduced by 5%.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "SPD": 15
+  },
+  "image": "data/images/armor-1332.png",
+  "file": "armor-1332.json"
+}

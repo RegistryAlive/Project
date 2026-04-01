@@ -1,0 +1,15 @@
+{
+  "id": 6484,
+  "name": "Green L Bonsai",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Green Leaf Bonsai. Placed at home to increase greenness.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6484.png",
+  "file": "furniture-6484.json"
+}

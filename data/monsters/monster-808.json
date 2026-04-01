@@ -1,0 +1,27 @@
+{
+  "id": 808,
+  "name": "Martian",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-808.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 145,
+    "hp": 24000,
+    "sp": 3143,
+    "catchable": "Unknown",
+    "spd": 553.5,
+    "str": 158,
+    "con": 170,
+    "int": 190,
+    "wis": 184,
+    "agi": 168
+  }
+}

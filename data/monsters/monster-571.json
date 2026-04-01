@@ -1,0 +1,27 @@
+{
+  "id": 571,
+  "name": "Barricade (Trojan War)",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-571.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 8000,
+    "sp": 7858,
+    "catchable": "Unknown",
+    "spd": 1180,
+    "str": 500,
+    "con": 500,
+    "int": 500,
+    "wis": 500,
+    "agi": 500
+  }
+}

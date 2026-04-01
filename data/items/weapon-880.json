@@ -1,0 +1,18 @@
+{
+  "id": 880,
+  "name": "Fire Aurora Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Jade",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "MATK": 40
+  },
+  "image": "data/images/weapon-880.png",
+  "file": "weapon-880.json"
+}

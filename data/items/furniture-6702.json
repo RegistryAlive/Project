@@ -1,0 +1,15 @@
+{
+  "id": 6702,
+  "name": "Dwarf Hedge",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The neatly trimmed bushes are covered with lights and covered with a thick layer of snow.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6702.png",
+  "file": "furniture-6702.json"
+}

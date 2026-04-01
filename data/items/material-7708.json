@@ -1,0 +1,15 @@
+{
+  "id": 7708,
+  "name": "Delicate Leather",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "Processed leather with good durability and temper",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7708.png",
+  "file": "material-7708.json"
+}

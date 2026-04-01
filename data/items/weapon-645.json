@@ -1,0 +1,18 @@
+{
+  "id": 645,
+  "name": "Copper Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Copper",
+  "description": "A claw made from copper.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 1,
+    "SPD": 3
+  },
+  "image": "data/images/weapon-645.png",
+  "file": "weapon-645.json"
+}

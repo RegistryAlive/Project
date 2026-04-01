@@ -1,0 +1,17 @@
+{
+  "id": 1176,
+  "name": "Mystic Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Grass / Leather / Feather",
+  "description": "A magical robe filled with deep mystic powers.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 36
+  },
+  "image": "data/images/armor-1176.png",
+  "file": "armor-1176.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 654,
+  "name": "Crazy Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Steel",
+  "description": "Enter a blood-thirsty rage wielding this claw.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 7,
+    "SPD": 9
+  },
+  "image": "data/images/weapon-654.png",
+  "file": "weapon-654.json"
+}

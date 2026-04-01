@@ -1,0 +1,33 @@
+{
+  "id": 489,
+  "name": "Gold Leopard",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-489.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Black Forestcake",
+      "itemId": 7049,
+      "itemFile": "material-7049.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 46,
+    "hp": 245,
+    "sp": 225,
+    "catchable": "No",
+    "spd": 97,
+    "str": 12,
+    "con": 17,
+    "int": 12,
+    "wis": 14,
+    "agi": 14
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2150,
+  "name": "Spirit Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To slightly upgrade magic defense",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 4
+  },
+  "image": "data/images/special-2150.png",
+  "file": "special-2150.json"
+}

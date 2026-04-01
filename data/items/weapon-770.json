@@ -1,0 +1,18 @@
+{
+  "id": 770,
+  "name": "Demon Hammer",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The mallet of the devil, has the power to collapse the sky and break the ground apart.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 31,
+    "DEF": 33
+  },
+  "image": "data/images/weapon-770.png",
+  "file": "weapon-770.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 587,
+  "name": "Redmoon Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Tin / Corundum",
+  "description": "Tin wand with a ruby in the center",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 26,
+    "MDEF": 26
+  },
+  "image": "data/images/weapon-587.png",
+  "file": "weapon-587.json"
+}

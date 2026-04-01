@@ -1,0 +1,27 @@
+{
+  "id": 551,
+  "name": "Androsphinx",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-551.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 175,
+    "hp": 49000,
+    "sp": 10000,
+    "catchable": "Unknown",
+    "spd": 642.5,
+    "str": 236,
+    "con": 246,
+    "int": 184,
+    "wis": 194,
+    "agi": 190
+  }
+}

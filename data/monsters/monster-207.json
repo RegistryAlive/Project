@@ -1,0 +1,33 @@
+{
+  "id": 207,
+  "name": "Blue Flying Dragon",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-207.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fugu Hot Pot",
+      "itemId": 7175,
+      "itemFile": "material-7175.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 98,
+    "hp": 662,
+    "sp": 489,
+    "catchable": "Unknown",
+    "spd": 201,
+    "str": 33,
+    "con": 34,
+    "int": 26,
+    "wis": 26,
+    "agi": 27
+  }
+}

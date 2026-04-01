@@ -1,0 +1,15 @@
+{
+  "id": 8072,
+  "name": "Hawaiian Peri Card",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a Hawaiian Peri become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8072.png",
+  "file": "questprop-8072.json"
+}

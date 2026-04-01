@@ -1,0 +1,18 @@
+{
+  "id": 401,
+  "name": "Plat SwShield",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Famous for its unbreakable platinum fortress, no one can find an opening to capture it in battle, making it the best example of both offense and defense. When equipped together with other Platinum Guard equipment, you can obtain additional armor effects.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "DEF": 40
+  },
+  "image": "data/images/weapon-401.png",
+  "file": "weapon-401.json"
+}

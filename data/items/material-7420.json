@@ -1,0 +1,17 @@
+{
+  "id": 7420,
+  "name": "Luffa",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Vegetables & Fruits",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30
+  },
+  "image": "data/images/material-7420.png",
+  "file": "material-7420.json"
+}

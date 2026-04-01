@@ -1,0 +1,18 @@
+{
+  "id": 1934,
+  "name": "Protection Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Leather / Flower / Grass",
+  "description": "Bring you great comfort convenience",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 21,
+    "SPD": 13
+  },
+  "image": "data/images/shoes-1934.png",
+  "file": "shoes-1934.json"
+}

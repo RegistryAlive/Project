@@ -1,0 +1,45 @@
+{
+  "id": 101,
+  "name": "White Rock Monster",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-101.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Tin Ore",
+      "itemId": 7572,
+      "itemFile": "material-7572.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Marble",
+      "itemId": 7634,
+      "itemFile": "material-7634.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Clay",
+      "itemId": 7643,
+      "itemFile": "material-7643.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Silvery Ore",
+      "itemId": 7553,
+      "itemFile": "material-7553.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 76,
+    "hp": 751,
+    "sp": 677,
+    "catchable": "Unknown",
+    "spd": 212,
+    "str": 46,
+    "con": 45,
+    "int": 45,
+    "wis": 43,
+    "agi": 49
+  }
+}

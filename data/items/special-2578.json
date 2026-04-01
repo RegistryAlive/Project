@@ -1,0 +1,18 @@
+{
+  "id": 2578,
+  "name": "Coarse Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 3,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "N/A",
+  "description": "A coarse mixed-metal armlet used by a pet man.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 70,
+    "DEF": 7
+  },
+  "image": "data/images/special-2578.png",
+  "file": "special-2578.json"
+}

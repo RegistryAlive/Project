@@ -1,0 +1,18 @@
+{
+  "id": 1463,
+  "name": "Golden Roman Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 35,
+  "level": 70,
+  "rarity": "legendary",
+  "base": "Gold / Pure Iron",
+  "description": "A helmet for the gladiator champion.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25,
+    "ATK": 10
+  },
+  "image": "data/images/helmet-1463.png",
+  "file": "helmet-1463.json"
+}

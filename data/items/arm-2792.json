@@ -1,0 +1,18 @@
+{
+  "id": 2792,
+  "name": "Wizard Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Flower / Magic",
+  "description": "Used to channel magic through the hands.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 16,
+    "MDEF": 5
+  },
+  "image": "data/images/arm-2792.png",
+  "file": "arm-2792.json"
+}

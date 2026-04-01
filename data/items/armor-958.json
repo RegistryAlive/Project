@@ -1,0 +1,17 @@
+{
+  "id": 958,
+  "name": "White Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Leather / Flower",
+  "description": "Clothes which is made of white leather",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 6
+  },
+  "image": "data/images/armor-958.png",
+  "file": "armor-958.json"
+}

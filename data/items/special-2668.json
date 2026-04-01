@@ -1,0 +1,18 @@
+{
+  "id": 2668,
+  "name": "Angel Wings+10",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 104,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets. But its value can be increased.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 52,
+    "MDEF": 52
+  },
+  "image": "data/images/special-2668.png",
+  "file": "special-2668.json"
+}

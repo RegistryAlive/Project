@@ -1,0 +1,15 @@
+{
+  "id": 6564,
+  "name": "Ghosts wall st",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Ghost-shaped wall stickers",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6564.png",
+  "file": "furniture-6564.json"
+}

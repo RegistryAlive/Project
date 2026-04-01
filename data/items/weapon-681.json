@@ -1,0 +1,18 @@
+{
+  "id": 681,
+  "name": "Icy Fang Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Titanium",
+  "description": "Sharp claw",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 28,
+    "SPD": 28
+  },
+  "image": "data/images/weapon-681.png",
+  "file": "weapon-681.json"
+}

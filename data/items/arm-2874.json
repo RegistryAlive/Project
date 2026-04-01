@@ -1,0 +1,18 @@
+{
+  "id": 2874,
+  "name": "Blue Ray Wristband",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Copper / Iron / Steel",
+  "description": "Gives off blue rays. Extremely durable",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "ATK": 10
+  },
+  "image": "data/images/arm-2874.png",
+  "file": "arm-2874.json"
+}

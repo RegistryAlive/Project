@@ -1,0 +1,15 @@
+{
+  "id": 6633,
+  "name": "Egg chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Sitting on top is like a surprise for the egg",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6633.png",
+  "file": "furniture-6633.json"
+}

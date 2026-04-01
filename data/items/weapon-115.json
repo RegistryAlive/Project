@@ -1,0 +1,18 @@
+{
+  "id": 115,
+  "name": "Copper Big Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "A sword made from copper, its quite wide.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "SPD": 12
+  },
+  "image": "data/images/weapon-115.png",
+  "file": "weapon-115.json"
+}

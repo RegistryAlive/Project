@@ -1,0 +1,27 @@
+{
+  "id": 677,
+  "name": "Elephant God",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-677.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 135,
+    "hp": 15000,
+    "sp": 1245,
+    "catchable": "Unknown",
+    "spd": 312.5,
+    "str": 105,
+    "con": 113,
+    "int": 63,
+    "wis": 69,
+    "agi": 55
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 93,
+  "name": "Vine's Whip",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A tough and powerful whip made from a rare species of vines. 46% crit hit.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 35,
+    "MaxHP": 350
+  },
+  "image": "data/images/weapon-93.png",
+  "file": "weapon-93.json"
+}

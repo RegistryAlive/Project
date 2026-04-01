@@ -1,0 +1,18 @@
+{
+  "id": 7,
+  "name": "Pure Iron Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Pure Iron / Wood",
+  "description": "A knife made from pure iron",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 5,
+    "DEF": 5
+  },
+  "image": "data/images/weapon-7.png",
+  "file": "weapon-7.json"
+}

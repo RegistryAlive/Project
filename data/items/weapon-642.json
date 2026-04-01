@@ -1,0 +1,18 @@
+{
+  "id": 642,
+  "name": "SlverZen Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sta",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 70,
+    "SPD": 40
+  },
+  "image": "data/images/weapon-642.png",
+  "file": "weapon-642.json"
+}

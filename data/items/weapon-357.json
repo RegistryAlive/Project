@@ -1,0 +1,18 @@
+{
+  "id": 357,
+  "name": "Gold Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Gold / Copper",
+  "description": "A weapon radiating golden light",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "DEF": 22
+  },
+  "image": "data/images/weapon-357.png",
+  "file": "weapon-357.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1888,
+  "name": "Red Net Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Leaf / Flower",
+  "description": "Shoes which are made up from red leaves",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 19,
+    "MATK": 10
+  },
+  "image": "data/images/shoes-1888.png",
+  "file": "shoes-1888.json"
+}

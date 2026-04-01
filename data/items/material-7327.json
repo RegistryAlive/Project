@@ -1,0 +1,17 @@
+{
+  "id": 7327,
+  "name": "White Chocolat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Has mysterious magic power",
+  "size": "1x1",
+  "attributes": {
+    "HP": 400
+  },
+  "image": "data/images/material-7327.png",
+  "file": "material-7327.json"
+}

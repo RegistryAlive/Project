@@ -1,0 +1,15 @@
+{
+  "id": 6254,
+  "name": "Whetstone",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used on the work platform to mill sword.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6254.png",
+  "file": "furniture-6254.json"
+}

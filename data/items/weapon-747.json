@@ -1,0 +1,18 @@
+{
+  "id": 747,
+  "name": "Great Thorn Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Wood",
+  "description": "It is made of spined wood.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 8,
+    "DEF": 10
+  },
+  "image": "data/images/weapon-747.png",
+  "file": "weapon-747.json"
+}

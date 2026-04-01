@@ -1,0 +1,18 @@
+{
+  "id": 2121,
+  "name": "Chaos Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To upgrade agility and minor attack power",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 4,
+    "ATK": 2
+  },
+  "image": "data/images/special-2121.png",
+  "file": "special-2121.json"
+}

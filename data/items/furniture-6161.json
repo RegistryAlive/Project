@@ -1,0 +1,15 @@
+{
+  "id": 6161,
+  "name": "Tires",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 13,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Made of rubber, can move by rolling steel circles.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6161.png",
+  "file": "furniture-6161.json"
+}

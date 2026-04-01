@@ -1,0 +1,18 @@
+{
+  "id": 25,
+  "name": "Katana",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "Entry level of the legendary Japanese blades.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 23,
+    "DEF": 23
+  },
+  "image": "data/images/weapon-25.png",
+  "file": "weapon-25.json"
+}

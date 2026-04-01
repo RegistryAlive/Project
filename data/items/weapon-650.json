@@ -1,0 +1,18 @@
+{
+  "id": 650,
+  "name": "Golden Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "A claw made from refined gold.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "SPD": 12
+  },
+  "image": "data/images/weapon-650.png",
+  "file": "weapon-650.json"
+}

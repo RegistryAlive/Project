@@ -1,0 +1,15 @@
+{
+  "id": 6473,
+  "name": "Wit Maid-Succu",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Wearing a Halloween Succubus costume, this maid helps you in pet creation.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6473.png",
+  "file": "furniture-6473.json"
+}

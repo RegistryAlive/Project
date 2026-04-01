@@ -1,0 +1,15 @@
+{
+  "id": 6597,
+  "name": "M. Magic Book",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Books that record magic, and the quill pens flying on them are still dedicated to recording",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6597.png",
+  "file": "furniture-6597.json"
+}

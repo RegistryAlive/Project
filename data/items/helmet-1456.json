@@ -1,0 +1,18 @@
+{
+  "id": 1456,
+  "name": "Honor Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Titanium / Magic",
+  "description": "A crown which is the symbol of triumph.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 13,
+    "MDEF": 13
+  },
+  "image": "data/images/helmet-1456.png",
+  "file": "helmet-1456.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6792,
+  "name": "Wallpaper (flower-2)",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 25,
+  "level": 50,
+  "rarity": "rare",
+  "base": null,
+  "description": "Changes the color and design of the walls",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6792.png",
+  "file": "furniture-6792.json"
+}

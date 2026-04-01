@@ -1,0 +1,18 @@
+{
+  "id": 7147,
+  "name": "Fried Mooli",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Nutritious fried radish",
+  "size": "1x1",
+  "attributes": {
+    "SP": 80,
+    "HP": 20
+  },
+  "image": "data/images/material-7147.png",
+  "file": "material-7147.json"
+}

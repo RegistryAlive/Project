@@ -1,0 +1,17 @@
+{
+  "id": 7866,
+  "name": "Fried Cole",
+  "type": "Material",
+  "category": "material",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Delicious fried cabbage",
+  "size": "1x1",
+  "attributes": {
+    "HP": 110
+  },
+  "image": "data/images/material-7866.png",
+  "file": "material-7866.json"
+}

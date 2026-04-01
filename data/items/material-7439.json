@@ -1,0 +1,18 @@
+{
+  "id": 7439,
+  "name": "Juicy Peach",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30,
+    "SP": 20
+  },
+  "image": "data/images/material-7439.png",
+  "file": "material-7439.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8405,
+  "name": "Purgatory WH T",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make the Purgatory Warhorse a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8405.png",
+  "file": "questprop-8405.json"
+}

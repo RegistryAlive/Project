@@ -1,0 +1,17 @@
+{
+  "id": 1532,
+  "name": "Gold Ears+6",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 70,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 70
+  },
+  "image": "data/images/helmet-1532.png",
+  "file": "helmet-1532.json"
+}

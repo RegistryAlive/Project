@@ -1,0 +1,18 @@
+{
+  "id": 7108,
+  "name": "Braised Salmon",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "It's good for your health",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150,
+    "SP": 150
+  },
+  "image": "data/images/material-7108.png",
+  "file": "material-7108.json"
+}

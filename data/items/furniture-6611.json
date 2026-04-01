@@ -1,0 +1,15 @@
+{
+  "id": 6611,
+  "name": "Pillar",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "New Years party-style wallpaper, allowing players to change into different wall colors",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6611.png",
+  "file": "furniture-6611.json"
+}

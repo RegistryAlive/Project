@@ -1,0 +1,18 @@
+{
+  "id": 2567,
+  "name": "Christmas Clothes",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 32,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Clothes worn at Christmas",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 16,
+    "MDEF": 16
+  },
+  "image": "data/images/special-2567.png",
+  "file": "special-2567.json"
+}

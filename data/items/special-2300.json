@@ -1,0 +1,18 @@
+{
+  "id": 2300,
+  "name": "Strong Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Armlet making the wearer physically strong.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "DEF": 50
+  },
+  "image": "data/images/special-2300.png",
+  "file": "special-2300.json"
+}

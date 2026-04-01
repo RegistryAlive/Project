@@ -1,0 +1,18 @@
+{
+  "id": 2959,
+  "name": "Inari Bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Hand guards made at special festival events; additional outfit effects can be obtained when equipped together with other Fushimi Inari equipment.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "MATK": 25
+  },
+  "image": "data/images/arm-2959.png",
+  "file": "arm-2959.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2779,
+  "name": "Flax Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Grass",
+  "description": "Cuffs which are connected burlap",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 8
+  },
+  "image": "data/images/arm-2779.png",
+  "file": "arm-2779.json"
+}

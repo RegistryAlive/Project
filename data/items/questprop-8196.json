@@ -1,0 +1,15 @@
+{
+  "id": 8196,
+  "name": "Snake Girl Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Makes a Evil Snake Woman become your companion.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8196.png",
+  "file": "questprop-8196.json"
+}

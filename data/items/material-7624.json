@@ -1,0 +1,15 @@
+{
+  "id": 7624,
+  "name": "Refined Silver",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Silver",
+  "description": "It is suitable for making various silver items",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7624.png",
+  "file": "material-7624.json"
+}

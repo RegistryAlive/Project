@@ -1,0 +1,18 @@
+{
+  "id": 617,
+  "name": "Blue cat claw",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The cute walking stick in the shape of a cat's paw is said to have the meaning of lucky. 46% critical strike possible",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 70,
+    "MaxHP": 600
+  },
+  "image": "data/images/weapon-617.png",
+  "file": "weapon-617.json"
+}

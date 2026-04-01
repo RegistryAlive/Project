@@ -1,0 +1,15 @@
+{
+  "id": 8231,
+  "name": "Octopus Card",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can make a Small Octopus become your companion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8231.png",
+  "file": "questprop-8231.json"
+}

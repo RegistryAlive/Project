@@ -1,0 +1,39 @@
+{
+  "id": 1073,
+  "name": "Green Cactus",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1074.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Nectar",
+      "itemId": 7531,
+      "itemFile": "material-7531.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Nectar",
+      "itemId": 7529,
+      "itemFile": "material-7529.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 109,
+    "hp": 1398,
+    "sp": 963,
+    "catchable": "Unknown",
+    "spd": 311.5,
+    "str": 60,
+    "con": 77,
+    "int": 60,
+    "wis": 56,
+    "agi": 74
+  }
+}

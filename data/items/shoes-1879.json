@@ -1,0 +1,17 @@
+{
+  "id": 1879,
+  "name": "Thick Beast Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Leather / Nylon",
+  "description": "Boots made from hides. It's rather tough and firm",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 39
+  },
+  "image": "data/images/shoes-1879.png",
+  "file": "shoes-1879.json"
+}

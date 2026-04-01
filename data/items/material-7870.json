@@ -1,0 +1,18 @@
+{
+  "id": 7870,
+  "name": "Fried Potatoleaf",
+  "type": "Material",
+  "category": "material",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Common dish its full nutrition",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100,
+    "SP": 10
+  },
+  "image": "data/images/material-7870.png",
+  "file": "material-7870.json"
+}

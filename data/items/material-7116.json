@@ -1,0 +1,18 @@
+{
+  "id": 7116,
+  "name": "Steamed Shrimp",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fish and Shellfish",
+  "description": "A Shell kind of seafood",
+  "size": "1x1",
+  "attributes": {
+    "SP": 80,
+    "HP": 20
+  },
+  "image": "data/images/material-7116.png",
+  "file": "material-7116.json"
+}

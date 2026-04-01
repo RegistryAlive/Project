@@ -1,0 +1,27 @@
+{
+  "id": 817,
+  "name": "Masked Swordsman",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-817.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 3500,
+    "sp": 889,
+    "catchable": "Unknown",
+    "spd": 225,
+    "str": 45,
+    "con": 80,
+    "int": 45,
+    "wis": 55,
+    "agi": 45
+  }
+}

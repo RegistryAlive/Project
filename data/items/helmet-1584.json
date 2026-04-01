@@ -1,0 +1,18 @@
+{
+  "id": 1584,
+  "name": "Magic Love Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 8,
+  "level": 0,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "Strengthened equipment special for Venus, cannot be repaired and traded.",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 315,
+    "SPD": 40
+  },
+  "image": "data/images/helmet-1584.png",
+  "file": "helmet-1584.json"
+}

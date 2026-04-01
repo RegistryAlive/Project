@@ -1,0 +1,27 @@
+{
+  "id": 977,
+  "name": "Villager",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-977.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 485,
+    "sp": 699,
+    "catchable": "Unknown",
+    "spd": 185,
+    "str": 42,
+    "con": 35,
+    "int": 47,
+    "wis": 46,
+    "agi": 40
+  }
+}

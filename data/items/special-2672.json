@@ -1,0 +1,18 @@
+{
+  "id": 2672,
+  "name": "Pure Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": "Crystallization / Silver / Corundum",
+  "description": "It is said only saints can hold it.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 28,
+    "MATK": 13
+  },
+  "image": "data/images/special-2672.png",
+  "file": "special-2672.json"
+}

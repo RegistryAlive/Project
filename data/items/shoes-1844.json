@@ -1,0 +1,18 @@
+{
+  "id": 1844,
+  "name": "Rough Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Grass",
+  "description": "They can increase magic attack power slightly.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 3,
+    "MATK": 2
+  },
+  "image": "data/images/shoes-1844.png",
+  "file": "shoes-1844.json"
+}

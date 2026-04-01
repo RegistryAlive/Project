@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland Online - Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        /* Wonderland Online Color Palette */
+                        wlBlue: '#4a90d9',
+                        wlLightBlue: '#7ec8e3',
+                        wlDarkBlue: '#2d5a87',
+                        wlGreen: '#5cb85c',
+                        wlForestGreen: '#3d7a3d',
+                        wlLime: '#8bc34a',
+                        wlRed: '#d9534f',
+                        wlOrange: '#f0ad4e',
+                        wlYellow: '#ffd700',
+                        wlGold: '#daa520',
+                        wlBrown: '#8b4513',
+                        wlLightBrown: '#d2b48c',
+                        wlTan: '#c4a76c',
+                        wlPurple: '#9b59b6',
+                        wlPink: '#e91e63',
+                        wlDark: '#1a1a2e',
+                        wlDarker: '#0f0f1a',
+                        wlLight: '#f5f5dc',
+                        wlCream: '#fffdd0',
+                        wlParchment: '#fef3c7',
+                        wlWood: '#5d4037',
+                        wlWoodLight: '#8d6e63',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'pixel-bounce': 'pixelBounce 0.5s steps(2) infinite',
+                        'float-soft': 'floatSoft 8s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        floatSoft: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-8px) rotate(1deg)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { boxShadow: '0 0 10px rgba(74, 144, 217, 0.3)' },
+                            '50%': { boxShadow: '0 0 20px rgba(74, 144, 217, 0.6)' },
+                        },
+                        shimmer: {
+                            '0%': { transform: 'translateX(-100%)' },
+                            '100%': { transform: 'translateX(100%)' },
+                        },
+                        pixelBounce: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-2px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Patrick+Hand&family=Cinzel:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-color: #1a1a2e;
+            color: #f5f5dc;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a90d9' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Wonderland Online Style Background */
+        .mystic-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(74, 144, 217, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(92, 184, 92, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 40% 80%, rgba(218, 165, 32, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 90% 90%, rgba(139, 69, 19, 0.08) 0%, transparent 50%),
+                linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+        }
+
+        /* Pixel Particles */
+        .particle-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .magic-particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #ffd700;
+            box-shadow: 0 0 4px #ffd700;
+            opacity: 0;
+            animation: particleFloat 15s linear infinite;
+        }
+
+        .magic-particle:nth-child(2n) { background: #4a90d9; box-shadow: 0 0 4px #4a90d9; }
+        .magic-particle:nth-child(3n) { background: #5cb85c; box-shadow: 0 0 4px #5cb85c; }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.4; }
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.05em;
+        }
+
+        .pixel-title {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.75rem;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        .rune-text {
+            font-family: 'Cinzel', serif;
+            background: linear-gradient(135deg, #daa520 0%, #ffd700 50%, #daa520 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+        }
+
+        /* Navigation - Wooden Panel Style */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            border-bottom: 4px solid #3e2723;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-link {
+            position: relative;
+            color: #f5f5dc;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border-radius: 4px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-link:hover {
+            color: #ffd700;
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .nav-link.active {
+            color: #ffd700;
+            background: rgba(74, 144, 217, 0.3);
+            border: 2px solid #ffd700;
+        }
+
+        /* Hero Section - Game Style */
+        .hero-glow {
+            position: relative;
+        }
+
+        .hero-glow::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(74, 144, 217, 0.3) 0%, transparent 70%);
+            filter: blur(40px);
+            animation: pulseGlow 3s ease-in-out infinite;
+        }
+
+        .spell-circle {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spell-ring {
+            position: absolute;
+            border: 3px solid rgba(218, 165, 32, 0.4);
+            border-radius: 50%;
+        }
+
+        .spell-ring:nth-child(1) { width: 100%; height: 100%; }
+        .spell-ring:nth-child(2) { width: 80%; height: 80%; border-color: rgba(74, 144, 217, 0.4); }
+        .spell-ring:nth-child(3) { width: 60%; height: 60%; border-color: rgba(92, 184, 92, 0.4); }
+
+        .spell-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #4a90d9 0%, #2d5a87 100%);
+            border: 3px solid #ffd700;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            color: #ffd700;
+            box-shadow: 
+                0 4px 8px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            z-index: 10;
+            position: relative;
+        }
+
+        /* Stats Counter - Item Box Style */
+        .stat-crystal {
+            background: linear-gradient(180deg, #3d3d5c 0%, #2a2a40 100%);
+            border: 3px solid #5d4037;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-crystal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ffd700, #daa520, #ffd700, transparent);
+        }
+
+        .stat-crystal::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        .stat-number {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffd700;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #c4a76c;
+            margin-top: 0.25rem;
+        }
+
+        /* Search Box - Game Input Style */
+        .search-crystal {
+            background: linear-gradient(180deg, #3d3d5c 0%, #2a2a40 100%);
+            border: 3px solid #5d4037;
+            border-radius: 8px;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .search-crystal:focus-within {
+            border-color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .search-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            border-radius: 4px;
+            color: #ffd700;
+        }
+
+        .search-input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #f5f5dc;
+            font-size: 1.1rem;
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        .search-input::placeholder {
+            color: #8d6e63;
+        }
+
+        /* Filter Pills - Game Button Style */
+        .filter-pill {
+            padding: 0.5rem 1.25rem;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            border: 2px solid #3e2723;
+            color: #f5f5dc;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .filter-pill:hover {
+            background: linear-gradient(180deg, #8d6e63 0%, #5d4037 100%);
+            border-color: #ffd700;
+        }
+
+        .filter-pill.active {
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            color: #fff;
+            border-color: #ffd700;
+            box-shadow: 0 0 10px rgba(74, 144, 217, 0.5);
+        }
+
+        /* Tabs - Game Tab Style */
+        .tab-btn {
+            position: relative;
+            padding: 1rem 2rem;
+            background: linear-gradient(180deg, #3d3d5c 0%, #2a2a40 100%);
+            border: 2px solid #5d4037;
+            color: #c4a76c;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .tab-btn:hover {
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            color: #ffd700;
+            border-color: #ffd700;
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            color: #fff;
+            border-color: #ffd700;
+        }
+
+        .tab-badge {
+            display: inline-block;
+            margin-left: 0.5rem;
+            padding: 0.15rem 0.5rem;
+            background: #ffd700;
+            color: #000;
+            font-size: 0.7rem;
+            border-radius: 4px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.5rem;
+        }
+
+        /* Resource Cards - Item Box Style */
+        .grimoire-card {
+            background: linear-gradient(180deg, #3d3d5c 0%, #2a2a40 100%);
+            border: 3px solid #5d4037;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .grimoire-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #5d4037, #ffd700, #5d4037);
+        }
+
+        .grimoire-card:hover {
+            transform: translateY(-4px);
+            border-color: #ffd700;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .card-glyph {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            border: 2px solid #ffd700;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #ffd700;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        
+        .grimoire-card:hover .card-glyph {
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            box-shadow: 0 0 10px rgba(74, 144, 217, 0.5);
+        }
+
+        .card-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-desc {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.8rem;
+            color: #64748b;
+            margin-bottom: 1rem;
+        }
+
+        .card-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .star-rating {
+            color: #ffd700;
+            text-shadow: 1px 1px 0 #000;
+        }
+
+        /* Badge Styles - Game Style */
+        .badge {
+            padding: 0.25rem 0.75rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 4px;
+            border: 2px solid;
+        }
+
+        .badge-scroll {
+            background: #5cb85c;
+            color: #fff;
+            border-color: #3d7a3d;
+        }
+
+        .badge-artifact {
+            background: #9b59b6;
+            color: #fff;
+            border-color: #6c3483;
+        }
+
+        .badge-new {
+            background: #d9534f;
+            color: #fff;
+            border-color: #b52b27;
+        }
+
+        .badge-updated {
+            background: #f0ad4e;
+            color: #000;
+            border-color: #c87f0a;
+        }
+
+        .badge-beta {
+            background: #4a90d9;
+            color: #fff;
+            border-color: #2d5a87;
+        }
+
+        /* Buttons - Game Button Style */
+        .btn-cast {
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            border: 3px solid #3e2723;
+            color: #ffd700;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-cast:hover {
+            background: linear-gradient(180deg, #8d6e63 0%, #5d4037 100%);
+            border-color: #ffd700;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-inspect {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            border: 2px solid #3e2723;
+            color: #ffd700;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-inspect:hover {
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            border-color: #ffd700;
+        }
+
+        /* Featured Card - Rare Item Style */
+        .featured-grimoire {
+            background: linear-gradient(180deg, #2d2d4a 0%, #1a1a2e 100%);
+            border: 4px solid #ffd700;
+            border-radius: 8px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .featured-grimoire::before {
+            content: '⚜';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 120px;
+            color: rgba(212, 165, 116, 0.08);
+            transform: rotate(45deg);
+        }
+
+        .featured-grimoire::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #ffd700, #daa520, #ffd700, transparent);
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(180deg, #d9534f 0%, #b52b27 100%);
+            border: 2px solid #ffd700;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.5rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            border-radius: 4px;
+        }
+
+        .featured-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            border: 4px solid #ffd700;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.4);
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .featured-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        .featured-version {
+            display: inline-block;
+            margin-left: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            background: #5cb85c;
+            color: #fff;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            vertical-align: middle;
+            border: 2px solid #3d7a3d;
+        }
+
+        .featured-desc {
+            color: #c4a76c;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .featured-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .featured-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            color: #f5f5dc;
+        }
+
+        .featured-stat i {
+            color: #ffd700;
+        }
+
+        .btn-primary {
+            padding: 0.85rem 2rem;
+            background: linear-gradient(180deg, #ffd700 0%, #daa520 100%);
+            border: 3px solid #8b4513;
+            color: #1a1a2e;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(180deg, #ffd700 0%, #daa520 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-secondary {
+            padding: 0.85rem 2rem;
+            background: transparent;
+            border: 3px solid #5d4037;
+            color: #ffd700;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(93, 64, 55, 0.3);
+            border-color: #ffd700;
+        }
+
+        /* Website Cards - Game Style */
+        .tome-card {
+            background: linear-gradient(180deg, #3d3d5c 0%, #2a2a40 100%);
+            border: 3px solid #5d4037;
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            gap: 1.25rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .tome-card:hover {
+            transform: translateY(-4px);
+            border-color: #ffd700;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 215, 0, 0.2);
+        }
+
+        .tome-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            border: 3px solid #ffd700;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            color: #ffd700;
+            flex-shrink: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .tome-card:hover .tome-icon {
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            box-shadow: 0 0 10px rgba(74, 144, 217, 0.5);
+        }
+
+        .tome-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            color: #ffd700;
+            margin-bottom: 0.35rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .tome-desc {
+            font-size: 1rem;
+            color: #c4a76c;
+            margin-bottom: 0.75rem;
+        }
+
+        .tome-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #8d6e63;
+            margin-bottom: 1rem;
+        }
+
+        .btn-tome {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.25rem;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            border: 2px solid #3e2723;
+            color: #ffd700;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-tome:hover {
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            border-color: #ffd700;
+            transform: translateY(-2px);
+        }
+
+        /* Community Cards - Game Style */
+        .guild-card {
+            background: linear-gradient(180deg, #3d3d5c 0%, #2a2a40 100%);
+            border: 3px solid #5d4037;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .guild-card:hover {
+            transform: translateY(-4px);
+            border-color: #ffd700;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .guild-emblem {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            border: 3px solid #ffd700;
+            border-radius: 8px;
+            font-size: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .guild-card:hover .guild-emblem {
+            transform: scale(1.05);
+        }
+
+        .guild-emblem.discord { background: linear-gradient(180deg, #5865F2 0%, #4752C4 100%); color: white; }
+        .guild-emblem.reddit { background: linear-gradient(180deg, #FF4500 0%, #CC3700 100%); color: white; }
+        .guild-emblem.facebook { background: linear-gradient(180deg, #1877F2 0%, #0D65D9 100%); color: white; }
+        .guild-emblem.youtube { background: linear-gradient(180deg, #FF0000 0%, #CC0000 100%); color: white; }
+
+        .guild-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            color: #ffd700;
+            margin-bottom: 0.35rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .guild-desc {
+            font-size: 1rem;
+            color: #c4a76c;
+            margin-bottom: 0.75rem;
+        }
+
+        .guild-stats {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #8d6e63;
+            margin-bottom: 1rem;
+        }
+
+        .btn-guild {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 0.75rem;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-guild.discord { background: linear-gradient(180deg, #5865F2 0%, #4752C4 100%); color: white; border-color: #7289DA; }
+        .btn-guild.discord:hover { transform: translateY(-2px); }
+        .btn-guild.reddit { background: linear-gradient(180deg, #FF4500 0%, #CC3700 100%); color: white; border-color: #FF5722; }
+        .btn-guild.reddit:hover { transform: translateY(-2px); }
+        .btn-guild.facebook { background: linear-gradient(180deg, #1877F2 0%, #0D65D9 100%); color: white; border-color: #4A90D9; }
+        .btn-guild.facebook:hover { transform: translateY(-2px); }
+        .btn-guild.youtube { background: linear-gradient(180deg, #FF0000 0%, #CC0000 100%); color: white; border-color: #FF3333; }
+        .btn-guild.youtube:hover { background: #CC0000; }
+
+        /* Additional Links */
+        .pathway-link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 0.75rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-bottom: 0.75rem;
+        }
+
+        .pathway-link:hover {
+            background: rgba(30, 41, 59, 1);
+            border-color: rgba(212, 165, 116, 0.4);
+            transform: translateX(8px);
+        }
+
+        .pathway-icon {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .pathway-icon.twitch { background: #9146FF; color: white; }
+        .pathway-icon.twitter { background: #1DA1F2; color: white; }
+        .pathway-icon.newsletter { background: #10b981; color: white; }
+
+        .pathway-content {
+            flex: 1;
+        }
+
+        .pathway-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+
+        .pathway-desc {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        .pathway-arrow {
+            color: #8d6e63;
+            transition: all 0.3s ease;
+        }
+
+        .pathway-link:hover .pathway-arrow {
+            color: #ffd700;
+            transform: translateX(4px);
+        }
+
+        /* Contribute Section */
+        .contribute-shrine {
+            margin-top: 3rem;
+            padding: 2.5rem;
+            background: linear-gradient(180deg, #3d3d5c 0%, #2a2a40 100%);
+            border: 3px solid #5d4037;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contribute-shrine::before,
+        .contribute-shrine::after {
+            content: '⚜';
+            position: absolute;
+            font-size: 50px;
+            color: rgba(212, 165, 116, 0.1);
+        }
+
+        .contribute-shrine::before { top: 10px; left: 20px; }
+        .contribute-shrine::after { bottom: 10px; right: 20px; transform: rotate(180deg); }
+
+        .shrine-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            background: linear-gradient(180deg, #ffd700 0%, #daa520 100%);
+            border: 3px solid #8b4513;
+            border-radius: 8px;
+            color: #1a1a2e;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .shrine-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 0.75rem;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        .shrine-desc {
+            color: #94a3b8;
+            max-width: 500px;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Footer - Game Style */
+        footer {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+            border-top: 4px solid #3e2723;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .footer-icon {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            border: 2px solid #ffd700;
+            border-radius: 4px;
+            color: #ffd700;
+        }
+
+        .footer-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            color: #ffd700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer-tagline {
+            font-size: 0.9rem;
+            color: #c4a76c;
+        }
+
+        .social-link {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #3e2723;
+            color: #ffd700;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            background: linear-gradient(180deg, #5d4037 0%, #4e342e 100%);
+        }
+
+        .social-link:hover {
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            border-color: #ffd700;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .copyright i {
+            color: #ef4444;
+        }
+
+        /* Back to Top */
+        .back-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #4a90d9 0%, #2d5a87 100%);
+            border: 3px solid #ffd700;
+            color: #ffd700;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 50;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .back-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .back-top:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.5);
+        }
+
+        /* Section transitions */
+        .section-panel {
+            display: none;
+            animation: fadeSlide 0.4s ease;
+        }
+
+        .section-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a1a2e;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #5d4037, #4e342e);
+            border: 2px solid #ffd700;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #4a90d9, #2d5a87);
+        }
+
+        /* Mobile Menu Button - Hidden */
+        .mobile-toggle {
+            display: none !important;
+        }
+
+        .mobile-menu {
+            display: none !important;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-nav { display: flex; }
+        }
+
+        @media (max-width: 768px) {
+            .featured-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .featured-stats {
+                justify-content: center;
+            }
+            
+            .featured-actions {
+                justify-content: center;
+            }
+            
+            .tome-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .tome-icon {
+                margin: 0 auto;
+            }
+            
+            .tome-title-row {
+                justify-content: center;
+            }
+            
+            .tome-meta {
+                justify-content: center;
+            }
+        }
+
+        /* Discord Server Detail Panel */
+        .discord-detail-panel {
+            margin-top: 1rem;
+            animation: fadeSlide 0.3s ease;
+        }
+        .discord-detail-content {
+            background: linear-gradient(180deg, #2a2a40 0%, #1a1a2e 100%);
+            border: 2px solid rgba(88, 101, 242, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow: hidden;
+        }
+        .discord-banner {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+            border: 1px solid rgba(88, 101, 242, 0.2);
+        }
+        .discord-detail-desc {
+            color: #c4a76c;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .discord-server-card .guild-emblem {
+            background-color: #5865F2;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, #1e293b, #3b82f6);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-ball {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle.light .theme-toggle-ball {
+            transform: translateX(30px);
+        }
+        
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e2e8f0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f8fafc !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #1e293b !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #cbd5e1 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Background -->
+    <div class="mystic-bg"></div>
+    <div class="rune-circle"></div>
+    
+    <!-- Particles -->
+    <div class="particle-container" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-wlPurple to-wlBlue rounded-lg border border-wlPurple/30">
+                        <i class="fas fa-dragon text-amber-400"></i>
+                    </div>
+                    <span class="font-bold text-lg rune-text">WLO</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="desktop-nav flex items-center gap-1">
+                    <div class="relative group">
+                        <a href="index.html" class="nav-link flex items-center">
+                            Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+                        </a>
+                        <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                            <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-lg flex items-center justify-between">
+                                Roadmap <i class="fas fa-route text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="Item.html" class="nav-link">Items</a>
+                    <a href="quests.html" class="nav-link">Quests</a>
+                    <a href="monsters.html" class="nav-link">Monsters</a>
+                    <a href="Locations.html" class="nav-link">Locations</a>
+                    <a href="tier-list.html" class="nav-link">Tier List</a>
+                    <a href="shops.html" class="nav-link">Shops</a>
+                    <a href="manufacture.html" class="nav-link">Craft</a>
+                    <a href="Resources.html" class="nav-link active">Resources</a>
+                    <!-- Theme Toggle -->
+                    <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                        <div class="theme-toggle-ball">
+                            <i class="fas fa-moon text-xs text-wlDark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <div class="hero-glow inline-block mb-8">
+                <div class="spell-circle">
+                    <div class="spell-ring"></div>
+                    <div class="spell-ring"></div>
+                    <div class="spell-ring"></div>
+                    <div class="spell-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                <span class="rune-text">The Grimoire of Treasures</span>
+            </h1>
+
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+                Discover ancient artifacts, mystical scrolls, and join fellowships of adventurers across the realm.
+            </p>
+
+            <!-- Stats -->
+            <div class="flex flex-wrap justify-center gap-4 md:gap-0 mb-8">
+                <div class="stat-crystal">
+                    <div class="stat-number" data-target="9">0</div>
+                    <div class="stat-label">Artifacts</div>
+                </div>
+                <div class="hidden md:block w-px h-16 bg-wlPurple/20 mx-4"></div>
+                <div class="stat-crystal">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Scrolls Claimed</div>
+                </div>
+                <div class="hidden md:block w-px h-16 bg-wlPurple/20 mx-4"></div>
+                <div class="stat-crystal">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-label">Fellowships</div>
+                </div>
+            </div>
+
+            <!-- Decorative -->
+            <div class="flex items-center justify-center gap-4 text-amber-600/50">
+                <span class="w-20 h-px bg-gradient-to-r from-transparent to-amber-600/50"></span>
+                <i class="fas fa-star-of-david"></i>
+                <span class="w-20 h-px bg-gradient-to-l from-transparent to-amber-600/50"></span>
+            </div>
+        </section>
+
+        <!-- Search & Filters -->
+        <section class="mb-12">
+            <div class="max-w-2xl mx-auto">
+                <div class="search-crystal">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search the ancient archives...">
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3 mt-6">
+                <button class="filter-pill active" data-filter="all">All Treasures</button>
+                <button class="filter-pill" data-filter="guide"><i class="fas fa-scroll mr-2"></i>Scrolls</button>
+                <button class="filter-pill" data-filter="tool"><i class="fas fa-gem mr-2"></i>Artifacts</button>
+                <button class="filter-pill" data-filter="utility"><i class="fas fa-wand-magic-sparkles mr-2"></i>Instruments</button>
+                <button class="filter-pill" data-filter="community"><i class="fas fa-users mr-2"></i>Fellowships</button>
+            </div>
+        </section>
+
+        <!-- Tabs -->
+        <div class="flex justify-center mb-10 border-b border-wlPurple/20">
+            <button class="tab-btn active" data-tab="tools">
+                <i class="fas fa-box-open mr-2"></i>Artifacts
+                <span class="tab-badge">9</span>
+            </button>
+            <button class="tab-btn" data-tab="websites">
+                <i class="fas fa-book-skull mr-2"></i>Tomes
+                <span class="tab-badge">5</span>
+            </button>
+            <button class="tab-btn" data-tab="community">
+                <i class="fas fa-crown mr-2"></i>Fellowships
+                <span class="tab-badge">5</span>
+            </button>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="section-panel active" id="panel-tools">
+            <!-- Featured -->
+            <div class="featured-grimoire mb-10">
+                <span class="featured-badge">★ Featured</span>
+                <div class="featured-content flex flex-col md:flex-row gap-8 items-center">
+                    <div class="featured-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="featured-title">
+                            WLRI English Patcher
+                            <span class="featured-version">By Draft</span>
+                        </h2>
+                        <p class="featured-desc">
+                            Updates your game files with the latest English translations. Download once, run whenever a new game update drops.
+                        </p>
+                        <div class="bg-wlDarker/50 rounded-lg p-4 border border-wlPurple/20 mb-4 text-sm">
+                            <p class="text-wlGreen font-semibold mb-2"><i class="fas fa-info-circle mr-1"></i> How to use</p>
+                            <ol class="text-wlLight/80 space-y-1 list-decimal list-inside">
+                                <li>Update your game to the latest version first</li>
+                                <li>Close all game clients</li>
+                                <li>Run the WLRI English Patch installer</li>
+                            </ol>
+                            <p class="text-wlYellow font-semibold mt-3 mb-1"><i class="fas fa-sticky-note mr-1"></i> Notes</p>
+                            <ul class="text-wlLight/80 space-y-1 list-disc list-inside">
+                                <li>Download once — reuse the installer indefinitely</li>
+                                <li>Game updates drop Thursdays 9:30 AM (GMT+8), overwriting translations back to Chinese</li>
+                                <li>Translated files are usually ready a few hours later the same day</li>
+                            </ul>
+                        </div>
+                        <div class="featured-stats">
+                            <span class="featured-stat"><i class="fas fa-clock"></i> Weekly Thursday updates</span>
+                            <span class="featured-stat"><i class="fas fa-infinity"></i> Reusable installer</span>
+                        </div>
+                        <div class="featured-actions flex flex-wrap gap-4">
+                            <a href="https://drive.google.com/file/d/1C8NCdaSa83m3hsbDvJV2Ik0d-BDVmT6y" target="_blank" class="btn-primary">
+                                <i class="fas fa-download"></i> Download Patcher
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- WLRI Repack -->
+                <div class="grimoire-card" data-category="tool">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="card-glyph">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="badge badge-artifact">Full Game</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">WLRI Repack</h3>
+                    <p class="card-desc">Ready-to-play game client with UI and English text translations already applied. Download, install, play.</p>
+                    <div class="card-meta">
+                        <span class="card-meta-item"><i class="fas fa-file-archive mr-1"></i> Full Client</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/18z5H1w5G9GujMJywRHL-uOac4fFyOTSY" target="_blank" class="btn-cast flex-1 w-full justify-center">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <!-- Excel Patcher -->
+                <div class="grimoire-card" data-category="tool">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="card-glyph">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="badge badge-artifact">Patcher</span>
+                            <span class="badge badge-new">v1.0.1</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Excel Patcher</h3>
+                    <p class="card-desc">Export and import WLO data using Excel sheets. Translate game files from Chinese to English.</p>
+                    <div class="card-meta">
+                        <span class="card-meta-item"><i class="fab fa-github mr-1"></i> By Izuna</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <a href="https://github.com/RegistryAlive/WLRI/releases/download/v1.0.1/ExcelPatcher.exe" target="_blank" class="btn-cast w-full justify-center">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                        <div class="flex gap-2">
+                            <a href="https://docs.google.com/document/d/1GfsINKiT55MA-iNqulIiKWHMQXQ9nQ4-J2U9697fhRI/edit?usp=sharing" target="_blank" class="btn-inspect flex-1 justify-center text-xs" style="width:auto;height:auto;padding:0.4rem 0.75rem;">
+                                <i class="fas fa-book mr-1"></i> Written Guide
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=b9EBM8td1aw" target="_blank" class="btn-inspect flex-1 justify-center text-xs" style="width:auto;height:auto;padding:0.4rem 0.75rem;">
+                                <i class="fas fa-video mr-1"></i> Video Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Binary Patcher -->
+                <div class="grimoire-card" data-category="tool">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="card-glyph">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="badge badge-artifact">Patcher</span>
+                            <span class="badge badge-beta">v1.0.0</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Binary Patcher</h3>
+                    <p class="card-desc">Works in tandem with Excel Patcher. Patches binary game files with translated data.</p>
+                    <div class="card-meta">
+                        <span class="card-meta-item"><i class="fab fa-github mr-1"></i> By Izuna</span>
+                    </div>
+                    <a href="https://github.com/RegistryAlive/WLRI/releases/download/v1.0.0.0/binary_patcher.exe" target="_blank" class="btn-cast flex-1 w-full justify-center">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <!-- KeyMapper -->
+                <div class="grimoire-card" data-category="tool">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="card-glyph">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="badge badge-artifact">Utility</span>
+                            <span class="badge badge-updated">v1.3</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">KeyMapper</h3>
+                    <p class="card-desc">Map keyboard keys to clicks at specific window coordinates. Lock a window title, set a key, choose single or double click, save.</p>
+                    <div class="card-meta">
+                        <span class="card-meta-item"><i class="fab fa-github mr-1"></i> By Izuna</span>
+                    </div>
+                    <a href="https://github.com/RegistryAlive/WLM/releases/download/v1.3/KeyMapper.exe" target="_blank" class="btn-cast flex-1 w-full justify-center">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <!-- Doalaw -->
+                <div class="grimoire-card" data-category="tool">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="card-glyph">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="badge badge-artifact">Tool</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Doalaw</h3>
+                    <p class="card-desc">Create and preview WLO equipment. Extract to your game folder and run the exe. Items auto-update with game patches.</p>
+                    <div class="card-meta">
+                        <span class="card-meta-item"><i class="fas fa-file-archive mr-1"></i> RAR</span>
+                    </div>
+                    <a href="https://cdn.discordapp.com/attachments/1178251645851811880/1178251646321557534/doalaw2.4c_3.rar" target="_blank" class="btn-cast flex-1 w-full justify-center">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <!-- BES -->
+                <div class="grimoire-card" data-category="tool">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="card-glyph">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="badge badge-artifact">Utility</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">BES (Battle Encoder Shirase)</h3>
+                    <p class="card-desc">Reduce CPU usage for running multiple game windows and lowering disconnect rates.</p>
+                    <div class="card-meta">
+                        <span class="card-meta-item"><i class="fas fa-triangle-exclamation mr-1 text-wlYellow"></i> May trigger anti-cheat</span>
+                    </div>
+                    <a href="https://mion.yosei.fi/BES/" target="_blank" class="btn-cast flex-1 w-full justify-center">
+                        <i class="fas fa-external-link-alt"></i> Get BES
+                    </a>
+                </div>
+
+                <!-- Melone -->
+                <div class="grimoire-card" data-category="tool">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="card-glyph">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="badge badge-artifact">Tool</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Melone</h3>
+                    <p class="card-desc">View manufacture and alchemy data from old IGG client data. Useful for comparing legacy recipes.</p>
+                    <div class="card-meta">
+                        <span class="card-meta-item"><i class="fas fa-file-archive mr-1"></i> ZIP</span>
+                    </div>
+                    <a href="https://cdn.discordapp.com/attachments/768395380374634526/1458384856504598548/melone-EWLO.zip" target="_blank" class="btn-cast flex-1 w-full justify-center">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <!-- DDrawCompat -->
+                <div class="grimoire-card" data-category="tool">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="card-glyph">
+                            <i class="fas fa-display"></i>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="badge badge-artifact">Compatibility</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">DDrawCompat</h3>
+                    <p class="card-desc">Fix display issues, enable borderless fullscreen, and cap FPS. Copy ddraw.dll to your WLO folder.</p>
+                    <div class="card-meta">
+                        <span class="card-meta-item"><i class="fab fa-github mr-1"></i> GitHub</span>
+                    </div>
+                    <a href="https://github.com/narzoul/DDrawCompat/releases" target="_blank" class="btn-cast flex-1 w-full justify-center">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <!-- Japanese CV Files -->
+                <div class="grimoire-card" data-category="tool">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="card-glyph">
+                            <i class="fas fa-volume-high"></i>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="badge badge-artifact">Audio</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Japanese CV Files (WLRI)</h3>
+                    <p class="card-desc">Japanese character voice files for the WLRI client. Adds Japanese voice-over to the game.</p>
+                    <div class="card-meta">
+                        <span class="card-meta-item"><i class="fab fa-google-drive mr-1"></i> Google Drive</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1amwnl_MTpS5BUq2WDNnSet2ujiEqwejb/view?usp=sharing" target="_blank" class="btn-cast flex-1 w-full justify-center">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Websites Section -->
+        <div class="section-panel" id="panel-websites">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- CMWLO Calculator -->
+                <div class="tome-card" data-category="website">
+                    <div class="tome-icon" style="background: linear-gradient(180deg, #059669 0%, #047857 100%);">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h3 class="tome-title">CMWLO Game Calculator</h3>
+                            <span class="badge badge-updated">Website</span>
+                        </div>
+                        <p class="tome-desc">Stat calculator and combo builder for character planning.</p>
+                        <div class="tome-meta">
+                            <span><i class="fas fa-chart-bar mr-1"></i> Stats</span>
+                            <span><i class="fas fa-link mr-1"></i> Combos</span>
+                        </div>
+                        <a href="https://sites.google.com/view/cmwlo/game-calculator?authuser=0" target="_blank" class="btn-tome">
+                            <i class="fas fa-external-link-alt"></i> Open Calculator
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Official WLO RI Website -->
+                <div class="tome-card" data-category="website">
+                    <div class="tome-icon" style="background: linear-gradient(180deg, #dc2626 0%, #991b1b 100%);">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h3 class="tome-title">WLO Rhodes Island (Official)</h3>
+                            <span class="badge badge-new">CN</span>
+                        </div>
+                        <p class="tome-desc">Official WLO Rhodes Island website. News, patches, and announcements.</p>
+                        <div class="tome-meta">
+                            <span><i class="fas fa-flag mr-1"></i> Chinese</span>
+                            <span><i class="fas fa-star mr-1"></i> Official</span>
+                        </div>
+                        <a href="https://wlr.dragongamerhk.com/index.php" target="_blank" class="btn-tome">
+                            <i class="fas fa-external-link-alt"></i> Visit Site
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Official Facebook -->
+                <div class="tome-card" data-category="website">
+                    <div class="tome-icon" style="background: linear-gradient(180deg, #1877F2 0%, #0D65D9 100%);">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h3 class="tome-title">WLO RI Facebook</h3>
+                            <span class="badge badge-updated">Official</span>
+                        </div>
+                        <p class="tome-desc">Official Facebook page for WLO Rhodes Island. Community updates and events.</p>
+                        <div class="tome-meta">
+                            <span><i class="fas fa-flag mr-1"></i> Chinese</span>
+                            <span><i class="fas fa-star mr-1"></i> Official</span>
+                        </div>
+                        <a href="https://www.facebook.com/wlronline/" target="_blank" class="btn-tome">
+                            <i class="fas fa-external-link-alt"></i> Visit Page
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Official Support -->
+                <div class="tome-card" data-category="website">
+                    <div class="tome-icon" style="background: linear-gradient(180deg, #f59e0b 0%, #d97706 100%);">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h3 class="tome-title">WLO RI Support</h3>
+                            <span class="badge badge-new">Official</span>
+                        </div>
+                        <p class="tome-desc">Official support page for account issues, bug reports, and game assistance.</p>
+                        <div class="tome-meta">
+                            <span><i class="fas fa-flag mr-1"></i> Chinese</span>
+                            <span><i class="fas fa-star mr-1"></i> Official</span>
+                        </div>
+                        <a href="https://cgos.chinesegamer.net/index.aspx?location=hk&game=wr" target="_blank" class="btn-tome">
+                            <i class="fas fa-external-link-alt"></i> Get Support
+                        </a>
+                    </div>
+                </div>
+
+                <!-- WLODB (this site) -->
+                <div class="tome-card" data-category="website">
+                    <div class="tome-icon">
+                        <i class="fas fa-dragon"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h3 class="tome-title">WLODB (This Site)</h3>
+                            <span class="badge badge-scroll">You are here</span>
+                        </div>
+                        <p class="tome-desc">The comprehensive Wonderland Online database — items, monsters, locations, manufacturing, and more.</p>
+                        <div class="tome-meta">
+                            <span><i class="fas fa-cubes mr-1"></i> 5,400+ Items</span>
+                            <span><i class="fas fa-paw mr-1"></i> 1,100+ Monsters</span>
+                        </div>
+                        <a href="index.html" class="btn-tome">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                        <a href="manufacture.html" class="btn-tome">
+                            <i class="fas fa-book-open"></i> Study Arts
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Section -->
+        <div class="section-panel" id="panel-community">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+                <!-- Marketplace -->
+                <div class="guild-card discord-server-card" data-category="community">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="guild-emblem discord" style="background-image: url('data/Discord Servers/Server Image/WLRI Marketplace.png'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="guild-title">Marketplace</h3>
+                            <p class="guild-desc">Official marketplace community</p>
+                        </div>
+                    </div>
+                    <div class="guild-stats mb-3">
+                        <span><i class="fas fa-users mr-1"></i> 557</span>
+                        <span><i class="fas fa-circle text-green-500 mr-1 text-xs"></i> 119 Online</span>
+                    </div>
+                    <button class="btn-guild discord w-full" onclick="toggleDiscordDetail(this)">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i> View Details
+                    </button>
+                    <div class="discord-detail-panel hidden">
+                        <div class="discord-detail-content">
+                            <img src="data/Discord Servers/Banner Image/a_e59738bc91abb24bd60deeff6b434cab.gif" alt="Marketplace Banner" class="discord-banner" onerror="this.style.display='none'">
+                            <p class="discord-detail-desc">The official WLO Marketplace Discord server. Trade items, find parties, and connect with fellow adventurers. This is the go-to community for in-game commerce and group activities.</p>
+                            <a href="https://discord.gg/VzcCp2YZHR" target="_blank" class="btn-primary w-full justify-center">
+                                <i class="fab fa-discord"></i> Join Marketplace
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lurid -->
+                <div class="guild-card discord-server-card" data-category="community">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="guild-emblem discord" style="background-image: url('data/Discord Servers/Server Image/Lurid.png'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="guild-title">Lurid</h3>
+                            <p class="guild-desc">Connect with the community</p>
+                        </div>
+                    </div>
+                    <div class="guild-stats mb-3">
+                        <span><i class="fas fa-users mr-1"></i> 1,611</span>
+                        <span><i class="fas fa-circle text-green-500 mr-1 text-xs"></i> 264 Online</span>
+                    </div>
+                    <button class="btn-guild discord w-full" onclick="toggleDiscordDetail(this)">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i> View Details
+                    </button>
+                    <div class="discord-detail-panel hidden">
+                        <div class="discord-detail-content">
+                            <img src="data/Discord Servers/Banner Image/Lurid.jpg" alt="Lurid Banner" class="discord-banner" onerror="this.style.display='none'">
+                            <p class="discord-detail-desc">A community hub for Wonderland Online players. Hang out, discuss strategies, share experiences, and stay updated on the latest game developments.</p>
+                            <a href="https://discord.gg/929DXxsK6E" target="_blank" class="btn-primary w-full justify-center">
+                                <i class="fab fa-discord"></i> Join Lurid
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Islando -->
+                <div class="guild-card discord-server-card" data-category="community">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="guild-emblem discord" style="background-image: url('data/Discord Servers/Server Image/Islando.png'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="guild-title">Islando</h3>
+                            <p class="guild-desc">Rhodes Island community</p>
+                        </div>
+                    </div>
+                    <div class="guild-stats mb-3">
+                        <span><i class="fas fa-users mr-1"></i> 5,081</span>
+                        <span><i class="fas fa-circle text-green-500 mr-1 text-xs"></i> 1,049 Online</span>
+                    </div>
+                    <button class="btn-guild discord w-full" onclick="toggleDiscordDetail(this)">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i> View Details
+                    </button>
+                    <div class="discord-detail-panel hidden">
+                        <div class="discord-detail-content">
+                            <p class="discord-detail-desc">The Rhodes Island community server. A gathering place for players on the Rhodes Island private server to share tips, organize events, and help each other progress.</p>
+                            <a href="https://discord.gg/mxWA558" target="_blank" class="btn-primary w-full justify-center">
+                                <i class="fab fa-discord"></i> Join Islando
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WLO Drifters -->
+                <div class="guild-card discord-server-card" data-category="community">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="guild-emblem discord" style="background-image: url('data/Discord Servers/Server Image/WLO Drifters.png'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="guild-title">WLO Drifters</h3>
+                            <p class="guild-desc">Join the drifters community</p>
+                        </div>
+                    </div>
+                    <div class="guild-stats mb-3">
+                        <span><i class="fas fa-users mr-1"></i> 1,077</span>
+                        <span><i class="fas fa-circle text-green-500 mr-1 text-xs"></i> 274 Online</span>
+                    </div>
+                    <button class="btn-guild discord w-full" onclick="toggleDiscordDetail(this)">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i> View Details
+                    </button>
+                    <div class="discord-detail-panel hidden">
+                        <div class="discord-detail-content">
+                            <img src="data/Discord Servers/Banner Image/WLO Drifters.jpg" alt="WLO Drifters Banner" class="discord-banner" onerror="this.style.display='none'">
+                            <p class="discord-detail-desc">The WLO Drifters community — a place for adventurers to find companions, share discoveries, and navigate the world of Wonderland Online together.</p>
+                            <a href="https://discord.gg/YUtW7CW2NU" target="_blank" class="btn-primary w-full justify-center">
+                                <i class="fab fa-discord"></i> Join WLO Drifters
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reddit -->
+                <div class="guild-card" data-category="community">
+                    <div class="guild-emblem reddit">
+                        <i class="fab fa-reddit-alien"></i>
+                    </div>
+                    <h3 class="guild-title">NWLO Forum Boards</h3>
+                    <p class="guild-desc">Old NWLO Forum boards with information from NWLO. No longer maintained.</p>
+                    <div class="guild-stats">
+                        <span><i class="fas fa-book mr-1"></i> Archive</span>
+                        <span><i class="fas fa-clock mr-1"></i> Legacy</span>
+                    </div>
+                    <a href="https://nwlo.boards.net/" target="_blank" class="btn-guild reddit">
+                        <i class="fab fa-reddit"></i> Visit Forum
+                    </a>
+                </div>
+
+                <!-- Facebook -->
+                <div class="guild-card" data-category="community">
+                    <div class="guild-emblem facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3 class="guild-title">Village Square</h3>
+                    <p class="guild-desc">Wonderland Online Rhodes Island Community Group.</p>
+                    <div class="guild-stats">
+                        <span><i class="fas fa-users mr-1"></i> Community</span>
+                        <span><i class="fas fa-heart mr-1"></i> Active</span>
+                    </div>
+                    <a href="https://www.facebook.com/groups/Nwlori/" target="_blank" class="btn-guild facebook">
+                        <i class="fab fa-facebook"></i> Join Group
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Additional Links -->
+            <div class="mb-10">
+                <h3 class="text-xl font-semibold text-center mb-6 rune-text">More Pathways</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <a href="#" class="pathway-link">
+                        <div class="pathway-icon twitch"><i class="fab fa-twitch"></i></div>
+                        <div class="pathway-content">
+                            <div class="pathway-title">Twitch Streams</div>
+                            <div class="pathway-desc">Watch adventurers live</div>
+                        </div>
+                        <i class="fas fa-chevron-right pathway-arrow"></i>
+                    </a>
+
+                    <a href="#" class="pathway-link">
+                        <div class="pathway-icon twitter"><i class="fab fa-twitter"></i></div>
+                        <div class="pathway-content">
+                            <div class="pathway-title">Raven Messages</div>
+                            <div class="pathway-desc">Receive updates by bird</div>
+                        </div>
+                        <i class="fas fa-chevron-right pathway-arrow"></i>
+                    </a>
+
+                    <a href="#" class="pathway-link">
+                        <div class="pathway-icon newsletter"><i class="fas fa-envelope"></i></div>
+                        <div class="pathway-content">
+                            <div class="pathway-title">Weekly Epistles</div>
+                            <div class="pathway-desc">News delivered to your tower</div>
+                        </div>
+                        <i class="fas fa-chevron-right pathway-arrow"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contribute -->
+            <div class="contribute-shrine">
+                <div class="shrine-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h2 class="shrine-title rune-text">Contribute to the Chronicles</h2>
+                <p class="shrine-desc">
+                    Heroes! Share artifacts, scrolls, or resources. Every contribution enriches the adventure for all.
+                </p>
+                <a href="https://forms.gle/Bd3HdoEGh9ebYLCH7" target="_blank" class="btn-primary">
+                    <i class="fas fa-upload"></i> Submit Your Tome
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="text-center mt-12">
+            <div class="inline-flex items-center gap-3 px-6 py-4 bg-wlDark/50 rounded-xl border border-wlPurple/20">
+                <div class="w-8 h-8 flex items-center justify-center bg-wlPurple/30 rounded-full text-wlPurple">
+                    <i class="fas fa-scroll"></i>
+                </div>
+                <span class="text-gray-400">More treasures await. <span class="text-amber-400">Visit often, brave adventurer.</span></span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="footer-icon">
+                    <i class="fas fa-dragon"></i>
+                </div>
+                <div>
+                    <div class="footer-title">WLO Database</div>
+                    <div class="footer-tagline">Your Wonderland Online Companion</div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="copyright">
+                © 2024 WLO Database. Crafted with <i class="fas fa-heart"></i> for the realm
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Create particles efficiently
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const colors = ['#ffd700', '#4a90d9', '#5cb85c', '#f0ad4e'];
+            
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'magic-particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 12) + 's';
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.width = (Math.random() * 4 + 2) + 'px';
+                particle.style.height = particle.style.width;
+                container.appendChild(particle);
+            }
+        }
+
+        // Tab navigation
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
+                document.getElementById('panel-' + this.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Filter pills
+        document.querySelectorAll('.filter-pill').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                document.querySelectorAll('.grimoire-card, .tome-card, .guild-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = '';
+                        card.style.opacity = '1';
+                    } else {
+                        card.style.opacity = '0.3';
+                        setTimeout(() => {
+                            if (card.style.opacity === '0.3') card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Search
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            document.querySelectorAll('.grimoire-card, .tome-card, .guild-card').forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(query) || query === '') {
+                    card.style.display = '';
+                    card.style.opacity = '1';
+                } else {
+                    card.style.opacity = '0.3';
+                }
+            });
+        });
+
+        // Counter animation with IntersectionObserver
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.stat-number');
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.dataset.target);
+                        const duration = 2000;
+                        const start = performance.now();
+                        
+                        function update(currentTime) {
+                            const elapsed = currentTime - start;
+                            const progress = Math.min(elapsed / duration, 1);
+                            const easeOut = 1 - Math.pow(1 - progress, 3);
+                            counter.textContent = Math.floor(easeOut * target).toLocaleString();
+                            
+                            if (progress < 1) requestAnimationFrame(update);
+                            else counter.textContent = target.toLocaleString();
+                        }
+                        
+                        requestAnimationFrame(update);
+                    });
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.flex.justify-center.gap-4').forEach(el => counterObserver.observe(el));
+
+        // Back to top visibility
+        window.addEventListener('scroll', () => {
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 400) backToTop.classList.add('visible');
+            else backToTop.classList.remove('visible');
+        });
+
+        // Toggle Discord detail panel
+        function toggleDiscordDetail(btn) {
+            const card = btn.closest('.discord-server-card');
+            const panel = card.querySelector('.discord-detail-panel');
+            const icon = btn.querySelector('i');
+            const isHidden = panel.classList.contains('hidden');
+
+            // Close all other panels
+            document.querySelectorAll('.discord-detail-panel').forEach(p => {
+                p.classList.add('hidden');
+                const otherBtn = p.closest('.discord-server-card').querySelector('.btn-guild');
+                if (otherBtn) {
+                    otherBtn.querySelector('i').style.transform = '';
+                    otherBtn.innerHTML = '<i class="fas fa-chevron-down transition-transform duration-300"></i> View Details';
+                }
+            });
+
+            if (isHidden) {
+                panel.classList.remove('hidden');
+                btn.innerHTML = '<i class="fas fa-chevron-up transition-transform duration-300"></i> Hide Details';
+            }
+        }
+
+        // Placeholder for buttons
+        function castSpell(type) {
+            const messages = {
+                calculator: 'Channeling the Oracle...',
+                info: 'Deciphering ancient lore...',
+                leveling: 'Unrolling the sacred path...',
+                scanner: 'Focusing the identifier...',
+                crafting: 'Lighting the forge...',
+                tracker: 'Summoning the beasts...',
+                quest: 'Opening the chronicle...',
+                planner: 'Architect awakens...',
+                preview: 'Gazing into the crystal...',
+                contribute: 'The shrine accepts your offering...'
+            };
+            alert(messages[type] || 'The ancient magic stirs...');
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+        });
+    </script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('light');
+            themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('light');
+            const icon = themeToggle.querySelector('i');
+            
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>

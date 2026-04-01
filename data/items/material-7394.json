@@ -1,0 +1,15 @@
+{
+  "id": 7394,
+  "name": "Golden Flower",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Flower",
+  "description": "A golden flower with the shape of a ball",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7394.png",
+  "file": "material-7394.json"
+}

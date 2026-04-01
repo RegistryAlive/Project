@@ -1,0 +1,15 @@
+{
+  "id": 6281,
+  "name": "Wood Bell",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A delicate bell, it can speed the creation by 2%.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6281.png",
+  "file": "furniture-6281.json"
+}

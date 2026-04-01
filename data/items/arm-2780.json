@@ -1,0 +1,17 @@
+{
+  "id": 2780,
+  "name": "Cotton Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Flower",
+  "description": "Cuffs which are plaited by cotton",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 9
+  },
+  "image": "data/images/arm-2780.png",
+  "file": "arm-2780.json"
+}

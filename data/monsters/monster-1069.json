@@ -1,0 +1,45 @@
+{
+  "id": 1069,
+  "name": "Red Cactus",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1070.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Nectar",
+      "itemId": 7531,
+      "itemFile": "material-7531.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Nectar",
+      "itemId": 7529,
+      "itemFile": "material-7529.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Pollen",
+      "itemId": 7530,
+      "itemFile": "material-7530.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 108,
+    "hp": 1327,
+    "sp": 990,
+    "catchable": "Unknown",
+    "spd": 288,
+    "str": 70,
+    "con": 73,
+    "int": 60,
+    "wis": 58,
+    "agi": 63
+  }
+}

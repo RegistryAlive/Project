@@ -1,0 +1,15 @@
+{
+  "id": 7588,
+  "name": "Coal Ball",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Coal",
+  "description": "A kind of fuel",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7588.png",
+  "file": "material-7588.json"
+}

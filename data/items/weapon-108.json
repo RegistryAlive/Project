@@ -1,0 +1,18 @@
+{
+  "id": 108,
+  "name": "Pure Iron Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Pure Iron / Wood",
+  "description": "A sword made from pure iron",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 5,
+    "SPD": 5
+  },
+  "image": "data/images/weapon-108.png",
+  "file": "weapon-108.json"
+}

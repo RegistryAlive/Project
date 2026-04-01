@@ -1,0 +1,15 @@
+{
+  "id": 7763,
+  "name": "Ambergris",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fluid",
+  "description": "A kind of spice, it can remove all smell",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7763.png",
+  "file": "material-7763.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6639,
+  "name": "Pillar",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Players can be provided to live in the cubicle",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6639.png",
+  "file": "furniture-6639.json"
+}

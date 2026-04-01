@@ -1,0 +1,51 @@
+{
+  "id": 72,
+  "name": "Lactobacillus",
+  "location": "Sea Monster",
+  "image": "data/Monster_Images/monster-72.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Stool",
+      "itemId": 7817,
+      "itemFile": "material-7817.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grey Clay",
+      "itemId": 7645,
+      "itemFile": "material-7645.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dry Clay",
+      "itemId": 7646,
+      "itemFile": "material-7646.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 12,
+    "hp": 119,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 30,
+    "str": 7,
+    "con": 10,
+    "int": 6,
+    "wis": 7,
+    "agi": 6
+  }
+}

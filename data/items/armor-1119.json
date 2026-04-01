@@ -1,0 +1,18 @@
+{
+  "id": 1119,
+  "name": "Wind Aurora Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Grass",
+  "description": "Suit: Damages Earth enemies;-50% damage to Fire enemies.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "DEF": 10
+  },
+  "image": "data/images/armor-1119.png",
+  "file": "armor-1119.json"
+}

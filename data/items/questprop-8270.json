@@ -1,0 +1,15 @@
+{
+  "id": 8270,
+  "name": "Love Music Box",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Harbors nothing but memory of the beloved",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8270.png",
+  "file": "questprop-8270.json"
+}

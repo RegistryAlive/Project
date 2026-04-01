@@ -1,0 +1,18 @@
+{
+  "id": 1825,
+  "name": "Horse Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Leather / Fur",
+  "description": "Boots specially for posthorse. Has high defense.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 8,
+    "SPD": 7
+  },
+  "image": "data/images/shoes-1825.png",
+  "file": "shoes-1825.json"
+}

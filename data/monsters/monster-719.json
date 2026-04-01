@@ -1,0 +1,27 @@
+{
+  "id": 719,
+  "name": "Gorilla (Quest)",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-719.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 1010,
+    "sp": 717,
+    "catchable": "Unknown",
+    "spd": 233.5,
+    "str": 55,
+    "con": 60,
+    "int": 43,
+    "wis": 44,
+    "agi": 53
+  }
+}

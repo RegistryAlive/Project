@@ -1,0 +1,17 @@
+{
+  "id": 1424,
+  "name": "Cat Earrings",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Leather / Fur / Saltpeter / White/Yellow Clay",
+  "description": "A general ornament which shaped like a cat's ear",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 23
+  },
+  "image": "data/images/helmet-1424.png",
+  "file": "helmet-1424.json"
+}

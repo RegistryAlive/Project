@@ -1,0 +1,3019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland Online - Items Database</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts/item-loader.js"></script>
+    <script src="scripts/recipe-generator.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wlBlue: '#3b82f6',
+                        wlPurple: '#8b5cf6',
+                        wlGreen: '#10b981',
+                        wlRed: '#ef4444',
+                        wlYellow: '#f59e0b',
+                        wlDark: '#1e293b',
+                        wlDarker: '#0f172a',
+                        wlLight: '#f8fafc',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-fast': 'float 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(239, 68, 68, 0.1) 0px, transparent 50%);
+            min-height: 100vh;
+            color: #f8fafc;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02) rotateX(1deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .glow {
+            text-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
+        }
+        
+        .category-icon {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .category-card:hover .category-icon {
+            transform: scale(1.2) rotateY(10deg);
+        }
+        
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        .blur-bg {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .floating-island {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-island:nth-child(2) {
+            animation-delay: 1s;
+        }
+        
+        .floating-island:nth-child(3) {
+            animation-delay: 2s;
+        }
+        
+        .tooltip {
+            position: relative;
+        }
+        
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            z-index: 10;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            width: max-content;
+            max-width: 200px;
+            font-size: 0.8rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #1e293b transparent transparent transparent;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .sidebar {
+            transition: transform 0.3s ease;
+        }
+        
+        .sidebar-hidden {
+            transform: translateX(100%);
+        }
+        
+        .sidebar-visible {
+            transform: translateX(0);
+        }
+        
+        .dark-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 40;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .dark-overlay-visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Table styles */
+        .table-container {
+            overflow-x: auto;
+        }
+        
+        .table {
+            min-width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        
+        .table th {
+            position: sticky;
+            top: 0;
+            background-color: #1e293b;
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .table th:hover {
+            background-color: rgba(59, 130, 246, 0.2);
+        }
+        
+        .table th.sorted-asc::after {
+            content: " ↑";
+            font-size: 0.8em;
+        }
+        
+        .table th.sorted-desc::after {
+            content: " ↓";
+            font-size: 0.8em;
+        }
+        
+        .table tr:hover td {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        
+        .table td, .table th {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .table th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .rarity-common {
+            color: #ffffff;
+        }
+        
+        .rarity-uncommon {
+            color: #10b981;
+        }
+        
+        .rarity-rare {
+            color: #3b82f6;
+        }
+        
+        .rarity-epic {
+            color: #8b5cf6;
+        }
+        
+        .rarity-legendary {
+            color: #f59e0b;
+        }
+        
+        .item-type-icon {
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+        
+        .weapon {
+            background-color: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+        
+        .armor {
+            background-color: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+        
+        .helmet {
+            background-color: rgba(139, 92, 246, 0.2);
+            color: #8b5cf6;
+        }
+        
+        .arm {
+            background-color: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+        
+        .shoes {
+            background-color: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+        }
+        
+        .special {
+            background-color: rgba(236, 72, 153, 0.2);
+            color: #ec4899;
+        }
+        
+        .other {
+            background-color: rgba(107, 114, 128, 0.2);
+            color: #6b7280;
+        }
+        
+        .item {
+            background-color: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+        
+        .consumable {
+            background-color: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+        
+        .material {
+            background-color: rgba(139, 92, 246, 0.2);
+            color: #8b5cf6;
+        }
+        
+        .quest {
+            background-color: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+        }
+        
+        .accessory {
+            background-color: rgba(236, 72, 153, 0.2);
+            color: #ec4899;
+        }
+        
+        .furniture {
+            background-color: rgba(139, 92, 246, 0.2);
+            color: #8b5cf6;
+        }
+        
+        .questprop {
+            background-color: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+        }
+        
+        .tool {
+            background-color: rgba(107, 114, 128, 0.2);
+            color: #9ca3af;
+        }
+        
+        .vehicle {
+            background-color: rgba(6, 182, 212, 0.2);
+            color: #06b6d4;
+        }
+        
+        .pagination .active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        
+        .filter-dropdown {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .filter-dropdown.open {
+            max-height: 800px;
+            overflow: visible;
+        }
+        
+        .item-card {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .item-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Item preview tooltip */
+        .item-preview {
+            position: absolute;
+            z-index: 100;
+            width: 200px;
+            background-color: #1e293b;
+            border-radius: 8px;
+            padding: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .item-preview.visible {
+            opacity: 1;
+        }
+        
+        .item-preview img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        
+        .item-preview h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .item-preview .rarity {
+            font-size: 0.8rem;
+            margin-bottom: 4px;
+        }
+        
+        .item-preview .base {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Loading spinner */
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border-top-color: #3b82f6;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, #1e293b, #3b82f6);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle-ball {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle.light .theme-toggle-ball {
+            transform: translateX(30px);
+        }
+        
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e2e8f0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f8fafc !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #1e293b !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #cbd5e1 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e2e8f0;
+            color: #1e293b;
+        }
+    </style>
+</head>
+<body class="text-wlLight">
+    <!-- Dark overlay for mobile menu -->
+    <div id="darkOverlay" class="dark-overlay"></div>
+    
+    <!-- Mobile sidebar -->
+    <div id="mobileSidebar" class="sidebar sidebar-hidden fixed inset-y-0 right-0 w-64 bg-wlDarker z-50 shadow-2xl p-4 overflow-y-auto">
+        <div class="flex justify-between items-center mb-8">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                <i class="fas fa-dragon text-xl text-white"></i>
+            </div>
+            <button id="closeSidebar" class="text-wlLight hover:text-wlRed">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="space-y-4">
+            <a href="index.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Home</a>
+            <a href="Item.html" class="block px-4 py-2 rounded-md font-medium bg-wlDark bg-opacity-50 text-wlBlue transition">Items</a>
+            <a href="quests.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Quests</a>
+            <a href="monsters.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Monsters</a>
+            <a href="Locations.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Locations</a>
+            <a href="tier-list.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Tier-List</a>
+            <a href="shops.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Shops</a>
+            <a href="manufacture.html" class="block px-4 py-2 rounded-md font-medium hover:bg-wlDark hover:bg-opacity-50 transition">Manufacture</a>
+            <a href="Resources.html" class="block px-4 py-2 rounded-md font-medium text-wlPurple hover:bg-wlDark hover:bg-opacity-50 transition">Resources</a>
+        </nav>
+        <div class="mt-8 pt-4 border-t border-wlLight border-opacity-20">
+            <h4 class="font-medium mb-4">Quick Links</h4>
+            <div class="space-y-2">
+                <a href="#" class="block text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Updates</a>
+                <a href="#" class="block text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Patch Notes</a>
+                <a href="#" class="block text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Community</a>
+                <a href="#" class="block text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">API</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-wlDark bg-opacity-90 blur-bg shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                            <i class="fas fa-dragon text-xl text-white"></i>
+                        </div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple gradient-text glow">
+                            Wonderland Online DB
+                        </h1>
+                    </div>
+                    <div class="hidden md:flex space-x-6 items-center">
+                        <div class="relative group">
+                            <a href="index.html" class="nav-link px-3 py-2 text-sm font-medium flex items-center">
+                                Home <i class="fas fa-chevron-down text-xs ml-1 group-hover:rotate-180 transition-transform"></i>
+                            </a>
+                            <div class="absolute left-0 top-full mt-1 w-48 bg-wlDark bg-opacity-95 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-wlPurple border-opacity-30">
+                                <a href="roadmap.html" class="block px-4 py-3 text-sm text-wlBlue hover:bg-wlPurple hover:bg-opacity-20 rounded-lg flex items-center justify-between">
+                                    Roadmap <i class="fas fa-route text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="Item.html" class="nav-link px-3 py-2 text-sm font-medium text-wlBlue">Items</a>
+                        <a href="quests.html" class="nav-link px-3 py-2 text-sm font-medium">Quests</a>
+                        <a href="monsters.html" class="nav-link px-3 py-2 text-sm font-medium">Monsters</a>
+                        <a href="Locations.html" class="nav-link px-3 py-2 text-sm font-medium">Locations</a>
+                        <a href="tier-list.html" class="nav-link px-3 py-2 text-sm font-medium">Tier-List</a>
+                        <a href="shops.html" class="nav-link px-3 py-2 text-sm font-medium">Shops</a>
+                        <a href="manufacture.html" class="nav-link px-3 py-2 text-sm font-medium">Manufacture</a>
+                        <a href="Resources.html" class="nav-link px-3 py-2 text-sm font-medium">Resources</a>
+                        <!-- Theme Toggle -->
+                        <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                            <div class="theme-toggle-ball">
+                                <i class="fas fa-moon text-xs text-wlDark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="openSidebar" class="text-wlLight focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <!-- Page Header -->
+            <section class="mb-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-2 flex items-center">
+                            <i class="fas fa-cube mr-3 text-wlBlue"></i>
+                            Items Database
+                        </h2>
+                        <p class="text-wlLight text-opacity-70">
+                            Browse through our comprehensive database of in-game items
+                        </p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <button id="toggleFilters" class="px-4 py-2 bg-wlDark border border-wlLight border-opacity-20 rounded-md flex items-center space-x-2 hover:bg-wlDarker transition">
+                            <i class="fas fa-sliders-h"></i>
+                            <span>Filters</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Filters Dropdown -->
+                <div id="filtersDropdown" class="filter-dropdown mb-6 bg-wlDark bg-opacity-70 rounded-lg">
+                    <div class="p-4 relative">
+                        <!-- Settings Button (top right) -->
+                        <div class="absolute top-4 right-4">
+                            <button id="baseFilterSettingsBtn" class="px-3 py-1.5 bg-wlDarker border border-wlLight border-opacity-20 rounded-md hover:bg-wlDark transition text-sm flex items-center gap-2" onclick="event.stopPropagation(); toggleBaseFilterSettingsPanel()">
+                                <i class="fas fa-cog text-wlLight text-opacity-70"></i>
+                                <span class="text-wlLight text-opacity-70">Settings</span>
+                            </button>
+                            <!-- Settings Panel -->
+                            <div id="baseFilterSettingsPanel" class="absolute right-0 top-full mt-1 z-[100] bg-wlDarker border border-wlLight border-opacity-20 rounded-md shadow-lg hidden p-3" style="width: 280px;">
+                                <div class="text-sm font-medium mb-2 text-wlLight">Base Filter Settings</div>
+                                <div class="space-y-2">
+                                    <label class="flex items-center text-xs cursor-pointer hover:text-wlBlue">
+                                        <input type="checkbox" id="orderedFilterToggle" class="mr-2" onchange="updateOrderedFilterHint()">
+                                        <span>Ordered filter (exact order selected)</span>
+                                    </label>
+                                    <label class="flex items-center text-xs cursor-pointer hover:text-wlBlue">
+                                        <input type="checkbox" id="settingAutoClearSearch" class="mr-2" onchange="updateBaseFilterSetting('autoClearSearch', this.checked)">
+                                        <span>Clear base search on select</span>
+                                    </label>
+                                    <label class="flex items-center text-xs cursor-pointer hover:text-wlBlue">
+                                        <input type="checkbox" id="settingAutoFocusSearch" class="mr-2" onchange="updateBaseFilterSetting('autoFocusSearch', this.checked)">
+                                        <span>Auto-focus search after selecting</span>
+                                    </label>
+                                    <label class="flex items-center text-xs cursor-pointer hover:text-wlBlue">
+                                        <input type="checkbox" id="settingSortSelectedToTop" class="mr-2" onchange="updateBaseFilterSetting('sortSelectedToTop', this.checked)">
+                                        <span>Show selected bases at top</span>
+                                    </label>
+                                    <label class="flex items-center text-xs cursor-pointer hover:text-wlBlue">
+                                        <input type="checkbox" id="settingClearNameSearchOnApply" class="mr-2" onchange="updateBaseFilterSetting('clearNameSearchOnApply', this.checked)">
+                                        <span>Clear name search on apply</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                            <!-- Search -->
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Search</label>
+                                <div class="relative">
+                                    <input type="text" id="itemSearch" placeholder="Search by name..." 
+                                           class="w-full px-4 py-2 bg-wlDarker border border-wlLight border-opacity-20 rounded-md focus:outline-none focus:border-wlBlue">
+                                    <button id="searchButton" class="absolute right-3 top-2 text-wlLight text-opacity-70 hover:text-wlBlue">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <label class="flex items-center text-xs mt-2 cursor-pointer hover:text-wlBlue">
+                                    <input type="checkbox" id="searchDescription" class="mr-2">
+                                    <span>Include description in search (slower)</span>
+                                </label>
+                            </div>
+                            
+                            <!-- Item Type -->
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Item Type</label>
+                                <select id="itemTypeFilter" class="w-full px-4 py-2 bg-wlDarker border border-wlLight border-opacity-20 rounded-md focus:outline-none focus:border-wlBlue">
+                                    <option value="">All Types</option>
+                                    <option value="weapon">Weapon</option>
+                                    <option value="armor">Armor</option>
+                                    <option value="helmet">Helmet</option>
+                                    <option value="arm">Arm</option>
+                                    <option value="shoes">Shoes</option>
+                                    <option value="special">Special</option>
+                                    <option value="accessory">Accessory</option>
+                                    <option value="furniture">Furniture</option>
+                                    <option value="material">Material</option>
+                                    <option value="questprop">Quest Prop</option>
+                                    <option value="tool">Tool</option>
+                                    <option value="vehicle">Vehicle</option>
+                                    <option value="item">Item</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Level Requirement -->
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Level Requirement</label>
+                                <div class="flex items-center space-x-2">
+                                    <input type="number" id="minLevel" placeholder="Min" 
+                                           class="w-1/2 px-4 py-2 bg-wlDarker border border-wlLight border-opacity-20 rounded-md focus:outline-none focus:border-wlBlue">
+                                    <span>to</span>
+                                    <input type="number" id="maxLevel" placeholder="Max" 
+                                           class="w-1/2 px-4 py-2 bg-wlDarker border border-wlLight border-opacity-20 rounded-md focus:outline-none focus:border-wlBlue">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Second row of filters -->
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-4">
+                            <!-- Base Material Filter -->
+                            <div class="md:col-span-2" style="position: relative;">
+                                <label class="block text-sm font-medium mb-2">Base Material</label>
+                                <div id="baseFilterContainer" class="min-h-[42px] px-3 py-2 bg-wlDarker border border-wlLight border-opacity-20 rounded-md cursor-pointer flex flex-wrap gap-1 items-center" onclick="toggleBaseDropdown()">
+                                    <span id="selectedBasesDisplay" class="text-wlLight text-opacity-70">Select base materials...</span>
+                                </div>
+                                <div id="baseDropdown" class="absolute left-0 top-full mt-1 z-[100] bg-wlDarker border border-wlLight border-opacity-20 rounded-md shadow-lg hidden" style="max-height: 400px; overflow-y: auto; width: 100%;">
+                                    <div class="p-2 border-b border-wlLight border-opacity-10 sticky top-0 bg-wlDarker z-10">
+                                        <input type="text" id="baseSearchInput" placeholder="Search materials..." 
+                                               class="w-full px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded text-sm focus:outline-none focus:border-wlBlue"
+                                               onclick="event.stopPropagation()">
+                                    </div>
+                                    <div id="baseOptionsContainer" class="p-2">
+                                        <!-- Base options will be populated by JavaScript -->
+                                    </div>
+                                </div>
+                                <input type="hidden" id="baseFilter" value="">
+                            </div>
+                            
+                            <!-- Stat Filter -->
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Stat Filter</label>
+                                <select id="statTypeFilter" class="w-full px-4 py-2 bg-wlDarker border border-wlLight border-opacity-20 rounded-md focus:outline-none focus:border-wlBlue">
+                                    <option value="">Any Stat</option>
+                                    <option value="ATK">ATK</option>
+                                    <option value="DEF">DEF</option>
+                                    <option value="MATK">MATK</option>
+                                    <option value="MDEF">MDEF</option>
+                                    <option value="SPD">SPD</option>
+                                    <option value="HP">HP</option>
+                                    <option value="MP">MP</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Min Stat Value -->
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Min Stat Value</label>
+                                <input type="number" id="minStatValue" placeholder="Min value..." 
+                                       class="w-full px-4 py-2 bg-wlDarker border border-wlLight border-opacity-20 rounded-md focus:outline-none focus:border-wlBlue">
+                            </div>
+                        </div>
+                        <div class="mt-4 flex justify-end space-x-3">
+                            <button id="resetFilters" class="px-4 py-2 text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">
+                                Reset
+                            </button>
+                            <button id="applyFilters" class="px-4 py-2 bg-gradient-to-r from-wlBlue to-wlPurple text-white rounded-md hover:opacity-90 transition text-sm">
+                                Apply Filters
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- View Toggle -->
+                <div class="flex justify-between items-center mb-4">
+                    <div class="text-sm text-wlLight text-opacity-70">
+                        <span id="showingCount">Loading...</span> items
+                    </div>
+                    <div class="flex space-x-2">
+                        <button id="tableViewBtn" class="px-3 py-1 bg-wlBlue text-white rounded-md text-sm">
+                            <i class="fas fa-table mr-1"></i> Table
+                        </button>
+                        <button id="gridViewBtn" class="px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlDarker transition">
+                            <i class="fas fa-th-large mr-1"></i> Grid
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loading Indicator -->
+            <div id="loadingIndicator" class="flex justify-center items-center py-12">
+                <div class="spinner"></div>
+            </div>
+
+            <!-- Table View -->
+            <section id="tableView" class="mb-8 hidden">
+                <div class="bg-wlDark bg-opacity-70 rounded-xl overflow-hidden">
+                    <div class="table-container max-h-[600px] overflow-y-auto">
+                        <table class="table w-full">
+                            <thead>
+                                <tr>
+                                    <th class="w-20"></th>
+                                    <th data-sort="name">Item</th>
+                                    <th data-sort="category">Type</th>
+                                    <th data-sort="rank">Rank</th>
+                                    <th data-sort="level">Level</th>
+                                    <th data-sort="base">Base</th>
+                                    <th data-sort="stats">Stats</th>
+                                    <th data-sort="description">Description</th>
+                                    <th class="text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="itemsTableBody">
+                                <!-- Items will be populated here by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="mt-6 flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <span class="text-sm text-wlLight text-opacity-70">Items per page:</span>
+                        <select id="itemsPerPage" class="ml-2 px-2 py-1 bg-wlDarker border border-wlLight border-opacity-20 rounded-md text-sm focus:outline-none">
+                            <option>10</option>
+                            <option selected>20</option>
+                            <option>50</option>
+                            <option>100</option>
+                        </select>
+                    </div>
+                    <div class="flex space-x-1" id="pagination">
+                        <!-- Pagination will be generated here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grid View (Hidden by default) -->
+            <section id="gridView" class="hidden mb-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="itemsGrid">
+                    <!-- Items will be populated here by JavaScript -->
+                </div>
+                
+                <!-- Pagination -->
+                <div class="mt-6 flex flex-col md:flex-row items-center justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <span class="text-sm text-wlLight text-opacity-70">Items per page:</span>
+                        <select id="itemsPerPageGrid" class="ml-2 px-2 py-1 bg-wlDarker border border-wlLight border-opacity-20 rounded-md text-sm focus:outline-none">
+                            <option>12</option>
+                            <option selected>24</option>
+                            <option>48</option>
+                            <option>96</option>
+                        </select>
+                    </div>
+                    <div class="flex space-x-1" id="paginationGrid">
+                        <!-- Pagination will be generated here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Stats -->
+            <section class="bg-wlDark bg-opacity-70 rounded-xl p-6 mb-8 hidden" id="quickStats">
+                <h3 class="text-xl font-semibold mb-4">Items Statistics</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold mb-2 text-wlBlue" id="totalItems">0</div>
+                        <div class="text-sm text-wlLight text-opacity-70">Total Items</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold mb-2 text-wlRed" id="totalWeapons">0</div>
+                        <div class="text-sm text-wlLight text-opacity-70">Weapons</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold mb-2 text-wlPurple" id="totalArmor">0</div>
+                        <div class="text-sm text-wlLight text-opacity-70">Armor Pieces</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold mb-2 text-wlGreen" id="totalConsumables">0</div>
+                        <div class="text-sm text-wlLight text-opacity-70">Consumables</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-wlDark bg-opacity-90 blur-bg py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue flex items-center justify-center">
+                                <i class="fas fa-dragon text-xl text-white"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold">Wonderland DB</h4>
+                        </div>
+                        <p class="text-sm text-wlLight text-opacity-70 mb-4">
+                            The most comprehensive database for Wonderland Online. Regularly updated with the latest game content.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-8 h-8 rounded-full bg-wlDark bg-opacity-70 border border-wlLight border-opacity-20 flex items-center justify-center hover:bg-wlBlue transition">
+                                <i class="fab fa-discord text-sm text-wlLight"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 rounded-full bg-wlDark bg-opacity-70 border border-wlLight border-opacity-20 flex items-center justify-center hover:bg-blue-400 transition">
+                                <i class="fab fa-twitter text-sm text-wlLight"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 rounded-full bg-wlDark bg-opacity-70 border border-wlLight border-opacity-20 flex items-center justify-center hover:bg-pink-500 transition">
+                                <i class="fab fa-youtube text-sm text-wlLight"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-wlLight">Database</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Items</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Weapons</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Armor</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Consumables</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-wlLight">Resources</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Item Sets</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Crafting Recipes</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Drop Rates</a></li>
+                            <li><a href="#" class="text-sm text-wlLight text-opacity-70 hover:text-wlBlue transition">Item Comparison</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-wlLight">Newsletter</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 mb-4">
+                            Get updates on new items and database features.
+                        </p>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="flex-grow px-4 py-2 bg-wlDark border border-wlLight border-opacity-20 text-sm rounded-l focus:outline-none focus:border-wlBlue">
+                            <button class="px-4 py-2 bg-gradient-to-r from-wlBlue to-wlPurple text-white text-sm rounded-r hover:opacity-90 transition">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 border-t border-wlLight border-opacity-20">
+                    <p class="text-sm text-center text-wlLight text-opacity-70">
+                        © 2023 Wonderland Online DB. All game content and materials are trademarks of their respective owners.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Item Detail Modal -->
+    <div id="itemModal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="relative bg-wlDarker rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="absolute top-4 left-4 flex items-center space-x-2">
+                <button id="backModal" onclick="goBackInModal()" class="text-wlLight hover:text-wlBlue text-xl hidden" title="Go back">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <button id="closeModal" class="absolute top-4 right-4 text-wlLight hover:text-wlRed text-xl">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="p-6">
+                <!-- Modal content will be populated by JavaScript -->
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item Preview Tooltip -->
+    <div id="itemPreview" class="item-preview">
+        <img src="" alt="" id="previewImage">
+        <h4 id="previewName"></h4>
+        <div class="rarity" id="previewRarity"></div>
+        <div class="base" id="previewBase"></div>
+    </div>
+
+    <script>
+        // Database connection configuration
+        const dbConfig = {
+            host: 'localhost',
+            user: 'wonderland_user',
+            password: 'securepassword',
+            database: 'wonderland_db'
+        };
+
+        // Current state of the application
+        let currentState = {
+        items: [],
+        filteredItems: [],
+        currentPage: 1,
+        itemsPerPage: 20,
+        sortColumn: 'name',
+        sortDirection: 'asc',
+        filters: {
+            search: '',
+            searchDescription: false,
+            type: '',
+            minLevel: 0,
+            maxLevel: 100,
+            base: [],
+            orderedBase: false,
+            statType: '',
+            minStatValue: 0
+        }
+    };
+    window.currentState = currentState;
+    
+    // Selected base materials for multi-select
+    let selectedBaseMaterials = [];
+    let allBaseMaterials = [];
+
+        // Mobile sidebar toggle
+        const openSidebar = document.getElementById('openSidebar');
+        const closeSidebar = document.getElementById('closeSidebar');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const darkOverlay = document.getElementById('darkOverlay');
+        
+        openSidebar.addEventListener('click', () => {
+            mobileSidebar.classList.remove('sidebar-hidden');
+            mobileSidebar.classList.add('sidebar-visible');
+            darkOverlay.classList.add('dark-overlay-visible');
+        });
+        
+        closeSidebar.addEventListener('click', () => {
+            mobileSidebar.classList.remove('sidebar-visible');
+            mobileSidebar.classList.add('sidebar-hidden');
+            darkOverlay.classList.remove('dark-overlay-visible');
+        });
+        
+        darkOverlay.addEventListener('click', () => {
+            mobileSidebar.classList.remove('sidebar-visible');
+            mobileSidebar.classList.add('sidebar-hidden');
+            darkOverlay.classList.remove('dark-overlay-visible');
+        });
+        
+        // Toggle filters
+        const toggleFilters = document.getElementById('toggleFilters');
+        const filtersDropdown = document.getElementById('filtersDropdown');
+        
+        toggleFilters.addEventListener('click', () => {
+            filtersDropdown.classList.toggle('open');
+        });
+        
+        // View toggle
+        const tableViewBtn = document.getElementById('tableViewBtn');
+        const gridViewBtn = document.getElementById('gridViewBtn');
+        const tableView = document.getElementById('tableView');
+        const gridView = document.getElementById('gridView');
+        
+        tableViewBtn.addEventListener('click', () => {
+            tableView.classList.remove('hidden');
+            gridView.classList.add('hidden');
+            tableViewBtn.classList.add('bg-wlBlue', 'text-white');
+            tableViewBtn.classList.remove('bg-wlDark', 'border');
+            gridViewBtn.classList.add('bg-wlDark', 'border');
+            gridViewBtn.classList.remove('bg-wlBlue', 'text-white');
+        });
+        
+        gridViewBtn.addEventListener('click', () => {
+            gridView.classList.remove('hidden');
+            tableView.classList.add('hidden');
+            gridViewBtn.classList.add('bg-wlBlue', 'text-white');
+            gridViewBtn.classList.remove('bg-wlDark', 'border');
+            tableViewBtn.classList.add('bg-wlDark', 'border');
+            tableViewBtn.classList.remove('bg-wlBlue', 'text-white');
+        });
+
+        // Helper functions
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+        
+        function getTypeIcon(type) {
+            const icons = {
+                weapon: 'fa-khanda',
+                armor: 'fa-shield-alt',
+                helmet: 'fa-hard-hat',
+                arm: 'fa-mitten',
+                shoes: 'fa-shoe-prints',
+                special: 'fa-star',
+                other: 'fa-box',
+                consumable: 'fa-wine-bottle',
+                material: 'fa-gem',
+                quest: 'fa-scroll',
+                accessory: 'fa-ring',
+                furniture: 'fa-couch',
+                questprop: 'fa-scroll',
+                tool: 'fa-wrench',
+                vehicle: 'fa-ship',
+                item: 'fa-book'
+            };
+            return icons[type] || 'fa-question';
+        }
+
+        // Sort items
+        function sortItems(items, column, direction) {
+            return [...items].sort((a, b) => {
+                // Special handling for numeric columns
+                if (['level', 'value', 'rank'].includes(column)) {
+                    const valA = a[column] || 0;
+                    const valB = b[column] || 0;
+                    return direction === 'asc' ? valA - valB : valB - valA;
+                }
+                
+                // Special handling for stats (sum of all stat values)
+                if (column === 'stats') {
+                    const getStatsTotal = (item) => {
+                        if (!item.attributes) return 0;
+                        return Object.values(item.attributes).reduce((sum, val) => {
+                            // Handle percentage values (less than 1) and regular values
+                            return sum + (typeof val === 'number' ? val : 0);
+                        }, 0);
+                    };
+                    const valA = getStatsTotal(a);
+                    const valB = getStatsTotal(b);
+                    return direction === 'asc' ? valA - valB : valB - valA;
+                }
+                
+                // Special handling for rarity (custom order)
+                if (column === 'rarity') {
+                    const rarityOrder = { 'common': 0, 'uncommon': 1, 'rare': 2, 'epic': 3, 'legendary': 4 };
+                    const valA = rarityOrder[a[column]] || 0;
+                    const valB = rarityOrder[b[column]] || 0;
+                    return direction === 'asc' ? valA - valB : valB - valA;
+                }
+                
+                // Default string comparison
+                const valA = String(a[column] || '').toLowerCase();
+                const valB = String(b[column] || '').toLowerCase();
+                
+                if (valA < valB) return direction === 'asc' ? -1 : 1;
+                if (valA > valB) return direction === 'asc' ? 1 : -1;
+                return 0;
+            });
+        }
+
+        // Apply filters to items
+        async function applyFilters(items) {
+            const { search, searchDescription, type, minLevel, maxLevel, base, orderedBase, statType, minStatValue } = currentState.filters;
+            
+            // No need to load full items anymore - descriptions are now in the index!
+            let filtered = items.filter(item => {
+                // Search filter - searches in name only by default, or includes description if enabled
+                const searchLower = search.toLowerCase();
+                let matchesSearch = search === '' || item.name.toLowerCase().includes(searchLower);
+                
+                // Only search description if the toggle is enabled
+                // Description is now available in the index, so no file loading needed
+                if (searchDescription && !matchesSearch && search !== '') {
+                    matchesSearch = item.description && item.description.toLowerCase().includes(searchLower);
+                }
+
+                // Type filter - use category field (weapon, armor, etc.)
+                const matchesType = type === '' || item.category === type;
+
+                // Level filter
+                const matchesLevel = item.level >= minLevel && item.level <= maxLevel;
+
+                // Base material filter - check if base contains the search term
+                let matchesBase = true;
+                if (base && base.length > 0) {
+                    if (item.base) {
+                        // Split base by " / " to get individual materials
+                        const itemBases = item.base.split(' / ').map(b => b.toLowerCase().trim());
+                        
+                        if (orderedBase) {
+                            // Ordered filter: items must have selected bases in the exact order AND position
+                            // For example, if user selects "Copper", only items with Copper as FIRST base match
+                            // "Copper / Iron" matches, "Iron / Copper" does NOT match
+                            const selectedBasesLower = base.map(b => b.toLowerCase());
+                            
+                            // Check each selected base - must match at the same position
+                            for (let i = 0; i < selectedBasesLower.length; i++) {
+                                const sb = selectedBasesLower[i];
+                                const itemBase = itemBases[i];
+                                
+                                // If item doesn't have a base at this position, no match
+                                if (!itemBase) {
+                                    matchesBase = false;
+                                    break;
+                                }
+                                
+                                // Check if the base at this position matches
+                                if (!(itemBase.includes(sb) || sb.includes(itemBase))) {
+                                    matchesBase = false;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // Non-ordered filter: match any item that has ANY of the selected bases
+                            matchesBase = base.some(selectedBase => {
+                                const baseLower = selectedBase.toLowerCase();
+                                return itemBases.some(ib => ib.includes(baseLower) || baseLower.includes(ib));
+                            });
+                        }
+                    } else {
+                        matchesBase = false;
+                    }
+                }
+
+                // Stat filter - check if item has the required stat with minimum value
+                let matchesStat = true;
+                if (statType && statType !== '' && minStatValue > 0) {
+                    if (item.attributes && item.attributes[statType]) {
+                        matchesStat = item.attributes[statType] >= minStatValue;
+                    } else {
+                        matchesStat = false;
+                    }
+                } else if (statType && statType !== '') {
+                    // Just check if the stat exists
+                    matchesStat = item.attributes && item.attributes[statType] !== undefined;
+                }
+
+                return matchesSearch && matchesType && matchesLevel && matchesBase && matchesStat;
+            });
+            
+            // Sort by base match priority if base filter is set and ordered
+            if (base && base.length > 0 && orderedBase) {
+                const selectedBasesLower = base.map(b => b.toLowerCase());
+                filtered.sort((a, b) => {
+                    const aBases = a.base ? a.base.split(' / ').map(b => b.toLowerCase().trim()) : [];
+                    const bBases = b.base ? b.base.split(' / ').map(b => b.toLowerCase().trim()) : [];
+                    
+                    // Calculate match score - higher score = better match
+                    const getMatchScore = (itemBases) => {
+                        let score = 0;
+                        for (let i = 0; i < selectedBasesLower.length; i++) {
+                            const sb = selectedBasesLower[i];
+                            if (itemBases[i] && (itemBases[i].includes(sb) || sb.includes(itemBases[i]))) {
+                                score += (selectedBasesLower.length - i) * 10; // Earlier bases get higher score
+                            }
+                        }
+                        return score;
+                    };
+                    
+                    const aScore = getMatchScore(aBases);
+                    const bScore = getMatchScore(bBases);
+                    return bScore - aScore; // Higher score first
+                });
+            }
+            
+            return filtered;
+        }
+
+        // Get paginated items
+        function getPaginatedItems(items) {
+            const startIndex = (currentState.currentPage - 1) * currentState.itemsPerPage;
+            const endIndex = startIndex + currentState.itemsPerPage;
+            return items.slice(startIndex, endIndex);
+        }
+
+        // Generate pagination buttons
+        function generatePagination(totalItems, itemsPerPage, currentPage, containerId) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const paginationContainer = document.getElementById(containerId);
+            paginationContainer.innerHTML = '';
+            
+            if (totalPages <= 1) return;
+            
+            // Previous button
+            const prevButton = document.createElement('button');
+            prevButton.className = `px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlDarker transition ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`;
+            prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
+            prevButton.disabled = currentPage === 1;
+            prevButton.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentState.currentPage = currentPage - 1;
+                    renderItems();
+                }
+            });
+            paginationContainer.appendChild(prevButton);
+            
+            // Page buttons
+            const maxVisiblePages = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+            let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+            
+            if (endPage - startPage + 1 < maxVisiblePages) {
+                startPage = Math.max(1, endPage - maxVisiblePages + 1);
+            }
+            
+            if (startPage > 1) {
+                const firstPageButton = document.createElement('button');
+                firstPageButton.className = 'px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlDarker transition';
+                firstPageButton.textContent = '1';
+                firstPageButton.addEventListener('click', () => {
+                    currentState.currentPage = 1;
+                    renderItems();
+                });
+                paginationContainer.appendChild(firstPageButton);
+                
+                if (startPage > 2) {
+                    const ellipsis = document.createElement('span');
+                    ellipsis.className = 'px-3 py-1 text-sm';
+                    ellipsis.textContent = '...';
+                    paginationContainer.appendChild(ellipsis);
+                }
+            }
+            
+            for (let i = startPage; i <= endPage; i++) {
+                const pageButton = document.createElement('button');
+                pageButton.className = `px-3 py-1 rounded-md text-sm ${i === currentPage ? 'bg-wlBlue text-white' : 'bg-wlDark border border-wlLight border-opacity-20 hover:bg-wlDarker'}`;
+                pageButton.textContent = i;
+                pageButton.addEventListener('click', () => {
+                    currentState.currentPage = i;
+                    renderItems();
+                });
+                paginationContainer.appendChild(pageButton);
+            }
+            
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    const ellipsis = document.createElement('span');
+                    ellipsis.className = 'px-3 py-1 text-sm';
+                    ellipsis.textContent = '...';
+                    paginationContainer.appendChild(ellipsis);
+                }
+                
+                const lastPageButton = document.createElement('button');
+                lastPageButton.className = 'px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlDarker transition';
+                lastPageButton.textContent = totalPages;
+                lastPageButton.addEventListener('click', () => {
+                    currentState.currentPage = totalPages;
+                    renderItems();
+                });
+                paginationContainer.appendChild(lastPageButton);
+            }
+            
+            // Next button
+            const nextButton = document.createElement('button');
+            nextButton.className = `px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlDarker transition ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`;
+            nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
+            nextButton.disabled = currentPage === totalPages;
+            nextButton.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentState.currentPage = currentPage + 1;
+                    renderItems();
+                }
+            });
+            paginationContainer.appendChild(nextButton);
+        }
+
+        // Render items to the table and grid views using lazy loading
+        async function renderItems() {
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const quickStats = document.getElementById('quickStats');
+            const itemsTableBody = document.getElementById('itemsTableBody');
+            const itemsGrid = document.getElementById('itemsGrid');
+            const showingCount = document.getElementById('showingCount');
+            
+            // Scroll to top of the page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Show loading indicator
+            loadingIndicator.classList.remove('hidden');
+            tableView.classList.add('hidden');
+            gridView.classList.add('hidden');
+            quickStats.classList.add('hidden');
+            
+            try {
+                // Sort items using local sort function
+                const sortedItems = sortItems(currentState.items, currentState.sortColumn, currentState.sortDirection);
+                // Filter items using itemLoader (async to support description search)
+                currentState.filteredItems = await applyFilters(sortedItems);
+                
+                // Get paginated items with full details loaded
+                const result = await itemLoader.getPaginatedItems(
+                    currentState.filteredItems,
+                    currentState.currentPage,
+                    currentState.itemsPerPage
+                );
+                
+                const paginatedItems = result.items;
+                const pagination = result.pagination;
+                
+                // Update counts
+                showingCount.textContent = `${pagination.startIndex}-${pagination.endIndex} of ${pagination.totalItems}`;
+                
+                // Clear existing items
+                itemsTableBody.innerHTML = '';
+                itemsGrid.innerHTML = '';
+                
+                // Render table view
+                paginatedItems.forEach(item => {
+                    // Format stats/attributes for display
+                    const statsDisplay = item.attributes ? Object.entries(item.attributes)
+                        .map(([key, val]) => `${key}: ${val}`)
+                        .join(', ') : 'N/A';
+                    
+                    // Calculate rank: use rank from JSON if available, otherwise level/2
+                    const rankValue = item.rank !== undefined ? item.rank : Math.floor(item.level / 2);
+                    
+                    const row = document.createElement('tr');
+                    row.className = 'hover:bg-wlDark hover:bg-opacity-50 transition';
+                    row.innerHTML = `
+                        <td>
+                            <div class="tooltip">
+                                <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-md object-contain bg-wlDarker bg-opacity-50">
+                                <div class="tooltip-text">${item.name}</div>
+                            </div>
+                        </td>
+                        <td class="item-name-cell" data-item-id="${item.id}">
+                            <div class="font-medium">${item.name}</div>
+                            <div class="text-xs text-wlLight text-opacity-70">${item.type || 'N/A'}</div>
+                        </td>
+                        <td>
+                            <div class="flex items-center">
+                                <span class="item-type-icon ${item.category}">
+                                    <i class="fas ${getTypeIcon(item.category)} text-xs"></i>
+                                </span>
+                                <span>${capitalizeFirstLetter(item.category)}</span>
+                            </div>
+                        </td>
+                        <td><span class="font-medium">${rankValue}</span></td>
+                        <td>${item.level}</td>
+                        <td>${item.base || 'N/A'}</td>
+                        <td class="text-xs">${statsDisplay}</td>
+                        <td class="text-xs max-w-[200px] truncate" title="${item.description || ''}">${item.description || 'N/A'}</td>
+                        <td class="text-right">
+                            <button onclick="openItemModal(${item.id})" class="px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlBlue hover:border-wlBlue transition">
+                                Details
+                            </button>
+                        </td>
+                    `;
+                    itemsTableBody.appendChild(row);
+                });
+                
+                // Render grid view
+                paginatedItems.forEach(item => {
+                    // Calculate rank: use rank from JSON if available, otherwise level/2
+                    const rankValue = item.rank !== undefined ? item.rank : Math.floor(item.level / 2);
+                    
+                    const card = document.createElement('div');
+                    card.className = 'bg-wlDark bg-opacity-70 rounded-xl p-4 border border-wlLight border-opacity-20 item-card';
+                    card.innerHTML = `
+                        <div class="flex items-start mb-4">
+                            <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-md object-contain bg-wlDarker bg-opacity-50 mr-4">
+                            <div>
+                                <h4 class="font-medium">${item.name}</h4>
+                                <div class="text-xs text-wlLight text-opacity-70 mb-1">${item.type || 'N/A'}</div>
+                                <div class="flex items-center text-xs">
+                                    <span class="item-type-icon ${item.category} mr-1">
+                                        <i class="fas ${getTypeIcon(item.category)} text-xs"></i>
+                                    </span>
+                                    <span class="mr-2">${capitalizeFirstLetter(item.category)}</span>
+                                    <span class="font-medium">Rank ${rankValue}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+                            <div>
+                                <div class="text-wlLight text-opacity-70">Level</div>
+                                <div>${item.level}</div>
+                            </div>
+                            <div>
+                                <div class="text-wlLight text-opacity-70">Stats</div>
+                                <div class="truncate">${item.attributes ? Object.entries(item.attributes).map(([k,v]) => `${k}:${v}`).join(', ') : 'N/A'}</div>
+                            </div>
+                            <div class="col-span-2">
+                                <div class="text-wlLight text-opacity-70">Base</div>
+                                <div class="truncate">${item.base || 'N/A'}</div>
+                            </div>
+                        </div>
+                        <button onclick="openItemModal(${item.id})" class="w-full py-2 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlBlue hover:border-wlBlue transition">
+                            View Details
+                        </button>
+                    `;
+                    itemsGrid.appendChild(card);
+                });
+                
+                // Generate pagination
+                generatePagination(currentState.filteredItems.length, currentState.itemsPerPage, currentState.currentPage, 'pagination');
+                generatePagination(currentState.filteredItems.length, currentState.itemsPerPage, currentState.currentPage, 'paginationGrid');
+                
+                // Update quick stats
+                updateQuickStats();
+                
+                // Hide loading indicator and show content
+                loadingIndicator.classList.add('hidden');
+                if (tableViewBtn.classList.contains('bg-wlBlue')) {
+                    tableView.classList.remove('hidden');
+                } else {
+                    gridView.classList.remove('hidden');
+                }
+                quickStats.classList.remove('hidden');
+                
+                // Set up item preview hover events
+                setupItemPreviews();
+                
+                // Preload next page for smooth pagination
+                itemLoader.preloadNextPage(currentState.filteredItems, currentState.currentPage, currentState.itemsPerPage);
+            } catch (error) {
+                console.error('Error rendering items:', error);
+                loadingIndicator.innerHTML = `
+                    <div class="text-center text-red-500">
+                        <i class="fas fa-exclamation-triangle text-4xl mb-4"></i>
+                        <p>Failed to load items. Please try again.</p>
+                        <p class="text-sm mt-2">Error: ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Update quick stats
+        function updateQuickStats() {
+            const totalItems = document.getElementById('totalItems');
+            const totalWeapons = document.getElementById('totalWeapons');
+            const totalArmor = document.getElementById('totalArmor');
+            const totalConsumables = document.getElementById('totalConsumables');
+            
+            // Use itemLoader to get stats from index
+            const indexItems = itemLoader.getIndexItems();
+            totalItems.textContent = indexItems.length;
+            totalWeapons.textContent = indexItems.filter(item => item.category === 'weapon').length;
+            totalArmor.textContent = indexItems.filter(item => item.category === 'armor').length;
+            totalConsumables.textContent = indexItems.filter(item => item.category === 'consumable').length;
+        }
+
+        // Set up item preview on hover
+        function setupItemPreviews() {
+            const itemPreview = document.getElementById('itemPreview');
+            const previewImage = document.getElementById('previewImage');
+            const previewName = document.getElementById('previewName');
+            const previewRarity = document.getElementById('previewRarity');
+            const previewBase = document.getElementById('previewBase');
+            
+            // Get all elements that should trigger the preview
+            const itemNameCells = document.querySelectorAll('.item-name-cell');
+            
+            itemNameCells.forEach(cell => {
+                const itemId = parseInt(cell.getAttribute('data-item-id'));
+                const item = currentState.items.find(i => i.id === itemId);
+                
+                if (!item) return;
+                
+                cell.addEventListener('mouseenter', (e) => {
+                    // Position the preview near the cursor
+                    const rect = e.target.getBoundingClientRect();
+                    itemPreview.style.left = `${rect.left + rect.width + 10}px`;
+                    itemPreview.style.top = `${rect.top}px`;
+                    
+                    // Set preview content
+                    previewImage.src = item.image;
+                    previewImage.alt = item.name;
+                    previewName.textContent = item.name;
+                    previewRarity.textContent = capitalizeFirstLetter(item.rarity);
+                    previewRarity.className = `rarity rarity-${item.rarity}`;
+                    previewBase.textContent = item.base || 'Base: N/A';
+                    
+                    // Show preview
+                    itemPreview.classList.add('visible');
+                });
+                
+                cell.addEventListener('mouseleave', () => {
+                    itemPreview.classList.remove('visible');
+                });
+            });
+        }
+
+        // Recipe state for modal pagination
+        let currentRecipePage = 1;
+        let currentRecipeItem = null;
+        let currentAlchemyBookFilter = null;
+        let currentGapFilter = null; // New: specific gap filter
+        let recipeGen = null;
+
+        // Initialize recipe generator after item loader is ready
+        function initRecipeGeneratorIfReady() {
+            if (itemLoader && itemLoader.index) {
+                recipeGen = initRecipeGenerator(itemLoader);
+                return true;
+            }
+            return false;
+        }
+
+        // Generate recipe table HTML with pagination
+        function generateRecipeTable(item, page = 1, alchemyBookFilter = null, gapFilter = null) {
+            if (!item.base || item.base === 'N/A') {
+                return `
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold mb-2">Recipes</h4>
+                        <p class="text-wlLight text-opacity-70">This item cannot be crafted (no base materials).</p>
+                    </div>
+                `;
+            }
+
+            // Initialize recipe generator if needed
+            if (!recipeGen) {
+                initRecipeGeneratorIfReady();
+            }
+
+            if (!recipeGen) {
+                return `
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold mb-2">Recipes</h4>
+                        <p class="text-wlLight text-opacity-70">Loading recipe data...</p>
+                    </div>
+                `;
+            }
+
+            try {
+                const result = recipeGen.getPaginatedRecipes(item, page, alchemyBookFilter, gapFilter);
+                const recipes = result.recipes;
+                const pagination = result.pagination;
+
+                if (recipes.length === 0) {
+                    const targetBases = recipeGen.parseBases(item.base);
+                    const canUseAlchemyBook = targetBases.length < 5;
+                    const fiveBaseWarning = !canUseAlchemyBook ? 
+                        `<div class="text-xs text-wlYellow mb-2"><i class="fas fa-info-circle"></i> Items with 5 base materials cannot use Alchemy Books</div>` : '';
+                    
+                    return `
+                        <div class="mt-6">
+                            <h4 class="text-lg font-semibold mb-2">Recipes</h4>
+                            <p class="text-wlLight text-opacity-70">No recipes found for this item. Try selecting a different gap filter.</p>
+                            <div class="mt-3">
+                                ${fiveBaseWarning}
+                                <div class="flex flex-wrap items-center gap-2 mt-2">
+                                    <div>
+                                        <label class="text-sm text-wlLight text-opacity-70 mr-2">Alchemy Book:</label>
+                                        <select id="alchemyBookFilter" onchange="filterByAlchemyBook(${item.id}, this.value)" class="px-3 py-1 bg-wlDarker border border-wlLight border-opacity-20 rounded-md text-sm">
+                                            <option value="">All Recipes</option>
+                                            <option value="0" ${alchemyBookFilter === '0' || alchemyBookFilter === 0 ? 'selected' : ''}>No Book (Gap 1-4)</option>
+                                            ${canUseAlchemyBook ? `
+                                                <option value="1" ${alchemyBookFilter === '1' || alchemyBookFilter === 1 ? 'selected' : ''}>Book 1 (Gap 3-5)</option>
+                                                <option value="2" ${alchemyBookFilter === '2' || alchemyBookFilter === 2 ? 'selected' : ''}>Book 2 (Gap 4-6)</option>
+                                                <option value="3" ${alchemyBookFilter === '3' || alchemyBookFilter === 3 ? 'selected' : ''}>Book 3 (Gap 5-7)</option>
+                                                <option value="4" ${alchemyBookFilter === '4' || alchemyBookFilter === 4 ? 'selected' : ''}>Book 4 (Gap 6-8)</option>
+                                            ` : ''}
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="text-sm text-wlLight text-opacity-70 mr-2">Specific Gap:</label>
+                                        <select id="gapFilter" onchange="filterByGap(${item.id}, this.value)" class="px-3 py-1 bg-wlDarker border border-wlLight border-opacity-20 rounded-md text-sm">
+                                            <option value="">All Gaps</option>
+                                            <option value="1" ${currentGapFilter === 1 ? 'selected' : ''}>Gap 1</option>
+                                            <option value="2" ${currentGapFilter === 2 ? 'selected' : ''}>Gap 2</option>
+                                            <option value="3" ${currentGapFilter === 3 ? 'selected' : ''}>Gap 3</option>
+                                            <option value="4" ${currentGapFilter === 4 ? 'selected' : ''}>Gap 4</option>
+                                            <option value="5" ${currentGapFilter === 5 ? 'selected' : ''}>Gap 5</option>
+                                            <option value="6" ${currentGapFilter === 6 ? 'selected' : ''}>Gap 6</option>
+                                            <option value="7" ${currentGapFilter === 7 ? 'selected' : ''}>Gap 7</option>
+                                            <option value="8" ${currentGapFilter === 8 ? 'selected' : ''}>Gap 8</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                let recipesHtml = recipes.map((recipe, index) => {
+                    const formatted = recipeGen.formatRecipeForDisplay(recipe);
+                    const alchemyBookText = recipe.alchemyBook > 0 ? 
+                        `<span class="text-wlYellow text-xs ml-2"><i class="fas fa-book"></i> Alchemy Book ${recipe.alchemyBook}</span>` : '';
+                    
+                    return `
+                        <div class="bg-wlDark rounded-lg p-4 mb-3 border border-wlLight border-opacity-10">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-medium">Recipe ${pagination.startIndex + index}</span>
+                                <div class="flex items-center">
+                                    <span class="text-xs text-wlLight text-opacity-70">Gap: ${recipe.gapUsed} ranks</span>
+                                    ${alchemyBookText}
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <!-- Primary Item (First) -->
+                                <div class="flex flex-col items-center">
+                                    <div class="relative">
+                                        <img src="${formatted.primary.image}" alt="${formatted.primary.name}" 
+                                             class="w-12 h-12 rounded object-contain bg-wlDarker cursor-pointer hover:ring-2 hover:ring-wlBlue"
+                                             onclick="openItemModal(${formatted.primary.id})"
+                                             title="${formatted.primary.name}">
+                                        <span class="absolute -top-1 -right-1 bg-wlBlue text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">1</span>
+                                    </div>
+                                    <span class="text-xs mt-1 text-center max-w-[80px] truncate">${formatted.primary.name}</span>
+                                    <span class="text-xs text-wlLight text-opacity-70">Rank ${formatted.primary.rank}</span>
+                                </div>
+                                ${formatted.subItems.map((subItem, subIndex) => `
+                                    <div class="flex items-center">
+                                        <span class="text-wlLight text-opacity-50 mx-1">+</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="relative">
+                                            <img src="${subItem.image}" alt="${subItem.name}" 
+                                                 class="w-12 h-12 rounded object-contain bg-wlDarker cursor-pointer hover:ring-2 hover:ring-wlBlue"
+                                                 onclick="openItemModal(${subItem.id})"
+                                                 title="${subItem.name}">
+                                            <span class="absolute -top-1 -right-1 bg-wlPurple text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">${subIndex + 2}</span>
+                                        </div>
+                                        <span class="text-xs mt-1 text-center max-w-[80px] truncate">${subItem.name}</span>
+                                        <span class="text-xs text-wlLight text-opacity-70">Rank ${subItem.rank}</span>
+                                    </div>
+                                `).join('')}
+                                <div class="flex items-center">
+                                    <span class="text-wlLight text-opacity-50 mx-1">=</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="relative">
+                                        <img src="${item.image}" alt="${item.name}" 
+                                             class="w-12 h-12 rounded object-contain bg-wlDarker ring-2 ring-wlGreen">
+                                    </div>
+                                    <span class="text-xs mt-1 text-center max-w-[80px] truncate text-wlGreen">${item.name}</span>
+                                    <span class="text-xs text-wlGreen">Rank ${item.rank || 0}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+                // Pagination controls
+                let paginationHtml = '';
+                if (pagination.totalPages > 1) {
+                    paginationHtml = `
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="text-sm text-wlLight text-opacity-70">
+                                Showing ${pagination.startIndex}-${pagination.endIndex} of ${pagination.totalRecipes} recipes
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button onclick="changeRecipePage(${item.id}, ${pagination.currentPage - 1}, ${alchemyBookFilter || 'null'})" 
+                                        class="px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlDarker transition ${pagination.currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}"
+                                        ${pagination.currentPage === 1 ? 'disabled' : ''}>
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <span class="text-sm">Page ${pagination.currentPage} of ${pagination.totalPages}</span>
+                                <button onclick="changeRecipePage(${item.id}, ${pagination.currentPage + 1}, ${alchemyBookFilter || 'null'})" 
+                                        class="px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlDarker transition ${pagination.currentPage === pagination.totalPages ? 'opacity-50 cursor-not-allowed' : ''}"
+                                        ${pagination.currentPage === pagination.totalPages ? 'disabled' : ''}>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // Alchemy book filter
+                const targetBases = recipeGen.parseBases(item.base);
+                const canUseAlchemyBook = targetBases.length < 5;
+                const fiveBaseWarning = !canUseAlchemyBook ? 
+                    `<div class="text-xs text-wlYellow mb-2"><i class="fas fa-info-circle"></i> Items with 5 base materials cannot use Alchemy Books</div>` : '';
+                
+                const alchemyFilterHtml = `
+                    <div class="mt-3 mb-4">
+                        ${fiveBaseWarning}
+                        <div class="flex flex-wrap items-center gap-2">
+                            <div>
+                                <label class="text-sm text-wlLight text-opacity-70 mr-2">Alchemy Book:</label>
+                                <select id="alchemyBookFilter" onchange="filterByAlchemyBook(${item.id}, this.value)" class="px-3 py-1 bg-wlDarker border border-wlLight border-opacity-20 rounded-md text-sm">
+                                    <option value="">All Recipes</option>
+                                    <option value="0" ${alchemyBookFilter === '0' || alchemyBookFilter === 0 ? 'selected' : ''}>No Book (Gap 1-4)</option>
+                                    ${canUseAlchemyBook ? `
+                                        <option value="1" ${alchemyBookFilter === '1' || alchemyBookFilter === 1 ? 'selected' : ''}>Book 1 (Gap 3-5)</option>
+                                        <option value="2" ${alchemyBookFilter === '2' || alchemyBookFilter === 2 ? 'selected' : ''}>Book 2 (Gap 4-6)</option>
+                                        <option value="3" ${alchemyBookFilter === '3' || alchemyBookFilter === 3 ? 'selected' : ''}>Book 3 (Gap 5-7)</option>
+                                        <option value="4" ${alchemyBookFilter === '4' || alchemyBookFilter === 4 ? 'selected' : ''}>Book 4 (Gap 6-8)</option>
+                                    ` : ''}
+                                </select>
+                            </div>
+                            <div>
+                                <label class="text-sm text-wlLight text-opacity-70 mr-2">Specific Gap:</label>
+                                <select id="gapFilter" onchange="filterByGap(${item.id}, this.value)" class="px-3 py-1 bg-wlDarker border border-wlLight border-opacity-20 rounded-md text-sm">
+                                    <option value="">All Gaps</option>
+                                    <option value="1" ${currentGapFilter === 1 ? 'selected' : ''}>Gap 1</option>
+                                    <option value="2" ${currentGapFilter === 2 ? 'selected' : ''}>Gap 2</option>
+                                    <option value="3" ${currentGapFilter === 3 ? 'selected' : ''}>Gap 3</option>
+                                    <option value="4" ${currentGapFilter === 4 ? 'selected' : ''}>Gap 4</option>
+                                    <option value="5" ${currentGapFilter === 5 ? 'selected' : ''}>Gap 5</option>
+                                    <option value="6" ${currentGapFilter === 6 ? 'selected' : ''}>Gap 6</option>
+                                    <option value="7" ${currentGapFilter === 7 ? 'selected' : ''}>Gap 7</option>
+                                    <option value="8" ${currentGapFilter === 8 ? 'selected' : ''}>Gap 8</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                return `
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold mb-2">Recipes</h4>
+                        <p class="text-sm text-wlLight text-opacity-70 mb-3">
+                            Base: ${item.base} | Target Rank: ${item.rank || 0}
+                        </p>
+                        
+                        <!-- Recipe Mode Tabs -->
+                        <div class="flex border-b border-wlLight border-opacity-20 mb-4">
+                            <button id="tabAutoRecipes" onclick="switchRecipeTab('auto', ${item.id})" class="px-4 py-2 text-sm font-medium border-b-2 border-wlBlue text-wlBlue">
+                                <i class="fas fa-magic mr-1"></i> Auto Generate
+                            </button>
+                            <button id="tabCustomBuilder" onclick="switchRecipeTab('custom', ${item.id})" class="px-4 py-2 text-sm font-medium border-b-2 border-transparent text-wlLight text-opacity-70 hover:text-opacity-100">
+                                <i class="fas fa-tools mr-1"></i> Custom Builder
+                            </button>
+                        </div>
+                        
+                        <!-- Auto Recipes Content -->
+                        <div id="autoRecipesContent">
+                            ${alchemyFilterHtml}
+                            ${recipesHtml}
+                            ${paginationHtml}
+                        </div>
+                        
+                        <!-- Custom Builder Content -->
+                        <div id="customBuilderContent" class="hidden">
+                            ${generateCustomBuilderUI(item)}
+                        </div>
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Error generating recipes:', error);
+                return `
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold mb-2">Recipes</h4>
+                        <p class="text-wlLight text-opacity-70">Error loading recipes: ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Change recipe page
+        function changeRecipePage(itemId, newPage, alchemyFilter) {
+            if (newPage < 1) return;
+            currentRecipePage = newPage;
+            currentAlchemyBookFilter = alchemyFilter;
+            refreshRecipeDisplay(itemId);
+        }
+
+        // Filter by alchemy book
+        function filterByAlchemyBook(itemId, bookLevel) {
+            currentRecipePage = 1;
+            currentAlchemyBookFilter = bookLevel !== '' ? parseInt(bookLevel) : null;
+            // Reset gap filter when changing alchemy book
+            currentGapFilter = null;
+            refreshRecipeDisplay(itemId);
+        }
+
+        // Filter by specific gap
+        function filterByGap(itemId, gapValue) {
+            currentRecipePage = 1;
+            currentGapFilter = gapValue !== '' ? parseInt(gapValue) : null;
+            refreshRecipeDisplay(itemId);
+        }
+
+        // Refresh recipe display in modal
+        async function refreshRecipeDisplay(itemId) {
+            const item = await itemLoader.getItem(itemId);
+            if (!item) return;
+            
+            const recipeBlock = document.getElementById('modalRecipeBlock');
+            if (recipeBlock) {
+                recipeBlock.innerHTML = generateRecipeTable(item, currentRecipePage, currentAlchemyBookFilter, currentGapFilter);
+            }
+        }
+
+        // Custom Recipe Builder State
+        let customBuilderState = {
+            selectedItems: {},      // Main recipe selections { slotIndex: item }
+            subSelections: {},      // Sub-recipe selections { 'itemId_slotIndex': item }
+            expandedItems: {},      // Which items have their sub-recipes expanded { itemId: true }
+            subExpandedItems: {},   // Nested sub-recipe expansions { 'parentItemId_childItemId': true }
+            subSubSelections: {},   // Nested sub-sub-recipe selections { 'parentItemId_childItemId_slotIndex': item }
+            alchemyBook: 0,
+            subItemAlchemyBooks: {} // Alchemy book per sub-item level { 'itemId': bookLevel }
+        };
+
+        // Generate Custom Builder UI
+        function generateCustomBuilderUI(item) {
+            if (!recipeGen) return '<p class="text-wlLight text-opacity-70">Loading...</p>';
+            
+            const targetBases = recipeGen.parseBases(item.base);
+            const canUseAlchemyBook = targetBases.length < 5;
+            
+            // Alchemy book selector
+            const alchemySelector = `
+                <div class="mb-4">
+                    <label class="text-sm text-wlLight text-opacity-70 mr-2">Alchemy Book:</label>
+                    <select id="customAlchemyBook" onchange="updateCustomAlchemyBook(${item.id}, this.value)" 
+                            class="px-3 py-1 bg-wlDarker border border-wlLight border-opacity-20 rounded-md text-sm">
+                        <option value="0" ${customBuilderState.alchemyBook === 0 ? 'selected' : ''}>No Book (Gap 1-4)</option>
+                        ${canUseAlchemyBook ? `
+                            <option value="1" ${customBuilderState.alchemyBook === 1 ? 'selected' : ''}>Book 1 (Gap 3-5)</option>
+                            <option value="2" ${customBuilderState.alchemyBook === 2 ? 'selected' : ''}>Book 2 (Gap 4-6)</option>
+                            <option value="3" ${customBuilderState.alchemyBook === 3 ? 'selected' : ''}>Book 3 (Gap 5-7)</option>
+                            <option value="4" ${customBuilderState.alchemyBook === 4 ? 'selected' : ''}>Book 4 (Gap 6-8)</option>
+                        ` : ''}
+                    </select>
+                </div>
+            `;
+
+            // Main recipe preview
+            const selectedArray = targetBases.map((_, i) => customBuilderState.selectedItems[i]).filter(Boolean);
+            const validation = selectedArray.length === targetBases.length
+                ? recipeGen.validateCustomRecipe(item, selectedArray, customBuilderState.alchemyBook)
+                : { valid: false, message: 'Select items for all slots', gapUsed: 0 };
+
+            // Main recipe display (like the auto-generated recipes)
+            const mainRecipePreview = `
+                <div class="bg-wlDark rounded-lg p-4 mb-4 border border-wlLight border-opacity-10">
+                    <div class="text-sm font-medium mb-3 text-wlGreen">
+                        <i class="fas fa-bullseye mr-1"></i> Target: ${item.name} (Rank ${item.rank || 0})
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        ${targetBases.map((base, index) => {
+                            const selectedItem = customBuilderState.selectedItems[index];
+                            return `
+                                <div class="flex flex-col items-center">
+                                    ${selectedItem ? `
+                                        <div class="relative">
+                                            <img src="${recipeGen.getItemImage(selectedItem)}" alt="${selectedItem.name}" 
+                                                 class="w-12 h-12 rounded object-contain bg-wlDarker cursor-pointer hover:ring-2 hover:ring-wlBlue"
+                                                 onclick="toggleItemExpansion(${item.id}, '${selectedItem.id}', ${index})"
+                                                 title="${selectedItem.name}">
+                                            <span class="absolute -top-1 -right-1 ${index === 0 ? 'bg-wlBlue' : 'bg-wlPurple'} text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">${index + 1}</span>
+                                            ${customBuilderState.expandedItems[selectedItem.id] ? '<span class="absolute -bottom-1 -right-1 bg-wlGreen text-white text-xs rounded-full w-4 h-4 flex items-center justify-center"><i class="fas fa-chevron-down text-[8px]"></i></span>' : ''}
+                                        </div>
+                                        <span class="text-xs mt-1 text-center max-w-[80px] truncate">${selectedItem.name}</span>
+                                        <span class="text-xs text-wlLight text-opacity-70">Rank ${selectedItem.rank || 0}</span>
+                                    ` : `
+                                        <div class="w-12 h-12 rounded bg-wlDarker border-2 border-dashed border-wlLight border-opacity-30 flex items-center justify-center cursor-pointer"
+                                             onclick="document.getElementById('slotDropdown${index}').click()">
+                                            <span class="text-xs text-wlLight text-opacity-50">${base}</span>
+                                        </div>
+                                        <span class="text-xs mt-1 text-wlLight text-opacity-50">Select ${base}</span>
+                                    `}
+                                </div>
+                                ${index < targetBases.length - 1 ? '<span class="text-wlLight text-opacity-50">+</span>' : ''}
+                            `;
+                        }).join('')}
+                        <span class="text-wlLight text-opacity-50">=</span>
+                        <div class="flex flex-col items-center">
+                            <div class="relative">
+                                <img src="${item.image}" alt="${item.name}" class="w-12 h-12 rounded object-contain bg-wlDarker ring-2 ring-wlGreen">
+                            </div>
+                            <span class="text-xs mt-1 text-center max-w-[80px] truncate text-wlGreen">${item.name}</span>
+                            <span class="text-xs text-wlGreen">Rank ${item.rank || 0}</span>
+                        </div>
+                    </div>
+                    ${validation.valid ? `
+                        <div class="mt-3 text-xs text-wlGreen">
+                            <i class="fas fa-check-circle mr-1"></i> ${validation.message}
+                        </div>
+                    ` : `
+                        <div class="mt-3 text-xs text-wlRed">
+                            <i class="fas fa-exclamation-circle mr-1"></i> ${validation.message}
+                        </div>
+                    `}
+                </div>
+            `;
+
+            // Slot selectors with rank constraints display
+            const slotSelectors = targetBases.map((base, index) => {
+                const candidates = recipeGen.getCandidatesForSlot(item, index, customBuilderState.alchemyBook, customBuilderState.selectedItems);
+                const selectedItem = customBuilderState.selectedItems[index];
+                const constraints = recipeGen.getSlotRankConstraints(item, index, customBuilderState.alchemyBook, customBuilderState.selectedItems);
+                
+                return `
+                    <div class="bg-wlDarker rounded-lg p-3 mb-2">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm font-medium ${index === 0 ? 'text-wlBlue' : 'text-wlPurple'}">
+                                <span class="inline-block w-5 h-5 rounded-full ${index === 0 ? 'bg-wlBlue' : 'bg-wlPurple'} text-white text-xs text-center leading-5 mr-1">${index + 1}</span>
+                                ${base}
+                            </span>
+                            <span class="text-xs text-wlYellow">R${constraints.minRank}-${constraints.maxRank}</span>
+                        </div>
+                        <select id="slotDropdown${index}" onchange="updateCustomSlot(${item.id}, ${index}, this.value)" 
+                                class="w-full px-3 py-2 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm">
+                            <option value="">-- Select ${base} item --</option>
+                            ${candidates.map(c => `
+                                <option value="${c.id}" ${selectedItem && selectedItem.id === c.id ? 'selected' : ''}>
+                                    ${c.name} (Rank ${c.rank || 0})
+                                </option>
+                            `).join('')}
+                        </select>
+                        ${candidates.length === 0 ? `
+                            <div class="text-xs text-wlRed mt-1">
+                                <i class="fas fa-exclamation-triangle mr-1"></i> No items available in rank range
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+
+            // Expanded item sub-recipes
+            let expandedSections = '';
+            for (const [itemId, expanded] of Object.entries(customBuilderState.expandedItems)) {
+                if (expanded && customBuilderState.selectedItems) {
+                    const parentSlot = Object.entries(customBuilderState.selectedItems).find(([_, item]) => item && item.id.toString() === itemId);
+                    if (parentSlot) {
+                        const parentItem = parentSlot[1];
+                        expandedSections += generateSubRecipeSection(item.id, parentItem, itemId);
+                    }
+                }
+            }
+
+            // Build tree button
+            const treeButton = validation.valid ? `
+                <button onclick="buildRecipeTreeUI(${item.id})" class="w-full px-4 py-2 bg-wlBlue text-white rounded-md text-sm hover:bg-blue-600 transition mt-4">
+                    <i class="fas fa-sitemap mr-2"></i> Build Full Recipe Tree
+                </button>
+            ` : '';
+
+            return `
+                ${alchemySelector}
+                ${mainRecipePreview}
+                <div class="text-sm font-medium mb-2 text-wlLight text-opacity-70">Select Ingredients:</div>
+                <div class="grid gap-2">
+                    ${slotSelectors}
+                </div>
+                ${expandedSections}
+                ${treeButton}
+            `;
+        }
+
+        // Generate sub-recipe section for an expanded item (supports continuous drill-down)
+        function generateSubRecipeSection(targetItemId, parentItem, parentItemId, depth = 0) {
+            if (!recipeGen) return '';
+            
+            const parentBases = recipeGen.parseBases(parentItem.base);
+            if (parentBases.length === 0) {
+                return `
+                    <div class="bg-wlDark rounded-lg p-3 mt-3 ml-4 border-l-2 border-wlBlue" style="margin-left: ${depth * 20 + 16}px;">
+                        <div class="text-sm text-wlLight text-opacity-70">
+                            <i class="fas fa-info-circle mr-1"></i> ${parentItem.name} cannot be crafted (no base materials)
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Get the alchemy book for this sub-item level (defaults to 0 if not set)
+            const subItemAlchemyBook = customBuilderState.subItemAlchemyBooks[parentItemId] || 0;
+            const canUseAlchemyBook = parentBases.length < 5;
+
+            const parentRank = parentItem.rank || 0;
+            const effectiveMaxGap = recipeGen.maxGap + subItemAlchemyBook;
+            const minRank = Math.max(1, parentRank - effectiveMaxGap);
+            const maxRank = parentRank - 1;
+
+            // Calculate rank constraints based on sibling selections
+            const getSubSlotConstraints = (slotIndex) => {
+                let minAllowed = minRank;
+                let maxAllowed = maxRank;
+                
+                // Check if primary (slot 0) is selected - sub-items must be <= primary
+                const primaryKey = `${parentItemId}_0`;
+                const primarySelected = customBuilderState.subSelections[primaryKey];
+                if (slotIndex > 0 && primarySelected) {
+                    maxAllowed = Math.min(maxAllowed, primarySelected.rank || 0);
+                }
+                
+                // Only the primary (slot 0) needs to be >= all siblings
+                // Sub-items (slots 1+) only need to be <= primary rank
+                // They can have any rank relative to each other
+                if (slotIndex === 0) {
+                    // Primary must be >= all siblings
+                    for (const [key, item] of Object.entries(customBuilderState.subSelections)) {
+                        if (!item) continue;
+                        const keyParts = key.split('_');
+                        if (keyParts[0] !== parentItemId.toString()) continue;
+                        const siblingSlot = parseInt(keyParts[1]);
+                        if (siblingSlot === slotIndex) continue;
+                        
+                        const siblingRank = item.rank || 0;
+                        minAllowed = Math.max(minAllowed, siblingRank);
+                    }
+                }
+                // For sub-items (slotIndex > 0), no sibling constraints needed
+                // They just need to be <= primary rank, which is handled above
+                
+                return { minAllowed, maxAllowed };
+            };
+
+            const subSlots = parentBases.map((base, index) => {
+                const subKey = `${parentItemId}_${index}`;
+                const selectedSub = customBuilderState.subSelections[subKey];
+                const constraints = getSubSlotConstraints(index);
+                
+                // Get candidates with proper rank filtering
+                const candidates = recipeGen.getSubItemsWithBase(
+                    base, 
+                    constraints.minAllowed, 
+                    constraints.maxAllowed, 
+                    parentItem.id, 
+                    subItemAlchemyBook
+                );
+                
+                // Check if this sub-item is expanded for further drill-down
+                const subExpandKey = `${parentItemId}_${selectedSub?.id}`;
+                const isSubExpanded = selectedSub && customBuilderState.subExpandedItems[subExpandKey];
+                
+                return `
+                    <div class="bg-wlDarker rounded p-2 mb-2">
+                        ${index === 0 ? `
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs text-wlBlue font-medium">Alchemy Book:</span>
+                                <select onchange="updateSubItemAlchemyBook(${targetItemId}, '${parentItemId}', this.value)" 
+                                        class="px-2 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded text-xs">
+                                    <option value="0" ${subItemAlchemyBook === 0 ? 'selected' : ''}>No Book (Gap 1-4)</option>
+                                    ${canUseAlchemyBook ? `
+                                        <option value="1" ${subItemAlchemyBook === 1 ? 'selected' : ''}>Book 1 (Gap 3-5)</option>
+                                        <option value="2" ${subItemAlchemyBook === 2 ? 'selected' : ''}>Book 2 (Gap 4-6)</option>
+                                        <option value="3" ${subItemAlchemyBook === 3 ? 'selected' : ''}>Book 3 (Gap 5-7)</option>
+                                        <option value="4" ${subItemAlchemyBook === 4 ? 'selected' : ''}>Book 4 (Gap 6-8)</option>
+                                    ` : ''}
+                                </select>
+                            </div>
+                        ` : ''}
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-xs text-wlLight text-opacity-70">${base}</span>
+                            <span class="text-xs text-wlYellow">R${constraints.minAllowed}-${constraints.maxAllowed}</span>
+                        </div>
+                        <select onchange="updateSubSlot(${targetItemId}, '${subKey}', this.value)" 
+                                class="w-full px-2 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded text-xs">
+                            <option value="">-- Select --</option>
+                            ${candidates.slice(0, 30).map(c => `
+                                <option value="${c.id}" ${selectedSub && selectedSub.id === c.id ? 'selected' : ''}>
+                                    ${c.name} (R${c.rank || 0})
+                                </option>
+                            `).join('')}
+                        </select>
+                        ${selectedSub ? `
+                            <div class="mt-1 flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <img src="${recipeGen.getItemImage(selectedSub)}" class="w-6 h-6 rounded object-contain bg-wlDark">
+                                    <span class="ml-1 text-xs">${selectedSub.name}</span>
+                                </div>
+                                ${recipeGen.parseBases(selectedSub.base).length > 0 ? `
+                                    <button onclick="toggleSubExpansion(${targetItemId}, '${parentItemId}', '${selectedSub.id}')" 
+                                            class="text-xs text-wlBlue hover:underline ${isSubExpanded ? 'font-bold' : ''}">
+                                        <i class="fas fa-sitemap"></i> ${isSubExpanded ? 'Collapse' : 'Drill'}
+                                    </button>
+                                ` : ''}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+
+            // Generate nested sub-recipe sections for expanded items
+            let nestedSections = '';
+            for (const [expandKey, expanded] of Object.entries(customBuilderState.subExpandedItems)) {
+                if (!expanded) continue;
+                const keyParts = expandKey.split('_');
+                if (keyParts[0] !== parentItemId.toString()) continue;
+                
+                const childItemId = keyParts[1];
+                // Find the child item from subSelections
+                for (const [selKey, selItem] of Object.entries(customBuilderState.subSelections)) {
+                    if (selItem && selItem.id.toString() === childItemId && selKey.startsWith(parentItemId + '_')) {
+                        if (recipeGen.parseBases(selItem.base).length > 0) {
+                            nestedSections += generateSubRecipeSection(targetItemId, selItem, selItem.id, depth + 1);
+                        }
+                    }
+                }
+            }
+
+            const indent = depth * 20 + 16;
+            const borderColor = depth === 0 ? 'border-wlBlue' : depth === 1 ? 'border-wlPurple' : 'border-wlGreen';
+
+            // Validate sub-recipe
+            const selectedSubArray = parentBases.map((_, i) => customBuilderState.subSelections[`${parentItemId}_${i}`]).filter(Boolean);
+            const subValidation = selectedSubArray.length === parentBases.length
+                ? recipeGen.validateCustomRecipe(parentItem, selectedSubArray, subItemAlchemyBook)
+                : { valid: false, message: 'Select items for all slots', gapUsed: 0 };
+
+            return `
+                <div class="bg-wlDark rounded-lg p-3 mt-3 border-l-2 ${borderColor}" style="margin-left: ${indent}px;">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-medium text-wlBlue">
+                            <i class="fas fa-level-down-alt mr-1"></i> Recipe for ${parentItem.name} (Rank ${parentRank})
+                        </span>
+                        ${depth === 0 ? `
+                            <button onclick="collapseItem(${targetItemId}, '${parentItemId}')" class="text-xs text-wlLight text-opacity-70 hover:text-opacity-100">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        ` : ''}
+                    </div>
+                    <div class="text-xs text-wlLight text-opacity-50 mb-2">
+                        Valid rank range: ${minRank} - ${maxRank} (gap: ${effectiveMaxGap})
+                    </div>
+                    ${subValidation.valid ? `
+                        <div class="text-xs text-wlGreen mb-2">
+                            <i class="fas fa-check-circle mr-1"></i> ${subValidation.message}
+                        </div>
+                    ` : `
+                        <div class="text-xs text-wlRed mb-2">
+                            <i class="fas fa-exclamation-circle mr-1"></i> ${subValidation.message}
+                        </div>
+                    `}
+                    <div class="grid gap-1">
+                        ${subSlots}
+                    </div>
+                    ${nestedSections}
+                </div>
+            `;
+        }
+
+        // Toggle item expansion (show sub-recipe)
+        function toggleItemExpansion(targetItemId, itemId, slotKey) {
+            if (customBuilderState.expandedItems[itemId]) {
+                delete customBuilderState.expandedItems[itemId];
+                // Also clear any nested expansions for this item
+                for (const key of Object.keys(customBuilderState.subExpandedItems)) {
+                    if (key.startsWith(itemId + '_')) {
+                        delete customBuilderState.subExpandedItems[key];
+                    }
+                }
+            } else {
+                customBuilderState.expandedItems[itemId] = true;
+            }
+            refreshCustomBuilder(targetItemId);
+        }
+
+        // Toggle sub-item expansion (for continuous drill-down)
+        function toggleSubExpansion(targetItemId, parentItemId, childItemId) {
+            const expandKey = `${parentItemId}_${childItemId}`;
+            if (customBuilderState.subExpandedItems[expandKey]) {
+                delete customBuilderState.subExpandedItems[expandKey];
+                // Clear any nested sub-selections for this expansion
+                for (const key of Object.keys(customBuilderState.subSubSelections)) {
+                    if (key.startsWith(expandKey + '_')) {
+                        delete customBuilderState.subSubSelections[key];
+                    }
+                }
+            } else {
+                customBuilderState.subExpandedItems[expandKey] = true;
+            }
+            refreshCustomBuilder(targetItemId);
+        }
+
+        // Collapse item
+        function collapseItem(targetItemId, itemId) {
+            delete customBuilderState.expandedItems[itemId];
+            // Clear all sub-selections for this item
+            for (const key of Object.keys(customBuilderState.subSelections)) {
+                if (key.startsWith(itemId + '_')) {
+                    delete customBuilderState.subSelections[key];
+                }
+            }
+            // Clear nested expansions
+            for (const key of Object.keys(customBuilderState.subExpandedItems)) {
+                if (key.startsWith(itemId + '_')) {
+                    delete customBuilderState.subExpandedItems[key];
+                }
+            }
+            refreshCustomBuilder(targetItemId);
+        }
+
+        // Update sub-slot selection
+        async function updateSubSlot(targetItemId, subKey, selectedId) {
+            if (!selectedId) {
+                delete customBuilderState.subSelections[subKey];
+            } else {
+                const item = await itemLoader.getItem(parseInt(selectedId));
+                if (item) {
+                    customBuilderState.subSelections[subKey] = item;
+                }
+            }
+            refreshCustomBuilder(targetItemId);
+        }
+
+        // Switch between Auto and Custom tabs
+        function switchRecipeTab(tab, itemId) {
+            const autoTab = document.getElementById('tabAutoRecipes');
+            const customTab = document.getElementById('tabCustomBuilder');
+            const autoContent = document.getElementById('autoRecipesContent');
+            const customContent = document.getElementById('customBuilderContent');
+            
+            if (tab === 'auto') {
+                autoTab.classList.add('border-wlBlue', 'text-wlBlue');
+                autoTab.classList.remove('border-transparent', 'text-wlLight', 'text-opacity-70');
+                customTab.classList.remove('border-wlBlue', 'text-wlBlue');
+                customTab.classList.add('border-transparent', 'text-wlLight', 'text-opacity-70');
+                autoContent.classList.remove('hidden');
+                customContent.classList.add('hidden');
+            } else {
+                customTab.classList.add('border-wlBlue', 'text-wlBlue');
+                customTab.classList.remove('border-transparent', 'text-wlLight', 'text-opacity-70');
+                autoTab.classList.remove('border-wlBlue', 'text-wlBlue');
+                autoTab.classList.add('border-transparent', 'text-wlLight', 'text-opacity-70');
+                customContent.classList.remove('hidden');
+                autoContent.classList.add('hidden');
+                
+                // Reset custom builder state when switching
+                customBuilderState = { 
+                    selectedItems: {}, 
+                    subSelections: {}, 
+                    expandedItems: {}, 
+                    subExpandedItems: {},
+                    subSubSelections: {},
+                    alchemyBook: 0,
+                    subItemAlchemyBooks: {}
+                };
+                refreshCustomBuilder(itemId);
+            }
+        }
+
+        // Update custom slot selection
+        async function updateCustomSlot(itemId, slotIndex, selectedId) {
+            if (!selectedId) {
+                delete customBuilderState.selectedItems[slotIndex];
+            } else {
+                const item = await itemLoader.getItem(parseInt(selectedId));
+                if (item) {
+                    customBuilderState.selectedItems[slotIndex] = item;
+                }
+            }
+            refreshCustomBuilder(itemId);
+        }
+
+        // Update custom alchemy book
+        function updateCustomAlchemyBook(itemId, bookLevel) {
+            customBuilderState.alchemyBook = parseInt(bookLevel);
+            // Clear selections when alchemy book changes as available items may change
+            customBuilderState.selectedItems = {};
+            customBuilderState.subSelections = {};
+            customBuilderState.expandedItems = {};
+            customBuilderState.subExpandedItems = {};
+            customBuilderState.subSubSelections = {};
+            customBuilderState.subItemAlchemyBooks = {}; // Clear sub-item alchemy books too
+            refreshCustomBuilder(itemId);
+        }
+
+        // Update sub-item alchemy book (for nested recipe levels)
+        function updateSubItemAlchemyBook(targetItemId, parentItemId, bookLevel) {
+            customBuilderState.subItemAlchemyBooks[parentItemId] = parseInt(bookLevel);
+            // Clear sub-selections when alchemy book changes as available items may change
+            // Keep the parent selections but clear children
+            Object.keys(customBuilderState.subSelections).forEach(key => {
+                if (key.startsWith(parentItemId + '_')) {
+                    delete customBuilderState.subSelections[key];
+                }
+            });
+            Object.keys(customBuilderState.subExpandedItems).forEach(key => {
+                if (key.startsWith(parentItemId + '_')) {
+                    delete customBuilderState.subExpandedItems[key];
+                }
+            });
+            refreshCustomBuilder(targetItemId);
+        }
+
+        // Refresh custom builder UI
+        async function refreshCustomBuilder(itemId) {
+            const item = await itemLoader.getItem(itemId);
+            if (!item) return;
+            
+            const customContent = document.getElementById('customBuilderContent');
+            if (customContent) {
+                customContent.innerHTML = generateCustomBuilderUI(item);
+            }
+        }
+
+        // View item recipe (opens in new modal or navigates)
+        async function viewItemRecipe(itemId) {
+            // Open the item modal for this ingredient
+            await openItemModal(itemId);
+        }
+
+        // Build and display recipe tree
+        async function buildRecipeTreeUI(itemId) {
+            const item = await itemLoader.getItem(itemId);
+            if (!item || !recipeGen) return;
+            
+            const tree = await recipeGen.buildRecipeTree(item, customBuilderState.alchemyBook);
+            
+            // Display tree in a modal or expandable section
+            const customContent = document.getElementById('customBuilderContent');
+            if (customContent) {
+                customContent.innerHTML = `
+                    <div class="mb-4">
+                        <button onclick="refreshCustomBuilder(${itemId})" class="text-sm text-wlBlue hover:underline">
+                            <i class="fas fa-arrow-left mr-1"></i> Back to Builder
+                        </button>
+                    </div>
+                    <div class="text-lg font-semibold mb-4">
+                        <i class="fas fa-sitemap mr-2"></i> Full Recipe Tree
+                    </div>
+                    ${renderRecipeTreeOrganized(tree)}
+                `;
+            }
+        }
+
+        // Render recipe tree in organized format (like recipe display)
+        function renderRecipeTreeOrganized(node, depth = 0) {
+            const item = node.item;
+            const indent = depth * 16;
+            
+            if (!node.canCraft) {
+                return `
+                    <div class="bg-wlDark rounded-lg p-3 mb-2" style="margin-left: ${indent}px;">
+                        <div class="flex items-center">
+                            <img src="${recipeGen.getItemImage(item)}" alt="${item.name}" class="w-10 h-10 rounded object-contain bg-wlDarker">
+                            <div class="ml-2">
+                                <span class="text-sm font-medium">${item.name}</span>
+                                <span class="text-xs text-wlLight text-opacity-70 ml-2">Rank ${item.rank || 0}</span>
+                            </div>
+                            <span class="ml-auto text-xs text-wlYellow">
+                                <i class="fas fa-info-circle mr-1"></i>${node.message || 'Cannot be crafted'}
+                            </span>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Render as recipe format: Item = A + B + C
+            const recipe = node.recipe;
+            const ingredients = [recipe.primary, ...recipe.subItems];
+            
+            // Render this recipe line
+            const recipeLine = `
+                <div class="bg-wlDark rounded-lg p-3 mb-2" style="margin-left: ${indent}px;">
+                    <div class="flex flex-wrap items-center gap-2">
+                        ${ingredients.map((ing, idx) => `
+                            <div class="flex flex-col items-center">
+                                <div class="relative">
+                                    <img src="${recipeGen.getItemImage(ing)}" alt="${ing.name}" 
+                                         class="w-10 h-10 rounded object-contain bg-wlDarker">
+                                    <span class="absolute -top-1 -right-1 ${idx === 0 ? 'bg-wlBlue' : 'bg-wlPurple'} text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">${idx + 1}</span>
+                                </div>
+                                <span class="text-xs mt-1 max-w-[70px] truncate text-center">${ing.name}</span>
+                                <span class="text-xs text-wlLight text-opacity-70">R${ing.rank || 0}</span>
+                            </div>
+                            ${idx < ingredients.length - 1 ? '<span class="text-wlLight text-opacity-50">+</span>' : ''}
+                        `).join('')}
+                        <span class="text-wlLight text-opacity-50">=</span>
+                        <div class="flex flex-col items-center">
+                            <div class="relative">
+                                <img src="${recipeGen.getItemImage(item)}" alt="${item.name}" class="w-10 h-10 rounded object-contain bg-wlDarker ring-2 ring-wlGreen">
+                            </div>
+                            <span class="text-xs mt-1 max-w-[70px] truncate text-center text-wlGreen">${item.name}</span>
+                            <span class="text-xs text-wlGreen">R${item.rank || 0}</span>
+                        </div>
+                    </div>
+                    <div class="mt-2 text-xs text-wlLight text-opacity-70">
+                        Gap: ${node.gapUsed} ${node.alchemyBook > 0 ? '| Book ' + node.alchemyBook : ''}
+                    </div>
+                </div>
+            `;
+
+            // Render sub-recipes (ingredients)
+            let subRecipes = '';
+            if (node.ingredients && node.ingredients.length > 0) {
+                // Group by base material for organization
+                const targetBases = recipeGen.parseBases(item.base);
+                
+                for (let i = 0; i < node.ingredients.length; i++) {
+                    const ingNode = node.ingredients[i];
+                    const baseName = targetBases[i] || 'Unknown';
+                    
+                    // Add category header for first item of each base
+                    if (depth === 0) {
+                        subRecipes += `
+                            <div class="text-sm font-medium mt-4 mb-2 text-wlBlue" style="margin-left: ${indent}px;">
+                                <i class="fas fa-folder mr-1"></i> ${baseName} Branch
+                            </div>
+                        `;
+                    }
+                    subRecipes += renderRecipeTreeOrganized(ingNode, depth + 1);
+                }
+            }
+
+            return recipeLine + subRecipes;
+        }
+
+
+// ----- Now modify the openItemModal function -----
+let currentModalRecipeFilter = null;
+let modalHistory = []; // Stack to track modal navigation history
+let currentModalItemId = null; // Track current item in modal
+
+// Go back in modal history
+function goBackInModal() {
+    if (modalHistory.length > 0) {
+        const previousItemId = modalHistory.pop();
+        openItemModal(previousItemId, true); // true = is going back
+    }
+}
+
+// Update back button visibility
+function updateBackButton() {
+    const backBtn = document.getElementById('backModal');
+    if (backBtn) {
+        if (modalHistory.length > 0) {
+            backBtn.classList.remove('hidden');
+        } else {
+            backBtn.classList.add('hidden');
+        }
+    }
+}
+
+// Patch openItemModal to handle in-modal recipe filtering
+async function openItemModal(itemId, isGoingBack = false) {
+    const modal = document.getElementById('itemModal');
+    const modalContent = document.getElementById('modalContent');
+
+    // If not going back and there's a current item, push to history
+    if (!isGoingBack && currentModalItemId && currentModalItemId !== itemId) {
+        modalHistory.push(currentModalItemId);
+    }
+    currentModalItemId = itemId;
+    updateBackButton();
+
+    // Show loading state
+    modal.classList.remove('hidden');
+    modalContent.innerHTML = `
+        <div class="flex justify-center items-center py-12">
+            <div class="spinner"></div>
+        </div>
+    `;
+
+    try {
+        // Load full item details
+        const item = await itemLoader.getItem(itemId);
+        if (!item) {
+            modalContent.innerHTML = `
+                <div class="text-center text-red-500 py-12">
+                    <i class="fas fa-exclamation-triangle text-4xl mb-4"></i>
+                    <p>Item not found.</p>
+                </div>
+            `;
+            return;
+        }
+
+        // Initialize recipe generator if needed
+        initRecipeGeneratorIfReady();
+
+        // Reset recipe pagination when opening new item
+        currentRecipePage = 1;
+        currentRecipeItem = item;
+        currentAlchemyBookFilter = null;
+        currentGapFilter = null;
+        currentModalRecipeFilter = null;
+
+        // Render modal markup (using new recipe table)
+        function renderModalDetail() {
+            modalContent.innerHTML = `
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 mb-6 md:mb-0 md:pr-6">
+                    <div class="flex justify-center">
+                        <img src="${item.image}" alt="${item.name}" class="w-32 h-32 rounded-lg object-contain bg-wlDarker bg-opacity-50">
+                    </div>
+                    <div class="mt-4 grid grid-cols-2 gap-4">
+                        <div class="bg-wlDark p-3 rounded-lg">
+                            <div class="text-sm text-wlLight text-opacity-70">Level</div>
+                            <div class="text-lg font-medium">${item.level}</div>
+                        </div>
+                        <div class="bg-wlDark p-3 rounded-lg">
+                            <div class="text-sm text-wlLight text-opacity-70">Rank</div>
+                            <div class="text-lg font-medium">${item.rank || 0}</div>
+                        </div>
+                        <div class="bg-wlDark p-3 rounded-lg">
+                            <div class="text-sm text-wlLight text-opacity-70">Value</div>
+                            <div class="text-lg font-medium">${item.value ? item.value.toLocaleString() + ' G' : 'N/A'}</div>
+                        </div>
+                        <div class="bg-wlDark p-3 rounded-lg">
+                            <div class="text-sm text-wlLight text-opacity-70">Rarity</div>
+                            <div class="text-lg font-medium rarity-${item.rarity}">${capitalizeFirstLetter(item.rarity)}</div>
+                        </div>
+                        <div class="bg-wlDark p-3 rounded-lg col-span-2">
+                            <div class="text-sm text-wlLight text-opacity-70">Category</div>
+                            <div class="text-lg font-medium">${capitalizeFirstLetter(item.category)}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-2">${item.name}</h3>
+                    <div class="text-wlBlue mb-4">${item.type || ''}</div>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Description</h4>
+                        <p class="text-wlLight text-opacity-90">${item.description || 'No description available.'}</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Base Materials</h4>
+                        <p class="text-wlLight text-opacity-90">${item.base || 'N/A'}</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">Source</h4>
+                        <p class="text-wlLight text-opacity-90">${item.source || 'Unknown'}</p>
+                    </div>
+                    ${Object.keys(item.attributes || {}).length > 0 ? `
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2">Stats</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            ${Object.entries(item.attributes).map(([stat, value]) => `
+                                <div class="bg-wlDark p-3 rounded-lg">
+                                    <div class="text-sm text-wlLight text-opacity-70">${capitalizeFirstLetter(stat)}</div>
+                                    <div class="text-lg font-medium">${typeof value === 'number' && value < 1 ? (value * 100).toFixed(0) + '%' : value}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
+                    <!-- MODAL RECIPE SECTION -->
+                    <div id="modalRecipeBlock">${generateRecipeTable(item, currentRecipePage, currentAlchemyBookFilter)}</div>
+                </div>
+            </div>
+        `;
+    }
+
+    renderModalDetail();
+    modal.classList.remove('hidden');
+    } catch (error) {
+        console.error('Error loading item details:', error);
+        modalContent.innerHTML = `
+            <div class="text-center text-red-500 py-12">
+                <i class="fas fa-exclamation-triangle text-4xl mb-4"></i>
+                <p>Failed to load item details. Please try again.</p>
+                <p class="text-sm mt-2">Error: ${error.message}</p>
+            </div>
+        `;
+    }
+}
+
+// Make recipe functions global
+        window.changeRecipePage = changeRecipePage;
+        window.filterByAlchemyBook = filterByAlchemyBook;
+        window.switchRecipeTab = switchRecipeTab;
+        window.updateCustomSlot = updateCustomSlot;
+        window.updateCustomAlchemyBook = updateCustomAlchemyBook;
+        window.refreshCustomBuilder = refreshCustomBuilder;
+        window.viewItemRecipe = viewItemRecipe;
+        window.buildRecipeTreeUI = buildRecipeTreeUI;
+        window.toggleItemExpansion = toggleItemExpansion;
+        window.collapseItem = collapseItem;
+        window.toggleSubExpansion = toggleSubExpansion;
+        window.updateSubSlot = updateSubSlot;
+        window.openItemModal = openItemModal;
+        
+        function closeItemModal() {
+            document.getElementById('itemModal').classList.add('hidden');
+            // Clear modal history when closing
+            modalHistory = [];
+            currentModalItemId = null;
+            updateBackButton();
+        }
+        
+        // Close modal when clicking X or outside
+        document.getElementById('closeModal').addEventListener('click', closeItemModal);
+        document.getElementById('itemModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeItemModal();
+            }
+        });
+        
+        // Apply filters
+        document.getElementById('applyFilters').addEventListener('click', function() {
+            currentState.filters = {
+                search: document.getElementById('itemSearch').value.toLowerCase(),
+                searchDescription: document.getElementById('searchDescription').checked,
+                type: document.getElementById('itemTypeFilter').value,
+                minLevel: parseInt(document.getElementById('minLevel').value) || 0,
+                maxLevel: parseInt(document.getElementById('maxLevel').value) || 100,
+                base: [...selectedBaseMaterials], // Copy array
+                orderedBase: document.getElementById('orderedFilterToggle').checked,
+                statType: document.getElementById('statTypeFilter').value,
+                minStatValue: parseInt(document.getElementById('minStatValue').value) || 0
+            };
+            
+            // Clear name search after applying if setting is enabled
+            if (baseFilterSettings.clearNameSearchOnApply) {
+                document.getElementById('itemSearch').value = '';
+            }
+            
+            currentState.currentPage = 1; // Reset to first page when filters change
+            renderItems();
+            filtersDropdown.classList.remove('open');
+        });
+        
+        // Reset filters
+        document.getElementById('resetFilters').addEventListener('click', function() {
+            document.getElementById('itemSearch').value = '';
+            document.getElementById('searchDescription').checked = false;
+            document.getElementById('itemTypeFilter').value = '';
+            document.getElementById('minLevel').value = '';
+            document.getElementById('maxLevel').value = '';
+            document.getElementById('statTypeFilter').value = '';
+            document.getElementById('minStatValue').value = '';
+            document.getElementById('orderedFilterToggle').checked = false;
+            
+            // Reset base materials
+            selectedBaseMaterials = [];
+            updateSelectedBasesDisplay();
+            updateBaseOptions(); // Fix: Update the checkbox states in dropdown
+            
+            currentState.filters = {
+                search: '',
+                searchDescription: false,
+                type: '',
+                minLevel: 0,
+                maxLevel: 100,
+                base: [],
+                orderedBase: false,
+                statType: '',
+                minStatValue: 0
+            };
+            
+            currentState.currentPage = 1;
+            renderItems();
+            filtersDropdown.classList.remove('open');
+        });
+        
+        // Search when pressing enter
+        document.getElementById('itemSearch').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('applyFilters').click();
+            }
+        });
+        
+        // Change items per page
+        document.getElementById('itemsPerPage').addEventListener('change', function() {
+            currentState.itemsPerPage = parseInt(this.value);
+            currentState.currentPage = 1;
+            renderItems();
+        });
+        
+        document.getElementById('itemsPerPageGrid').addEventListener('change', function() {
+            currentState.itemsPerPage = parseInt(this.value);
+            currentState.currentPage = 1;
+            renderItems();
+        });
+        
+        // Table sorting
+        document.querySelectorAll('.table th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => {
+                const column = th.getAttribute('data-sort');
+                
+                // Remove sort indicators from all headers
+                document.querySelectorAll('.table th').forEach(h => {
+                    h.classList.remove('sorted-asc', 'sorted-desc');
+                });
+                
+                // Determine new sort direction
+                if (currentState.sortColumn === column) {
+                    currentState.sortDirection = currentState.sortDirection === 'asc' ? 'desc' : 'asc';
+                } else {
+                    currentState.sortColumn = column;
+                    currentState.sortDirection = 'asc';
+                }
+                
+                // Add sort indicator to clicked header
+                th.classList.add(`sorted-${currentState.sortDirection}`);
+                
+                // Re-render items
+                renderItems();
+            });
+        });
+        
+        // ===== Base Material Multi-Select Functions =====
+        
+        // Toggle base dropdown
+        function toggleBaseDropdown() {
+            const dropdown = document.getElementById('baseDropdown');
+            dropdown.classList.toggle('hidden');
+        }
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const container = document.getElementById('baseFilterContainer');
+            const dropdown = document.getElementById('baseDropdown');
+            if (!container.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+        
+        // Update the display of selected bases
+        function updateSelectedBasesDisplay() {
+            const display = document.getElementById('selectedBasesDisplay');
+            const container = document.getElementById('baseFilterContainer');
+            
+            if (selectedBaseMaterials.length === 0) {
+                display.innerHTML = '<span class="text-wlLight text-opacity-70">Select base materials...</span>';
+            } else {
+                display.innerHTML = selectedBaseMaterials.map((base, index) => `
+                    <span class="inline-flex items-center bg-wlBlue bg-opacity-30 text-wlBlue px-2 py-0.5 rounded text-sm mr-1 mb-1">
+                        ${index + 1}. ${base}
+                        <button onclick="event.stopPropagation(); removeBaseMaterial('${base}')" class="ml-1 hover:text-wlRed">
+                            <i class="fas fa-times text-xs"></i>
+                        </button>
+                    </span>
+                `).join('');
+            }
+            
+            // Update hidden input
+            document.getElementById('baseFilter').value = selectedBaseMaterials.join(' / ');
+        }
+        
+        // Add or remove a base material
+        function toggleBaseMaterial(baseName) {
+            const index = selectedBaseMaterials.indexOf(baseName);
+            if (index > -1) {
+                selectedBaseMaterials.splice(index, 1);
+            } else {
+                selectedBaseMaterials.push(baseName);
+            }
+            updateSelectedBasesDisplay();
+            
+            // Auto-clear search after selection if setting enabled
+            if (baseFilterSettings.autoClearSearch) {
+                document.getElementById('baseSearchInput').value = '';
+            }
+            
+            // Update base options AFTER clearing search
+            updateBaseOptions();
+            
+            // Auto-focus search if setting enabled
+            if (baseFilterSettings.autoFocusSearch) {
+                document.getElementById('baseSearchInput').focus();
+            }
+        }
+        
+        // Remove a base material
+        function removeBaseMaterial(baseName) {
+            const index = selectedBaseMaterials.indexOf(baseName);
+            if (index > -1) {
+                selectedBaseMaterials.splice(index, 1);
+            }
+            updateSelectedBasesDisplay();
+            updateBaseOptions();
+        }
+        
+        // Base filter settings (with localStorage persistence)
+        const baseFilterSettings = {
+            autoClearSearch: localStorage.getItem('baseFilter_autoClearSearch') !== 'false', // Default true
+            autoFocusSearch: localStorage.getItem('baseFilter_autoFocusSearch') !== 'false', // Default true
+            sortSelectedToTop: localStorage.getItem('baseFilter_sortSelectedToTop') !== 'false', // Default true
+            clearNameSearchOnApply: localStorage.getItem('baseFilter_clearNameSearchOnApply') === 'true' // Default false
+        };
+        
+        // Save settings to localStorage
+        function saveBaseFilterSettings() {
+            localStorage.setItem('baseFilter_autoClearSearch', baseFilterSettings.autoClearSearch);
+            localStorage.setItem('baseFilter_autoFocusSearch', baseFilterSettings.autoFocusSearch);
+            localStorage.setItem('baseFilter_sortSelectedToTop', baseFilterSettings.sortSelectedToTop);
+            localStorage.setItem('baseFilter_clearNameSearchOnApply', baseFilterSettings.clearNameSearchOnApply);
+        }
+        
+        // Update the base options list
+        function updateBaseOptions() {
+            const container = document.getElementById('baseOptionsContainer');
+            const searchTerm = document.getElementById('baseSearchInput').value.toLowerCase();
+            
+            const filteredBases = allBaseMaterials.filter(base => 
+                base.toLowerCase().includes(searchTerm)
+            );
+            
+            // Sort: selected bases first (if setting enabled), then alphabetically
+            const sortedBases = [...filteredBases].sort((a, b) => {
+                const aSelected = selectedBaseMaterials.includes(a);
+                const bSelected = selectedBaseMaterials.includes(b);
+                
+                // If sort selected to top is enabled
+                if (baseFilterSettings.sortSelectedToTop) {
+                    if (aSelected && !bSelected) return -1;
+                    if (!aSelected && bSelected) return 1;
+                }
+                
+                // Then sort by selection order for selected items
+                if (aSelected && bSelected) {
+                    return selectedBaseMaterials.indexOf(a) - selectedBaseMaterials.indexOf(b);
+                }
+                
+                // Then alphabetically
+                return a.localeCompare(b);
+            });
+            
+            container.innerHTML = sortedBases.map(base => {
+                const isSelected = selectedBaseMaterials.includes(base);
+                const selectionIndex = selectedBaseMaterials.indexOf(base);
+                return `
+                    <label class="flex items-center p-2 hover:bg-wlDark rounded cursor-pointer ${isSelected ? 'bg-wlBlue bg-opacity-20' : ''}" onclick="toggleBaseMaterial('${base}')">
+                        <span class="w-5 h-5 border border-wlLight border-opacity-30 rounded mr-2 flex items-center justify-center ${isSelected ? 'bg-wlBlue border-wlBlue' : ''}">
+                            ${isSelected ? `<span class="text-white text-xs">${selectionIndex + 1}</span>` : ''}
+                        </span>
+                        <span class="${isSelected ? 'text-wlBlue' : ''}">${base}</span>
+                    </label>
+                `;
+            }).join('');
+        }
+        
+        // Update ordered filter hint
+        function updateOrderedFilterHint() {
+            // Just updates the state, display handled in apply filters
+        }
+        
+        // Extract all unique base materials from items
+        function extractAllBaseMaterials(items) {
+            const baseSet = new Set();
+            items.forEach(item => {
+                if (item.base && item.base !== 'N/A') {
+                    const bases = item.base.split(' / ').map(b => b.trim());
+                    bases.forEach(b => {
+                        if (b && b !== 'N/A') {
+                            baseSet.add(b);
+                        }
+                    });
+                }
+            });
+            return Array.from(baseSet).sort();
+        }
+        
+        // Initialize base materials dropdown
+        function initializeBaseMaterials() {
+            allBaseMaterials = extractAllBaseMaterials(currentState.items);
+            updateBaseOptions();
+            
+            // Add search input listener
+            document.getElementById('baseSearchInput').addEventListener('input', updateBaseOptions);
+            
+            // Initialize settings checkboxes
+            document.getElementById('settingAutoClearSearch').checked = baseFilterSettings.autoClearSearch;
+            document.getElementById('settingAutoFocusSearch').checked = baseFilterSettings.autoFocusSearch;
+            document.getElementById('settingSortSelectedToTop').checked = baseFilterSettings.sortSelectedToTop;
+            document.getElementById('settingClearNameSearchOnApply').checked = baseFilterSettings.clearNameSearchOnApply;
+        }
+        
+        // Toggle base filter settings panel
+        function toggleBaseFilterSettingsPanel() {
+            const panel = document.getElementById('baseFilterSettingsPanel');
+            const dropdown = document.getElementById('baseDropdown');
+            // Close dropdown if open
+            dropdown.classList.add('hidden');
+            // Toggle settings panel
+            panel.classList.toggle('hidden');
+        }
+        
+        // Close settings panel when clicking outside
+        document.addEventListener('click', function(e) {
+            const settingsBtn = document.getElementById('baseFilterSettingsBtn');
+            const settingsPanel = document.getElementById('baseFilterSettingsPanel');
+            if (settingsBtn && settingsPanel && !settingsBtn.contains(e.target) && !settingsPanel.contains(e.target)) {
+                settingsPanel.classList.add('hidden');
+            }
+        });
+        
+        // Update a base filter setting
+        function updateBaseFilterSetting(setting, value) {
+            baseFilterSettings[setting] = value;
+            saveBaseFilterSettings();
+            if (setting === 'sortSelectedToTop') {
+                updateBaseOptions();
+            }
+        }
+        
+        // Make functions global
+        window.toggleBaseDropdown = toggleBaseDropdown;
+        window.toggleBaseMaterial = toggleBaseMaterial;
+        window.removeBaseMaterial = removeBaseMaterial;
+        window.updateOrderedFilterHint = updateOrderedFilterHint;
+        window.updateBaseFilterSetting = updateBaseFilterSetting;
+        window.toggleBaseFilterSettingsPanel = toggleBaseFilterSettingsPanel;
+        
+        // Initial data load using JSON lazy loading system
+        async function loadInitialData() {
+            try {
+                // Load the master index
+                await itemLoader.loadIndex();
+                
+                // Get all items from index (metadata only)
+                const indexItems = itemLoader.getIndexItems();
+                
+                // Store index items in state for filtering
+                currentState.items = indexItems;
+                
+                // Initialize base materials dropdown
+                initializeBaseMaterials();
+                
+                // Check for search parameter in URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const searchParam = urlParams.get('search');
+                if (searchParam) {
+                    document.getElementById('itemSearch').value = decodeURIComponent(searchParam);
+                    currentState.filters.search = decodeURIComponent(searchParam).toLowerCase();
+                }
+                
+                // Initial render
+                renderItems();
+                
+                console.log('Items database loaded successfully');
+                console.log('Cache stats:', itemLoader.getCacheStats());
+            } catch (error) {
+                console.error('Error loading items database:', error);
+                // Show error to user
+                const loadingIndicator = document.getElementById('loadingIndicator');
+                loadingIndicator.innerHTML = `
+                    <div class="text-center text-red-500">
+                        <i class="fas fa-exclamation-triangle text-4xl mb-4"></i>
+                        <p>Failed to load items database. Please refresh the page.</p>
+                        <p class="text-sm mt-2">Error: ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Initialize the application
+        loadInitialData();
+    </script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('light');
+            themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('light');
+            const icon = themeToggle.querySelector('i');
+            
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>

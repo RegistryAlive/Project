@@ -1,0 +1,45 @@
+{
+  "id": 403,
+  "name": "Chameleon",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-403.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Muskmelon",
+      "itemId": 7446,
+      "itemFile": "material-7446.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Orange",
+      "itemId": 7435,
+      "itemFile": "material-7435.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 64,
+    "hp": 646,
+    "sp": 521,
+    "catchable": "Yes",
+    "spd": 166,
+    "str": 44,
+    "con": 41,
+    "int": 38,
+    "wis": 34,
+    "agi": 35
+  }
+}

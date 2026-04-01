@@ -1,0 +1,17 @@
+{
+  "id": 2789,
+  "name": "Demon Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Leather / Grass",
+  "description": "Made by a Demon to Killerate somebody.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18
+  },
+  "image": "data/images/arm-2789.png",
+  "file": "arm-2789.json"
+}

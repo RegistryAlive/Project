@@ -1,0 +1,18 @@
+{
+  "id": 2107,
+  "name": "Safe Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "A medal that can enhance magic attack and defense.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 4,
+    "DEF": 2
+  },
+  "image": "data/images/special-2107.png",
+  "file": "special-2107.json"
+}

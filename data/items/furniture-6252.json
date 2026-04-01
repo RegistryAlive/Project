@@ -1,0 +1,15 @@
+{
+  "id": 6252,
+  "name": "Rope Saw",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Used on the work platform to cut little items.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6252.png",
+  "file": "furniture-6252.json"
+}

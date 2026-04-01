@@ -1,0 +1,17 @@
+{
+  "id": 811,
+  "name": "Marine scrolls",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": null,
+  "description": "Ocean has blessed scrolls",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 8
+  },
+  "image": "data/images/weapon-811.png",
+  "file": "weapon-811.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7436,
+  "name": "Grape",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "SP": 15,
+    "HP": 5
+  },
+  "image": "data/images/material-7436.png",
+  "file": "material-7436.json"
+}

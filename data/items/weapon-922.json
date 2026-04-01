@@ -1,0 +1,18 @@
+{
+  "id": 922,
+  "name": "Twin Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Wood / Titanium",
+  "description": "A special weapon made by ying and yang brothers",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45,
+    "DEF": 15
+  },
+  "image": "data/images/weapon-922.png",
+  "file": "weapon-922.json"
+}

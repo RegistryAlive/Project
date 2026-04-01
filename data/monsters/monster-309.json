@@ -1,0 +1,45 @@
+{
+  "id": 309,
+  "name": "Drowcrusher",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-309.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Roo Meat",
+      "itemId": 7479,
+      "itemFile": "material-7479.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Tooth",
+      "itemId": 7809,
+      "itemFile": "material-7809.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Fur",
+      "itemId": 7812,
+      "itemFile": "material-7812.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Drowcrusher Tooth",
+      "itemId": 7811,
+      "itemFile": "material-7811.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 943,
+    "sp": 559,
+    "catchable": "Unknown",
+    "spd": 289,
+    "str": 77,
+    "con": 54,
+    "int": 30,
+    "wis": 32,
+    "agi": 77
+  }
+}

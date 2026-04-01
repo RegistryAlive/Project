@@ -1,0 +1,18 @@
+{
+  "id": 211,
+  "name": "Steel Rock Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "For Magellan's exclusive use after rebirth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 28,
+    "DEF": 12
+  },
+  "image": "data/images/weapon-211.png",
+  "file": "weapon-211.json"
+}

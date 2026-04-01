@@ -1,0 +1,27 @@
+{
+  "id": 694,
+  "name": "Fire Dragon",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-694.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 170,
+    "hp": 65000,
+    "sp": 1196,
+    "catchable": "Unknown",
+    "spd": 463,
+    "str": 136,
+    "con": 150,
+    "int": 60,
+    "wis": 60,
+    "agi": 104
+  }
+}

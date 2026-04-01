@@ -1,0 +1,15 @@
+{
+  "id": 7678,
+  "name": "Yellow Mink Fur",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fur",
+  "description": "Fur of a mink",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7678.png",
+  "file": "material-7678.json"
+}

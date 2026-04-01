@@ -1,0 +1,18 @@
+{
+  "id": 1586,
+  "name": "Magic Purple Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Leather / Grass / Magic",
+  "description": "Power collecting hat",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 25,
+    "DEF": 12
+  },
+  "image": "data/images/helmet-1586.png",
+  "file": "helmet-1586.json"
+}

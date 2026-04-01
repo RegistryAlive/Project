@@ -1,0 +1,18 @@
+{
+  "id": 2225,
+  "name": "Red Scroll",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Feather / Mercury",
+  "description": "A red scroll filled with magic energy.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 75,
+    "MaxSP": 400
+  },
+  "image": "data/images/special-2225.png",
+  "file": "special-2225.json"
+}

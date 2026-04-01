@@ -1,0 +1,27 @@
+{
+  "id": 713,
+  "name": "Giant Snake (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-713.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 28000,
+    "sp": 748,
+    "catchable": "Unknown",
+    "spd": 280,
+    "str": 120,
+    "con": 110,
+    "int": 40,
+    "wis": 40,
+    "agi": 50
+  }
+}

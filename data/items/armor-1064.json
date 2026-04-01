@@ -1,0 +1,17 @@
+{
+  "id": 1064,
+  "name": "Fur Clothes (Male)",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 37,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Grass / White/Yellow Clay / Titanium / Jade / Crystallization",
+  "description": "This outfit comes with handsome wings. Pet cannot equip it.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 37
+  },
+  "image": "data/images/armor-1064.png",
+  "file": "armor-1064.json"
+}

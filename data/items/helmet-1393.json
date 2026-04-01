@@ -1,0 +1,18 @@
+{
+  "id": 1393,
+  "name": "Pink Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Iron / Quartz (Crystal)",
+  "description": "A helmet which is inlaid of pink crystal",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 13,
+    "DEF": 5
+  },
+  "image": "data/images/helmet-1393.png",
+  "file": "helmet-1393.json"
+}

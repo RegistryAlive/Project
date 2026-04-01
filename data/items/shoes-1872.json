@@ -1,0 +1,18 @@
+{
+  "id": 1872,
+  "name": "White Net Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Flower / Silver",
+  "description": "Boots made from advanced silk and silver threads.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "DEF": 10
+  },
+  "image": "data/images/shoes-1872.png",
+  "file": "shoes-1872.json"
+}

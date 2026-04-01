@@ -1,0 +1,18 @@
+{
+  "id": 2725,
+  "name": "Demon Wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Wings sealed with demon power, the damage caused by critical strikes is slightly increased",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MATK": 45
+  },
+  "image": "data/images/special-2725.png",
+  "file": "special-2725.json"
+}

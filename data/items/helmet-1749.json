@@ -1,0 +1,18 @@
+{
+  "id": 1749,
+  "name": "Monk's Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A hat used to hide one's true strength; additional outfit effects can be gained when equipped alongside other Monk's Unexpected series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 30,
+    "MDEF": 10
+  },
+  "image": "data/images/helmet-1749.png",
+  "file": "helmet-1749.json"
+}

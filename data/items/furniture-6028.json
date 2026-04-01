@@ -1,0 +1,15 @@
+{
+  "id": 6028,
+  "name": "Pan",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Use to cook.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6028.png",
+  "file": "furniture-6028.json"
+}

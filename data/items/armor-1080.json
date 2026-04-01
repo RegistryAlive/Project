@@ -1,0 +1,18 @@
+{
+  "id": 1080,
+  "name": "Leaf Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Leaf / Grass",
+  "description": "Made of all natural materials.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 5,
+    "MDEF": 5
+  },
+  "image": "data/images/armor-1080.png",
+  "file": "armor-1080.json"
+}

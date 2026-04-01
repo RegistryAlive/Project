@@ -1,0 +1,17 @@
+{
+  "id": 10063,
+  "name": "Ch Sled Caps",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A sled dog dressed as a reindeer pulls the sled with great effort and can use the magic wool ball as a substitute for wear and tear",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10063.png",
+  "file": "vehicle-10063.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7675,
+  "name": "Sable Fur",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fur",
+  "description": "Fur of a sable",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7675.png",
+  "file": "material-7675.json"
+}

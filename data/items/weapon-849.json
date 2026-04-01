@@ -1,0 +1,17 @@
+{
+  "id": 849,
+  "name": "Assault Rifle",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Iron / Wood",
+  "description": "The evolution of the long-barrelled gun.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 35
+  },
+  "image": "data/images/weapon-849.png",
+  "file": "weapon-849.json"
+}

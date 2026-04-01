@@ -1,0 +1,15 @@
+{
+  "id": 7916,
+  "name": "Unicorn Voucher",
+  "type": "Material",
+  "category": "material",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7916.png",
+  "file": "material-7916.json"
+}

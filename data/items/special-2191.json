@@ -1,0 +1,17 @@
+{
+  "id": 2191,
+  "name": "Anger Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "An Armlet of Anger exclusively used by pet men.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 125
+  },
+  "image": "data/images/special-2191.png",
+  "file": "special-2191.json"
+}

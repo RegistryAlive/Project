@@ -1,0 +1,17 @@
+{
+  "id": 7536,
+  "name": "Big Apple",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "HP": 50
+  },
+  "image": "data/images/material-7536.png",
+  "file": "material-7536.json"
+}

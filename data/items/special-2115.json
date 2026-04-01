@@ -1,0 +1,17 @@
+{
+  "id": 2115,
+  "name": "Ghost Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To upgrade magic defense",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 6
+  },
+  "image": "data/images/special-2115.png",
+  "file": "special-2115.json"
+}

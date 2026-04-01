@@ -1,0 +1,27 @@
+{
+  "id": 711,
+  "name": "Giant Lizard",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-711.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 125,
+    "hp": 1123,
+    "sp": 1291,
+    "catchable": "Unknown",
+    "spd": 337.5,
+    "str": 78,
+    "con": 75,
+    "int": 73,
+    "wis": 74,
+    "agi": 75
+  }
+}

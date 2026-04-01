@@ -1,0 +1,18 @@
+{
+  "id": 155,
+  "name": "Spring B.Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 52,
+  "level": 104,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword made from melted bronze cooled by the sacred mountain of god.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 52,
+    "SPD": 52
+  },
+  "image": "data/images/weapon-155.png",
+  "file": "weapon-155.json"
+}

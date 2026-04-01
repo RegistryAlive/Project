@@ -1,0 +1,18 @@
+{
+  "id": 2631,
+  "name": "Ring of the Lord (Instance)",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Corundum",
+  "description": "Increases agility and mana.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 16,
+    "SPD": 16
+  },
+  "image": "data/images/special-2631.png",
+  "file": "special-2631.json"
+}

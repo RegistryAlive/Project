@@ -1,0 +1,18 @@
+{
+  "id": 1968,
+  "name": "Berylweave Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Fur",
+  "description": "A pair of boots weaved with fur",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 18,
+    "DEF": 2
+  },
+  "image": "data/images/shoes-1968.png",
+  "file": "shoes-1968.json"
+}

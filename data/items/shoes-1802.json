@@ -1,0 +1,17 @@
+{
+  "id": 1802,
+  "name": "White Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "High white boots which are like riding boots.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/shoes-1802.png",
+  "file": "shoes-1802.json"
+}

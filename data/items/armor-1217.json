@@ -1,0 +1,18 @@
+{
+  "id": 1217,
+  "name": "Black Fur clot",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Super handsome clothing with wings, dark color matching makes the wings more prominent",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 70,
+    "MaxSP": 70
+  },
+  "image": "data/images/armor-1217.png",
+  "file": "armor-1217.json"
+}

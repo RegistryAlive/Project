@@ -1,0 +1,33 @@
+{
+  "id": 1160,
+  "name": "Maya Rocket Man",
+  "location": "Maya",
+  "image": "data/Monster_Images/monster-1160.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Crude Oil",
+      "itemId": 7821,
+      "itemFile": "material-7821.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gasoline",
+      "itemId": 7822,
+      "itemFile": "material-7822.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 43,
+    "hp": 0,
+    "sp": 0,
+    "catchable": null,
+    "spd": 124.5,
+    "str": 24,
+    "con": 29,
+    "int": 25,
+    "wis": 21,
+    "agi": 30
+  }
+}

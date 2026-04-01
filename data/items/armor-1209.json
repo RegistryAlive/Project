@@ -1,0 +1,17 @@
+{
+  "id": 1209,
+  "name": "Sweet Wind",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 45,
+  "level": 90,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Designer clothing, made with precious materials. Luxurious casual clothes.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 50
+  },
+  "image": "data/images/armor-1209.png",
+  "file": "armor-1209.json"
+}

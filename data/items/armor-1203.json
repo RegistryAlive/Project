@@ -1,0 +1,18 @@
+{
+  "id": 1203,
+  "name": "Dragon Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A dragon robe relic, that has mysterious powers after further investigation. Only for men.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 199,
+    "MDEF": 199
+  },
+  "image": "data/images/armor-1203.png",
+  "file": "armor-1203.json"
+}

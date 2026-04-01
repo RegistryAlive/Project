@@ -1,0 +1,15 @@
+{
+  "id": 1731,
+  "name": "Vanilla Wig",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Light-colored wigs fluffy like a souffl?",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1731.png",
+  "file": "helmet-1731.json"
+}

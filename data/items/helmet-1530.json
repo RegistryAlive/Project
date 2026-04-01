@@ -1,0 +1,18 @@
+{
+  "id": 1530,
+  "name": "Sunny Doll",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Flower / Grass / Corundum",
+  "description": "Beckons to the sun. 8% chance to resist seal.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 8,
+    "SPD": 22
+  },
+  "image": "data/images/helmet-1530.png",
+  "file": "helmet-1530.json"
+}

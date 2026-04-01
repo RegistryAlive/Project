@@ -1,0 +1,18 @@
+{
+  "id": 437,
+  "name": "Crescent Bow+1",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "No sockets, 24% Chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "SPD": 12
+  },
+  "image": "data/images/weapon-437.png",
+  "file": "weapon-437.json"
+}

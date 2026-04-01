@@ -1,0 +1,15 @@
+{
+  "id": 8042,
+  "name": "Clear Water",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Very clear water",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8042.png",
+  "file": "questprop-8042.json"
+}

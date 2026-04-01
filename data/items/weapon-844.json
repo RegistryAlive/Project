@@ -1,0 +1,17 @@
+{
+  "id": 844,
+  "name": "Arquebus",
+  "type": "WeaponGun",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Iron / Wood",
+  "description": "A very ancient gun",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10
+  },
+  "image": "data/images/weapon-844.png",
+  "file": "weapon-844.json"
+}

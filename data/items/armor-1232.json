@@ -1,0 +1,18 @@
+{
+  "id": 1232,
+  "name": "New year dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The gorgeous golden dress will definitely become the focus of everyone's attention at the party! 5% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "SPD": 30
+  },
+  "image": "data/images/armor-1232.png",
+  "file": "armor-1232.json"
+}

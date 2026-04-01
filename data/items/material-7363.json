@@ -1,0 +1,15 @@
+{
+  "id": 7363,
+  "name": "Vine Grass",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Grass",
+  "description": "A grass with a shape of a stem",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7363.png",
+  "file": "material-7363.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 514,
+  "name": "Polished Wand+3",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 11,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets, 32% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 14,
+    "MaxSP": 120
+  },
+  "image": "data/images/weapon-514.png",
+  "file": "weapon-514.json"
+}

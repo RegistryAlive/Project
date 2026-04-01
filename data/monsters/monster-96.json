@@ -1,0 +1,51 @@
+{
+  "id": 96,
+  "name": "Lazy Snail",
+  "location": "Kelan Village's Woods",
+  "image": "data/Monster_Images/monster-96.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Grume of Snail",
+      "itemId": 7799,
+      "itemFile": "material-7799.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Soybean",
+      "itemId": 7465,
+      "itemFile": "material-7465.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Soya",
+      "itemId": 7469,
+      "itemFile": "material-7469.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Clay",
+      "itemId": 7643,
+      "itemFile": "material-7643.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 2,
+    "hp": 51,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 3,
+    "str": 1,
+    "con": 3,
+    "int": 1,
+    "wis": 1,
+    "agi": 0
+  }
+}

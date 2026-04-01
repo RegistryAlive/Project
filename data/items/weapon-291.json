@@ -1,0 +1,17 @@
+{
+  "id": 291,
+  "name": "Pure Iron Trident",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Pure Iron / Copper",
+  "description": "Forged precisely with pure iron, has 3 heads.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 58
+  },
+  "image": "data/images/weapon-291.png",
+  "file": "weapon-291.json"
+}

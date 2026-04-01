@@ -1,0 +1,15 @@
+{
+  "id": 6560,
+  "name": "Gothic mirror",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Gothic style mirror, it feels like it can reflect what you can't see",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6560.png",
+  "file": "furniture-6560.json"
+}

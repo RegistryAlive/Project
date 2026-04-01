@@ -1,0 +1,27 @@
+{
+  "id": 841,
+  "name": "Pirate Leader",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-841.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 883,
+    "sp": 530,
+    "catchable": "Unknown",
+    "spd": 255,
+    "str": 83,
+    "con": 65,
+    "int": 32,
+    "wis": 30,
+    "agi": 60
+  }
+}

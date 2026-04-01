@@ -1,0 +1,15 @@
+{
+  "id": 8439,
+  "name": "Wave Turtle T",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make Speedwave Xuangui become a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8439.png",
+  "file": "questprop-8439.json"
+}

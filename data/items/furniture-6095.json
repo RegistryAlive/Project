@@ -1,0 +1,15 @@
+{
+  "id": 6095,
+  "name": "Spring Mattres",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A bed with many iron springs",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6095.png",
+  "file": "furniture-6095.json"
+}

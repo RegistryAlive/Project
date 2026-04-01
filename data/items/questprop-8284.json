@@ -1,0 +1,15 @@
+{
+  "id": 8284,
+  "name": "Lover's Ribbon",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used to wrap gifts box of lovers",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8284.png",
+  "file": "questprop-8284.json"
+}

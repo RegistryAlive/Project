@@ -1,0 +1,17 @@
+{
+  "id": 980,
+  "name": "Lock Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Iron / Leather",
+  "description": "Armor made from iron rings woven together.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28
+  },
+  "image": "data/images/armor-980.png",
+  "file": "armor-980.json"
+}

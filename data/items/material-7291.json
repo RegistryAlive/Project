@@ -1,0 +1,17 @@
+{
+  "id": 7291,
+  "name": "BBQ Sauce",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is made from BBQ",
+  "size": "1x1",
+  "attributes": {
+    "HP": 50
+  },
+  "image": "data/images/material-7291.png",
+  "file": "material-7291.json"
+}

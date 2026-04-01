@@ -1,0 +1,15 @@
+{
+  "id": 8397,
+  "name": "Fairy Kyubi Ti",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make the Wind nine-tailed fairy fox a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8397.png",
+  "file": "questprop-8397.json"
+}

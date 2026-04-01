@@ -1,0 +1,18 @@
+{
+  "id": 7176,
+  "name": "Soy Porkbone Noodle",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 24,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Fish and Shellfish",
+  "description": "The Best fugu soup with best noodles",
+  "size": "1x1",
+  "attributes": {
+    "HP": 800,
+    "SP": 400
+  },
+  "image": "data/images/material-7176.png",
+  "file": "material-7176.json"
+}

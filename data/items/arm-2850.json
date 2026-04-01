@@ -1,0 +1,18 @@
+{
+  "id": 2850,
+  "name": "Killer Glove",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Killer's favorite gloves. Set: double socket bonus",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "SPD": 10
+  },
+  "image": "data/images/arm-2850.png",
+  "file": "arm-2850.json"
+}

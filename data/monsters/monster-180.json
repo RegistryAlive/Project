@@ -1,0 +1,45 @@
+{
+  "id": 180,
+  "name": "Oak Devil",
+  "location": "Kelan Village's Woods",
+  "image": "data/Monster_Images/monster-180.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Oak",
+      "itemId": 7652,
+      "itemFile": "material-7652.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Green Apple",
+      "itemId": 7518,
+      "itemFile": "material-7518.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Original Rubber",
+      "itemId": 6029,
+      "itemFile": "furniture-6029.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Oak Wood",
+      "itemId": 7648,
+      "itemFile": "material-7648.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 6,
+    "hp": 75,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 11,
+    "str": 4,
+    "con": 6,
+    "int": 3,
+    "wis": 4,
+    "agi": 1
+  }
+}

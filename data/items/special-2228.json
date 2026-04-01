@@ -1,0 +1,18 @@
+{
+  "id": 2228,
+  "name": "Dark Evil Wing",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 24,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "ATK+12, MATK+12, can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 12,
+    "MATK": 12
+  },
+  "image": "data/images/special-2228.png",
+  "file": "special-2228.json"
+}

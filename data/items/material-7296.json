@@ -1,0 +1,17 @@
+{
+  "id": 7296,
+  "name": "Apple Berry Syrup",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Apple juice with berres",
+  "size": "1x1",
+  "attributes": {
+    "HP": 400
+  },
+  "image": "data/images/material-7296.png",
+  "file": "material-7296.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 943,
+  "name": "Strawberry Icedrop",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-943.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 13,
+    "hp": 130,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 33.5,
+    "str": 8,
+    "con": 11,
+    "int": 7,
+    "wis": 6,
+    "agi": 7
+  }
+}

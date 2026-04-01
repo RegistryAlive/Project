@@ -1,0 +1,15 @@
+{
+  "id": 8522,
+  "name": "DragonBoat Tix",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets can be exchanged for Dragon Boat tickets.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8522.png",
+  "file": "questprop-8522.json"
+}

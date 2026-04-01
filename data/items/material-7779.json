@@ -1,0 +1,15 @@
+{
+  "id": 7779,
+  "name": "Dog Skin",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leather",
+  "description": "A Dog's hide",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7779.png",
+  "file": "material-7779.json"
+}

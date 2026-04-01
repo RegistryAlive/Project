@@ -1,0 +1,15 @@
+{
+  "id": 5044,
+  "name": "Wooden Bridge",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is the item that could pass the volcano.",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/accessory-5044.png",
+  "file": "accessory-5044.json"
+}

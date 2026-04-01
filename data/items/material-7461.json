@@ -1,0 +1,17 @@
+{
+  "id": 7461,
+  "name": "Sunflower Seed",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Seeds from a sunflower.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 70
+  },
+  "image": "data/images/material-7461.png",
+  "file": "material-7461.json"
+}

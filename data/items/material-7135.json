@@ -1,0 +1,18 @@
+{
+  "id": 7135,
+  "name": "Wonderful Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Fruit / Egg",
+  "description": "Spring House's delicious food",
+  "size": "1x1",
+  "attributes": {
+    "HP": 250,
+    "SP": 150
+  },
+  "image": "data/images/material-7135.png",
+  "file": "material-7135.json"
+}

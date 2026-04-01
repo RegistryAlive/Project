@@ -1,0 +1,39 @@
+{
+  "id": 142,
+  "name": "Red Beetle",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-142.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Golden Apple",
+      "itemId": 7517,
+      "itemFile": "material-7517.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 52,
+    "hp": 495,
+    "sp": 386,
+    "catchable": "Unknown",
+    "spd": 140,
+    "str": 36,
+    "con": 33,
+    "int": 30,
+    "wis": 26,
+    "agi": 31
+  }
+}

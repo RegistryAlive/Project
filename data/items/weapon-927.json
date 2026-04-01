@@ -1,0 +1,18 @@
+{
+  "id": 927,
+  "name": "Spirit Fork +10",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 66,
+    "MAXHP": 640
+  },
+  "image": "data/images/weapon-927.png",
+  "file": "weapon-927.json"
+}

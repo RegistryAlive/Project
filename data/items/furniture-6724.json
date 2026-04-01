@@ -1,0 +1,15 @@
+{
+  "id": 6724,
+  "name": "Cake Stairs",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Large cake staircase decorated with gingerbread men and candies",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/furniture-6724.png",
+  "file": "furniture-6724.json"
+}

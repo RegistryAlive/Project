@@ -1,0 +1,27 @@
+{
+  "id": 863,
+  "name": "Princess",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-863.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 539,
+    "sp": 551,
+    "catchable": "Unknown",
+    "spd": 197,
+    "str": 41,
+    "con": 40,
+    "int": 48,
+    "wis": 35,
+    "agi": 46
+  }
+}

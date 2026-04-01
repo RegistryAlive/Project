@@ -1,0 +1,15 @@
+{
+  "id": 6276,
+  "name": "Floorlamp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Pretty foorlamp",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6276.png",
+  "file": "furniture-6276.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 706,
+  "name": "Geshan",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-706.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 53,
+    "hp": 299,
+    "sp": 663,
+    "catchable": "Unknown",
+    "spd": 127.5,
+    "str": 22,
+    "con": 21,
+    "int": 44,
+    "wis": 48,
+    "agi": 24
+  }
+}

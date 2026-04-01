@@ -1,0 +1,18 @@
+{
+  "id": 360,
+  "name": "Crimson Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Pure Iron / Aluminum / Steel",
+  "description": "A halberd that emits crimson light and can increase attack power",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 54,
+    "DEF": 24
+  },
+  "image": "data/images/weapon-360.png",
+  "file": "weapon-360.json"
+}

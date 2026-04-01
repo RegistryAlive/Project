@@ -1,0 +1,15 @@
+{
+  "id": 8064,
+  "name": "Motorbike Tick",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can be exchange for the Motorbike",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8064.png",
+  "file": "questprop-8064.json"
+}

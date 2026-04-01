@@ -1,0 +1,15 @@
+{
+  "id": 6247,
+  "name": "Assembly Basin",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used to make items which are not so steady.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6247.png",
+  "file": "furniture-6247.json"
+}

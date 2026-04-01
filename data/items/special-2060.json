@@ -1,0 +1,18 @@
+{
+  "id": 2060,
+  "name": "Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Silver",
+  "description": "Necklace which is saw rather generalized",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 1,
+    "DEF": 1
+  },
+  "image": "data/images/special-2060.png",
+  "file": "special-2060.json"
+}

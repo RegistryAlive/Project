@@ -1,0 +1,15 @@
+{
+  "id": 439,
+  "name": "Broken Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wood",
+  "description": "Damaged bow after excessive use.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-439.png",
+  "file": "weapon-439.json"
+}

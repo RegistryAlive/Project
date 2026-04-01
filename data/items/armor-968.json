@@ -1,0 +1,18 @@
+{
+  "id": 968,
+  "name": "Masked Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Nylon / Grass",
+  "description": "Designed to conceal the wearer's identity.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 11,
+    "DEF": 5
+  },
+  "image": "data/images/armor-968.png",
+  "file": "armor-968.json"
+}

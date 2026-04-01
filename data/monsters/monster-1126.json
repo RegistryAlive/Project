@@ -1,0 +1,45 @@
+{
+  "id": 1126,
+  "name": "Red Triceratops",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-1127.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Melon",
+      "itemId": 7422,
+      "itemFile": "material-7422.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tobacco",
+      "itemId": 7360,
+      "itemFile": "material-7360.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Fur",
+      "itemId": 7812,
+      "itemFile": "material-7812.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 69,
+    "hp": 736,
+    "sp": 628,
+    "catchable": "Yes",
+    "spd": 173.5,
+    "str": 44,
+    "con": 46,
+    "int": 41,
+    "wis": 41,
+    "agi": 35
+  }
+}

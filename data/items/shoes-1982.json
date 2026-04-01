@@ -1,0 +1,15 @@
+{
+  "id": 1982,
+  "name": "Dark Flipflops",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 45,
+  "level": 90,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Dark flipflos, has strong magical defense power ~",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1982.png",
+  "file": "shoes-1982.json"
+}

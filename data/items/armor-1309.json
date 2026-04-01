@@ -1,0 +1,17 @@
+{
+  "id": 1309,
+  "name": "New Tiger Clot",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The Year of the Tiger's, New Year Tiger Set. A cute Tiger costume. Four piece Set Effect : Critical damage +5%.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 350
+  },
+  "image": "data/images/armor-1309.png",
+  "file": "armor-1309.json"
+}

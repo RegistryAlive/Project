@@ -1,0 +1,17 @@
+{
+  "id": 275,
+  "name": "War Pure Iron Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Pure Iron / Wood",
+  "description": "A halberd made from pure iron.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 26
+  },
+  "image": "data/images/weapon-275.png",
+  "file": "weapon-275.json"
+}

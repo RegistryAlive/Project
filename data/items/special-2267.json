@@ -1,0 +1,18 @@
+{
+  "id": 2267,
+  "name": "Strong Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To evenly upgrade slight defense and agility",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 2,
+    "SPD": 2
+  },
+  "image": "data/images/special-2267.png",
+  "file": "special-2267.json"
+}

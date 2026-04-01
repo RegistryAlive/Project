@@ -1,0 +1,18 @@
+{
+  "id": 774,
+  "name": "Agnailed Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Clive's special stick.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 9,
+    "DEF": 11
+  },
+  "image": "data/images/weapon-774.png",
+  "file": "weapon-774.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6272,
+  "name": "Stone Knife",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Used on work platform to chop wood.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6272.png",
+  "file": "furniture-6272.json"
+}

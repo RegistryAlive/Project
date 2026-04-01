@@ -1,0 +1,15 @@
+{
+  "id": 6317,
+  "name": "Whiteware Vase",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A white vase",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6317.png",
+  "file": "furniture-6317.json"
+}

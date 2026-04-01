@@ -1,0 +1,17 @@
+{
+  "id": 288,
+  "name": "Great Trident",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Copper / Iron",
+  "description": "Forged precisely with copper & iron, has 3 heads.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 52
+  },
+  "image": "data/images/weapon-288.png",
+  "file": "weapon-288.json"
+}

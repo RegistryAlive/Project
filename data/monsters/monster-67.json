@@ -1,0 +1,51 @@
+{
+  "id": 67,
+  "name": "Abra Earthworm",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-67.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Potato",
+      "itemId": 7428,
+      "itemFile": "material-7428.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pachyrhizus Leaf",
+      "itemId": 7413,
+      "itemFile": "material-7413.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 55,
+    "hp": 688,
+    "sp": 141,
+    "catchable": "Unknown",
+    "spd": 174.5,
+    "str": 50,
+    "con": 59,
+    "int": 4,
+    "wis": 6,
+    "agi": 46
+  }
+}

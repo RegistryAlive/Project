@@ -1,0 +1,15 @@
+{
+  "id": 1285,
+  "name": "Magic P Kimono",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Dark purple short kimono, sewn with loose and comfortable white fabric, wear it to participate in the cherry blossom festival~",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1285.png",
+  "file": "armor-1285.json"
+}

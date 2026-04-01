@@ -1,0 +1,18 @@
+{
+  "id": 7214,
+  "name": "Vegetable Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Vegetable",
+  "description": "Noodles with several kinds of vegetable",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 90
+  },
+  "image": "data/images/material-7214.png",
+  "file": "material-7214.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 627,
+  "name": "Cold Earth Frog",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-627.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 20,
+    "hp": 177,
+    "sp": 148,
+    "catchable": "Unknown",
+    "spd": 56,
+    "str": 11,
+    "con": 14,
+    "int": 10,
+    "wis": 12,
+    "agi": 13
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": 536,
+  "name": "Perpetual Jellyfish",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-536.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Sea Water",
+      "itemId": 7891,
+      "itemFile": "material-7891.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tuna",
+      "itemId": 7491,
+      "itemFile": "material-7491.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sardine",
+      "itemId": 7487,
+      "itemFile": "material-7487.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Coral",
+      "itemId": 7733,
+      "itemFile": "material-7733.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 54,
+    "hp": 490,
+    "sp": 618,
+    "catchable": "Yes",
+    "spd": 105,
+    "str": 30,
+    "con": 32,
+    "int": 44,
+    "wis": 44,
+    "agi": 12
+  }
+}

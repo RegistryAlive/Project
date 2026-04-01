@@ -1,0 +1,18 @@
+{
+  "id": 2640,
+  "name": "Angel's Wing+6",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 72,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is improved but not socketed.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 36,
+    "MDEF": 36
+  },
+  "image": "data/images/special-2640.png",
+  "file": "special-2640.json"
+}

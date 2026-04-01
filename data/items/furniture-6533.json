@@ -1,0 +1,15 @@
+{
+  "id": 6533,
+  "name": "Summer Chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, blue and white lounge chair",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6533.png",
+  "file": "furniture-6533.json"
+}

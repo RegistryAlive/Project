@@ -1,0 +1,18 @@
+{
+  "id": 414,
+  "name": "Meniscus Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Wood / Grass",
+  "description": "a crooked bow curved like the moon, tough to bend.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 11,
+    "SPD": 9
+  },
+  "image": "data/images/weapon-414.png",
+  "file": "weapon-414.json"
+}

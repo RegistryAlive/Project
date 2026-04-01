@@ -1,0 +1,17 @@
+{
+  "id": 2179,
+  "name": "Pink Bead",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A bead that stirs its user strong potential magic.",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 80
+  },
+  "image": "data/images/special-2179.png",
+  "file": "special-2179.json"
+}

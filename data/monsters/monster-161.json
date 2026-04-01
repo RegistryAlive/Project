@@ -1,0 +1,33 @@
+{
+  "id": 161,
+  "name": "Middle Guard",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-161.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Bread",
+      "itemId": 7010,
+      "itemFile": "material-7010.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "French Bread",
+      "itemId": 7015,
+      "itemFile": "material-7015.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 60,
+    "hp": 469,
+    "sp": 380,
+    "catchable": "Unknown",
+    "spd": 152,
+    "str": 37,
+    "con": 36,
+    "int": 22,
+    "wis": 24,
+    "agi": 31
+  }
+}

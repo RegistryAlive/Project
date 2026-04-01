@@ -1,0 +1,18 @@
+{
+  "id": 430,
+  "name": "Dragon Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It has the power to break down the earth.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 27,
+    "SPD": 25
+  },
+  "image": "data/images/weapon-430.png",
+  "file": "weapon-430.json"
+}

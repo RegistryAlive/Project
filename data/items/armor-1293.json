@@ -1,0 +1,18 @@
+{
+  "id": 1293,
+  "name": "TanabataKimono",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Japanese costumes prepared to commemorate the Tanabata Festival are a day when you can make a wish to the stars.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25,
+    "MaxHP": 300
+  },
+  "image": "data/images/armor-1293.png",
+  "file": "armor-1293.json"
+}

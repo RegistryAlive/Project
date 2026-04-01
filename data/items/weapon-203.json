@@ -1,0 +1,18 @@
+{
+  "id": 203,
+  "name": "Violet Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Magic / Copper / Pure Iron / Steel",
+  "description": "A sword that gives off an incredible aura.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 37,
+    "MATK": 27
+  },
+  "image": "data/images/weapon-203.png",
+  "file": "weapon-203.json"
+}

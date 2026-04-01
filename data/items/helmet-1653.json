@@ -1,0 +1,18 @@
+{
+  "id": 1653,
+  "name": "LittDevil Horn",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 4,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Eva's special enhanced equipment cannot be repaired and cannot be traded or transferred",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 42,
+    "MaxHP": 320
+  },
+  "image": "data/images/helmet-1653.png",
+  "file": "helmet-1653.json"
+}

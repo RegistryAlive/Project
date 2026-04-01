@@ -1,0 +1,18 @@
+{
+  "id": 157,
+  "name": "Spring P.I SW",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 54,
+  "level": 108,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword made from melted pure iron cooled by the sacred mountain of god.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 54,
+    "SPD": 54
+  },
+  "image": "data/images/weapon-157.png",
+  "file": "weapon-157.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 259,
+  "name": "Bush Snake",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-259.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Snake Meat",
+      "itemId": 7482,
+      "itemFile": "material-7482.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Poisonous Liquid",
+      "itemId": 7755,
+      "itemFile": "material-7755.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Snake Tooth",
+      "itemId": 7734,
+      "itemFile": "material-7734.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 50,
+    "hp": 389,
+    "sp": 467,
+    "catchable": "Yes",
+    "spd": 135,
+    "str": 30,
+    "con": 25,
+    "int": 32,
+    "wis": 33,
+    "agi": 30
+  }
+}

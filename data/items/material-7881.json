@@ -1,0 +1,18 @@
+{
+  "id": 7881,
+  "name": "Fugu Nigiri Sashimi",
+  "type": "Material",
+  "category": "material",
+  "rank": 7,
+  "level": 14,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish / Rice",
+  "description": "The nigiri sushi with fugu roe",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 150
+  },
+  "image": "data/images/material-7881.png",
+  "file": "material-7881.json"
+}

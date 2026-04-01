@@ -1,0 +1,18 @@
+{
+  "id": 1110,
+  "name": "Light Kung-Fu Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 43,
+  "level": 86,
+  "rarity": "legendary",
+  "base": "Flower / Leather",
+  "description": "Kung-fu clothes made of gold silk and animal hair.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 23,
+    "ATK": 20
+  },
+  "image": "data/images/armor-1110.png",
+  "file": "armor-1110.json"
+}

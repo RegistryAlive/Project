@@ -1,0 +1,27 @@
+{
+  "id": 558,
+  "name": "Arez",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-558.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 22,
+    "hp": 215,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 45,
+    "str": 33,
+    "con": 20,
+    "int": 4,
+    "wis": 3,
+    "agi": 6
+  }
+}

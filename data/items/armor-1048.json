@@ -1,0 +1,18 @@
+{
+  "id": 1048,
+  "name": "Blue Steel Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Light armor made of deep sea cold steel.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 19,
+    "MDEF": 10
+  },
+  "image": "data/images/armor-1048.png",
+  "file": "armor-1048.json"
+}

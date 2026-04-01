@@ -1,0 +1,18 @@
+{
+  "id": 673,
+  "name": "Thunder Talon",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "For Shizune's exclusive use",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 17,
+    "ATK": 13
+  },
+  "image": "data/images/weapon-673.png",
+  "file": "weapon-673.json"
+}

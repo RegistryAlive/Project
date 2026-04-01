@@ -1,0 +1,15 @@
+{
+  "id": 6742,
+  "name": "Plaid Pillow",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Soft cushion sewn in gingham fabric.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6742.png",
+  "file": "furniture-6742.json"
+}

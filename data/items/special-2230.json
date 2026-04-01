@@ -1,0 +1,17 @@
+{
+  "id": 2230,
+  "name": "Pickpocket rin",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Pickpocket special ring, put on after the effort has to make people like Thief",
+  "size": "1x1",
+  "attributes": {
+    "Special": 30
+  },
+  "image": "data/images/special-2230.png",
+  "file": "special-2230.json"
+}

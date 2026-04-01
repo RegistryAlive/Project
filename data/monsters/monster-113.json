@@ -1,0 +1,45 @@
+{
+  "id": 113,
+  "name": "Snow Wolf",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-113.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Wolf Fur",
+      "itemId": 7784,
+      "itemFile": "material-7784.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wolf Tooth",
+      "itemId": 7724,
+      "itemFile": "material-7724.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Bone",
+      "itemId": 7776,
+      "itemFile": "material-7776.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 702,
+    "sp": 634,
+    "catchable": "Unknown",
+    "spd": 210.5,
+    "str": 37,
+    "con": 43,
+    "int": 40,
+    "wis": 41,
+    "agi": 52
+  }
+}

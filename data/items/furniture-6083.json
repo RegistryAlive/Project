@@ -1,0 +1,15 @@
+{
+  "id": 6083,
+  "name": "Silenced",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Suppresses the sound of an explosion",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6083.png",
+  "file": "furniture-6083.json"
+}

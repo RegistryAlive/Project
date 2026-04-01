@@ -1,0 +1,18 @@
+{
+  "id": 1686,
+  "name": "Royal Fox Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The demon fox earrings rumored to be transformed by the messenger of the gods have a 20% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MaxHP": 350
+  },
+  "image": "data/images/helmet-1686.png",
+  "file": "helmet-1686.json"
+}

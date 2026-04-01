@@ -1,0 +1,18 @@
+{
+  "id": 1924,
+  "name": "Fire-red Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 45,
+  "level": 90,
+  "rarity": "legendary",
+  "base": "Leather / Flower",
+  "description": "Nice leather boots.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "SPD": 15
+  },
+  "image": "data/images/shoes-1924.png",
+  "file": "shoes-1924.json"
+}

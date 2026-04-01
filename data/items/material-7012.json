@@ -1,0 +1,18 @@
+{
+  "id": 7012,
+  "name": "Multi Bread",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat / Fruit / Bean",
+  "description": "It's made from various grains",
+  "size": "1x1",
+  "attributes": {
+    "HP": 140,
+    "SP": 60
+  },
+  "image": "data/images/material-7012.png",
+  "file": "material-7012.json"
+}

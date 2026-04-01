@@ -1,0 +1,15 @@
+{
+  "id": 6049,
+  "name": "Gasoline",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Oil",
+  "description": "Bucket for containing gasoline",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6049.png",
+  "file": "furniture-6049.json"
+}

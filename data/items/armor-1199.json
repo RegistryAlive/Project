@@ -1,0 +1,18 @@
+{
+  "id": 1199,
+  "name": "Fantasy Xmas M",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Fantasy Male Xmas Clothes.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "MATK": 20
+  },
+  "image": "data/images/armor-1199.png",
+  "file": "armor-1199.json"
+}

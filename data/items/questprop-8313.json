@@ -1,0 +1,15 @@
+{
+  "id": 8313,
+  "name": "Crystal Glass",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can be transformed into energy element",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8313.png",
+  "file": "questprop-8313.json"
+}

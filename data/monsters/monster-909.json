@@ -1,0 +1,27 @@
+{
+  "id": 909,
+  "name": "Snake Lord",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-909.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 94,
+    "hp": 18000,
+    "sp": 641,
+    "catchable": "Unknown",
+    "spd": 225,
+    "str": 81,
+    "con": 85,
+    "int": 37,
+    "wis": 37,
+    "agi": 42
+  }
+}

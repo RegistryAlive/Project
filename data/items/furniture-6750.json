@@ -1,0 +1,15 @@
+{
+  "id": 6750,
+  "name": "Spring Window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Chinese windows and flowers with Chinese New Year festivities.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6750.png",
+  "file": "furniture-6750.json"
+}

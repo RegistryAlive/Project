@@ -1,0 +1,15 @@
+{
+  "id": 6716,
+  "name": "NewYear Table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The solid table made of solid wood is decorated with a festive atmosphere.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6716.png",
+  "file": "furniture-6716.json"
+}

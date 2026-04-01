@@ -1,0 +1,39 @@
+{
+  "id": 386,
+  "name": "Defensive Ghost",
+  "location": "Ghost Isle",
+  "image": "data/Monster_Images/monster-386.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Angry Skeleton",
+      "itemId": 7806,
+      "itemFile": "material-7806.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Energy Stone",
+      "itemId": 7815,
+      "itemFile": "material-7815.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pink Crystal",
+      "itemId": 7598,
+      "itemFile": "material-7598.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 83,
+    "hp": 986,
+    "sp": 767,
+    "catchable": "Unknown",
+    "spd": 222.5,
+    "str": 53,
+    "con": 59,
+    "int": 40,
+    "wis": 48,
+    "agi": 49
+  }
+}

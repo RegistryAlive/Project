@@ -1,0 +1,18 @@
+{
+  "id": 2788,
+  "name": "Koraka Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 17,
+  "level": 34,
+  "rarity": "legendary",
+  "base": "Leather / Grass",
+  "description": "Special gloves for Japanese fighter Kouga.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 13,
+    "SPD": 4
+  },
+  "image": "data/images/arm-2788.png",
+  "file": "arm-2788.json"
+}

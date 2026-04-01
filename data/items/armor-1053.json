@@ -1,0 +1,17 @@
+{
+  "id": 1053,
+  "name": "Fly Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Nylon / Flower",
+  "description": "Masked clothes made of lightweight material.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 27
+  },
+  "image": "data/images/armor-1053.png",
+  "file": "armor-1053.json"
+}

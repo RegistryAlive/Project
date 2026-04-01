@@ -1,0 +1,51 @@
+{
+  "id": 6,
+  "name": "Poisonous Ant",
+  "location": "Subway",
+  "image": "data/Monster_Images/monster-6.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Ant Antennae",
+      "itemId": 7797,
+      "itemFile": "material-7797.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Green Garlic",
+      "itemId": 7415,
+      "itemFile": "material-7415.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Soya",
+      "itemId": 7469,
+      "itemFile": "material-7469.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grey Clay",
+      "itemId": 7645,
+      "itemFile": "material-7645.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 22,
+    "hp": 144,
+    "sp": 153,
+    "catchable": "Yes",
+    "spd": 63,
+    "str": 17,
+    "con": 11,
+    "int": 11,
+    "wis": 12,
+    "agi": 15
+  }
+}

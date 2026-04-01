@@ -1,0 +1,15 @@
+{
+  "id": 6122,
+  "name": "Sandbag",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is used for filling sand",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6122.png",
+  "file": "furniture-6122.json"
+}

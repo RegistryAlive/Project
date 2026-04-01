@@ -1,0 +1,45 @@
+{
+  "id": 510,
+  "name": "Green Dragonfly",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-510.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Common Grass",
+      "itemId": 7365,
+      "itemFile": "material-7365.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Paper Grass",
+      "itemId": 7364,
+      "itemFile": "material-7364.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Green Garlic",
+      "itemId": 7415,
+      "itemFile": "material-7415.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Celery",
+      "itemId": 7407,
+      "itemFile": "material-7407.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 8,
+    "hp": 61,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 22,
+    "str": 3,
+    "con": 3,
+    "int": 6,
+    "wis": 7,
+    "agi": 5
+  }
+}

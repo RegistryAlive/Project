@@ -1,0 +1,15 @@
+{
+  "id": 1274,
+  "name": "Uniform",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Blue team uniform, representing the glory of the organization.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1274.png",
+  "file": "armor-1274.json"
+}

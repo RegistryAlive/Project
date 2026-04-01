@@ -1,0 +1,15 @@
+{
+  "id": 8512,
+  "name": "Bear Armor",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets that allow the white bear to become a partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8512.png",
+  "file": "questprop-8512.json"
+}

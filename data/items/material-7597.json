@@ -1,0 +1,15 @@
+{
+  "id": 7597,
+  "name": "White Crystal",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Quartz (Crystal)",
+  "description": "A Rare white crystal",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7597.png",
+  "file": "material-7597.json"
+}

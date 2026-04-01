@@ -1,0 +1,51 @@
+{
+  "id": 1,
+  "name": "Ant",
+  "location": "Subway",
+  "image": "data/Monster_Images/monster-1.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Ant Antennae",
+      "itemId": 7797,
+      "itemFile": "material-7797.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Rice",
+      "itemId": 7403,
+      "itemFile": "material-7403.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coffee Bean",
+      "itemId": 7427,
+      "itemFile": "material-7427.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 21,
+    "hp": 134,
+    "sp": 151,
+    "catchable": "Yes",
+    "spd": 59.5,
+    "str": 15,
+    "con": 10,
+    "int": 12,
+    "wis": 12,
+    "agi": 14
+  }
+}

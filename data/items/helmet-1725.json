@@ -1,0 +1,15 @@
+{
+  "id": 1725,
+  "name": "Sundae Jewelry",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Ice cold sundae on top of the head, very test of the sense of balance of the decorations.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/helmet-1725.png",
+  "file": "helmet-1725.json"
+}

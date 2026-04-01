@@ -1,0 +1,18 @@
+{
+  "id": 7157,
+  "name": "Roasted Ostrich Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Roasted ostrich meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 125,
+    "SP": 125
+  },
+  "image": "data/images/material-7157.png",
+  "file": "material-7157.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1297,
+  "name": "Under the Moon",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Gathering with friends under the moon, wearing soft and comfortable clothes, the light blue is like moonlight falling on the ground. The damage caused by critical strikes is slightly increased.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "MaxHP": 250
+  },
+  "image": "data/images/armor-1297.png",
+  "file": "armor-1297.json"
+}

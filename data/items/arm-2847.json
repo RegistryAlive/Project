@@ -1,0 +1,18 @@
+{
+  "id": 2847,
+  "name": "Flying Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Leaf / Flower / Grass",
+  "description": "High agility gloves made of blue leaves and fiber.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 21,
+    "DEF": 11
+  },
+  "image": "data/images/arm-2847.png",
+  "file": "arm-2847.json"
+}

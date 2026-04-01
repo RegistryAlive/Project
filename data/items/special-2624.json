@@ -1,0 +1,18 @@
+{
+  "id": 2624,
+  "name": "Angel Wing+4",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 56,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is improved but not socketed.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28,
+    "MDEF": 28
+  },
+  "image": "data/images/special-2624.png",
+  "file": "special-2624.json"
+}

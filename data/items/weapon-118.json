@@ -1,0 +1,18 @@
+{
+  "id": 118,
+  "name": "Pure Iron Big Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Pure Iron / Wood",
+  "description": "A sword made from pure iron, its quite wide.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "SPD": 15
+  },
+  "image": "data/images/weapon-118.png",
+  "file": "weapon-118.json"
+}

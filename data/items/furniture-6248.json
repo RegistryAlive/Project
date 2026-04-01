@@ -1,0 +1,15 @@
+{
+  "id": 6248,
+  "name": "Brand Iron",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Used on work platform to melt delicate materials.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6248.png",
+  "file": "furniture-6248.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 405,
+  "name": "Creamy Swing",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The aroma of cream, as if you are tasting the taste of dessert; crit rate of 30%, every forging +10 crit rate increased by 1%, up to a maximum of 40%, and with other Chef's Dream series of equipment at the same time equipment can be additional coat effec",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 300,
+    "MATK": 50
+  },
+  "image": "data/images/weapon-405.png",
+  "file": "weapon-405.json"
+}

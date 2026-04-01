@@ -1,0 +1,17 @@
+{
+  "id": 7184,
+  "name": "Boiled Quail Egg",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Egg",
+  "description": "It will be very delicious with some salt",
+  "size": "1x1",
+  "attributes": {
+    "SP": 100
+  },
+  "image": "data/images/material-7184.png",
+  "file": "material-7184.json"
+}

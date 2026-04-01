@@ -1,0 +1,17 @@
+{
+  "id": 10071,
+  "name": "Paper Boat",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A paper boat that can sail on the sea, using liquid gas as fuel.",
+  "size": "4x4",
+  "attributes": {
+    "SPECIAL": 36975
+  },
+  "image": "data/images/vehicle-10071.png",
+  "file": "vehicle-10071.json"
+}

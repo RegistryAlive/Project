@@ -1,0 +1,33 @@
+{
+  "id": 188,
+  "name": "Purple Vine",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-188.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Rice With Roast Pork",
+      "itemId": 7037,
+      "itemFile": "material-7037.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 18,
+    "hp": 100,
+    "sp": 100,
+    "catchable": "No",
+    "spd": 33,
+    "str": 6,
+    "con": 6,
+    "int": 7,
+    "wis": 5,
+    "agi": 3
+  }
+}

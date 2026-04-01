@@ -1,0 +1,15 @@
+{
+  "id": 7813,
+  "name": "Lei Dragon Thigh",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "A Stiff leg bone of Lei Dragon",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7813.png",
+  "file": "material-7813.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 181,
+  "name": "Sky Sword+3",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 11,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Can't be socketed.32% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "SPD": 14
+  },
+  "image": "data/images/weapon-181.png",
+  "file": "weapon-181.json"
+}

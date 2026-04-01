@@ -1,0 +1,17 @@
+{
+  "id": 2903,
+  "name": "Darkshade Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Leaf / Leather / Feather",
+  "description": "A pair of MDEF gloves woven from leaves and hide",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 36
+  },
+  "image": "data/images/arm-2903.png",
+  "file": "arm-2903.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6685,
+  "name": "H Candy Basket",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Fill up the basket with trick or treats!",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6685.png",
+  "file": "furniture-6685.json"
+}

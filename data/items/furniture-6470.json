@@ -1,0 +1,15 @@
+{
+  "id": 6470,
+  "name": "Dumpling Deco",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Festive Decoration",
+  "size": "1x3",
+  "attributes": {},
+  "image": "data/images/furniture-6470.png",
+  "file": "furniture-6470.json"
+}

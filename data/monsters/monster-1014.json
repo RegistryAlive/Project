@@ -1,0 +1,27 @@
+{
+  "id": 1014,
+  "name": "Wine Maker",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-1014.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 48,
+    "hp": 337,
+    "sp": 510,
+    "catchable": "Unknown",
+    "spd": 120,
+    "str": 28,
+    "con": 26,
+    "int": 29,
+    "wis": 37,
+    "agi": 24
+  }
+}

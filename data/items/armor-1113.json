@@ -1,0 +1,18 @@
+{
+  "id": 1113,
+  "name": "Soldier's Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Leaf",
+  "description": "Portable clothes that show the wearer's status.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "MDEF": 15
+  },
+  "image": "data/images/armor-1113.png",
+  "file": "armor-1113.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1006,
+  "name": "Cotton Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "Ultra-comfortable, but not very durable.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 11,
+    "SPD": 5
+  },
+  "image": "data/images/armor-1006.png",
+  "file": "armor-1006.json"
+}

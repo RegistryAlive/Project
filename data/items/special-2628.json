@@ -1,0 +1,18 @@
+{
+  "id": 2628,
+  "name": "Fierce Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Makes the pet become extremely ferocious.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "MaxHP": 200
+  },
+  "image": "data/images/special-2628.png",
+  "file": "special-2628.json"
+}

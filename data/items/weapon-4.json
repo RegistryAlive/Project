@@ -1,0 +1,18 @@
+{
+  "id": 4,
+  "name": "Copper Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 2,
+  "level": 2,
+  "rarity": "common",
+  "base": "Copper",
+  "description": "A knife made from copper",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 2,
+    "DEF": 2
+  },
+  "image": "data/images/weapon-4.png",
+  "file": "weapon-4.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 7163,
+  "name": "Neapolitan Sun",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Delicious Neapolitan Sundaes,SP+400.Can be traded",
+  "size": "1x1",
+  "attributes": {
+    "SP": 400
+  },
+  "image": "data/images/material-7163.png",
+  "file": "material-7163.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7819,
+  "name": "Goose Feather",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Feather",
+  "description": "A Feather of goose",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7819.png",
+  "file": "material-7819.json"
+}

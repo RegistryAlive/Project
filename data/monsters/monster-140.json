@@ -1,0 +1,39 @@
+{
+  "id": 140,
+  "name": "Orange Beetle",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-140.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Golden Apple",
+      "itemId": 7517,
+      "itemFile": "material-7517.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Red Clay",
+      "itemId": 7641,
+      "itemFile": "material-7641.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 65,
+    "hp": 637,
+    "sp": 418,
+    "catchable": "Unknown",
+    "spd": 177.5,
+    "str": 59,
+    "con": 40,
+    "int": 30,
+    "wis": 26,
+    "agi": 40
+  }
+}

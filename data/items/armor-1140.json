@@ -1,0 +1,18 @@
+{
+  "id": 1140,
+  "name": "Yukata",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 10,
+  "rarity": "common",
+  "base": null,
+  "description": "Special holiday costume obtained at the Summer Festival, limited to men.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "MDEF": 3
+  },
+  "image": "data/images/armor-1140.png",
+  "file": "armor-1140.json"
+}

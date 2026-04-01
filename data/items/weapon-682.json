@@ -1,0 +1,18 @@
+{
+  "id": 682,
+  "name": "Furious Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Hard Tissue / Pure Iron / Steel",
+  "description": "Bloody claw",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 42,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-682.png",
+  "file": "weapon-682.json"
+}

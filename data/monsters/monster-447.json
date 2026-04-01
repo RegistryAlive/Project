@@ -1,0 +1,27 @@
+{
+  "id": 447,
+  "name": "Water Hook Spirit (Quest)",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-447.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Devil's Spar Piece",
+      "itemId": 6204,
+      "itemFile": "furniture-6204.json",
+      "itemCategory": "furniture"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 1164,
+    "sp": 658,
+    "catchable": "Unknown",
+    "spd": 185,
+    "str": 44,
+    "con": 44,
+    "int": 39,
+    "wis": 43,
+    "agi": 40
+  }
+}

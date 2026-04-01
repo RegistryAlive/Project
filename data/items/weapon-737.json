@@ -1,0 +1,18 @@
+{
+  "id": 737,
+  "name": "summer energy",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "One of the indispensable sports by the sea, hurry up and show off with a handsome surfboard! 46% critical strike chance; when equipped with other Summer Boom series equipment, you can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "SPD": 40
+  },
+  "image": "data/images/weapon-737.png",
+  "file": "weapon-737.json"
+}

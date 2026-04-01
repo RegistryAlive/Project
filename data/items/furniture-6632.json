@@ -1,0 +1,15 @@
+{
+  "id": 6632,
+  "name": "Easter balloon",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "colorful egg-shaped balloons",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6632.png",
+  "file": "furniture-6632.json"
+}

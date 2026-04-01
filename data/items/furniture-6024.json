@@ -1,0 +1,15 @@
+{
+  "id": 6024,
+  "name": "Water Pipe",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Chemical",
+  "description": "Water can flow smoothly",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6024.png",
+  "file": "furniture-6024.json"
+}

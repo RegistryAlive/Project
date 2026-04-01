@@ -1,0 +1,17 @@
+{
+  "id": 1371,
+  "name": "Lovely Headdre",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Headgear shaped like a doggie.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/helmet-1371.png",
+  "file": "helmet-1371.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2687,
+  "name": "Passion Clo +2",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 40,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A clockwork that grows with physical passion.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "DEF": 20
+  },
+  "image": "data/images/special-2687.png",
+  "file": "special-2687.json"
+}

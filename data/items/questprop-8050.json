@@ -1,0 +1,15 @@
+{
+  "id": 8050,
+  "name": "Raft Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can be exchange for raft",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8050.png",
+  "file": "questprop-8050.json"
+}

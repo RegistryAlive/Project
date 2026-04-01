@@ -1,0 +1,15 @@
+{
+  "id": 2574,
+  "name": "Decelerate Saddle",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Equipped by pets to reduce the SPD discrepancy between characters and pets. Can take effect when player ride it. Only original level 10+ beast pets are able to equip it, can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2574.png",
+  "file": "special-2574.json"
+}

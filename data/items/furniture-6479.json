@@ -1,0 +1,15 @@
+{
+  "id": 6479,
+  "name": "Purple Bonsai",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Small Purple Flower Bonsai. Placed at home to increase greenness.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6479.png",
+  "file": "furniture-6479.json"
+}

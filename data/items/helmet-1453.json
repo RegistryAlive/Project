@@ -1,0 +1,18 @@
+{
+  "id": 1453,
+  "name": "Maple Crest",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Leaf / Grass",
+  "description": "A laurel which is made up of red leaves",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10,
+    "MATK": 3
+  },
+  "image": "data/images/helmet-1453.png",
+  "file": "helmet-1453.json"
+}

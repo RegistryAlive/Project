@@ -1,0 +1,18 @@
+{
+  "id": 1645,
+  "name": "BreezyHeadband",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The headband from the ancient country of Dongying, decorated with bells. It can make the person wearing it feel refreshed and the heat is gone. Complete four-piece suit effect: SPD+100",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 30,
+    "MaxSP": 50
+  },
+  "image": "data/images/helmet-1645.png",
+  "file": "helmet-1645.json"
+}

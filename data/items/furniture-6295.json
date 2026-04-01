@@ -1,0 +1,15 @@
+{
+  "id": 6295,
+  "name": "Lucky Cat",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Red Clay / White/Yellow Clay / Wood",
+  "description": "It's said that this cat brings luck and fortune.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6295.png",
+  "file": "furniture-6295.json"
+}

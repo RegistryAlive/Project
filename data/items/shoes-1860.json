@@ -1,0 +1,17 @@
+{
+  "id": 1860,
+  "name": "Black Steel Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Steel / Iron",
+  "description": "Long fighting boots made from black steel.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 33
+  },
+  "image": "data/images/shoes-1860.png",
+  "file": "shoes-1860.json"
+}

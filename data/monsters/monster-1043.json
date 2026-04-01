@@ -1,0 +1,39 @@
+{
+  "id": 1043,
+  "name": "Leonardo",
+  "location": "Turtle Isle",
+  "image": "data/Monster_Images/monster-1044.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 110,
+    "hp": 1122,
+    "sp": 1268,
+    "catchable": "Unknown",
+    "spd": 223,
+    "str": 72,
+    "con": 79,
+    "int": 74,
+    "wis": 76,
+    "agi": 29
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1084,
+  "name": "Knight's Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Iron / Grass / Flower",
+  "description": "Good defence and agility. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "DEF": 10
+  },
+  "image": "data/images/armor-1084.png",
+  "file": "armor-1084.json"
+}

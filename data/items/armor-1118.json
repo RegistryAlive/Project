@@ -1,0 +1,18 @@
+{
+  "id": 1118,
+  "name": "Fire Aurora Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Flower",
+  "description": "Suit: Damages Wind enemies;-50% damage to Water enemies.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 15,
+    "DEF": 10
+  },
+  "image": "data/images/armor-1118.png",
+  "file": "armor-1118.json"
+}

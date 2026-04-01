@@ -1,0 +1,18 @@
+{
+  "id": 1055,
+  "name": "Red Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Leather / Flower / Grass",
+  "description": "crimson light-footed clothes for fighting",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 24,
+    "MATK": 8
+  },
+  "image": "data/images/armor-1055.png",
+  "file": "armor-1055.json"
+}

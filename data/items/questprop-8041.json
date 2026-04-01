@@ -1,0 +1,15 @@
+{
+  "id": 8041,
+  "name": "Welling Scroll",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is needed in the Welling Village's trial",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8041.png",
+  "file": "questprop-8041.json"
+}

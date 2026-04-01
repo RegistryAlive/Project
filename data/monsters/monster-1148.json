@@ -1,0 +1,33 @@
+{
+  "id": 1148,
+  "name": "Scorpion",
+  "location": "(Unknown)",
+  "image": "data/Monster_Images/monster-1149.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 64,
+    "hp": 525,
+    "sp": 481,
+    "catchable": "Unknown",
+    "spd": 188,
+    "str": 43,
+    "con": 32,
+    "int": 40,
+    "wis": 31,
+    "agi": 46
+  }
+}

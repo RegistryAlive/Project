@@ -1,0 +1,18 @@
+{
+  "id": 2733,
+  "name": "Lucifer Wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The wings of the fallen angel Lucifer known as the \"Morning Star\" can be inlaid",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55,
+    "MATK": 55
+  },
+  "image": "data/images/special-2733.png",
+  "file": "special-2733.json"
+}

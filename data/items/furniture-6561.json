@@ -1,0 +1,15 @@
+{
+  "id": 6561,
+  "name": "Gothic fence",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Gothic style fence",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6561.png",
+  "file": "furniture-6561.json"
+}

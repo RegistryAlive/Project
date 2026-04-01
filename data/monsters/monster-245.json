@@ -1,0 +1,51 @@
+{
+  "id": 245,
+  "name": "Sheep",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-245.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Lamb",
+      "itemId": 7474,
+      "itemFile": "material-7474.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Spinach",
+      "itemId": 7408,
+      "itemFile": "material-7408.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bay Leaves",
+      "itemId": 7409,
+      "itemFile": "material-7409.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sheepskin",
+      "itemId": 7683,
+      "itemFile": "material-7683.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 45,
+    "hp": 348,
+    "sp": 344,
+    "catchable": "Unknown",
+    "spd": 125.5,
+    "str": 28,
+    "con": 28,
+    "int": 36,
+    "wis": 24,
+    "agi": 29
+  }
+}

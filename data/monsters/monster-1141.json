@@ -1,0 +1,39 @@
+{
+  "id": 1141,
+  "name": "Turquoise Bat",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-1142.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beak",
+      "itemId": 7788,
+      "itemFile": "material-7788.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Goose Egg",
+      "itemId": 7504,
+      "itemFile": "material-7504.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 82,
+    "hp": 745,
+    "sp": 876,
+    "catchable": "Unknown",
+    "spd": 231,
+    "str": 39,
+    "con": 43,
+    "int": 54,
+    "wis": 56,
+    "agi": 54
+  }
+}

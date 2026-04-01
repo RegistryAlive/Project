@@ -1,0 +1,17 @@
+{
+  "id": 1507,
+  "name": "Leaf Headscarf",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Leaf",
+  "description": "A light headscarf made of green leaves.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 21
+  },
+  "image": "data/images/helmet-1507.png",
+  "file": "helmet-1507.json"
+}

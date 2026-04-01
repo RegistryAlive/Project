@@ -1,0 +1,33 @@
+{
+  "id": 469,
+  "name": "Evil Tree",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-469.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Pork Bone Noodles",
+      "itemId": 7172,
+      "itemFile": "material-7172.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "1.5X Holy EXP Potion",
+      "itemId": 8532,
+      "itemFile": "questprop-8532.json",
+      "itemCategory": "questprop"
+    }
+  ],
+  "stats": {
+    "level": 24,
+    "hp": 150,
+    "sp": 100,
+    "catchable": "No",
+    "spd": 52,
+    "str": 9,
+    "con": 10,
+    "int": 5,
+    "wis": 4,
+    "agi": 8
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 634,
+  "name": "Feather Cane",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Decorated with the feathers of a blue bird, a pink hedron staff surrounded by attracting stardust shards. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 45,
+    "MaxSP": 350
+  },
+  "image": "data/images/weapon-634.png",
+  "file": "weapon-634.json"
+}

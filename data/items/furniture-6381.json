@@ -1,0 +1,15 @@
+{
+  "id": 6381,
+  "name": "Sweet Door",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "can go to the sweet flatlet.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6381.png",
+  "file": "furniture-6381.json"
+}

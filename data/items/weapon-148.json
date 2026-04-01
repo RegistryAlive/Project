@@ -1,0 +1,18 @@
+{
+  "id": 148,
+  "name": "Western Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Iron / Copper",
+  "description": "Common in Europe it has a long, flexible blade.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 32,
+    "SPD": 32
+  },
+  "image": "data/images/weapon-148.png",
+  "file": "weapon-148.json"
+}

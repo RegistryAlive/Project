@@ -1,0 +1,18 @@
+{
+  "id": 2061,
+  "name": "Jewel Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "Necklace which is inlaid common bijou",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 7,
+    "MATK": 4
+  },
+  "image": "data/images/special-2061.png",
+  "file": "special-2061.json"
+}

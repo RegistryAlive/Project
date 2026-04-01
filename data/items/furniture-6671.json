@@ -1,0 +1,15 @@
+{
+  "id": 6671,
+  "name": "Moon Viewing H",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A beautiful paper fan with a full moon pattern painted on it can be hung on the wall as a decoration.",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6671.png",
+  "file": "furniture-6671.json"
+}

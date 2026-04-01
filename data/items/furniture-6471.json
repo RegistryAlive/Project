@@ -1,0 +1,15 @@
+{
+  "id": 6471,
+  "name": "Dragon Boat Deco",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Festive Decoration",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6471.png",
+  "file": "furniture-6471.json"
+}

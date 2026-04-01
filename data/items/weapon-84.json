@@ -1,0 +1,18 @@
+{
+  "id": 84,
+  "name": "Ghost Rhapsody",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A mysterious scythe born to return the ghosts of the lost world to the underworld. Has 46% crit effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "MaxSP": 350
+  },
+  "image": "data/images/weapon-84.png",
+  "file": "weapon-84.json"
+}

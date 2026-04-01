@@ -1,0 +1,15 @@
+{
+  "id": 7710,
+  "name": "Fine Feather",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Feather",
+  "description": "A Light feather extracted heavy impurity",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7710.png",
+  "file": "material-7710.json"
+}

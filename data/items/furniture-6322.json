@@ -1,0 +1,15 @@
+{
+  "id": 6322,
+  "name": "Small Carpet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Cleans shoes and a symbol if you welcome others.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6322.png",
+  "file": "furniture-6322.json"
+}

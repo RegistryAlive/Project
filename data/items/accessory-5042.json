@@ -1,0 +1,15 @@
+{
+  "id": 5042,
+  "name": "Black Tea",
+  "type": "ItemPetFruit",
+  "category": "accessory",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Increases Joan's ability by 1 point. Can only be compounded with a strengthened item.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5042.png",
+  "file": "accessory-5042.json"
+}

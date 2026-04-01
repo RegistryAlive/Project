@@ -1,0 +1,39 @@
+{
+  "id": 1038,
+  "name": "Lanternfish",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-1039.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Crab Roes",
+      "itemId": 7498,
+      "itemFile": "material-7498.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lobster",
+      "itemId": 7496,
+      "itemFile": "material-7496.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Shrimp",
+      "itemId": 7497,
+      "itemFile": "material-7497.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 138,
+    "hp": 1809,
+    "sp": 1623,
+    "catchable": "Unknown",
+    "spd": 333,
+    "str": 79,
+    "con": 92,
+    "int": 88,
+    "wis": 92,
+    "agi": 63
+  }
+}

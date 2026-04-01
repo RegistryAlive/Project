@@ -1,0 +1,15 @@
+{
+  "id": 8166,
+  "name": "Sun God's Oracle",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Obtained from the Sunlight God's trial",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8166.png",
+  "file": "questprop-8166.json"
+}

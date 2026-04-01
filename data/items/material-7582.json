@@ -1,0 +1,15 @@
+{
+  "id": 7582,
+  "name": "Aluminum Sand",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Aluminum",
+  "description": "Rare aluminum sand",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7582.png",
+  "file": "material-7582.json"
+}

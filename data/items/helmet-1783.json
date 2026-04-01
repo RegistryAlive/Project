@@ -1,0 +1,17 @@
+{
+  "id": 1783,
+  "name": "Steel Helmet-2",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Platinum / Steel",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 27
+  },
+  "image": "data/images/helmet-1783.png",
+  "file": "helmet-1783.json"
+}

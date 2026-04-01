@@ -1,0 +1,18 @@
+{
+  "id": 1032,
+  "name": "Satin Qi Pao",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "Beautiful, elgant, it shimmers in the moonlight.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 21,
+    "MATK": 3
+  },
+  "image": "data/images/armor-1032.png",
+  "file": "armor-1032.json"
+}

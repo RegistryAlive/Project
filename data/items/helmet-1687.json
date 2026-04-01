@@ -1,0 +1,17 @@
+{
+  "id": 1687,
+  "name": "Raccoon ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 19,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Furry cute raccoon dress up",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1687.png",
+  "file": "helmet-1687.json"
+}

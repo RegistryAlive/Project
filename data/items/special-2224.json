@@ -1,0 +1,18 @@
+{
+  "id": 2224,
+  "name": "Cotton Scroll",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Leather / Mercury",
+  "description": "A scroll made from jade and silk.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 75,
+    "MaxSP": 400
+  },
+  "image": "data/images/special-2224.png",
+  "file": "special-2224.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6084,
+  "name": "Precision Sight",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Aims at the target by red laser",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6084.png",
+  "file": "furniture-6084.json"
+}

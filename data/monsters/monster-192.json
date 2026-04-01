@@ -1,0 +1,33 @@
+{
+  "id": 192,
+  "name": "Earth-skin Troll",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-192.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Olla Noodles",
+      "itemId": 7065,
+      "itemFile": "material-7065.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 72,
+    "hp": 369,
+    "sp": 339,
+    "catchable": "Unknown",
+    "spd": 150,
+    "str": 24,
+    "con": 24,
+    "int": 19,
+    "wis": 19,
+    "agi": 21
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8364,
+  "name": "Jolly Bell",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 1,
+  "rarity": "common",
+  "base": null,
+  "description": "Exchange for a Christmas gift.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8364.png",
+  "file": "questprop-8364.json"
+}

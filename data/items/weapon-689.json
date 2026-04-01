@@ -1,0 +1,17 @@
+{
+  "id": 689,
+  "name": "Adze",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Copper / Grass / Wood",
+  "description": "It is made of stones.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 11
+  },
+  "image": "data/images/weapon-689.png",
+  "file": "weapon-689.json"
+}

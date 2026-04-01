@@ -1,0 +1,18 @@
+{
+  "id": 450,
+  "name": "FoxPaw String",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is rumored that there is a bow in which the spirit fox is boarding, and it feels endless power when holding it in the hand.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 55,
+    "MaxHP": 550
+  },
+  "image": "data/images/weapon-450.png",
+  "file": "weapon-450.json"
+}

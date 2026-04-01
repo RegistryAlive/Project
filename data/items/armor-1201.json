@@ -1,0 +1,15 @@
+{
+  "id": 1201,
+  "name": "Pure Love Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pure love suit for men",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1201.png",
+  "file": "armor-1201.json"
+}

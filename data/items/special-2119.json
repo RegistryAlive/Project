@@ -1,0 +1,18 @@
+{
+  "id": 2119,
+  "name": "Consistent Med",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To upgrade magic defense and minor agility",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 4,
+    "SPD": 2
+  },
+  "image": "data/images/special-2119.png",
+  "file": "special-2119.json"
+}

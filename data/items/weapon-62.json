@@ -1,0 +1,18 @@
+{
+  "id": 62,
+  "name": "Lightflare Blade",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Pure Iron / Steel / Hard Tissue",
+  "description": "A curved blade with a fiery colored rim",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "DEF": 30
+  },
+  "image": "data/images/weapon-62.png",
+  "file": "weapon-62.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1191,
+  "name": "Rosy Woolen Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Feather / Leather",
+  "description": "A piece of clothing made solely from feathers",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 14
+  },
+  "image": "data/images/armor-1191.png",
+  "file": "armor-1191.json"
+}

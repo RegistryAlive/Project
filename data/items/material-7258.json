@@ -1,0 +1,17 @@
+{
+  "id": 7258,
+  "name": "Sliced Beef",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Succulent roasted beef",
+  "size": "1x1",
+  "attributes": {
+    "HP": 275
+  },
+  "image": "data/images/material-7258.png",
+  "file": "material-7258.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6641,
+  "name": "ScatteredPetal",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "pale pink petals are scattered all over the place",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6641.png",
+  "file": "furniture-6641.json"
+}

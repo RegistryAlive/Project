@@ -1,0 +1,18 @@
+{
+  "id": 1832,
+  "name": "Pure Iron Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 16,
+  "level": 32,
+  "rarity": "legendary",
+  "base": "Pure Iron / Copper",
+  "description": "Firm boots that can increase magic damage.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 11,
+    "MATK": 5
+  },
+  "image": "data/images/shoes-1832.png",
+  "file": "shoes-1832.json"
+}

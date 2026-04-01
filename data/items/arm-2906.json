@@ -1,0 +1,18 @@
+{
+  "id": 2906,
+  "name": "B. of Wuyong",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Gold bracers have excellent offensive and defensive properties.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25,
+    "ATK": 20
+  },
+  "image": "data/images/arm-2906.png",
+  "file": "arm-2906.json"
+}

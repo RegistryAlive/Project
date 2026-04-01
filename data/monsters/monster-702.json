@@ -1,0 +1,27 @@
+{
+  "id": 702,
+  "name": "Frantic Spirit",
+  "location": "Ghost Isle",
+  "image": "data/Monster_Images/monster-702.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 88,
+    "hp": 949,
+    "sp": 668,
+    "catchable": "Unknown",
+    "spd": 242,
+    "str": 50,
+    "con": 55,
+    "int": 64,
+    "wis": 40,
+    "agi": 55
+  }
+}

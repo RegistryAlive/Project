@@ -1,0 +1,18 @@
+{
+  "id": 7268,
+  "name": "Sliced Snake",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Meat",
+  "description": "Roasted snake meat",
+  "size": "1x1",
+  "attributes": {
+    "SP": 110,
+    "HP": 55
+  },
+  "image": "data/images/material-7268.png",
+  "file": "material-7268.json"
+}

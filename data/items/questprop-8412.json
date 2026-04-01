@@ -1,0 +1,15 @@
+{
+  "id": 8412,
+  "name": "Goat Cheese",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Rhode Island specialties, delicious goat's milk cheese",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8412.png",
+  "file": "questprop-8412.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 10070,
+  "name": "Dragon Boat",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "The Dragon Boat Festival should be a scenic carrier, the fragrance of rice dumplings is rampant, the dragon boat jumps over the river, you can use the magic ball of wool as a substitute for wear and tear.",
+  "size": "5x4",
+  "attributes": {
+    "SPECIAL": 37001
+  },
+  "image": "data/images/vehicle-10070.png",
+  "file": "vehicle-10070.json"
+}

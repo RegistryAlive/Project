@@ -1,0 +1,17 @@
+{
+  "id": 7293,
+  "name": "Go Cole",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Super cole",
+  "size": "1x1",
+  "attributes": {
+    "HP": 1000
+  },
+  "image": "data/images/material-7293.png",
+  "file": "material-7293.json"
+}

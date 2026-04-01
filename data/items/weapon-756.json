@@ -1,0 +1,18 @@
+{
+  "id": 756,
+  "name": "Copper Gavel",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "A gavel which is refined from the copper,khaki",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 17,
+    "DEF": 19
+  },
+  "image": "data/images/weapon-756.png",
+  "file": "weapon-756.json"
+}

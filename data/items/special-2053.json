@@ -1,0 +1,18 @@
+{
+  "id": 2053,
+  "name": "Gold Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "Super expensive ear rings made from gold.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 8,
+    "MDEF": 4
+  },
+  "image": "data/images/special-2053.png",
+  "file": "special-2053.json"
+}

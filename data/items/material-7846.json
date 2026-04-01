@@ -1,0 +1,18 @@
+{
+  "id": 7846,
+  "name": "Rice Noodles",
+  "type": "Material",
+  "category": "material",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Rice",
+  "description": "Made of rice and is different from other noodles",
+  "size": "1x1",
+  "attributes": {
+    "HP": 80,
+    "SP": 20
+  },
+  "image": "data/images/material-7846.png",
+  "file": "material-7846.json"
+}

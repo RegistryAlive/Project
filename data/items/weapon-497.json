@@ -1,0 +1,18 @@
+{
+  "id": 497,
+  "name": "Stone Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 9,
+  "level": 18,
+  "rarity": "epic",
+  "base": "Rock / Wood",
+  "description": "It has an intelligence stone embeded at the top.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 13,
+    "DEF": 5
+  },
+  "image": "data/images/weapon-497.png",
+  "file": "weapon-497.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 5006,
+  "name": "Light Wand Box",
+  "type": "ItemBox",
+  "category": "accessory",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "MATK+10,MaxSp+80,+24% Critical. Can be enhanced but not socketed. Can be traded before opened.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5006.png",
+  "file": "accessory-5006.json"
+}

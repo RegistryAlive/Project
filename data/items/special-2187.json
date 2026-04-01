@@ -1,0 +1,17 @@
+{
+  "id": 2187,
+  "name": "Smile Mud Statue",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Jade / Grass",
+  "description": "A statue giving the user an extra 50% experience.",
+  "size": "1x1",
+  "attributes": {
+    "Special": 50
+  },
+  "image": "data/images/special-2187.png",
+  "file": "special-2187.json"
+}

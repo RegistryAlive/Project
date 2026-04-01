@@ -1,0 +1,18 @@
+{
+  "id": 1445,
+  "name": "Deer Horn Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 4,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A deer horn decorated hat: Christmas Clothing.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 2,
+    "MDEF": 2
+  },
+  "image": "data/images/helmet-1445.png",
+  "file": "helmet-1445.json"
+}

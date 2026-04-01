@@ -1,0 +1,18 @@
+{
+  "id": 399,
+  "name": "Glacier Lance",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The tip of the spear is crystal clear and entangled with a lingering cold air. It is said that the blade is polished from the thousand-year-old ice that has not melted in the ancient glaciers. Has 46% crit effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 70,
+    "MaxHP": 400
+  },
+  "image": "data/images/weapon-399.png",
+  "file": "weapon-399.json"
+}

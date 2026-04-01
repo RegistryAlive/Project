@@ -1,0 +1,15 @@
+{
+  "id": 7684,
+  "name": "Goatskin",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leather",
+  "description": "Hide of a goat",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7684.png",
+  "file": "material-7684.json"
+}

@@ -1,0 +1,51 @@
+{
+  "id": 54,
+  "name": "Ground Beetle",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-54.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Apple",
+      "itemId": 7433,
+      "itemFile": "material-7433.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Watermelon",
+      "itemId": 7440,
+      "itemFile": "material-7440.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cantaloupe",
+      "itemId": 7447,
+      "itemFile": "material-7447.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beetle Horn",
+      "itemId": 7783,
+      "itemFile": "material-7783.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 17,
+    "hp": 126,
+    "sp": 131,
+    "catchable": "Unknown",
+    "spd": 45.5,
+    "str": 11,
+    "con": 10,
+    "int": 9,
+    "wis": 11,
+    "agi": 10
+  }
+}

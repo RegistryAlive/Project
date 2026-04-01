@@ -1,0 +1,45 @@
+{
+  "id": 1046,
+  "name": "Burning Hippo",
+  "location": "Taiwan (Carnie) - Pleasure Island",
+  "image": "data/Monster_Images/monster-1047.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tomato",
+      "itemId": 7444,
+      "itemFile": "material-7444.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pineapple",
+      "itemId": 7445,
+      "itemFile": "material-7445.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 688,
+    "sp": 715,
+    "catchable": "Yes",
+    "spd": 176.5,
+    "str": 44,
+    "con": 42,
+    "int": 45,
+    "wis": 47,
+    "agi": 35
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2064,
+  "name": "Red Jade Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Jade",
+  "description": "Necklace which is rubbed from balas of volcano",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 13,
+    "ATK": 9
+  },
+  "image": "data/images/special-2064.png",
+  "file": "special-2064.json"
+}

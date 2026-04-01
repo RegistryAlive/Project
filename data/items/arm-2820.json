@@ -1,0 +1,18 @@
+{
+  "id": 2820,
+  "name": "Green Dragon Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Made from green dragon skin.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "SPD": 7
+  },
+  "image": "data/images/arm-2820.png",
+  "file": "arm-2820.json"
+}

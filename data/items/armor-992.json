@@ -1,0 +1,18 @@
+{
+  "id": 992,
+  "name": "War Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 32,
+  "level": 64,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "Fury's armor which can benefit acting",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 28,
+    "ATK": 4
+  },
+  "image": "data/images/armor-992.png",
+  "file": "armor-992.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2244,
+  "name": "Magic Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To slightly raise magic attack and magic defense.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 3,
+    "MDEF": 1
+  },
+  "image": "data/images/special-2244.png",
+  "file": "special-2244.json"
+}

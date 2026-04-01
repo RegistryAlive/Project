@@ -1,0 +1,17 @@
+{
+  "id": 2848,
+  "name": "Light Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "Soul gloves made up of petals of purple tulip.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 27
+  },
+  "image": "data/images/arm-2848.png",
+  "file": "arm-2848.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6521,
+  "name": "Lucky Carpet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Rusty carpet with good luck and lucky patterns",
+  "size": "5x3",
+  "attributes": {},
+  "image": "data/images/furniture-6521.png",
+  "file": "furniture-6521.json"
+}

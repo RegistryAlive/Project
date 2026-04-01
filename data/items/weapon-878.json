@@ -1,0 +1,18 @@
+{
+  "id": 878,
+  "name": "Earth Aurora Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Copper",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 35,
+    "DEF": 15
+  },
+  "image": "data/images/weapon-878.png",
+  "file": "weapon-878.json"
+}

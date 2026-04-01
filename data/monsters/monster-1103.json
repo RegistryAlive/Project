@@ -1,0 +1,39 @@
+{
+  "id": 1103,
+  "name": "Leaf Starfish",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-1104.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 4,
+    "hp": 49,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 10,
+    "str": 2,
+    "con": 2,
+    "int": 3,
+    "wis": 3,
+    "agi": 2
+  }
+}

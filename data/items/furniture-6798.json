@@ -1,0 +1,15 @@
+{
+  "id": 6798,
+  "name": "Wallpaper (green stripe)",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 25,
+  "level": 50,
+  "rarity": "rare",
+  "base": null,
+  "description": "It can change the design and color of the wall",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6798.png",
+  "file": "furniture-6798.json"
+}

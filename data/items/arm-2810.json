@@ -1,0 +1,18 @@
+{
+  "id": 2810,
+  "name": "Coarse Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "Cuffs which are cut by dry bamboo",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 5,
+    "SPD": 1
+  },
+  "image": "data/images/arm-2810.png",
+  "file": "arm-2810.json"
+}

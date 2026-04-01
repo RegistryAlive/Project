@@ -1,0 +1,18 @@
+{
+  "id": 2043,
+  "name": "Black Crystal Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Silver / Grass",
+  "description": "A ring which is inlaidj common black bijou",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 4,
+    "MaxSP": 30
+  },
+  "image": "data/images/special-2043.png",
+  "file": "special-2043.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 391,
+  "name": "Malachite GS+7",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 22,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A gun shield made from magic emeralds, has anti seal resistance",
+  "size": "1x1",
+  "attributes": {
+    "Special": 18,
+    "ATK": 55
+  },
+  "image": "data/images/weapon-391.png",
+  "file": "weapon-391.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 111,
+  "name": "Shark",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-111.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Salmon",
+      "itemId": 7489,
+      "itemFile": "material-7489.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Tuna",
+      "itemId": 7491,
+      "itemFile": "material-7491.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fugu",
+      "itemId": 7492,
+      "itemFile": "material-7492.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 2186,
+    "sp": 1373,
+    "catchable": "Unknown",
+    "spd": 387,
+    "str": 106,
+    "con": 109,
+    "int": 80,
+    "wis": 74,
+    "agi": 81
+  }
+}

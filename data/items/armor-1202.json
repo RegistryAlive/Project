@@ -1,0 +1,15 @@
+{
+  "id": 1202,
+  "name": "PureLove Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Pure love dress, women-only",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1202.png",
+  "file": "armor-1202.json"
+}

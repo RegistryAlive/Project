@@ -1,0 +1,15 @@
+{
+  "id": 7920,
+  "name": "perish hammer",
+  "type": "Material",
+  "category": "material",
+  "rank": 1,
+  "level": 2,
+  "rarity": "common",
+  "base": null,
+  "description": "",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7920.png",
+  "file": "material-7920.json"
+}

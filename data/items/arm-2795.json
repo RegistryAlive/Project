@@ -1,0 +1,17 @@
+{
+  "id": 2795,
+  "name": "Steel Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Iron / Flower",
+  "description": "Gloves which are made from steel",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 25
+  },
+  "image": "data/images/arm-2795.png",
+  "file": "arm-2795.json"
+}

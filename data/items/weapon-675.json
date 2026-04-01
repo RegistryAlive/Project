@@ -1,0 +1,18 @@
+{
+  "id": 675,
+  "name": "Golden Rings+8",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 34,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets, 20% chance of resisting seal",
+  "size": "1x1",
+  "attributes": {
+    "Special": 20,
+    "SPD": 70
+  },
+  "image": "data/images/weapon-675.png",
+  "file": "weapon-675.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2922,
+  "name": "Flame bracelet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A bracelet guarded by flame power. When attacked by a fire attribute enemy, the damage is reduced by 5% (if you change the shape of the bracelet, the effect will also disappear)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 5,
+    "SPD": 47
+  },
+  "image": "data/images/arm-2922.png",
+  "file": "arm-2922.json"
+}

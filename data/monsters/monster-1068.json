@@ -1,0 +1,45 @@
+{
+  "id": 1068,
+  "name": "Pumpkin Cactus",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-1069.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Fruit Pollen",
+      "itemId": 7530,
+      "itemFile": "material-7530.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Nectar",
+      "itemId": 7529,
+      "itemFile": "material-7529.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lauan Wood",
+      "itemId": 7649,
+      "itemFile": "material-7649.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 74,
+    "hp": 814,
+    "sp": 602,
+    "catchable": "Unknown",
+    "spd": 219,
+    "str": 48,
+    "con": 50,
+    "int": 32,
+    "wis": 38,
+    "agi": 54
+  }
+}

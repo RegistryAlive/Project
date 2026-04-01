@@ -1,0 +1,18 @@
+{
+  "id": 1317,
+  "name": "Kingfisher Dre",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Lightweight garments woven from beautiful kingfisher feathers that won't get wet and heavy in water. Decreases damage by 3% when attacked by water attributes.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 21,
+    "MATK": 15
+  },
+  "image": "data/images/armor-1317.png",
+  "file": "armor-1317.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7667,
+  "name": "Brown Fox Fur",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fur",
+  "description": "Brown fur of a fox",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7667.png",
+  "file": "material-7667.json"
+}

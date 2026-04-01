@@ -1,0 +1,18 @@
+{
+  "id": 2065,
+  "name": "Water Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Jade",
+  "description": "Necklace which is processed from white bowlder",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 11,
+    "SPD": 7
+  },
+  "image": "data/images/special-2065.png",
+  "file": "special-2065.json"
+}

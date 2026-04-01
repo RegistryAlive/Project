@@ -1,0 +1,18 @@
+{
+  "id": 1656,
+  "name": "H. Devil Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 12,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cute devil hat",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 12,
+    "DEF": 12
+  },
+  "image": "data/images/helmet-1656.png",
+  "file": "helmet-1656.json"
+}

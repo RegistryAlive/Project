@@ -1,0 +1,17 @@
+{
+  "id": 2273,
+  "name": "Cross Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Cross necklace effusing from the middle of cross.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 80
+  },
+  "image": "data/images/special-2273.png",
+  "file": "special-2273.json"
+}

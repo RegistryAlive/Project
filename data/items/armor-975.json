@@ -1,0 +1,18 @@
+{
+  "id": 975,
+  "name": "Ninja Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Nylon / Flower",
+  "description": "A dress for Ninja",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17,
+    "SPD": 6
+  },
+  "image": "data/images/armor-975.png",
+  "file": "armor-975.json"
+}

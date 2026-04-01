@@ -1,0 +1,15 @@
+{
+  "id": 6574,
+  "name": "Snow Chair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Small chair covered with snow",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6574.png",
+  "file": "furniture-6574.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6365,
+  "name": "Fragrance cand",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Beautiful decoration hanging on the wall, by the master",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6365.png",
+  "file": "furniture-6365.json"
+}

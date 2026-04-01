@@ -1,0 +1,18 @@
+{
+  "id": 197,
+  "name": "Sunny Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Steel / Copper",
+  "description": "Long and light sword made of pure iron.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45,
+    "SPD": 33
+  },
+  "image": "data/images/weapon-197.png",
+  "file": "weapon-197.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1806,
+  "name": "High-heeled Sh",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Heel of the shoe is raised to make legs longer.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/shoes-1806.png",
+  "file": "shoes-1806.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 2139,
+  "name": "Fierce Badge",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "To slightly raise attack power and magic defense.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 3,
+    "MDEF": 1
+  },
+  "image": "data/images/special-2139.png",
+  "file": "special-2139.json"
+}

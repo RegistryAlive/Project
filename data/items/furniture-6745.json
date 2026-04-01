@@ -1,0 +1,15 @@
+{
+  "id": 6745,
+  "name": "Dim Sum & Milk",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A tray with snacks and a glass of hot milk.",
+  "size": "2x1",
+  "attributes": {},
+  "image": "data/images/furniture-6745.png",
+  "file": "furniture-6745.json"
+}

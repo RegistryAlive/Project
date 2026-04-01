@@ -1,0 +1,15 @@
+{
+  "id": 6262,
+  "name": "Welding Tool",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "one of the instrument used for jointing.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6262.png",
+  "file": "furniture-6262.json"
+}

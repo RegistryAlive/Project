@@ -1,0 +1,18 @@
+{
+  "id": 569,
+  "name": "Holy Light Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Tin / Corundum / Magic",
+  "description": "A very power gem-encrusted staff",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 42,
+    "MDEF": 30
+  },
+  "image": "data/images/weapon-569.png",
+  "file": "weapon-569.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 1140,
+  "name": "Green Bat",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-1141.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Plum",
+      "itemId": 7455,
+      "itemFile": "material-7455.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beak",
+      "itemId": 7788,
+      "itemFile": "material-7788.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Goose Egg",
+      "itemId": 7504,
+      "itemFile": "material-7504.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 64,
+    "hp": 525,
+    "sp": 481,
+    "catchable": "Unknown",
+    "spd": 188,
+    "str": 43,
+    "con": 32,
+    "int": 40,
+    "wis": 31,
+    "agi": 46
+  }
+}

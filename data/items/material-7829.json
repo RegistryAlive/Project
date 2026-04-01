@@ -1,0 +1,15 @@
+{
+  "id": 7829,
+  "name": "Unleaded Gasoline",
+  "type": "MaterialOil",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Oil",
+  "description": "Fuel for Motorbike and Turtle Car. Double click to use it while using the Motorbike or turtle car. Can be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7829.png",
+  "file": "material-7829.json"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 138,
+  "name": "Grape Monster",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-138.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pure Drop",
+      "itemId": 7703,
+      "itemFile": "material-7703.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Tear",
+      "itemId": 7700,
+      "itemFile": "material-7700.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 1,
+    "hp": 40,
+    "sp": 100,
+    "catchable": "Unknown",
+    "spd": 3.5,
+    "str": 0,
+    "con": 1,
+    "int": 1,
+    "wis": 0,
+    "agi": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 724,
+  "name": "Broken Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron / Wood / Magic",
+  "description": "Damage caused by excessive use of ax",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-724.png",
+  "file": "weapon-724.json"
+}

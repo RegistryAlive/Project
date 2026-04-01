@@ -1,0 +1,27 @@
+{
+  "id": 962,
+  "name": "Tsiji (Trojan War)",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-962.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 140,
+    "hp": 45000,
+    "sp": 8196,
+    "catchable": "Unknown",
+    "spd": 1210,
+    "str": 500,
+    "con": 500,
+    "int": 500,
+    "wis": 500,
+    "agi": 500
+  }
+}

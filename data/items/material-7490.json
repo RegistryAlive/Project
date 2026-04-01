@@ -1,0 +1,18 @@
+{
+  "id": 7490,
+  "name": "Eel",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "It is difficult to catch",
+  "size": "1x1",
+  "attributes": {
+    "HP": 30,
+    "SP": 30
+  },
+  "image": "data/images/material-7490.png",
+  "file": "material-7490.json"
+}

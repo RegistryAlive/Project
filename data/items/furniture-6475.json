@@ -1,0 +1,15 @@
+{
+  "id": 6475,
+  "name": "HP/SP Cabinet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Storage for unused Small HP&SP Bottles. Maximum capacity 50000.",
+  "size": "1x3",
+  "attributes": {},
+  "image": "data/images/furniture-6475.png",
+  "file": "furniture-6475.json"
+}

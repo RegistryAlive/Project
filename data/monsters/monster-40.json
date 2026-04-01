@@ -1,0 +1,45 @@
+{
+  "id": 40,
+  "name": "Giant Corpse Flower (Quest)",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-40.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Soft Bine",
+      "itemId": 7738,
+      "itemFile": "material-7738.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Vine",
+      "itemId": 7362,
+      "itemFile": "material-7362.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Vine Grass",
+      "itemId": 7363,
+      "itemFile": "material-7363.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Unknown",
+      "itemId": 7892,
+      "itemFile": "material-7892.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 8400,
+    "sp": 814,
+    "catchable": "Unknown",
+    "spd": 162,
+    "str": 61,
+    "con": 55,
+    "int": 51,
+    "wis": 52,
+    "agi": 21
+  }
+}

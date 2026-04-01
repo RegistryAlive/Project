@@ -1,0 +1,18 @@
+{
+  "id": 7304,
+  "name": "Soyseafood Rice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 28,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Fish and Shellfish",
+  "description": "A Seafood flavored dish",
+  "size": "1x1",
+  "attributes": {
+    "HP": 900,
+    "SP": 650
+  },
+  "image": "data/images/material-7304.png",
+  "file": "material-7304.json"
+}

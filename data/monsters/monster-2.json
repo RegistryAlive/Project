@@ -1,0 +1,39 @@
+{
+  "id": 2,
+  "name": "Blue Pangolin",
+  "location": "Rome",
+  "image": "data/Monster_Images/monster-2.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Apple",
+      "itemId": 7433,
+      "itemFile": "material-7433.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ant Antennae",
+      "itemId": 7797,
+      "itemFile": "material-7797.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 122,
+    "hp": 1304,
+    "sp": 1498,
+    "catchable": "Yes",
+    "spd": 303,
+    "str": 62,
+    "con": 90,
+    "int": 66,
+    "wis": 88,
+    "agi": 60
+  }
+}

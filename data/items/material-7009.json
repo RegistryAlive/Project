@@ -1,0 +1,17 @@
+{
+  "id": 7009,
+  "name": "Pork",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Meat",
+  "description": "Fat pork",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150
+  },
+  "image": "data/images/material-7009.png",
+  "file": "material-7009.json"
+}

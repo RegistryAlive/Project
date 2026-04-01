@@ -1,0 +1,17 @@
+{
+  "id": 7097,
+  "name": "Preserved Egg",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Egg",
+  "description": "An egg with special taste",
+  "size": "1x1",
+  "attributes": {
+    "HP": 250
+  },
+  "image": "data/images/material-7097.png",
+  "file": "material-7097.json"
+}

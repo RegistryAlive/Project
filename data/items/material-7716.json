@@ -1,0 +1,15 @@
+{
+  "id": 7716,
+  "name": "White Tiger Skin",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "A Whole hide of a white tiger",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7716.png",
+  "file": "material-7716.json"
+}

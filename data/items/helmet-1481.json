@@ -1,0 +1,17 @@
+{
+  "id": 1481,
+  "name": "Stand Ears+2",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "No sockets. Its numerical value can advance",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30
+  },
+  "image": "data/images/helmet-1481.png",
+  "file": "helmet-1481.json"
+}

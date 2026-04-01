@@ -1,0 +1,18 @@
+{
+  "id": 2851,
+  "name": "Warrior's Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Gold / Iron / Grass",
+  "description": "Warrior's favorite cuffs. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "ATK": 10
+  },
+  "image": "data/images/arm-2851.png",
+  "file": "arm-2851.json"
+}

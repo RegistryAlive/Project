@@ -1,0 +1,15 @@
+{
+  "id": 8340,
+  "name": "Ghost Horse Ticket",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Make the Ghost Horse be your pet.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8340.png",
+  "file": "questprop-8340.json"
+}

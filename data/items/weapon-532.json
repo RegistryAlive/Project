@@ -1,0 +1,18 @@
+{
+  "id": 532,
+  "name": "Beryl Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Tin / Jade",
+  "description": "An emerald wand, high in silver.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 26,
+    "SPD": 16
+  },
+  "image": "data/images/weapon-532.png",
+  "file": "weapon-532.json"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 296,
+  "name": "Tiger",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-296.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Pork",
+      "itemId": 7475,
+      "itemFile": "material-7475.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Roo Meat",
+      "itemId": 7479,
+      "itemFile": "material-7479.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Unknown",
+      "itemId": 7892,
+      "itemFile": "material-7892.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dark Tiger Skin",
+      "itemId": 7720,
+      "itemFile": "material-7720.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 83,
+    "hp": 882,
+    "sp": 739,
+    "catchable": "Yes",
+    "spd": 226.5,
+    "str": 56,
+    "con": 52,
+    "int": 44,
+    "wis": 46,
+    "agi": 51
+  }
+}

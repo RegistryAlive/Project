@@ -1,0 +1,17 @@
+{
+  "id": 943,
+  "name": "Jeans",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Made of denim, rugged and lightwieght.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 1
+  },
+  "image": "data/images/armor-943.png",
+  "file": "armor-943.json"
+}

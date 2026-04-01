@@ -1,0 +1,15 @@
+{
+  "id": 8425,
+  "name": "Alana Redempti",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket to make Alana a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8425.png",
+  "file": "questprop-8425.json"
+}

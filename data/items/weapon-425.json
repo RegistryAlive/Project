@@ -1,0 +1,18 @@
+{
+  "id": 425,
+  "name": "Elven longbow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Longbow made by dark elves, has a very long range.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 22,
+    "SPD": 20
+  },
+  "image": "data/images/weapon-425.png",
+  "file": "weapon-425.json"
+}

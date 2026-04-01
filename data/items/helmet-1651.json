@@ -1,0 +1,18 @@
+{
+  "id": 1651,
+  "name": "Angel Blessing",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It is rumored to be a headdress made of fallen angel feathers, with a 5% anti-seal effect.",
+  "size": "1x1",
+  "attributes": {
+    "MaxSP": 150,
+    "SPD": 20
+  },
+  "image": "data/images/helmet-1651.png",
+  "file": "helmet-1651.json"
+}

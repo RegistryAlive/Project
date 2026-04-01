@@ -1,0 +1,15 @@
+{
+  "id": 6578,
+  "name": "Class. Blackbo",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The blackboard used by the teacher in class has many traces of color chalk being wiped off",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6578.png",
+  "file": "furniture-6578.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7694,
+  "name": "Green Snake Skin",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "Hide of a green snake",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7694.png",
+  "file": "material-7694.json"
+}

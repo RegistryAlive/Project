@@ -1,0 +1,18 @@
+{
+  "id": 1252,
+  "name": "Viewer Clothin",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The pink color like cherry blossoms is perfect for spring flower viewing parties.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25,
+    "MaxHP": 100
+  },
+  "image": "data/images/armor-1252.png",
+  "file": "armor-1252.json"
+}

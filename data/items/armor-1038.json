@@ -1,0 +1,17 @@
+{
+  "id": 1038,
+  "name": "Evening Wear",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Magic",
+  "description": "Style that transcends trendy.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 27
+  },
+  "image": "data/images/armor-1038.png",
+  "file": "armor-1038.json"
+}

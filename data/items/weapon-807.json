@@ -1,0 +1,17 @@
+{
+  "id": 807,
+  "name": "Water cry ball",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Water properties of the crystal ball",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 4
+  },
+  "image": "data/images/weapon-807.png",
+  "file": "weapon-807.json"
+}

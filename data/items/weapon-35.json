@@ -1,0 +1,15 @@
+{
+  "id": 35,
+  "name": "Broken Knife",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "A damaged knife after excessive use.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/weapon-35.png",
+  "file": "weapon-35.json"
+}

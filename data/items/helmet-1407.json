@@ -1,0 +1,17 @@
+{
+  "id": 1407,
+  "name": "Steel Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Steel",
+  "description": "A steel hat, of which the bill has steel bars",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 24
+  },
+  "image": "data/images/helmet-1407.png",
+  "file": "helmet-1407.json"
+}

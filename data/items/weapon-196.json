@@ -1,0 +1,18 @@
+{
+  "id": 196,
+  "name": "Gold Rip Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Gold / Silver",
+  "description": "Long sword made of gold.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 46,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-196.png",
+  "file": "weapon-196.json"
+}

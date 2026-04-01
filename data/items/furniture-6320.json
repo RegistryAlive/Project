@@ -1,0 +1,15 @@
+{
+  "id": 6320,
+  "name": "Desktop Computer",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Continues to create 5 items after setting time.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6320.png",
+  "file": "furniture-6320.json"
+}

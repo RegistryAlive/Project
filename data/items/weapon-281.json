@@ -1,0 +1,17 @@
+{
+  "id": 281,
+  "name": "Perfect Broad Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 19,
+  "level": 38,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "Better than the Broad Spear.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 38
+  },
+  "image": "data/images/weapon-281.png",
+  "file": "weapon-281.json"
+}

@@ -1,0 +1,33 @@
+{
+  "id": 175,
+  "name": "Skeleton Soldier",
+  "location": "Trojan War Castle",
+  "image": "data/Monster_Images/monster-175.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Bread",
+      "itemId": 7010,
+      "itemFile": "material-7010.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "French Bread",
+      "itemId": 7015,
+      "itemFile": "material-7015.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 84,
+    "hp": 530,
+    "sp": 587,
+    "catchable": "Unknown",
+    "spd": 214,
+    "str": 49,
+    "con": 36,
+    "int": 38,
+    "wis": 35,
+    "agi": 44
+  }
+}

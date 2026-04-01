@@ -1,0 +1,27 @@
+{
+  "id": 566,
+  "name": "Aunt",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-566.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 46,
+    "hp": 264,
+    "sp": 467,
+    "catchable": "Unknown",
+    "spd": 115,
+    "str": 25,
+    "con": 19,
+    "int": 37,
+    "wis": 34,
+    "agi": 23
+  }
+}

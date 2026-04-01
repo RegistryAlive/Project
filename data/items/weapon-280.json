@@ -1,0 +1,17 @@
+{
+  "id": 280,
+  "name": "Broad Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 18,
+  "level": 36,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A spear with quite wide blade.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 36
+  },
+  "image": "data/images/weapon-280.png",
+  "file": "weapon-280.json"
+}

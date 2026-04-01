@@ -1,0 +1,18 @@
+{
+  "id": 661,
+  "name": "Sixth Sense",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": null,
+  "description": "Sixth Sense ghost removed from the body of the blade",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "SPD": 4
+  },
+  "image": "data/images/weapon-661.png",
+  "file": "weapon-661.json"
+}

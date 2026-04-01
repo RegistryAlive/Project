@@ -1,0 +1,51 @@
+{
+  "id": 43,
+  "name": "Tender Cirrus",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-43.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Turpentine",
+      "itemId": 7370,
+      "itemFile": "material-7370.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Vine",
+      "itemId": 7362,
+      "itemFile": "material-7362.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Vine Grass",
+      "itemId": 7363,
+      "itemFile": "material-7363.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Soft Bine",
+      "itemId": 7738,
+      "itemFile": "material-7738.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cotton",
+      "itemId": 7358,
+      "itemFile": "material-7358.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 36,
+    "hp": 287,
+    "sp": 293,
+    "catchable": "Unknown",
+    "spd": 96,
+    "str": 16,
+    "con": 24,
+    "int": 25,
+    "wis": 22,
+    "agi": 21
+  }
+}

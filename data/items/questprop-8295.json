@@ -1,0 +1,15 @@
+{
+  "id": 8295,
+  "name": "Kirin Ticket",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Makes a kirin be your companion. .",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8295.png",
+  "file": "questprop-8295.json"
+}

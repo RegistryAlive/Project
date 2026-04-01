@@ -1,0 +1,51 @@
+{
+  "id": 235,
+  "name": "Yellow Velociraptor",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-235.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Goose",
+      "itemId": 7477,
+      "itemFile": "material-7477.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beef",
+      "itemId": 7472,
+      "itemFile": "material-7472.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Tooth",
+      "itemId": 7809,
+      "itemFile": "material-7809.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dragon Tooth",
+      "itemId": 7725,
+      "itemFile": "material-7725.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 59,
+    "hp": 547,
+    "sp": 520,
+    "catchable": "Yes",
+    "spd": 172.5,
+    "str": 30,
+    "con": 35,
+    "int": 35,
+    "wis": 35,
+    "agi": 42
+  }
+}

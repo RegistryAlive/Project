@@ -1,0 +1,15 @@
+{
+  "id": 7837,
+  "name": "Fresh Water",
+  "type": "MaterialWater",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 2)",
+  "description": "The general fresh water available in the river, you can drink it",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7837.png",
+  "file": "material-7837.json"
+}

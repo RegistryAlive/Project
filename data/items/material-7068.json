@@ -1,0 +1,18 @@
+{
+  "id": 7068,
+  "name": "Bicolor Sundaes",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Water (Type 1) / Fruit",
+  "description": "A Delicious sundaes",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100,
+    "SP": 100
+  },
+  "image": "data/images/material-7068.png",
+  "file": "material-7068.json"
+}

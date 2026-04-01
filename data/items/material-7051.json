@@ -1,0 +1,18 @@
+{
+  "id": 7051,
+  "name": "Sweet Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Meat",
+  "description": "Noodles with sweet-sour pork",
+  "size": "1x1",
+  "attributes": {
+    "HP": 230,
+    "SP": 120
+  },
+  "image": "data/images/material-7051.png",
+  "file": "material-7051.json"
+}

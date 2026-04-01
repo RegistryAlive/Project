@@ -1,0 +1,18 @@
+{
+  "id": 7021,
+  "name": "BBQ Pork Buns",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat / Wheat",
+  "description": "A Bun with bbq pork",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 50
+  },
+  "image": "data/images/material-7021.png",
+  "file": "material-7021.json"
+}

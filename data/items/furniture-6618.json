@@ -1,0 +1,15 @@
+{
+  "id": 6618,
+  "name": "Party Table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The pure white tablecloth is tied with red and blue ribbons, which is very suitable for party occasions.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6618.png",
+  "file": "furniture-6618.json"
+}

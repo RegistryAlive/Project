@@ -1,0 +1,15 @@
+{
+  "id": 6626,
+  "name": "G Dragon Bed",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Bed decorated with golden dragon shape",
+  "size": "5x6",
+  "attributes": {},
+  "image": "data/images/furniture-6626.png",
+  "file": "furniture-6626.json"
+}

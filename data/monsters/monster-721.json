@@ -1,0 +1,27 @@
+{
+  "id": 721,
+  "name": "Granny",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-721.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 71,
+    "hp": 604,
+    "sp": 864,
+    "catchable": "Unknown",
+    "spd": 176.5,
+    "str": 31,
+    "con": 36,
+    "int": 53,
+    "wis": 58,
+    "agi": 35
+  }
+}

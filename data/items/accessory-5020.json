@@ -1,0 +1,15 @@
+{
+  "id": 5020,
+  "name": "Banana Boat",
+  "type": "ItemPetFruit",
+  "category": "accessory",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Adds 1 to monkey's ability. You can get it by compounding. Cannot be traded.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/accessory-5020.png",
+  "file": "accessory-5020.json"
+}

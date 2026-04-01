@@ -1,0 +1,39 @@
+{
+  "id": 377,
+  "name": "Hungry Spirit",
+  "location": "Ghost Ship",
+  "image": "data/Monster_Images/monster-377.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Harl Grass",
+      "itemId": 7359,
+      "itemFile": "material-7359.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lucid Glue",
+      "itemId": 7709,
+      "itemFile": "material-7709.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cotton",
+      "itemId": 7358,
+      "itemFile": "material-7358.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 891,
+    "sp": 802,
+    "catchable": "Unknown",
+    "spd": 227.5,
+    "str": 53,
+    "con": 52,
+    "int": 50,
+    "wis": 50,
+    "agi": 50
+  }
+}

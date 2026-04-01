@@ -1,0 +1,17 @@
+{
+  "id": 1061,
+  "name": "Magic Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Grass / White/Yellow Clay / Titanium / Jade",
+  "description": "Complete suit effect: resist 50% to seal.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 15
+  },
+  "image": "data/images/armor-1061.png",
+  "file": "armor-1061.json"
+}

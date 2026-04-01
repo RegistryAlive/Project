@@ -1,0 +1,15 @@
+{
+  "id": 6485,
+  "name": "Long Cabinet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Aqua Blue Long Low Cabinet.",
+  "size": "5x4",
+  "attributes": {},
+  "image": "data/images/furniture-6485.png",
+  "file": "furniture-6485.json"
+}

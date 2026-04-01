@@ -1,0 +1,18 @@
+{
+  "id": 2722,
+  "name": "Golden elfwing",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The golden wings imitating the appearance of the elves can be lightly flapped when mounted on the body and can be inlaid",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "MaxHP": 300
+  },
+  "image": "data/images/special-2722.png",
+  "file": "special-2722.json"
+}

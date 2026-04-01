@@ -1,0 +1,18 @@
+{
+  "id": 7331,
+  "name": "Lover Chocolat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Chocolate just for a lover",
+  "size": "1x1",
+  "attributes": {
+    "HP": 400,
+    "SP": 200
+  },
+  "image": "data/images/material-7331.png",
+  "file": "material-7331.json"
+}

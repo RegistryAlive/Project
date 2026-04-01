@@ -1,0 +1,33 @@
+{
+  "id": 1033,
+  "name": "Aqua Gurnard",
+  "location": "Relic Island",
+  "image": "data/Monster_Images/monster-1034.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Lobster",
+      "itemId": 7496,
+      "itemFile": "material-7496.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Shrimp",
+      "itemId": 7497,
+      "itemFile": "material-7497.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 135,
+    "hp": 1758,
+    "sp": 1420,
+    "catchable": "Unknown",
+    "spd": 354.5,
+    "str": 79,
+    "con": 90,
+    "int": 80,
+    "wis": 80,
+    "agi": 76
+  }
+}

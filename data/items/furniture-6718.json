@@ -1,0 +1,15 @@
+{
+  "id": 6718,
+  "name": "Persimmon",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Fruit",
+  "description": "The ornaments are auspicious, wishing that everything will be as it should be.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6718.png",
+  "file": "furniture-6718.json"
+}

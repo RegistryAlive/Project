@@ -1,0 +1,18 @@
+{
+  "id": 2910,
+  "name": "Magic Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": "Flower / Magic",
+  "description": "Magical and lightweight gloves.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 25,
+    "MATK": 20
+  },
+  "image": "data/images/arm-2910.png",
+  "file": "arm-2910.json"
+}

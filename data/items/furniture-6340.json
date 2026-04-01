@@ -1,0 +1,15 @@
+{
+  "id": 6340,
+  "name": "Transceiver",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Speak in the world channel every 5 sec without consuming SP.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6340.png",
+  "file": "furniture-6340.json"
+}

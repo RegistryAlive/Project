@@ -1,0 +1,18 @@
+{
+  "id": 122,
+  "name": "Sky Sword+5",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 13,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "No sockets?36% chance of critical strike",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-122.png",
+  "file": "weapon-122.json"
+}

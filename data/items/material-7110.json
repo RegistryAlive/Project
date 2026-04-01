@@ -1,0 +1,18 @@
+{
+  "id": 7110,
+  "name": "Stewed Tuna",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "A kind of super sashimi with red color",
+  "size": "1x1",
+  "attributes": {
+    "HP": 250,
+    "SP": 150
+  },
+  "image": "data/images/material-7110.png",
+  "file": "material-7110.json"
+}

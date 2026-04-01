@@ -1,0 +1,15 @@
+{
+  "id": 6530,
+  "name": "Ship Model",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Summer style, model of tourist ship",
+  "size": "4x4",
+  "attributes": {},
+  "image": "data/images/furniture-6530.png",
+  "file": "furniture-6530.json"
+}

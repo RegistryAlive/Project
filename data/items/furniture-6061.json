@@ -1,0 +1,15 @@
+{
+  "id": 6061,
+  "name": "Precision Circuit",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "It contains many electron parts",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6061.png",
+  "file": "furniture-6061.json"
+}

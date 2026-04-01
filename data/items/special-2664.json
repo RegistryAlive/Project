@@ -1,0 +1,18 @@
+{
+  "id": 2664,
+  "name": "Venus Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 50,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Anti-sealing",
+  "size": "1x1",
+  "attributes": {
+    "Special": 35,
+    "MATK": 50
+  },
+  "image": "data/images/special-2664.png",
+  "file": "special-2664.json"
+}

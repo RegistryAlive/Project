@@ -1,0 +1,18 @@
+{
+  "id": 7025,
+  "name": "Multi Buns",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat / Bean / Gas",
+  "description": "A Bun made from various grains",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100,
+    "SP": 50
+  },
+  "image": "data/images/material-7025.png",
+  "file": "material-7025.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6369,
+  "name": "Fish Urn",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "used for looking at a beautiful small seabed",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6369.png",
+  "file": "furniture-6369.json"
+}

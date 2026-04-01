@@ -1,0 +1,17 @@
+{
+  "id": 7192,
+  "name": "Pork Buns",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat / Meat",
+  "description": "A Bun with cabbage and pork",
+  "size": "1x1",
+  "attributes": {
+    "HP": 225
+  },
+  "image": "data/images/material-7192.png",
+  "file": "material-7192.json"
+}

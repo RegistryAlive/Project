@@ -1,0 +1,17 @@
+{
+  "id": 714,
+  "name": "Orc Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 29,
+  "level": 58,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A weapon used by Orcs, has strengthened grip, weapon has been modified to be effective when slashing.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 61
+  },
+  "image": "data/images/weapon-714.png",
+  "file": "weapon-714.json"
+}

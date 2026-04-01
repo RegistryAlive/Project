@@ -1,0 +1,17 @@
+{
+  "id": 1132,
+  "name": "Gray Ninja Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 30,
+  "rarity": "legendary",
+  "base": "Nylon / Leather",
+  "description": "Armor pieced together from swift beast hides",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15
+  },
+  "image": "data/images/armor-1132.png",
+  "file": "armor-1132.json"
+}

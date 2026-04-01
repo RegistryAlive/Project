@@ -1,0 +1,39 @@
+{
+  "id": 57,
+  "name": "Poisonous Scopion",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-57.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Scorpion Thorn",
+      "itemId": 7791,
+      "itemFile": "material-7791.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Mandarin Orange",
+      "itemId": 7434,
+      "itemFile": "material-7434.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Chicken",
+      "itemId": 7473,
+      "itemFile": "material-7473.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 82,
+    "hp": 849,
+    "sp": 932,
+    "catchable": "Unknown",
+    "spd": 209,
+    "str": 43,
+    "con": 50,
+    "int": 50,
+    "wis": 60,
+    "agi": 43
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": 492,
+  "name": "Hot Parrot",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-492.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Black Forestcake",
+      "itemId": 7049,
+      "itemFile": "material-7049.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 42,
+    "hp": 269,
+    "sp": 194,
+    "catchable": "No",
+    "spd": 87,
+    "str": 10,
+    "con": 17,
+    "int": 12,
+    "wis": 12,
+    "agi": 12
+  }
+}

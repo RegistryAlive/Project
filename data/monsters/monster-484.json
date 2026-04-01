@@ -1,0 +1,33 @@
+{
+  "id": 484,
+  "name": "Earth Parrot",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-484.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Black Forestcake",
+      "itemId": 7049,
+      "itemFile": "material-7049.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 40,
+    "hp": 241,
+    "sp": 167,
+    "catchable": "No",
+    "spd": 90,
+    "str": 10,
+    "con": 15,
+    "int": 10,
+    "wis": 10,
+    "agi": 15
+  }
+}

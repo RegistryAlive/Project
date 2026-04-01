@@ -1,0 +1,18 @@
+{
+  "id": 1318,
+  "name": "Wing Headdress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Headgear which looks like smallwings",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "MaxSP": 100
+  },
+  "image": "data/images/armor-1318.png",
+  "file": "armor-1318.json"
+}

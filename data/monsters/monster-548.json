@@ -1,0 +1,27 @@
+{
+  "id": 548,
+  "name": "Ancient Mummy (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-548.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 185,
+    "hp": 45000,
+    "sp": 2500,
+    "catchable": "Unknown",
+    "spd": 437.5,
+    "str": 160,
+    "con": 120,
+    "int": 100,
+    "wis": 95,
+    "agi": 80
+  }
+}

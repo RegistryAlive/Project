@@ -1,0 +1,15 @@
+{
+  "id": 1215,
+  "name": "Snow Love Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A gift from god, to young people who are still away on Christmas. 2016 Christmas limited edition women's clothing.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1215.png",
+  "file": "armor-1215.json"
+}

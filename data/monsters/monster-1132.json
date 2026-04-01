@@ -1,0 +1,33 @@
+{
+  "id": 1132,
+  "name": "Hot-tempered Buffalo",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-1133.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cantaloupe",
+      "itemId": 7447,
+      "itemFile": "material-7447.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 797,
+    "sp": 816,
+    "catchable": "Yes",
+    "spd": 217.5,
+    "str": 59,
+    "con": 59,
+    "int": 41,
+    "wis": 51,
+    "agi": 45
+  }
+}

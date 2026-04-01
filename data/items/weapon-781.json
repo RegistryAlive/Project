@@ -1,0 +1,18 @@
+{
+  "id": 781,
+  "name": "Gale Mace",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "To Clive's exclusive use after his rebirth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "DEF": 20
+  },
+  "image": "data/images/weapon-781.png",
+  "file": "weapon-781.json"
+}

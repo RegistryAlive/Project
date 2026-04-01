@@ -1,0 +1,17 @@
+{
+  "id": 2681,
+  "name": "Scarlet Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Corundum",
+  "description": "Increases ATK slightly",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14
+  },
+  "image": "data/images/special-2681.png",
+  "file": "special-2681.json"
+}

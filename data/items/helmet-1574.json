@@ -1,0 +1,17 @@
+{
+  "id": 1574,
+  "name": "Bell Headband",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 5,
+  "level": 10,
+  "rarity": "rare",
+  "base": "Flower",
+  "description": "Headband with a bell on it.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 5
+  },
+  "image": "data/images/helmet-1574.png",
+  "file": "helmet-1574.json"
+}

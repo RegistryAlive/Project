@@ -1,0 +1,17 @@
+{
+  "id": 7476,
+  "name": "Tiger Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Uncommon tiger meat",
+  "size": "1x1",
+  "attributes": {
+    "SP": 90
+  },
+  "image": "data/images/material-7476.png",
+  "file": "material-7476.json"
+}

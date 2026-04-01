@@ -1,0 +1,18 @@
+{
+  "id": 2671,
+  "name": "Aurora Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": "N/A",
+  "description": "Designed for St. Joan",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 400,
+    "ATK": 60
+  },
+  "image": "data/images/special-2671.png",
+  "file": "special-2671.json"
+}

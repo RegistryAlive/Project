@@ -1,0 +1,17 @@
+{
+  "id": 7397,
+  "name": "Small Ginseng",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Herbal Medicine",
+  "description": "used for maintaining and refreshing",
+  "size": "1x1",
+  "attributes": {
+    "SP": 80
+  },
+  "image": "data/images/material-7397.png",
+  "file": "material-7397.json"
+}

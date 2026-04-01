@@ -1,0 +1,18 @@
+{
+  "id": 7850,
+  "name": "Yogurt Drink",
+  "type": "Material",
+  "category": "material",
+  "rank": 3,
+  "level": 6,
+  "rarity": "common",
+  "base": "Dairy Product",
+  "description": "It's made from milk",
+  "size": "1x1",
+  "attributes": {
+    "HP": 105,
+    "SP": 45
+  },
+  "image": "data/images/material-7850.png",
+  "file": "material-7850.json"
+}

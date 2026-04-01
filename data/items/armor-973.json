@@ -1,0 +1,18 @@
+{
+  "id": 973,
+  "name": "Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 21,
+  "level": 42,
+  "rarity": "legendary",
+  "base": "Flower / Grass",
+  "description": "The height of fashion and taste.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 5,
+    "MATK": 16
+  },
+  "image": "data/images/armor-973.png",
+  "file": "armor-973.json"
+}

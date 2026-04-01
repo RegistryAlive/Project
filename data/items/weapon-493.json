@@ -1,0 +1,18 @@
+{
+  "id": 493,
+  "name": "Defence Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Tin / Titanium / Wood",
+  "description": "Good magic defence effect. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 30,
+    "MATK": 20
+  },
+  "image": "data/images/weapon-493.png",
+  "file": "weapon-493.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6012,
+  "name": "Sophisticated Device",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A Device of thread distribution",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6012.png",
+  "file": "furniture-6012.json"
+}

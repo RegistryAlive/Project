@@ -1,0 +1,18 @@
+{
+  "id": 1050,
+  "name": "Shining Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Platinum",
+  "description": "Made from pure steel and polished to a shine.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 26,
+    "SPD": 7
+  },
+  "image": "data/images/armor-1050.png",
+  "file": "armor-1050.json"
+}

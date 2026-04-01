@@ -1,0 +1,18 @@
+{
+  "id": 16,
+  "name": "Iron Saber",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "A Saber made from iron",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 14,
+    "DEF": 14
+  },
+  "image": "data/images/weapon-16.png",
+  "file": "weapon-16.json"
+}

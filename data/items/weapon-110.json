@@ -1,0 +1,18 @@
+{
+  "id": 110,
+  "name": "Copper Fine Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Copper / Wood / Hard Tissue",
+  "description": "A sword made from copper, its long and thin.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 7,
+    "SPD": 7
+  },
+  "image": "data/images/weapon-110.png",
+  "file": "weapon-110.json"
+}

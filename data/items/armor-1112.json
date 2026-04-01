@@ -1,0 +1,17 @@
+{
+  "id": 1112,
+  "name": "Lord Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 42,
+  "level": 84,
+  "rarity": "legendary",
+  "base": "Flower / Grass / Gold",
+  "description": "A black religious gown having magical defense.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 42
+  },
+  "image": "data/images/armor-1112.png",
+  "file": "armor-1112.json"
+}

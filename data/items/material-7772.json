@@ -1,0 +1,15 @@
+{
+  "id": 7772,
+  "name": "Dry Skin",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leather",
+  "description": "A Dry hide with no fat",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7772.png",
+  "file": "material-7772.json"
+}

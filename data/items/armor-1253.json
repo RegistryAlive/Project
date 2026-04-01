@@ -1,0 +1,18 @@
+{
+  "id": 1253,
+  "name": "Lover's clothe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "It feels as sweet and refreshing as mint chocolate. Reduces damage by 1% when attacked by fire attributes",
+  "size": "1x1",
+  "attributes": {
+    "Special": 1,
+    "MaxHP": 100
+  },
+  "image": "data/images/armor-1253.png",
+  "file": "armor-1253.json"
+}

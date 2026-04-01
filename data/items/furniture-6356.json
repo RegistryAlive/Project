@@ -1,0 +1,15 @@
+{
+  "id": 6356,
+  "name": "Food Shelf",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "used for placing food",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6356.png",
+  "file": "furniture-6356.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 7481,
+  "name": "Duck",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 9,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Tasty duck",
+  "size": "1x1",
+  "attributes": {
+    "HP": 90
+  },
+  "image": "data/images/material-7481.png",
+  "file": "material-7481.json"
+}

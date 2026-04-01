@@ -1,0 +1,15 @@
+{
+  "id": 6551,
+  "name": "GalaxyUmbrella",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The love umbrella in the shape of a galaxy seems to be in the Milky Way. Double seat.",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6551.png",
+  "file": "furniture-6551.json"
+}

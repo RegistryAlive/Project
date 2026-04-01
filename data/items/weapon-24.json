@@ -1,0 +1,18 @@
+{
+  "id": 24,
+  "name": "Pirate Rip",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "Curved edge knife used by sea robbers.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 22,
+    "DEF": 22
+  },
+  "image": "data/images/weapon-24.png",
+  "file": "weapon-24.json"
+}

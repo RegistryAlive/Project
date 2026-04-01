@@ -1,0 +1,18 @@
+{
+  "id": 1106,
+  "name": "Kung-Fu Suit+2",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 36,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "Can be enhanced but not socketed. Can be traded. Cannot be traded after being opened.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "MaxHP": 180
+  },
+  "image": "data/images/armor-1106.png",
+  "file": "armor-1106.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 166,
+  "name": "Overlord Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 63,
+  "level": 126,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword used by an ancient overlord. Washed by the blood of hatred, it gave out an extraordinary aura.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 63,
+    "SPD": 63
+  },
+  "image": "data/images/weapon-166.png",
+  "file": "weapon-166.json"
+}

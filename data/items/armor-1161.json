@@ -1,0 +1,15 @@
+{
+  "id": 1161,
+  "name": "Tutu",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Tutu",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1161.png",
+  "file": "armor-1161.json"
+}

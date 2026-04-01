@@ -1,0 +1,18 @@
+{
+  "id": 2114,
+  "name": "Evil Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": null,
+  "description": "To upgrade defense and minor magic defense",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 4,
+    "MDEF": 2
+  },
+  "image": "data/images/special-2114.png",
+  "file": "special-2114.json"
+}

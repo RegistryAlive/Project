@@ -1,0 +1,17 @@
+{
+  "id": 7059,
+  "name": "Sake",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Liquor",
+  "description": "It's made from rice",
+  "size": "1x1",
+  "attributes": {
+    "SP": 400
+  },
+  "image": "data/images/material-7059.png",
+  "file": "material-7059.json"
+}

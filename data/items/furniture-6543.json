@@ -1,0 +1,15 @@
+{
+  "id": 6543,
+  "name": "Love Walls",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Valentine's style, allowing players to change into different wall colors",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6543.png",
+  "file": "furniture-6543.json"
+}

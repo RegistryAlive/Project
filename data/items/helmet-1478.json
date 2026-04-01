@@ -1,0 +1,18 @@
+{
+  "id": 1478,
+  "name": "Snow Ears",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 50,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Leather / Magic / Fur",
+  "description": "The clothes can increase attack power and agility.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "SPD": 20
+  },
+  "image": "data/images/helmet-1478.png",
+  "file": "helmet-1478.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 2654,
+  "name": "Super Caffeine",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 25,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Resists sleep effects by causing mild insomnia.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2654.png",
+  "file": "special-2654.json"
+}

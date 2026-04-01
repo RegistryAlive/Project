@@ -1,0 +1,17 @@
+{
+  "id": 693,
+  "name": "Bronze Adze",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 8,
+  "level": 16,
+  "rarity": "epic",
+  "base": "Copper / Wood",
+  "description": "The bronze axe has two blades.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 19
+  },
+  "image": "data/images/weapon-693.png",
+  "file": "weapon-693.json"
+}

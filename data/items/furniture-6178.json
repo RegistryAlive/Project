@@ -1,0 +1,15 @@
+{
+  "id": 6178,
+  "name": "Alloy",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "Transfers from many kinds of metal",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6178.png",
+  "file": "furniture-6178.json"
+}

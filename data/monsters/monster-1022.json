@@ -1,0 +1,27 @@
+{
+  "id": 1022,
+  "name": "Yellow ET",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-1022.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 3003,
+    "sp": 1215,
+    "catchable": "Unknown",
+    "spd": 270,
+    "str": 32,
+    "con": 55,
+    "int": 78,
+    "wis": 75,
+    "agi": 60
+  }
+}

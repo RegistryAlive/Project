@@ -1,0 +1,27 @@
+{
+  "id": 971,
+  "name": "Valkyrie (Quest)",
+  "location": "Lion Island",
+  "image": "data/Monster_Images/monster-971.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 140,
+    "hp": 1290,
+    "sp": 1502,
+    "catchable": "Unknown",
+    "spd": 378,
+    "str": 84,
+    "con": 84,
+    "int": 84,
+    "wis": 84,
+    "agi": 84
+  }
+}

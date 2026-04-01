@@ -1,0 +1,15 @@
+{
+  "id": 6376,
+  "name": "Easel cloth se",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Rack may be placed in the larger painting paper",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6376.png",
+  "file": "furniture-6376.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8033,
+  "name": "Psychic's Dagg",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Mermaid was given a dagger to kill her beloved.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8033.png",
+  "file": "questprop-8033.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2575,
+  "name": "Flight saddle",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "After the horse equipment, allowing the rider can take a ride across the barrier point for all kinds of flying",
+  "size": "1x1",
+  "attributes": {
+    "Special": 33927
+  },
+  "image": "data/images/special-2575.png",
+  "file": "special-2575.json"
+}

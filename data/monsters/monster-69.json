@@ -1,0 +1,45 @@
+{
+  "id": 69,
+  "name": "Green Moai",
+  "location": "Revival Isle",
+  "image": "data/Monster_Images/monster-69.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Huge Hand",
+      "itemId": 7816,
+      "itemFile": "material-7816.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Clay",
+      "itemId": 7643,
+      "itemFile": "material-7643.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Amethyst",
+      "itemId": 7596,
+      "itemFile": "material-7596.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 75,
+    "hp": 889,
+    "sp": 632,
+    "catchable": "Unknown",
+    "spd": 182.5,
+    "str": 45,
+    "con": 55,
+    "int": 50,
+    "wis": 40,
+    "agi": 35
+  }
+}

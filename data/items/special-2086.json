@@ -1,0 +1,18 @@
+{
+  "id": 2086,
+  "name": "Teeth Necklace",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Hard Tissue",
+  "description": "A necklace which is made from animal's teeth",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 1,
+    "DEF": 1
+  },
+  "image": "data/images/special-2086.png",
+  "file": "special-2086.json"
+}

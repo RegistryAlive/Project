@@ -1,0 +1,15 @@
+{
+  "id": 6518,
+  "name": "Chinese window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Decorate Chinese windows full of joy with red",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6518.png",
+  "file": "furniture-6518.json"
+}

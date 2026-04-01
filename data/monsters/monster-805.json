@@ -1,0 +1,27 @@
+{
+  "id": 805,
+  "name": "Magellan",
+  "location": "Blackwind Cave",
+  "image": "data/Monster_Images/monster-805.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 884,
+    "sp": 744,
+    "catchable": "Unknown",
+    "spd": 208,
+    "str": 50,
+    "con": 53,
+    "int": 46,
+    "wis": 47,
+    "agi": 44
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 7310,
+  "name": "Yo Cabbagge sy",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Special syrup of Yo Family",
+  "size": "1x1",
+  "attributes": {
+    "SP": 70
+  },
+  "image": "data/images/material-7310.png",
+  "file": "material-7310.json"
+}

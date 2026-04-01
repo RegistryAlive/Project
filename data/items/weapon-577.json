@@ -1,0 +1,18 @@
+{
+  "id": 577,
+  "name": "Star Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 37,
+  "level": 74,
+  "rarity": "legendary",
+  "base": "Silver / Jade / Magic",
+  "description": "It has great MATK power",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 43,
+    "MDEF": 31
+  },
+  "image": "data/images/weapon-577.png",
+  "file": "weapon-577.json"
+}

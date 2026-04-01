@@ -1,0 +1,27 @@
+{
+  "id": 1066,
+  "name": "Ancient Chameleon",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-1067.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Chameleon Skin",
+      "itemId": 7786,
+      "itemFile": "material-7786.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 61,
+    "hp": 581,
+    "sp": 590,
+    "catchable": "Yes",
+    "spd": 161.5,
+    "str": 34,
+    "con": 37,
+    "int": 37,
+    "wis": 40,
+    "agi": 35
+  }
+}

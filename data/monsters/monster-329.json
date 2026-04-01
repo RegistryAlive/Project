@@ -1,0 +1,39 @@
+{
+  "id": 329,
+  "name": "Brass Bat",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-329.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Muskmelon",
+      "itemId": 7446,
+      "itemFile": "material-7446.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Papaya",
+      "itemId": 7438,
+      "itemFile": "material-7438.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 100,
+    "hp": 1539,
+    "sp": 921,
+    "catchable": "No",
+    "spd": 266,
+    "str": 58,
+    "con": 59,
+    "int": 40,
+    "wis": 55,
+    "agi": 58
+  }
+}

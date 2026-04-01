@@ -1,0 +1,15 @@
+{
+  "id": 7773,
+  "name": "Cow Dung",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Feces",
+  "description": "waste of cow, can be used as fuel",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7773.png",
+  "file": "material-7773.json"
+}

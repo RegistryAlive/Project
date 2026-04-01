@@ -1,0 +1,17 @@
+{
+  "id": 1090,
+  "name": "Sun Robe",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Flower / Grass / Gold",
+  "description": "clothes of Japanese religion Shintoist, gold",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200
+  },
+  "image": "data/images/armor-1090.png",
+  "file": "armor-1090.json"
+}

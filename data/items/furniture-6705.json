@@ -1,0 +1,15 @@
+{
+  "id": 6705,
+  "name": "Reindeer Lamp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The reindeer decorative lights with bright dots shine in the Christmas night.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6705.png",
+  "file": "furniture-6705.json"
+}

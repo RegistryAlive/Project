@@ -1,0 +1,15 @@
+{
+  "id": 6353,
+  "name": "Tiger-fur Carp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Restores your SP 2x faster while bathing. Can be traded.",
+  "size": "4x3",
+  "attributes": {},
+  "image": "data/images/furniture-6353.png",
+  "file": "furniture-6353.json"
+}

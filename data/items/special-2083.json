@@ -1,0 +1,18 @@
+{
+  "id": 2083,
+  "name": "Angel Wings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 12,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Feather",
+  "description": "Legendary holy angel's wings",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 6,
+    "MATK": 6
+  },
+  "image": "data/images/special-2083.png",
+  "file": "special-2083.json"
+}

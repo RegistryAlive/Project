@@ -1,0 +1,51 @@
+{
+  "id": 506,
+  "name": "Senior Beetle(F)",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-506.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Beetle Horn",
+      "itemId": 7783,
+      "itemFile": "material-7783.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Watermelon",
+      "itemId": 7440,
+      "itemFile": "material-7440.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cantaloupe",
+      "itemId": 7447,
+      "itemFile": "material-7447.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ordinary Wood",
+      "itemId": 7647,
+      "itemFile": "material-7647.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Lauan Wood",
+      "itemId": 7649,
+      "itemFile": "material-7649.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 24,
+    "hp": 178,
+    "sp": 189,
+    "catchable": "Yes",
+    "spd": 64,
+    "str": 14,
+    "con": 14,
+    "int": 15,
+    "wis": 15,
+    "agi": 14
+  }
+}

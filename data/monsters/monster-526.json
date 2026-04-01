@@ -1,0 +1,39 @@
+{
+  "id": 526,
+  "name": "Earth Sandworm",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-526.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Grume",
+      "itemId": 7719,
+      "itemFile": "material-7719.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Bone",
+      "itemId": 7776,
+      "itemFile": "material-7776.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Common Grass",
+      "itemId": 7365,
+      "itemFile": "material-7365.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 778,
+    "sp": 860,
+    "catchable": "Unknown",
+    "spd": 239,
+    "str": 55,
+    "con": 56,
+    "int": 54,
+    "wis": 53,
+    "agi": 52
+  }
+}

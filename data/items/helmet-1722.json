@@ -1,0 +1,18 @@
+{
+  "id": 1722,
+  "name": "Helm of Hell",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The helmet made of the magic horn of the deep sea monster can reduce the damage received by 1%. When equipped with other Nethersea series equipment at the same time, you can get an additional set effect.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 40,
+    "MDEF": 30
+  },
+  "image": "data/images/helmet-1722.png",
+  "file": "helmet-1722.json"
+}

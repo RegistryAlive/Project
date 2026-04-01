@@ -1,0 +1,18 @@
+{
+  "id": 1315,
+  "name": "Cool Summer Cl",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Lightweight garment in crisp colors and breathable material for hot summer days. When attacked by fire attribute enemies, the damage is reduced by 3%.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 35,
+    "SPD": 20
+  },
+  "image": "data/images/armor-1315.png",
+  "file": "armor-1315.json"
+}

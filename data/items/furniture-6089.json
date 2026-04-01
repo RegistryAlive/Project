@@ -1,0 +1,15 @@
+{
+  "id": 6089,
+  "name": "Copper",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Copper",
+  "description": "It is made of copper",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6089.png",
+  "file": "furniture-6089.json"
+}

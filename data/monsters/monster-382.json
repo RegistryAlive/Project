@@ -1,0 +1,45 @@
+{
+  "id": 382,
+  "name": "Blue Triceratops",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-382.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Waxgourd",
+      "itemId": 7421,
+      "itemFile": "material-7421.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Harl Grass",
+      "itemId": 7359,
+      "itemFile": "material-7359.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Bone",
+      "itemId": 7810,
+      "itemFile": "material-7810.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Dinosaur Fur",
+      "itemId": 7812,
+      "itemFile": "material-7812.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 796,
+    "sp": 618,
+    "catchable": "Yes",
+    "spd": 177,
+    "str": 44,
+    "con": 50,
+    "int": 40,
+    "wis": 40,
+    "agi": 36
+  }
+}

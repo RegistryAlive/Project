@@ -1,0 +1,27 @@
+{
+  "id": 770,
+  "name": "Ice Queen",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-770.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 60,
+    "hp": 366,
+    "sp": 742,
+    "catchable": "Unknown",
+    "spd": 160,
+    "str": 21,
+    "con": 21,
+    "int": 51,
+    "wis": 52,
+    "agi": 35
+  }
+}

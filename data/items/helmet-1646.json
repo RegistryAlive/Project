@@ -1,0 +1,18 @@
+{
+  "id": 1646,
+  "name": "Golden Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "A golden helmet imitating a knight helmet",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 3,
+    "MDEF": 3
+  },
+  "image": "data/images/helmet-1646.png",
+  "file": "helmet-1646.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 608,
+  "name": "Spirit Staff",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": "Tin / Jade",
+  "description": "A staff rumoured to be used by the god of darkness",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 68,
+    "MATK": 14
+  },
+  "image": "data/images/weapon-608.png",
+  "file": "weapon-608.json"
+}

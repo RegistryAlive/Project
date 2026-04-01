@@ -1,0 +1,18 @@
+{
+  "id": 2078,
+  "name": "Amber Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Corundum / Silver",
+  "description": "A ring made from amber. It can enlarge magic.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 10
+  },
+  "image": "data/images/special-2078.png",
+  "file": "special-2078.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 692,
+  "name": "Double Blades Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Copper / Wood",
+  "description": "The bronze axe has two blades.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 17
+  },
+  "image": "data/images/weapon-692.png",
+  "file": "weapon-692.json"
+}

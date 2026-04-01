@@ -1,0 +1,15 @@
+{
+  "id": 6607,
+  "name": "Snowflake carp",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Snowflake patterned carpet",
+  "size": "4x2",
+  "attributes": {},
+  "image": "data/images/furniture-6607.png",
+  "file": "furniture-6607.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 2040,
+  "name": "Penguin Suit",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A cute dress that transforms into a penguin. 5% anti-blocking effect",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2040.png",
+  "file": "special-2040.json"
+}

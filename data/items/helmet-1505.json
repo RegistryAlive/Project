@@ -1,0 +1,18 @@
+{
+  "id": 1505,
+  "name": "Silvery Torque",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Silver / Jade",
+  "description": "A forehead ornament.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MATK": 10
+  },
+  "image": "data/images/helmet-1505.png",
+  "file": "helmet-1505.json"
+}

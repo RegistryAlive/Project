@@ -1,0 +1,27 @@
+{
+  "id": 1008,
+  "name": "Wind Dragon",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-1008.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 130,
+    "hp": 10395,
+    "sp": 771,
+    "catchable": "Unknown",
+    "spd": 377,
+    "str": 99,
+    "con": 110,
+    "int": 50,
+    "wis": 40,
+    "agi": 91
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": 956,
+  "name": "Artificial Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "Made of simulated leather and fur.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 4
+  },
+  "image": "data/images/armor-956.png",
+  "file": "armor-956.json"
+}

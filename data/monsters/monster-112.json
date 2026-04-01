@@ -1,0 +1,45 @@
+{
+  "id": 112,
+  "name": "White Bear",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-112.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Cod",
+      "itemId": 7488,
+      "itemFile": "material-7488.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Salmon",
+      "itemId": 7489,
+      "itemFile": "material-7489.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pineapple Seed",
+      "itemId": 7381,
+      "itemFile": "material-7381.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 70,
+    "hp": 726,
+    "sp": 752,
+    "catchable": "Unknown",
+    "spd": 175,
+    "str": 43,
+    "con": 45,
+    "int": 37,
+    "wis": 50,
+    "agi": 35
+  }
+}

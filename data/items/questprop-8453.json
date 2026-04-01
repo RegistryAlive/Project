@@ -1,0 +1,15 @@
+{
+  "id": 8453,
+  "name": "Warriors badge",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Collect a certain number to exchange for a complete Warrior Badge",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8453.png",
+  "file": "questprop-8453.json"
+}

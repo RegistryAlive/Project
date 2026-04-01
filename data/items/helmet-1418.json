@@ -1,0 +1,18 @@
+{
+  "id": 1418,
+  "name": "Phoenix Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Copper / Gold / Titanium",
+  "description": "A fire helmet which is found by the phoenix's soul",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 27,
+    "MATK": 9
+  },
+  "image": "data/images/helmet-1418.png",
+  "file": "helmet-1418.json"
+}

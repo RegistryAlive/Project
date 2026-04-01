@@ -1,0 +1,18 @@
+{
+  "id": 1712,
+  "name": "Bone Crown",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The former beasts were turned into bones, and the power of the past is still remembered in my heart. With 5% anti-seal effect",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 10,
+    "MDEF": 10
+  },
+  "image": "data/images/helmet-1712.png",
+  "file": "helmet-1712.json"
+}

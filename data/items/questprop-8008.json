@@ -1,0 +1,15 @@
+{
+  "id": 8008,
+  "name": "Crystal Skull",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A skull made of crystal",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8008.png",
+  "file": "questprop-8008.json"
+}

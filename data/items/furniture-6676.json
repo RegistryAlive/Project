@@ -1,0 +1,15 @@
+{
+  "id": 6676,
+  "name": "Jade Rabbit Fi",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The cute jade rabbit fell on the moon",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6676.png",
+  "file": "furniture-6676.json"
+}

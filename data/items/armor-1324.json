@@ -1,0 +1,18 @@
+{
+  "id": 1324,
+  "name": "Cat Body",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Cat's exclusive equipment, which is blessed by the mage and has a good compatibility with Cat's armor; when equipped with other Cat's series of equipment at the same time, it can get an additional set effect",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 50,
+    "DEF": 50
+  },
+  "image": "data/images/armor-1324.png",
+  "file": "armor-1324.json"
+}

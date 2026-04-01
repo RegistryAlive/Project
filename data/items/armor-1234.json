@@ -1,0 +1,18 @@
+{
+  "id": 1234,
+  "name": "Gintama's Kimo",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "In order to welcome the spring, put on a new kimono for a beautiful trip",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 450,
+    "SPD": 30
+  },
+  "image": "data/images/armor-1234.png",
+  "file": "armor-1234.json"
+}

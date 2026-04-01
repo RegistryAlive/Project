@@ -1,0 +1,15 @@
+{
+  "id": 6211,
+  "name": "High Uranium",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 11,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Purified uranium used as fuel in the submarine.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6211.png",
+  "file": "furniture-6211.json"
+}

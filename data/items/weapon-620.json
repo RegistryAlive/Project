@@ -1,0 +1,18 @@
+{
+  "id": 620,
+  "name": "Seer Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 14,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Tin / Titanium / Wood",
+  "description": "The magic wand used by prophets. can improve agility and magical effects. Can be forged. Set : double socket bonus",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 80,
+    "MATK": 30
+  },
+  "image": "data/images/weapon-620.png",
+  "file": "weapon-620.json"
+}

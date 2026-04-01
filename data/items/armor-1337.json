@@ -1,0 +1,18 @@
+{
+  "id": 1337,
+  "name": "Inari Kimono",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Clothing worn by the clergy represents the messengers of the gods and allows them to feel the grace of the gods; when equipped with other Fushimi Inari equipment, you will receive an additional coat effect.",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "DEF": 30
+  },
+  "image": "data/images/armor-1337.png",
+  "file": "armor-1337.json"
+}

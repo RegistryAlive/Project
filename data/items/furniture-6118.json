@@ -1,0 +1,15 @@
+{
+  "id": 6118,
+  "name": "Phosphorylation",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Iron",
+  "description": "White crystal, can used as chemical material",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6118.png",
+  "file": "furniture-6118.json"
+}

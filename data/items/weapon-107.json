@@ -1,0 +1,18 @@
+{
+  "id": 107,
+  "name": "Iron Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 4,
+  "level": 8,
+  "rarity": "uncommon",
+  "base": "Iron",
+  "description": "A sword made from iron",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 4,
+    "SPD": 4
+  },
+  "image": "data/images/weapon-107.png",
+  "file": "weapon-107.json"
+}

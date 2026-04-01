@@ -1,0 +1,18 @@
+{
+  "id": 2093,
+  "name": "Wisdom Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 12,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A ring which can enhance brightness.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 8,
+    "MDEF": 4
+  },
+  "image": "data/images/special-2093.png",
+  "file": "special-2093.json"
+}

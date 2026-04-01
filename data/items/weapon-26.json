@@ -1,0 +1,18 @@
+{
+  "id": 26,
+  "name": "Crescent Katana",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "The highest and sharpest grade Japanese knives.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 24,
+    "DEF": 24
+  },
+  "image": "data/images/weapon-26.png",
+  "file": "weapon-26.json"
+}

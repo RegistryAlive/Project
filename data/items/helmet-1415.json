@@ -1,0 +1,18 @@
+{
+  "id": 1415,
+  "name": "Fighting Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Copper / Flower",
+  "description": "A helmet usually worn to fight beasts or men.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 17,
+    "ATK": 8
+  },
+  "image": "data/images/helmet-1415.png",
+  "file": "helmet-1415.json"
+}

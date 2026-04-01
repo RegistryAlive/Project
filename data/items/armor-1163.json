@@ -1,0 +1,15 @@
+{
+  "id": 1163,
+  "name": "New White Day",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Handsome male suit just for White Day",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1163.png",
+  "file": "armor-1163.json"
+}

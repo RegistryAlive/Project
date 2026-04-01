@@ -1,0 +1,27 @@
+{
+  "id": 1123,
+  "name": "Great Wall Guard",
+  "location": "Great Wall",
+  "image": "data/Monster_Images/monster-1124.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Maize",
+      "itemId": 7431,
+      "itemFile": "material-7431.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 80,
+    "hp": 986,
+    "sp": 633,
+    "catchable": "Yes",
+    "spd": 232,
+    "str": 55,
+    "con": 60,
+    "int": 30,
+    "wis": 39,
+    "agi": 56
+  }
+}

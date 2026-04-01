@@ -1,0 +1,15 @@
+{
+  "id": 1986,
+  "name": "Bless Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A gift from god, to young people who are still away on Christmas. 2016 Christmas limited edition men's boots.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/shoes-1986.png",
+  "file": "shoes-1986.json"
+}

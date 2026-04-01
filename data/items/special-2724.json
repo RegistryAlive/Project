@@ -1,0 +1,18 @@
+{
+  "id": 2724,
+  "name": "Gorefiend Wing",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Wings sealed with the power of Gorefiend, the damage caused by critical strikes is slightly increased",
+  "size": "1x1",
+  "attributes": {
+    "Special": 3,
+    "ATK": 45
+  },
+  "image": "data/images/special-2724.png",
+  "file": "special-2724.json"
+}

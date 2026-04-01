@@ -1,0 +1,18 @@
+{
+  "id": 1543,
+  "name": "Traveller's Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Special for Magellan, cannot be repaired",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 50,
+    "SPD": 50
+  },
+  "image": "data/images/helmet-1543.png",
+  "file": "helmet-1543.json"
+}

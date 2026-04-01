@@ -1,0 +1,18 @@
+{
+  "id": 2782,
+  "name": "Great Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Leather",
+  "description": "Gloves which are made up of firm hide",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 9,
+    "MDEF": 2
+  },
+  "image": "data/images/arm-2782.png",
+  "file": "arm-2782.json"
+}

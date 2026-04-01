@@ -1,0 +1,15 @@
+{
+  "id": 6195,
+  "name": "Pure Diamond",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 21,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Diamond",
+  "description": "A Diamond with a high density and high durability",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6195.png",
+  "file": "furniture-6195.json"
+}

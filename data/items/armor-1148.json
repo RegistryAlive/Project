@@ -1,0 +1,18 @@
+{
+  "id": 1148,
+  "name": "Beast Fur Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Fur",
+  "description": "Made with top beast fur",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "SPD": 5
+  },
+  "image": "data/images/armor-1148.png",
+  "file": "armor-1148.json"
+}

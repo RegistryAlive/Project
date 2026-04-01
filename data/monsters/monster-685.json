@@ -1,0 +1,27 @@
+{
+  "id": 685,
+  "name": "Eva (Quest)",
+  "location": "Inca",
+  "image": "data/Monster_Images/monster-685.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 124,
+    "hp": 324850,
+    "sp": 5000,
+    "catchable": "Unknown",
+    "spd": 372,
+    "str": 41,
+    "con": 47,
+    "int": 97,
+    "wis": 94,
+    "agi": 93
+  }
+}

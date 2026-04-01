@@ -1,0 +1,15 @@
+{
+  "id": 1242,
+  "name": "Luminous Dress",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A gorgeous dress with the sky as the color, making it shine in the beauty of the galaxy.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/armor-1242.png",
+  "file": "armor-1242.json"
+}

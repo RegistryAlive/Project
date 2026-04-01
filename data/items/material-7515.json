@@ -1,0 +1,17 @@
+{
+  "id": 7515,
+  "name": "Noodles",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat",
+  "description": "It's made of flour",
+  "size": "1x1",
+  "attributes": {
+    "HP": 50
+  },
+  "image": "data/images/material-7515.png",
+  "file": "material-7515.json"
+}

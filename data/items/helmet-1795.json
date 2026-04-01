@@ -1,0 +1,17 @@
+{
+  "id": 1795,
+  "name": "Stand Ears+8",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 90,
+  "level": 180,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 90
+  },
+  "image": "data/images/helmet-1795.png",
+  "file": "helmet-1795.json"
+}

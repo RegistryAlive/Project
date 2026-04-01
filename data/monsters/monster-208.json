@@ -1,0 +1,33 @@
+{
+  "id": 208,
+  "name": "Blue Rock",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-208.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Fugu Hot Pot",
+      "itemId": 7175,
+      "itemFile": "material-7175.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 93,
+    "hp": 570,
+    "sp": 421,
+    "catchable": "Unknown",
+    "spd": 183.5,
+    "str": 40,
+    "con": 29,
+    "int": 25,
+    "wis": 22,
+    "agi": 22
+  }
+}

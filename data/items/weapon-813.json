@@ -1,0 +1,17 @@
+{
+  "id": 813,
+  "name": "Storm scrolls",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Has wind seal scrolls",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10
+  },
+  "image": "data/images/weapon-813.png",
+  "file": "weapon-813.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 549,
+  "name": "Eagle Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Silver / Jade",
+  "description": "Possesses a core of rare blue eagle feathers.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 34,
+    "MDEF": 22
+  },
+  "image": "data/images/weapon-549.png",
+  "file": "weapon-549.json"
+}

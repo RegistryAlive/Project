@@ -1,0 +1,15 @@
+{
+  "id": 8038,
+  "name": "Elderly's Shoe",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Santa Claus's warm shoes",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8038.png",
+  "file": "questprop-8038.json"
+}

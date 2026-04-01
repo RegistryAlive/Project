@@ -1,0 +1,18 @@
+{
+  "id": 2958,
+  "name": "Soul Catalyst",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The larger the flame is, the stronger the spirit's will is; when equipped together with other Soul Guardian equipment, you can get an extra coat effect (the effect will disappear if you change the shape of the bracelet).",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 20,
+    "MaxSP": 100
+  },
+  "image": "data/images/arm-2958.png",
+  "file": "arm-2958.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6218,
+  "name": "Music Device",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Includes a tune nail, a steel string and a hammer.",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6218.png",
+  "file": "furniture-6218.json"
+}

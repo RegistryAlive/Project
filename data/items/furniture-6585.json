@@ -1,0 +1,15 @@
+{
+  "id": 6585,
+  "name": "D wall lights",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Dark full sense of the small candle lights, the atmosphere is full of Halloween",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6585.png",
+  "file": "furniture-6585.json"
+}

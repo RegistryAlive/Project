@@ -1,0 +1,15 @@
+{
+  "id": 2643,
+  "name": "Wedding Band",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "N/A",
+  "description": "Exclusively for gentlemen",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2643.png",
+  "file": "special-2643.json"
+}

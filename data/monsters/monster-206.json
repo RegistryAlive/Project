@@ -1,0 +1,33 @@
+{
+  "id": 206,
+  "name": "Angry Flying Dragon",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-206.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Fugu Hot Pot",
+      "itemId": 7175,
+      "itemFile": "material-7175.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 99,
+    "hp": 697,
+    "sp": 506,
+    "catchable": "Unknown",
+    "spd": 196.5,
+    "str": 32,
+    "con": 36,
+    "int": 28,
+    "wis": 27,
+    "agi": 24
+  }
+}

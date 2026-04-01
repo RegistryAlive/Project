@@ -1,0 +1,18 @@
+{
+  "id": 195,
+  "name": "Long Bronze Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 36,
+  "level": 72,
+  "rarity": "legendary",
+  "base": "Copper",
+  "description": "Long sword made of bronze.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 37,
+    "SPD": 35
+  },
+  "image": "data/images/weapon-195.png",
+  "file": "weapon-195.json"
+}

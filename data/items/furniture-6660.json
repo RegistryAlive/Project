@@ -1,0 +1,15 @@
+{
+  "id": 6660,
+  "name": "Pillar",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Can provide players with home compartments",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6660.png",
+  "file": "furniture-6660.json"
+}

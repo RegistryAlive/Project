@@ -1,0 +1,15 @@
+{
+  "id": 8462,
+  "name": "Crescent Moon",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Can exchange for a Crescent Moon.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8462.png",
+  "file": "questprop-8462.json"
+}

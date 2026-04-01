@@ -1,0 +1,17 @@
+{
+  "id": 7120,
+  "name": "Orange Juice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "Juice extracted from oranges",
+  "size": "1x1",
+  "attributes": {
+    "HP": 150
+  },
+  "image": "data/images/material-7120.png",
+  "file": "material-7120.json"
+}

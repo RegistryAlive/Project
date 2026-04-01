@@ -1,0 +1,15 @@
+{
+  "id": 7787,
+  "name": "Snake Skin",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Leather",
+  "description": "A Skin of a common snake",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7787.png",
+  "file": "material-7787.json"
+}

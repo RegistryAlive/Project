@@ -1,0 +1,18 @@
+{
+  "id": 959,
+  "name": "Black Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 7,
+  "level": 14,
+  "rarity": "epic",
+  "base": "Leather / Flower",
+  "description": "Clothes which is made of black leather",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 5,
+    "SPD": 2
+  },
+  "image": "data/images/armor-959.png",
+  "file": "armor-959.json"
+}

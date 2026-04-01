@@ -1,0 +1,18 @@
+{
+  "id": 501,
+  "name": "Candy Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 13,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Pure Iron / Iron / Magic",
+  "description": "A magic wand built specialy for Christmas Day",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 13,
+    "MATK": 13
+  },
+  "image": "data/images/weapon-501.png",
+  "file": "weapon-501.json"
+}

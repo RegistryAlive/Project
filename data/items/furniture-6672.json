@@ -1,0 +1,15 @@
+{
+  "id": 6672,
+  "name": "Bright Moonlig",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "A sturdy table made of solid wood",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6672.png",
+  "file": "furniture-6672.json"
+}

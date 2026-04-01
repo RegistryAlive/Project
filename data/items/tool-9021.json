@@ -1,0 +1,15 @@
+{
+  "id": 9021,
+  "name": "Water Filter",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can reduce the salt from the seawater.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/tool-9021.png",
+  "file": "tool-9021.json"
+}

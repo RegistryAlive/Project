@@ -1,0 +1,45 @@
+{
+  "id": 314,
+  "name": "Flying Dragonfly",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-314.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Vine",
+      "itemId": 7362,
+      "itemFile": "material-7362.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Pine",
+      "itemId": 7371,
+      "itemFile": "material-7371.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Garlic",
+      "itemId": 7417,
+      "itemFile": "material-7417.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Bay Leaves",
+      "itemId": 7409,
+      "itemFile": "material-7409.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 9,
+    "hp": 69,
+    "sp": 100,
+    "catchable": "Yes",
+    "spd": 29.5,
+    "str": 3,
+    "con": 4,
+    "int": 6,
+    "wis": 6,
+    "agi": 8
+  }
+}

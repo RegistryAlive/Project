@@ -1,0 +1,27 @@
+{
+  "id": 688,
+  "name": "Explosive Scorpion (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-688.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 120,
+    "hp": 6000,
+    "sp": 2300,
+    "catchable": "Unknown",
+    "spd": 316,
+    "str": 70,
+    "con": 54,
+    "int": 70,
+    "wis": 98,
+    "agi": 68
+  }
+}

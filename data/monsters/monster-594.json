@@ -1,0 +1,27 @@
+{
+  "id": 594,
+  "name": "Bloody Snake (Quest)",
+  "location": "Persia",
+  "image": "data/Monster_Images/monster-594.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 75,
+    "hp": 5800,
+    "sp": 975,
+    "catchable": "Unknown",
+    "spd": 112.5,
+    "str": 62,
+    "con": 58,
+    "int": 40,
+    "wis": 65,
+    "agi": 0
+  }
+}

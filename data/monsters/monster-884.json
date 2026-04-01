@@ -1,0 +1,27 @@
+{
+  "id": 884,
+  "name": "Scorpion",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-884.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 18,
+    "hp": 143,
+    "sp": 115,
+    "catchable": "Unknown",
+    "spd": 51,
+    "str": 12,
+    "con": 12,
+    "int": 9,
+    "wis": 9,
+    "agi": 12
+  }
+}

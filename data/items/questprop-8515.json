@@ -1,0 +1,15 @@
+{
+  "id": 8515,
+  "name": "Snow Bison Rol",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets to partner with a snow bison.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8515.png",
+  "file": "questprop-8515.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6550,
+  "name": "Galaxy Table",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The round table in the shape of a galaxy is like peering into the Milky Way.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6550.png",
+  "file": "furniture-6550.json"
+}

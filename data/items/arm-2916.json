@@ -1,0 +1,18 @@
+{
+  "id": 2916,
+  "name": "Crazy back",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Gladiator's favorite hand armor, focusing on attack power",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 47,
+    "MATK": 47
+  },
+  "image": "data/images/arm-2916.png",
+  "file": "arm-2916.json"
+}

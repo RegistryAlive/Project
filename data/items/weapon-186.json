@@ -1,0 +1,17 @@
+{
+  "id": 186,
+  "name": "Carl's Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A sword used by escort Carl",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60
+  },
+  "image": "data/images/weapon-186.png",
+  "file": "weapon-186.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 167,
+  "name": "Supreme Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 64,
+  "level": 128,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The holy sword used by the person who was named the supreme of the world.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 64,
+    "SPD": 64
+  },
+  "image": "data/images/weapon-167.png",
+  "file": "weapon-167.json"
+}

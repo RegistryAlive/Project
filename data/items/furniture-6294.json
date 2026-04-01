@@ -1,0 +1,15 @@
+{
+  "id": 6294,
+  "name": "Desk",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 18,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Beautiful furniture which can hold designs.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6294.png",
+  "file": "furniture-6294.json"
+}

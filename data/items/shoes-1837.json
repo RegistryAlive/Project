@@ -1,0 +1,18 @@
+{
+  "id": 1837,
+  "name": "Lotus Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Leather / Grass",
+  "description": "Magic boots which contain all outrages.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 20,
+    "SPD": 3
+  },
+  "image": "data/images/shoes-1837.png",
+  "file": "shoes-1837.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1145,
+  "name": "Yukata",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 1,
+  "level": 10,
+  "rarity": "common",
+  "base": null,
+  "description": "Special holiday costume obtained at the Summer Festival, limited to girls.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "MaxHP": 8
+  },
+  "image": "data/images/armor-1145.png",
+  "file": "armor-1145.json"
+}

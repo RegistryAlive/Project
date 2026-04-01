@@ -1,0 +1,15 @@
+{
+  "id": 6720,
+  "name": "Tiger Wallpape",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The tiger pattern wallpaper allows players to change to a different wall pattern color.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6720.png",
+  "file": "furniture-6720.json"
+}

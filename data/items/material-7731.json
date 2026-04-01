@@ -1,0 +1,15 @@
+{
+  "id": 7731,
+  "name": "Bird Claw",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Hard Tissue",
+  "description": "A Claw of a Glede",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7731.png",
+  "file": "material-7731.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 7463,
+  "name": "Wolf Meat",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Succulent wolf meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 60
+  },
+  "image": "data/images/material-7463.png",
+  "file": "material-7463.json"
+}

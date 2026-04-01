@@ -1,0 +1,17 @@
+{
+  "id": 955,
+  "name": "Tiger-Fur Coat",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 3,
+  "level": 6,
+  "rarity": "uncommon",
+  "base": "Leather / Grass",
+  "description": "Clothes which is made up by a single tiger-fur",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 3
+  },
+  "image": "data/images/armor-955.png",
+  "file": "armor-955.json"
+}

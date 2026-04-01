@@ -1,0 +1,15 @@
+{
+  "id": 6634,
+  "name": "Colorful Stair",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "a staircase paved with rainbow colors and bunny's at the side",
+  "size": "5x5",
+  "attributes": {},
+  "image": "data/images/furniture-6634.png",
+  "file": "furniture-6634.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6754,
+  "name": "Lungloi Stairs",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Amazing Flying Dragon Staircase",
+  "size": "4x5",
+  "attributes": {},
+  "image": "data/images/furniture-6754.png",
+  "file": "furniture-6754.json"
+}

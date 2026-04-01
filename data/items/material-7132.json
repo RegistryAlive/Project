@@ -1,0 +1,18 @@
+{
+  "id": 7132,
+  "name": "Marshmallow",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "High-sugar desserts, with a desire to meet the physical and mental function",
+  "size": "1x1",
+  "attributes": {
+    "HP": 110,
+    "SP": 90
+  },
+  "image": "data/images/material-7132.png",
+  "file": "material-7132.json"
+}

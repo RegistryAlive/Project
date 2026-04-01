@@ -1,0 +1,27 @@
+{
+  "id": 701,
+  "name": "Forgotten Spirit",
+  "location": "Ghost Isle",
+  "image": "data/Monster_Images/monster-701.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 88,
+    "hp": 934,
+    "sp": 668,
+    "catchable": "Unknown",
+    "spd": 252,
+    "str": 50,
+    "con": 54,
+    "int": 60,
+    "wis": 40,
+    "agi": 60
+  }
+}

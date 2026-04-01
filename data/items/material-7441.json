@@ -1,0 +1,17 @@
+{
+  "id": 7441,
+  "name": "Latania",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "A Fruit",
+  "size": "1x1",
+  "attributes": {
+    "HP": 10
+  },
+  "image": "data/images/material-7441.png",
+  "file": "material-7441.json"
+}

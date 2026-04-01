@@ -1,0 +1,18 @@
+{
+  "id": 1964,
+  "name": "Icicle Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Feather / Grass / Leather",
+  "description": "Pristine-white, this pair of boots increases magic defense and agility",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 20,
+    "SPD": 10
+  },
+  "image": "data/images/shoes-1964.png",
+  "file": "shoes-1964.json"
+}

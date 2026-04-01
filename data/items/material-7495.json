@@ -1,0 +1,18 @@
+{
+  "id": 7495,
+  "name": "Sepia",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Fish and Shellfish",
+  "description": "Spits inky liquid in the water to escape attack.",
+  "size": "1x1",
+  "attributes": {
+    "HP": 42,
+    "SP": 18
+  },
+  "image": "data/images/material-7495.png",
+  "file": "material-7495.json"
+}

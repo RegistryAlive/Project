@@ -1,0 +1,27 @@
+{
+  "id": 978,
+  "name": "Villager",
+  "location": "Athens",
+  "image": "data/Monster_Images/monster-978.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 51,
+    "hp": 443,
+    "sp": 458,
+    "catchable": "Unknown",
+    "spd": 114.5,
+    "str": 37,
+    "con": 36,
+    "int": 29,
+    "wis": 32,
+    "agi": 19
+  }
+}

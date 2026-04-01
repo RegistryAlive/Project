@@ -1,0 +1,18 @@
+{
+  "id": 78,
+  "name": "Kikuichimonji",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A famous sword that has been battle-tested, with an extremely long blade and thin blade, as if it could cut everything. The critical strike rate is 30%, and the critical strike rate increases by 1% per forging +10, up to 40%",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 90,
+    "SPD": 30
+  },
+  "image": "data/images/weapon-78.png",
+  "file": "weapon-78.json"
+}

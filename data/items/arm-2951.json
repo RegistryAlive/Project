@@ -1,0 +1,18 @@
+{
+  "id": 2951,
+  "name": "bunny cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "False cuff decorations that add style; when equipped with other bunny series equipment at the same time, an additional set effect can be obtained",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 45,
+    "ATK": 10
+  },
+  "image": "data/images/arm-2951.png",
+  "file": "arm-2951.json"
+}

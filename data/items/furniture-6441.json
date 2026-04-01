@@ -1,0 +1,15 @@
+{
+  "id": 6441,
+  "name": "Snowman",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Decoration for Christmas",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6441.png",
+  "file": "furniture-6441.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6668,
+  "name": "PinkFloorLight",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The pink floor lamp, like a meteor that happened to fall here.",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6668.png",
+  "file": "furniture-6668.json"
+}

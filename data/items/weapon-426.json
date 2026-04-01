@@ -1,0 +1,18 @@
+{
+  "id": 426,
+  "name": "Overlord Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 22,
+  "level": 44,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Sacred Bow bestowed by gods, when it was respected by the world as the overlord.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 23,
+    "SPD": 21
+  },
+  "image": "data/images/weapon-426.png",
+  "file": "weapon-426.json"
+}

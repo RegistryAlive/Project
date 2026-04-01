@@ -1,0 +1,39 @@
+{
+  "id": 450,
+  "name": "Flamboyant Parrot",
+  "location": "Deep Jungle (Hanging Garden)",
+  "image": "data/Monster_Images/monster-450.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Apple Seed",
+      "itemId": 7379,
+      "itemFile": "material-7379.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Coconut (Pulp)",
+      "itemId": 7880,
+      "itemFile": "material-7880.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Juicy Peach",
+      "itemId": 7439,
+      "itemFile": "material-7439.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 128,
+    "hp": 1424,
+    "sp": 1301,
+    "catchable": "Unknown",
+    "spd": 342,
+    "str": 67,
+    "con": 73,
+    "int": 95,
+    "wis": 74,
+    "agi": 75
+  }
+}

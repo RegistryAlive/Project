@@ -1,0 +1,18 @@
+{
+  "id": 1468,
+  "name": "Gold Swan Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 45,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Gold",
+  "description": "Wearing it increases defense and adaptability.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 35,
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1468.png",
+  "file": "helmet-1468.json"
+}

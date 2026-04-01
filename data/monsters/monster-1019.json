@@ -1,0 +1,27 @@
+{
+  "id": 1019,
+  "name": "Wuge Guard",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-1019.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 89,
+    "hp": 954,
+    "sp": 843,
+    "catchable": "Unknown",
+    "spd": 253.5,
+    "str": 55,
+    "con": 55,
+    "int": 45,
+    "wis": 52,
+    "agi": 60
+  }
+}

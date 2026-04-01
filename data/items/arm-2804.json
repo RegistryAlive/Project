@@ -1,0 +1,18 @@
+{
+  "id": 2804,
+  "name": "Indigo Cang",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Sky Wolf after the death of the incarnation of the guard, including fierce resistance, extraordinary power",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 21,
+    "MATK": 12
+  },
+  "image": "data/images/arm-2804.png",
+  "file": "arm-2804.json"
+}

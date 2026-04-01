@@ -1,0 +1,15 @@
+{
+  "id": 8215,
+  "name": "Kita's Love Letter",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "The love letter from Kita to Angeka",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8215.png",
+  "file": "questprop-8215.json"
+}

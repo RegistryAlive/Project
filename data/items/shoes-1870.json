@@ -1,0 +1,17 @@
+{
+  "id": 1870,
+  "name": "Hero Shoes",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Leaf / Grass / Fur",
+  "description": "Light boots made from arcane leather.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 27
+  },
+  "image": "data/images/shoes-1870.png",
+  "file": "shoes-1870.json"
+}

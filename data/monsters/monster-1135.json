@@ -1,0 +1,39 @@
+{
+  "id": 1135,
+  "name": "Blue Dairy Cattle",
+  "location": "Calcutta",
+  "image": "data/Monster_Images/monster-1136.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Grape Seed",
+      "itemId": 7386,
+      "itemFile": "material-7386.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cow Dung",
+      "itemId": 7773,
+      "itemFile": "material-7773.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Milk",
+      "itemId": 7509,
+      "itemFile": "material-7509.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 81,
+    "hp": 783,
+    "sp": 691,
+    "catchable": "Unknown",
+    "spd": 199.5,
+    "str": 62,
+    "con": 59,
+    "int": 40,
+    "wis": 43,
+    "agi": 39
+  }
+}

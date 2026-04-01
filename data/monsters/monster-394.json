@@ -1,0 +1,39 @@
+{
+  "id": 394,
+  "name": "Green Pangolin",
+  "location": "Rome",
+  "image": "data/Monster_Images/monster-394.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Apple",
+      "itemId": 7433,
+      "itemFile": "material-7433.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Ant Tooth",
+      "itemId": 7798,
+      "itemFile": "material-7798.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Clay",
+      "itemId": 7640,
+      "itemFile": "material-7640.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 125,
+    "hp": 1264,
+    "sp": 1307,
+    "catchable": "Unknown",
+    "spd": 343.5,
+    "str": 68,
+    "con": 86,
+    "int": 68,
+    "wis": 75,
+    "agi": 78
+  }
+}

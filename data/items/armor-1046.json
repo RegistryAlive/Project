@@ -1,0 +1,18 @@
+{
+  "id": 1046,
+  "name": "Plume Clothes",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 28,
+  "level": 56,
+  "rarity": "legendary",
+  "base": "Grass / Flower",
+  "description": "A masked costume.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 19,
+    "DEF": 9
+  },
+  "image": "data/images/armor-1046.png",
+  "file": "armor-1046.json"
+}

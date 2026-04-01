@@ -1,0 +1,39 @@
+{
+  "id": 222,
+  "name": "Dairy Cattle",
+  "location": "South Island",
+  "image": "data/Monster_Images/monster-222.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Beef",
+      "itemId": 7472,
+      "itemFile": "material-7472.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cow Dung",
+      "itemId": 7773,
+      "itemFile": "material-7773.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Milk",
+      "itemId": 7509,
+      "itemFile": "material-7509.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 69,
+    "hp": 644,
+    "sp": 561,
+    "catchable": "Yes",
+    "spd": 167.5,
+    "str": 50,
+    "con": 50,
+    "int": 39,
+    "wis": 36,
+    "agi": 32
+  }
+}

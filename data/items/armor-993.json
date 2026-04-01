@@ -1,0 +1,18 @@
+{
+  "id": 993,
+  "name": "Light Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Pure Iron / Leather",
+  "description": "Armor designed to be lightweight but durable.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 16,
+    "SPD": 14
+  },
+  "image": "data/images/armor-993.png",
+  "file": "armor-993.json"
+}

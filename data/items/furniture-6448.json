@@ -1,0 +1,15 @@
+{
+  "id": 6448,
+  "name": "Rose Love Wrea",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A rose wreath that hangs on the wall",
+  "size": "2x2",
+  "attributes": {},
+  "image": "data/images/furniture-6448.png",
+  "file": "furniture-6448.json"
+}

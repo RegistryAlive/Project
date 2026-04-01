@@ -1,0 +1,15 @@
+{
+  "id": 6326,
+  "name": "Doorplate",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 15,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "It can change the name of the house.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6326.png",
+  "file": "furniture-6326.json"
+}

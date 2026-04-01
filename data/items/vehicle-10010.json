@@ -1,0 +1,17 @@
+{
+  "id": 10010,
+  "name": "Cabriolet",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A kind of engine powered vehicle with four wheels.",
+  "size": "4x3",
+  "attributes": {
+    "SPECIAL": 46912
+  },
+  "image": "data/images/vehicle-10010.png",
+  "file": "vehicle-10010.json"
+}

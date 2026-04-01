@@ -1,0 +1,17 @@
+{
+  "id": 726,
+  "name": "Rock Ax",
+  "type": "WeaponAx",
+  "category": "weapon",
+  "rank": 12,
+  "level": 24,
+  "rarity": "legendary",
+  "base": "Copper / Wood",
+  "description": "To ax made of stone with magic stones",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 27
+  },
+  "image": "data/images/weapon-726.png",
+  "file": "weapon-726.json"
+}

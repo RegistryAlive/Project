@@ -1,0 +1,27 @@
+{
+  "id": 831,
+  "name": "Niss",
+  "location": "North Island",
+  "image": "data/Monster_Images/monster-831.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 10,
+    "hp": 64,
+    "sp": 104,
+    "catchable": "Unknown",
+    "spd": 23,
+    "str": 3,
+    "con": 3,
+    "int": 10,
+    "wis": 10,
+    "agi": 4
+  }
+}

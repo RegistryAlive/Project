@@ -1,0 +1,15 @@
+{
+  "id": 8179,
+  "name": "Ocean Heart",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It is a mysterious legend",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8179.png",
+  "file": "questprop-8179.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 622,
+  "name": "Charlotte",
+  "location": "Angkor Wat",
+  "image": "data/Monster_Images/monster-622.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 24,
+    "hp": 91,
+    "sp": 240,
+    "catchable": "Unknown",
+    "spd": 96,
+    "str": 4,
+    "con": 4,
+    "int": 14,
+    "wis": 20,
+    "agi": 30
+  }
+}

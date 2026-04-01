@@ -1,0 +1,18 @@
+{
+  "id": 1327,
+  "name": "Till Death Dre",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The deep black dress is said to be endowed with the power to keep lovers inseparable even in death. Increase damage by 3% when HP is below 50%",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "ATK": 22
+  },
+  "image": "data/images/armor-1327.png",
+  "file": "armor-1327.json"
+}

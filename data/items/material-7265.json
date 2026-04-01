@@ -1,0 +1,18 @@
+{
+  "id": 7265,
+  "name": "Sliced Roo",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Meat",
+  "description": "Roasted roo meat",
+  "size": "1x1",
+  "attributes": {
+    "HP": 200,
+    "SP": 75
+  },
+  "image": "data/images/material-7265.png",
+  "file": "material-7265.json"
+}

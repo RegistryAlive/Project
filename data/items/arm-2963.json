@@ -1,0 +1,18 @@
+{
+  "id": 2963,
+  "name": "Wushu Gloves",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Gloves infused with internal energy can be felt as an increase in power; when equipped together with other martial arts warrior series equipment, it can increase the damage of weapons such as swords and mallets.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "MATK": 20
+  },
+  "image": "data/images/arm-2963.png",
+  "file": "arm-2963.json"
+}

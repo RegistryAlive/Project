@@ -1,0 +1,18 @@
+{
+  "id": 2617,
+  "name": "Common Collar",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 12,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "N/A",
+  "description": "A mixed-metal collar exlusivly used a by pet",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 130,
+    "DEF": 13
+  },
+  "image": "data/images/special-2617.png",
+  "file": "special-2617.json"
+}

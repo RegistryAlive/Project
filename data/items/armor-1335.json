@@ -1,0 +1,18 @@
+{
+  "id": 1335,
+  "name": "Soul Garb",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A very dignified outfit that brings a sense of seriousness and prudence; additional outfit effects can be obtained when equipped together with other Soul Guardian series equipment.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 20,
+    "MATK": 20
+  },
+  "image": "data/images/armor-1335.png",
+  "file": "armor-1335.json"
+}

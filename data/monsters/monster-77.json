@@ -1,0 +1,39 @@
+{
+  "id": 77,
+  "name": "Yellow Beetle",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-77.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Grape",
+      "itemId": 7436,
+      "itemFile": "material-7436.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Clay",
+      "itemId": 7644,
+      "itemFile": "material-7644.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Iron Ore",
+      "itemId": 7562,
+      "itemFile": "material-7562.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 65,
+    "hp": 840,
+    "sp": 471,
+    "catchable": "Unknown",
+    "spd": 177.5,
+    "str": 40,
+    "con": 55,
+    "int": 30,
+    "wis": 30,
+    "agi": 40
+  }
+}

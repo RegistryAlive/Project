@@ -1,0 +1,27 @@
+{
+  "id": 568,
+  "name": "Azong",
+  "location": "Fishing Village",
+  "image": "data/Monster_Images/monster-568.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 90,
+    "hp": 1110,
+    "sp": 846,
+    "catchable": "Unknown",
+    "spd": 219,
+    "str": 62,
+    "con": 65,
+    "int": 49,
+    "wis": 52,
+    "agi": 42
+  }
+}

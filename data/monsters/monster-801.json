@@ -1,0 +1,27 @@
+{
+  "id": 801,
+  "name": "Liyi's Pawn (Quest)",
+  "location": "Chang' an",
+  "image": "data/Monster_Images/monster-801.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 85,
+    "hp": 1234,
+    "sp": 660,
+    "catchable": "Unknown",
+    "spd": 227.5,
+    "str": 60,
+    "con": 75,
+    "int": 30,
+    "wis": 40,
+    "agi": 50
+  }
+}

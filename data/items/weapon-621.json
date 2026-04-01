@@ -1,0 +1,18 @@
+{
+  "id": 621,
+  "name": "Twilight Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 7,
+  "level": 0,
+  "rarity": "epic",
+  "base": null,
+  "description": "The magic wand that keeps time at dusk",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 60,
+    "MaxHP": 400
+  },
+  "image": "data/images/weapon-621.png",
+  "file": "weapon-621.json"
+}

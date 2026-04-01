@@ -1,0 +1,18 @@
+{
+  "id": 2321,
+  "name": "Emmanuel ribbo",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 17,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Ribbon with a strong spiritual energy, man-private partnership",
+  "size": "1x1",
+  "attributes": {
+    "MDEF": 50,
+    "MaxSP": 350
+  },
+  "image": "data/images/special-2321.png",
+  "file": "special-2321.json"
+}

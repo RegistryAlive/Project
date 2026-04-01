@@ -1,0 +1,17 @@
+{
+  "id": 7043,
+  "name": "Crepe",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 5,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat",
+  "description": "It's thin and crispy",
+  "size": "1x1",
+  "attributes": {
+    "HP": 250
+  },
+  "image": "data/images/material-7043.png",
+  "file": "material-7043.json"
+}

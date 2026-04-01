@@ -1,0 +1,15 @@
+{
+  "id": 7764,
+  "name": "Silk",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Silk processed from a silkworm cocoon.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7764.png",
+  "file": "material-7764.json"
+}

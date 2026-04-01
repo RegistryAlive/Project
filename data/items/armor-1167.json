@@ -1,0 +1,17 @@
+{
+  "id": 1167,
+  "name": "Blue Flame Loricae",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 40,
+  "level": 80,
+  "rarity": "legendary",
+  "base": "Titanium / Tin / Steel",
+  "description": "Loricae with defensive powers",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 40
+  },
+  "image": "data/images/armor-1167.png",
+  "file": "armor-1167.json"
+}

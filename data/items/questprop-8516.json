@@ -1,0 +1,15 @@
+{
+  "id": 8516,
+  "name": "Holy Bison Rol",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets to make holly bison partners.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8516.png",
+  "file": "questprop-8516.json"
+}

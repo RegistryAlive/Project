@@ -1,0 +1,15 @@
+{
+  "id": 6725,
+  "name": "Candy Door",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Delicious looking chocolate door",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6725.png",
+  "file": "furniture-6725.json"
+}

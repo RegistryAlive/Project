@@ -1,0 +1,27 @@
+{
+  "id": 664,
+  "name": "Dick",
+  "location": "Welling Village",
+  "image": "data/Monster_Images/monster-664.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 38,
+    "hp": 283,
+    "sp": 279,
+    "catchable": "Unknown",
+    "spd": 127,
+    "str": 19,
+    "con": 23,
+    "int": 17,
+    "wis": 20,
+    "agi": 35
+  }
+}

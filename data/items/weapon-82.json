@@ -1,0 +1,18 @@
+{
+  "id": 82,
+  "name": "Ghost Reaper",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "An ancient scythe full of desperate ghosts. Has 46% crit effect",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 75,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-82.png",
+  "file": "weapon-82.json"
+}

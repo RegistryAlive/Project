@@ -1,0 +1,18 @@
+{
+  "id": 520,
+  "name": "Crystal Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 23,
+  "level": 46,
+  "rarity": "legendary",
+  "base": "Tin / Diamond",
+  "description": "An amethyst wand that is slim and graceful.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 29,
+    "SPD": 17
+  },
+  "image": "data/images/weapon-520.png",
+  "file": "weapon-520.json"
+}

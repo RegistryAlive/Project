@@ -1,0 +1,17 @@
+{
+  "id": 5046,
+  "name": "Moon Cake",
+  "type": "Item",
+  "category": "accessory",
+  "rank": 6,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Delicious moon cake, after eating can also get a mysterious little notes",
+  "size": "1x1",
+  "attributes": {
+    "HP": 300
+  },
+  "image": "data/images/accessory-5046.png",
+  "file": "accessory-5046.json"
+}

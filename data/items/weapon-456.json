@@ -1,0 +1,18 @@
+{
+  "id": 456,
+  "name": "Dragon Tongue",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A legendary bow that uses dragon tendons to make the bowstring, with a 40% chance of hitting and ignoring monster resistance.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 40,
+    "MaxSP": 300
+  },
+  "image": "data/images/weapon-456.png",
+  "file": "weapon-456.json"
+}

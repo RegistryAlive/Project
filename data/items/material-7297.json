@@ -1,0 +1,17 @@
+{
+  "id": 7297,
+  "name": "Lemon Berry Syrup",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Lemon juice with berries",
+  "size": "1x1",
+  "attributes": {
+    "SP": 400
+  },
+  "image": "data/images/material-7297.png",
+  "file": "material-7297.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6234,
+  "name": "Paper Machine",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Mills material and presses it to pieces of paper.",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6234.png",
+  "file": "furniture-6234.json"
+}

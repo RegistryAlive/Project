@@ -1,0 +1,18 @@
+{
+  "id": 350,
+  "name": "Frozen Spear",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Wood / Copper / Steel",
+  "description": "Powerful spear made of steel and copper alloy",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 34,
+    "DEF": 28
+  },
+  "image": "data/images/weapon-350.png",
+  "file": "weapon-350.json"
+}

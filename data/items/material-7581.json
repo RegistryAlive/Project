@@ -1,0 +1,15 @@
+{
+  "id": 7581,
+  "name": "Aluminum Ore",
+  "type": "MaterialMineral",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Aluminum",
+  "description": "Rare aluminum ore",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7581.png",
+  "file": "material-7581.json"
+}

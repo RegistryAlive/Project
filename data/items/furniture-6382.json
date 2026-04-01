@@ -1,0 +1,15 @@
+{
+  "id": 6382,
+  "name": "TV Cabinet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A beautiful platform",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6382.png",
+  "file": "furniture-6382.json"
+}

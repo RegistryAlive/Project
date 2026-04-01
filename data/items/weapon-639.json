@@ -1,0 +1,18 @@
+{
+  "id": 639,
+  "name": "Mystic Stick",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 18,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A golden cane surrounded by stardust fragments, drawn from the power of dark mysterious feathers. 46% critical strike chance",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 45,
+    "SPD": 45
+  },
+  "image": "data/images/weapon-639.png",
+  "file": "weapon-639.json"
+}

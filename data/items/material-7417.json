@@ -1,0 +1,18 @@
+{
+  "id": 7417,
+  "name": "Garlic",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Spicy taste",
+  "size": "1x1",
+  "attributes": {
+    "SP": 20,
+    "HP": 10
+  },
+  "image": "data/images/material-7417.png",
+  "file": "material-7417.json"
+}

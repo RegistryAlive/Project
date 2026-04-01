@@ -1,0 +1,15 @@
+{
+  "id": 7766,
+  "name": "Shell",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Canine",
+  "description": "A Shell from a seashell",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7766.png",
+  "file": "material-7766.json"
+}

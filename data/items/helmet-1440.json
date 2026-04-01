@@ -1,0 +1,18 @@
+{
+  "id": 1440,
+  "name": "Ox Horn Hat",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 13,
+  "level": 26,
+  "rarity": "legendary",
+  "base": "Copper / Hard Tissue",
+  "description": "Helmet inlaid with animal's horns.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 2,
+    "DEF": 11
+  },
+  "image": "data/images/helmet-1440.png",
+  "file": "helmet-1440.json"
+}

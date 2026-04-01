@@ -1,0 +1,18 @@
+{
+  "id": 12,
+  "name": "Pure Iron Falchion",
+  "type": "WeaponBlade",
+  "category": "weapon",
+  "rank": 10,
+  "level": 20,
+  "rarity": "legendary",
+  "base": "Pure Iron / Wood",
+  "description": "A Falchion made from pure iron",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "DEF": 10
+  },
+  "image": "data/images/weapon-12.png",
+  "file": "weapon-12.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 451,
+  "name": "BlackFlyin Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 30,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A famous bow made by ancient craftsmen. Critical strike rate increases by 1% per forging +10, up to 40%, regardless of the monster?s bow resistance",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 30,
+    "SPD": 60
+  },
+  "image": "data/images/weapon-451.png",
+  "file": "weapon-451.json"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 851,
+  "name": "Poisonous Snake",
+  "location": "15 Rounds Challenge",
+  "image": "data/Monster_Images/monster-851.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 68,
+    "hp": 662,
+    "sp": 572,
+    "catchable": "Unknown",
+    "spd": 186,
+    "str": 47,
+    "con": 41,
+    "int": 37,
+    "wis": 37,
+    "agi": 42
+  }
+}

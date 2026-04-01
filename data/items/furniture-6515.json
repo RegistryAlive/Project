@@ -1,0 +1,15 @@
+{
+  "id": 6515,
+  "name": "Wall Sticker",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "The stylish decoration of the arch shape can be pasted on the wall. But cannot be used as a real door",
+  "size": "2x4",
+  "attributes": {},
+  "image": "data/images/furniture-6515.png",
+  "file": "furniture-6515.json"
+}

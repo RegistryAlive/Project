@@ -1,0 +1,18 @@
+{
+  "id": 1601,
+  "name": "Bandana of Zeal",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 41,
+  "level": 82,
+  "rarity": "legendary",
+  "base": "Fur / Feather / Crystallization",
+  "description": "A head sash embedded with the Stone of Eagle. Increases attack.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28,
+    "ATK": 13
+  },
+  "image": "data/images/helmet-1601.png",
+  "file": "helmet-1601.json"
+}

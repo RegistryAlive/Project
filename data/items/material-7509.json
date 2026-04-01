@@ -1,0 +1,18 @@
+{
+  "id": 7509,
+  "name": "Milk",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 10,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Dairy Product",
+  "description": "Milk, an ordinary beverage",
+  "size": "1x1",
+  "attributes": {
+    "SP": 65,
+    "HP": 35
+  },
+  "image": "data/images/material-7509.png",
+  "file": "material-7509.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 292,
+  "name": "Steel Trident",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 30,
+  "level": 60,
+  "rarity": "legendary",
+  "base": "Steel / Iron",
+  "description": "Forged precisely with steel, has 3 heads.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 60
+  },
+  "image": "data/images/weapon-292.png",
+  "file": "weapon-292.json"
+}

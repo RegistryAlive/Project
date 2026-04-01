@@ -1,0 +1,51 @@
+{
+  "id": 366,
+  "name": "Echinate Starfish",
+  "location": "Oslya",
+  "image": "data/Monster_Images/monster-366.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Starfish Tentacles",
+      "itemId": 7795,
+      "itemFile": "material-7795.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sea Water",
+      "itemId": 7891,
+      "itemFile": "material-7891.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 53,
+    "hp": 486,
+    "sp": 464,
+    "catchable": "Yes",
+    "spd": 143.5,
+    "str": 31,
+    "con": 32,
+    "int": 32,
+    "wis": 32,
+    "agi": 32
+  }
+}

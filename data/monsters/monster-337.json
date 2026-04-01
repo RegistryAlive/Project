@@ -1,0 +1,27 @@
+{
+  "id": 337,
+  "name": "Gray Bat",
+  "location": "Snow Island",
+  "image": "data/Monster_Images/monster-337.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Bat Droppings",
+      "itemId": 7774,
+      "itemFile": "material-7774.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 27,
+    "hp": 247,
+    "sp": 228,
+    "catchable": "No",
+    "spd": 72.5,
+    "str": 14,
+    "con": 19,
+    "int": 14,
+    "wis": 18,
+    "agi": 16
+  }
+}

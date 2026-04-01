@@ -1,0 +1,17 @@
+{
+  "id": 7887,
+  "name": "Yo Cabbage syrup",
+  "type": "Material",
+  "category": "material",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "Special syrup of Yo Family",
+  "size": "1x1",
+  "attributes": {
+    "SP": 70
+  },
+  "image": "data/images/material-7887.png",
+  "file": "material-7887.json"
+}

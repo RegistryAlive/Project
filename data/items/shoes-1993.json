@@ -1,0 +1,17 @@
+{
+  "id": 1993,
+  "name": "F.Combat Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The combat boots that fighters love to make quick action",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 47
+  },
+  "image": "data/images/shoes-1993.png",
+  "file": "shoes-1993.json"
+}

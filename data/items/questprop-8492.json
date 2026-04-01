@@ -1,0 +1,15 @@
+{
+  "id": 8492,
+  "name": "Dumb Duck Tix",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Tickets to make the Dumb Duck Beast a partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8492.png",
+  "file": "questprop-8492.json"
+}

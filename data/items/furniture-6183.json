@@ -1,0 +1,15 @@
+{
+  "id": 6183,
+  "name": "Red Jade Powder",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 8,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Jade",
+  "description": "It's the powder from red jade",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/furniture-6183.png",
+  "file": "furniture-6183.json"
+}

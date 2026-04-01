@@ -1,0 +1,18 @@
+{
+  "id": 7871,
+  "name": "Fried Luffa (Glaze Table)",
+  "type": "Material",
+  "category": "material",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": "Vegetable",
+  "description": "Fried luffa pieces",
+  "size": "1x1",
+  "attributes": {
+    "HP": 65,
+    "SP": 45
+  },
+  "image": "data/images/material-7871.png",
+  "file": "material-7871.json"
+}

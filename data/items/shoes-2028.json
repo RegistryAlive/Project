@@ -1,0 +1,18 @@
+{
+  "id": 2028,
+  "name": "Seer Boots",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Leaf / Grass / Flower",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 10,
+    "SPD": 15
+  },
+  "image": "data/images/shoes-2028.png",
+  "file": "shoes-2028.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1541,
+  "name": "Delicate Helmet",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 38,
+  "level": 76,
+  "rarity": "legendary",
+  "base": "Titanium / Corundum",
+  "description": "Light necklace with magical powers.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 26,
+    "SPD": 12
+  },
+  "image": "data/images/helmet-1541.png",
+  "file": "helmet-1541.json"
+}

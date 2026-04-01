@@ -1,0 +1,18 @@
+{
+  "id": 2798,
+  "name": "Mist Cuffs",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 27,
+  "level": 54,
+  "rarity": "legendary",
+  "base": "Copper",
+  "description": "Light armguard made from cloud and mist.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "DEF": 12
+  },
+  "image": "data/images/arm-2798.png",
+  "file": "arm-2798.json"
+}

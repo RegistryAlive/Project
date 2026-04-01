@@ -1,0 +1,18 @@
+{
+  "id": 2930,
+  "name": "Memory Armlet",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Attach it to your hand and watch the flowers bloom one after another. When using a bow weapon, attack damage is +1% (will disappear if you change the bracelet's shape).",
+  "size": "1x1",
+  "attributes": {
+    "Special": 1,
+    "SPD": 45
+  },
+  "image": "data/images/arm-2930.png",
+  "file": "arm-2930.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 546,
+  "name": "Dragon Soul Wand",
+  "type": "WeaponWand",
+  "category": "weapon",
+  "rank": 2,
+  "level": 70,
+  "rarity": "common",
+  "base": "Magic",
+  "description": "Has a 14% critical strike chance.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 28,
+    "MATK": 15
+  },
+  "image": "data/images/weapon-546.png",
+  "file": "weapon-546.json"
+}

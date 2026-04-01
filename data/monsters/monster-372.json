@@ -1,0 +1,51 @@
+{
+  "id": 372,
+  "name": "Thick Starfish",
+  "location": "Philippine",
+  "image": "data/Monster_Images/monster-372.png",
+  "element": "Null",
+  "drops": [
+    {
+      "name": "Fish",
+      "itemId": 7486,
+      "itemFile": "material-7486.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Yellow Croaker",
+      "itemId": 7484,
+      "itemFile": "material-7484.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Eel",
+      "itemId": 7490,
+      "itemFile": "material-7490.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Starfish Tentacles",
+      "itemId": 7795,
+      "itemFile": "material-7795.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sea Water",
+      "itemId": 7891,
+      "itemFile": "material-7891.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 21,
+    "hp": 196,
+    "sp": 121,
+    "catchable": "Yes",
+    "spd": 55.5,
+    "str": 12,
+    "con": 18,
+    "int": 12,
+    "wis": 9,
+    "agi": 12
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 7046,
+  "name": "Bacon Crepe",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 11,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": "Wheat / Meat",
+  "description": "Crepes with bacon in it",
+  "size": "1x1",
+  "attributes": {
+    "HP": 450,
+    "SP": 100
+  },
+  "image": "data/images/material-7046.png",
+  "file": "material-7046.json"
+}

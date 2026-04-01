@@ -1,0 +1,18 @@
+{
+  "id": 684,
+  "name": "Dusk Claw",
+  "type": "WeaponClaw",
+  "category": "weapon",
+  "rank": 42,
+  "level": 84,
+  "rarity": "legendary",
+  "base": "Rock / Steel / Titanium / Hard Tissue",
+  "description": "A claw crafted from a shadow stone",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 48,
+    "SPD": 36
+  },
+  "image": "data/images/weapon-684.png",
+  "file": "weapon-684.json"
+}

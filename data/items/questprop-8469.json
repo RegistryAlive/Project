@@ -1,0 +1,15 @@
+{
+  "id": 8469,
+  "name": "Platypus Exc",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can make the platypus a partner",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8469.png",
+  "file": "questprop-8469.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2096,
+  "name": "Ashen Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 3,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "A ring cut down from copper, having good defense.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 3
+  },
+  "image": "data/images/special-2096.png",
+  "file": "special-2096.json"
+}

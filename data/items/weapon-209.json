@@ -1,0 +1,18 @@
+{
+  "id": 209,
+  "name": "Choppy Iron Sword",
+  "type": "WeaponSword",
+  "category": "weapon",
+  "rank": 26,
+  "level": 52,
+  "rarity": "legendary",
+  "base": "Pure Iron / Steel",
+  "description": "A blade made out of hematite and steel",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 32,
+    "SPD": 20
+  },
+  "image": "data/images/weapon-209.png",
+  "file": "weapon-209.json"
+}

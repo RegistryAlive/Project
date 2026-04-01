@@ -1,0 +1,15 @@
+{
+  "id": 9015,
+  "name": "Auto Machine",
+  "type": "ManufactureTool",
+  "category": "tool",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "It can save the time.",
+  "size": "5x4",
+  "attributes": {},
+  "image": "data/images/tool-9015.png",
+  "file": "tool-9015.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 336,
+  "name": "Sky Halberd",
+  "type": "WeaponSpear",
+  "category": "weapon",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Wood / Pure Iron / Steel / Titanium",
+  "description": "This Halberd has been imbued with unbelievable attack power.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 51,
+    "DEF": 15
+  },
+  "image": "data/images/weapon-336.png",
+  "file": "weapon-336.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 749,
+  "name": "Great Iron Stick",
+  "type": "WeaponClub",
+  "category": "weapon",
+  "rank": 11,
+  "level": 22,
+  "rarity": "legendary",
+  "base": "Iron / Wood",
+  "description": "It is made of pure iron.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "DEF": 12
+  },
+  "image": "data/images/weapon-749.png",
+  "file": "weapon-749.json"
+}

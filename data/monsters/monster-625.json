@@ -1,0 +1,27 @@
+{
+  "id": 625,
+  "name": "Cleopatra",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-625.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 150,
+    "hp": 1929,
+    "sp": 1471,
+    "catchable": "Unknown",
+    "spd": 425,
+    "str": 95,
+    "con": 95,
+    "int": 80,
+    "wis": 80,
+    "agi": 100
+  }
+}

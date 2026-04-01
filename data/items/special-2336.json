@@ -1,0 +1,15 @@
+{
+  "id": 2336,
+  "name": "Fixed Bolt",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 0,
+  "rarity": "rare",
+  "base": "Wood / Magic",
+  "description": "A stick with holy power to freeze people flying suddenly",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/special-2336.png",
+  "file": "special-2336.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6298,
+  "name": "Ancient Bathtub",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 12,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "An ancient style bathtub.",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6298.png",
+  "file": "furniture-6298.json"
+}

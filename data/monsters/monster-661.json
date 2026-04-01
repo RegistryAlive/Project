@@ -1,0 +1,27 @@
+{
+  "id": 661,
+  "name": "Desert Robber (Quest)",
+  "location": "Cairo",
+  "image": "data/Monster_Images/monster-661.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 65,
+    "hp": 5600,
+    "sp": 500,
+    "catchable": "Unknown",
+    "spd": 189.5,
+    "str": 40,
+    "con": 39,
+    "int": 34,
+    "wis": 36,
+    "agi": 46
+  }
+}

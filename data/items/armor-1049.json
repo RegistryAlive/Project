@@ -1,0 +1,18 @@
+{
+  "id": 1049,
+  "name": "Red Armor",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 31,
+  "level": 62,
+  "rarity": "legendary",
+  "base": "Pure Iron / Grass / Steel",
+  "description": "Light armor forged in the fire of the earth.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 20,
+    "ATK": 11
+  },
+  "image": "data/images/armor-1049.png",
+  "file": "armor-1049.json"
+}

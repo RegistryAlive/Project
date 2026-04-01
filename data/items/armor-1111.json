@@ -1,0 +1,18 @@
+{
+  "id": 1111,
+  "name": "Blue Kung-Fu Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 39,
+  "level": 78,
+  "rarity": "legendary",
+  "base": "Flower",
+  "description": "Kung-fu clothes made of silk.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 24,
+    "ATK": 15
+  },
+  "image": "data/images/armor-1111.png",
+  "file": "armor-1111.json"
+}

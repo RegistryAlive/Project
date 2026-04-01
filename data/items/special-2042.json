@@ -1,0 +1,18 @@
+{
+  "id": 2042,
+  "name": "Green Ring",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Silver / Grass",
+  "description": "A ring which is inlaid common green bijou",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 4,
+    "ATK": 2
+  },
+  "image": "data/images/special-2042.png",
+  "file": "special-2042.json"
+}

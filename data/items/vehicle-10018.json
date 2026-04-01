@@ -1,0 +1,17 @@
+{
+  "id": 10018,
+  "name": "Air Balloon Ca",
+  "type": "Vehicle",
+  "category": "vehicle",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Flies by hot air rise from combustion",
+  "size": "1x1",
+  "attributes": {
+    "SPECIAL": 36975
+  },
+  "image": "data/images/vehicle-10018.png",
+  "file": "vehicle-10018.json"
+}

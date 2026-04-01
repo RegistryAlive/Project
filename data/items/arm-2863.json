@@ -1,0 +1,18 @@
+{
+  "id": 2863,
+  "name": "Water Aurora Bracers",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal)",
+  "description": "Suit: Damages Fire enemies;-50% damage to Earth enemies.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 15,
+    "MDEF": 10
+  },
+  "image": "data/images/arm-2863.png",
+  "file": "arm-2863.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1229,
+  "name": "Gorefiend cost",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 15,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Bright red armor with silver ornaments, dress imitating the look of blood demon is popular with people who love cold style",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 30,
+    "DefShoot": 0
+  },
+  "image": "data/images/armor-1229.png",
+  "file": "armor-1229.json"
+}

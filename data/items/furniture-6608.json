@@ -1,0 +1,15 @@
+{
+  "id": 6608,
+  "name": "Snow window",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Through the window, you can enjoy the winter snow scene",
+  "size": "3x4",
+  "attributes": {},
+  "image": "data/images/furniture-6608.png",
+  "file": "furniture-6608.json"
+}

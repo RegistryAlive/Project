@@ -1,0 +1,17 @@
+{
+  "id": 805,
+  "name": "Cursed ScareCr",
+  "type": "WeaponFan",
+  "category": "weapon",
+  "rank": 2,
+  "level": 4,
+  "rarity": "common",
+  "base": null,
+  "description": "Vector scarecrow for magic spells",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 2
+  },
+  "image": "data/images/weapon-805.png",
+  "file": "weapon-805.json"
+}

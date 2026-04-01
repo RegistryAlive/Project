@@ -1,0 +1,18 @@
+{
+  "id": 7016,
+  "name": "Australian Bread",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": "Wheat",
+  "description": "An Unique bread in Australia",
+  "size": "1x1",
+  "attributes": {
+    "HP": 90,
+    "SP": 60
+  },
+  "image": "data/images/material-7016.png",
+  "file": "material-7016.json"
+}

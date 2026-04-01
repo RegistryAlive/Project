@@ -1,0 +1,15 @@
+{
+  "id": 6487,
+  "name": "Pink Heart Ch.",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Pink Series Chair with a heart drawn. Favoured by young girls.",
+  "size": "2x3",
+  "attributes": {},
+  "image": "data/images/furniture-6487.png",
+  "file": "furniture-6487.json"
+}

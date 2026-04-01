@@ -1,0 +1,15 @@
+{
+  "id": 7778,
+  "name": "Thin-Skinned",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Leather",
+  "description": "A Cat's hide",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7778.png",
+  "file": "material-7778.json"
+}

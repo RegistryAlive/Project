@@ -1,0 +1,18 @@
+{
+  "id": 1220,
+  "name": "Azure Fur Clot",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Handsome and beautiful clothing woven from golden and blue silk",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 26,
+    "SPD": 18
+  },
+  "image": "data/images/armor-1220.png",
+  "file": "armor-1220.json"
+}

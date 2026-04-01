@@ -1,0 +1,15 @@
+{
+  "id": 8378,
+  "name": "Pig Ex V",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "A ticket that can exchange for Pig to be your partner.",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8378.png",
+  "file": "questprop-8378.json"
+}

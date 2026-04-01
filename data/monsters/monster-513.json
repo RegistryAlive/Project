@@ -1,0 +1,27 @@
+{
+  "id": 513,
+  "name": "Beast Trainer",
+  "location": "Athens",
+  "image": "data/Monster_Images/monster-513.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Key of the Feedlot",
+      "itemId": 8211,
+      "itemFile": "questprop-8211.json",
+      "itemCategory": "questprop"
+    }
+  ],
+  "stats": {
+    "level": 135,
+    "hp": 1669,
+    "sp": 1325,
+    "catchable": "Unknown",
+    "spd": 354.5,
+    "str": 89,
+    "con": 85,
+    "int": 81,
+    "wis": 74,
+    "agi": 76
+  }
+}

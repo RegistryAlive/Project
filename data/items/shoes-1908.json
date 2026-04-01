@@ -1,0 +1,18 @@
+{
+  "id": 1908,
+  "name": "Seer's Boot",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 25,
+  "level": 50,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Prophet's favorite shoes. Set: double socket bonus.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 15,
+    "MATK": 10
+  },
+  "image": "data/images/shoes-1908.png",
+  "file": "shoes-1908.json"
+}

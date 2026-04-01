@@ -1,0 +1,45 @@
+{
+  "id": 1119,
+  "name": "Senior Willow Devil",
+  "location": "Jungle",
+  "image": "data/Monster_Images/monster-1120.png",
+  "element": "Fire",
+  "drops": [
+    {
+      "name": "Lauan",
+      "itemId": 7653,
+      "itemFile": "material-7653.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Sun Mushroom",
+      "itemId": 7523,
+      "itemFile": "material-7523.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Original Rubber",
+      "itemId": 6029,
+      "itemFile": "furniture-6029.json",
+      "itemCategory": "furniture"
+    },
+    {
+      "name": "Lauan Wood",
+      "itemId": 7649,
+      "itemFile": "material-7649.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 17,
+    "hp": 148,
+    "sp": 122,
+    "catchable": "Yes",
+    "spd": 43.5,
+    "str": 9,
+    "con": 13,
+    "int": 10,
+    "wis": 10,
+    "agi": 9
+  }
+}

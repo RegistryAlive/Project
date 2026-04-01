@@ -1,0 +1,39 @@
+{
+  "id": 407,
+  "name": "Green Hair Fox",
+  "location": "Koyota",
+  "image": "data/Monster_Images/monster-407.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Goose",
+      "itemId": 7477,
+      "itemFile": "material-7477.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "White Fox Fur",
+      "itemId": 7670,
+      "itemFile": "material-7670.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Beast Fur",
+      "itemId": 7780,
+      "itemFile": "material-7780.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 62,
+    "hp": 585,
+    "sp": 567,
+    "catchable": "Yes",
+    "spd": 161,
+    "str": 38,
+    "con": 37,
+    "int": 39,
+    "wis": 38,
+    "agi": 34
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": 972,
+  "name": "Thorn Suit",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 20,
+  "level": 40,
+  "rarity": "legendary",
+  "base": "Nylon / Wood",
+  "description": "Designed and made with all natural materials.",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 16,
+    "ATK": 4
+  },
+  "image": "data/images/armor-972.png",
+  "file": "armor-972.json"
+}

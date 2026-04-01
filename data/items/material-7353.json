@@ -1,0 +1,15 @@
+{
+  "id": 7353,
+  "name": "Chrysanthemum",
+  "type": "MaterialPlant",
+  "category": "material",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": "Flower",
+  "description": "small yellow flowers and can be drunk with water",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7353.png",
+  "file": "material-7353.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 8209,
+  "name": "Eagle Egg",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "An egg from eagle nest",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8209.png",
+  "file": "questprop-8209.json"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 2110,
+  "name": "Defence Medal",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 6,
+  "level": 12,
+  "rarity": "rare",
+  "base": "Iron / Silver",
+  "description": "To upgrade defense",
+  "size": "1x1",
+  "attributes": {
+    "DEF": 6
+  },
+  "image": "data/images/special-2110.png",
+  "file": "special-2110.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1748,
+  "name": "Phoenix Flight",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "The curtains and embroidered curtains are so sweet. Female exclusive use, every forging +1, MaxHP additional +2, the maximum increase of 200",
+  "size": "1x1",
+  "attributes": {
+    "MaxHP": 200,
+    "SPD": 10
+  },
+  "image": "data/images/helmet-1748.png",
+  "file": "helmet-1748.json"
+}

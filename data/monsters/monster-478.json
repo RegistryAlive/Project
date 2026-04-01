@@ -1,0 +1,33 @@
+{
+  "id": 478,
+  "name": "Angry Ghost",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-478.png",
+  "element": "Earth",
+  "drops": [
+    {
+      "name": "Milk Tea",
+      "itemId": 7232,
+      "itemFile": "material-7232.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 122,
+    "hp": 783,
+    "sp": 629,
+    "catchable": "No",
+    "spd": 271,
+    "str": 34,
+    "con": 37,
+    "int": 34,
+    "wis": 32,
+    "agi": 44
+  }
+}

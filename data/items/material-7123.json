@@ -1,0 +1,18 @@
+{
+  "id": 7123,
+  "name": "Peach Juice",
+  "type": "MaterialFood",
+  "category": "material",
+  "rank": 4,
+  "level": 0,
+  "rarity": "common",
+  "base": "Fruit",
+  "description": "Juice extracted from peaches",
+  "size": "1x1",
+  "attributes": {
+    "HP": 100,
+    "SP": 100
+  },
+  "image": "data/images/material-7123.png",
+  "file": "material-7123.json"
+}

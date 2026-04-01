@@ -1,0 +1,15 @@
+{
+  "id": 6142,
+  "name": "Control Device",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 22,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Controls the plane's takeoff and direction",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6142.png",
+  "file": "furniture-6142.json"
+}

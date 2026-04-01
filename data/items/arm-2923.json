@@ -1,0 +1,18 @@
+{
+  "id": 2923,
+  "name": "Flower bracele",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "When you attach it to your hand, you can enjoy the cherry blossoms in full bloom. When using a bow weapon, the attack damage is +1%. (If you change the shape of the bracelet, the effect will disappear)",
+  "size": "1x1",
+  "attributes": {
+    "Special": 1,
+    "SPD": 45
+  },
+  "image": "data/images/arm-2923.png",
+  "file": "arm-2923.json"
+}

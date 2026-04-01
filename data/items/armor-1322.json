@@ -1,0 +1,18 @@
+{
+  "id": 1322,
+  "name": "Snowmelt Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Extremely warm multi-layered robe, with fluff like snowflakes on the cuffs; when equipped with other downy snow series equipment at the same time, it can increase the damage of spears and halberds",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 45,
+    "MATK": 45
+  },
+  "image": "data/images/armor-1322.png",
+  "file": "armor-1322.json"
+}

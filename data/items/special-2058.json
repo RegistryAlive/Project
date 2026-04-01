@@ -1,0 +1,18 @@
+{
+  "id": 2058,
+  "name": "Bright Earrings",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 14,
+  "level": 28,
+  "rarity": "legendary",
+  "base": "Quartz (Crystal) / Silver",
+  "description": "Ear rings made from lightstone of elfland.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 9,
+    "ATK": 5
+  },
+  "image": "data/images/special-2058.png",
+  "file": "special-2058.json"
+}

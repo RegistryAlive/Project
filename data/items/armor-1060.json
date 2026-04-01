@@ -1,0 +1,17 @@
+{
+  "id": 1060,
+  "name": "Red Dragon Gown",
+  "type": "WearBody",
+  "category": "armor",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Flower / Grass / Gold",
+  "description": "Embroidered red dragon patterns give it power.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 33
+  },
+  "image": "data/images/armor-1060.png",
+  "file": "armor-1060.json"
+}

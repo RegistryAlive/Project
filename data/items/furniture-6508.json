@@ -1,0 +1,15 @@
+{
+  "id": 6508,
+  "name": "Xmas Reindeer",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 20,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Silver-white Christmas series furniture, silver shiny reindeer decoration",
+  "size": "3x3",
+  "attributes": {},
+  "image": "data/images/furniture-6508.png",
+  "file": "furniture-6508.json"
+}

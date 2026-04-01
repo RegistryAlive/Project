@@ -1,0 +1,33 @@
+{
+  "id": 191,
+  "name": "Blue-skin Troll",
+  "location": "Training Island",
+  "image": "data/Monster_Images/monster-191.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "Olla Noodles",
+      "itemId": 7065,
+      "itemFile": "material-7065.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Gold Block",
+      "itemId": 7551,
+      "itemFile": "material-7551.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 73,
+    "hp": 382,
+    "sp": 328,
+    "catchable": "Unknown",
+    "spd": 149.5,
+    "str": 25,
+    "con": 25,
+    "int": 20,
+    "wis": 18,
+    "agi": 20
+  }
+}

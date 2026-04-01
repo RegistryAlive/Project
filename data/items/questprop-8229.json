@@ -1,0 +1,15 @@
+{
+  "id": 8229,
+  "name": "Camel Voucher",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 0,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Finds a Camel companion for you!",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8229.png",
+  "file": "questprop-8229.json"
+}

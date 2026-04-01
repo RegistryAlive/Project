@@ -1,0 +1,15 @@
+{
+  "id": 6146,
+  "name": "Steer of Jalor",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 7,
+  "level": 0,
+  "rarity": "uncommon",
+  "base": null,
+  "description": "Controls a jalor",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6146.png",
+  "file": "furniture-6146.json"
+}

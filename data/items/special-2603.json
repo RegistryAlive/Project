@@ -1,0 +1,18 @@
+{
+  "id": 2603,
+  "name": "Purple Source",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 23,
+  "level": 0,
+  "rarity": "legendary",
+  "base": "Titanium / Mercury",
+  "description": "Armlet adding magic power and used by a pet man.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 55,
+    "MaxHP": 600
+  },
+  "image": "data/images/special-2603.png",
+  "file": "special-2603.json"
+}

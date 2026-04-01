@@ -1,0 +1,45 @@
+{
+  "id": 114,
+  "name": "Snow Wolf",
+  "location": "Iceberg",
+  "image": "data/Monster_Images/monster-114.png",
+  "element": "Wind",
+  "drops": [
+    {
+      "name": "Wolf Fur",
+      "itemId": 7784,
+      "itemFile": "material-7784.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wolf Tooth",
+      "itemId": 7724,
+      "itemFile": "material-7724.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Wolf Meat",
+      "itemId": 7463,
+      "itemFile": "material-7463.json",
+      "itemCategory": "material"
+    },
+    {
+      "name": "Cantaloup Seed",
+      "itemId": 7382,
+      "itemFile": "material-7382.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 73,
+    "hp": 710,
+    "sp": 640,
+    "catchable": "Unknown",
+    "spd": 225.5,
+    "str": 37,
+    "con": 43,
+    "int": 40,
+    "wis": 41,
+    "agi": 58
+  }
+}

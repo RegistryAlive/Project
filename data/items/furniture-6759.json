@@ -1,0 +1,15 @@
+{
+  "id": 6759,
+  "name": "Torch",
+  "type": "ManufactureItem",
+  "category": "furniture",
+  "rank": 1,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "For trojan war, strengthen the fortification of guardian stone.",
+  "size": "1x2",
+  "attributes": {},
+  "image": "data/images/furniture-6759.png",
+  "file": "furniture-6759.json"
+}

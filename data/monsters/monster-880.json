@@ -1,0 +1,27 @@
+{
+  "id": 880,
+  "name": "Sailor",
+  "location": "Bangkok",
+  "image": "data/Monster_Images/monster-880.png",
+  "element": "Water",
+  "drops": [
+    {
+      "name": "No Drops",
+      "itemId": 7893,
+      "itemFile": "material-7893.json",
+      "itemCategory": "material"
+    }
+  ],
+  "stats": {
+    "level": 62,
+    "hp": 569,
+    "sp": 437,
+    "catchable": "Unknown",
+    "spd": 165,
+    "str": 47,
+    "con": 45,
+    "int": 30,
+    "wis": 28,
+    "agi": 36
+  }
+}

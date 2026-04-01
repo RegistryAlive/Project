@@ -1,0 +1,15 @@
+{
+  "id": 8534,
+  "name": "3X Holy Exp Potion",
+  "type": "QuestProp",
+  "category": "questprop",
+  "rank": 10,
+  "level": 20,
+  "rarity": "uncommon",
+  "base": "Leaf / Magic",
+  "description": "obtains 3x exp for 2 hours",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/questprop-8534.png",
+  "file": "questprop-8534.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6350,
+  "name": "Blue Carpet",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 3,
+  "level": 0,
+  "rarity": "common",
+  "base": null,
+  "description": "Blue Carpet",
+  "size": "4x2",
+  "attributes": {},
+  "image": "data/images/furniture-6350.png",
+  "file": "furniture-6350.json"
+}

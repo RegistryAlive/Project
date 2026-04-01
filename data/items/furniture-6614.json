@@ -1,0 +1,15 @@
+{
+  "id": 6614,
+  "name": "New Yr Deco",
+  "type": "ManufactureDecor",
+  "category": "furniture",
+  "rank": 25,
+  "level": 0,
+  "rarity": "rare",
+  "base": null,
+  "description": "Decorate the mural for the New Year party",
+  "size": "3x2",
+  "attributes": {},
+  "image": "data/images/furniture-6614.png",
+  "file": "furniture-6614.json"
+}

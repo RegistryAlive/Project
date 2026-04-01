@@ -1,0 +1,18 @@
+{
+  "id": 428,
+  "name": "God Eye Bow",
+  "type": "WeaponBow",
+  "category": "weapon",
+  "rank": 24,
+  "level": 48,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A highly accurate divine bow",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 25,
+    "SPD": 23
+  },
+  "image": "data/images/weapon-428.png",
+  "file": "weapon-428.json"
+}

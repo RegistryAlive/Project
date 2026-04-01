@@ -1,0 +1,18 @@
+{
+  "id": 2960,
+  "name": "W.Tiger Claw",
+  "type": "WearArm",
+  "category": "arm",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "A powerful white tiger costume; when equipped with other White Tiger equipment, it reduces damage when attacked by unattributed enemies.",
+  "size": "1x1",
+  "attributes": {
+    "ATK": 10,
+    "MATK": 10
+  },
+  "image": "data/images/arm-2960.png",
+  "file": "arm-2960.json"
+}

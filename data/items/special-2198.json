@@ -1,0 +1,17 @@
+{
+  "id": 2198,
+  "name": "Flying Armlet",
+  "type": "WearSpecial",
+  "category": "special",
+  "rank": 10,
+  "level": 0,
+  "rarity": "legendary",
+  "base": null,
+  "description": "Armlet with magic of flying.",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 50
+  },
+  "image": "data/images/special-2198.png",
+  "file": "special-2198.json"
+}

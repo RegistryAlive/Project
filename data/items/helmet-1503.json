@@ -1,0 +1,17 @@
+{
+  "id": 1503,
+  "name": "Bead Torque",
+  "type": "WearHead",
+  "category": "helmet",
+  "rank": 33,
+  "level": 66,
+  "rarity": "legendary",
+  "base": "Silver / Jade",
+  "description": "A forehead ornament.",
+  "size": "1x1",
+  "attributes": {
+    "MATK": 33
+  },
+  "image": "data/images/helmet-1503.png",
+  "file": "helmet-1503.json"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 7775,
+  "name": "Claw",
+  "type": "MaterialBeast",
+  "category": "material",
+  "rank": 2,
+  "level": 0,
+  "rarity": "common",
+  "base": "Hard Tissue",
+  "description": "An animal's claw",
+  "size": "1x1",
+  "attributes": {},
+  "image": "data/images/material-7775.png",
+  "file": "material-7775.json"
+}

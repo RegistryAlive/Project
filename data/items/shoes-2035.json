@@ -1,0 +1,17 @@
+{
+  "id": 2035,
+  "name": "Feather Boots-2",
+  "type": "WearShoes",
+  "category": "shoes",
+  "rank": 34,
+  "level": 68,
+  "rarity": "legendary",
+  "base": "Feather / Leather / Fur",
+  "description": "",
+  "size": "1x1",
+  "attributes": {
+    "SPD": 34
+  },
+  "image": "data/images/shoes-2035.png",
+  "file": "shoes-2035.json"
+}
