@@ -50,8 +50,8 @@
         .nav-link:hover::after { width: 100%; }
         
         .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
-        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
-        .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        .gradient-text { -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .blur-bg { -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
         
         .tooltip { position: relative; }
         .tooltip:hover .tooltip-text { visibility: visible; opacity: 1; transform: translateY(0); }

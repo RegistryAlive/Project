@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roadmap - Wonderland Online DB</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -61,14 +62,19 @@
         }
         
         .gradient-text {
-            background-clip: text;
             -webkit-background-clip: text;
+            background-clip: text;
             color: transparent;
         }
         
         .blur-bg {
-            backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+        
+        .blur-bg {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
         }
         
         .timeline-line {
@@ -667,76 +673,418 @@
             transform: translateX(30px);
         }
         
-        /* Light mode styles */
+        
+        
+    
+        
+        
+    
+        /* Light mode styles - pastel theme */
         body.light-mode {
-            background-color: #f1f5f9;
-            color: #1e293b;
+            background-color: #f0e6f6;
+            color: #2d1b4e;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(236, 72, 153, 0.06) 0px, transparent 50%);
         }
         
         body.light-mode .bg-wlDark {
-            background-color: #e2e8f0 !important;
+            background-color: #e8ddf0 !important;
         }
         
         body.light-mode .bg-wlDarker {
-            background-color: #f8fafc !important;
+            background-color: #f5f0fa !important;
         }
         
         body.light-mode .text-wlLight {
-            color: #1e293b !important;
+            color: #2d1b4e !important;
         }
         
         body.light-mode .border-wlLight {
-            border-color: #cbd5e1 !important;
+            border-color: #d4c4e2 !important;
         }
         
         body.light-mode .search-input {
-            background-color: #e2e8f0;
-            color: #1e293b;
+            background-color: #e8ddf0;
+            color: #2d1b4e;
+        }
+        
+        
+    
+        /* Light mode: Roadmap page specific */
+        body.light-mode .roadmap-card {
+            background-color: #e8ddf0 !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .roadmap-card h4 {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .roadmap-card p {
+            color: #5a4a6a !important;
         }
 
-        /* Light mode - Roadmap accordion */
-        body.light-mode .phase-accordion-item {
-            background: rgba(241, 245, 249, 0.8);
+        /* ==============================
+           MOBILE RESPONSIVE STYLES
+           ============================== */
+
+        @media (max-width: 768px) {
+            /* Header mobile */
+            header h1 {
+                font-size: 1.1rem !important;
+            }
+
+            /* Hero section mobile */
+            section.text-center h2 {
+                font-size: 1.75rem !important;
+            }
+
+            section.text-center p {
+                font-size: 0.95rem !important;
+            }
+
+            /* Terminal / Biography section mobile */
+            .bg-wlDarker.rounded-2xl {
+                margin-left: -0.5rem;
+                margin-right: -0.5rem;
+            }
+
+            .bg-wlDarker.rounded-2xl .p-6 {
+                padding: 1rem !important;
+            }
+
+            .bg-purple-900\/30.px-6.py-3 {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .font-mono.text-sm {
+                font-size: 0.75rem !important;
+            }
+
+            .font-mono .text-sm {
+                font-size: 0.7rem !important;
+            }
+
+            .relative.pl-4 {
+                padding-left: 0.75rem !important;
+            }
+
+            .relative.pl-4 p {
+                font-size: 0.85rem !important;
+            }
+
+            .mt-6.p-5.bg-gradient-to-r {
+                padding: 1rem !important;
+            }
+
+            .mt-6.p-5.bg-gradient-to-r p {
+                font-size: 0.85rem !important;
+            }
+
+            .mt-6.p-5.bg-gradient-to-r .w-12.h-12 {
+                width: 2.5rem !important;
+                height: 2.5rem !important;
+                margin-right: 0.75rem !important;
+            }
+
+            .mt-6.p-5.bg-gradient-to-r .w-12.h-12 i {
+                font-size: 1rem !important;
+            }
+
+            /* Roadmap terminal header mobile */
+            .roadmap-section .bg-wlDarker {
+                margin-left: -0.5rem;
+                margin-right: -0.5rem;
+            }
+
+            .roadmap-section .p-6 {
+                padding: 1rem !important;
+            }
+
+            .roadmap-section .font-mono .text-sm {
+                font-size: 0.7rem !important;
+            }
+
+            /* Timeline mobile - single column left-aligned */
+            .timeline-line {
+                left: 20px !important;
+                transform: none !important;
+            }
+
+            .phase-card {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+
+            .phase-card .flex.flex-col.md\:flex-row {
+                flex-direction: column !important;
+            }
+
+            .phase-card .md\:w-1\/2 {
+                width: 100% !important;
+                padding-left: 3rem !important;
+                padding-right: 0 !important;
+            }
+
+            .phase-card .timeline-orb {
+                left: 20px !important;
+                right: auto !important;
+                transform: translate(-50%, -50%) !important;
+                width: 2.5rem !important;
+                height: 2.5rem !important;
+            }
+
+            .phase-card .timeline-orb i {
+                font-size: 0.75rem !important;
+            }
+
+            .phase-card .md\:pl-12,
+            .phase-card .md\:pr-12 {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            /* Phase card content mobile */
+            .phase-card-inner {
+                padding: 1rem !important;
+            }
+
+            .phase-card h4 {
+                font-size: 1.25rem !important;
+            }
+
+            .phase-card .text-2xl {
+                font-size: 1.1rem !important;
+            }
+
+            .phase-card .text-sm {
+                font-size: 0.8rem !important;
+            }
+
+            .phase-card ul li {
+                font-size: 0.8rem !important;
+            }
+
+            .phase-card .w-8.h-8 {
+                width: 1.75rem !important;
+                height: 1.75rem !important;
+            }
+
+            .phase-card .w-8.h-8 i {
+                font-size: 0.65rem !important;
+            }
+
+            .phase-card .px-3.py-1 {
+                padding: 0.25rem 0.6rem !important;
+                font-size: 0.7rem !important;
+            }
+
+            .phase-card .expand-btn,
+            .phase-detail-btn {
+                width: 2rem !important;
+                height: 2rem !important;
+            }
+
+            .phase-detail-btn i {
+                font-size: 0.65rem !important;
+            }
+
+            /* Progress bars mobile */
+            .progress-bar {
+                height: 6px !important;
+            }
+
+            .flex.justify-between.text-sm {
+                font-size: 0.75rem !important;
+            }
+
+            /* Phase modal mobile */
+            .phase-modal-wrapper {
+                width: 95vw !important;
+                aspect-ratio: auto !important;
+                height: 85vh !important;
+            }
+
+            .phase-modal-circle {
+                border-radius: 1.5rem !important;
+                border: none !important;
+                transform: scale(0.5) !important;
+                box-shadow: none !important;
+            }
+
+            .phase-modal-overlay.active .phase-modal-circle {
+                transform: scale(1) !important;
+            }
+
+            .phase-modal-content {
+                padding: 15% 10% 15% !important;
+            }
+
+            .phase-watermark {
+                font-size: 6rem !important;
+            }
+
+            .phase-modal-close {
+                top: 5% !important;
+                right: 5% !important;
+            }
+
+            .phase-orbit-ring {
+                display: none !important;
+            }
+
+            .phase-inner-ring {
+                display: none !important;
+            }
+
+            .phase-modal-glow {
+                inset: -2px !important;
+            }
+
+            /* Community links mobile */
+            .grid.grid-cols-1.md\:grid-cols-2 {
+                gap: 1rem !important;
+            }
+
+            .discord-card {
+                padding: 1.25rem !important;
+            }
+
+            .discord-card .w-14.h-14 {
+                width: 2.5rem !important;
+                height: 2.5rem !important;
+                margin-right: 0.75rem !important;
+            }
+
+            .discord-card .w-14.h-14 i {
+                font-size: 1.25rem !important;
+            }
+
+            .discord-card h4 {
+                font-size: 1rem !important;
+            }
+
+            .discord-card p {
+                font-size: 0.75rem !important;
+            }
+
+            /* Section headings mobile */
+            .text-center.mb-10 h3 {
+                font-size: 1.5rem !important;
+            }
+
+            /* Footer mobile */
+            .grid.grid-cols-1.md\:grid-cols-4 {
+                gap: 1.5rem !important;
+            }
+
+            footer h4 {
+                font-size: 0.95rem !important;
+            }
+
+            footer .flex input,
+            footer .flex button {
+                font-size: 0.75rem !important;
+                padding: 0.5rem 0.75rem !important;
+            }
+
+            /* Mobile menu button */
+            #mobileMenuBtn {
+                bottom: 16px !important;
+                right: 16px !important;
+                width: 48px !important;
+                height: 48px !important;
+            }
+
+            /* Scroll progress */
+            .scroll-progress {
+                height: 3px !important;
+            }
         }
-        body.light-mode .phase-accordion-item.open {
-            background: rgba(241, 245, 249, 0.95);
+
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 0.95rem !important;
+            }
+
+            section.text-center h2 {
+                font-size: 1.4rem !important;
+            }
+
+            .phase-card .text-2xl {
+                font-size: 1rem !important;
+            }
+
+            .phase-card-inner {
+                padding: 0.75rem !important;
+            }
+
+            .phase-card ul li {
+                font-size: 0.75rem !important;
+            }
+
+            .phase-card .w-5.h-5 {
+                width: 1.25rem !important;
+                height: 1.25rem !important;
+                margin-right: 0.5rem !important;
+            }
+
+            .phase-card .w-5.h-5 i {
+                font-size: 0.5rem !important;
+            }
+
+            .discord-card h4 {
+                font-size: 0.9rem !important;
+            }
+
+            .discord-card span.text-xs {
+                display: none !important;
+            }
+
+            .phase-modal-wrapper {
+                height: 90vh !important;
+            }
+
+            .phase-modal-content {
+                padding: 20% 8% 12% !important;
+            }
         }
-        body.light-mode .phase-header:active {
-            background: rgba(0, 0, 0, 0.03);
+
+        /* Tablet adjustments */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .phase-card .md\:w-1\/2 {
+                padding-left: 6rem !important;
+            }
+
+            .phase-card .md\:pl-12 {
+                padding-left: 3rem !important;
+            }
+
+            .phase-card .md\:pr-12 {
+                padding-right: 3rem !important;
+            }
+
+            .phase-card h4 {
+                font-size: 1.5rem !important;
+            }
         }
-        body.light-mode .phase-detail .bg-wlDarker {
-            background-color: #e2e8f0 !important;
-        }
-        body.light-mode .scroll-progress {
-            background: linear-gradient(90deg, #8b5cf6, #3b82f6, #10b981);
-        }
-        body.light-mode .phase-modal-circle {
-            background: radial-gradient(circle at 35% 30%, rgba(241, 245, 249, 0.98), rgba(226, 232, 240, 0.99));
-            box-shadow:
-                0 0 80px rgba(139, 92, 246, 0.12),
-                0 0 160px rgba(59, 130, 246, 0.06),
-                inset 0 0 80px rgba(139, 92, 246, 0.03);
-        }
-        body.light-mode .phase-modal-content .bg-wlDarker {
-            background-color: #e2e8f0 !important;
-        }
-        body.light-mode .phase-watermark {
-            opacity: 0.03;
-        }
-        body.light-mode .phase-scanline {
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 3px,
-                rgba(0, 0, 0, 0.02) 3px,
-                rgba(0, 0, 0, 0.02) 4px
-            );
-        }
-        body.light-mode .phase-orbit-ring {
-            border-color: rgba(139, 92, 246, 0.15);
-        }
-        body.light-mode .phase-inner-ring {
-            border-color: rgba(139, 92, 246, 0.06);
+
+        /* Landscape mobile */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .phase-modal-wrapper {
+                height: 90vh !important;
+                width: 60vw !important;
+            }
+
+            .phase-modal-content {
+                padding: 10% 15% 10% !important;
+            }
+
+            .phase-watermark {
+                font-size: 4rem !important;
+            }
         }
     </style>
     <link href="css/styles.css" rel="stylesheet">

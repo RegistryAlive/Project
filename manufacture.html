@@ -27,8 +27,8 @@
       min-height: 100vh;
     }
     .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
-    .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
-    .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+    .gradient-text { -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .blur-bg { -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
     .checklist input[type=checkbox] { accent-color: #3b82f6; }
     .process-tree-vertical {
       padding-left: 0.5rem;
@@ -722,142 +722,139 @@
         transform: translateX(30px);
     }
     
-    /* Light mode styles */
-    body.light-mode {
-        background-color: #f1f5f9;
-        color: #1e293b;
-    }
     
-    body.light-mode .bg-wlDark {
-        background-color: #e2e8f0 !important;
-    }
+        
     
-    body.light-mode .bg-wlDarker {
-        background-color: #f8fafc !important;
-    }
+        
+        
     
-    body.light-mode .text-wlLight {
-        color: #1e293b !important;
-    }
+        /* Light mode styles - pastel theme */
+        body.light-mode {
+            background-color: #f0e6f6;
+            color: #2d1b4e;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(236, 72, 153, 0.06) 0px, transparent 50%);
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e8ddf0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f5f0fa !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #2d1b4e !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #d4c4e2 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e8ddf0;
+            color: #2d1b4e;
+        }
+        
+        
     
-    body.light-mode .border-wlLight {
-        border-color: #cbd5e1 !important;
-    }
-    
-    body.light-mode .search-input {
-        background-color: #e2e8f0;
-        color: #1e293b;
-    }
-
-    /* Light mode - Manufacture page specific */
-    body.light-mode .process-step {
-        background: #e2e8f0 !important;
-        color: #1e293b !important;
-        border-color: #cbd5e1 !important;
-    }
-    body.light-mode .process-step:hover {
-        background: #dde3eb !important;
-    }
-    body.light-mode .summary-box {
-        background: linear-gradient(120deg, #e2e8f0 80%, #dbeafe 10%) !important;
-        color: #1e293b !important;
-    }
-    body.light-mode .summary-box[style] {
-        background: linear-gradient(120deg, #e2e8f0 80%, #dbeafe 10%) !important;
-    }
-    body.light-mode .dashboard-card {
-        background: #e2e8f0 !important;
-        color: #1e293b !important;
-    }
-    body.light-mode .filter-bar {
-        background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%) !important;
-        color: #1e293b !important;
-    }
-    body.light-mode .filter-bar .search-bar {
-        background: rgba(226, 232, 240, 0.8) !important;
-        color: #1e293b !important;
-        border-color: #cbd5e1 !important;
-    }
-    body.light-mode .filter-bar .search-bar::placeholder {
-        color: #64748b !important;
-    }
-    body.light-mode .filter-bar .filter-option {
-        color: #475569 !important;
-        border-color: #cbd5e1 !important;
-    }
-    body.light-mode .filter-bar .filter-option:hover {
-        color: #1e293b !important;
-    }
-    body.light-mode .filter-bar .filter-option.selected {
-        background-color: rgba(59, 130, 246, 0.2) !important;
-        color: #1e293b !important;
-    }
-    body.light-mode .autocomplete-list {
-        background: #f1f5f9 !important;
-        color: #1e293b !important;
-        border-color: #cbd5e1 !important;
-    }
-    body.light-mode .autocomplete-list .item {
-        color: #1e293b !important;
-    }
-    body.light-mode .autocomplete-list .item:hover {
-        background: #e2e8f0 !important;
-    }
-    body.light-mode .settings-dropdown {
-        background: #f1f5f9 !important;
-        color: #1e293b !important;
-        border-color: #cbd5e1 !important;
-    }
-    body.light-mode .settings-option span {
-        color: #1e293b !important;
-    }
-    body.light-mode .selected-item-header {
-        background: linear-gradient(135deg, rgba(226,232,240,0.8), rgba(241,245,249,0.8)) !important;
-    }
-    body.light-mode .selected-item-header .item-image {
-        background: rgba(226, 232, 240, 0.5) !important;
-    }
-    body.light-mode .quantity-input {
-        background: rgba(226, 232, 240, 0.8) !important;
-        color: #1e293b !important;
-        border-color: #cbd5e1 !important;
-    }
-    body.light-mode .dropdown-list {
-        background: #f1f5f9 !important;
-        color: #1e293b !important;
-        border-color: #cbd5e1 !important;
-    }
-    body.light-mode .history-bar {
-        background: linear-gradient(135deg, rgba(226,232,240,0.95), rgba(241,245,249,0.95)) !important;
-    }
-    body.light-mode .history-item {
-        color: #1e293b !important;
-    }
-    body.light-mode .history-item:hover {
-        background: #e2e8f0 !important;
-    }
-    body.light-mode select {
-        background-color: #e2e8f0 !important;
-        color: #1e293b !important;
-    }
-    body.light-mode select option {
-        background-color: #f1f5f9 !important;
-        color: #1e293b !important;
-    }
-    body.light-mode .selected-item-header .item-name {
-        color: #1e293b !important;
-    }
-    body.light-mode .selected-item-header .quantity-label {
-        color: #475569 !important;
-    }
-    body.light-mode .autocomplete-item .item-name {
-        color: #1e293b !important;
-    }
-  </style>
+        /* Light mode: Manufacture page specific */
+        body.light-mode .filter-bar {
+            background: linear-gradient(135deg, rgba(232,221,240,0.9), rgba(245,240,250,0.9)) !important;
+            border-color: rgba(139, 92, 246, 0.15) !important;
+        }
+        body.light-mode .filter-bar .search-bar {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .filter-bar .filter-option {
+            color: #5a4a6a !important;
+        }
+        body.light-mode .filter-bar .filter-option:hover {
+            background: rgba(139, 92, 246, 0.1) !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .filter-bar .filter-option.selected {
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6) !important;
+            color: white !important;
+        }
+        body.light-mode .process-step {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .process-step:hover {
+            background-color: #d4c4e2 !important;
+        }
+        body.light-mode .summary-box {
+            background: linear-gradient(120deg, #e8ddf0 80%, #d4c4e2 10%) !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .dashboard-card {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .autocomplete-list {
+            background-color: #f5f0fa !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .autocomplete-item {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .autocomplete-item:hover {
+            background-color: rgba(139, 92, 246, 0.1) !important;
+        }
+        body.light-mode .settings-dropdown {
+            background-color: #f5f0fa !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .settings-option span {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .selected-item-header {
+            background: linear-gradient(135deg, rgba(232,221,240,0.8), rgba(245,240,250,0.8)) !important;
+            border-color: rgba(139, 92, 246, 0.2) !important;
+        }
+        body.light-mode .selected-item-header .item-name {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .selected-item-header .quantity-label {
+            color: #6b5b7b !important;
+        }
+        body.light-mode .quantity-input {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .dropdown-list {
+            background-color: #f5f0fa !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .history-bar {
+            background: linear-gradient(135deg, rgba(232,221,240,0.95), rgba(245,240,250,0.95)) !important;
+            border-color: rgba(139, 92, 246, 0.2) !important;
+        }
+        body.light-mode .history-item {
+            color: #2d1b4e !important;
+            background: rgba(139, 92, 246, 0.1) !important;
+            border-color: rgba(139, 92, 246, 0.3) !important;
+        }
+        body.light-mode .history-item:hover {
+            background: rgba(139, 92, 246, 0.2) !important;
+        }
+    </style>
   
   <!-- Font Awesome: load non-blocking -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript></noscript>
   
   <!-- Google Fonts: load non-blocking -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">

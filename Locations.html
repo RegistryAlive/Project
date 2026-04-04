@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locations - Wonderland Online DB</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -45,8 +46,8 @@
         .nav-link:hover::after { width: 100%; }
         
         .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
-        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
-        .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        .gradient-text { -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .blur-bg { -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
         
         .tooltip { position: relative; }
         .tooltip:hover .tooltip-text { visibility: visible; opacity: 1; transform: translateY(0); }
@@ -691,106 +692,7 @@
             transform: translateX(30px);
         }
         
-        /* Light mode styles */
-        body.light-mode {
-            background-color: #f1f5f9;
-            color: #1e293b;
-        }
-        
-        body.light-mode .bg-wlDark {
-            background-color: #e2e8f0 !important;
-        }
-        
-        body.light-mode .bg-wlDarker {
-            background-color: #f8fafc !important;
-        }
-        
-        body.light-mode .text-wlLight {
-            color: #1e293b !important;
-        }
-        
-        body.light-mode .border-wlLight {
-            border-color: #cbd5e1 !important;
-        }
-        
-        body.light-mode .search-input {
-            background-color: #e2e8f0;
-            color: #1e293b;
-        }
-
-        /* Light mode - Locations page specific */
-        body.light-mode #locationDetailSection {
-            background-color: rgba(226, 232, 240, 0.7) !important;
-        }
-        body.light-mode #locationDetailSection h3 {
-            color: #1e293b !important;
-        }
-        body.light-mode .detail-card {
-            background-color: #f1f5f9 !important;
-            color: #1e293b !important;
-        }
-        body.light-mode .detail-card ul {
-            color: rgba(30, 41, 59, 0.8) !important;
-        }
-        body.light-mode .tooltip-text {
-            background-color: #f1f5f9 !important;
-            color: #1e293b !important;
-        }
-        body.light-mode .tooltip-text::after {
-            border-color: #f1f5f9 transparent transparent transparent !important;
-        }
-        body.light-mode .marker-popover {
-            background: #f1f5f9 !important;
-            color: #1e293b !important;
-            border-color: #cbd5e1 !important;
-        }
-        body.light-mode .marker-tooltip {
-            background: #f1f5f9 !important;
-            color: #1e293b !important;
-        }
-        body.light-mode .toast {
-            background: linear-gradient(135deg, #f1f5f9, #e2e8f0) !important;
-            color: #1e293b !important;
-            border-color: #cbd5e1 !important;
-        }
-        body.light-mode .zoom-btn {
-            background: rgba(226, 232, 240, 0.9) !important;
-            color: #1e293b !important;
-            border-color: #cbd5e1 !important;
-        }
-        body.light-mode .connection-pill {
-            color: #1e293b !important;
-        }
-        body.light-mode .monster-preview-card {
-            background: rgba(226, 232, 240, 0.8) !important;
-        }
-        body.light-mode .monster-preview-card img {
-            background: rgba(241, 245, 249, 0.5) !important;
-        }
-        body.light-mode #comparisonModal .comparison-card {
-            background: rgba(241, 245, 249, 0.9) !important;
-        }
-        body.light-mode #mapZoomContainer {
-            background: rgba(241, 245, 249, 0.95) !important;
-        }
-        body.light-mode #searchSuggestions::-webkit-scrollbar-track {
-            background: #f1f5f9 !important;
-        }
-        body.light-mode .suggestion-item .suggestion-name {
-            color: #1e293b !important;
-        }
-        body.light-mode .suggestion-item {
-            border-color: #e2e8f0 !important;
-        }
-        body.light-mode select {
-            background-color: #e2e8f0 !important;
-            color: #1e293b !important;
-        }
-        body.light-mode select option {
-            background-color: #f1f5f9 !important;
-            color: #1e293b !important;
-        }
-</style>
+        </style>
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body class="text-wlLight"> 
@@ -1072,7 +974,305 @@
                  .map-marker { width: 11px !important; height: 11px !important; font-size: 6px; transform: translate(-50%, -50%) scale(var(--marker-scale, 1)); }
                  .marker-tooltip { font-size: 1.1rem; padding: 6px 14px; }
              }
-            </style>
+            
+        
+    
+        
+        
+    
+        /* Light mode styles - pastel theme */
+        body.light-mode {
+            background-color: #f0e6f6;
+            color: #2d1b4e;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(236, 72, 153, 0.06) 0px, transparent 50%);
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e8ddf0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f5f0fa !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #2d1b4e !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #d4c4e2 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e8ddf0;
+            color: #2d1b4e;
+        }
+        
+        
+    
+        /* Light mode: Locations page specific */
+        body.light-mode .location-card {
+            background-color: #e8ddf0 !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .location-card h4 {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .location-card p {
+            color: #5a4a6a !important;
+        }
+        body.light-mode .location-card .text-wlLight {
+            color: #6b5b7b !important;
+        }
+        body.light-mode #locationModal,
+        body.light-mode .modal-overlay {
+            background-color: rgba(240, 230, 246, 0.9) !important;
+        }
+        body.light-mode .modal-content {
+            background-color: #f5f0fa !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .location-filter-btn {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .location-filter-btn:hover,
+        body.light-mode .location-filter-btn.active {
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6) !important;
+            color: white !important;
+        }
+        body.light-mode .search-input {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .bg-wlDark.bg-opacity-70 {
+            background-color: #e8ddf0 !important;
+        }
+        
+        /* Light mode: Locations page specific - ALL dark elements */
+        body.light-mode #locationDetailSection {
+            background-color: #e8ddf0 !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode #locationDetailSection h3 {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .detail-card {
+            background-color: #f5f0fa !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .detail-card h4 {
+            color: #8b5cf6 !important;
+        }
+        body.light-mode .detail-card ul {
+            color: #5a4a6a !important;
+        }
+        body.light-mode .detail-card img {
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .tooltip-text {
+            background-color: #2d1b4e !important;
+            color: #f5f0fa !important;
+        }
+        body.light-mode .tooltip-text::after {
+            border-color: #2d1b4e transparent transparent transparent !important;
+        }
+        body.light-mode .result-card.selected,
+        body.light-mode .result-card:hover {
+            background: linear-gradient(90deg, #d4c4e2 0 7%, #e8ddf0 50%, #f5f0fa 100%) !important;
+            color: #8b5cf6 !important;
+            border-color: #8b5cf6 !important;
+        }
+        body.light-mode .search-badge {
+            background: linear-gradient(90deg, rgba(139, 92, 246, 0.2) 20%, rgba(59, 130, 246, 0.1) 100%) !important;
+            color: #5a4a6a !important;
+        }
+        body.light-mode .search-empty-icon {
+            color: #8b5cf6 !important;
+        }
+        body.light-mode #searchResultsEmpty {
+            color: #5a4a6a !important;
+        }
+        body.light-mode .suggestion-item .suggestion-name {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .suggestion-item .suggestion-meta {
+            color: #6b5b7b !important;
+        }
+        body.light-mode .suggestion-item:hover,
+        body.light-mode .suggestion-item.active {
+            background: rgba(139, 92, 246, 0.15) !important;
+        }
+        body.light-mode .monster-preview-card {
+            background: rgba(232, 221, 240, 0.8) !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .monster-preview-card img {
+            background: rgba(232, 221, 240, 0.5) !important;
+        }
+        body.light-mode #comparisonModal .comparison-card {
+            background: rgba(245, 240, 250, 0.9) !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .toast {
+            background: linear-gradient(135deg, #e8ddf0, #f5f0fa) !important;
+            border-color: rgba(59, 130, 246, 0.5) !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode #mapZoomModalBg {
+            background-color: rgba(240, 230, 246, 0.95) !important;
+        }
+        body.light-mode #mapZoomContainer {
+            background: rgba(245, 240, 250, 0.95) !important;
+            border-color: rgba(59, 130, 246, 0.5) !important;
+        }
+        body.light-mode .marker-popover {
+            background: #e8ddf0 !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .marker-popover .popover-title {
+            color: #d97706 !important;
+        }
+        body.light-mode .marker-popover .popover-section {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .marker-tooltip {
+            background: #e8ddf0 !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .loader {
+            border-color: #d4c4e2 !important;
+            border-top-color: #3b82f6 !important;
+        }
+        body.light-mode #searchSuggestions {
+            background-color: #f5f0fa !important;
+            border-color: rgba(59, 130, 246, 0.4) !important;
+        }
+        body.light-mode #searchSuggestions::-webkit-scrollbar-track {
+            background: #f5f0fa !important;
+        }
+        body.light-mode #searchInput {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode #searchInput::placeholder {
+            color: #8b7b9b !important;
+        }
+        body.light-mode .stat-card {
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.15) !important;
+            border-color: rgba(139, 92, 246, 0.2) !important;
+        }
+        body.light-mode .stat-card .text-sm {
+            color: rgba(45, 27, 78, 0.8) !important;
+        }
+        body.light-mode #travelConnections {
+            background-color: rgba(232, 221, 240, 0.5) !important;
+            border-color: rgba(59, 130, 246, 0.2) !important;
+        }
+        body.light-mode .connection-pill {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15)) !important;
+            border-color: rgba(59, 130, 246, 0.3) !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .connection-pill:hover {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(139, 92, 246, 0.3)) !important;
+        }
+        body.light-mode .element-bar {
+            background: rgba(139, 92, 246, 0.1) !important;
+        }
+        body.light-mode #favoriteBtn,
+        body.light-mode #shareBtn,
+        body.light-mode #compareBtn {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode #favoriteBtn:hover {
+            background-color: #ef4444 !important;
+            color: white !important;
+        }
+        body.light-mode #shareBtn:hover {
+            background-color: #3b82f6 !important;
+            color: white !important;
+        }
+        body.light-mode #compareBtn:hover {
+            background-color: #10b981 !important;
+            color: white !important;
+        }
+        body.light-mode #closeLocationDetail {
+            color: #2d1b4e !important;
+        }
+        body.light-mode #closeLocationDetail:hover {
+            color: #ef4444 !important;
+        }
+        body.light-mode #backToMapBtn {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode #monsterViewToggle {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode #monsterViewToggle:hover {
+            background-color: #3b82f6 !important;
+            color: white !important;
+        }
+        body.light-mode #locationModal,
+        body.light-mode .modal-overlay {
+            background-color: rgba(240, 230, 246, 0.9) !important;
+        }
+        body.light-mode .modal-content {
+            background-color: #f5f0fa !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .location-filter-btn {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .location-filter-btn:hover,
+        body.light-mode .location-filter-btn.active {
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6) !important;
+            color: white !important;
+        }
+        body.light-mode .search-input {
+            background-color: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .bg-wlDark.bg-opacity-70 {
+            background-color: #e8ddf0 !important;
+        }
+        body.light-mode .bg-wlDark.bg-opacity-50 {
+            background-color: rgba(232, 221, 240, 0.5) !important;
+        }
+        body.light-mode .bg-wlDark.bg-opacity-60 {
+            background-color: rgba(232, 221, 240, 0.6) !important;
+        }
+        body.light-mode .bg-wlDark.bg-opacity-90 {
+            background-color: rgba(232, 221, 240, 0.9) !important;
+        }
+        body.light-mode .bg-wlDark.bg-opacity-95 {
+            background-color: rgba(232, 221, 240, 0.95) !important;
+        }
+        body.light-mode .bg-black {
+            background-color: rgba(45, 27, 78, 0.7) !important;
+        }
+        body.light-mode .text-white {
+            color: #f5f0fa !important;
+        }
+        body.light-mode .text-wlLight\/80 {
+            color: #5a4a6a !important;
+        }
+        body.light-mode .text-wlLight\/60 {
+            color: #8b7b9b !important;
+        }
+    </style>
 
             <!-- Search and Filter Section -->
             <section id="searchFilterControls" class="my-8 mb-72 p-6 bg-wlDark bg-opacity-70 blur-bg rounded-lg shadow-xl overflow-visible">

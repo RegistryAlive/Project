@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonderland Online Database</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -71,14 +72,14 @@
         }
         
         .gradient-text {
-            background-clip: text;
             -webkit-background-clip: text;
+            background-clip: text;
             color: transparent;
         }
         
         .blur-bg {
-            backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
         }
         
         .floating-island {
@@ -200,33 +201,6 @@
         
         .theme-toggle.light .theme-toggle-ball {
             transform: translateX(30px);
-        }
-        
-        /* Light mode styles */
-        body.light-mode {
-            background-color: #f1f5f9;
-            color: #1e293b;
-        }
-        
-        body.light-mode .bg-wlDark {
-            background-color: #e2e8f0 !important;
-        }
-        
-        body.light-mode .bg-wlDarker {
-            background-color: #f8fafc !important;
-        }
-        
-        body.light-mode .text-wlLight {
-            color: #1e293b !important;
-        }
-        
-        body.light-mode .border-wlLight {
-            border-color: #cbd5e1 !important;
-        }
-        
-        body.light-mode .search-input {
-            background-color: #e2e8f0;
-            color: #1e293b;
         }
         
         /* Back to top button */
@@ -361,6 +335,331 @@
         
         .search-suggestion-item:hover {
             background-color: rgba(59, 130, 246, 0.2);
+        }
+    
+        
+    
+        
+        
+    
+        /* Light mode styles - pastel theme */
+        body.light-mode {
+            background-color: #f0e6f6;
+            color: #2d1b4e;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(236, 72, 153, 0.06) 0px, transparent 50%);
+        }
+        
+        body.light-mode .bg-wlDark {
+            background-color: #e8ddf0 !important;
+        }
+        
+        body.light-mode .bg-wlDarker {
+            background-color: #f5f0fa !important;
+        }
+        
+        body.light-mode .text-wlLight {
+            color: #2d1b4e !important;
+        }
+        
+        body.light-mode .border-wlLight {
+            border-color: #d4c4e2 !important;
+        }
+        
+        body.light-mode .search-input {
+            background-color: #e8ddf0;
+            color: #2d1b4e;
+        }
+        
+        
+    
+        /* Light mode: Index/Home page specific */
+        body.light-mode .hero-section {
+            background-color: #e8ddf0 !important;
+        }
+        body.light-mode .feature-card {
+            background-color: #e8ddf0 !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .feature-card h4 {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .feature-card p {
+            color: #5a4a6a !important;
+        }
+
+        /* ==============================
+           MOBILE RESPONSIVE STYLES
+           ============================== */
+
+        /* Mobile header adjustments */
+        @media (max-width: 768px) {
+            header .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            header h1 {
+                font-size: 1.25rem !important;
+            }
+            
+            /* Hero section mobile */
+            section.text-center h2 {
+                font-size: 1.75rem !important;
+            }
+            
+            section.text-center p {
+                font-size: 1rem !important;
+            }
+            
+            /* Search bar mobile */
+            .search-input {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                font-size: 0.9rem !important;
+            }
+            
+            /* Popular categories scrollable on mobile */
+            .flex.flex-wrap.gap-2 {
+                justify-content: center;
+            }
+            
+            /* Trending tags - make scrollable horizontally */
+            .flex.flex-wrap.gap-3 {
+                flex-wrap: nowrap !important;
+                overflow-x: auto !important;
+                padding-bottom: 0.5rem;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+            
+            .flex.flex-wrap.gap-3::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .trending-tag {
+                flex-shrink: 0;
+                white-space: nowrap;
+            }
+            
+            /* Category cards - 2 per row on mobile */
+            .grid.grid-cols-2.md\:grid-cols-4 {
+                gap: 0.75rem !important;
+            }
+            
+            .category-card {
+                padding: 1rem !important;
+            }
+            
+            .category-card .category-icon {
+                width: 3rem !important;
+                height: 3rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+            
+            .category-card .category-icon i {
+                font-size: 1.25rem !important;
+            }
+            
+            .category-card h4 {
+                font-size: 0.9rem !important;
+            }
+            
+            .category-card p {
+                font-size: 0.75rem !important;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            
+            /* Codes section mobile */
+            .grid.grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 {
+                gap: 1rem !important;
+            }
+            
+            .code-item {
+                flex-direction: column;
+                align-items: flex-start !important;
+                gap: 0.25rem;
+            }
+            
+            .code-item button {
+                align-self: flex-end;
+            }
+            
+            /* Featured item mobile */
+            .featured-glow .flex.flex-col.md\:flex-row {
+                flex-direction: column !important;
+                text-align: center;
+            }
+            
+            .featured-glow .w-32.h-32 {
+                width: 5rem !important;
+                height: 5rem !important;
+            }
+            
+            .featured-glow .w-32.h-32 i {
+                font-size: 2rem !important;
+            }
+            
+            .featured-glow .grid.grid-cols-2.md\:grid-cols-4 {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            .featured-glow .flex.flex-col.gap-2 {
+                width: 100%;
+            }
+            
+            .featured-glow .flex.flex-col.gap-2 a,
+            .featured-glow .flex.flex-col.gap-2 button {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+            
+            /* Countdown mobile */
+            .countdown-box .flex.flex-col.md\:flex-row {
+                flex-direction: column !important;
+                gap: 1rem;
+            }
+            
+            .countdown-box .flex.space-x-4 {
+                justify-content: center;
+            }
+            
+            .countdown-number {
+                font-size: 1.5rem !important;
+            }
+            
+            /* Recent updates mobile */
+            .grid.grid-cols-1.md\:grid-cols-3 {
+                gap: 1rem !important;
+            }
+            
+            /* Stats section mobile */
+            .grid.grid-cols-2.md\:grid-cols-4 {
+                gap: 1rem !important;
+            }
+            
+            .stat-counter .text-4xl {
+                font-size: 1.75rem !important;
+            }
+            
+            /* Footer mobile */
+            .grid.grid-cols-1.md\:grid-cols-4 {
+                gap: 2rem !important;
+            }
+            
+            footer .flex.space-x-4 {
+                justify-content: center;
+            }
+            
+            footer .flex.space-x-4 a {
+                margin: 0 0.25rem;
+            }
+            
+            /* Section headings mobile */
+            section h3 {
+                font-size: 1.25rem !important;
+            }
+            
+            /* Back to top button - smaller on mobile */
+            .back-to-top {
+                width: 40px !important;
+                height: 40px !important;
+                bottom: 80px !important;
+                right: 16px !important;
+            }
+            
+            .back-to-top i {
+                font-size: 0.9rem !important;
+            }
+            
+            /* Mobile menu button - adjust position */
+            #mobileMenuBtn {
+                bottom: 16px !important;
+                right: 16px !important;
+                width: 48px !important;
+                height: 48px !important;
+            }
+            
+            /* Cookie banner mobile */
+            .cookie-banner .flex.flex-col.md\:flex-row {
+                text-align: center;
+            }
+            
+            .cookie-banner .flex.gap-2 {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            /* Sort dropdown mobile */
+            #sortDropdown {
+                left: 0 !important;
+                right: auto !important;
+            }
+        }
+
+        /* Extra small screens (phones < 480px) */
+        @media (max-width: 480px) {
+            section.text-center h2 {
+                font-size: 1.5rem !important;
+            }
+            
+            .category-card h4 {
+                font-size: 0.8rem !important;
+            }
+            
+            .category-card p {
+                display: none;
+            }
+            
+            .trending-tag {
+                padding: 0.4rem 0.75rem !important;
+                font-size: 0.8rem !important;
+            }
+            
+            .code-item span {
+                font-size: 0.75rem !important;
+            }
+            
+            .featured-glow h4 {
+                font-size: 1.1rem !important;
+            }
+            
+            .featured-glow .text-sm {
+                font-size: 0.7rem !important;
+            }
+        }
+
+        /* Tablet adjustments (768px - 1024px) */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .grid.grid-cols-2.md\:grid-cols-4 {
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
+            
+            .grid.grid-cols-1.md\:grid-cols-3 {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+
+        /* Landscape mobile */
+        @media (max-height: 500px) and (orientation: landscape) {
+            header {
+                position: relative !important;
+            }
+            
+            .back-to-top {
+                bottom: 16px !important;
+            }
+            
+            #mobileMenuBtn {
+                bottom: 16px !important;
+            }
         }
     </style>
     <link href="css/styles.css" rel="stylesheet">

@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonderland Online - Resources</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Patrick+Hand&family=Cinzel:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Patrick+Hand&family=Cinzel:wght@400;500;600;700&display=swap"></noscript>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Patrick+Hand&family=Cinzel:wght@400;500;600;700&display=swap');
         
         * {
             margin: 0;
@@ -1099,9 +1103,7 @@
 
         @media (max-width: 768px) {
             .desktop-nav { display: flex; }
-        }
-
-        @media (max-width: 768px) {
+            
             .featured-content {
                 flex-direction: column;
                 text-align: center;
@@ -1132,6 +1134,31 @@
                 justify-content: center;
             }
         }
+            
+            .featured-stats {
+                justify-content: center;
+            }
+            
+            .featured-actions {
+                justify-content: center;
+            }
+            
+            .tome-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .tome-icon {
+                margin: 0 auto;
+            }
+            
+            .tome-title-row {
+                justify-content: center;
+            }
+            
+            .tome-meta {
+                justify-content: center;
+            }
 
         /* Discord Server Detail Panel */
         .discord-detail-panel {
@@ -1191,33 +1218,6 @@
         .theme-toggle.light .theme-toggle-ball {
             transform: translateX(30px);
         }
-        
-        /* Light mode styles */
-        body.light-mode {
-            background-color: #f1f5f9;
-            color: #1e293b;
-        }
-        
-        body.light-mode .bg-wlDark {
-            background-color: #e2e8f0 !important;
-        }
-        
-        body.light-mode .bg-wlDarker {
-            background-color: #f8fafc !important;
-        }
-        
-        body.light-mode .text-wlLight {
-            color: #1e293b !important;
-        }
-        
-        body.light-mode .border-wlLight {
-            border-color: #cbd5e1 !important;
-        }
-        
-        body.light-mode .search-input {
-            background-color: #e2e8f0;
-            color: #1e293b;
-        }
     </style>
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -1273,7 +1273,7 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-4 py-12">
+    <main class="w-full px-6 lg:px-12 py-12">
         <!-- Hero Section -->
         <section class="text-center mb-16">
             <div class="hero-glow inline-block mb-8">
@@ -1291,7 +1291,7 @@
                 <span class="rune-text">The Grimoire of Treasures</span>
             </h1>
 
-            <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+            <p class="text-gray-400 text-lg max-w-xl mx-auto mb-8">
                 Discover ancient artifacts, mystical scrolls, and join fellowships of adventurers across the realm.
             </p>
 
@@ -1322,8 +1322,8 @@
         </section>
 
         <!-- Search & Filters -->
-        <section class="mb-12">
-            <div class="max-w-2xl mx-auto">
+        <section class="w-full mb-12">
+            <div style="max-width: 56rem; margin-left: auto !important; margin-right: auto !important; display: block;">
                 <div class="search-crystal">
                     <div class="search-icon">
                         <i class="fas fa-search"></i>
@@ -1706,13 +1706,6 @@
                     </div>
                 </div>
             </div>
-                        </div>
-                        <a href="manufacture.html" class="btn-tome">
-                            <i class="fas fa-book-open"></i> Study Arts
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Community Section -->
@@ -1931,7 +1924,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="w-full px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-3">
                 <div class="footer-icon">
                     <i class="fas fa-dragon"></i>

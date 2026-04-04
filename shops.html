@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shops - Wonderland Online DB</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <style>
         body { font-family: 'Poppins', sans-serif; background-color: #0f172a;
             background-image: 
@@ -23,8 +24,8 @@
         .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 0; background-color: currentColor; transition: width 0.3s ease; }
         .nav-link:hover::after { width: 100%; }
         .glow { text-shadow: 0 0 10px rgba(139, 92, 246, 0.7); }
-        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; }
-        .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        .gradient-text { -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .blur-bg { -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
         .sidebar { transition: transform 0.3s ease; }
         .sidebar-hidden { transform: translateX(100%); }
         .sidebar-visible { transform: translateX(0); }
@@ -112,81 +113,192 @@
             transform: translateX(30px);
         }
         
-        /* Light mode styles */
+        
+        
+    
+        
+        
+    
+        /* Light mode styles - pastel theme */
         body.light-mode {
-            background-color: #f1f5f9;
-            color: #1e293b;
+            background-color: #f0e6f6;
+            color: #2d1b4e;
+            background-image: 
+                radial-gradient(at 20% 30%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(236, 72, 153, 0.06) 0px, transparent 50%);
         }
         
         body.light-mode .bg-wlDark {
-            background-color: #e2e8f0 !important;
+            background-color: #e8ddf0 !important;
         }
         
         body.light-mode .bg-wlDarker {
-            background-color: #f8fafc !important;
+            background-color: #f5f0fa !important;
         }
         
         body.light-mode .text-wlLight {
-            color: #1e293b !important;
+            color: #2d1b4e !important;
         }
         
         body.light-mode .border-wlLight {
-            border-color: #cbd5e1 !important;
+            border-color: #d4c4e2 !important;
         }
         
         body.light-mode .search-input {
-            background-color: #e2e8f0;
-            color: #1e293b;
+            background-color: #e8ddf0;
+            color: #2d1b4e;
         }
-
-        /* Light mode - Shops page specific */
-        body.light-mode .filter-select {
-            background-color: #e2e8f0 !important;
-            color: #1e293b !important;
-            border-color: #cbd5e1 !important;
+        
+        
+    
+        /* Light mode: Shops page specific */
+        body.light-mode .shop-card {
+            background-color: #e8ddf0 !important;
+            border-color: #d4c4e2 !important;
         }
-        body.light-mode .npc-bubble {
-            background: linear-gradient(135deg, #f1f5f9 80%, #dbeafe 100%) !important;
-            color: #1e293b !important;
-            border-color: #cbd5e1 !important;
+        body.light-mode .shop-card h4 {
+            color: #2d1b4e !important;
         }
-        body.light-mode .npc-bubble::after {
-            background: #f1f5f9 !important;
+        body.light-mode .shop-card p {
+            color: #5a4a6a !important;
         }
-        body.light-mode .npc-avatar {
-            border-color: #cbd5e1 !important;
+        body.light-mode .shop-card .text-wlLight {
+            color: #6b5b7b !important;
         }
-        body.light-mode .shop-item-card {
-            background: linear-gradient(120deg, #f1f5f9 80%, #dbeafe 100%) !important;
-            color: #1e293b !important;
-            border-color: #cbd5e1 !important;
-        }
-        body.light-mode .shop-search-input {
-            background: #e2e8f0 !important;
-            color: #1e293b !important;
-            border-color: #cbd5e1 !important;
+        body.light-mode #shopModal,
+        body.light-mode .modal-overlay {
+            background-color: rgba(240, 230, 246, 0.9) !important;
         }
         body.light-mode .modal-content {
-            background-color: #f1f5f9 !important;
-            color: #1e293b !important;
+            background-color: #f5f0fa !important;
+            color: #2d1b4e !important;
+        }
+        
+        /* Light mode: Shops page specific - ALL dark elements */
+        body.light-mode .npc-bubble {
+            background: linear-gradient(135deg, #e8ddf0 80%, #d4c4e2 100%) !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .npc-bubble::after {
+            background: #e8ddf0 !important;
+        }
+        body.light-mode .npc-avatar {
+            background: linear-gradient(135deg, #8b5cf6 60%, #3b82f6 100%) !important;
+            color: #fff !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .shop-item-card {
+            background: linear-gradient(120deg, #e8ddf0 80%, #d4c4e2 100%) !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .shop-item-card:hover {
+            border-color: #8b5cf6 !important;
+        }
+        body.light-mode .shop-item-icon {
+            background: #8b5cf6 !important;
+            color: #fff !important;
+        }
+        body.light-mode .shop-item-name {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .shop-item-desc {
+            color: #5a4a6a !important;
+        }
+        body.light-mode .shop-item-buy {
+            color: #fff !important;
+        }
+        body.light-mode .talk-btn {
+            color: #fff !important;
+        }
+        body.light-mode .shop-search-input {
+            background: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .gold-bar {
+            color: #d97706 !important;
+        }
+        body.light-mode .inventory-btn {
+            color: #fff !important;
+        }
+        body.light-mode .toast {
+            color: #fff !important;
+        }
+        body.light-mode .modal-overlay {
+            background: rgba(240, 230, 246, 0.9) !important;
+        }
+        body.light-mode .modal-content {
+            background: #f5f0fa !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .modal-close-button {
+            color: #6b5b7b !important;
+        }
+        body.light-mode .modal-close-button:hover {
+            color: #ef4444 !important;
         }
         body.light-mode .inventory-item {
-            background: #e2e8f0 !important;
-            color: #1e293b !important;
+            background: #e8ddf0 !important;
+            color: #2d1b4e !important;
         }
-        body.light-mode .shopkeeper-desc {
-            color: #334155 !important;
+        body.light-mode .inventory-item .fa {
+            color: #8b5cf6 !important;
         }
-        body.light-mode select {
-            background-color: #e2e8f0 !important;
-            color: #1e293b !important;
+        body.light-mode .item-modal-icon {
+            color: #8b5cf6 !important;
         }
-        body.light-mode select option {
-            background-color: #f1f5f9 !important;
-            color: #1e293b !important;
+        body.light-mode .item-modal-name {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .item-modal-desc {
+            color: #5a4a6a !important;
         }
         body.light-mode .item-modal-price {
-            color: #b45309 !important;
+            color: #d97706 !important;
+        }
+        body.light-mode .shopkeeper-name {
+            color: #d97706 !important;
+        }
+        body.light-mode .shopkeeper-desc {
+            color: #5a4a6a !important;
+        }
+        body.light-mode .filter-select {
+            background: #e8ddf0 !important;
+            color: #2d1b4e !important;
+            border-color: #d4c4e2 !important;
+        }
+        body.light-mode .filter-select option {
+            background: #f5f0fa !important;
+            color: #2d1b4e !important;
+        }
+        body.light-mode .text-wlLight {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .text-wlPurple {
+            color: #8b5cf6 !important;
+        }
+        body.light-mode #modalShopName {
+            color: #2d1b4e !important;
+        }
+        body.light-mode #modalShopExtra {
+            color: #5a4a6a !important;
+        }
+        body.light-mode #inventoryList .text-wlLight {
+            color: #6b5b7b !important;
+        }
+        body.light-mode .bg-wlDark.bg-opacity-50 {
+            background: rgba(232, 221, 240, 0.5) !important;
+        }
+        body.light-mode .bg-wlDark.bg-opacity-90 {
+            background: rgba(232, 221, 240, 0.9) !important;
+        }
+        body.light-mode .bg-wlDark.bg-opacity-95 {
+            background: rgba(232, 221, 240, 0.95) !important;
+        }
+        body.light-mode .text-white {
+            color: #f5f0fa !important;
         }
     </style>
     <link href="css/styles.css" rel="stylesheet">
