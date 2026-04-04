@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manufacture Dashboard - Wonderland Online DB</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacture Dashboard - Wonderland Online DB</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -24,9 +30,8 @@
       }
     }
   </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-    body {
+    <style>
+        body {
       font-family: 'Poppins', sans-serif;
       background-color: #0f172a;
       background-image: 
@@ -114,20 +119,6 @@
     .process-step .fa-info-circle { color: #10b981; }
     .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; }
     .legend-item i { width: 1.2rem; text-align: center; }
-    .process-step.collapsed > .children {
-      max-height: 0 !important;
-      opacity: 0;
-      overflow: hidden;
-      transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
-      display: block;
-    }
-    .process-step > .children {
-      max-height: none;
-      opacity: 1;
-      transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
-      overflow: visible;
-      display: block;
-    }
     .process-step:hover { background: #28304a; }
     .summary-box { background: linear-gradient(120deg, #232946 80%, #3b82f6 10%); border-radius: 1.2rem; box-shadow: 0 4px 18px 0 rgba(59,130,246,0.13); position: sticky; top: 2rem; }
     .dashboard-card { background: #232946; border-radius: 1.2rem; box-shadow: 0 4px 18px 0 rgba(59,130,246,0.13); padding: 1.2rem 1.2rem 1rem 1.2rem; position: relative; }
@@ -882,6 +873,14 @@
         color: #1e293b !important;
     }
   </style>
+  
+  <!-- Font Awesome: load non-blocking -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+  
+  <!-- Google Fonts: load non-blocking -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
 </head>
 <body class="text-wlLight">
   <!-- Header -->
@@ -1087,41 +1086,17 @@ function inferType(name) {
   return 'Manufacture';
 }
 
-// Load manufacture data from JSON
+// Load manufacture data from flattened JSON (0.2MB vs 5.35MB original)
 async function loadManufactureDataFromJSON() {
   try {
-    // Load both files and merge them
-    // Only load wlo_master_complete.json which has correct hierarchical data
-    const masterResponse = await fetch('data/wlo_yield_fixed_v10.json');
-    const masterData = await masterResponse.json();
+    const response = await fetch('data/wlo_recipes_flat.json');
+    const flatData = await response.json();
     
-    // Collect ALL craftable items - both top-level keys AND nested ingredients
-    const allItemNames = new Set(Object.keys(masterData));
+    const allItems = flatData.items;
+    const topLevelNames = flatData.topLevelItems;
     
-    function collectAllItems(item) {
-      if (!item.ingredients) return;
-      for (const ing of item.ingredients) {
-        if (ing.data && ing.data.name) {
-          allItemNames.add(ing.data.name);
-          collectAllItems(ing.data);
-        }
-      }
-    }
-    
-    // Collect all items from master data (including nested)
-    for (const item of Object.values(masterData)) {
-      collectAllItems(item);
-    }
-    
-    // All items come from masterData only - no need to add from manufacture-index
-    
-    const craftableItems = allItemNames;
-    
-    // Store masterData globally for autocomplete and other functions
-    window.masterData = masterData;
-    
-    // Helper function to create a data entry from master item
-    function createMasterEntry(name, item) {
+    // First pass: create all item entries with basic data
+    for (const [name, item] of Object.entries(allItems)) {
       let timeValue = 0;
       if (item.time) {
         const timeMatch = item.time.toString().match(/(\d+)/);
@@ -1130,107 +1105,72 @@ async function loadManufactureDataFromJSON() {
         }
       }
       
-      // Construct image path from icon_id if not explicitly set
-      let imgPath = '';
-      if (item.image_path) {
-        imgPath = item.image_path;
-      } else if (item.icon_id) {
+      let imgPath = item.image_path || '';
+      // Fix double data/ prefix
+      if (imgPath.startsWith('data/data/')) {
+        imgPath = imgPath.replace('data/data/', 'data/');
+      }
+      if (!imgPath && item.icon_id) {
+        imgPath = 'data/data/images/item_' + item.icon_id + '.png';
+      }
+      if (!imgPath && item.icon_id) {
         imgPath = 'data/data/images/item_' + item.icon_id + '.png';
       }
       
-      return {
-        name: item.name,
-        type: inferType(item.name),
+      manufactureData[name] = {
+        name: name,
+        type: inferType(name),
         tool: item.tool || '',
         time: timeValue,
         image_path: imgPath,
         image_id: item.image_id || null,
+        yield: item.yield || 1,
         allSteps: [],
         rawMaterials: [],
         materials: [],
-        ingredients: item.ingredients || []
+        ingredients: [] // Will be populated in second pass
       };
     }
     
-    // Use only masterData (wlo_master_complete.json) - no longer using manufacture-index.json
-    for (const [name, item] of Object.entries(masterData)) {
-      manufactureData[name] = createMasterEntry(name, item);
-    }
-    
-    // Also need to add ALL nested items from master data that aren't already there
-    function addNestedItems(item) {
-      if (!item.ingredients) return;
-      for (const ing of item.ingredients) {
-        if (ing.data && ing.data.name) {
-          const ingName = ing.data.name;
-          if (!manufactureData[ingName]) {
-            manufactureData[ingName] = createMasterEntry(ingName, ing.data);
-          }
-          addNestedItems(ing.data);
-        }
+    // Second pass: expand ingredient references to full {qty, data} objects
+    for (const [name, item] of Object.entries(allItems)) {
+      if (item.ingredients && item.ingredients.length > 0) {
+        manufactureData[name].ingredients = item.ingredients.map(ing => ({
+          qty: ing.qty || 1,
+          data: manufactureData[ing.name] || { name: ing.name, ingredients: [], tool: '', time: '0', image_path: '' }
+        }));
       }
     }
     
-    for (const item of Object.values(masterData)) {
-      addNestedItems(item);
-    }
-    
-    // NOW collect raw materials - AFTER manufactureData is fully populated
-    // Raw materials are items that have NO ingredients (cannot be crafted further)
-    // Check the actual ingredients array, not just whether it exists in the data
-    const allRawMaterials = new Set();
-    
-    function collectRawMaterials(item) {
-      if (!item.ingredients) return;
-      for (const ing of item.ingredients) {
-        if (ing.data && ing.data.name) {
-          const ingName = ing.data.name;
-          // Check if this ingredient has NO ingredients itself - that's what makes it raw
-          const ingData = ing.data;
-          const hasIngredients = ingData.ingredients && ingData.ingredients.length > 0;
-          if (!hasIngredients) {
-            allRawMaterials.add(ingName);
-          }
-          collectRawMaterials(ing.data);
-        }
+    // Identify raw materials (items with no ingredients)
+    rawMaterialsSet = new Set();
+    for (const [name, item] of Object.entries(allItems)) {
+      if (!item.ingredients || item.ingredients.length === 0) {
+        rawMaterialsSet.add(name);
       }
     }
     
-    for (const item of Object.values(masterData)) {
-      collectRawMaterials(item);
+    // Store as masterData for compatibility
+    window.masterData = {};
+    for (const name of topLevelNames) {
+      if (allItems[name]) {
+        window.masterData[name] = manufactureData[name];
+      }
     }
     
-    // Update raw materials set
-    rawMaterialsSet = allRawMaterials;
-    
-    // Build reverse index from masterData: for each item, find which top-level items produce it
-    // This gives us the correct hierarchical recipes
     masterDataRecipes = {};
-    for (const [parentName, parentItem] of Object.entries(masterData)) {
-      if (parentItem.ingredients) {
-        for (const ing of parentItem.ingredients) {
-          if (ing.data && ing.data.name) {
-            const ingName = ing.data.name;
-            // If this ingredient is also a craftable item (has its own ingredients),
-            // store it in masterDataRecipes for priority lookup
-            if (ing.data.ingredients && ing.data.ingredients.length > 0) {
-              masterDataRecipes[ingName] = ing.data;
-            }
-          }
-        }
+    for (const [name, item] of Object.entries(allItems)) {
+      if (item.ingredients && item.ingredients.length > 0) {
+        masterDataRecipes[name] = { name, ingredients: item.ingredients };
       }
     }
-    console.log(`Built masterDataRecipes with ${Object.keys(masterDataRecipes).length} items`);
     
-    // Clear the recipe cache
     clearRecipeCache();
-    
     manufactureDataLoaded = true;
-    // Store masterData globally for autocomplete access
-    window.masterData = masterData;
-    console.log(`Loaded ${Object.keys(masterData).length} items from wlo_master_complete.json`);
-    console.log(`Loaded ${Object.keys(manufactureData).length} manufacture items (from masterData)`);
-    console.log(`Identified ${rawMaterialsSet.size} raw materials`);
+    
+    console.log(`Loaded ${Object.keys(manufactureData).length} items from flattened recipes (0.2MB vs 5.35MB)`);
+    console.log(`Top-level craftable items: ${topLevelNames.length}`);
+    console.log(`Raw materials: ${rawMaterialsSet.size}`);
     return true;
   } catch (error) {
     console.error('Error loading manufacture data:', error);
@@ -1243,14 +1183,9 @@ function isRawMaterial(name) {
   return rawMaterialsSet.has(name);
 }
 
-// Check if an item has a recipe - check both masterData AND manufactureData
-// masterData has top-level items, manufactureData also includes nested items
+// Check if an item has a recipe
 function hasRecipe(name) {
-  // Check masterData first (top-level craftable items)
-  if (masterData.hasOwnProperty(name)) return true;
-  // Also check manufactureData (includes nested items like Iron Material)
-  if (manufactureData.hasOwnProperty(name)) return true;
-  return false;
+  return manufactureData.hasOwnProperty(name);
 }
 
 // Cache for getRecipe to improve performance
@@ -1261,8 +1196,7 @@ function getRecipe(name) {
   if (recipeCache.has(name)) {
     return recipeCache.get(name);
   }
-  // Check both masterData (top-level) and manufactureData (includes nested items)
-  const result = masterData[name] || manufactureData[name] || null;
+  const result = manufactureData[name] || null;
   recipeCache.set(name, result);
   return result;
 }
@@ -1679,18 +1613,27 @@ function renderProcessTree(node, path = '', checked = {}, expanded = {}, depth =
   }
   const isExpanded = expanded[id];
 
-  // --- THE STABILIZER FIX ---
-  // 1. If it's the Root (Grinding Equip), we use the quantityMultiplier.
-  // 2. If it's a child (Steel, Iron Ore), the JSON 'node.qty' is ALREADY the total needed for its parent.
-  // We only multiply the child's qty by the root's multiplier.
+  // Cumulative quantity: multiply parent's total qty by this node's qty
   const displayQty = isRoot ? quantityMultiplier : (node.qty * quantityMultiplier);
 
-  // Time calculation: Use the item's recipe yield to see how many batches are needed
+  // Get yield for this item (how many items per craft)
   const itemRecipe = getRecipe(node.name);
-  const yieldPerCraft = (itemRecipe && itemRecipe.qty) ? itemRecipe.qty : 1;
-  const batchesNeeded = Math.ceil(displayQty / yieldPerCraft);
+  const yieldPerCraft = itemRecipe ? (itemRecipe.yield || 1) : (node.yield || 1);
 
+  // Time: each CRAFT takes node.time, divide total qty by yield to get crafts needed
+  let timeValue = 0;
+  if (node.time) {
+    const timeMatch = node.time.toString().match(/(\d+)/);
+    if (timeMatch) timeValue = parseInt(timeMatch[1], 10);
+  }
+  const craftsNeeded = Math.ceil(displayQty / yieldPerCraft);
+  const totalTime = timeValue * craftsNeeded;
+
+  // Show quantity as total items needed
   let qtyLabel = ` <span class="text-xs text-wlPurple">x${displayQty}</span>`;
+  if (yieldPerCraft > 1) {
+    qtyLabel += ` <span class="text-xs text-wlGreen">(${yieldPerCraft}/craft)</span>`;
+  }
   
   let stepClass = 'process-step' + (isRoot ? ' root' : '') + (isExpanded ? '' : ' collapsed');
   const itemHasRecipe = hasRecipe(node.name);
@@ -1707,13 +1650,7 @@ function renderProcessTree(node, path = '', checked = {}, expanded = {}, depth =
   let iconClass = isRaw ? 'fa-leaf' : (itemHasRecipe ? 'fa-cogs' : 'fa-cube');
   let iconColor = isRaw ? 'text-green-400' : (itemHasRecipe ? 'text-wlBlue' : 'text-wlPurple');
 
-  // Time & Tool
-  let timeValue = 0;
-  if (node.time) {
-    const timeMatch = node.time.toString().match(/(\d+)/);
-    if (timeMatch) timeValue = parseInt(timeMatch[1], 10);
-  }
-  let timeDisplay = timeValue > 0 ? `<span class="text-xs text-wlYellow ml-2 flex items-center gap-1"><i class="fas fa-clock"></i> ${batchesNeeded * timeValue} min</span>` : '';
+  let timeDisplay = totalTime > 0 ? `<span class="text-xs text-wlYellow ml-2 flex items-center gap-1"><i class="fas fa-clock"></i> ${totalTime} min</span>` : '';
   let toolDisplay = node.tool ? `<span class="text-xs text-wlBlue ml-2 flex items-center gap-1"><i class="fas fa-tools"></i> ${node.tool}</span>` : '';
 
   let html = `<div class="${stepClass}" id="${id}" style="margin-left:${depth * 1.2}rem;">
@@ -1728,18 +1665,16 @@ function renderProcessTree(node, path = '', checked = {}, expanded = {}, depth =
     </label>`;
 
   if (itemHasRecipe && isExpanded) {
-    // Crucial: Use the ingredients from the current node/recipe
     const ingredients = node.ingredients || (itemRecipe ? itemRecipe.ingredients : []);
     
     if (ingredients.length > 0) {
       html += `<div class="children mt-2 space-y-2">`;
       ingredients.forEach(ing => {
-        // Pass 'ing.data' as the next node, but KEEP the root quantityMultiplier.
-        // We do NOT multiply 'batchesNeeded' here because 'ing.qty' is already scaled in your JSON.
+        // Pass craftsNeeded as multiplier since ingredient qty is per craft
         const nextNode = ing.data || { name: ing.name, qty: ing.qty };
-        nextNode.qty = ing.qty; // Ensure the ingredient requirement is carried over
+        nextNode.qty = ing.qty;
         
-        html += renderProcessTree(nextNode, id, checked, expanded, depth + 1, false, quantityMultiplier);
+        html += renderProcessTree(nextNode, id, checked, expanded, depth + 1, false, craftsNeeded);
       });
       html += `</div>`;
     }
@@ -1815,23 +1750,29 @@ function getRawMaterialsAndTime(node, quantity = 1, expandAll = false) {
   // Use a Map to track unique items and their total time contribution
   const timeCache = new Map();
   
-  // Recursive function to sum all unique times in the tree
-  function sumAllTimes(item) {
+  // Recursive function to sum all unique times in the tree, accounting for yield
+  function sumAllTimes(item, totalNeeded) {
     if (!item) return 0;
     if (timeCache.has(item.name)) return timeCache.get(item.name);
     
     let total = 0;
-    // Add this item's time
+    // Add this item's time: time * ceil(totalNeeded / yield)
     if (item.time) {
       const match = item.time.toString().match(/(\d+)/);
-      if (match) total += parseInt(match[1], 10);
+      if (match) {
+        const timePerCraft = parseInt(match[1], 10);
+        const itemYield = item.yield || 1;
+        const craftsNeeded = Math.ceil(totalNeeded / itemYield);
+        total += timePerCraft * craftsNeeded;
+      }
     }
     
     // Add times from all ingredients
     const ings = item.ingredients || [];
     for (const ing of ings) {
       if (ing.data) {
-        total += sumAllTimes(ing.data);
+        const ingTotalNeeded = (ing.qty || 1) * totalNeeded;
+        total += sumAllTimes(ing.data, ingTotalNeeded);
       }
     }
     
@@ -1839,43 +1780,40 @@ function getRawMaterialsAndTime(node, quantity = 1, expandAll = false) {
     return total;
   }
   
-  // Calculate total time (sum all unique times, then multiply by quantity)
-  const totalTime = sumAllTimes(node) * quantity;
+  // Calculate total time
+  const totalTime = sumAllTimes(node, quantity);
   
-  // If expandAll is true, collect ALL raw materials from the tree at base recipe quantities
-  // (list each raw material once, multiplied by the production quantity)
+  // If expandAll is true, collect ALL raw materials from the tree
   if (expandAll) {
     const rawMaterialsMap = new Map();
+    const visited = new Set();
     
-    // Recursive function to find all raw materials (items with no ingredients)
-    // Multiply base quantity by the production quantity
     function findRawMaterials(item, multiplier) {
       const ingData = item.data;
       if (!ingData) return;
       
+      if (visited.has(ingData.name)) return;
+      visited.add(ingData.name);
+      
       const ingName = ingData.name;
-      const ingQty = (item.qty || 1) * multiplier; // Base quantity * production quantity
+      const ingQty = (item.qty || 1) * multiplier;
       const ingIngredients = ingData.ingredients || [];
       
       if (ingIngredients.length === 0) {
-        // This is a raw material - add at calculated quantity
         const current = rawMaterialsMap.get(ingName) || 0;
         rawMaterialsMap.set(ingName, current + ingQty);
       } else {
-        // This is craftable - recurse into its ingredients with same multiplier
         for (const subIng of ingIngredients) {
           findRawMaterials(subIng, multiplier);
         }
       }
     }
     
-    // Start from the root node's ingredients
     const rootIngredients = node.ingredients || [];
     for (const ing of rootIngredients) {
       findRawMaterials(ing, quantity);
     }
     
-    // Convert map to array
     for (const [name, qty] of rawMaterialsMap) {
       rawMaterials.push({ name, qty });
     }
@@ -1889,11 +1827,9 @@ function getRawMaterialsAndTime(node, quantity = 1, expandAll = false) {
       const name = ing.data.name;
       const qty = (ing.qty || 1) * quantity;
       
-      // Check if this ingredient has its own ingredients (is craftable vs raw)
       const ingIngredients = ing.data.ingredients || [];
       const isCraftable = ingIngredients.length > 0;
       
-      // Add to appropriate list based on whether it has ingredients
       if (isCraftable) {
         materials.push({ name: name, qty: qty });
       } else {

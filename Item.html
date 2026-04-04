@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonderland Online - Items Database</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="scripts/item-loader.js"></script>
-    <script src="scripts/recipe-generator.js"></script>
+    
+    <!-- Font Awesome: load non-blocking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Google Fonts: load non-blocking -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
+    
+    <script src="scripts/item-loader.js" defer></script>
+    <script src="scripts/recipe-generator.js" defer></script>
     <script>
         tailwind.config = {
             theme: {
@@ -39,6 +54,12 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        /* Prevent layout shift from font loading */
+        .text-wlLight {
+            font-family: 'Poppins', sans-serif;
+            font-display: swap;
+        }
         
         body {
             font-family: 'Poppins', sans-serif;
@@ -201,6 +222,533 @@
             pointer-events: auto;
         }
         
+        /* Reserve space for loading indicator to prevent layout shift */
+        #loadingIndicator {
+            min-height: 400px;
+            display: flex;
+        }
+        
+        #loadingIndicator.hidden {
+            display: none;
+        }
+        
+        /* Reserve space for table view */
+        #tableView {
+            min-height: 400px;
+        }
+        
+        #tableView.hidden {
+            display: none;
+        }
+        
+        /* Reserve space for grid view */
+        #gridView {
+            min-height: 200px;
+        }
+        
+        /* Prevent layout shift from images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Ensure consistent image sizing */
+        .w-16.h-16 {
+            width: 4rem;
+            height: 4rem;
+        }
+        
+        /* Ensure modal content has stable dimensions */
+        #modalContent {
+            min-height: 200px;
+        }
+        
+        /* Prevent layout shift from filter dropdown */
+        .filter-dropdown {
+            will-change: max-height;
+        }
+        
+        /* Skeleton loader styles */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        
+        .skeleton {
+            background: linear-gradient(90deg, 
+                rgba(30, 41, 59, 0.7) 25%, 
+                rgba(59, 130, 246, 0.1) 50%, 
+                rgba(30, 41, 59, 0.7) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s ease-in-out infinite;
+            border-radius: 4px;
+        }
+        
+        .skeleton-image {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.375rem;
+        }
+        
+        .skeleton-text {
+            height: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skeleton-text-short {
+            width: 60%;
+            height: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skeleton-table-row {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            gap: 15px;
+        }
+        
+        .skeleton-table-image {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.375rem;
+            flex-shrink: 0;
+        }
+        
+        .skeleton-table-text {
+            flex: 1;
+        }
+        
+        /* Mobile-specific responsive styles */
+        @media (max-width: 768px) {
+            /* Header tweaks */
+            header h1 {
+                font-size: 1.1rem;
+            }
+            
+            header .w-10.h-10 {
+                width: 2rem;
+                height: 2rem;
+            }
+            
+            header .w-10.h-10 i {
+                font-size: 0.875rem;
+            }
+            
+            /* Page title */
+            section h2 {
+                font-size: 1.5rem;
+            }
+            
+            /* Filter improvements */
+            .filter-dropdown .grid {
+                gap: 1rem;
+            }
+            
+            /* Make filter inputs more touch-friendly */
+            .filter-dropdown input,
+            .filter-dropdown select {
+                min-height: 44px;
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            /* View toggle buttons - larger touch targets */
+            #tableViewBtn,
+            #gridViewBtn {
+                min-height: 44px;
+                min-width: 44px;
+                padding: 0.5rem 0.75rem;
+            }
+            
+            /* Pagination buttons - larger touch targets */
+            #pagination button,
+            #paginationGrid button {
+                min-height: 36px;
+                min-width: 36px;
+                padding: 0.375rem 0.625rem;
+            }
+            
+            /* Table: hide less important columns on mobile */
+            .table thead th:nth-child(7),
+            .table thead th:nth-child(8),
+            .table tbody td:nth-child(7),
+            .table tbody td:nth-child(8) {
+                display: none;
+            }
+            
+            /* Make table images slightly smaller on mobile */
+            .table tbody td:first-child img {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+            /* Skeleton table images on mobile */
+            .skeleton-table-image {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+            /* Settings panel: full width on mobile */
+            #baseFilterSettingsPanel {
+                width: calc(100vw - 2rem) !important;
+                right: -1rem !important;
+            }
+            
+            /* Base filter dropdown: full width on mobile */
+            #baseDropdown {
+                width: calc(100vw - 2rem) !important;
+                left: -1rem !important;
+            }
+            
+            /* Reduce main content padding on mobile */
+            main {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            
+            /* Filter section padding */
+            section.mb-8 {
+                margin-bottom: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Even smaller screens */
+            header h1 {
+                font-size: 0.95rem;
+            }
+            
+            /* Stack view toggle vertically */
+            .flex.justify-between.items-center.mb-4 {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: stretch;
+            }
+            
+            .flex.justify-between.items-center.mb-4 > div:last-child {
+                justify-content: center;
+            }
+            
+            /* Hide type column on very small screens */
+            .table thead th:nth-child(3),
+            .table tbody td:nth-child(3) {
+                display: none;
+            }
+        }
+        
+        /* Touch-friendly improvements for all screen sizes */
+        @media (hover: none) and (pointer: coarse) {
+            /* Larger touch targets for buttons */
+            button, 
+            .nav-link {
+                min-height: 44px;
+            }
+            
+            /* Remove hover effects on touch devices */
+            .card-hover:hover {
+                transform: none;
+            }
+            
+            .item-card:hover {
+                transform: none;
+            }
+        }
+        
+        /* Prevent layout shift from images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Ensure consistent image sizing */
+        .w-16.h-16 {
+            width: 4rem;
+            height: 4rem;
+        }
+        
+        /* Ensure modal content has stable dimensions */
+        #modalContent {
+            min-height: 200px;
+        }
+        
+        /* Prevent layout shift from filter dropdown */
+        .filter-dropdown {
+            will-change: max-height;
+        }
+        
+        /* Skeleton loader styles */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        
+        .skeleton {
+            background: linear-gradient(90deg, 
+                rgba(30, 41, 59, 0.7) 25%, 
+                rgba(59, 130, 246, 0.1) 50%, 
+                rgba(30, 41, 59, 0.7) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s ease-in-out infinite;
+            border-radius: 4px;
+        }
+        
+        .skeleton-image {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.375rem;
+        }
+        
+        .skeleton-text {
+            height: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skeleton-text-short {
+            width: 60%;
+            height: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skeleton-table-row {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            gap: 15px;
+        }
+        
+        .skeleton-table-image {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.375rem;
+            flex-shrink: 0;
+        }
+        
+        .skeleton-table-text {
+            flex: 1;
+        }
+        
+        /* Mobile-specific responsive styles */
+        @media (max-width: 768px) {
+            /* Header tweaks */
+            header h1 {
+                font-size: 1.1rem;
+            }
+            
+            header .w-10.h-10 {
+                width: 2rem;
+                height: 2rem;
+            }
+            
+            header .w-10.h-10 i {
+                font-size: 0.875rem;
+            }
+            
+            /* Page title */
+            section h2 {
+                font-size: 1.5rem;
+            }
+            
+            /* Filter improvements */
+            .filter-dropdown .grid {
+                gap: 1rem;
+            }
+            
+            /* Make filter inputs more touch-friendly */
+            .filter-dropdown input,
+            .filter-dropdown select {
+                min-height: 44px;
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            /* View toggle buttons - larger touch targets */
+            #tableViewBtn,
+            #gridViewBtn {
+                min-height: 44px;
+                min-width: 44px;
+                padding: 0.5rem 0.75rem;
+            }
+            
+            /* Pagination buttons - larger touch targets */
+            #pagination button,
+            #paginationGrid button {
+                min-height: 36px;
+                min-width: 36px;
+                padding: 0.375rem 0.625rem;
+            }
+            
+            /* Table: hide less important columns on mobile */
+            .table thead th:nth-child(7),
+            .table thead th:nth-child(8),
+            .table tbody td:nth-child(7),
+            .table tbody td:nth-child(8) {
+                display: none;
+            }
+            
+            /* Make table images slightly smaller on mobile */
+            .table tbody td:first-child img {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+            /* Skeleton table images on mobile */
+            .skeleton-table-image {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+            /* Settings panel: full width on mobile */
+            #baseFilterSettingsPanel {
+                width: calc(100vw - 2rem) !important;
+                right: -1rem !important;
+            }
+            
+            /* Base filter dropdown: full width on mobile */
+            #baseDropdown {
+                width: calc(100vw - 2rem) !important;
+                left: -1rem !important;
+            }
+            
+            /* Reduce main content padding on mobile */
+            main {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            
+            /* Filter section padding */
+            section.mb-8 {
+                margin-bottom: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Even smaller screens */
+            header h1 {
+                font-size: 0.95rem;
+            }
+            
+            /* Stack view toggle vertically */
+            .flex.justify-between.items-center.mb-4 {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: stretch;
+            }
+            
+            .flex.justify-between.items-center.mb-4 > div:last-child {
+                justify-content: center;
+            }
+            
+            /* Hide type column on very small screens */
+            .table thead th:nth-child(3),
+            .table tbody td:nth-child(3) {
+                display: none;
+            }
+        }
+        
+        /* Touch-friendly improvements for all screen sizes */
+        @media (hover: none) and (pointer: coarse) {
+            /* Larger touch targets for buttons */
+            button, 
+            .nav-link {
+                min-height: 44px;
+            }
+            
+            /* Remove hover effects on touch devices */
+            .card-hover:hover {
+                transform: none;
+            }
+            
+            .item-card:hover {
+                transform: none;
+            }
+        }
+        
+        #gridView.hidden {
+            display: none;
+        }
+        
+        /* Prevent layout shift from images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Ensure consistent image sizing */
+        .w-16.h-16 {
+            width: 4rem;
+            height: 4rem;
+        }
+        
+        /* Ensure modal content has stable dimensions */
+        #modalContent {
+            min-height: 200px;
+        }
+        
+        /* Prevent layout shift from filter dropdown */
+        .filter-dropdown {
+            will-change: max-height;
+        }
+        
+        /* Skeleton loader styles */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        
+        .skeleton {
+            background: linear-gradient(90deg, 
+                rgba(30, 41, 59, 0.7) 25%, 
+                rgba(59, 130, 246, 0.1) 50%, 
+                rgba(30, 41, 59, 0.7) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s ease-in-out infinite;
+            border-radius: 4px;
+        }
+        
+        .skeleton-card {
+            background-color: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 0.75rem;
+            padding: 1rem;
+        }
+        
+        .skeleton-image {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.375rem;
+        }
+        
+        .skeleton-text {
+            height: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skeleton-text-short {
+            width: 60%;
+            height: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skeleton-table-row {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            gap: 15px;
+        }
+        
+        .skeleton-table-image {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.375rem;
+            flex-shrink: 0;
+        }
+        
+        .skeleton-table-text {
+            flex: 1;
+        }
+        
         /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
@@ -219,6 +767,334 @@
         
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Mobile-specific responsive styles */
+        @media (max-width: 768px) {
+            /* Header tweaks */
+            header h1 {
+                font-size: 1.1rem;
+            }
+            
+            header .w-10.h-10 {
+                width: 2rem;
+                height: 2rem;
+            }
+            
+            header .w-10.h-10 i {
+                font-size: 0.875rem;
+            }
+            
+            /* Page title */
+            section h2 {
+                font-size: 1.5rem;
+            }
+            
+            /* Filter improvements */
+            .filter-dropdown .grid {
+                gap: 1rem;
+            }
+            
+            /* Make filter inputs more touch-friendly */
+            .filter-dropdown input,
+            .filter-dropdown select {
+                min-height: 44px;
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            /* View toggle buttons - larger touch targets */
+            #tableViewBtn,
+            #gridViewBtn {
+                min-height: 44px;
+                min-width: 44px;
+                padding: 0.5rem 0.75rem;
+            }
+            
+            /* Pagination buttons - larger touch targets */
+            #pagination button,
+            #paginationGrid button {
+                min-height: 36px;
+                min-width: 36px;
+                padding: 0.375rem 0.625rem;
+            }
+            
+            /* Table: hide less important columns on mobile */
+            .table thead th:nth-child(7),
+            .table thead th:nth-child(8),
+            .table tbody td:nth-child(7),
+            .table tbody td:nth-child(8) {
+                display: none;
+            }
+            
+            /* Make table images slightly smaller on mobile */
+            .table tbody td:first-child img {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+            /* Skeleton table images on mobile */
+            .skeleton-table-image {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+            /* Grid view: tighter spacing on mobile */
+            #itemsGrid {
+                gap: 0.5rem;
+            }
+            
+            /* Grid card: smaller padding on mobile */
+            #itemsGrid > div {
+                padding: 0.5rem;
+            }
+            
+            /* Settings panel: full width on mobile */
+            #baseFilterSettingsPanel {
+                width: calc(100vw - 2rem) !important;
+                right: -1rem !important;
+            }
+            
+            /* Base filter dropdown: full width on mobile */
+            #baseDropdown {
+                width: calc(100vw - 2rem) !important;
+                left: -1rem !important;
+            }
+            
+            /* Reduce main content padding on mobile */
+            main {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            
+            /* Filter section padding */
+            section.mb-8 {
+                margin-bottom: 1rem;
+            }
+            
+            /* Grid skeleton cards: match mobile padding */
+            .skeleton-card,
+            #itemsGrid > div.bg-wlDark {
+                padding: 0.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Even smaller screens */
+            header h1 {
+                font-size: 0.95rem;
+            }
+            
+            /* Stack view toggle vertically */
+            .flex.justify-between.items-center.mb-4 {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: stretch;
+            }
+            
+            .flex.justify-between.items-center.mb-4 > div:last-child {
+                justify-content: center;
+            }
+            
+            /* Hide type column on very small screens */
+            .table thead th:nth-child(3),
+            .table tbody td:nth-child(3) {
+                display: none;
+            }
+            
+            /* Grid: 2 columns on small screens (not 1, looks better) */
+            #itemsGrid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.375rem;
+            }
+            
+            /* Smaller grid card images on very small screens */
+            #itemsGrid img.w-12 {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            
+            /* Compact grid card text on small screens */
+            #itemsGrid h4 {
+                font-size: 0.75rem;
+            }
+        }
+        
+        /* Touch-friendly improvements for all screen sizes */
+        @media (hover: none) and (pointer: coarse) {
+            /* Larger touch targets for buttons */
+            button, 
+            .nav-link {
+                min-height: 44px;
+            }
+            
+            /* Remove hover effects on touch devices */
+            .card-hover:hover {
+                transform: none;
+            }
+            
+            .item-card:hover {
+                transform: none;
+            }
+        }
+            
+            header .w-10.h-10 {
+                width: 2rem;
+                height: 2rem;
+            }
+            
+            header .w-10.h-10 i {
+                font-size: 0.875rem;
+            }
+            
+            /* Page title */
+            section h2 {
+                font-size: 1.5rem;
+            }
+            
+            /* Filter improvements */
+            .filter-dropdown .grid {
+                gap: 1rem;
+            }
+            
+            /* Make filter inputs more touch-friendly */
+            .filter-dropdown input,
+            .filter-dropdown select {
+                min-height: 44px;
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            /* View toggle buttons - larger touch targets */
+            #tableViewBtn,
+            #gridViewBtn {
+                min-height: 44px;
+                min-width: 44px;
+                padding: 0.5rem 0.75rem;
+            }
+            
+            /* Pagination buttons - larger touch targets */
+            #pagination button,
+            #paginationGrid button {
+                min-height: 36px;
+                min-width: 36px;
+                padding: 0.375rem 0.625rem;
+            }
+            
+            /* Table: hide less important columns on mobile */
+            .table thead th:nth-child(7),
+            .table thead th:nth-child(8),
+            .table tbody td:nth-child(7),
+            .table tbody td:nth-child(8) {
+                display: none;
+            }
+            
+            /* Make table images slightly smaller on mobile */
+            .table tbody td:first-child img {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+            /* Skeleton table images on mobile */
+            .skeleton-table-image {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+            /* Grid view: tighter spacing on mobile */
+            #itemsGrid {
+                gap: 0.5rem;
+            }
+            
+            /* Grid card: smaller padding on mobile */
+            #itemsGrid > div {
+                padding: 0.5rem;
+            }
+            
+            /* Settings panel: full width on mobile */
+            #baseFilterSettingsPanel {
+                width: calc(100vw - 2rem) !important;
+                right: -1rem !important;
+            }
+            
+            /* Base filter dropdown: full width on mobile */
+            #baseDropdown {
+                width: calc(100vw - 2rem) !important;
+                left: -1rem !important;
+            }
+            
+            /* Reduce main content padding on mobile */
+            main {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            
+            /* Filter section padding */
+            section.mb-8 {
+                margin-bottom: 1rem;
+            }
+            
+            /* Grid skeleton cards: match mobile padding */
+            .skeleton-card,
+            #itemsGrid > div.bg-wlDark {
+                padding: 0.5rem;
+            }        
+        
+        @media (max-width: 480px) {
+            /* Even smaller screens */
+            header h1 {
+                font-size: 0.95rem;
+            }
+            
+            /* Stack view toggle vertically */
+            .flex.justify-between.items-center.mb-4 {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: stretch;
+            }
+            
+            .flex.justify-between.items-center.mb-4 > div:last-child {
+                justify-content: center;
+            }
+            
+            /* Hide type column on very small screens */
+            .table thead th:nth-child(3),
+            .table tbody td:nth-child(3) {
+                display: none;
+            }
+            
+            /* Grid: 2 columns on small screens (not 1, looks better) */
+            #itemsGrid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.375rem;
+            }
+            
+            /* Smaller grid card images on very small screens */
+            #itemsGrid img.w-12 {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            
+            /* Compact grid card text on small screens */
+            #itemsGrid h4 {
+                font-size: 0.75rem;
+            }
+        }
+        
+        /* Touch-friendly improvements for all screen sizes */
+        @media (hover: none) and (pointer: coarse) {
+            /* Larger touch targets for buttons */
+            button, 
+            .nav-link {
+                min-height: 44px;
+            }
+            
+            /* Remove hover effects on touch devices */
+            .card-hover:hover {
+                transform: none;
+            }
+            
+            .item-card:hover {
+                transform: none;
+            }
         }
         
         /* Table styles */
@@ -787,12 +1663,10 @@
             </section>
 
             <!-- Loading Indicator -->
-            <div id="loadingIndicator" class="flex justify-center items-center py-12">
-                <div class="spinner"></div>
-            </div>
+            <div id="loadingIndicator" class="hidden"></div>
 
             <!-- Table View -->
-            <section id="tableView" class="mb-8 hidden">
+            <section id="tableView" class="mb-8">
                 <div class="bg-wlDark bg-opacity-70 rounded-xl overflow-hidden">
                     <div class="table-container max-h-[600px] overflow-y-auto">
                         <table class="table w-full">
@@ -810,7 +1684,7 @@
                                 </tr>
                             </thead>
                             <tbody id="itemsTableBody">
-                                <!-- Items will be populated here by JavaScript -->
+                                <!-- Skeleton rows shown during loading -->
                             </tbody>
                         </table>
                     </div>
@@ -835,7 +1709,7 @@
 
             <!-- Grid View (Hidden by default) -->
             <section id="gridView" class="hidden mb-8">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="itemsGrid">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3" id="itemsGrid">
                     <!-- Items will be populated here by JavaScript -->
                 </div>
                 
@@ -967,7 +1841,7 @@
 
     <!-- Item Preview Tooltip -->
     <div id="itemPreview" class="item-preview">
-        <img src="" alt="" id="previewImage">
+        <img src="" alt="" id="previewImage" width="176" height="176" style="width: 100%; aspect-ratio: 1/1; object-fit: contain;">
         <h4 id="previewName"></h4>
         <div class="rarity" id="previewRarity"></div>
         <div class="base" id="previewBase"></div>
@@ -1129,8 +2003,33 @@
         async function applyFilters(items) {
             const { search, searchDescription, type, minLevel, maxLevel, base, orderedBase, statType, minStatValue } = currentState.filters;
             
-            // No need to load full items anymore - descriptions are now in the index!
-            let filtered = items.filter(item => {
+            // Determine what needs to be loaded
+            let needsFullIndex = false;
+            let categoriesToLoad = [];
+            
+            if (type) {
+                categoriesToLoad = [type];
+            } else if (search || searchDescription || base.length > 0) {
+                // Search or base filter without type needs all categories
+                needsFullIndex = true;
+            }
+            
+            // Load required data
+            if (needsFullIndex) {
+                await itemLoader.loadIndex();
+            } else if (categoriesToLoad.length > 0) {
+                await itemLoader.ensureCategories(categoriesToLoad);
+            } else if (currentState.items.length === 0) {
+                // Nothing specified but no items loaded yet - load all
+                await itemLoader.loadIndex();
+            }
+            
+            // Refresh items from loader if new categories were loaded
+            if (itemLoader.index && itemLoader.index.items.length > items.length) {
+                currentState.items = itemLoader.getIndexItems();
+            }
+            
+            let filtered = currentState.items.filter(item => {
                 // Search filter - searches in name only by default, or includes description if enabled
                 const searchLower = search.toLowerCase();
                 let matchesSearch = search === '' || item.name.toLowerCase().includes(searchLower);
@@ -1331,22 +2230,81 @@
             paginationContainer.appendChild(nextButton);
         }
 
+        // Show skeleton loaders in table view
+        function showTableSkeletons(count) {
+            const itemsTableBody = document.getElementById('itemsTableBody');
+            let html = '';
+            for (let i = 0; i < count; i++) {
+                html += `
+                    <tr>
+                        <td><div class="skeleton skeleton-table-image"></div></td>
+                        <td>
+                            <div class="skeleton skeleton-table-text">
+                                <div class="skeleton skeleton-text" style="width: 80%;"></div>
+                                <div class="skeleton skeleton-text" style="width: 50%;"></div>
+                            </div>
+                        </td>
+                        <td><div class="skeleton skeleton-text" style="width: 60px; height: 24px;"></div></td>
+                        <td><div class="skeleton skeleton-text" style="width: 30px;"></div></td>
+                        <td><div class="skeleton skeleton-text" style="width: 25px;"></div></td>
+                        <td><div class="skeleton skeleton-text" style="width: 70px;"></div></td>
+                        <td><div class="skeleton skeleton-text" style="width: 100px;"></div></td>
+                        <td><div class="skeleton skeleton-text" style="width: 120px;"></div></td>
+                        <td><div class="skeleton skeleton-text" style="width: 60px; height: 28px;"></div></td>
+                    </tr>
+                `;
+            }
+            itemsTableBody.innerHTML = html;
+        }
+
+        // Show skeleton loaders in grid view
+        function showGridSkeletons(count) {
+            const itemsGrid = document.getElementById('itemsGrid');
+            let html = '';
+            for (let i = 0; i < count; i++) {
+                html += `
+                    <div class="bg-gradient-to-b from-wlDark to-wlDarker rounded-xl p-4 border border-wlLight border-opacity-10 flex flex-col">
+                        <div class="relative z-10">
+                            <div class="flex flex-col items-center mb-3">
+                                <div class="w-16 h-16 rounded-lg bg-wlDarker bg-opacity-80 p-1.5 mb-2 border border-wlLight border-opacity-5">
+                                    <div class="skeleton w-full h-full rounded"></div>
+                                </div>
+                                <div class="skeleton skeleton-text" style="width: 70%; height: 0.8rem;"></div>
+                                <div class="skeleton skeleton-text" style="width: 50%; height: 0.6rem; margin-top: 0.25rem;"></div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 mb-3 flex-grow bg-wlDark/50 rounded-lg p-2.5 border border-wlLight border-opacity-5">
+                                <div class="text-center"><div class="skeleton skeleton-text" style="width: 30px; height: 0.5rem; margin: 0 auto 4px;"></div><div class="skeleton skeleton-text" style="width: 20px; height: 1rem; margin: 0 auto;"></div></div>
+                                <div class="text-center"><div class="skeleton skeleton-text" style="width: 30px; height: 0.5rem; margin: 0 auto 4px;"></div><div class="skeleton skeleton-text" style="width: 50px; height: 0.6rem; margin: 0 auto;"></div></div>
+                            </div>
+                            <div class="skeleton skeleton-text" style="width: 100%; height: 32px; flex-shrink: 0;"></div>
+                        </div>
+                    </div>
+                `;
+            }
+            itemsGrid.innerHTML = html;
+        }
+        
         // Render items to the table and grid views using lazy loading
         async function renderItems() {
-            const loadingIndicator = document.getElementById('loadingIndicator');
             const quickStats = document.getElementById('quickStats');
             const itemsTableBody = document.getElementById('itemsTableBody');
             const itemsGrid = document.getElementById('itemsGrid');
             const showingCount = document.getElementById('showingCount');
             
-            // Scroll to top of the page
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Show skeletons immediately in the active view
+            const isTableView = document.getElementById('tableViewBtn').classList.contains('bg-wlBlue');
+            const itemsPerPage = isTableView ? currentState.itemsPerPage : 
+                parseInt(document.getElementById('itemsPerPageGrid')?.value || 24);
             
-            // Show loading indicator
-            loadingIndicator.classList.remove('hidden');
-            tableView.classList.add('hidden');
-            gridView.classList.add('hidden');
+            if (isTableView) {
+                showTableSkeletons(itemsPerPage);
+            } else {
+                showGridSkeletons(itemsPerPage);
+            }
+            
+            // Hide quick stats during loading
             quickStats.classList.add('hidden');
+            showingCount.textContent = 'Loading...';
             
             try {
                 // Sort items using local sort function
@@ -1422,39 +2380,38 @@
                     const rankValue = item.rank !== undefined ? item.rank : Math.floor(item.level / 2);
                     
                     const card = document.createElement('div');
-                    card.className = 'bg-wlDark bg-opacity-70 rounded-xl p-4 border border-wlLight border-opacity-20 item-card';
+                    card.className = 'group bg-gradient-to-b from-wlDark to-wlDarker rounded-xl p-4 border border-wlLight border-opacity-10 hover:border-wlBlue hover:border-opacity-40 transition-all duration-300 hover:shadow-lg hover:shadow-wlBlue/10 flex flex-col relative overflow-hidden';
                     card.innerHTML = `
-                        <div class="flex items-start mb-4">
-                            <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-md object-contain bg-wlDarker bg-opacity-50 mr-4">
-                            <div>
-                                <h4 class="font-medium">${item.name}</h4>
-                                <div class="text-xs text-wlLight text-opacity-70 mb-1">${item.type || 'N/A'}</div>
-                                <div class="flex items-center text-xs">
+                        <div class="absolute inset-0 bg-gradient-to-br from-wlBlue/5 to-wlPurple/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="flex flex-col items-center mb-3">
+                                <div class="w-16 h-16 rounded-lg bg-wlDarker bg-opacity-80 p-1.5 mb-2 border border-wlLight border-opacity-5 shadow-inner">
+                                    <img src="${item.image}" alt="${item.name}" class="w-full h-full object-contain">
+                                </div>
+                                <h4 class="font-semibold text-sm text-center leading-tight">${item.name}</h4>
+                                <div class="flex items-center text-xs text-wlLight text-opacity-60 mt-1">
                                     <span class="item-type-icon ${item.category} mr-1">
-                                        <i class="fas ${getTypeIcon(item.category)} text-xs"></i>
+                                        <i class="fas ${getTypeIcon(item.category)} text-[10px]"></i>
                                     </span>
-                                    <span class="mr-2">${capitalizeFirstLetter(item.category)}</span>
-                                    <span class="font-medium">Rank ${rankValue}</span>
+                                    <span>${capitalizeFirstLetter(item.category)}</span>
+                                    <span class="mx-1.5 text-wlLight text-opacity-30">&middot;</span>
+                                    <span class="font-medium text-wlYellow">Rank ${rankValue}</span>
                                 </div>
                             </div>
+                            <div class="grid grid-cols-2 gap-2 text-xs mb-3 flex-grow bg-wlDark/50 rounded-lg p-2.5 border border-wlLight border-opacity-5">
+                                <div class="text-center">
+                                    <div class="text-wlLight text-opacity-50 text-[10px] uppercase tracking-wide">Level</div>
+                                    <div class="font-bold text-base">${item.level}</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-wlLight text-opacity-50 text-[10px] uppercase tracking-wide">Base</div>
+                                    <div class="font-medium truncate text-[11px]">${item.base || '—'}</div>
+                                </div>
+                            </div>
+                            <button onclick="openItemModal(${item.id})" class="w-full py-2 bg-gradient-to-r from-wlBlue/20 to-wlPurple/20 border border-wlBlue border-opacity-30 rounded-lg text-xs font-medium hover:from-wlBlue hover:to-wlPurple hover:text-white transition-all duration-300 flex-shrink-0">
+                                <i class="fas fa-eye mr-1"></i> View Details
+                            </button>
                         </div>
-                        <div class="grid grid-cols-2 gap-2 text-xs mb-4">
-                            <div>
-                                <div class="text-wlLight text-opacity-70">Level</div>
-                                <div>${item.level}</div>
-                            </div>
-                            <div>
-                                <div class="text-wlLight text-opacity-70">Stats</div>
-                                <div class="truncate">${item.attributes ? Object.entries(item.attributes).map(([k,v]) => `${k}:${v}`).join(', ') : 'N/A'}</div>
-                            </div>
-                            <div class="col-span-2">
-                                <div class="text-wlLight text-opacity-70">Base</div>
-                                <div class="truncate">${item.base || 'N/A'}</div>
-                            </div>
-                        </div>
-                        <button onclick="openItemModal(${item.id})" class="w-full py-2 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlBlue hover:border-wlBlue transition">
-                            View Details
-                        </button>
                     `;
                     itemsGrid.appendChild(card);
                 });
@@ -1466,13 +2423,7 @@
                 // Update quick stats
                 updateQuickStats();
                 
-                // Hide loading indicator and show content
-                loadingIndicator.classList.add('hidden');
-                if (tableViewBtn.classList.contains('bg-wlBlue')) {
-                    tableView.classList.remove('hidden');
-                } else {
-                    gridView.classList.remove('hidden');
-                }
+                // Skeletons are already showing, content replaces them seamlessly
                 quickStats.classList.remove('hidden');
                 
                 // Set up item preview hover events
@@ -1482,8 +2433,15 @@
                 itemLoader.preloadNextPage(currentState.filteredItems, currentState.currentPage, currentState.itemsPerPage);
             } catch (error) {
                 console.error('Error rendering items:', error);
-                loadingIndicator.innerHTML = `
-                    <div class="text-center text-red-500">
+                itemsTableBody.innerHTML = `
+                    <tr><td colspan="9" class="text-center text-red-500 py-12">
+                        <i class="fas fa-exclamation-triangle text-4xl mb-4"></i>
+                        <p>Failed to load items. Please try again.</p>
+                        <p class="text-sm mt-2">Error: ${error.message}</p>
+                    </td></tr>
+                `;
+                itemsGrid.innerHTML = `
+                    <div class="col-span-full text-center text-red-500 py-12">
                         <i class="fas fa-exclamation-triangle text-4xl mb-4"></i>
                         <p>Failed to load items. Please try again.</p>
                         <p class="text-sm mt-2">Error: ${error.message}</p>
@@ -2524,8 +3482,8 @@ async function openItemModal(itemId, isGoingBack = false) {
             modalContent.innerHTML = `
             <div class="flex flex-col md:flex-row">
                 <div class="md:w-1/3 mb-6 md:mb-0 md:pr-6">
-                    <div class="flex justify-center">
-                        <img src="${item.image}" alt="${item.name}" class="w-32 h-32 rounded-lg object-contain bg-wlDarker bg-opacity-50">
+                    <div class="flex justify-center" style="width: 128px; height: 128px;">
+                        <img src="${item.image}" alt="${item.name}" class="w-32 h-32 rounded-lg object-contain bg-wlDarker bg-opacity-50" width="128" height="128" style="width: 8rem; height: 8rem;">
                     </div>
                     <div class="mt-4 grid grid-cols-2 gap-4">
                         <div class="bg-wlDark p-3 rounded-lg">
@@ -2887,9 +3845,18 @@ async function openItemModal(itemId, isGoingBack = false) {
         }
         
         // Initialize base materials dropdown
-        function initializeBaseMaterials() {
-            allBaseMaterials = extractAllBaseMaterials(currentState.items);
-            updateBaseOptions();
+        async function initializeBaseMaterials() {
+            // If we have items, extract from them
+            if (currentState.items.length > 0) {
+                allBaseMaterials = extractAllBaseMaterials(currentState.items);
+                updateBaseOptions();
+            } else {
+                // No items yet (manifest-only mode), load all categories for base materials
+                await itemLoader.loadIndex();
+                currentState.items = itemLoader.getIndexItems();
+                allBaseMaterials = extractAllBaseMaterials(currentState.items);
+                updateBaseOptions();
+            }
             
             // Add search input listener
             document.getElementById('baseSearchInput').addEventListener('input', updateBaseOptions);
@@ -2940,14 +3907,11 @@ async function openItemModal(itemId, isGoingBack = false) {
         // Initial data load using JSON lazy loading system
         async function loadInitialData() {
             try {
-                // Load the master index
-                await itemLoader.loadIndex();
+                // Load only the manifest (tiny file ~1KB) instead of full 2MB index
+                await itemLoader.loadManifest();
                 
-                // Get all items from index (metadata only)
-                const indexItems = itemLoader.getIndexItems();
-                
-                // Store index items in state for filtering
-                currentState.items = indexItems;
+                // Start with empty items array - categories load on demand
+                currentState.items = [];
                 
                 // Initialize base materials dropdown
                 initializeBaseMaterials();
@@ -2960,10 +3924,10 @@ async function openItemModal(itemId, isGoingBack = false) {
                     currentState.filters.search = decodeURIComponent(searchParam).toLowerCase();
                 }
                 
-                // Initial render
+                // Initial render - will trigger category loading as needed
                 renderItems();
                 
-                console.log('Items database loaded successfully');
+                console.log('Items manifest loaded successfully');
                 console.log('Cache stats:', itemLoader.getCacheStats());
             } catch (error) {
                 console.error('Error loading items database:', error);
@@ -2979,8 +3943,33 @@ async function openItemModal(itemId, isGoingBack = false) {
             }
         }
         
-        // Initialize the application
-        loadInitialData();
+        // Initialize the application when DOM and scripts are ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                if (typeof itemLoader !== 'undefined') {
+                    loadInitialData();
+                } else {
+                    // Wait a bit for the script to load
+                    const checkLoader = setInterval(() => {
+                        if (typeof itemLoader !== 'undefined') {
+                            clearInterval(checkLoader);
+                            loadInitialData();
+                        }
+                    }, 50);
+                }
+            });
+        } else {
+            if (typeof itemLoader !== 'undefined') {
+                loadInitialData();
+            } else {
+                const checkLoader = setInterval(() => {
+                    if (typeof itemLoader !== 'undefined') {
+                        clearInterval(checkLoader);
+                        loadInitialData();
+                    }
+                }, 50);
+            }
+        }
     </script>
     <script>
         // Theme Toggle

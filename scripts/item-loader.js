@@ -1,21 +1,105 @@
 /**
  * Item Loader - Lazy Loading System for Wonderland Online Items Database
  * Handles loading items from JSON files with caching and optimization
+ * Uses split category indexes for faster initial load
  */
 
 class ItemLoader {
     constructor() {
         this.index = null;
-        this.cache = new Map(); // In-memory cache for loaded items
-        this.indexUrl = 'data/items-index.json';
+        this.cache = new Map();
+        this.manifest = null;
+        this.loadedCategories = new Set();
+        this.manifestUrl = 'data/items-manifest.json';
+        this.indexBaseUrl = 'data/items-index-';
         this.itemsBaseUrl = 'data/items/';
         this.isLoading = false;
         this.loadPromise = null;
+        this.manifestPromise = null;
     }
 
     /**
-     * Load the master index file containing all item metadata
-     * @returns {Promise<Object>} The index object
+     * Load the manifest (lightweight category index map)
+     * @returns {Promise<Object>} The manifest object
+     */
+    async loadManifest() {
+        if (this.manifest) {
+            return this.manifest;
+        }
+
+        if (this.manifestPromise) {
+            return this.manifestPromise;
+        }
+
+        this.manifestPromise = fetch(this.manifestUrl, { cache: 'force-cache' })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to load manifest: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                this.manifest = data;
+                console.log(`Loaded manifest: ${data.totalItems} items across ${Object.keys(data.categories).length} categories`);
+                return data;
+            })
+            .catch(error => {
+                this.manifestPromise = null;
+                console.error('Error loading manifest:', error);
+                throw error;
+            });
+
+        return this.manifestPromise;
+    }
+
+    /**
+     * Load a specific category index file
+     * @param {string} category - Category name (weapon, armor, etc.)
+     * @returns {Promise<Object>} The category index data
+     */
+    async loadCategory(category) {
+        if (this.loadedCategories.has(category)) {
+            return this.index?.items || [];
+        }
+
+        if (!this.manifest) {
+            await this.loadManifest();
+        }
+
+        const catInfo = this.manifest.categories[category];
+        if (!catInfo) {
+            console.warn(`Category "${category}" not found in manifest`);
+            return [];
+        }
+
+        const catUrl = this.indexBaseUrl + category + '.json';
+        try {
+            const response = await fetch(catUrl, { cache: 'force-cache' });
+            if (!response.ok) {
+                throw new Error(`Failed to load category ${category}: ${response.status}`);
+            }
+            const catData = await response.json();
+
+            // Initialize unified index if needed
+            if (!this.index) {
+                this.index = { totalItems: this.manifest.totalItems, items: [] };
+            }
+
+            // Merge category items into unified index
+            this.index.items.push(...catData.items);
+            this.loadedCategories.add(category);
+
+            console.log(`Loaded category "${category}": ${catData.count} items (${catData.items.length} merged)`);
+            return catData.items;
+        } catch (error) {
+            console.error(`Error loading category ${category}:`, error);
+            throw error;
+        }
+    }
+
+    /**
+     * Load all category indexes (fallback for full search/filter)
+     * @returns {Promise<Object>} The full unified index
      */
     async loadIndex() {
         if (this.index) {
@@ -27,27 +111,36 @@ class ItemLoader {
         }
 
         this.isLoading = true;
-        this.loadPromise = fetch(this.indexUrl)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Failed to load index: ${response.status}`);
-                }
-                return response.json();
+        this.loadPromise = this.loadManifest()
+            .then(manifest => {
+                const categoryNames = Object.keys(manifest.categories);
+                return Promise.all(categoryNames.map(cat => this.loadCategory(cat)));
             })
-            .then(data => {
-                this.index = data;
+            .then(() => {
                 this.isLoading = false;
-                console.log(`Loaded index with ${data.totalItems} items`);
-                return data;
+                console.log(`Loaded full index with ${this.index.totalItems} items`);
+                return this.index;
             })
             .catch(error => {
                 this.isLoading = false;
                 this.loadPromise = null;
-                console.error('Error loading index:', error);
+                console.error('Error loading full index:', error);
                 throw error;
             });
 
         return this.loadPromise;
+    }
+
+    /**
+     * Ensure specific categories are loaded for filtering
+     * @param {Array<string>} categories - Categories to ensure are loaded
+     * @returns {Promise<void>}
+     */
+    async ensureCategories(categories) {
+        const unloaded = categories.filter(cat => !this.loadedCategories.has(cat));
+        if (unloaded.length > 0) {
+            await Promise.all(unloaded.map(cat => this.loadCategory(cat)));
+        }
     }
 
     /**
@@ -56,33 +149,43 @@ class ItemLoader {
      * @returns {Promise<Object>} The item object with full details
      */
     async loadItem(itemId) {
-        // Check cache first
         if (this.cache.has(itemId)) {
             return this.cache.get(itemId);
         }
 
-        // Find the item in the index to get its file path
-        if (!this.index) {
-            await this.loadIndex();
+        // Try to find item in already-loaded categories first
+        let indexItem = this.index?.items.find(item => item.id === itemId);
+
+        // If not found, load the category from filename pattern
+        if (!indexItem && this.manifest) {
+            // Search manifest categories for the item
+            for (const [catName, catInfo] of Object.entries(this.manifest.categories)) {
+                if (!this.loadedCategories.has(catName)) {
+                    await this.loadCategory(catName);
+                    indexItem = this.index?.items.find(item => item.id === itemId);
+                    if (indexItem) break;
+                }
+            }
         }
 
-        const indexItem = this.index.items.find(item => item.id === itemId);
+        // Last resort: load full index
+        if (!indexItem) {
+            await this.loadIndex();
+            indexItem = this.index?.items.find(item => item.id === itemId);
+        }
+
         if (!indexItem) {
             throw new Error(`Item with ID ${itemId} not found in index`);
         }
 
-        // Load the item file
         const itemUrl = this.itemsBaseUrl + indexItem.file;
         try {
-            const response = await fetch(itemUrl);
+            const response = await fetch(itemUrl, { cache: 'force-cache' });
             if (!response.ok) {
                 throw new Error(`Failed to load item ${itemId}: ${response.status}`);
             }
             const item = await response.json();
-            
-            // Cache the item
             this.cache.set(itemId, item);
-            
             return item;
         } catch (error) {
             console.error(`Error loading item ${itemId}:`, error);
@@ -121,25 +224,29 @@ class ItemLoader {
      * @param {number} filters.maxLevel - Maximum level
      * @returns {Array<Object>} Filtered items from index
      */
-    filterItems(filters = {}) {
-        if (!this.index) {
-            throw new Error('Index not loaded. Call loadIndex() first.');
-        }
-
+    async filterItems(filters = {}) {
         const { search = '', type = '', rarity = '', minLevel = 0, maxLevel = 100 } = filters;
 
+        // Ensure relevant categories are loaded
+        if (type) {
+            await this.ensureCategories([type]);
+        } else {
+            // No type filter: need all categories for full search
+            await this.loadIndex();
+        }
+
+        if (!this.index) {
+            throw new Error('Index not loaded.');
+        }
+
         return this.index.items.filter(item => {
-            // Search filter
-            const matchesSearch = search === '' || 
+            const matchesSearch = search === '' ||
                 item.name.toLowerCase().includes(search.toLowerCase());
 
-            // Type filter - use category field (weapon, armor, etc.)
             const matchesType = type === '' || item.category === type;
 
-            // Rarity filter
             const matchesRarity = rarity === '' || item.rarity === rarity;
 
-            // Level filter
             const matchesLevel = item.level >= minLevel && item.level <= maxLevel;
 
             return matchesSearch && matchesType && matchesRarity && matchesLevel;
@@ -155,12 +262,10 @@ class ItemLoader {
      */
     sortItems(items, column, direction = 'asc') {
         return [...items].sort((a, b) => {
-            // Special handling for numeric columns
             if (['level', 'value', 'rank'].includes(column)) {
                 return direction === 'asc' ? a[column] - b[column] : b[column] - a[column];
             }
 
-            // Default string comparison
             const valA = String(a[column] || '').toLowerCase();
             const valB = String(b[column] || '').toLowerCase();
 
@@ -182,7 +287,6 @@ class ItemLoader {
         const endIndex = startIndex + itemsPerPage;
         const paginatedIndexItems = filteredItems.slice(startIndex, endIndex);
 
-        // Load full details for items on this page
         const itemIds = paginatedIndexItems.map(item => item.id);
         const fullItems = await this.loadItems(itemIds);
 
@@ -215,7 +319,8 @@ class ItemLoader {
         return {
             cachedItems: this.cache.size,
             indexLoaded: !!this.index,
-            totalItemsInIndex: this.index ? this.index.totalItems : 0
+            loadedCategories: [...this.loadedCategories],
+            totalItemsInIndex: this.index ? this.index.items.length : 0
         };
     }
 
@@ -233,7 +338,6 @@ class ItemLoader {
 
         if (nextPageItems.length > 0) {
             const itemIds = nextPageItems.map(item => item.id);
-            // Load in background without waiting
             this.loadItems(itemIds).catch(error => {
                 console.warn('Failed to preload next page:', error);
             });
@@ -255,6 +359,7 @@ class ItemLoader {
      * @returns {Promise<Array<Object>>} Array of items
      */
     async getItemsByType(type) {
+        await this.ensureCategories([type]);
         const filtered = this.filterItems({ type });
         const itemIds = filtered.map(item => item.id);
         return this.loadItems(itemIds);
@@ -263,9 +368,9 @@ class ItemLoader {
     /**
      * Search items by name
      * @param {string} searchTerm - Search term
-     * @returns {Array<Object>} Filtered items from index
+     * @returns {Promise<Array<Object>>} Filtered items from index
      */
-    searchItems(searchTerm) {
+    async searchItems(searchTerm) {
         return this.filterItems({ search: searchTerm });
     }
 }
