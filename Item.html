@@ -1289,7 +1289,7 @@
         .item-preview {
             position: absolute;
             z-index: 100;
-            width: 200px;
+            width: 220px;
             background-color: #1e293b;
             border-radius: 8px;
             padding: 12px;
@@ -1306,9 +1306,11 @@
         
         .item-preview img {
             width: 100%;
-            height: auto;
+            height: 120px;
+            object-fit: contain;
             border-radius: 4px;
             margin-bottom: 8px;
+            background-color: rgba(15, 23, 42, 0.5);
         }
         
         .item-preview h4 {
@@ -1317,14 +1319,15 @@
             margin-bottom: 4px;
         }
         
-        .item-preview .rarity {
-            font-size: 0.8rem;
+        .item-preview .stats {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.8);
             margin-bottom: 4px;
         }
         
-        .item-preview .base {
+        .item-preview .level {
             font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.7);
+            color: #94a3b8;
         }
         
         /* Loading spinner */
@@ -1843,8 +1846,8 @@
     <div id="itemPreview" class="item-preview">
         <img src="" alt="" id="previewImage" width="176" height="176" style="width: 100%; aspect-ratio: 1/1; object-fit: contain;">
         <h4 id="previewName"></h4>
-        <div class="rarity" id="previewRarity"></div>
-        <div class="base" id="previewBase"></div>
+        <div class="level" id="previewLevel"></div>
+        <div class="stats" id="previewStats"></div>
     </div>
 
     <script>
@@ -2307,10 +2310,11 @@
             showingCount.textContent = 'Loading...';
             
             try {
-                // Sort items using local sort function
-                const sortedItems = sortItems(currentState.items, currentState.sortColumn, currentState.sortDirection);
                 // Filter items using itemLoader (async to support description search)
-                currentState.filteredItems = await applyFilters(sortedItems);
+                currentState.filteredItems = await applyFilters(currentState.items);
+                
+                // Sort the filtered items
+                currentState.filteredItems = sortItems(currentState.filteredItems, currentState.sortColumn, currentState.sortDirection);
                 
                 // Get paginated items with full details loaded
                 const result = await itemLoader.getPaginatedItems(
@@ -2470,10 +2474,9 @@
             const itemPreview = document.getElementById('itemPreview');
             const previewImage = document.getElementById('previewImage');
             const previewName = document.getElementById('previewName');
-            const previewRarity = document.getElementById('previewRarity');
-            const previewBase = document.getElementById('previewBase');
+            const previewLevel = document.getElementById('previewLevel');
+            const previewStats = document.getElementById('previewStats');
             
-            // Get all elements that should trigger the preview
             const itemNameCells = document.querySelectorAll('.item-name-cell');
             
             itemNameCells.forEach(cell => {
@@ -2483,20 +2486,22 @@
                 if (!item) return;
                 
                 cell.addEventListener('mouseenter', (e) => {
-                    // Position the preview near the cursor
                     const rect = e.target.getBoundingClientRect();
                     itemPreview.style.left = `${rect.left + rect.width + 10}px`;
                     itemPreview.style.top = `${rect.top}px`;
                     
-                    // Set preview content
-                    previewImage.src = item.image;
-                    previewImage.alt = item.name;
-                    previewName.textContent = item.name;
-                    previewRarity.textContent = capitalizeFirstLetter(item.rarity);
-                    previewRarity.className = `rarity rarity-${item.rarity}`;
-                    previewBase.textContent = item.base || 'Base: N/A';
+                    const imagePath = item.image || `data/images/${item.file.replace('.json', '.png')}`;
                     
-                    // Show preview
+                    previewImage.src = imagePath;
+                    previewImage.alt = item.name;
+                    previewImage.onerror = function() { this.style.display = 'none'; };
+                    previewImage.onload = function() { this.style.display = 'block'; };
+                    previewName.textContent = item.name;
+                    previewLevel.textContent = `Level: ${item.level}`;
+                    
+                    const stats = item.attributes ? Object.entries(item.attributes).map(([k, v]) => `${k}: ${v}`).join(', ') : 'N/A';
+                    previewStats.textContent = stats;
+                    
                     itemPreview.classList.add('visible');
                 });
                 
@@ -3665,31 +3670,42 @@ async function openItemModal(itemId, isGoingBack = false) {
             renderItems();
         });
         
-        // Table sorting
-        document.querySelectorAll('.table th[data-sort]').forEach(th => {
-            th.addEventListener('click', () => {
-                const column = th.getAttribute('data-sort');
-                
-                // Remove sort indicators from all headers
-                document.querySelectorAll('.table th').forEach(h => {
-                    h.classList.remove('sorted-asc', 'sorted-desc');
+        // Table sorting - set up after DOM is ready
+        function setupTableSorting() {
+            const headers = document.querySelectorAll('.table th[data-sort]');
+            headers.forEach(th => {
+                th.addEventListener('click', () => {
+                    const column = th.getAttribute('data-sort');
+                    
+                    // Remove sort indicators from all headers
+                    document.querySelectorAll('.table th').forEach(h => {
+                        h.classList.remove('sorted-asc', 'sorted-desc');
+                    });
+                    
+                    // Determine new sort direction
+                    if (currentState.sortColumn === column) {
+                        currentState.sortDirection = currentState.sortDirection === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        currentState.sortColumn = column;
+                        currentState.sortDirection = 'asc';
+                    }
+                    
+                    // Add sort indicator to clicked header
+                    th.classList.add(`sorted-${currentState.sortDirection}`);
+                    
+                    // Re-render items
+                    renderItems();
                 });
-                
-                // Determine new sort direction
-                if (currentState.sortColumn === column) {
-                    currentState.sortDirection = currentState.sortDirection === 'asc' ? 'desc' : 'asc';
-                } else {
-                    currentState.sortColumn = column;
-                    currentState.sortDirection = 'asc';
-                }
-                
-                // Add sort indicator to clicked header
-                th.classList.add(`sorted-${currentState.sortDirection}`);
-                
-                // Re-render items
-                renderItems();
             });
-        });
+            console.log(`Table sorting set up on ${headers.length} columns`);
+        }
+        
+        // Initialize sorting when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupTableSorting);
+        } else {
+            setupTableSorting();
+        }
         
         // ===== Base Material Multi-Select Functions =====
         
