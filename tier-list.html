@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tier List - Wonderland Online DB</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        wlBlue: '#3b82f6',
-                        wlPurple: '#8b5cf6',
-                        wlGreen: '#10b981',
-                        wlRed: '#ef4444',
-                        wlYellow: '#f59e0b',
-                        wlDark: '#1e293b',
-                        wlDarker: '#0f172a',
-                        wlLight: '#f1f5f9',
-                    },
-                }
-            }
-        }
-    </script>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Awesome: load non-blocking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Google Fonts: load non-blocking -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
+    
+    <!-- Compiled Tailwind CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <!-- Compiled Tailwind CSS -->
+    <link href="css/styles.css" rel="stylesheet"></noscript>
+    
+    <!-- Google Fonts: load non-blocking -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
+    
+    <!-- Compiled Tailwind CSS -->
+    <link href="css/styles.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #0f172a;
@@ -1555,6 +1559,7 @@
             color: #b45309 !important;
         }
     </style>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body class="text-wlLight">
     <div class="min-h-screen flex flex-col">
@@ -2018,7 +2023,7 @@
                 }
                 const imagePositionStyle = c.imagePosition ? `object-position: ${c.imagePosition};` : '';
                 const imageHtml = displayImage 
-                    ? `<img src="${displayImage}" alt="${c.name}" class="w-full h-full object-cover" style="${imagePositionStyle}">`
+                    ? `<img src="${displayImage}" alt="${c.name}" class="w-full h-full object-cover" style="${imagePositionStyle}" loading="lazy">`
                     : `<i class="fas ${c.icon} text-3xl ${c.iconColor}"></i>`;
                 const displayName = c.displayName || c.name;
                 const rebirthBadge = c.canRebirth ? '<span class="ml-2 px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs rounded-full">RB</span>' : '';

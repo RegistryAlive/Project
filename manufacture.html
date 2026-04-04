@@ -11,25 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            wlBlue: '#3b82f6',
-            wlPurple: '#8b5cf6',
-            wlGreen: '#10b981',
-            wlRed: '#ef4444',
-            wlYellow: '#f59e0b',
-            wlDark: '#1e293b',
-            wlDarker: '#0f172a',
-            wlLight: '#f1f5f9',
-          },
-        }
-      }
-    }
-  </script>
     <style>
         body {
       font-family: 'Poppins', sans-serif;
@@ -881,6 +862,7 @@
   <!-- Google Fonts: load non-blocking -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body class="text-wlLight">
   <!-- Header -->
@@ -1111,10 +1093,10 @@ async function loadManufactureDataFromJSON() {
         imgPath = imgPath.replace('data/data/', 'data/');
       }
       if (!imgPath && item.icon_id) {
-        imgPath = 'data/data/images/item_' + item.icon_id + '.png';
+        imgPath = 'data/images/item_' + item.icon_id + '.png';
       }
       if (!imgPath && item.icon_id) {
-        imgPath = 'data/data/images/item_' + item.icon_id + '.png';
+        imgPath = 'data/images/item_' + item.icon_id + '.png';
       }
       
       manufactureData[name] = {
@@ -1409,12 +1391,21 @@ function renderDropdown(selected = null) {
   // Sort items alphabetically for better findability
   items.sort((a, b) => a.name.localeCompare(b.name));
   
-  // Show all items (no hard limit) - dropdown is scrollable
-  dropdownList.innerHTML = items.map((item, idx) => {
-    const imgHtml = item.image_path ? `<img src="${item.image_path}" alt="${item.name}" class="w-6 h-6 rounded inline-block mr-2" onerror="this.style.display='none'">` : '';
+  // Limit to 50 items to avoid excessive DOM (user can search to narrow down)
+  const maxItems = 50;
+  const hasMore = items.length > maxItems;
+  const displayItems = items.slice(0, maxItems);
+  
+  dropdownList.innerHTML = displayItems.map((item, idx) => {
+    const imgHtml = item.image_path ? `<img src="${item.image_path}" alt="${item.name}" class="w-6 h-6 rounded inline-block mr-2" loading="lazy" onerror="this.style.display='none'">` : '';
     const typeLabel = currentFilter === 'All' || searchTerm.trim() ? `<span class="text-xs text-wlPurple ml-1">[${item.type || 'Furniture'}]</span>` : '';
     return `<div class="dropdown-item${selected===item.name?' selected':''}" data-name="${item.name}">${imgHtml}${item.name}${typeLabel}</div>`;
   }).join('');
+  
+  if (hasMore) {
+    dropdownList.innerHTML += `<div class="dropdown-item" style="justify-content:center;color:#94a3b8;font-size:0.8rem;">${items.length - maxItems} more... (search to filter)</div>`;
+  }
+  
   // Make dropdown scrollable with larger height for many items
   dropdownList.style.maxHeight = '300px';
 }
@@ -1496,7 +1487,7 @@ document.getElementById('furnitureSearch').addEventListener('input', function() 
     
     if (matches.length > 0) {
       autocompleteList.innerHTML = matches.map((item, idx) => {
-        const imgHtml = item.image_path ? `<img src="${item.image_path}" alt="${item.name}" onerror="this.style.display='none'">` : '';
+        const imgHtml = item.image_path ? `<img src="${item.image_path}" alt="${item.name}" loading="lazy" onerror="this.style.display='none'">` : '';
         return `<div class="autocomplete-item" data-name="${item.name}" data-index="${idx}">
           ${imgHtml}
           <span class="item-name">${item.name}</span>
@@ -1642,9 +1633,9 @@ function renderProcessTree(node, path = '', checked = {}, expanded = {}, depth =
   // --- Assets (Icons/Images) ---
   let imgHtml = '';
   if (isRoot && node.image_path) {
-    imgHtml = `<img src="${node.image_path}" alt="${node.name}" class="w-8 h-8 rounded inline-block mr-2" onerror="this.style.display='none'">`;
+    imgHtml = `<img src="${node.image_path}" alt="${node.name}" class="w-8 h-8 rounded inline-block mr-2" loading="lazy" onerror="this.style.display='none'">`;
   } else if (itemHasRecipe && itemRecipe && itemRecipe.image_path) {
-    imgHtml = `<img src="${itemRecipe.image_path}" alt="${node.name}" class="w-6 h-6 rounded inline-block mr-1" onerror="this.style.display='none'">`;
+    imgHtml = `<img src="${itemRecipe.image_path}" alt="${node.name}" class="w-6 h-6 rounded inline-block mr-1" loading="lazy" onerror="this.style.display='none'">`;
   }
   
   let iconClass = isRaw ? 'fa-leaf' : (itemHasRecipe ? 'fa-cogs' : 'fa-cube');
@@ -2130,38 +2121,26 @@ document.getElementById('reduceTime').addEventListener('change', function() {
   }
 });
 // --- Quantity Input Handler ---
-document.getElementById('quantityBtn').addEventListener('click', function() {
+function updateQuantity() {
   const qty = parseInt(document.getElementById('quantityInput').value, 10);
   if (qty && qty > 0 && qty <= 999) {
     currentQuantity = qty;
     if (window.selectedFurniture && manufactureData[window.selectedFurniture]) {
-      // Re-render the process tree with new quantity
       document.getElementById('processTree').innerHTML = renderProcessTree(manufactureData[window.selectedFurniture], '', getChecklist(), expandedState, 0, true, currentQuantity);
       updateSummary(manufactureData[window.selectedFurniture], currentQuantity);
       bindProcessTreeEvents(manufactureData[window.selectedFurniture], window.selectedFurniture);
       restoreChecklist();
     }
   }
-});
+}
+document.getElementById('quantityBtn').addEventListener('click', updateQuantity);
 document.getElementById('quantityInput').addEventListener('keypress', function(e) {
   if (e.key === 'Enter') {
     document.getElementById('quantityBtn').click();
   }
 });
-// Also update on input change for convenience
-document.getElementById('quantityInput').addEventListener('change', function() {
-  const qty = parseInt(this.value, 10);
-  if (qty && qty > 0 && qty <= 999) {
-    currentQuantity = qty;
-    if (window.selectedFurniture && manufactureData[window.selectedFurniture]) {
-      // Re-render the process tree with new quantity
-      document.getElementById('processTree').innerHTML = renderProcessTree(manufactureData[window.selectedFurniture], '', getChecklist(), expandedState, 0, true, currentQuantity);
-      updateSummary(manufactureData[window.selectedFurniture], currentQuantity);
-      bindProcessTreeEvents(manufactureData[window.selectedFurniture], window.selectedFurniture);
-      restoreChecklist();
-    }
-  }
-});
+document.getElementById('quantityInput').addEventListener('change', updateQuantity);
+document.getElementById('quantityInput').addEventListener('change', updateQuantity);
 // --- Item History Management ---
 const HISTORY_KEY = 'manufactureHistory';
 const HISTORY_TOGGLE_KEY = 'manufactureHistoryToggle';

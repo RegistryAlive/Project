@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Custom theme colors */
+@theme {
+  --color-wlBlue: #3b82f6;
+  --color-wlPurple: #8b5cf6;
+  --color-wlGreen: #10b981;
+  --color-wlRed: #ef4444;
+  --color-wlYellow: #f59e0b;
+  --color-wlDark: #1e293b;
+  --color-wlDarker: #0f172a;
+  --color-wlLight: #f8fafc;
+  --color-wlDarkBlue: #2d5a87;
+  --color-wlLightBlue: #7ec8e3;
+  --color-wlGreen-alt: #5cb85c;
+  --color-wlRed-alt: #d9534f;
+  --color-wlPurple-alt: #9b59b6;
+  --color-wlYellow-alt: #ffd700;
+  --color-wlOrange: #f0ad4e;
+  --color-wlPink: #e91e63;
+  --color-wlBrown: #8b4513;
+  --color-wlLightBrown: #d2b48c;
+  --color-wlWood: #5d4037;
+  --color-wlWoodLight: #8d6e63;
+  --color-wlTan: #c4a76c;
+  --color-wlCream: #fffdd0;
+  --color-wlLime: #8bc34a;
+  --color-wlForestGreen: #3d7a3d;
+  --color-wlGold: #daa520;
+  --color-wlParchment: #fef3c7;
+  --color-wlDark-alt: #1a1a2e;
+  --color-wlDarker-alt: #0f0f1a;
+  --color-wlBlue-alt: #4a90d9;
+
+  /* Custom animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-fast: float 4s ease-in-out infinite;
+  --animate-pulse-slow: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+}
+
+/* Custom keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

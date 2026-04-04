@@ -4,50 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locations - Wonderland Online DB</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        wlBlue: '#3b82f6',
-                        wlPurple: '#8b5cf6',
-                        wlGreen: '#10b981',
-                        wlRed: '#ef4444',
-                        wlYellow: '#f59e0b',
-                        wlDark: '#1e293b',
-                        wlDarker: '#0f172a',
-                        wlLight: '#f1f5f9', 
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'float-fast': 'float 4s ease-in-out infinite',
-                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'modal-scale-in': 'modalScaleIn 0.3s ease-out forwards',
-                        'modal-fade-in': 'modalFadeIn 0.3s ease-out forwards',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        },
-                        modalScaleIn: {
-                            '0%': { opacity: 0, transform: 'scale(0.95) translateY(10px)' },
-                            '100%': { opacity: 1, transform: 'scale(1) translateY(0)' },
-                        },
-                        modalFadeIn: {
-                            '0%': { opacity: 0 },
-                            '100%': { opacity: 1 },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #0f172a; /* wlDarker */
@@ -833,6 +791,7 @@
             color: #1e293b !important;
         }
 </style>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body class="text-wlLight"> 
     <div id="darkOverlay" class="dark-overlay"></div>
