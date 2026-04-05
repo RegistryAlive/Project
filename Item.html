@@ -771,6 +771,20 @@
             #modalTabBar { display: none !important; }
             /* Hide mobile progress dots */
             #modalProgressDots { display: none !important; }
+            /* ========== RECIPE TABS: Hide custom builder on desktop ========== */
+            #customBuilderContent,
+            div#customBuilderContent { display: none !important; visibility: hidden !important; }
+            #customBuilderContent.active,
+            div#customBuilderContent.active { display: none !important; visibility: hidden !important; }
+            #autoRecipesContent { display: block !important; visibility: visible !important; }
+            #autoRecipesContent.hidden { display: none !important; visibility: hidden !important; }
+            /* Desktop recipe tab button styles */
+            #tabAutoRecipes, #tabCustomBuilder { cursor: pointer; }
+            /* Hide FAB buttons on desktop */
+            #fabFilterContainer,
+            #fabNavContainer {
+                display: none !important;
+            }
         }
 
         /* ===== MOBILE ONLY RULES ===== */
@@ -1593,6 +1607,19 @@
                 opacity: 0;
                 transition: all 0.3s ease;
                 pointer-events: none;
+            }
+
+            /* Hide FABs when modal is open */
+            body.modal-open #fabFilterContainer,
+            body.modal-open #fabNavContainer {
+                display: none !important;
+                visibility: hidden !important;
+            }
+            /* Also hide when itemModal is not hidden (extra safety) */
+            #itemModal:not(.hidden) ~ #fabFilterContainer,
+            #itemModal:not(.hidden) ~ #fabNavContainer {
+                display: none !important;
+                visibility: hidden !important;
             }
 
             /* FAB active/pressed state */
@@ -3695,7 +3722,7 @@
                     <i class="fas fa-flask"></i>
                     <span>Recipes</span>
                 </button>
-                <button class="tab-btn" data-tab="builder" onclick="switchModalTab('builder')">
+                <button class="tab-btn" data-tab="builder" onclick="console.log('BUILDER BUTTON CLICKED'); switchModalTab('builder');">
                     <i class="fas fa-hammer"></i>
                     <span>Builder</span>
                 </button>
@@ -4982,13 +5009,13 @@
                 return targetBases.map(b => b.split(' / ')[0]).join(' / ');
             }
             
-            // Count total items including duplicates
+            // Count total items including duplicates - use customBuilderState.slots
             const getTotalIngredients = () => {
                 let count = selectedArray.length;
-                // Add duplicates count from customBuilderState.duplicates
-                for (const dup of (customBuilderState.duplicates || [])) {
-                    if (selectedArray[dup.slotIndex]) {
-                        count += dup.count;
+                // Add duplicates count from customBuilderState.slots
+                for (const [slotIdx, slotConfig] of Object.entries(customBuilderState.slots)) {
+                    if (slotConfig && slotConfig.duplicated && selectedArray[parseInt(slotIdx)]) {
+                        count += (slotConfig.count - 1);
                     }
                 }
                 return count;
@@ -5202,13 +5229,13 @@
             `;
         }
         
-        // Get slot number for display (considering duplicates)
+        // Get slot number for display (considering duplicates) - use customBuilderState.slots
         function getSlotNumber(index) {
             let num = index + 1;
-            // Add duplicates count for previous slots
-            for (const dup of (customBuilderState.duplicates || [])) {
-                if (dup.slotIndex < index) {
-                    num += dup.count;
+            // Add duplicates count for previous slots from customBuilderState.slots
+            for (const [slotIdx, slotConfig] of Object.entries(customBuilderState.slots)) {
+                if (slotConfig && slotConfig.duplicated && parseInt(slotIdx) < index) {
+                    num += (slotConfig.count - 1);
                 }
             }
             return num;
@@ -5681,19 +5708,27 @@
             const customContent = document.getElementById('customBuilderContent');
             
             if (tab === 'auto') {
+                // Style tabs
                 autoTab.classList.add('border-wlBlue', 'text-wlBlue');
                 autoTab.classList.remove('border-transparent', 'text-wlLight', 'text-opacity-70');
                 customTab.classList.remove('border-wlBlue', 'text-wlBlue');
                 customTab.classList.add('border-transparent', 'text-wlLight', 'text-opacity-70');
+                // Toggle visibility for desktop (use active class)
+                autoContent.classList.add('active');
                 autoContent.classList.remove('hidden');
                 customContent.classList.add('hidden');
+                customContent.classList.remove('active');
             } else {
+                // Style tabs
                 customTab.classList.add('border-wlBlue', 'text-wlBlue');
                 customTab.classList.remove('border-transparent', 'text-wlLight', 'text-opacity-70');
                 autoTab.classList.remove('border-wlBlue', 'text-wlBlue');
                 autoTab.classList.add('border-transparent', 'text-wlLight', 'text-opacity-70');
+                // Toggle visibility for desktop (use active class)
                 customContent.classList.remove('hidden');
+                customContent.classList.add('active');
                 autoContent.classList.add('hidden');
+                autoContent.classList.remove('active');
                 
                 // Reset custom builder state when switching
                 customBuilderState = { 
@@ -5761,9 +5796,16 @@
             const item = await itemLoader.getItem(itemId);
             if (!item) return;
             
+            // Update the builder inside the "Recipes" tab (used on Desktop/Tablet)
             const customContent = document.getElementById('customBuilderContent');
             if (customContent) {
                 customContent.innerHTML = generateCustomBuilderUI(item);
+            }
+            
+            // Update the standalone "Builder" tab (used on Mobile & visible on Desktop)
+            const modalBuilderBlock = document.getElementById('modalBuilderBlock');
+            if (modalBuilderBlock) {
+                modalBuilderBlock.innerHTML = generateCustomBuilderUI(item);
             }
         }
 
@@ -5934,6 +5976,21 @@ async function openItemModal(itemId, isGoingBack = false) {
     window.updateSubItemAlchemyBook = updateSubItemAlchemyBook;
     window.openItemModal = openItemModal;
     window.goBackInModal = goBackInModal;
+    // Custom builder functions
+    window.addDuplicateSlot = addDuplicateSlot;
+    window.removeDuplicateSlot = removeDuplicateSlot;
+    window.updateCustomGapOverride = updateCustomGapOverride;
+    window.getSlotNumber = getSlotNumber;
+    window.getCandidatesForCustomSlot = getCandidatesForCustomSlot;
+    window.getSlotRankConstraintsForCustom = getSlotRankConstraintsForCustom;
+    window.getEffectiveSlotRank = getEffectiveSlotRank;
+    window.getTrueSlotRank = getTrueSlotRank;
+    window.validateCustomBuilderRecipe = validateCustomBuilderRecipe;
+    window.generateSubRecipeSection = generateSubRecipeSection;
+    window.generateCustomBuilderUI = generateCustomBuilderUI;
+    
+    // Add modal-open class to body to hide FABs
+    document.body.classList.add('modal-open');
     
     // Show modal
     modal.classList.remove('hidden');
@@ -6256,6 +6313,7 @@ function updateRatingDisplay(card, rating) {
 function closeItemModal() {
     document.getElementById('itemModal').classList.add('hidden');
     document.body.style.overflow = '';
+    document.body.classList.remove('modal-open');
     modalHistory = [];
     currentModalItemId = null;
     updateBackButton();
@@ -6654,7 +6712,12 @@ function updateBaseFilterSetting(setting, value) {
                 el.addEventListener('click', (e) => {
                     e.stopPropagation();
                     const chip = chips[parseInt(el.dataset.idx)];
-                    if (chip) chip.remove();
+                    if (chip) {
+                        chip.label = null;
+                        chip.remove();
+                        renderMobileActiveChips();
+                        updateMobileFilterCount();
+                    }
                 });
             });
         }
@@ -6954,7 +7017,11 @@ if (document.readyState === 'loading') {
         }
         
         // ===== MODAL TAB NAVIGATION =====
-        function switchModalTab(tabName) {
+        async function switchModalTab(tabName) {
+            console.log('[switchModalTab] Called with tabName:', tabName);
+            console.log('[switchModalTab] currentModalItemId:', currentModalItemId);
+            console.log('[switchModalTab] recipeGen:', recipeGen);
+            
             const tabOrder = ['info', 'recipes', 'builder'];
             const tabIndex = tabOrder.indexOf(tabName);
             
@@ -6964,9 +7031,11 @@ if (document.readyState === 'loading') {
             document.querySelectorAll('#modalTabBar .tab-btn').forEach(btn => btn.classList.remove('active'));
             // Show selected tab content
             const content = document.getElementById(`tabContent-${tabName}`);
+            console.log('[switchModalTab] Tab content element:', content);
             if (content) content.classList.add('active');
             // Activate tab button
             const btn = document.querySelector(`#modalTabBar .tab-btn[data-tab="${tabName}"]`);
+            console.log('[switchModalTab] Tab button:', btn);
             if (btn) btn.classList.add('active');
             // Update progress dots
             document.querySelectorAll('#modalProgressDots .dot').forEach((dot, i) => {
@@ -6975,6 +7044,65 @@ if (document.readyState === 'loading') {
             // Scroll to top
             const scrollContainer = document.querySelector('#itemModal .flex-grow');
             if (scrollContainer) scrollContainer.scrollTop = 0;
+            
+            // Load builder content if switching to builder tab
+            if (tabName === 'builder' && currentModalItemId) {
+                console.log('[switchModalTab] Loading builder content for item:', currentModalItemId);
+                const builderBlock = document.getElementById('modalBuilderBlock');
+                console.log('[switchModalTab] Builder block element:', builderBlock);
+                console.log('[switchModalTab] Builder block innerHTML:', builderBlock ? builderBlock.innerHTML.substring(0, 100) : 'null');
+                
+                if (builderBlock && (!builderBlock.innerHTML || builderBlock.innerHTML.trim() === '')) {
+                    console.log('[switchModalTab] Builder block is empty, loading content...');
+                    const item = await itemLoader.getItem(currentModalItemId);
+                    console.log('[switchModalTab] Loaded item:', item ? item.name : 'null');
+                    
+                    if (item) {
+                        // Initialize recipe generator if needed
+                        if (!recipeGen) {
+                            console.log('[switchModalTab] recipeGen is null, trying to init...');
+                            if (itemLoader && itemLoader.index) {
+                                console.log('[switchModalTab] itemLoader.index exists, calling initRecipeGenerator');
+                                recipeGen = initRecipeGenerator(itemLoader);
+                                console.log('[switchModalTab] recipeGen after init:', recipeGen);
+                            } else {
+                                console.log('[switchModalTab] itemLoader.index does NOT exist');
+                            }
+                        }
+                        if (recipeGen) {
+                            console.log('[switchModalTab] Generating custom builder UI...');
+                            builderBlock.innerHTML = generateCustomBuilderUI(item);
+                            console.log('[switchModalTab] Builder UI generated, length:', builderBlock.innerHTML.length);
+                        } else {
+                            console.log('[switchModalTab] recipeGen still null after init attempt');
+                            builderBlock.innerHTML = '<p class="text-wlLight text-opacity-70">Loading recipe data...</p>';
+                        }
+                    }
+                } else {
+                    console.log('[switchModalTab] Builder block already has content, skipping');
+                }
+            }
+            
+            // Load recipes content if switching to recipes tab
+            if (tabName === 'recipes' && currentModalItemId) {
+                const recipeBlock = document.getElementById('modalRecipeBlock');
+                if (recipeBlock && (!recipeBlock.innerHTML || recipeBlock.innerHTML.trim() === '')) {
+                    const item = await itemLoader.getItem(currentModalItemId);
+                    if (item) {
+                        // Initialize recipe generator if needed
+                        if (!recipeGen) {
+                            if (itemLoader && itemLoader.index) {
+                                recipeGen = initRecipeGenerator(itemLoader);
+                            }
+                        }
+                        if (recipeGen) {
+                            recipeBlock.innerHTML = generateRecipeTable(item, 1, null, null);
+                        } else {
+                            recipeBlock.innerHTML = '<p class="text-wlLight text-opacity-70">Loading recipe data...</p>';
+                        }
+                    }
+                }
+            }
         }
         
         // ===== DEBOUNCED SEARCH INPUT =====

@@ -1,0 +1,156 @@
+/**
+ * Professional Minification Script for Wonderland Online Items Database
+ * Features: CSS minification, JS obfuscation-friendly whitespace removal, HTML compression
+ * Run: node minify.js
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const INPUT_FILE = path.join(__dirname, 'Item.html');
+const OUTPUT_FILE = path.join(__dirname, 'Item.min.html');
+
+function cssMinify(css) {
+    // Remove comments (preserving important ones)
+    css = css.replace(/\/\*[^!][\s\S]*?\*\//g, '');
+    // Remove newlines and collapse whitespace
+    css = css.replace(/\s*\n\s*/g, ' ');
+    css = css.replace(/\s{2,}/g, ' ');
+    // Remove spaces around special chars
+    css = css.replace(/\s*{\s*/g, '{');
+    css = css.replace(/\s*\}\s*/g, '}');
+    css = css.replace(/\s*:\s*/g, ':');
+    css = css.replace(/\s*[,;]\s*/g, ',' ).replace(/;}/g, '}');
+    css = css.replace(/\s*\[\s*/g, '[').replace(/\s*\]\s*/g, ']');
+    css = css.replace(/\s*\(\s*/g, '(').replace(/\s*\)\s*/g, ')');
+    css = css.replace(/\s*>\s*/g, '>');
+    css = css.replace(/\s*~\s*/g, '~');
+    css = css.replace(/\s*\+\s*/g, '+');
+    css = css.replace(/\s*~\s*/g, '~');
+    // Remove trailing semicolons in blocks
+    css = css.replace(/;}/g, '}');
+    return css.trim();
+}
+
+function jsWhitespaceMinify(js) {
+    // Remove single-line comments (but preserve URLs and regexes)
+    js = js.replace(/(?<!:|\/)\/\/.*$/gm, '');
+    // Remove multi-line comments that are not JSDoc
+    js = js.replace(/\/\*(?!\*)[\s\S]*?\*\//g, '');
+    // Collapse whitespace
+    js = js.replace(/\s*\n\s*/g, ' ');
+    js = js.replace(/\s{2,}/g, ' ');
+    // Clean around operators
+    js = js.replace(/\s*\{\s*/g, '{').replace(/\s*\}\s*/g, '}');
+    js = js.replace(/\s*\(\s*/g, '(').replace(/\s*\)\s*/g, ')');
+    js = js.replace(/\s*\[\s*/g, '[').replace(/\s*\]\s*/g, ']');
+    js = js.replace(/\s*,\s*/g, ',');
+    js = js.replace(/\s*;\s*/g, ';');
+    js = js.replace(/\s*=\s*/g, '=');
+    js = js.replace(/\s*<\s*/g, '<');
+    js = js.replace(/\s*>\s*/g, '>');
+    js = js.replace(/\s*\+\s*/g, '+');
+    js = js.replace(/\s*-\s*/g, '-');
+    js = js.replace(/\s*\*\s*/g, '*');
+    js = js.replace(/\s*\/\s*/g, '/');
+    js = js.replace(/\s*&&\s*/g, '&&');
+    js = js.replace(/\s*\|\|\s*/g, '||');
+    js = js.replace(/\s*===\s*/g, '===');
+    js = js.replace(/\s*!==\s*/g, '!==');
+    js = js.replace(/\s*==\s*/g, '==');
+    js = js.replace(/\s*!=\s*/g, '!=');
+    js = js.replace(/\s*>=\s*/g, '>=');
+    js = js.replace(/\s*<=\s*/g, '<=');
+    // Clean template literals
+    js = js.replace(/\s*\`\s*/g, '`').replace(/\s*\$\{\s*/g, '${').replace(/\s*\}\s*/g, '}');
+    return js.trim().replace(/;\s*$/, '');
+}
+
+function htmlMinify(html) {
+    // Remove HTML comments
+    html = html.replace(/<!--[\s\S]*?-->/g, '');
+    // Remove whitespace between tags
+    html = html.replace(/>\s+</g, '><');
+    // Collapse whitespace in attributes
+    html = html.replace(/=\s*"/g, '="');
+    html = html.replace(/"\s+/g, '" ');
+    html = html.replace(/\s{2,}/g, ' ');
+    // Remove empty attributes
+    html = html.replace(/\s+alt=""\s*/g, ' ');
+    html = html.replace(/\s+loading=""\s*/g, ' ');
+    // Remove optional closing tags (simplistic approach)
+    return html.trim().replace(/\s+$/gm, '');
+}
+
+async function minify() {
+    console.log('========================================');
+    console.log(' WonderLand Online - Item.html Minifier');
+    console.log('========================================\n');
+    
+    let html = fs.readFileSync(INPUT_FILE, 'utf8');
+    const originalSize = html.length;
+    console.log(`[+] Original file: ${(originalSize / 1024).toFixed(2)} KB`);
+    console.log(`[+] Lines: ${html.split('\n').length}`);
+    
+    // Phase 1: CSS Minification
+    console.log('\n[Phase 1] Minifying inline CSS...');
+    let cssMatch;
+    const styleRegex = /<style>([\s\S]*?)<\/style>/g;
+    let totalCSS = 0;
+    while ((cssMatch = styleRegex.exec(html)) !== null) {
+        const original = cssMatch[1];
+        const minified = cssMinify(original);
+        html = html.replace(original, minified);
+        totalCSS += original.length - minified.length;
+    }
+    console.log(`      CSS reduced by ${totalCSS > 1024 ? (totalCSS/1024).toFixed(2) + ' KB' : totalCSS + ' bytes'}`);
+    
+    // Phase 2: JavaScript whitespace optimization
+    console.log('\n[Phase 2] Optimizing inline JavaScript...');
+    let scriptMatch;
+    const scriptRegex = /<script>([\s\S]*?)<\/script>/g;
+    let totalJS = 0;
+    let processedScripts = 0;
+    while ((scriptMatch = scriptRegex.exec(html)) !== null) {
+        const original = scriptMatch[1];
+        const minified = jsWhitespaceMinify(original);
+        html = html.replace(original, minified);
+        totalJS += original.length - minified.length;
+        processedScripts++;
+    }
+    console.log(`      Processed ${processedScripts} script blocks`);
+    console.log(`      JS reduced by ${totalJS > 1024 ? (totalJS/1024).toFixed(2) + ' KB' : totalJS + ' bytes'}`);
+    
+    // Phase 3: HTML compression
+    console.log('\n[Phase 3] Compressing HTML markup...');
+    html = htmlMinify(html);
+    console.log('      HTML markup compressed');
+    
+    // Phase 4: Remove unused whitespace patterns
+    console.log('\n[Phase 4] Final cleanup...');
+    html = html.replace(/\s+/g, ' ').replace(/>\s\s*</g, '><');
+    
+    // Write output
+    fs.writeFileSync(OUTPUT_FILE, html, 'utf8');
+    const newSize = html.length;
+    const reduction = ((1 - newSize / originalSize) * 100).toFixed(1);
+    
+    console.log('\n========================================');
+    console.log(' Minification Complete!');
+    console.log('========================================');
+    console.log(`[+] Output file: ${OUTPUT_FILE}`);
+    console.log(`[+] New file size: ${(newSize / 1024).toFixed(2)} KB`);
+    console.log(`[+] Reduction: ${reduction}%`);
+    console.log(`[+] Saved: ${((originalSize - newSize) / 1024).toFixed(2)} KB`);
+    console.log('========================================\n');
+    
+    // Also create a compressed version for the original file
+    console.log('[+] Creating backup of original...');
+    fs.copyFileSync(INPUT_FILE, INPUT_FILE.replace('.html', '.backup.html'));
+    console.log('     Backup saved as Item.backup.html');
+}
+
+minify().catch(err => {
+    console.error('Error during minification:', err);
+    process.exit(1);
+});
