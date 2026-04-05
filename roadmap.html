@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roadmap - Wonderland Online DB</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -65,11 +66,6 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-        }
-        
-        .blur-bg {
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
         }
         
         .blur-bg {
@@ -721,7 +717,200 @@
             color: #2d1b4e !important;
         }
         body.light-mode .roadmap-card p {
+            color: #3a2a4a !important;
+        }
+        
+        /* Light mode: Improved text visibility */
+        body.light-mode .text-opacity-60 {
+            color: #4a3a5a !important;
+        }
+        body.light-mode .text-opacity-70 {
+            color: #3a2a4a !important;
+        }
+        body.light-mode .text-opacity-80 {
+            color: #2d1b4e !important;
+        }
+        
+        /* Light mode: Code/terminal text */
+        body.light-mode .font-mono {
+            color: #2d1b4e !important;
+        }
+        body.light-mode .font-mono .text-yellow-300 {
+            color: #8b6914 !important;
+        }
+        body.light-mode .font-mono .text-green-400 {
+            color: #15803d !important;
+        }
+        body.light-mode .font-mono .text-blue-400 {
+            color: #1d4ed8 !important;
+        }
+        body.light-mode .font-mono .text-purple-300 {
+            color: #7c3aed !important;
+        }
+        body.light-mode .font-mono .text-amber-400 {
+            color: #a16207 !important;
+        }
+        
+        /* Light mode: Progress bar labels */
+        body.light-mode .progress-bar + span,
+        body.light-mode .flex.justify-between.text-sm span {
+            color: #3a2a4a !important;
+        }
+        
+        /* Light mode: Phase card progress bars */
+        body.light-mode .progress-bar {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Light mode: Ensure ul li text is visible */
+        body.light-mode ul li {
+            color: #3a2a4a !important;
+        }
+        
+        /* Light mode: Phase card text visibility */
+        body.light-mode .phase-card h4.text-wlGreen,
+        body.light-mode .phase-card .text-wlGreen {
+            color: #15803d !important;
+        }
+        body.light-mode .phase-card h4.text-wlBlue,
+        body.light-mode .phase-card .text-wlBlue {
+            color: #1d4ed8 !important;
+        }
+        body.light-mode .phase-card h4.text-wlYellow,
+        body.light-mode .phase-card .text-wlYellow {
+            color: #a16207 !important;
+        }
+        body.light-mode .phase-card h4.text-wlPurple,
+        body.light-mode .phase-card .text-wlPurple {
+            color: #7c3aed !important;
+        }
+        
+        /* Light mode: Phase card description text */
+        body.light-mode .phase-card .text-wlLight.text-opacity-60,
+        body.light-mode .phase-card .text-wlLight.text-opacity-80 {
+            color: #3a2a4a !important;
+        }
+        
+        /* Light mode: Phase card list items */
+        body.light-mode .phase-card ul li {
+            color: #3a2a4a !important;
+        }
+        body.light-mode .phase-card ul li i {
+            color: inherit !important;
+        }
+        
+        /* Light mode: Phase card status badges */
+        body.light-mode .phase-card .bg-wlGreen.bg-opacity-20 {
+            background-color: rgba(21, 128, 61, 0.15) !important;
+        }
+        body.light-mode .phase-card .bg-wlBlue.bg-opacity-20 {
+            background-color: rgba(29, 78, 216, 0.15) !important;
+        }
+        body.light-mode .phase-card .bg-wlYellow.bg-opacity-20 {
+            background-color: rgba(161, 98, 7, 0.15) !important;
+        }
+        body.light-mode .phase-card .bg-wlPurple.bg-opacity-20 {
+            background-color: rgba(124, 58, 237, 0.15) !important;
+        }
+        
+        /* Light mode: Phase card icons */
+        body.light-mode .phase-card .bg-wlGreen {
+            background-color: #15803d !important;
+        }
+        body.light-mode .phase-card .bg-wlBlue {
+            background-color: #1d4ed8 !important;
+        }
+        body.light-mode .phase-card .bg-wlYellow {
+            background-color: #a16207 !important;
+        }
+        body.light-mode .phase-card .bg-wlPurple {
+            background-color: #7c3aed !important;
+        }
+        
+        /* Light mode: Phase modal text */
+        body.light-mode .phase-modal-content .text-wlLight {
+            color: #3a2a4a !important;
+        }
+        body.light-mode .phase-modal-content .text-wlLight.text-opacity-40 {
+            color: #6a5a7a !important;
+        }
+        body.light-mode .phase-modal-content .text-wlLight.text-opacity-70 {
+            color: #4a3a5a !important;
+        }
+        body.light-mode .phase-modal-content .text-wlLight.text-opacity-80 {
+            color: #2d1b4e !important;
+        }
+        
+        /* Light mode: Phase modal content spans */
+        body.light-mode .phase-modal-content span.text-wlBlue,
+        body.light-mode .phase-modal-content span.text-wlPurple,
+        body.light-mode .phase-modal-content span.text-wlYellow {
+            color: inherit !important;
+        }
+        body.light-mode .phase-modal-content .text-wlBlue.font-semibold {
+            color: #1d4ed8 !important;
+        }
+        body.light-mode .phase-modal-content .text-wlPurple.font-semibold {
+            color: #7c3aed !important;
+        }
+        body.light-mode .phase-modal-content .text-wlYellow.font-semibold {
+            color: #a16207 !important;
+        }
+        
+        /* Light mode: Footer text */
+        body.light-mode footer .text-wlLight {
+            color: #4a3a5a !important;
+        }
+        body.light-mode footer .text-wlLight.text-opacity-70 {
             color: #5a4a6a !important;
+        }
+        
+        /* Light mode: Community section text */
+        body.light-mode .text-center.mb-10 h3 {
+            color: white !important;
+        }
+        body.light-mode .text-center.mb-10 .text-wlLight {
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+        body.light-mode .text-center.mb-10 .text-wlLight.text-opacity-70 {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+        
+        /* Light mode: Nav links visibility */
+        body.light-mode .nav-link {
+            color: #4a3a5a !important;
+        }
+        body.light-mode .nav-link.text-wlBlue {
+            color: #3b82f6 !important;
+        }
+        
+        /* Light mode: Sidebar text */
+        body.light-mode #mobileSidebar .text-wlLight {
+            color: #3a2a4a !important;
+        }
+        body.light-mode #mobileSidebar .text-wlBlue {
+            color: #3b82f6 !important;
+        }
+        
+        /* Dark mode: Keep community section text white (it has a dark background) */
+        body:not(.light-mode) .text-center.mb-10 h3 {
+            color: #f8fafc !important;
+        }
+        
+        /* Dark mode: Keep original text colors */
+        body:not(.light-mode) .text-opacity-60 {
+            color: rgba(248, 250, 252, 0.6);
+        }
+        body:not(.light-mode) .text-opacity-70 {
+            color: rgba(248, 250, 252, 0.7);
+        }
+        body:not(.light-mode) .text-opacity-80 {
+            color: rgba(248, 250, 252, 0.8);
+        }
+        
+        /* Discord icon visibility fix */
+        .fab.fa-discord {
+            font-family: 'Font Awesome 6 Brands' !important;
         }
 
         /* ==============================
@@ -1538,8 +1727,8 @@
                             <div class="absolute -right-16 -top-16 w-40 h-40 bg-white rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
                             <div class="absolute -left-4 -bottom-4 w-24 h-24 bg-purple-400 rounded-full filter blur-2xl opacity-20"></div>
                             <div class="relative z-10 flex items-center">
-                                <div class="w-14 h-14 rounded-2xl bg-white bg-opacity-20 flex items-center justify-center mr-4 group-hover:bg-opacity-30 transition-all">
-                                    <i class="fab fa-discord text-2xl text-white"></i>
+                                <div class="w-14 h-14 rounded-2xl overflow-hidden mr-4 group-hover:ring-2 group-hover:ring-white/30 transition-all flex-shrink-0">
+                                    <img src="data/Discord Servers/Server Image/WLRI Marketplace.png" alt="Marketplace" class="w-full h-full object-cover">
                                 </div>
                                 <div class="flex-1">
                                     <div class="flex items-center justify-between">
@@ -1556,8 +1745,8 @@
                             <div class="absolute -right-16 -top-16 w-40 h-40 bg-white rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
                             <div class="absolute -left-4 -bottom-4 w-24 h-24 bg-orange-400 rounded-full filter blur-2xl opacity-20"></div>
                             <div class="relative z-10 flex items-center">
-                                <div class="w-14 h-14 rounded-2xl bg-white bg-opacity-20 flex items-center justify-center mr-4 group-hover:bg-opacity-30 transition-all">
-                                    <i class="fab fa-discord text-2xl text-white"></i>
+                                <div class="w-14 h-14 rounded-2xl overflow-hidden mr-4 group-hover:ring-2 group-hover:ring-white/30 transition-all flex-shrink-0">
+                                    <img src="data/Discord Servers/Server Image/Lurid.png" alt="Lurid" class="w-full h-full object-cover">
                                 </div>
                                 <div class="flex-1">
                                     <div class="flex items-center justify-between">
@@ -1574,8 +1763,8 @@
                             <div class="absolute -right-16 -top-16 w-40 h-40 bg-white rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
                             <div class="absolute -left-4 -bottom-4 w-24 h-24 bg-cyan-400 rounded-full filter blur-2xl opacity-20"></div>
                             <div class="relative z-10 flex items-center">
-                                <div class="w-14 h-14 rounded-2xl bg-white bg-opacity-20 flex items-center justify-center mr-4 group-hover:bg-opacity-30 transition-all">
-                                    <i class="fab fa-discord text-2xl text-white"></i>
+                                <div class="w-14 h-14 rounded-2xl overflow-hidden mr-4 group-hover:ring-2 group-hover:ring-white/30 transition-all flex-shrink-0">
+                                    <img src="data/Discord Servers/Server Image/Islando.png" alt="Islando" class="w-full h-full object-cover">
                                 </div>
                                 <div class="flex-1">
                                     <div class="flex items-center justify-between">
@@ -1592,8 +1781,8 @@
                             <div class="absolute -right-16 -top-16 w-40 h-40 bg-white rounded-full filter blur-3xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
                             <div class="absolute -left-4 -bottom-4 w-24 h-24 bg-emerald-400 rounded-full filter blur-2xl opacity-20"></div>
                             <div class="relative z-10 flex items-center">
-                                <div class="w-14 h-14 rounded-2xl bg-white bg-opacity-20 flex items-center justify-center mr-4 group-hover:bg-opacity-30 transition-all">
-                                    <i class="fab fa-discord text-2xl text-white"></i>
+                                <div class="w-14 h-14 rounded-2xl overflow-hidden mr-4 group-hover:ring-2 group-hover:ring-white/30 transition-all flex-shrink-0">
+                                    <img src="data/Discord Servers/Server Image/WLO Drifters.png" alt="WLO Drifters" class="w-full h-full object-cover">
                                 </div>
                                 <div class="flex-1">
                                     <div class="flex items-center justify-between">

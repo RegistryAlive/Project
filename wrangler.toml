@@ -1,0 +1,7 @@
+name = "recipe-ratings"
+main = "recipe-ratings-worker.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "RECIPE_RATINGS"
+id = "1bb26604a80f445599023fc497f6e565"

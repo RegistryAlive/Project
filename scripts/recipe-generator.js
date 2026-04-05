@@ -4,9 +4,12 @@
  * Recipe Rules:
  * - Items have bases (e.g., "Iron / Flower / Grass") - up to 5 bases, minimum 1
  * - Target item has a rank (e.g., 40)
- * - Sub-items can have ranks within +4 gap (36-40 for rank 40)
+ * - Sub-items can have ranks within gap (36-40 for rank 40 with gap 4)
  * - First item must have highest or equal rank to all other items
- * - Alchemy Books 1-4 extend the gap by reducing it (Book 1 = gap becomes 3, etc.)
+ * - Multiple same-base items can be used to make that base dominant (gap uses single item rank, not combined)
+ * - Alchemy Books 1-4 are used for specific gap ranges and appear as the LAST ingredient (5th slot max)
+ * - Items with 5 base materials cannot use Alchemy Books (no room)
+ * - Single-base items require only 2 ingredients: [base item] + [any item within gap]
  */
 
 class RecipeGenerator {
@@ -47,9 +50,9 @@ class RecipeGenerator {
             const itemBases = this.parseBases(item.base);
             if (itemBases.length === 0) return false;
             
-            // First base must match
+            // First base must exactly match (e.g., "Iron" should not match "Pure Iron")
             const firstBase = itemBases[0].toLowerCase();
-            if (!firstBase.includes(baseLower) && !baseLower.includes(firstBase)) {
+            if (firstBase !== baseLower) {
                 return false;
             }
             
@@ -85,9 +88,9 @@ class RecipeGenerator {
             const itemBases = this.parseBases(item.base);
             if (itemBases.length === 0) return false;
             
-            // First base must match
+            // First base must exactly match (e.g., "Iron" should not match "Pure Iron")
             const firstBase = itemBases[0].toLowerCase();
-            if (!firstBase.includes(baseLower) && !baseLower.includes(firstBase)) {
+            if (firstBase !== baseLower) {
                 return false;
             }
             
@@ -133,6 +136,12 @@ class RecipeGenerator {
             return [];
         }
         
+        // SINGLE BASE ITEMS: Generate 2-ingredient recipes
+        // For single-base items, recipe is: [base item] + [any other item within gap]
+        if (targetBases.length === 1) {
+            return this.generateSingleBaseRecipes(targetItem, alchemyBook);
+        }
+        
         // Items with 5 bases cannot use Alchemy Books (book would need to replace a base)
         // Only allow alchemyBook > 0 if there are fewer than 5 bases
         const canUseAlchemyBook = targetBases.length < 5;
@@ -142,16 +151,10 @@ class RecipeGenerator {
         const targetId = targetItem.id;
         
         // Calculate effective gap with alchemy book
-        // Without book: gap of 4 means sub-items can be 4 ranks below (36 for target 40)
-        // With Book 1: gap effectively becomes 5 (can use items 5 ranks below)
-        // With Book 4: gap effectively becomes 8 (can use items 8 ranks below)
         const effectiveMaxGap = this.maxGap + effectiveAlchemyBook;
         const minSubRank = Math.max(1, targetRank - effectiveMaxGap);
-        // IMPORTANT: Sub-items must have rank LOWER than target rank
-        // You can't use the item you're trying to make as an ingredient!
         const maxSubRank = targetRank - 1;
         
-        // If maxSubRank is less than minSubRank, no valid recipes possible
         if (maxSubRank < minSubRank) {
             return [];
         }
@@ -168,30 +171,16 @@ class RecipeGenerator {
             return [];
         }
         
-        // Generate recipe combinations
-        // Rules:
-        // 1. Each item matches its corresponding base (first base matches)
-        // 2. The first item (primary) must have the highest or equal rank among all items
-        // 3. The gap is determined by the LOWEST rank item in the recipe
-        
-        // Strategy: Generate all valid combinations where primary >= all sub-items
-        // Ensure variety in primary item ranks (not just highest ranks)
-        
-        // Limit combinations to prevent explosion - increase to cover more gaps
+        // Generate recipe combinations with variety
         const maxCombinations = 500;
         let combinationCount = 0;
         
-        // Sort first base candidates by rank (ascending) to ensure variety
-        // We want primaries with different ranks: 27, 28, 29, 30, etc.
         const firstBaseCandidates = [...baseCandidates[0]].sort((a, b) => (a.rank || 0) - (b.rank || 0));
         
-        // Select primary items with variety - spread across rank range
-        // More items to ensure we get recipes with different gaps
         let selectedPrimaries = [];
         if (firstBaseCandidates.length <= 50) {
             selectedPrimaries = firstBaseCandidates;
         } else {
-            // Take items spread across the rank range - increased from 20 to 50
             const step = Math.floor(firstBaseCandidates.length / 50);
             for (let i = 0; i < 50; i++) {
                 const index = Math.min(i * step, firstBaseCandidates.length - 1);
@@ -199,31 +188,35 @@ class RecipeGenerator {
             }
         }
         
-        // Also add some highest rank items to ensure we get max gap recipes
         const topItems = firstBaseCandidates.slice(-10);
         selectedPrimaries = [...new Set([...selectedPrimaries, ...topItems])];
         
-        for (const primaryItem of selectedPrimaries) {
-            if (combinationCount >= maxCombinations) break;
-            
-            const primaryRank = primaryItem.rank || 0;
-            
-            // Sub-items must have rank <= primary rank (primary is highest or equal)
-            const subItemCombinations = this.generateSubItemCombinations(
-                baseCandidates.slice(1),
-                minSubRank,
-                primaryRank,
-                targetBases.slice(1)
-            );
-            
-            for (const subItems of subItemCombinations) {
+            for (const primaryItem of selectedPrimaries) {
                 if (combinationCount >= maxCombinations) break;
                 
-                // Calculate the lowest rank in the recipe (this determines the gap)
-                const minRankInRecipe = Math.min(primaryRank, ...subItems.map(i => i.rank || 0));
-                const gapUsed = targetRank - minRankInRecipe;
+                const primaryRank = primaryItem.rank || 0;
                 
-                // Verify the gap is within the effective range for this alchemy book
+                const subItemCombinations = this.generateSubItemCombinations(
+                    baseCandidates.slice(1),
+                    minSubRank,
+                    primaryRank,
+                    targetBases.slice(1)
+                );
+                
+                for (const subItems of subItemCombinations) {
+                    if (combinationCount >= maxCombinations) break;
+                    
+                    // SAFETY CHECK: Ensure recipe has ALL required bases
+                    const expectedIngredientCount = targetBases.length;
+                    const actualIngredientCount = 1 + subItems.length; // primary + subItems
+                    if (actualIngredientCount !== expectedIngredientCount) {
+                        continue; // Skip partial recipes
+                    }
+                    
+                    const allItems = [primaryItem, ...subItems];
+                    const minRankInRecipe = Math.min(...allItems.map(i => i.rank || 0));
+                    const gapUsed = targetRank - minRankInRecipe;
+                
                 if (gapUsed >= 1 && gapUsed <= effectiveMaxGap) {
                     recipes.push({
                         primary: primaryItem,
@@ -231,7 +224,8 @@ class RecipeGenerator {
                         alchemyBook: effectiveAlchemyBook,
                         targetRank: targetRank,
                         gapUsed: gapUsed,
-                        canUseAlchemyBook: canUseAlchemyBook
+                        canUseAlchemyBook: canUseAlchemyBook,
+                        duplicateBases: [] // Track if any duplicate bases used
                     });
                     
                     combinationCount++;
@@ -239,8 +233,256 @@ class RecipeGenerator {
             }
         }
         
-        // Sort recipes by gap (lower gap = more efficient)
+        // Also generate recipes with duplicate base items (multiplier support)
+        // E.g., Flower 25, Grass 26, Gold 26, Flower 25 → Flower dominant
+        if (canUseAlchemyBook && targetBases.length < 4) { // Only if room for extra ingredient
+            const duplicateRecipes = this.generateDuplicateBaseRecipes(
+                targetItem, targetBases, effectiveAlchemyBook, effectiveMaxGap, minSubRank, maxSubRank, targetId, targetRank
+            );
+            recipes.push(...duplicateRecipes);
+        }
+        
         recipes.sort((a, b) => a.gapUsed - b.gapUsed);
+        
+        return recipes;
+    }
+    
+    /**
+     * Generate recipes for single-base items (2 ingredients only)
+     * Recipe: [base item] + [any other item within gap]
+     * RULE: The base item MUST be the primary (highest or equal rank among all ingredients)
+     * Otherwise the resulting item would have a different base (e.g., Iron/Copper instead of just Copper)
+     */
+    generateSingleBaseRecipes(targetItem, alchemyBook = 0) {
+        const targetBases = this.parseBases(targetItem.base);
+        const canUseAlchemyBook = true; // Single base items can always use books
+        const effectiveAlchemyBook = canUseAlchemyBook ? alchemyBook : 0;
+        
+        const targetRank = targetItem.rank || 0;
+        const targetId = targetItem.id;
+        const effectiveMaxGap = this.maxGap + effectiveAlchemyBook;
+        const minSubRank = Math.max(1, targetRank - effectiveMaxGap);
+        const maxSubRank = targetRank - 1;
+        
+        if (maxSubRank < minSubRank) {
+            return [];
+        }
+        
+        const recipes = [];
+        
+        // Get base item candidates
+        const baseCandidates = this.getSubItemsWithBase(targetBases[0], minSubRank, maxSubRank, targetId);
+        
+        if (baseCandidates.length === 0) {
+            return [];
+        }
+        
+        // Get any other item candidates (any base, within gap)
+        const anyItemCandidates = this.itemLoader.getIndexItems().filter(item => {
+            if (item.id === targetId) return false;
+            const itemRank = item.rank || 0;
+            return itemRank >= minSubRank && itemRank <= maxSubRank;
+        });
+        
+        if (anyItemCandidates.length === 0) {
+            return [];
+        }
+        
+        // Generate 2-ingredient recipes
+        const maxCombinations = 200;
+        let combinationCount = 0;
+        
+        // Limit candidates for performance
+        const limitedBaseCandidates = baseCandidates.slice(0, 50);
+        const limitedAnyCandidates = anyItemCandidates.slice(0, 100);
+        
+        for (const baseItem of limitedBaseCandidates) {
+            if (combinationCount >= maxCombinations) break;
+            
+            const baseItemRank = baseItem.rank || 0;
+            
+            for (const anyItem of limitedAnyCandidates) {
+                if (combinationCount >= maxCombinations) break;
+                
+                const anyItemRank = anyItem.rank || 0;
+                
+                // CRITICAL: Base item MUST be primary (highest or equal rank)
+                // If anyItem has higher rank, skip this combination entirely
+                if (anyItemRank > baseItemRank) {
+                    continue; // Skip - would result in wrong base
+                }
+                
+                // Calculate gap using the lower-ranked sub-item
+                const minRank = Math.min(baseItemRank, anyItemRank);
+                const gapUsed = targetRank - minRank;
+                
+                if (gapUsed >= 1 && gapUsed <= effectiveMaxGap) {
+                    // Base item is always primary since we filtered out anyItemRank > baseItemRank
+                    recipes.push({
+                        primary: baseItem,
+                        subItems: [anyItem],
+                        alchemyBook: effectiveAlchemyBook,
+                        targetRank: targetRank,
+                        gapUsed: gapUsed,
+                        canUseAlchemyBook: true,
+                        duplicateBases: [],
+                        isSingleBaseRecipe: true
+                    });
+                    
+                    combinationCount++;
+                }
+            }
+        }
+        
+        recipes.sort((a, b) => a.gapUsed - b.gapUsed);
+        
+        return recipes;
+    }
+    
+    /**
+     * Generate recipes with duplicate base items (multiplier support)
+     * 
+     * HOW DUPLICATE RECIPES WORK:
+     * - Base dominance: (1) Highest rank wins, (2) If ranks equal, first base in target's order wins
+     * - Having MORE items of a base makes that base dominant by count
+     * - Gap is calculated from the LOWEST individual rank
+     * 
+     * A duplicate recipe is ONLY needed when:
+     * - The duplicate provides EXTRA items of the target base when another base has a HIGHER rank
+     * - Example: Hard Tissue R20 + Steel R18 + Steel R18 → Steel dominant (2 Steel > 1 Hard Tissue)
+     * 
+     * A duplicate recipe is REDUNDANT when:
+     * - A non-duplicate version already exists with the same base dominance
+     * - Example: Steel R20 + Hard Tissue R20 already makes Steel dominant (equal rank, Steel first in order)
+     *   → Adding another Steel R20 is useless
+     * 
+     * RULES:
+     * 1. Only generate duplicates when the dup base needs extra count to beat a higher-ranked other base
+     * 2. The dup item must have LOWER rank than at least one non-dup item
+     * 3. Gap calculated from lowest individual rank
+     */
+    generateDuplicateBaseRecipes(targetItem, targetBases, alchemyBook, effectiveMaxGap, minSubRank, maxSubRank, targetId, targetRank) {
+        const recipes = [];
+        const maxCombinations = 100;
+        let combinationCount = 0;
+        
+        // For each base, try making it the "dominant" base by adding a duplicate
+        for (let dupBaseIdx = 0; dupBaseIdx < targetBases.length; dupBaseIdx++) {
+            if (combinationCount >= maxCombinations) break;
+            
+            const dupBase = targetBases[dupBaseIdx];
+            const dupBaseLower = dupBase.toLowerCase();
+            
+            // Get candidates for the duplicate base
+            const dupCandidates = this.getSubItemsWithBase(dupBase, minSubRank, maxSubRank, targetId);
+            if (dupCandidates.length === 0) continue;
+            
+            // Get candidates for ALL other bases (one each)
+            const otherBaseIndices = targetBases.map((_, idx) => idx).filter(idx => idx !== dupBaseIdx);
+            const otherBases = otherBaseIndices.map(idx => targetBases[idx]);
+            const otherBaseCandidates = otherBases.map(base =>
+                this.getSubItemsWithBase(base, minSubRank, maxSubRank, targetId)
+            );
+            
+            // Skip if any other base has no candidates
+            if (otherBaseCandidates.some(candidates => candidates.length === 0)) continue;
+            
+            // Generate combinations for the "other" bases
+            const otherCombinations = otherBaseCandidates.length > 0
+                ? this.generateSubItemCombinations(otherBaseCandidates, minSubRank, maxSubRank, otherBases)
+                : [[]];
+            
+            // Limit combinations
+            const limitedOtherCombos = otherCombinations.slice(0, 20);
+            
+            // Limit dup candidates
+            const limitedDupCandidates = dupCandidates.slice(0, 15);
+            
+                for (const otherItems of limitedOtherCombos) {
+                    if (combinationCount >= maxCombinations) break;
+                    
+                    // CRITICAL: Must have at least one item from each "other" base
+                    // A recipe needs ALL required bases, not just duplicates
+                    const actualOtherCount = otherItems.length;
+                    const expectedOtherCount = otherBases.length;
+                    if (actualOtherCount === 0 || actualOtherCount < expectedOtherCount) {
+                        continue; // Missing required base items
+                    }
+                    
+                    // Find the highest rank among other (non-dup) items
+                    const maxOtherRank = Math.max(...otherItems.map(i => i.rank || 0));
+                
+                for (const dupItem of limitedDupCandidates) {
+                    if (combinationCount >= maxCombinations) break;
+                    
+                    const dupRank = dupItem.rank || 0;
+                    
+                    // KEY CHECK: The dup item MUST have lower rank than the highest other item
+                    // If dupRank >= maxOtherRank, the non-dup version would already work
+                    // (equal rank = first base in order wins, higher rank = higher rank wins)
+                    // We only need duplicates when dupRank < maxOtherRank
+                    if (dupRank >= maxOtherRank && otherItems.length > 0) {
+                        continue; // Non-duplicate version already works
+                    }
+                    
+                    // Build the full recipe
+                    const allItems = [dupItem, ...otherItems, dupItem];
+                    
+                    const minRankInRecipe = Math.min(...allItems.map(i => i.rank || 0));
+                    const gapUsed = targetRank - minRankInRecipe;
+                    
+                    if (gapUsed < 1 || gapUsed > effectiveMaxGap) continue;
+                    
+                    // Verify the dup base is actually dominant (has more items than any other base)
+                    const baseCounts = {};
+                    for (const item of allItems) {
+                        const itemBases = this.parseBases(item.base);
+                        if (itemBases.length > 0) {
+                            const firstBase = itemBases[0].toLowerCase();
+                            baseCounts[firstBase] = (baseCounts[firstBase] || 0) + 1;
+                        }
+                    }
+                    
+                    const dupCount = baseCounts[dupBaseLower] || 0;
+                    const maxOtherCount = Math.max(
+                        ...Object.entries(baseCounts)
+                            .filter(([base]) => base !== dupBaseLower)
+                            .map(([, count]) => count),
+                        0
+                    );
+                    
+                    // Dup base must have MORE items than any other base
+                    if (dupCount <= maxOtherCount) continue;
+                    
+                    // Determine primary: highest rank, or first in order if tied
+                    let primaryItem;
+                    let subItems;
+                    
+                    if (dupRank >= maxOtherRank) {
+                        primaryItem = dupItem;
+                        subItems = [...otherItems, dupItem];
+                    } else {
+                        const highestIdx = otherItems.findIndex(i => (i.rank || 0) === maxOtherRank);
+                        primaryItem = otherItems[highestIdx];
+                        subItems = [dupItem, ...otherItems.filter((_, idx) => idx !== highestIdx), dupItem];
+                    }
+                    
+                    recipes.push({
+                        primary: primaryItem,
+                        subItems: subItems,
+                        alchemyBook: alchemyBook,
+                        targetRank: targetRank,
+                        gapUsed: gapUsed,
+                        canUseAlchemyBook: true,
+                        duplicateBases: [{ base: dupBase, index: subItems.length }],
+                        isDuplicateRecipe: true,
+                        validBooks: this.findValidBooksForGap(gapUsed)
+                    });
+                    
+                    combinationCount++;
+                }
+            }
+        }
         
         return recipes;
     }
@@ -262,6 +504,12 @@ class RecipeGenerator {
         const firstCandidates = baseCandidates[0].filter(
             item => (item.rank || 0) >= minRank && (item.rank || 0) <= maxRank
         );
+        
+        // FIX: If filtering by rank leaves no candidates for this base,
+        // return empty array - no valid combinations exist
+        if (firstCandidates.length === 0) {
+            return [];
+        }
         
         // Sort by rank to ensure variety - take items from different rank levels
         // This ensures we get items with ranks spread across the range
@@ -287,7 +535,7 @@ class RecipeGenerator {
         }
         
         if (selectedCandidates.length === 0) {
-            return [[]];
+            return [];
         }
         
         const remainingCombinations = this.generateSubItemCombinations(
@@ -296,6 +544,12 @@ class RecipeGenerator {
             maxRank,
             targetBases.slice(1)
         );
+        
+        // If remaining combinations returned empty array (no valid combos for remaining bases),
+        // return empty - don't return partial recipes
+        if (remainingCombinations.length === 0) {
+            return [];
+        }
         
         for (const item of selectedCandidates) {
             for (const combo of remainingCombinations) {
@@ -309,28 +563,87 @@ class RecipeGenerator {
     /**
      * Get the gap range for a specific alchemy book level
      * When filtering by a book, show recipes that can be made with that book
+     * Alchemy Book takes up the last ingredient slot (5th max)
+     * Items with 5 base materials cannot use books
      * @param {number} bookLevel - Alchemy book level (0-4)
      * @returns {Object} Object with minGap and maxGap
      */
     getGapRangeForBook(bookLevel) {
-        // Each book level enables a specific range of gaps:
-        // No Book (0): gaps 1-4 (base gaps)
-        // Book 1: gaps 3-5
-        // Book 2: gaps 4-6
-        // Book 3: gaps 5-7
+        // Alchemy Book gap ranges (new rules):
+        // No Book (0): gaps 1-3 (base gaps without book)
+        // Book 1: gaps 2-4
+        // Book 2: gaps 4-5
+        // Book 3: gaps 5-6
         // Book 4: gaps 6-8
+        // Note: Gaps can overlap between books (e.g., gap 4 appears in Book 1 and 2)
         const gapRanges = {
-            0: { minGap: 1, maxGap: 4 },
-            1: { minGap: 3, maxGap: 5 },
-            2: { minGap: 4, maxGap: 6 },
-            3: { minGap: 5, maxGap: 7 },
+            0: { minGap: 1, maxGap: 3 },
+            1: { minGap: 2, maxGap: 4 },
+            2: { minGap: 4, maxGap: 5 },
+            3: { minGap: 5, maxGap: 6 },
             4: { minGap: 6, maxGap: 8 }
         };
-        return gapRanges[bookLevel] || { minGap: 1, maxGap: 4 };
+        return gapRanges[bookLevel] || { minGap: 1, maxGap: 3 };
+    }
+    
+    /**
+     * Find all valid books for a given gap value
+     * @param {number} gapUsed - The gap used in the recipe
+     * @returns {Array<number>} Array of valid book levels
+     */
+    findValidBooksForGap(gapUsed) {
+        const validBooks = [];
+        for (let book = 0; book <= this.maxAlchemyBook; book++) {
+            const range = this.getGapRangeForBook(book);
+            if (gapUsed >= range.minGap && gapUsed <= range.maxGap) {
+                validBooks.push(book);
+            }
+        }
+        return validBooks;
+    }
+    
+    /**
+     * Generate all recipes for an item across ALL possible book levels
+     * @param {Object} targetItem - The item to craft
+     * @returns {Array<Object>} Array of recipe objects across all book levels
+     */
+    generateAllRecipes(targetItem) {
+        const targetBases = this.parseBases(targetItem.base);
+        const canUseAlchemyBook = targetBases.length < 5;
+        let allRecipes = [];
+        
+        // Generate recipes for each book level
+        const maxBookLevel = canUseAlchemyBook ? this.maxAlchemyBook : 0;
+        for (let book = 0; book <= maxBookLevel; book++) {
+            const bookRecipes = this.generateRecipes(targetItem, book);
+            for (const recipe of bookRecipes) {
+                // For each recipe, find all valid books for its gap
+                const validBooks = this.findValidBooksForGap(recipe.gapUsed);
+                recipe.validBooks = validBooks;
+                // Use the lowest valid book for display
+                recipe.alchemyBook = validBooks[0];
+                
+                // Check if we already have this exact recipe
+                const isDuplicate = allRecipes.some(r => this.recipesEqual(r, recipe));
+                if (!isDuplicate) {
+                    allRecipes.push(recipe);
+                }
+            }
+        }
+        
+        // Sort by gap then book
+        allRecipes.sort((a, b) => {
+            if (a.gapUsed !== b.gapUsed) return a.gapUsed - b.gapUsed;
+            if (a.validBooks[0] !== b.validBooks[0]) return a.validBooks[0] - b.validBooks[0];
+            return 0;
+        });
+        
+        return allRecipes;
     }
 
     /**
      * Generate all recipes for an item with pagination
+     * Recipes are shown once with all valid books listed (no duplication)
      * @param {Object} targetItem - The item to craft
      * @param {number} page - Page number (1-based)
      * @param {number} alchemyBookFilter - Filter by alchemy book level (null for all)
@@ -338,101 +651,49 @@ class RecipeGenerator {
      * @returns {Object} Paginated recipes with metadata
      */
     getPaginatedRecipes(targetItem, page = 1, alchemyBookFilter = null, gapFilter = null) {
-        let allRecipes = [];
+        // Use the new generateAllRecipes method to get ALL recipes across ALL book levels
+        const allGeneratedRecipes = this.generateAllRecipes(targetItem);
         
-        if (alchemyBookFilter === null && gapFilter === null) {
-            // Show all recipes - generate for all book levels
-            const baseRecipes = this.generateRecipes(targetItem, 0);
-            allRecipes = allRecipes.concat(baseRecipes);
+        // Apply filters
+        let filteredRecipes = [];
+        for (const recipe of allGeneratedRecipes) {
+            const validBooks = recipe.validBooks || this.findValidBooksForGap(recipe.gapUsed);
             
-            // Get recipes for all alchemy book levels
-            for (let book = 1; book <= this.maxAlchemyBook; book++) {
-                const bookRecipes = this.generateRecipes(targetItem, book);
-                // Only add recipes that aren't already covered by lower book levels
-                for (const recipe of bookRecipes) {
-                    const isDuplicate = allRecipes.some(r => 
-                        this.recipesEqual(r, recipe)
-                    );
-                    if (!isDuplicate) {
-                        allRecipes.push(recipe);
-                    }
-                }
-            }
-        } else if (gapFilter !== null && alchemyBookFilter === null) {
-            // Filter by specific gap only - generate for all book levels and filter
-            // Generate for all alchemy book levels to find recipes with this specific gap
-            const baseRecipes = this.generateRecipes(targetItem, 0);
-            allRecipes = allRecipes.concat(baseRecipes);
-            
-            for (let book = 1; book <= this.maxAlchemyBook; book++) {
-                const bookRecipes = this.generateRecipes(targetItem, book);
-                for (const recipe of bookRecipes) {
-                    const isDuplicate = allRecipes.some(r => 
-                        this.recipesEqual(r, recipe)
-                    );
-                    if (!isDuplicate) {
-                        allRecipes.push(recipe);
-                    }
-                }
+            // Apply book filter: recipe is valid if the selected book is in its valid books
+            if (alchemyBookFilter !== null && !validBooks.includes(alchemyBookFilter)) {
+                continue;
             }
             
-            // Filter to only include recipes with the specific gap
-            allRecipes = allRecipes.filter(r => r.gapUsed === gapFilter);
-        } else {
-            // Filter by specific alchemy book level
-            // Show ONLY recipes whose gap falls within this book's range
-            // Book 0: gaps 1-4 (no book needed)
-            // Book 1: gaps 3-5
-            // Book 2: gaps 4-6
-            // Book 3: gaps 5-7
-            // Book 4: gaps 6-8
+            // Apply gap filter: recipe is valid if its gap matches the selected gap
+            if (gapFilter !== null && recipe.gapUsed !== gapFilter) {
+                continue;
+            }
             
-            const gapRange = this.getGapRangeForBook(alchemyBookFilter);
-            
-            // Generate recipes with the appropriate book level
-            // Book 0: generate with book 0 (max gap 4)
-            // Book 1: generate with book 1 (max gap 5)
-            // Book 2: generate with book 2 (max gap 6)
-            // etc.
-            const bookToUse = alchemyBookFilter;
-            const bookRecipes = this.generateRecipes(targetItem, bookToUse);
-            
-            for (const recipe of bookRecipes) {
-                // Only include recipes whose gap falls within this book's range
-                let gapInRange = recipe.gapUsed >= gapRange.minGap && recipe.gapUsed <= gapRange.maxGap;
-                
-                // If specific gap is also selected, filter by that too
-                if (gapFilter !== null) {
-                    gapInRange = gapInRange && recipe.gapUsed === gapFilter;
-                }
-                
-                if (gapInRange) {
-                    const isDuplicate = allRecipes.some(r => 
-                        this.recipesEqual(r, recipe)
-                    );
-                    if (!isDuplicate) {
-                        allRecipes.push(recipe);
-                    }
-                }
+            // Check for duplicate
+            const isDuplicate = filteredRecipes.some(r => this.recipesEqual(r, recipe));
+            if (!isDuplicate) {
+                filteredRecipes.push({
+                    ...recipe,
+                    validBooks: validBooks,
+                    alchemyBook: validBooks[0] || recipe.alchemyBook || 0
+                });
             }
         }
         
-        // Sort by gap (efficiency)
-        allRecipes.sort((a, b) => {
-            // First by alchemy book (lower is better)
-            if (a.alchemyBook !== b.alchemyBook) {
-                return a.alchemyBook - b.alchemyBook;
+        // Sort by gap (efficiency), then by lowest valid book
+        filteredRecipes.sort((a, b) => {
+            if (a.gapUsed !== b.gapUsed) {
+                return a.gapUsed - b.gapUsed;
             }
-            // Then by gap (lower is better)
-            return a.gapUsed - b.gapUsed;
+            return a.alchemyBook - b.alchemyBook;
         });
         
         // Paginate
-        const totalRecipes = allRecipes.length;
+        const totalRecipes = filteredRecipes.length;
         const totalPages = Math.ceil(totalRecipes / this.maxRecipesPerPage);
         const startIndex = (page - 1) * this.maxRecipesPerPage;
         const endIndex = startIndex + this.maxRecipesPerPage;
-        const paginatedRecipes = allRecipes.slice(startIndex, endIndex);
+        const paginatedRecipes = filteredRecipes.slice(startIndex, endIndex);
         
         return {
             recipes: paginatedRecipes,

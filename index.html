@@ -788,37 +788,70 @@
                 </div>
             </section>
             
-            <!-- Event Countdown Section -->
+            <!-- Event & Maintenance Timers Section -->
             <section class="mb-12">
-                <div class="countdown-box rounded-xl p-6 relative overflow-hidden">
-                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-wlPurple rounded-full filter blur-3xl opacity-20"></div>
-                    <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-wlBlue rounded-full filter blur-3xl opacity-20"></div>
-                    <div class="relative z-10">
-                        <div class="flex flex-col md:flex-row items-center justify-between">
-                            <div class="text-center md:text-left mb-4 md:mb-0">
-                                <h3 class="text-xl font-semibold mb-2 flex items-center">
-                                    <i class="fas fa-calendar-alt text-wlPurple mr-2"></i>
-                                    Upcoming Event
-                                </h3>
-                                <p class="text-wlLight text-opacity-80">Dragon Festival - Double EXP Weekend</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Server Time -->
+                    <div class="bg-wlDark bg-opacity-80 backdrop-blur-sm rounded-xl p-5 border border-wlBlue border-opacity-30 relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-24 h-24 bg-wlBlue rounded-full filter blur-2xl opacity-10"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-wlBlue to-wlPurple flex items-center justify-center mr-3">
+                                    <i class="fas fa-globe text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-wlLight text-opacity-60 uppercase tracking-wider">Server Time</h3>
+                                    <p class="text-xs text-wlBlue">GMT+8</p>
+                                </div>
                             </div>
-                            <div class="flex space-x-4">
-                                <div class="text-center">
-                                    <div class="countdown-number text-3xl font-bold" id="countdownDays">00</div>
-                                    <div class="text-xs text-wlLight text-opacity-70">Days</div>
+                            <div class="text-center py-3">
+                                <div class="text-wlLight text-opacity-70 text-xs mb-1" id="serverDate">Loading...</div>
+                                <div class="text-3xl font-bold bg-gradient-to-r from-wlBlue to-wlPurple bg-clip-text text-transparent" id="serverTime">--:--:--</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Next Maintenance -->
+                    <div class="bg-wlDark bg-opacity-80 backdrop-blur-sm rounded-xl p-5 border border-wlRed border-opacity-30 relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-24 h-24 bg-wlRed rounded-full filter blur-2xl opacity-10"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-wlRed to-orange-500 flex items-center justify-center mr-3">
+                                    <i class="fas fa-wrench text-white text-sm"></i>
                                 </div>
-                                <div class="text-center">
-                                    <div class="countdown-number text-3xl font-bold" id="countdownHours">00</div>
-                                    <div class="text-xs text-wlLight text-opacity-70">Hours</div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-wlLight text-opacity-60 uppercase tracking-wider">Maintenance</h3>
+                                    <p class="text-xs text-wlRed" id="maintenanceLabel">Loading...</p>
                                 </div>
-                                <div class="text-center">
-                                    <div class="countdown-number text-3xl font-bold" id="countdownMins">00</div>
-                                    <div class="text-xs text-wlLight text-opacity-70">Mins</div>
+                            </div>
+                            <div class="text-center py-3">
+                                <div class="text-2xl font-bold bg-gradient-to-r from-wlRed to-orange-400 bg-clip-text text-transparent" id="maintenanceCountdown">--d --h --m</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Next Event -->
+                    <div class="bg-wlDark bg-opacity-80 backdrop-blur-sm rounded-xl p-5 border border-wlGreen border-opacity-30 relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-24 h-24 bg-wlGreen rounded-full filter blur-2xl opacity-10"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-wlGreen to-emerald-500 flex items-center justify-center mr-3">
+                                    <i class="fas fa-gamepad text-white text-sm"></i>
                                 </div>
-                                <div class="text-center">
-                                    <div class="countdown-number text-3xl font-bold" id="countdownSecs">00</div>
-                                    <div class="text-xs text-wlLight text-opacity-70">Secs</div>
+                                <div>
+                                    <h3 class="text-sm font-semibold text-wlLight text-opacity-60 uppercase tracking-wider">Next Event</h3>
+                                    <p class="text-xs text-wlGreen" id="eventLabel">Loading...</p>
                                 </div>
+                            </div>
+                            <div class="text-center py-3">
+                                <div id="eventStatusBadge" class="hidden mb-2">
+                                    <span class="inline-flex items-center px-3 py-1 bg-red-500 text-white text-xs font-bold rounded-full animate-pulse">
+                                        <span class="w-2 h-2 bg-white rounded-full mr-2 animate-ping"></span>
+                                        LIVE NOW
+                                    </span>
+                                </div>
+                                <div class="text-2xl font-bold bg-gradient-to-r from-wlGreen to-emerald-400 bg-clip-text text-transparent" id="eventCountdown">--d --h --m</div>
+                                <div class="text-xs text-wlLight text-opacity-50 mt-1" id="eventDuration"></div>
                             </div>
                         </div>
                     </div>
@@ -1782,28 +1815,196 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
         
-        // Countdown Timer
-        function updateCountdown() {
-            // Set event date to 7 days from now for demo
-            const eventDate = new Date();
-            eventDate.setDate(eventDate.getDate() + 7);
-            
+        // ========================================
+        // Real-Time GMT+8 Server Clock & Timers
+        // ========================================
+        
+        // Event definitions with durations (in milliseconds)
+        const EVENT_SCHEDULE = [
+            { day: 1, hour: 19, minute: 0, name: 'National Treasure', durationMs: 2 * 60 * 60 * 1000 },      // Monday 7pm - 2hrs
+            { day: 3, hour: 19, minute: 0, name: 'Zeus Challenge', durationMs: 2 * 60 * 60 * 1000 },        // Wednesday 7pm - 2hrs
+            { day: 5, hour: 10, minute: 0, name: '28R', durationMs: 14 * 60 * 60 * 1000 },                  // Friday 10am - 14hrs
+            { day: 0, hour: 12, minute: 0, name: 'Cursed Palace', durationMs: 12 * 60 * 60 * 1000 },        // Sunday 12pm - 12hrs
+            { day: 0, hour: 19, minute: 0, name: 'Trojan War', durationMs: 2 * 60 * 60 * 1000 }             // Sunday 7pm - 2hrs
+        ];
+        
+        // Maintenance schedule: Tue/Thu 9:30am, Sat/Sun 8:00am (GMT+8)
+        const MAINTENANCE_SCHEDULE = [
+            { day: 2, hour: 9, minute: 30 },   // Tuesday 9:30am
+            { day: 4, hour: 9, minute: 30 },   // Thursday 9:30am
+            { day: 6, hour: 8, minute: 0 },    // Saturday 8:00am
+            { day: 0, hour: 8, minute: 0 }     // Sunday 8:00am
+        ];
+        
+        const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        
+        function getGMT8Time() {
+            // Get current time in GMT+8
             const now = new Date();
-            const diff = eventDate - now;
-            
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const secs = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('countdownDays').textContent = String(days).padStart(2, '0');
-            document.getElementById('countdownHours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('countdownMins').textContent = String(mins).padStart(2, '0');
-            document.getElementById('countdownSecs').textContent = String(secs).padStart(2, '0');
+            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+            return new Date(utc + (8 * 3600000));
         }
         
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
+        function findNextMaintenance(gmt8Now) {
+            const currentDay = gmt8Now.getDay();
+            const currentHour = gmt8Now.getHours();
+            const currentMinute = gmt8Now.getMinutes();
+            
+            let closest = null;
+            let closestDiff = Infinity;
+            
+            // Check maintenance slots for current week and next week
+            for (let weekOffset = 0; weekOffset <= 1; weekOffset++) {
+                for (const maint of MAINTENANCE_SCHEDULE) {
+                    const maintDate = new Date(gmt8Now);
+                    let daysUntilMaint = maint.day - currentDay + (weekOffset * 7);
+                    if (daysUntilMaint < 0) daysUntilMaint += 7;
+                    
+                    const testDate = new Date(gmt8Now);
+                    testDate.setDate(testDate.getDate() + daysUntilMaint);
+                    testDate.setHours(maint.hour, maint.minute, 0, 0);
+                    
+                    const diff = testDate.getTime() - gmt8Now.getTime();
+                    if (diff > 0 && diff < closestDiff) {
+                        closestDiff = diff;
+                        closest = { date: testDate, diff: diff };
+                    }
+                }
+            }
+            
+            return closest;
+        }
+        
+        function findNextEvent(gmt8Now) {
+            const currentDay = gmt8Now.getDay();
+            const currentHour = gmt8Now.getHours();
+            const currentMinute = gmt8Now.getMinutes();
+            const currentTimeMs = currentHour * 60 * 60 * 1000 + currentMinute * 60 * 1000;
+            
+            // Find the next upcoming event
+            let closest = null;
+            let closestDiff = Infinity;
+            let isLive = false;
+            let liveRemaining = 0;
+            
+            // Check events for current week and next week
+            for (let weekOffset = 0; weekOffset <= 1; weekOffset++) {
+                for (const event of EVENT_SCHEDULE) {
+                    const eventDate = new Date(gmt8Now);
+                    let daysUntilEvent = event.day - currentDay + (weekOffset * 7);
+                    if (daysUntilEvent < 0) daysUntilEvent += 7;
+                    
+                    const eventStartMs = event.hour * 60 * 60 * 1000 + event.minute * 60 * 1000;
+                    
+                    // Check if event is LIVE right now (only for current day)
+                    if (weekOffset === 0 && event.day === currentDay) {
+                        if (currentTimeMs >= eventStartMs && currentTimeMs < eventStartMs + event.durationMs) {
+                            isLive = true;
+                            liveRemaining = eventStartMs + event.durationMs - currentTimeMs;
+                            closest = { event: event, isLive: true, liveRemaining: liveRemaining };
+                            return closest;
+                        }
+                    }
+                    
+                    // Calculate time until event starts
+                    const testDate = new Date(gmt8Now);
+                    testDate.setDate(testDate.getDate() + daysUntilEvent);
+                    testDate.setHours(event.hour, event.minute, 0, 0);
+                    
+                    const diff = testDate.getTime() - gmt8Now.getTime();
+                    if (diff > 0 && diff < closestDiff && !isLive) {
+                        closestDiff = diff;
+                        closest = { event: event, date: testDate, diff: diff, isLive: false };
+                    }
+                }
+            }
+            
+            return closest;
+        }
+        
+        function formatCountdown(ms) {
+            const totalSeconds = Math.floor(ms / 1000);
+            const days = Math.floor(totalSeconds / 86400);
+            const hours = Math.floor((totalSeconds % 86400) / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+            
+            if (days > 0) {
+                return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            } else if (hours > 0) {
+                return `${hours}h ${minutes}m ${seconds}s`;
+            } else if (minutes > 0) {
+                return `${minutes}m ${seconds}s`;
+            } else {
+                return `${seconds}s`;
+            }
+        }
+        
+        function updateTimers() {
+            const gmt8Now = getGMT8Time();
+            
+            // Update server clock
+            const dayName = DAY_NAMES[gmt8Now.getDay()];
+            const monthName = MONTH_NAMES[gmt8Now.getMonth()];
+            const date = gmt8Now.getDate();
+            const year = gmt8Now.getFullYear();
+            
+            const hours = String(gmt8Now.getHours()).padStart(2, '0');
+            const minutes = String(gmt8Now.getMinutes()).padStart(2, '0');
+            const seconds = String(gmt8Now.getSeconds()).padStart(2, '0');
+            
+            const serverDateEl = document.getElementById('serverDate');
+            const serverTimeEl = document.getElementById('serverTime');
+            
+            if (serverDateEl) serverDateEl.textContent = `${dayName}, ${monthName} ${date}, ${year}`;
+            if (serverTimeEl) serverTimeEl.textContent = `${hours}:${minutes}:${seconds}`;
+            
+            // Update maintenance countdown
+            const nextMaint = findNextMaintenance(gmt8Now);
+            const maintCountdownEl = document.getElementById('maintenanceCountdown');
+            const maintLabelEl = document.getElementById('maintenanceLabel');
+            
+            if (nextMaint && maintCountdownEl && maintLabelEl) {
+                const maintDate = nextMaint.date;
+                maintLabelEl.textContent = `${DAY_NAMES[maintDate.getDay()]} ${maintDate.getHours()}:${String(maintDate.getMinutes()).padStart(2, '0')} AM/PM`;
+                maintCountdownEl.textContent = formatCountdown(nextMaint.diff);
+            }
+            
+            // Update event countdown
+            const nextEvent = findNextEvent(gmt8Now);
+            const eventCountdownEl = document.getElementById('eventCountdown');
+            const eventLabelEl = document.getElementById('eventLabel');
+            const eventStatusBadge = document.getElementById('eventStatusBadge');
+            const eventDurationEl = document.getElementById('eventDuration');
+            
+            if (nextEvent && eventCountdownEl) {
+                const ev = nextEvent.event;
+                
+                if (nextEvent.isLive) {
+                    // Event is LIVE
+                    eventStatusBadge.classList.remove('hidden');
+                    eventDurationEl.textContent = `Duration: ${ev.name}`;
+                    eventCountdownEl.textContent = formatCountdown(nextEvent.liveRemaining);
+                    eventLabelEl.textContent = `${ev.name} - LIVE!`;
+                    
+                    // Change color to red during live
+                    eventCountdownEl.className = 'text-2xl font-bold bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent';
+                } else {
+                    eventStatusBadge.classList.add('hidden');
+                    eventCountdownEl.textContent = formatCountdown(nextEvent.diff);
+                    eventLabelEl.textContent = ev.name;
+                    eventDurationEl.textContent = '';
+                    
+                    // Reset gradient
+                    eventCountdownEl.className = 'text-2xl font-bold bg-gradient-to-r from-wlGreen to-emerald-400 bg-clip-text text-transparent';
+                }
+            }
+        }
+        
+        // Update timers immediately and then every second
+        updateTimers();
+        setInterval(updateTimers, 1000);
         
         // Stats are now static, no animation needed
         // The counts are loaded from actual database data
