@@ -385,8 +385,29 @@
         }
     </style>
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/mobile-monsters.css" rel="stylesheet" media="(max-width: 768px)">
 </head>
 <body class="text-wlLight"> 
+    <!-- FAB Navigation -->
+    <div id="fabNavContainer" class="fixed z-[999]" style="display:none;">
+        <button id="fabNavBtn" class="bg-wlDark border border-wlPurple border-opacity-30 shadow-lg">
+            <i class="fas fa-bars text-wlPurple"></i>
+            <span class="fab-label">Navigate</span>
+        </button>
+    </div>
+    <div id="fabNavDrawer" class="fixed z-[998] bg-wlDark border border-wlPurple border-opacity-20 rounded-xl shadow-2xl p-2" style="display:none;">
+        <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-home text-wlBlue"></i><span>Home</span></a>
+        <a href="Item.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-cube text-wlPurple"></i><span>Items</span></a>
+        <a href="quests.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-scroll text-wlGreen"></i><span>Quests</span></a>
+        <a href="monsters.html" class="flex items-center gap-3 px-4 py-3 rounded-lg bg-wlDarker"><i class="fas fa-paw text-wlRed"></i><span>Monsters</span></a>
+        <a href="Locations.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-map-marked-alt text-blue-400"></i><span>Locations</span></a>
+        <a href="tier-list.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-trophy text-wlPurple"></i><span>Tier List</span></a>
+        <a href="shops.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-store text-emerald-400"></i><span>Shops</span></a>
+        <a href="manufacture.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-hammer text-amber-400"></i><span>Manufacture</span></a>
+        <a href="Resources.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-gem text-wlYellow"></i><span>Resources</span></a>
+    </div>
+    <div id="fabNavOverlay"></div>
+
     <div id="darkOverlay" class="dark-overlay"></div>
     <div id="mobileSidebar" class="sidebar sidebar-hidden fixed inset-y-0 right-0 w-64 bg-wlDarker z-50 shadow-2xl p-4 overflow-y-auto">
         <div class="flex justify-between items-center mb-8">
@@ -1321,6 +1342,35 @@
                 localStorage.setItem('theme', 'dark');
             }
         });
+
+        // FAB Navigation (mobile only)
+        const fabNavBtn = document.getElementById('fabNavBtn');
+        const fabNavDrawer = document.getElementById('fabNavDrawer');
+        const fabNavOverlay = document.getElementById('fabNavOverlay');
+
+        if (fabNavBtn && fabNavDrawer && fabNavOverlay) {
+            function closeFabNav() {
+                fabNavDrawer.classList.remove('open');
+                fabNavOverlay.classList.remove('open');
+            }
+
+            fabNavBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const isOpen = fabNavDrawer.classList.contains('open');
+                if (isOpen) {
+                    closeFabNav();
+                } else {
+                    fabNavDrawer.classList.add('open');
+                    fabNavOverlay.classList.add('open');
+                }
+            });
+
+            fabNavOverlay.addEventListener('click', closeFabNav);
+
+            fabNavDrawer.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', closeFabNav);
+            });
+        }
     </script>
 </body>
 </html>

@@ -1,0 +1,532 @@
+/* ================================================================
+   MOBILE-ONLY STYLES FOR RESOURCES PAGE (< 768px)
+   ================================================================ */
+
+@media (max-width: 768px) {
+    /* ===== HEADER COMPACT ===== */
+    nav {
+        padding: 0 !important;
+        min-height: 48px;
+    }
+
+    nav .max-w-7xl {
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+    }
+
+    nav .font-bold.text-lg {
+        font-size: 0.85rem !important;
+    }
+
+    nav .w-10.h-10 {
+        width: 1.6rem !important;
+        height: 1.6rem !important;
+    }
+
+    nav .w-10.h-10 i {
+        font-size: 0.7rem !important;
+    }
+
+    /* ===== HERO SECTION COMPACT ===== */
+    .hero-glow {
+        margin-bottom: 1rem !important;
+    }
+
+    .spell-circle {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .spell-icon {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.25rem !important;
+    }
+
+    h1 .rune-text {
+        font-size: 1.25rem !important;
+    }
+
+    .text-4xl.md\:text-5xl {
+        font-size: 1.5rem !important;
+    }
+
+    .text-lg.max-w-xl {
+        font-size: 0.95rem !important;
+    }
+
+    /* ===== STATS COMPACT ===== */
+    .flex.flex-wrap.justify-center.gap-4.md\:gap-0 {
+        gap: 0.5rem !important;
+    }
+
+    .stat-crystal {
+        padding: 0.75rem 1rem !important;
+        min-width: 80px;
+    }
+
+    .stat-number {
+        font-size: 1rem !important;
+    }
+
+    .stat-label {
+        font-size: 0.7rem !important;
+    }
+
+    .hidden.md\:block.w-px.h-16 {
+        display: none !important;
+    }
+
+    /* ===== SEARCH COMPACT ===== */
+    .search-crystal {
+        padding: 0.4rem !important;
+        gap: 0.5rem !important;
+    }
+
+    .search-icon {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    .search-icon i {
+        font-size: 0.85rem !important;
+    }
+
+    .search-input {
+        font-size: 1rem !important;
+    }
+
+    /* ===== FILTER PILLS ===== */
+    .flex.flex-wrap.justify-center.gap-3 {
+        gap: 0.35rem !important;
+    }
+
+    .filter-pill {
+        font-size: 0.72rem !important;
+        padding: 0.35rem 0.65rem !important;
+        border-radius: 1rem !important;
+    }
+
+    /* ===== TABS ===== */
+    .flex.justify-center.mb-10 {
+        margin-bottom: 0.75rem !important;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1rem !important;
+        font-size: 0.85rem !important;
+    }
+
+    .tab-badge {
+        font-size: 0.45rem !important;
+        padding: 0.1rem 0.35rem !important;
+    }
+
+    /* ===== FEATURED CARD ===== */
+    .featured-grimoire {
+        padding: 1rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .featured-badge {
+        position: static !important;
+        display: inline-block !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .featured-content {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1rem !important;
+    }
+
+    .featured-icon {
+        width: 70px !important;
+        height: 70px !important;
+        font-size: 1.75rem !important;
+    }
+
+    .featured-title {
+        font-size: 1.1rem !important;
+    }
+
+    .featured-version {
+        font-size: 0.65rem !important;
+    }
+
+    .featured-desc {
+        font-size: 0.9rem !important;
+    }
+
+    .featured-grimoire .bg-wlDarker\/50 {
+        padding: 0.6rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    .featured-stats {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        align-items: center !important;
+    }
+
+    .featured-stat {
+        font-size: 0.85rem !important;
+    }
+
+    .featured-actions {
+        justify-content: center !important;
+    }
+
+    .btn-primary {
+        padding: 0.65rem 1.25rem !important;
+        font-size: 0.95rem !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    /* ===== GRIMOIRE CARDS ===== */
+    .grid.grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 {
+        gap: 0.75rem !important;
+    }
+
+    .grimoire-card {
+        padding: 1rem !important;
+    }
+
+    .card-glyph {
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 1.25rem !important;
+    }
+
+    .card-title {
+        font-size: 1.05rem !important;
+    }
+
+    .card-desc {
+        font-size: 0.85rem !important;
+    }
+
+    .card-meta {
+        font-size: 0.75rem !important;
+    }
+
+    .badge {
+        font-size: 0.55rem !important;
+        padding: 0.2rem 0.5rem !important;
+    }
+
+    .btn-cast {
+        padding: 0.6rem 1rem !important;
+        font-size: 0.95rem !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .btn-inspect {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 0.5rem 0.75rem !important;
+    }
+
+    /* ===== TOME CARDS ===== */
+    .tome-card {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 1rem !important;
+    }
+
+    .tome-icon {
+        width: 56px !important;
+        height: 56px !important;
+        font-size: 1.5rem !important;
+        margin: 0 auto 0.75rem !important;
+    }
+
+    .tome-title {
+        font-size: 1.05rem !important;
+    }
+
+    .tome-desc {
+        font-size: 0.9rem !important;
+    }
+
+    .tome-meta {
+        justify-content: center !important;
+        font-size: 0.8rem !important;
+    }
+
+    .btn-tome {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 0.6rem 1rem !important;
+    }
+
+    /* ===== GUILD CARDS ===== */
+    .guild-card {
+        padding: 1rem !important;
+    }
+
+    .guild-emblem {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 1.5rem !important;
+    }
+
+    .guild-title {
+        font-size: 1rem !important;
+    }
+
+    .guild-desc {
+        font-size: 0.9rem !important;
+    }
+
+    .guild-stats {
+        font-size: 0.8rem !important;
+    }
+
+    .btn-guild {
+        padding: 0.6rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* ===== DISCORD DETAIL PANEL ===== */
+    .discord-detail-content {
+        padding: 0.75rem !important;
+    }
+
+    .discord-banner {
+        max-height: 120px !important;
+    }
+
+    .discord-detail-desc {
+        font-size: 0.85rem !important;
+    }
+
+    /* ===== PATHWAY LINKS ===== */
+    .pathway-link {
+        padding: 0.75rem 1rem !important;
+    }
+
+    .pathway-icon {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 1rem !important;
+    }
+
+    .pathway-title {
+        font-size: 0.85rem !important;
+    }
+
+    .pathway-desc {
+        font-size: 0.7rem !important;
+    }
+
+    /* ===== CONTRIBUTE SHRINE ===== */
+    .contribute-shrine {
+        padding: 1.25rem !important;
+    }
+
+    .shrine-icon {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 1.25rem !important;
+    }
+
+    .shrine-title {
+        font-size: 1.1rem !important;
+    }
+
+    .shrine-desc {
+        font-size: 0.9rem !important;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+        padding: 1.25rem !important;
+    }
+
+    footer .flex.flex-col.md\:flex-row {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1rem !important;
+    }
+
+    footer .flex.items-center.gap-4 {
+        justify-content: center !important;
+    }
+
+    .social-link {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .copyright {
+        font-size: 0.75rem !important;
+    }
+
+    /* ===== BACK TO TOP ===== */
+    .back-top {
+        width: 40px !important;
+        height: 40px !important;
+        bottom: 5rem !important;
+        right: 1rem !important;
+    }
+
+    /* ===== SECTION PANELS ===== */
+    .section-panel {
+        padding: 0 0.25rem !important;
+    }
+}
+
+/* ===== EXTRA SMALL SCREENS (<=420px) ===== */
+@media (max-width: 420px) {
+    .filter-pill {
+        font-size: 0.65rem !important;
+        padding: 0.3rem 0.5rem !important;
+    }
+
+    .tab-btn {
+        padding: 0.5rem 0.65rem !important;
+        font-size: 0.75rem !important;
+    }
+
+    .grimoire-card {
+        padding: 0.75rem !important;
+    }
+
+    .card-title {
+        font-size: 0.95rem !important;
+    }
+
+    .card-desc {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* ===== LANDSCAPE MOBILE ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .spell-circle {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .spell-icon {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 1rem !important;
+    }
+
+    .stat-crystal {
+        padding: 0.5rem 0.75rem !important;
+    }
+}
+
+/* ===== FAB NAVIGATION ===== */
+#fabNavContainer {
+    display: flex !important;
+    position: fixed !important;
+    bottom: calc(env(safe-area-inset-bottom, 0.5rem) + 1.5rem) !important;
+    left: calc(env(safe-area-inset-left, 0.5rem) + 1.5rem) !important;
+    z-index: 999 !important;
+}
+
+#fabNavBtn {
+    display: flex !important;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.55rem 0.85rem;
+    min-height: 3rem;
+    border-radius: 1.5rem;
+    background: rgba(16, 185, 129, 0.2) !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25), 0 1px 3px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px) saturate(1.8);
+    -webkit-backdrop-filter: blur(16px) saturate(1.8);
+    color: #34d399 !important;
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+#fabNavBtn i {
+    font-size: 0.8rem !important;
+}
+
+#fabNavBtn .fab-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(248, 250, 252, 0.9);
+    white-space: nowrap;
+}
+
+#fabNavBtn:active {
+    transform: scale(0.93) !important;
+    background: rgba(16, 185, 129, 0.35) !important;
+}
+
+/* FAB Drawer */
+#fabNavDrawer {
+    display: none !important;
+    position: fixed !important;
+    bottom: calc(env(safe-area-inset-bottom, 0.5rem) + 5rem) !important;
+    left: calc(env(safe-area-inset-left, 0.5rem) + 1.5rem) !important;
+    z-index: 998 !important;
+    background: linear-gradient(180deg, rgba(20, 20, 35, 0.98) 0%, rgba(13, 13, 20, 0.99) 100%) !important;
+    border: 1px solid rgba(139, 92, 246, 0.15) !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    padding: 0.5rem !important;
+    min-width: 180px;
+    transform: scale(0.75) translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#fabNavDrawer.open {
+    display: flex !important;
+    flex-direction: column !important;
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#fabNavDrawer a {
+    display: flex !important;
+    align-items: center;
+    gap: 0.6rem !important;
+    padding: 0.65rem 0.85rem !important;
+    border-radius: 0.6rem !important;
+    font-size: 0.8rem !important;
+    color: rgba(248, 250, 252, 0.7) !important;
+    transition: background-color 0.1s ease, transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#fabNavDrawer a:active {
+    transform: scale(0.97);
+    background-color: rgba(139, 92, 246, 0.1) !important;
+}
+
+#fabNavDrawer a i {
+    font-size: 0.85rem !important;
+    width: 1.2rem;
+    text-align: center;
+}
+
+/* FAB overlay backdrop */
+#fabNavOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 997;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+#fabNavOverlay.open {
+    display: block;
+    opacity: 1;
+}

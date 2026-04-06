@@ -81,32 +81,45 @@
         }
         .dark-overlay-visible { opacity: 1; pointer-events: auto; }
 
+        /* Map container - uses aspect-ratio from external CSS */
         #interactiveMapContainer {
-        position: relative;
-        width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
-        /* Remove padding and ensure border doesn't shrink the content */
-        border: 2px solid rgba(59, 130, 246, 0.3);
-        border-radius: 0.5rem;
-        overflow: hidden;
-        box-sizing: border-box; /* Ensures the 2px border is included in the 900px */
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border: 2px solid rgba(59, 130, 246, 0.3);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-sizing: border-box;
         }
 
         #mapImageWrapper {
-            position: relative;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             cursor: grab;
-            /* This ensures markers calculate % based on the ACTUAL image pixels */
-            display: block; 
         }
 
         #worldMapImage {
             display: block;
             width: 100%;
             height: 100%;
-            object-fit: fill; /* Essential to match your 736:575 math exactly */
+            object-fit: contain;
+            object-position: center;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+
+        #mapMarkersLayer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
         }
         
 
@@ -694,8 +707,29 @@
         
         </style>
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/mobile-locations.css" rel="stylesheet" media="(max-width: 768px)">
 </head>
 <body class="text-wlLight"> 
+    <!-- FAB Navigation -->
+    <div id="fabNavContainer" class="fixed z-[999]" style="display:none;">
+        <button id="fabNavBtn" class="bg-wlDark border border-wlPurple border-opacity-30 shadow-lg">
+            <i class="fas fa-bars text-wlPurple"></i>
+            <span class="fab-label">Navigate</span>
+        </button>
+    </div>
+    <div id="fabNavDrawer" class="fixed z-[998] bg-wlDark border border-wlPurple border-opacity-20 rounded-xl shadow-2xl p-2" style="display:none;">
+        <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-home text-wlBlue"></i><span>Home</span></a>
+        <a href="Item.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-cube text-wlPurple"></i><span>Items</span></a>
+        <a href="quests.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-scroll text-wlGreen"></i><span>Quests</span></a>
+        <a href="monsters.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-paw text-wlRed"></i><span>Monsters</span></a>
+        <a href="Locations.html" class="flex items-center gap-3 px-4 py-3 rounded-lg bg-wlDarker"><i class="fas fa-map-marked-alt text-blue-400"></i><span>Locations</span></a>
+        <a href="tier-list.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-trophy text-wlPurple"></i><span>Tier List</span></a>
+        <a href="shops.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-store text-emerald-400"></i><span>Shops</span></a>
+        <a href="manufacture.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-hammer text-amber-400"></i><span>Manufacture</span></a>
+        <a href="Resources.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-wlDarker transition"><i class="fas fa-gem text-wlYellow"></i><span>Resources</span></a>
+    </div>
+    <div id="fabNavOverlay"></div>
+
     <div id="darkOverlay" class="dark-overlay"></div>
     <div id="mobileSidebar" class="sidebar sidebar-hidden fixed inset-y-0 right-0 w-64 bg-wlDarker z-50 shadow-2xl p-4 overflow-y-auto">
         <div class="flex justify-between items-center mb-8">
@@ -783,14 +817,14 @@
             <section id="interactiveMapSection" class="mb-12">
             <h3 class="text-2xl font-bold mb-2 text-wlBlue">World Map</h3>
             <p class="mb-4 text-wlLight/80">Click a marker to explore a location. Hover for names. Use the legend below for marker meanings.</p>
-            <div id="interactiveMapContainer" class="relative bg-wlDark bg-opacity-60 p-0 sm:p-0 rounded-lg shadow-2xl border-2 border-wlBlue/30 flex justify-center items-center overflow-hidden" style="width:100%; max-width:900px; margin:0 auto; aspect-ratio: 736/575;">
+            <div id="interactiveMapContainer" class="relative bg-wlDark bg-opacity-60 rounded-lg shadow-2xl border-2 border-wlBlue/30 overflow-hidden">
             
             <button id="zoomInBtn" class="absolute top-3 left-3 z-40 px-2 py-1 bg-wlBlue hover:bg-wlGreen text-white text-sm rounded shadow transition"><i class="fas fa-search-plus"></i></button>
             <button id="zoomOutBtn" class="absolute top-12 left-3 z-40 px-2 py-1 bg-wlBlue hover:bg-wlGreen text-white text-sm rounded shadow transition"><i class="fas fa-search-minus"></i></button>
             <button id="resetZoomBtn" class="absolute top-20 left-3 z-40 px-2 py-1 bg-wlPurple hover:bg-wlGreen text-white text-sm rounded shadow transition"><i class="fas fa-compress-arrows-alt"></i></button>
-            <div id="mapImageWrapper" style="position:relative;width:100%;height:100%;cursor:grab;">
-            <img id="worldMapImage" src="world_map.png" alt="World Map of Wonderland" class="rounded-md shadow-lg w-full h-full" style="border:0; user-select:none; -webkit-user-drag:none; object-fit: fill;" draggable="false">
-            <div id="mapMarkersLayer" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;"></div>
+            <div id="mapImageWrapper" style="cursor:grab;">
+            <img id="worldMapImage" src="world_map.png" alt="World Map of Wonderland" class="w-full h-full" style="border:0; user-select:none; -webkit-user-drag:none;" draggable="false">
+            <svg id="mapMarkersSvg" viewBox="0 0 736 575" preserveAspectRatio="xMidYMid meet" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;"></svg>
             </div>
             </div>
             <div class="flex items-center gap-4 mt-3 text-sm">
@@ -803,80 +837,46 @@
             </section>
             
             <style>
-            .marker-glow {
-            box-shadow: 0 0 8px 3px rgba(245, 158, 11, 0.6);
-             border: 2px solid #fff;
-             }
-            .map-marker {
-                position: absolute;
-                width: 14px;
-                height: 14px;
-                font-size: 8px;
-                pointer-events: auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-                border: 2px solid #fff;
-                transform: translate(-50%, -50%) scale(var(--marker-scale, 1));
+            /* ===== SVG MAP MARKERS ===== */
+            .map-marker-circle {
                 cursor: pointer;
-                transition: box-shadow 0.2s ease;
-             }
-            .map-marker i {
-              font-size: 0.6em;
-              opacity: 0;
+                pointer-events: all;
+                transition: filter 0.2s ease, r 0.2s ease;
             }
-            .map-marker:hover {
-              box-shadow: 0 0 12px 4px rgba(245, 158, 11, 0.8), 0 0 20px 6px rgba(239, 68, 68, 0.4);
+            .map-marker-circle:hover {
+                filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.9)) drop-shadow(0 0 16px rgba(239, 68, 68, 0.5));
             }
-            .map-marker:hover i {
-              opacity: 1;
+            .map-marker-circle.dungeon {
+                fill: url(#dungeonGrad);
             }
-            /* Dungeon markers - blue style */
-            .map-marker.dungeon {
-                background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            .map-marker-circle.dungeon:hover {
+                filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.9)) drop-shadow(0 0 16px rgba(139, 92, 246, 0.5));
             }
-            .map-marker.dungeon:hover {
-              box-shadow: 0 0 12px 4px rgba(59, 130, 246, 0.8), 0 0 20px 6px rgba(139, 92, 246, 0.4);
+            .map-marker-circle.highlighted {
+                stroke: #fff !important;
+                stroke-width: 3 !important;
+                filter: drop-shadow(0 0 10px #f59e0b) drop-shadow(0 0 4px #fff);
             }
-            /* Scale markers based on zoom level */
-            #mapImageWrapper {
-                --marker-scale: 1;
-            }
-            @media (max-width: 700px) {
-              .map-marker {
-                width: 12px;
-                height: 12px;
-                font-size: 6px;
-                transform: translate(-50%, -50%) scale(var(--marker-scale, 1));
-              }
+            .map-marker-text {
+                font-size: 9px;
+                fill: #fff;
+                pointer-events: none;
+                text-anchor: middle;
+                dominant-baseline: central;
+                font-weight: bold;
             }
             @media (max-width: 900px) {
               #interactiveMapContainer {
-                max-width: 98vw;
-              }
-              .map-marker {
-                width: 13px;
-                height: 13px;
-                font-size: 7px;
-                transform: translate(-50%, -50%) scale(var(--marker-scale, 1));
+                max-width: 98vw !important;
               }
             }
             @media (max-width: 640px) {
               #interactiveMapContainer {
-                max-width: 100vw;
+                max-width: 100vw !important;
                 min-width: 0;
               }
-              .map-marker {
-                width: 11px;
-                height: 11px;
-                font-size: 6px;
-                transform: translate(-50%, -50%) scale(var(--marker-scale, 1));
-              }
-              .marker-tooltip {
-                font-size: 0.92rem;
-                padding: 4px 8px;
+              .map-marker-text {
+                font-size: 8px !important;
               }
             }
             .marker-popover {
@@ -1271,6 +1271,98 @@
         }
         body.light-mode .text-wlLight\/60 {
             color: #8b7b9b !important;
+        }
+                /* ===== CORE FIX: Map Container and Wrapper ===== */
+
+        /* Container with aspect-ratio */
+        #interactiveMapContainer {
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            aspect-ratio: 736 / 575;
+            border: 2px solid rgba(59, 130, 246, 0.3);
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        /* CRITICAL: Use absolute positioning for proper sizing */
+        #mapImageWrapper {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            cursor: grab;
+            display: block;
+        }
+
+        /* Markers layer - ensure it fills properly */
+        #mapMarkersLayer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* ===== RESPONSIVE BREAKPOINTS ===== */
+
+        /* Medium screens (768px - 1024px) - KEY FIX AREA */
+        @media (max-width: 1024px) {
+            #interactiveMapContainer {
+                max-width: min(900px, 95vw);
+            }
+            
+            .map-marker {
+                width: 13px !important;
+                height: 13px !important;
+                font-size: 7px !important;
+            }
+        }
+
+        /* Tablet screens */
+        @media (max-width: 900px) {
+            #interactiveMapContainer {
+                max-width: 98vw !important;
+            }
+            
+            .map-marker {
+                width: 12px !important;
+                height: 12px !important;
+                font-size: 6px !important;
+            }
+        }
+
+        /* Mobile screens */
+        @media (max-width: 768px) {
+            #interactiveMapContainer {
+                max-width: 100% !important;
+                border-width: 1px !important;
+            }
+            
+            .map-marker {
+                width: 11px !important;
+                height: 11px !important;
+                font-size: 6px !important;
+            }
+        }
+
+        /* Small mobile */
+        @media (max-width: 640px) {
+            #interactiveMapContainer {
+                max-width: 100vw !important;
+            }
+            
+            .map-marker {
+                width: 10px !important;
+                height: 10px !important;
+                font-size: 5px !important;
+            }
         }
     </style>
 
@@ -2865,52 +2957,52 @@
     // These are calculated from the original percentages: x = left% * 736 / 100, y = top% * 575 / 100
 const markerPos = {
     'korea': {x: 500, y: 105, name: 'Korea'},
-    'koyota': {x: 550, y: 92, name: 'Koyota'},
-    'yamataikoku': {x: 525, y: 102, name: 'Yamataikoku'},
-    'shayii-hill': {x: 565, y: 40, name: 'Shayii Hill'},
-    'ghost-isle': {x: 602, y: 5, name: 'Ghost Isle'},
-    'hawaii': {x: 611, y: 150, name: 'Hawaii'},
-    'fishing-village': {x: 498, y: 72, name: 'Fishing Village'},
-    'taiwan': {x: 500, y: 95, name: 'Taiwan'},
-    'ancient-yazhou-city': {x: 470, y: 95, name: 'Ancient Yazhou City'},
-    'bangkok': {x: 442, y: 115, name: 'Bangkok'},
-    'philippines': {x: 523, y: 112, name: 'Philippines'},
-    'zheng-he-fleet': {x: 443, y: 118, name: "Zheng He's Fleet"},
-    'polo-island': {x: 445, y: 150, name: 'Polo Island'},
-    'hezrou-island': {x: 482, y: 175, name: 'Hezrou Island'},
-    'universal': {x: 390, y: 166, name: 'Universal'},
-    'centaurs-island': {x: 332, y: 155, name: "Centaur's Island"},
-    'lions-isle': {x: 362, y: 83, name: "Lion's Isle"},
-    'calcutta': {x: 396, y: 15, name: 'Calcutta'},
-    'training-island': {x: 572, y: 163, name: 'Training Island'},
-    'north-island': {x: 525, y: 200, name: 'North Island'},
-    'stoowa-isle': {x: 498, y: 270, name: 'Stoowa Isle'},
-    'south-island': {x: 525, y: 210, name: 'South Island'},
-    'cook-island': {x: 525, y: 225, name: 'Cook Island'},
-    'magellan-fleet': {x: 589, y: 253, name: "Magellan's Fleet"},
-    'oslya': {x: 475, y: 149, name: 'Oslya'},
-    'south-pole': {x: 465, y: 260, name: 'South Pole'},
-    'sky-city': {x: 375, y: 210, name: 'Sky City'},
-    'snow-island': {x: 266, y: 216, name: 'Snow Island'},
-    'revival-island': {x: 680, y: 160, name: 'Revival Island'},
-    'iceberg': {x: 710, y: 205, name: 'Iceberg'},
-    'inca': {x: 708, y: 45, name: 'Inca'},
-    'mayan-forest': {x: 718, y: -60, name: 'Mayan Forest'},
-    'ghost-fleet': {x: 310, y: 120, name: 'Ghost Fleet'},
-    'madagascar': {x: 238, y: -45, name: 'Madagascar'},
-    'african-villages': {x: 220, y: -125, name: 'African Villages'},
-    'persia': {x: 302, y: -240, name: 'Persia'},
-    'egypt': {x: 210, y: -260, name: 'Egypt'},
-    'turtle-isle': {x: 210, y: -305, name: 'Turtle Isle'},
-    'fog-jungle': {x: 140, y: -400, name: 'Fog Jungle'},
-    'bordeaux-jungle': {x: 140, y: -385, name: 'Bordeaux Jungle'},
-    'avignon-jungle': {x: 158, y: -370, name: 'Avignon Jungle'},
-    'rome': {x: 185, y: -370, name: 'Rome'},
-    'hanging-gardens': {x: 205, y: -380, name: 'Hanging Gardens'},
-    'sea-monster': {x: 223, y: -395, name: 'Sea Monster'},
-    'athens': {x: 191, y: -385, name: 'Athens'},
-    'rhode-islands': {x: 170, y: -395, name: 'Rhode Islands'},
-    'relic-island': {x: 175, y: -390, name: 'Relic Island'}
+    'koyota': {x: 520, y: 110, name: 'Koyota'},
+    'yamataikoku': {x: 520, y: 130, name: 'Yamataikoku'},
+    'shayii-hill': {x: 565, y: 75, name: 'Shayii Hill'},
+    'ghost-isle': {x: 600, y: 52, name: 'Ghost Isle'},
+    'hawaii': {x: 600, y: 190, name: 'Hawaii'},
+    'fishing-village': {x: 498, y: 140, name: 'Fishing Village'},
+    'taiwan': {x: 500, y: 175, name: 'Taiwan'},
+    'ancient-yazhou-city': {x: 470, y: 190, name: 'Ancient Yazhou City'},
+    'bangkok': {x: 442, y: 220, name: 'Bangkok'},
+    'philippines': {x: 523, y: 222, name: 'Philippines'},
+    'zheng-he-fleet': {x: 443, y: 250, name: "Zheng He's Fleet"},
+    'polo-island': {x: 445, y: 290, name: 'Polo Island'},
+    'hezrou-island': {x: 482, y: 325, name: 'Hezrou Island'},
+    'universal': {x: 390, y: 325, name: 'Universal'},
+    'centaurs-island': {x: 332, y: 315, name: "Centaur's Island"},
+    'lions-isle': {x: 362, y: 245, name: "Lion's Isle"},
+    'calcutta': {x: 396, y: 200, name: 'Calcutta'},
+    'training-island': {x: 572, y: 370, name: 'Training Island'},
+    'north-island': {x: 525, y: 420, name: 'North Island'},
+    'stoowa-isle': {x: 498, y: 500, name: 'Stoowa Isle'},
+    'south-island': {x: 525, y: 455, name: 'South Island'},
+    'cook-island': {x: 525, y: 475, name: 'Cook Island'},
+    'magellan-fleet': {x: 589, y: 523, name: "Magellan's Fleet"},
+    'oslya': {x: 475, y: 425, name: 'Oslya'},
+    'south-pole': {x: 465, y: 545, name: 'South Pole'},
+    'sky-city': {x: 375, y: 510, name: 'Sky City'},
+    'snow-island': {x: 266, y: 526, name: 'Snow Island'},
+    'revival-island': {x: 680, y: 480, name: 'Revival Island'},
+    'iceberg': {x: 710, y: 535, name: 'Iceberg'},
+    'inca': {x: 708, y: 390, name: 'Inca'},
+    'mayan-forest': {x: 718, y: 290, name: 'Mayan Forest'},
+    'ghost-fleet': {x: 310, y: 520, name: 'Ghost Fleet'},
+    'madagascar': {x: 238, y: 335, name: 'Madagascar'},
+    'african-villages': {x: 220, y: 265, name: 'African Villages'},
+    'persia': {x: 302, y: 165, name: 'Persia'},
+    'egypt': {x: 210, y: 155, name: 'Egypt'},
+    'turtle-isle': {x: 170, y: 135, name: 'Turtle Isle'},
+    'fog-jungle': {x: 140, y: 35, name: 'Fog Jungle'},
+    'bordeaux-jungle': {x: 140, y: 75, name: 'Bordeaux Jungle'},
+    'avignon-jungle': {x: 158, y: 60, name: 'Avignon Jungle'},
+    'rome': {x: 155, y: 90, name: 'Rome'},
+    'hanging-gardens': {x: 210, y: 120, name: 'Hanging Gardens'},
+    'sea-monster': {x: 223, y: 95, name: 'Sea Monster'},
+    'athens': {x: 185, y: 105, name: 'Athens'},
+    'rhode-islands': {x: 175, y: 120, name: 'Rhode Islands'},
+    'relic-island': {x: 175, y: 140, name: 'Relic Island'}
 };
 
 // Natural dimensions of the world map image
@@ -2957,12 +3049,17 @@ function updateMapScale() {
 
 // Convert natural pixel coordinates to displayed pixel coordinates
 function naturalToDisplay(naturalX, naturalY) {
-    const result = {
-        x: naturalX * mapScale.x,
-        y: naturalY * mapScale.y
+    // Calculate scale based on actual container dimensions
+    if (!mapWrapper) return { x: 0, y: 0 };
+    
+    const containerRect = mapWrapper.getBoundingClientRect();
+    const scaleX = containerRect.width / MAP_NATURAL_WIDTH;
+    const scaleY = containerRect.height / MAP_NATURAL_HEIGHT;
+    
+    return {
+        x: naturalX * scaleX,
+        y: naturalY * scaleY
     };
-    console.log('naturalToDisplay:', { naturalX, naturalY, result, mapScale });
-    return result;
 }
 
     // THE MAIN SEARCH LISTING RENDER FUNCTION (make sure it's defined in this scope!)
@@ -3154,183 +3251,181 @@ function naturalToDisplay(naturalX, naturalY) {
         }, 0);
     }
 
-// --- Dynamically render map markers ---
+    // --- SVG Map Markers ---
+const SVG_NS = 'http://www.w3.org/2000/svg';
+const MAP_W = 736;
+const MAP_H = 575;
+
+// Dungeon location IDs
+const DUNGEON_IDS = new Set(['shayii-hill','ghost-isle','ghost-fleet','sea-monster','hanging-gardens','relic-island','mayian-forest','madagascar','turtle-isle','fog-jungle','avignon-jungle','bordeaux-jungle','rhode-islands','hezrou-island','polo-island','revival-island','iceberg','mayian-forest','inca']);
+
 function renderMapMarkers() {
-    const mapMarkersLayer = document.getElementById('mapMarkersLayer');
-    if (!mapMarkersLayer) return;
-    
-    // Update scale before rendering
-    if (!updateMapScale()) {
-        // If image not loaded yet, wait and retry
-        setTimeout(renderMapMarkers, 100);
-        return;
-    }
-    
-    mapMarkersLayer.innerHTML = '';
+    const svg = document.getElementById('mapMarkersSvg');
+    if (!svg) return;
+
+    // Clear existing markers
+    svg.innerHTML = '';
+
+    // Define gradients
+    const defs = document.createElementNS(SVG_NS, 'defs');
+    defs.innerHTML = `
+        <radialGradient id="mainGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f59e0b"/>
+            <stop offset="100%" stop-color="#ef4444"/>
+        </radialGradient>
+        <radialGradient id="dungeonGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#3b82f6"/>
+            <stop offset="100%" stop-color="#8b5cf6"/>
+        </radialGradient>
+    `;
+    svg.appendChild(defs);
+
+    // Create a group for all markers
+    const markersGroup = document.createElementNS(SVG_NS, 'g');
+    markersGroup.setAttribute('id', 'markersGroup');
+    svg.appendChild(markersGroup);
+
     Object.entries(markerPos).forEach(([id, pos]) => {
-        const div = document.createElement('div');
-        div.className = 'map-marker marker-glow tooltip-marker';
-        
-        // Convert natural pixel coordinates to displayed coordinates
-        const displayPos = naturalToDisplay(pos.x, pos.y);
-        div.style.top = displayPos.y + 'px';
-        div.style.left = displayPos.x + 'px';
-        div.setAttribute('data-location-id', id);
-        div.setAttribute('aria-label', pos.name);
-        div.setAttribute('tabindex', '0');
-        div.innerHTML = `<i class="fas fa-map-pin"></i><span class="marker-tooltip">${pos.name}</span>`;
-        // Popover
+        const isDungeon = DUNGEON_IDS.has(id);
+        const g = document.createElementNS(SVG_NS, 'g');
+        g.setAttribute('class', 'map-marker-svg');
+        g.setAttribute('data-location-id', id);
+        g.setAttribute('cursor', 'pointer');
+        g.style.pointerEvents = 'all';
+
+        // Outer glow circle
+        const glowCircle = document.createElementNS(SVG_NS, 'circle');
+        glowCircle.setAttribute('cx', pos.x);
+        glowCircle.setAttribute('cy', pos.y);
+        glowCircle.setAttribute('r', 10);
+        glowCircle.setAttribute('fill', 'none');
+        glowCircle.setAttribute('stroke', isDungeon ? '#8b5cf6' : '#f59e0b');
+        glowCircle.setAttribute('stroke-width', '2');
+        glowCircle.setAttribute('opacity', '0.5');
+        glowCircle.setAttribute('pointer-events', 'none');
+        g.appendChild(glowCircle);
+
+        // Main marker circle
+        const circle = document.createElementNS(SVG_NS, 'circle');
+        circle.setAttribute('cx', pos.x);
+        circle.setAttribute('cy', pos.y);
+        circle.setAttribute('r', 7);
+        circle.setAttribute('fill', isDungeon ? 'url(#dungeonGrad)' : 'url(#mainGrad)');
+        circle.setAttribute('stroke', '#fff');
+        circle.setAttribute('stroke-width', '2');
+        circle.classList.add('map-marker-circle');
+        if (isDungeon) circle.classList.add('dungeon');
+        g.appendChild(circle);
+
+        // Small center dot
+        const dot = document.createElementNS(SVG_NS, 'circle');
+        dot.setAttribute('cx', pos.x);
+        dot.setAttribute('cy', pos.y);
+        dot.setAttribute('r', 2);
+        dot.setAttribute('fill', '#fff');
+        dot.setAttribute('pointer-events', 'none');
+        g.appendChild(dot);
+
+        // Create popover HTML element (for hover info)
         const popover = document.createElement('div');
         popover.className = 'marker-popover';
         popover.innerHTML = `
-          <div class="popover-title">${pos.name}</div>
-          <div class="popover-section"><i class="fas fa-paw"></i>Monsters: <span class="popover-monsters">Loading...</span></div>
-          <div class="popover-section"><i class="fas fa-user-friends"></i>NPCs: <span class="popover-npcs">Loading...</span></div>
+            <div class="popover-title">${pos.name}</div>
+            <div class="popover-section"><i class="fas fa-paw"></i>Monsters: <span class="popover-monsters">Loading...</span></div>
+            <div class="popover-section"><i class="fas fa-user-friends"></i>NPCs: <span class="popover-npcs">Loading...</span></div>
         `;
-        div.appendChild(popover);
-        mapMarkersLayer.appendChild(div);
-    });
-    // Re-bind marker events
-    setTimeout(() => {
-        document.querySelectorAll('.map-marker').forEach(marker => {
-            const popover = marker.querySelector('.marker-popover');
-            marker.addEventListener('mouseenter', () => {
-                if (popover) {
-                    // Fill popover with data
-                    const id = marker.getAttribute('data-location-id');
-                    const loc = locationsData[id];
-                    if (loc) {
-                        popover.querySelector('.popover-monsters').textContent = loc.monsters.map(m=>m.name).join(', ') || 'None';
-                        popover.querySelector('.popover-npcs').textContent = loc.npcs.join(', ') || 'None';
-                    }
-                    // Position popover using fixed positioning to stay within viewport
-                    const markerRect = marker.getBoundingClientRect();
-                    const popoverWidth = 200; // Approximate width
-                    const popoverHeight = 100; // Approximate height
-                    
-                    // Calculate position
-                    let left = markerRect.left + markerRect.width / 2;
-                    let top = markerRect.top - 10;
-                    
-                    // Check if popover would go above viewport
-                    if (top - popoverHeight < 10) {
-                        // Show below instead
-                        top = markerRect.bottom + 10;
-                    }
-                    
-                    // Check if popover would go off right edge
-                    if (left + popoverWidth / 2 > window.innerWidth - 10) {
-                        left = window.innerWidth - popoverWidth / 2 - 10;
-                    }
-                    
-                    // Check if popover would go off left edge
-                    if (left - popoverWidth / 2 < 10) {
-                        left = popoverWidth / 2 + 10;
-                    }
-                    
-                    popover.style.position = 'fixed';
-                    popover.style.left = left + 'px';
-                    popover.style.top = top + 'px';
-                    popover.style.transform = 'translate(-50%, -100%)';
-                    popover.classList.add('visible');
-                }
-            });
-            marker.addEventListener('mouseleave', () => {
-                if (popover) popover.classList.remove('visible');
-            });
-            marker.addEventListener('focus', () => {
-                if (popover) {
-                    const id = marker.getAttribute('data-location-id');
-                    const loc = locationsData[id];
-                    if (loc) {
-                        popover.querySelector('.popover-monsters').textContent = loc.monsters.map(m=>m.name).join(', ') || 'None';
-                        popover.querySelector('.popover-npcs').textContent = loc.npcs.join(', ') || 'None';
-                    }
-                    // Position popover using fixed positioning to stay within viewport
-                    const markerRect = marker.getBoundingClientRect();
-                    const popoverWidth = 200;
-                    const popoverHeight = 100;
-                    
-                    let left = markerRect.left + markerRect.width / 2;
-                    let top = markerRect.top - 10;
-                    
-                    if (top - popoverHeight < 10) {
-                        top = markerRect.bottom + 10;
-                    }
-                    
-                    if (left + popoverWidth / 2 > window.innerWidth - 10) {
-                        left = window.innerWidth - popoverWidth / 2 - 10;
-                    }
-                    
-                    if (left - popoverWidth / 2 < 10) {
-                        left = popoverWidth / 2 + 10;
-                    }
-                    
-                    popover.style.position = 'fixed';
-                    popover.style.left = left + 'px';
-                    popover.style.top = top + 'px';
-                    popover.style.transform = 'translate(-50%, -100%)';
-                    popover.classList.add('visible');
-                }
-            });
-            marker.addEventListener('blur', () => {
-                if (popover) popover.classList.remove('visible');
-            });
-            marker.addEventListener('click', () => {
-                const locationId = marker.dataset.locationId;
-                const data = locationsData[locationId];
-                if (data) {
-                    displayLocationDetails(data);
-                    setTimeout(() => {
-                      document.getElementById('locationDetailSection').scrollIntoView({behavior: 'smooth', block: 'start'});
-                    }, 100);
-                }
-            });
-            marker.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    const locationId = marker.dataset.locationId;
-                    const data = locationsData[locationId];
-                    if (data) {
-                        displayLocationDetails(data);
-                        setTimeout(() => {
-                          document.getElementById('locationDetailSection').scrollIntoView({behavior: 'smooth', block: 'start'});
-                        }, 100);
-                    }
-                }
-            });
+        document.body.appendChild(popover);
+        g._popover = popover;
+
+        // Event handlers
+        const showPopover = () => {
+            const loc = locationsData[id];
+            if (loc && popover) {
+                popover.querySelector('.popover-monsters').textContent = loc.monsters.map(m => m.name).join(', ') || 'None';
+                popover.querySelector('.popover-npcs').textContent = loc.npcs.join(', ') || 'None';
+            }
+            // Get SVG element's position on screen
+            const svgRect = svg.getBoundingClientRect();
+            // Calculate the marker's screen position using SVG viewBox scaling
+            const scaleX = svgRect.width / MAP_W;
+            const scaleY = svgRect.height / MAP_H;
+            const screenX = svgRect.left + pos.x * scaleX;
+            const screenY = svgRect.top + pos.y * scaleY;
+            
+            let left = screenX;
+            let top = screenY - 10;
+
+            // Keep popover inside viewport
+            if (top < 110) top = screenY + 15;
+            if (left > window.innerWidth - 120) left = window.innerWidth - 120;
+            if (left < 100) left = 100;
+
+            popover.style.position = 'fixed';
+            popover.style.left = left + 'px';
+            popover.style.top = top + 'px';
+            popover.style.transform = 'translate(-50%, -100%)';
+            popover.classList.add('visible');
+        };
+
+        const hidePopover = () => {
+            if (popover) popover.classList.remove('visible');
+        };
+
+        g.addEventListener('mouseenter', showPopover);
+        g.addEventListener('mouseleave', hidePopover);
+        g.addEventListener('click', () => {
+            const data = locationsData[id];
+            if (data) displayLocationDetails(data);
         });
-    }, 10);
+
+        markersGroup.appendChild(g);
+    });
 }
 
-// --- Highlight search result when marker is hovered/focused ---
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    document.querySelectorAll('.map-marker').forEach(marker => {
-      marker.addEventListener('mouseenter', () => {
-        const id = marker.getAttribute('data-location-id');
-        document.querySelectorAll('.result-card').forEach(card => {
-          if(card.innerHTML.includes(locationsData[id].name)) card.classList.add('highlighted');
-        });
-        marker.classList.add('highlighted');
-      });
-      marker.addEventListener('mouseleave', () => {
-        document.querySelectorAll('.result-card').forEach(card => card.classList.remove('highlighted'));
-        marker.classList.remove('highlighted');
-      });
-      marker.addEventListener('focus', () => {
-        const id = marker.getAttribute('data-location-id');
-        document.querySelectorAll('.result-card').forEach(card => {
-          if(card.innerHTML.includes(locationsData[id].name)) card.classList.add('highlighted');
-        });
-        marker.classList.add('highlighted');
-      });
-      marker.addEventListener('blur', () => {
-        document.querySelectorAll('.result-card').forEach(card => card.classList.remove('highlighted'));
-        marker.classList.remove('highlighted');
-      });
+// Helper: highlight SVG marker by location id
+function highlightSvgMarker(id) {
+    document.querySelectorAll('#markersGroup g').forEach(g => {
+        const cid = g.getAttribute('data-location-id');
+        const circle = g.querySelector('.map-marker-circle');
+        if (circle) {
+            if (cid === id) {
+                circle.classList.add('highlighted');
+            } else {
+                circle.classList.remove('highlighted');
+            }
+        }
     });
-  }, 500);
-});
+}
+
+    // --- Highlight search result when marker is hovered/focused ---
+    document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.querySelectorAll('.map-marker').forEach(marker => {
+        marker.addEventListener('mouseenter', () => {
+            const id = marker.getAttribute('data-location-id');
+            document.querySelectorAll('.result-card').forEach(card => {
+            if(card.innerHTML.includes(locationsData[id].name)) card.classList.add('highlighted');
+            });
+            marker.classList.add('highlighted');
+        });
+        marker.addEventListener('mouseleave', () => {
+            document.querySelectorAll('.result-card').forEach(card => card.classList.remove('highlighted'));
+            marker.classList.remove('highlighted');
+        });
+        marker.addEventListener('focus', () => {
+            const id = marker.getAttribute('data-location-id');
+            document.querySelectorAll('.result-card').forEach(card => {
+            if(card.innerHTML.includes(locationsData[id].name)) card.classList.add('highlighted');
+            });
+            marker.classList.add('highlighted');
+        });
+        marker.addEventListener('blur', () => {
+            document.querySelectorAll('.result-card').forEach(card => card.classList.remove('highlighted'));
+            marker.classList.remove('highlighted');
+        });
+        });
+    }, 500);
+    });
 
     // Bind search (and also ENTER on input)
     if (searchButton && searchInput) {
@@ -3544,12 +3639,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         
-        // Persistent highlight
-        document.querySelectorAll('.map-marker').forEach(m => m.classList.remove('highlighted'));
-        if (thisId) {
-            const marker = document.querySelector(`.map-marker[data-location-id='${thisId}']`);
-            if (marker) marker.classList.add('highlighted');
-        }
+        // Persistent highlight SVG marker
+        highlightSvgMarker(thisId);
         locationDetailSection.classList.remove('hidden');
         locationDetailSection.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
@@ -3597,16 +3688,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             window.location.hash = encodeURIComponent(data.name.replace(/\s+/g,'_'));
         }
-        // Animate marker bounce
-        let thisId = Object.keys(locationsData).find(id => locationsData[id].name === data.name);
-        if (thisId) {
-            const marker = document.querySelector(`.map-marker[data-location-id='${thisId}']`);
-            if (marker) {
-                marker.classList.remove('highlighted');
-                void marker.offsetWidth; // force reflow
-                marker.classList.add('highlighted');
-            }
-        }
+        // Highlight SVG marker
+        let thisId2 = Object.keys(locationsData).find(id => locationsData[id].name === data.name);
+        highlightSvgMarker(thisId2);
     }
 // On page load, open location if hash is present
 window.addEventListener('DOMContentLoaded', () => {
@@ -3728,22 +3812,13 @@ window.addEventListener('DOMContentLoaded', () => {
     // Initial marker render
     renderMapMarkers();
     
-    // Recalculate marker positions on window resize
+        // No need to recalculate marker positions on resize anymore!
+    // Percentages handle the responsive layout automatically.
     let resizeTimeout = null;
     window.addEventListener('resize', () => {
-        // Debounce resize events
         if (resizeTimeout) clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
-            updateMapScale();
-            // Update all marker positions
-            document.querySelectorAll('.map-marker').forEach(marker => {
-                const id = marker.getAttribute('data-location-id');
-                if (id && markerPos[id]) {
-                    const displayPos = naturalToDisplay(markerPos[id].x, markerPos[id].y);
-                    marker.style.top = displayPos.y + 'px';
-                    marker.style.left = displayPos.x + 'px';
-                }
-            });
+            // Optional: update other UI elements if needed
         }, 50);
     });
     
@@ -3781,6 +3856,35 @@ window.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('theme', 'dark');
         }
     });
+
+    // FAB Navigation (mobile only)
+    const fabNavBtn = document.getElementById('fabNavBtn');
+    const fabNavDrawer = document.getElementById('fabNavDrawer');
+    const fabNavOverlay = document.getElementById('fabNavOverlay');
+
+    if (fabNavBtn && fabNavDrawer && fabNavOverlay) {
+        function closeFabNav() {
+            fabNavDrawer.classList.remove('open');
+            fabNavOverlay.classList.remove('open');
+        }
+
+        fabNavBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isOpen = fabNavDrawer.classList.contains('open');
+            if (isOpen) {
+                closeFabNav();
+            } else {
+                fabNavDrawer.classList.add('open');
+                fabNavOverlay.classList.add('open');
+            }
+        });
+
+        fabNavOverlay.addEventListener('click', closeFabNav);
+
+        fabNavDrawer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeFabNav);
+        });
+    }
 </script>
 </body>
 </html>

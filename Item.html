@@ -188,10 +188,53 @@
             transition: opacity 0.3s ease;
         }
         
-        .dark-overlay-visible {
-            opacity: 1;
-            pointer-events: auto;
-        }
+.dark-overlay-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Mobile Filter Sheet Text Visibility Fix */
+@media (max-width: 768px) {
+    #mobileFilterSheet {
+        z-index: 100 !important;
+    }
+    #mobileFilterSheet .sheet-inner {
+        color: #f8fafc !important;
+        background: rgba(15, 23, 42, 0.95) !important;
+        backdrop-filter: blur(20px);
+    }
+    #mobileFilterSheet input,
+    #mobileFilterSheet select,
+    #mobileFilterSheet textarea {
+        color: #f8fafc !important;
+        caret-color: #8b5cf6;
+    }
+    #mobileFilterSheet label {
+        color: rgba(248, 250, 252, 0.5) !important;
+    }
+    #mobileFilterSheet input::placeholder {
+        color: rgba(248, 250, 252, 0.6) !important;
+    }
+    #mobileFilterSheet select option {
+        color: #f8fafc !important;
+        background: #1e293b !important;
+    }
+    #mobileFilterSheet .filter-section-content {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    #mobileFilterSheet .quick-filter-chip,
+    #mobileFilterSheet .base-pill {
+        color: #f8fafc !important;
+        background: rgba(139, 92, 246, 0.2) !important;
+        border-color: rgba(139, 92, 246, 0.4) !important;
+    }
+    #mobileFilterSheet .quick-filter-chip.selected,
+    #mobileFilterSheet .base-pill.selected {
+        background: rgba(139, 92, 246, 0.4) !important;
+        color: #f8fafc !important;
+    }
+}
         
         /* Reserve space for loading indicator to prevent layout shift */
         #loadingIndicator {
@@ -363,401 +406,6 @@
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(255, 255, 255, 0.3);
         }
-        
-        /* ================================================================
-           ✨ LEGENDARY MOBILE EXPERIENCE ✨
-           Holographic cards • Bottom-sheet filters • Immersive tabbed modal
-           Swipe gestures • 3D tilt • Count-up stats • Particle glow
-           ================================================================ */
-        @media (max-width: 768px) {
-            /* ===== NOISE TEXTURE OVERLAY ===== */
-            body::after {
-                content: '';
-                position: fixed;
-                inset: 0;
-                pointer-events: none;
-                z-index: 0;
-                opacity: 0.03;
-                background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-            }
-
-            /* ===== COMPACT HEADER ===== */
-            header { padding: 0.5rem 0 !important; }
-            header h1 { font-size: 0.9rem !important; }
-            header .w-10.h-10 { width: 1.75rem !important; height: 1.75rem !important; }
-            header .w-10.h-10 i { font-size: 0.75rem !important; }
-
-            /* ===== PAGE SECTION ===== */
-            main { padding: 0.5rem 0 !important; }
-            section.mb-8 { margin-bottom: 0.5rem !important; }
-            section h2 { font-size: 1.15rem !important; margin-bottom: 0.25rem !important; }
-
-            /* ===== STICKY FILTER BUTTON BAR ===== */
-            .flex.flex-col.md\:flex-row.justify-between {
-                gap: 0.4rem !important;
-                background: rgba(10, 10, 18, 0.7);
-                backdrop-filter: blur(16px);
-                -webkit-backdrop-filter: blur(16px);
-                border-radius: 0.75rem;
-                padding: 0.5rem 0.75rem;
-                margin: 0 0 0.5rem 0;
-            }
-            #toggleFilters {
-                min-height: 40px !important;
-                font-size: 0.78rem !important;
-                padding: 0 1rem !important;
-                border-radius: 2rem !important;
-                background: rgba(139, 92, 246, 0.15) !important;
-                border: 1px solid rgba(139, 92, 246, 0.4) !important;
-                color: #c4b5fd !important;
-                transition: all 0.15s ease;
-                position: relative;
-            }
-            #toggleFilters:active {
-                transform: scale(0.95);
-                background: rgba(139, 92, 246, 0.3) !important;
-            }
-            /* Filter count badge */
-            #filterCountBadge {
-                position: absolute;
-                top: -6px;
-                right: -6px;
-                min-width: 18px;
-                height: 18px;
-                border-radius: 9px;
-                background: linear-gradient(135deg, #8b5cf6, #3b82f6);
-                color: white;
-                font-size: 0.6rem;
-                font-weight: 700;
-                display: none;
-                align-items: center;
-                justify-content: center;
-                padding: 0 4px;
-                box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
-                animation: badgePop 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            }
-            #filterCountBadge.visible {
-                display: flex;
-            }
-            @keyframes badgePop {
-                0% { transform: scale(0); }
-                60% { transform: scale(1.2); }
-                100% { transform: scale(1); }
-            }
-
-            /* ===== FORCE GRID ONLY ===== */
-            #tableView, #tableViewBtn { display: none !important; }
-            #gridView { display: block !important; }
-            #gridViewBtn { display: none !important; }
-
-            /* ===== FLOATING SORT BUTTON (MOBILE) ===== */
-            #mobileSortBtn {
-                display: flex !important;
-                align-items: center;
-                gap: 0.4rem;
-                min-height: 36px;
-                padding: 0.35rem 0.65rem;
-                border-radius: 2rem;
-                background: linear-gradient(135deg, rgba(139,92,246,0.12), rgba(59,130,246,0.12)) !important;
-                border: 1px solid rgba(139,92,246,0.3) !important;
-                color: #c4b5fd !important;
-                font-size: 0.72rem !important;
-                font-weight: 500;
-                cursor: pointer;
-                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-                backdrop-filter: blur(12px);
-                -webkit-backdrop-filter: blur(12px);
-                box-shadow: 0 2px 12px rgba(139,92,246,0.15);
-                position: relative;
-                overflow: hidden;
-                -webkit-tap-highlight-color: transparent;
-                margin-top: 0;
-            }
-            #mobileSortBtn:active {
-                transform: scale(0.95);
-                background: linear-gradient(135deg, rgba(139,92,246,0.25), rgba(59,130,246,0.25)) !important;
-                border-color: rgba(139,92,246,0.5) !important;
-                color: #fff !important;
-            }
-            #mobileSortBtn .sort-icon {
-                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                font-size: 0.7rem;
-            }
-            #mobileSortBtn.sort-changed .sort-icon {
-                animation: sortSpin 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-            @keyframes sortSpin {
-                0% { transform: rotate(0deg) scale(1); }
-                50% { transform: rotate(180deg) scale(1.3); }
-                100% { transform: rotate(360deg) scale(1); }
-            }
-            /* Sort indicator dot when non-default */
-            #mobileSortBtn .sort-dot {
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background: rgba(139,92,246,0.4);
-                margin-left: auto;
-                transition: all 0.2s ease;
-            }
-            #mobileSortBtn.has-active-sort .sort-dot {
-                background: #8b5cf6;
-                box-shadow: 0 0 8px rgba(139,92,246,0.6);
-                animation: dotPulse 2s ease-in-out infinite;
-            }
-            @keyframes dotPulse {
-                0%, 100% { box-shadow: 0 0 4px rgba(139,92,246,0.3); }
-                50% { box-shadow: 0 0 12px rgba(139,92,246,0.6); }
-            }
-            /* Hide desktop sort toggle on mobile */
-            #gridSortToggle { display: none !important; }
-            
-            /* Sort buttons container on mobile */
-            #mobileSortBtn {
-                flex-shrink: 0;
-            }
-            
-            /* Mobile: sort on left, count on right, hide view toggle buttons */
-            .flex.flex-col.sm\:flex-row.justify-between {
-                flex-direction: row !important;
-                align-items: center !important;
-                justify-content: space-between !important;
-            }
-            .flex.flex-col.sm\:flex-row.justify-between > div:first-child {
-                order: 1 !important;
-                width: auto !important;
-                justify-content: flex-start !important;
-            }
-            .flex.flex-col.sm\:flex-row.justify-between > div:last-child {
-                order: 2 !important;
-                width: auto !important;
-            }
-            .flex.flex-col.sm\:flex-row.justify-between > div:last-child > .text-sm {
-                margin-right: auto !important;
-            }
-            /* Hide view toggle buttons on mobile */
-            .flex.flex-col.sm\:flex-row.justify-between > div:last-child > .flex.space-x-2 {
-                display: none !important;
-            }
-
-            /* ===== COMPACT COUNT BAR ===== */
-            .flex.justify-between.items-center.mb-4 {
-                flex-direction: column !important;
-                gap: 0.25rem !important;
-                margin-bottom: 0.3rem !important;
-            }
-            .flex.justify-between.items-center.mb-4 .text-sm {
-                font-size: 0.7rem !important;
-                color: rgba(248, 250, 252, 0.4) !important;
-            }
-            .flex.justify-between.items-center.mb-4 > div:last-child {
-                display: none !important;
-            }
-
-            /* ===== HOLOGRAPHIC GRID CARDS WITH 3D TILT ===== */
-            #itemsGrid {
-                display: grid !important;
-                grid-template-columns: repeat(2, 1fr) !important;
-                gap: 0.45rem !important;
-                padding: 0 !important;
-            }
-            .skeleton-card, #itemsGrid > div.bg-wlDark {
-                padding: 0.4rem !important;
-            }
-            #itemsGrid > div.item-card {
-                position: relative;
-                padding: 0 !important;
-                border-radius: 0.75rem !important;
-                overflow: hidden !important;
-                border: 1px solid rgba(255, 255, 255, 0.06) !important;
-                background: #0d0d14 !important;
-                backdrop-filter: blur(20px) saturate(1.8);
-                -webkit-backdrop-filter: blur(20px) saturate(1.8);
-                box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.2);
-                transition: transform 0.1s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
-                will-change: transform;
-                -webkit-tap-highlight-color: transparent;
-                contain: layout style paint;
-                transform-style: preserve-3d;
-                perspective: 800px;
-            }
-            /* Rarity shimmer animation */
-            #itemsGrid > div.item-card::before {
-                content: '';
-                position: absolute;
-                inset: 0;
-                border-radius: inherit;
-                background: linear-gradient(105deg, transparent 30%, rgba(139,92,246,0.08) 45%, rgba(139,92,246,0.15) 50%, rgba(139,92,246,0.08) 55%, transparent 70%);
-                background-size: 200% 100%;
-                animation: shimmerSweep 3s ease-in-out infinite;
-                pointer-events: none;
-                z-index: 1;
-            }
-            @keyframes shimmerSweep {
-                0% { background-position: 200% 0; }
-                100% { background-position: -200% 0; }
-            }
-            /* Image halo with rarity glow */
-            #itemsGrid > div.item-card::after {
-                content: '';
-                position: absolute;
-                top: 0.35rem;
-                left: 0.35rem;
-                width: 2.5rem;
-                height: 2.5rem;
-                border-radius: 0.45rem;
-                z-index: 0;
-                filter: blur(8px);
-                opacity: 0.4;
-            }
-            #itemsGrid > div.item-card.rar-common::after { background: rgba(148,163,184,0.3); }
-            #itemsGrid > div.item-card.rar-uncommon::after { background: rgba(16,185,129,0.4); }
-            #itemsGrid > div.item-card.rar-rare::after { background: rgba(59,130,246,0.5); }
-            #itemsGrid > div.item-card.rar-epic::after { background: rgba(139,92,246,0.5); }
-            #itemsGrid > div.item-card.rar-legendary::after { background: rgba(245,158,11,0.6); animation: legendaryPulse 2s ease-in-out infinite; }
-            @keyframes legendaryPulse {
-                0%, 100% { opacity: 0.4; transform: scale(1); }
-                50% { opacity: 0.7; transform: scale(1.15); }
-            }
-            #itemsGrid > div.item-card:active {
-                transform: scale(0.96) !important;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
-            }
-
-            /* Rarity neon glows */
-            #itemsGrid > div.item-card.rar-common  { box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 0 12px rgba(148,163,184,0.08); border-color: rgba(148,163,184,0.15) !important; }
-            #itemsGrid > div.item-card.rar-uncommon { box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 0 12px rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.25) !important; }
-            #itemsGrid > div.item-card.rar-rare { box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 0 12px rgba(59,130,246,0.12); border-color: rgba(59,130,246,0.3) !important; }
-            #itemsGrid > div.item-card.rar-epic { box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 0 16px rgba(139,92,246,0.15); border-color: rgba(139,92,246,0.35) !important; }
-            #itemsGrid > div.item-card.rar-legendary { box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 0 20px rgba(245,158,11,0.18); border-color: rgba(245,158,11,0.4) !important; }
-
-            /* Card inner layout */
-            #itemsGrid > div.item-card > .flex.items-start {
-                position: relative;
-                padding: 0.5rem 0.45rem 0.25rem;
-                margin: 0 !important;
-                z-index: 2;
-            }
-            #itemsGrid > div.item-card > .flex.items-start > img:first-child,
-            #itemsGrid > div.item-card .w-16.h-16 {
-                width: 2.5rem !important;
-                height: 2.5rem !important;
-                border-radius: 0.45rem !important;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-                margin-right: 0.35rem !important;
-                position: relative;
-                z-index: 2;
-                background: rgba(10,10,18,0.6);
-            }
-
-            /* Card text area */
-            #itemsGrid > div.item-card h4 {
-                font-size: 0.72rem !important;
-                font-weight: 600 !important;
-                line-height: 1.2 !important;
-                margin-bottom: 0.1rem !important;
-                color: #f8fafc !important;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                max-width: 5.5rem;
-            }
-            #itemsGrid > div.item-card .text-xs.text-wlLight.text-opacity-70,
-            #itemsGrid > div.item-card .flex.items-center.text-xs {
-                font-size: 0.58rem !important;
-                color: rgba(248,250,252,0.35) !important;
-                margin-bottom: 0.15rem;
-            }
-
-            /* Stat chips — sleek pills */
-            #itemsGrid > div.item-card .grid.grid-cols-2 {
-                display: flex !important;
-                flex-wrap: wrap !important;
-                gap: 0.2rem !important;
-                padding: 0 0.4rem !important;
-                margin: 0 0 0.2rem 0 !important;
-            }
-            #itemsGrid > div.item-card .grid.grid-cols-2 > div {
-                background: rgba(139, 92, 246, 0.08) !important;
-                border: 1px solid rgba(139, 92, 246, 0.12);
-                border-radius: 0.3rem !important;
-                padding: 0.15rem 0.3rem !important;
-                font-size: 0.55rem !important;
-                color: rgba(196, 181, 253, 0.7) !important;
-            }
-
-            /* View Details capsule button */
-            #itemsGrid > div.item-card > button {
-                width: calc(100% - 0.8rem) !important;
-                margin: 0 0.4rem 0.35rem !important;
-                border-radius: 2rem !important;
-                font-size: 0.65rem !important;
-                padding: 0.35rem 0 !important;
-                text-align: center;
-                background: linear-gradient(135deg, rgba(139,92,246,0.12), rgba(59,130,246,0.12)) !important;
-                border: 1px solid rgba(139,92,246,0.25) !important;
-                color: #c4b5fd !important;
-                transition: all 0.15s ease;
-                position: relative;
-                overflow: hidden;
-                z-index: 2;
-            }
-            #itemsGrid > div.item-card > button:active {
-                transform: scale(0.96);
-                border-color: rgba(139,92,246,0.5) !important;
-                color: #fff !important;
-            }
-
-            /* ===== MOBILE FILTER BOTTOM SHEET — HIDDEN ON DESKTOP ===== */
-            #filtersDropdown.filter-dropdown {
-                margin-bottom: 0 !important;
-                pointer-events: none;
-                max-height: 0 !important;
-                overflow: hidden !important;
-                opacity: 0 !important;
-                border: none !important;
-                box-shadow: none !important;
-                background: transparent !important;
-            }
-        }
-        /* ===== FAB DEFAULT STYLES ===== */
-        /* Hidden on desktop by default */
-        #fabFilterContainer,
-        #fabNavContainer {
-            display: none;
-        }
-        #fabNavDrawer,
-        #fabNavOverlay {
-            display: none;
-        }
-
-        /* ===== FAB NAV DRAWER LINK TOUCH FEEDBACK ===== */
-        #fabNavDrawer a {
-            position: relative;
-            overflow: hidden;
-            -webkit-tap-highlight-color: transparent;
-            transition: background-color 0.1s ease;
-        }
-        /* Touch active state for nav links */
-        #fabNavDrawer a:active {
-            background-color: rgba(139, 92, 246, 0.2) !important;
-            transform: scale(0.98);
-            transition: transform 0.1s ease, background-color 0.1s ease;
-        }
-        /* Icon highlight on active page */
-        #fabNavDrawer a.active-nav {
-            background: rgba(139, 92, 246, 0.15) !important;
-            border-left: 3px solid #8b5cf6;
-        }
-        #fabNavDrawer a.active-nav i {
-            color: #8b5cf6 !important;
-            transform: scale(1.1);
-        }
-        /* Ripple circle animation */
-        @keyframes navRipple {
-            0% { width: 0; height: 0; opacity: 1; }
-            100% { width: 200px; height: 200px; opacity: 0; }
-        }
 
         /* ===== DESKTOP ONLY RULES ===== */
         @media (min-width: 769px) {
@@ -785,310 +433,6 @@
             #fabNavContainer {
                 display: none !important;
             }
-        }
-
-        /* ===== MOBILE ONLY RULES ===== */
-        @media (max-width: 768px) {
-        /* Mobile bottom sheet wrapper */
-        #mobileFilterSheet {
-            position: fixed;
-            left: 0; right: 0;
-            bottom: 0;
-            z-index: 2000;
-            transform: translateY(100%);
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            display: block;
-            pointer-events: none;
-        }
-        #mobileFilterSheet.open {
-            transform: translateY(0);
-            pointer-events: auto;
-        }
-        #mobileFilterSheet.dragging {
-            transition: none !important;
-        }
-        #mobileFilterSheet * {
-            pointer-events: auto;
-        }
-            #mobileFilterSheet .sheet-inner {
-                max-height: 90vh;
-                overflow-y: auto;
-                -webkit-overflow-scrolling: touch;
-                border-radius: 1.25rem 1.25rem 0 0;
-                background: linear-gradient(180deg, #1a1a2e 0%, #0d0d14 100%);
-                border: 1px solid rgba(255,255,255,0.08);
-                border-bottom: none;
-                backdrop-filter: blur(24px);
-                -webkit-backdrop-filter: blur(24px);
-            }
-            /* Drag handle */
-            #mobileFilterSheet .sheet-handle {
-                width: 2.5rem;
-                height: 0.3rem;
-                background: rgba(255,255,255,0.25);
-                border-radius: 0.15rem;
-                margin: 0.6rem auto 0;
-                cursor: grab;
-                transition: width 0.2s, background 0.2s;
-            }
-            #mobileFilterSheet .sheet-handle:active {
-                width: 3rem;
-                background: rgba(139,92,246,0.4);
-            }
-            /* Sheet header */
-            #mobileFilterSheet .sheet-header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0.75rem 1rem 0.5rem;
-                border-bottom: 1px solid rgba(255,255,255,0.06);
-            }
-            #mobileFilterSheet .sheet-header h3 {
-                font-size: 1rem;
-                font-weight: 600;
-                color: #f8fafc;
-            }
-            #mobileFilterSheet .sheet-close {
-                width: 2rem; height: 2rem;
-                border-radius: 50%;
-                background: rgba(255,255,255,0.08);
-                border: none;
-                color: #94a3b8;
-                font-size: 1rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: all 0.15s;
-            }
-            #mobileFilterSheet .sheet-close:active {
-                transform: scale(0.9);
-                background: rgba(239,68,68,0.2);
-            }
-            /* Active filter chips */
-            #mobileFilterSheet .active-chips {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.35rem;
-                padding: 0.5rem 1rem;
-            }
-            #mobileFilterSheet .active-chip {
-                font-size: 0.65rem;
-                padding: 0.2rem 0.5rem;
-                border-radius: 1rem;
-                background: rgba(139,92,246,0.2);
-                border: 1px solid rgba(139,92,246,0.4);
-                color: #c4b5fd;
-                display: flex;
-                align-items: center;
-                gap: 0.25rem;
-                animation: chipIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-            }
-            @keyframes chipIn {
-                from { opacity: 0; transform: scale(0.8) translateY(4px); }
-                to { opacity: 1; transform: scale(1) translateY(0); }
-            }
-            #mobileFilterSheet .active-chip .chip-x {
-                width: 1rem; height: 1rem;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                background: rgba(239,68,68,0.2);
-                font-size: 0.55rem;
-                cursor: pointer;
-            }
-            /* ===== COLLAPSIBLE FILTER SECTIONS ===== */
-            #mobileFilterSheet .filter-section {
-                padding: 0;
-                margin-bottom: 0.35rem;
-            }
-            .filter-section-header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0.6rem 1rem;
-                cursor: pointer;
-                user-select: none;
-                -webkit-tap-highlight-color: transparent;
-                transition: background 0.15s;
-            }
-            .filter-section-header:active {
-                background: rgba(255,255,255,0.04);
-            }
-            .filter-section-header .section-title {
-                font-size: 0.75rem;
-                font-weight: 600;
-                color: rgba(248,250,252,0.65);
-                text-transform: uppercase;
-                letter-spacing: 0.04em;
-                display: flex;
-                align-items: center;
-                gap: 0.35rem;
-            }
-            .filter-section-header .section-title .chevron {
-                font-size: 0.6rem;
-                transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-                color: rgba(248,250,252,0.3);
-            }
-            .filter-section.expanded .filter-section-header .section-title .chevron {
-                transform: rotate(180deg);
-                color: #c4b5fd;
-            }
-            .filter-section-content {
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-            }
-            .filter-section.expanded .filter-section-content {
-                max-height: 400px;
-            }
-            .filter-section-content-inner {
-                padding: 0 1rem 0.5rem;
-            }
-            #mobileFilterSheet .filter-section label.block {
-                font-size: 0.68rem;
-                font-weight: 500;
-                color: rgba(248,250,252,0.4);
-                text-transform: none;
-                letter-spacing: 0;
-                margin-bottom: 0.3rem;
-            }
-            /* ===== QUICK FILTER CHIPS ===== */
-            #mobileFilterSheet .quick-filters {
-                display: flex;
-                gap: 0.3rem;
-                padding: 0.4rem 1rem;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
-                border-bottom: 1px solid rgba(255,255,255,0.04);
-            }
-            #mobileFilterSheet .quick-filters::-webkit-scrollbar { display: none; }
-            .quick-filter-chip {
-                flex-shrink: 0;
-                font-size: 0.62rem;
-                padding: 0.28rem 0.55rem;
-                border-radius: 1rem;
-                background: rgba(255,255,255,0.06);
-                border: 1px solid rgba(255,255,255,0.1);
-                color: rgba(248,250,252,0.5);
-                cursor: pointer;
-                transition: all 0.15s;
-                white-space: nowrap;
-                display: flex;
-                align-items: center;
-                gap: 0.2rem;
-                -webkit-tap-highlight-color: transparent;
-            }
-            .quick-filter-chip i { font-size: 0.5rem; }
-            .quick-filter-chip.selected {
-                background: rgba(139,92,246,0.2);
-                border-color: rgba(139,92,246,0.5);
-                color: #c4b5fd;
-            }
-            .quick-filter-chip:active { transform: scale(0.95); }
-            /* Filter count text */
-            #mobileFilterSheet .filter-count-text {
-                font-size: 0.6rem;
-                color: rgba(248,250,252,0.3);
-                padding: 0.25rem 1rem;
-            }
-            #mobileFilterSheet input,
-            #mobileFilterSheet select,
-            #mobileFilterSheet textarea {
-                width: 100%;
-                min-height: 42px;
-                background: rgba(255,255,255,0.05) !important;
-                border: 1px solid rgba(255,255,255,0.1);
-                border-radius: 0.6rem;
-                padding: 0 0.75rem;
-                font-size: 0.85rem;
-                color: #f8fafc !important;
-                outline: none;
-                transition: border-color 0.15s;
-                -webkit-appearance: none;
-                appearance: none;
-                font-size: 16px;
-                -webkit-text-fill-color: #f8fafc !important;
-            }
-            #mobileFilterSheet select option {
-                background: #1a1a2e !important;
-                color: #f8fafc !important;
-                -webkit-text-fill-color: #f8fafc !important;
-            }
-            #mobileFilterSheet input:focus,
-            #mobileFilterSheet select:focus {
-                border-color: rgba(139,92,246,0.5);
-            }
-            #mobileFilterSheet input::placeholder {
-                color: rgba(248,250,252,0.35) !important;
-                -webkit-text-fill-color: rgba(248,250,252,0.35) !important;
-            }
-            /* Base material multi-select pills */
-            #mobileFilterSheet .base-pills {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.3rem;
-                max-height: 7rem;
-                overflow-y: auto;
-                padding: 0.2rem 0;
-            }
-            #mobileFilterSheet .base-pill {
-                font-size: 0.68rem;
-                padding: 0.25rem 0.55rem;
-                border-radius: 0.5rem;
-                background: rgba(255,255,255,0.06);
-                border: 1px solid rgba(255,255,255,0.1);
-                color: rgba(248,250,252,0.6);
-                cursor: pointer;
-                transition: all 0.15s;
-                -webkit-tap-highlight-color: transparent;
-            }
-            #mobileFilterSheet .base-pill.selected {
-                background: rgba(139,92,246,0.2);
-                border-color: rgba(139,92,246,0.5);
-                color: #c4b5fd;
-            }
-            #mobileFilterSheet .base-pill:active {
-                transform: scale(0.95);
-            }
-            /* Sticky action bar */
-            #mobileFilterSheet .sheet-actions {
-                display: flex;
-                gap: 0.5rem;
-                padding: 0.75rem 1rem;
-                padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0.5rem));
-                position: sticky;
-                bottom: 0;
-                background: linear-gradient(to top, rgba(10,10,18,0.95), rgba(10,10,18,0.7));
-                backdrop-filter: blur(12px);
-                -webkit-backdrop-filter: blur(12px);
-            }
-            #mobileFilterSheet .sheet-actions button {
-                flex: 1;
-                min-height: 44px;
-                border-radius: 0.75rem;
-                font-size: 0.85rem;
-                font-weight: 600;
-                border: none;
-                cursor: pointer;
-                transition: all 0.15s;
-                -webkit-tap-highlight-color: transparent;
-            }
-            #mobileFilterSheet .sheet-actions .btn-reset {
-                background: rgba(255,255,255,0.06);
-                color: rgba(248,250,252,0.6);
-                border: 1px solid rgba(255,255,255,0.1);
-            }
-            #mobileFilterSheet .sheet-actions .btn-apply {
-                background: linear-gradient(135deg, #8b5cf6, #3b82f6);
-                color: white;
-            }
-            #mobileFilterSheet .sheet-actions .btn-apply:active {
-                transform: scale(0.97);
-                opacity: 0.85;
-            }
-
             /* ===== LEGENDARY IMMERSIVE MODAL WITH TABS ===== */
             #itemModal {
                 padding: 0 !important;
@@ -1609,23 +953,29 @@
                 pointer-events: none;
             }
 
-            /* Hide FABs when modal is open */
-            body.modal-open #fabFilterContainer,
-            body.modal-open #fabNavContainer {
-                display: none !important;
-                visibility: hidden !important;
-            }
-            /* Also hide when itemModal is not hidden (extra safety) */
-            #itemModal:not(.hidden) ~ #fabFilterContainer,
-            #itemModal:not(.hidden) ~ #fabNavContainer {
-                display: none !important;
-                visibility: hidden !important;
-            }
+/* Hide FABs when modal is open - Enhanced */
+body.modal-open #fabFilterContainer,
+body.modal-open #fabNavContainer,
+body.modal-open #fabFilterContainer *,
+body.modal-open #fabNavContainer * {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transform: translateY(20px) !important;
+    pointer-events: none !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+/* Also hide when itemModal is visible */
+#itemModal:not(.hidden) #fabFilterContainer,
+#itemModal:not(.hidden) #fabNavContainer {
+    display: none !important;
+    visibility: hidden !important;
+}
 
             /* FAB active/pressed state */
             #fabFilterBtn:active,
             #fabNavBtn:active {
-                transform: scale(0.92) !important;
+                transform: scale(0.93) !important;
             }
 
             /* FAB badge counter animation */
@@ -1687,463 +1037,6 @@
                 background: rgba(139,92,246,0.15);
                 border-color: rgba(139,92,246,0.4);
                 color: #8b5cf6;
-            }
-        }
-
-        /* ===== AUTO-HIDING HEADER ON SCROLL ===== */
-        @keyframes slideDown {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
-        }
-        @keyframes slideUp {
-            from { transform: translateY(0); }
-            to { transform: translateY(-100%); }
-        }
-        header.scroll-hide {
-            transform: translateY(-100%);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        header.scroll-show {
-            transform: translateY(0);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        /* ===== PEEK HINT BAR ===== */
-        #filterPeekBar {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            #filterPeekBar {
-                display: block;
-                position: fixed;
-                left: 0; right: 0;
-                bottom: calc(env(safe-area-inset-bottom, 0px));
-                height: 6px;
-                background: linear-gradient(90deg, rgba(139,92,246,0.3), rgba(59,130,246,0.3), rgba(139,92,246,0.3));
-                background-size: 200% 100%;
-                animation: peekShimmer 3s ease-in-out infinite;
-                z-index: 49;
-                opacity: 0;
-                transition: opacity 0.3s ease;
-                pointer-events: none;
-            }
-            #filterPeekBar.visible {
-                opacity: 0.8;
-                cursor: pointer;
-                pointer-events: auto;
-                height: 12px;
-            }
-        }
-        @keyframes peekShimmer {
-            0%, 100% { background-position: 200% 0; }
-            50% { background-position: -200% 0; }
-        }
-        
-        /* ===== PRESET FILTER CAROUSEL ===== */
-        .preset-filter-carousel {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            .preset-filter-carousel {
-                display: flex;
-                gap: 0.35rem;
-                padding: 0.4rem 0.75rem;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
-                scroll-snap-type: x mandatory;
-            }
-            .preset-filter-carousel::-webkit-scrollbar { display: none; }
-            .preset-filter-chip {
-                flex-shrink: 0;
-                font-size: 0.68rem;
-                padding: 0.35rem 0.65rem;
-                border-radius: 1rem;
-                background: rgba(255,255,255,0.06);
-                border: 1px solid rgba(255,255,255,0.12);
-                color: rgba(248,250,252,0.6);
-                cursor: pointer;
-                transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-                white-space: nowrap;
-                display: flex;
-                align-items: center;
-                gap: 0.3rem;
-                scroll-snap-align: start;
-                -webkit-tap-highlight-color: transparent;
-                user-select: none;
-            }
-            .preset-filter-chip i { font-size: 0.6rem; }
-            .preset-filter-chip.active {
-                background: linear-gradient(135deg, rgba(139,92,246,0.25), rgba(59,130,246,0.25));
-                border-color: rgba(139,92,246,0.5);
-                color: #c4b5fd;
-                box-shadow: 0 2px 8px rgba(139,92,246,0.15);
-            }
-            .preset-filter-chip:active {
-                transform: scale(0.94);
-            }
-        }
-        
-        /* ===== SEARCH HISTORY CHIPS ===== */
-        .search-history-bar {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            .search-history-bar {
-                display: flex;
-                gap: 0.3rem;
-                padding: 0.4rem 0.75rem 0;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
-            }
-            .search-history-bar::-webkit-scrollbar { display: none; }
-            .search-history-chip {
-                flex-shrink: 0;
-                font-size: 0.6rem;
-                padding: 0.2rem 0.5rem;
-                border-radius: 1rem;
-                background: rgba(255,255,255,0.04);
-                border: 1px solid rgba(255,255,255,0.08);
-                color: rgba(248,250,252,0.4);
-                cursor: pointer;
-                transition: all 0.15s ease;
-                white-space: nowrap;
-                display: flex;
-                align-items: center;
-                gap: 0.25rem;
-                -webkit-tap-highlight-color: transparent;
-            }
-            .search-history-chip:active {
-                background: rgba(139,92,246,0.15);
-                color: #c4b5fd;
-                transform: scale(0.95);
-            }
-            .search-history-chip .chip-x-btn {
-                width: 1rem; height: 1rem;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                background: rgba(239,68,68,0.15);
-                font-size: 0.5rem;
-                color: rgba(239,68,68,0.6);
-            }
-        }
-        
-        /* ===== RECENTLY VIEWED ROW ===== */
-        .recently-viewed-bar {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            .recently-viewed-bar {
-                display: block;
-                padding: 0.4rem 0.75rem;
-            }
-            .recently-viewed-bar .rv-label {
-                font-size: 0.6rem;
-                color: rgba(248,250,252,0.3);
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                margin-bottom: 0.3rem;
-            }
-            .recently-viewed-scroll {
-                display: flex;
-                gap: 0.4rem;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
-                scroll-snap-type: x mandatory;
-                padding-bottom: 0.2rem;
-            }
-            .recently-viewed-scroll::-webkit-scrollbar { display: none; }
-            .recently-viewed-item {
-                flex-shrink: 0;
-                width: 3.5rem;
-                scroll-snap-align: start;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                cursor: pointer;
-                transition: transform 0.15s ease;
-                -webkit-tap-highlight-color: transparent;
-            }
-            .recently-viewed-item:active {
-                transform: scale(0.92);
-            }
-            .recently-viewed-item img {
-                width: 2.5rem;
-                height: 2.5rem;
-                border-radius: 0.45rem;
-                object-fit: contain;
-                background: rgba(10,10,18,0.4);
-                border: 1px solid rgba(255,255,255,0.06);
-            }
-            .recently-viewed-item span {
-                font-size: 0.5rem;
-                color: rgba(248,250,252,0.5);
-                margin-top: 0.15rem;
-                text-align: center;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                max-width: 3.5rem;
-            }
-        }
-        
-        /* ===== MIN STAT SPARKLINE IN CARDS ===== */
-        @media (max-width: 768px) {
-            .stat-sparkline {
-                display: block;
-                height: 3px;
-                background: rgba(255,255,255,0.06);
-                border-radius: 2px;
-                overflow: hidden;
-                margin-top: 0.15rem;
-            }
-            .stat-sparkline-fill {
-                height: 100%;
-                border-radius: 2px;
-                background: linear-gradient(90deg, #8b5cf6, #06b6d4);
-                transition: width 0.5s ease;
-            }
-            .stat-sparkline-fill.rar-common { background: #94a3b8; }
-            .stat-sparkline-fill.rar-uncommon { background: #10b981; }
-            .stat-sparkline-fill.rar-rare { background: #3b82f6; }
-            .stat-sparkline-fill.rar-epic { background: #8b5cf6; }
-            .stat-sparkline-fill.rar-legendary { background: #f59e0b; }
-        }
-        
-        /* ===== CARD STAT BARS (replacing text) ===== */
-        @media (max-width: 768px) {
-            #itemsGrid > div.item-card .card-stat-row {
-                display: flex;
-                gap: 0.2rem;
-                padding: 0 0.4rem;
-                margin: 0 0 0.15rem 0;
-            }
-            #itemsGrid > div.item-card .card-stat-item {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                gap: 0.1rem;
-            }
-            #itemsGrid > div.item-card .card-stat-label {
-                font-size: 0.45rem;
-                color: rgba(248,250,252,0.3);
-                text-transform: uppercase;
-            }
-            #itemsGrid > div.item-card .card-stat-value {
-                font-size: 0.52rem;
-                font-weight: 600;
-            }
-            #itemsGrid > div.item-card .card-stat-bar {
-                height: 2px;
-                background: rgba(255,255,255,0.08);
-                border-radius: 1px;
-                overflow: hidden;
-            }
-            #itemsGrid > div.item-card .card-stat-bar-fill {
-                height: 100%;
-                background: linear-gradient(90deg, #8b5cf6, #06b6d4);
-                border-radius: 1px;
-            }
-        }
-        
-        /* ===== TACTILE RIPPLE FROM TOUCH ORIGIN ===== */
-        .tactile-ripple {
-            position: relative;
-            overflow: hidden;
-        }
-        .tactile-ripple .ripple-circle {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(139, 92, 246, 0.2);
-            transform: scale(0);
-            animation: tactileRippleExpand 0.4s ease-out forwards;
-            pointer-events: none;
-            z-index: 10;
-        }
-        @keyframes tactileRippleExpand {
-            to {
-                transform: scale(4);
-                opacity: 0;
-            }
-        }
-        
-        /* ===== MAGNETIC TAP ZONE ===== */
-        @media (max-width: 768px) {
-            .magnetic-tap {
-                position: relative;
-            }
-            .magnetic-tap::before {
-                content: '';
-                position: absolute;
-                inset: -6px;
-                z-index: -1;
-                border-radius: inherit;
-            }
-            .magnetic-tap.proximity-glow {
-                --glow-color: rgba(139,92,246,0.1);
-                box-shadow: 0 0 12px var(--glow-color);
-                transition: box-shadow 0.15s ease;
-            }
-        }
-        
-        /* ===== DIAGONAL CASCADE ANIMATION ===== */
-        @keyframes cascadeIn {
-            from { opacity: 0; transform: translateY(20px) scale(0.95); }
-            to { opacity: 1; transform: translateY(0) scale(1); }
-        }
-        @media (max-width: 768px) {
-            #itemsGrid > div.item-card {
-                animation: cascadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
-            }
-        }
-        
-        /* ===== LIVE FILTER FLASH ===== */
-        @keyframes filterFlash {
-            0% { opacity: 0.3; filter: brightness(1.5); }
-            100% { opacity: 1; filter: brightness(1); }
-        }
-        .filter-updating {
-            animation: filterFlash 0.3s ease-out;
-        }
-        
-        /* ===== COMPACT QUICK STATS AS CHIPS ===== */
-        @media (max-width: 768px) {
-            #quickStats {
-                border-radius: 0.5rem !important;
-                padding: 0.4rem 0.6rem !important;
-                margin-bottom: 0.4rem !important;
-                background: transparent !important;
-                border: none !important;
-            }
-            #quickStats h3 { display: none !important; }
-            #quickStats .grid {
-                display: flex !important;
-                flex-wrap: wrap !important;
-                gap: 0.3rem !important;
-                justify-content: center !important;
-            }
-            #quickStats .grid > div {
-                display: flex !important;
-                flex-direction: row !important;
-                align-items: center !important;
-                gap: 0.2rem !important;
-                padding: 0.2rem 0.45rem !important;
-                background: rgba(139,92,246,0.06) !important;
-                border-radius: 1rem !important;
-                border: 1px solid rgba(139,92,246,0.12) !important;
-            }
-            #quickStats .text-3xl {
-                font-size: 0.8rem !important;
-                margin-bottom: 0 !important;
-            }
-            #quickStats .text-sm {
-                font-size: 0.52rem !important;
-            }
-        }
-        
-        /* ===== LIVE FILTER SYNC INDICATOR ===== */
-        .filter-sync-indicator {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            .filter-sync-indicator {
-                display: block;
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%) scale(0.8);
-                width: 48px;
-                height: 48px;
-                border-radius: 50%;
-                background: rgba(139,92,246,0.2);
-                backdrop-filter: blur(8px);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 3000;
-                opacity: 0;
-                pointer-events: none;
-                transition: all 0.2s ease;
-            }
-            .filter-sync-indicator.visible {
-                opacity: 1;
-                transform: translate(-50%, -50%) scale(1);
-            }
-            .filter-sync-indicator i {
-                color: #c4b5fd;
-                font-size: 1.2rem;
-            }
-        }
-
-        /* ===== EXTRA SMALL — S25 / compact (≤420px) ===== */
-        @media (max-width: 420px) {
-            #itemsGrid { gap: 0.35rem !important; }
-            #itemsGrid > div.item-card > .flex.items-start {
-                padding: 0.35rem 0.3rem 0.2rem !important;
-            }
-            #itemsGrid > div.item-card > .flex.items-start > img:first-child,
-            #itemsGrid > div.item-card .w-16.h-16 {
-                width: 2.15rem !important;
-                height: 2.15rem !important;
-                border-radius: 0.35rem !important;
-            }
-            #itemsGrid > div.item-card h4 {
-                font-size: 0.67rem !important;
-                max-width: 4.5rem !important;
-            }
-            #itemsGrid > div.item-card .text-xs.text-wlLight.text-opacity-70,
-            #itemsGrid > div.item-card .flex.items-center.text-xs {
-                font-size: 0.53rem !important;
-            }
-            #itemsGrid > div.item-card .grid.grid-cols-2 > div {
-                font-size: 0.5rem !important;
-                padding: 0.1rem 0.25rem !important;
-            }
-            #itemsGrid > div.item-card > button {
-                font-size: 0.6rem !important;
-                padding: 0.28rem 0 !important;
-            }
-            #modalContent .item-image-wrapper {
-                width: 4rem !important;
-                height: 4rem !important;
-            }
-            #modalContent h3 {
-                font-size: 1rem !important;
-            }
-        }
-        
-        /* Touch-friendly improvements for all screen sizes */
-        @media (hover: none) and (pointer: coarse) {
-            /* Larger touch targets for buttons */
-            button, 
-            .nav-link {
-                min-height: 44px;
-            }
-            
-            /* Remove hover effects on touch devices */
-            .card-hover:hover {
-                transform: none;
-            }
-            
-            .item-card:hover {
-                transform: none;
-            }
-        }
-        
-        /* Landscape mobile */
-        @media (max-height: 500px) and (orientation: landscape) {
-            #itemModal {
-                align-items: center !important;
-            }
-            
-            #itemModal > div.relative {
-                max-height: 90vh !important;
-                width: 90vw !important;
-                border-radius: 1rem !important;
             }
         }
         
@@ -3093,6 +1986,34 @@
             border-color: rgba(139,92,246,0.4);
             color: #c4b5fd;
         }
+                 /* ================================================================
+           DESKTOP ONLY OVERRIDES (Screens > 768px)
+           ================================================================ */
+        @media (min-width: 769px) {
+            /* Force Hide Mobile Elements on Desktop */
+            #mobileSortBtn,
+            #fabFilterContainer,
+            #fabNavContainer,
+            .preset-filter-carousel,
+            .search-history-bar,
+            .recently-viewed-bar,
+            #filterPeekBar,
+            #mobileFilterSheet,
+            .filter-sync-indicator {
+                display: none !important;
+            }
+            
+            /* Ensure Desktop Sort Toggle is visible */
+            #gridSortToggle {
+                display: flex !important;
+            }
+        }
+
+        /* ===== SAFETY: HIDE FABs WHEN MODAL OPEN (Global) ===== */
+        body.modal-open #fabFilterContainer,
+        body.modal-open #fabNavContainer {
+            display: none !important;
+        }
     </style>
 </head>
 <body class="text-wlLight">
@@ -3739,15 +2660,17 @@
     <!-- ===== HYBRID FAB SYSTEM ===== -->
     <!-- Filter FAB (bottom-right) -->
     <div id="fabFilterContainer" class="fixed bottom-6 right-6 z-50">
-        <button id="fabFilterBtn" class="w-14 h-14 rounded-full bg-gradient-to-br from-wlPurple to-wlBlue shadow-lg flex items-center justify-center relative" onclick="openMobileFilter()" style="box-shadow: 0 4px 24px rgba(139,92,246,0.35);">
-            <i class="fas fa-filter text-white text-lg"></i>
+        <button id="fabFilterBtn" class="flex items-center justify-center relative" onclick="openMobileFilter()">
+            <i class="fas fa-sliders text-white"></i>
+            <span class="fab-label">Filter</span>
             <span id="fabFilterBadge" class="absolute -top-1 -right-1 min-w-[18px] h-[18px] rounded-full bg-wlRed text-white text-[10px] font-bold flex items-center justify-center px-1.5 hidden" style="box-shadow: 0 2px 8px rgba(239,68,68,0.4);">0</span>
         </button>
     </div>
     <!-- Navigation FAB (bottom-left) -->
     <div id="fabNavContainer" class="fixed bottom-6 left-6 z-50">
-        <button id="fabNavBtn" class="w-14 h-14 rounded-full bg-gradient-to-br from-wlGreen to-wlBlue shadow-lg flex items-center justify-center" onclick="openFabNavDrawer()" style="box-shadow: 0 4px 24px rgba(16,185,129,0.35);">
-            <i class="fas fa-bars text-white text-lg"></i>
+        <button id="fabNavBtn" class="flex items-center justify-center" onclick="openFabNavDrawer()">
+            <i class="fas fa-compass text-white"></i>
+            <span class="fab-label">Menu</span>
         </button>
     </div>
     <!-- FAB Nav Drawer -->
@@ -3891,8 +2814,75 @@
             gridView.classList.remove('hidden');
             tableView.classList.add('hidden');
         }
-        
-        // ===== GRID SORT TOGGLE =====
+
+        // FAB Modal Hide/Show Functions
+        window.hideFabs = function() {
+            document.body.classList.add('modal-open');
+            document.getElementById('fabFilterContainer').classList.add('hide-fab');
+            document.getElementById('fabNavContainer').classList.add('hide-fab');
+        };
+
+        window.showFabs = function() {
+            document.body.classList.remove('modal-open');
+            document.getElementById('fabFilterContainer').classList.remove('hide-fab');
+            document.getElementById('fabNavContainer').classList.remove('hide-fab');
+        };
+
+        // Hook modal events (works even if functions defined later)
+        function initModalFABHooks() {
+            const modal = document.getElementById('itemModal');
+            const closeBtn = document.getElementById('closeModal');
+            const backBtn = document.getElementById('backModal');
+            const modalBackdrop = modal.querySelector('.absolute.inset-0');
+
+            // Close button
+            closeBtn.onclick = (e) => {
+                modal.classList.add('hidden');
+                showFabs();
+                // Trigger any existing close logic
+                if (window.closeItemModal) window.closeItemModal();
+            };
+
+            // Back button
+            backBtn.onclick = (e) => {
+                modal.classList.add('hidden');
+                showFabs();
+                if (window.goBackInModal) window.goBackInModal();
+            };
+
+            // Backdrop click
+            if (modalBackdrop) {
+                modalBackdrop.onclick = (e) => {
+                    if (e.target === modalBackdrop) {
+                        modal.classList.add('hidden');
+                        showFabs();
+                    }
+                };
+            }
+
+            // Listen for modal visibility changes
+            const observer = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                        const isVisible = !modal.classList.contains('hidden');
+                        if (isVisible) {
+                            hideFabs();
+                        } else {
+                            showFabs();
+                        }
+                    }
+                });
+            });
+            observer.observe(modal, { attributes: true });
+        }
+
+        // Initialize when DOM ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initModalFABHooks);
+        } else {
+            initModalFABHooks();
+        }
+
         const gridSortModes = [
             { key: 'name', dir: 'asc', label: 'Name A→Z', icon: 'fa-sort-alpha-down' },
             { key: 'name', dir: 'desc', label: 'Name Z→A', icon: 'fa-sort-alpha-up' },
@@ -4066,7 +3056,7 @@
             });
         }
 
-        // Render items to table and grid views
+ // Render items to table and grid views
         async function renderItems() {
             const loadingIndicator = document.getElementById('loadingIndicator');
             const quickStats = document.getElementById('quickStats');
@@ -4074,7 +3064,7 @@
             const itemsGrid = document.getElementById('itemsGrid');
             const showingCount = document.getElementById('showingCount');
             
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Don't scroll to top here to avoid jumps, let user stay in place if filtering
             
             loadingIndicator.classList.remove('hidden');
             tableView.classList.add('hidden');
@@ -4082,14 +3072,13 @@
             quickStats.classList.add('hidden');
             
             try {
-                // Show skeleton briefly during loading
                 startSkeleton();
-                await new Promise(r => setTimeout(r, 200));
+                await new Promise(r => setTimeout(r, 100)); // Reduced wait for faster feel
 
                 const sortedItems = sortItems(currentState.items, currentState.sortColumn, currentState.sortDirection);
                 currentState.filteredItems = await applyFilters(sortedItems);
                 
-                // Deduplicate items by ID to prevent duplicates appearing in display
+                // Deduplicate
                 const uniqueFilteredItems = [];
                 const seenIds = new Set();
                 for (const item of currentState.filteredItems) {
@@ -4111,132 +3100,167 @@
                 
                 showingCount.textContent = `${pagination.startIndex}-${pagination.endIndex} of ${pagination.totalItems}`;
                 
-                itemsTableBody.innerHTML = '';
-                itemsGrid.innerHTML = '';
-                
-                // Show empty state if no items found
+                // Show empty state
                 if (currentState.filteredItems.length === 0) {
+                    itemsGrid.innerHTML = '';
+                    itemsTableBody.innerHTML = '';
                     showEmptyState('No items found. Try adjusting your filters.');
-                    
-                    // Hide loading indicator and show stats
                     loadingIndicator.classList.add('hidden');
-                    gridView.classList.remove('hidden'); // Ensure grid is visible for empty state
+                    gridView.classList.remove('hidden');
                     quickStats.classList.remove('hidden');
-                    setupItemPreviews();
                     return;
                 }
-                
-                paginatedItems.forEach(item => {
-                    const statsDisplay = item.attributes ? Object.entries(item.attributes)
-                        .map(([key, val]) => `${key}: ${val}`)
-                        .join(', ') : 'N/A';
-                    
-                    const rankValue = item.rank !== undefined ? item.rank : Math.floor(item.level / 2);
-                    
-                    const row = document.createElement('tr');
-                    row.className = 'hover:bg-wlDark hover:bg-opacity-50 transition';
-                    row.innerHTML = `
-                        <td>
-                            <div class="tooltip">
-                                <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-md object-contain bg-wlDarker bg-opacity-50">
-                                <div class="tooltip-text">${item.name}</div>
-                            </div>
-                        </td>
-                        <td class="item-name-cell" data-item-id="${item.id}">
-                            <div class="font-medium">${item.name}</div>
-                            <div class="text-xs text-wlLight text-opacity-70">${item.type || 'N/A'}</div>
-                        </td>
-                        <td>
-                            <div class="flex items-center">
-                                <span class="item-type-icon ${item.category}">
-                                    <i class="fas ${getTypeIcon(item.category)} text-xs"></i>
-                                </span>
-                                <span>${capitalizeFirstLetter(item.category)}</span>
-                            </div>
-                        </td>
-                        <td><span class="font-medium">${rankValue}</span></td>
-                        <td>${item.level}</td>
-                        <td>${item.base || 'N/A'}</td>
-                        <td class="text-xs">${statsDisplay}</td>
-                        <td class="text-xs max-w-[200px] truncate" title="${item.description || ''}">${item.description || 'N/A'}</td>
-                        <td class="text-right">
-                            <button onclick="openItemModal(${item.id})" class="px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlBlue hover:border-wlBlue transition">
-                                Details
-                            </button>
-                        </td>
-                    `;
-                    itemsTableBody.appendChild(row);
-                });
-                
-                paginatedItems.forEach(item => {
-                    const rankValue = item.rank !== undefined ? item.rank : Math.floor(item.level / 2);
-                    
-                    const card = document.createElement('div');
-                    card.className = 'bg-wlDark bg-opacity-70 rounded-xl p-4 border border-wlLight border-opacity-20 item-card';
-                    card.innerHTML = `
-                        <div class="flex items-start mb-4">
-                            <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-md object-contain bg-wlDarker bg-opacity-50 mr-4">
-                            <div>
-                                <h4 class="font-medium">${item.name}</h4>
-                                <div class="text-xs text-wlLight text-opacity-70 mb-1">${item.type || 'N/A'}</div>
-                                <div class="flex items-center text-xs">
-                                    <span class="item-type-icon ${item.category} mr-1">
-                                        <i class="fas ${getTypeIcon(item.category)} text-xs"></i>
-                                    </span>
-                                    <span class="mr-2">${capitalizeFirstLetter(item.category)}</span>
-                                    <span class="font-medium">Rank ${rankValue}</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 gap-2 text-xs mb-4">
-                            <div>
-                                <div class="text-wlLight text-opacity-70">Level</div>
-                                <div>${item.level}</div>
-                            </div>
-                            <div>
-                                <div class="text-wlLight text-opacity-70">Stats</div>
-                                <div class="truncate">${item.attributes ? Object.entries(item.attributes).map(([k,v]) => `${k}:${v}`).join(', ') : 'N/A'}</div>
-                            </div>
-                            <div class="col-span-2">
-                                <div class="text-wlLight text-opacity-70">Base</div>
-                                <div class="truncate">${item.base || 'N/A'}</div>
-                            </div>
-                        </div>
-                        <button onclick="openItemModal(${item.id})" class="w-full py-2 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlBlue hover:border-wlBlue transition">
-                            View Details
-                        </button>
-                    `;
-                    itemsGrid.appendChild(card);
-                });
-                
-                generatePagination(currentState.filteredItems.length, currentState.itemsPerPage, currentState.currentPage, 'pagination');
-                generatePagination(currentState.filteredItems.length, currentState.itemsPerPage, currentState.currentPage, 'paginationGrid');
-                
-                updateQuickStats();
-                
-                loadingIndicator.classList.add('hidden');
-                if (tableViewBtn.classList.contains('bg-wlBlue')) {
-                    tableView.classList.remove('hidden');
+
+                // Determine active view
+                let isTableView;
+                if (isMobile()) {
+                    isTableView = false; 
                 } else {
-                    gridView.classList.remove('hidden');
+                    isTableView = tableViewBtn.classList.contains('bg-wlBlue');
                 }
-                quickStats.classList.remove('hidden');
-                
-                setupItemPreviews();
-                
-                itemLoader.preloadNextPage(currentState.filteredItems, currentState.currentPage, currentState.itemsPerPage);
+
+                // === PERFORMANCE: Use RequestAnimationFrame for paint ===
+                requestAnimationFrame(() => {
+                    if (isTableView) {
+                        renderTableView(paginatedItems, itemsTableBody);
+                        itemsGrid.innerHTML = ''; 
+                    } else {
+                        renderGridView(paginatedItems, itemsGrid);
+                        itemsTableBody.innerHTML = '';
+                    }
+                    
+                    generatePagination(currentState.filteredItems.length, currentState.itemsPerPage, currentState.currentPage, 'pagination');
+                    generatePagination(currentState.filteredItems.length, currentState.itemsPerPage, currentState.currentPage, 'paginationGrid');
+                    
+                    updateQuickStats();
+                    
+                    loadingIndicator.classList.add('hidden');
+                    
+                    if (isTableView) {
+                        tableView.classList.remove('hidden');
+                    } else {
+                        gridView.classList.remove('hidden');
+                    }
+                    
+                    quickStats.classList.remove('hidden');
+                    
+                    // Deferred setup for interactions
+                    requestAnimationFrame(() => {
+                        setupItemPreviews();
+                        if (isMobile()) init3DTilt(); 
+                        addRarityClassToCards();
+                    });
+                    
+                    itemLoader.preloadNextPage(currentState.filteredItems, currentState.currentPage, currentState.itemsPerPage);
+                });
+
             } catch (error) {
                 console.error('Error rendering items:', error);
                 loadingIndicator.innerHTML = `
                     <div class="text-center text-red-500">
                         <i class="fas fa-exclamation-triangle text-4xl mb-4"></i>
                         <p>Failed to load items. Please try again.</p>
-                        <p class="text-sm mt-2">Error: ${error.message}</p>
                     </div>
                 `;
             }
         }
 
+        // Helper: Render Table (Using Fragment)
+        function renderTableView(paginatedItems, container) {
+            const fragment = document.createDocumentFragment();
+            
+            paginatedItems.forEach(item => {
+                const statsDisplay = item.attributes ? Object.entries(item.attributes)
+                    .map(([key, val]) => `${key}: ${val}`)
+                    .join(', ') : 'N/A';
+                const rankValue = item.rank !== undefined ? item.rank : Math.floor(item.level / 2);
+                
+                const row = document.createElement('tr');
+                row.className = 'hover:bg-wlDark hover:bg-opacity-50 transition';
+                row.innerHTML = `
+                    <td>
+                        <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-md object-contain bg-wlDarker bg-opacity-50" loading="lazy">
+                    </td>
+                    <td class="item-name-cell" data-item-id="${item.id}">
+                        <div class="font-medium">${item.name}</div>
+                        <div class="text-xs text-wlLight text-opacity-70">${item.type || 'N/A'}</div>
+                    </td>
+                    <td>
+                        <div class="flex items-center">
+                            <span class="item-type-icon ${item.category}">
+                                <i class="fas ${getTypeIcon(item.category)} text-xs"></i>
+                            </span>
+                            <span>${capitalizeFirstLetter(item.category)}</span>
+                        </div>
+                    </td>
+                    <td><span class="font-medium">${rankValue}</span></td>
+                    <td>${item.level}</td>
+                    <td>${item.base || 'N/A'}</td>
+                    <td class="text-xs">${statsDisplay}</td>
+                    <td class="text-xs max-w-[200px] truncate" title="${item.description || ''}">${item.description || 'N/A'}</td>
+                    <td class="text-right">
+                        <button onclick="openItemModal(${item.id})" class="px-3 py-1 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlBlue transition">
+                            Details
+                        </button>
+                    </td>
+                `;
+                fragment.appendChild(row);
+            });
+            
+            container.innerHTML = ''; // Clear once
+            container.appendChild(fragment); // Append all at once
+        }
+
+        // Helper: Render Grid (Using Fragment)
+        function renderGridView(paginatedItems, container) {
+            const fragment = document.createDocumentFragment();
+            
+            paginatedItems.forEach(item => {
+                const rankValue = item.rank !== undefined ? item.rank : Math.floor(item.level / 2);
+                
+                const card = document.createElement('div');
+                card.className = 'bg-wlDark bg-opacity-70 rounded-xl p-4 border border-wlLight border-opacity-20 item-card';
+                
+                // IMPORTANT: Add explicit width/height to img to prevent CLS
+                card.innerHTML = `
+                    <div class="flex items-start mb-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-md object-contain bg-wlDarker bg-opacity-50 mr-4" width="64" height="64" loading="lazy">
+                        <div>
+                            <h4 class="font-medium">${item.name}</h4>
+                            <div class="text-xs text-wlLight text-opacity-70 mb-1">${item.type || 'N/A'}</div>
+                            <div class="flex items-center text-xs">
+                                <span class="item-type-icon ${item.category} mr-1">
+                                    <i class="fas ${getTypeIcon(item.category)} text-xs"></i>
+                                </span>
+                                <span class="mr-2">${capitalizeFirstLetter(item.category)}</span>
+                                <span class="font-medium">Rank ${rankValue}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+                        <div>
+                            <div class="text-wlLight text-opacity-70">Level</div>
+                            <div>${item.level}</div>
+                        </div>
+                        <div>
+                            <div class="text-wlLight text-opacity-70">Stats</div>
+                            <div class="truncate">${item.attributes ? Object.entries(item.attributes).map(([k,v]) => `${k}:${v}`).join(', ') : 'N/A'}</div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="text-wlLight text-opacity-70">Base</div>
+                            <div class="truncate">${item.base || 'N/A'}</div>
+                        </div>
+                    </div>
+                    <button onclick="openItemModal(${item.id})" class="w-full py-2 bg-wlDark border border-wlLight border-opacity-20 rounded-md text-sm hover:bg-wlBlue transition">
+                        View Details
+                    </button>
+                `;
+                fragment.appendChild(card);
+            });
+            
+            container.innerHTML = ''; // Clear once
+            container.appendChild(fragment); // Append all at once
+        }
         // Apply filters to items
         async function applyFilters(items) {
             const { search, searchDescription, type, minLevel, maxLevel, base, orderedBase, statType, minStatValue } = currentState.filters;
@@ -6317,6 +5341,8 @@ function closeItemModal() {
     modalHistory = [];
     currentModalItemId = null;
     updateBackButton();
+    // Show FABs when modal closes
+    showFABs();
 }
 
 // Close modal when clicking X or outside
@@ -6448,16 +5474,15 @@ document.getElementById('itemsPerPageGrid').addEventListener('change', function(
 // ===== Base Material Multi-Select Functions =====
 function toggleBaseDropdown() {
     const dropdown = document.getElementById('baseDropdown');
+    const isHidden = dropdown.classList.contains('hidden');
+    
+    if (isHidden) {
+        // Opening: Render options now (Lazy Load)
+        updateBaseOptions(); 
+    }
+    
     dropdown.classList.toggle('hidden');
 }
-
-document.addEventListener('click', function(e) {
-    const container = document.getElementById('baseFilterContainer');
-    const dropdown = document.getElementById('baseDropdown');
-    if (!container.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.classList.add('hidden');
-    }
-});
 
 function updateSelectedBasesDisplay() {
     const display = document.getElementById('selectedBasesDisplay');
@@ -6564,13 +5589,15 @@ function extractAllBaseMaterials(items) {
 async function initializeBaseMaterials() {
     if (currentState.items.length > 0) {
         allBaseMaterials = extractAllBaseMaterials(currentState.items);
-        updateBaseOptions();
+        // Don't render options here! Wait for dropdown to open.
+        // updateBaseOptions(); // <--- REMOVE THIS CALL
     } else {
         await itemLoader.loadIndex();
         currentState.items = itemLoader.getIndexItems();
         allBaseMaterials = extractAllBaseMaterials(currentState.items);
-        updateBaseOptions();
     }
+    
+    // Setup settings listeners
     document.getElementById('baseSearchInput').addEventListener('input', updateBaseOptions);
     document.getElementById('settingAutoClearSearch').checked = baseFilterSettings.autoClearSearch;
     document.getElementById('settingAutoFocusSearch').checked = baseFilterSettings.autoFocusSearch;
@@ -6817,7 +5844,8 @@ async function loadInitialData() {
     try {
         await itemLoader.loadManifest();
         currentState.items = [];
-        initializeBaseMaterials();
+        // Defer Heavy Extractions
+        setTimeout(initializeBaseMaterials, 50);
         const urlParams = new URLSearchParams(window.location.search);
         const searchParam = urlParams.get('search');
         if (searchParam) {
@@ -7464,233 +6492,244 @@ if (document.readyState === 'loading') {
             }
         });
 
-        // ===== CRYSTAL TOUCH MOBILE UX ENHANCEMENTS =====
-        (function() {
-            'use strict';
-            if (!isMobile()) return;
+    // ===== CRYSTAL TOUCH MOBILE UX ENHANCEMENTS =====
+    // Optimized with RequestIdleCallback and Event Delegation
+    (function() {
+        'use strict';
 
-            // ===== AUTO-HIDING HEADER ON SCROLL =====
-            let lastScrollY = 0;
-            let headerScrollTicking = false;
-            const header = document.querySelector('header');
-            
-            window.addEventListener('scroll', function() {
-                if (!headerScrollTicking && header) {
-                    requestAnimationFrame(function() {
-                        const currentY = window.scrollY;
-                        if (currentY > lastScrollY && currentY > 100) {
-                            header.classList.add('scroll-hide');
-                            header.classList.remove('scroll-show');
-                        } else if (currentY < lastScrollY - 10) {
-                            header.classList.remove('scroll-hide');
-                            header.classList.add('scroll-show');
-                        }
-                        lastScrollY = currentY;
-                        headerScrollTicking = false;
-                    });
-                    headerScrollTicking = true;
-                }
+        // ===== 1. RESTORED HELPER FUNCTIONS (Required for HTML onclick) =====
+        
+        // Search History Data
+        var searchHistory = JSON.parse(localStorage.getItem('itemSearchHistory') || '[]');
+        var MAX_SEARCH_HISTORY = 5;
+        
+        function saveSearchToHistory(term) {
+            if (!term) return;
+            searchHistory = searchHistory.filter(function(s) { return s !== term; });
+            searchHistory.unshift(term);
+            if (searchHistory.length > MAX_SEARCH_HISTORY) searchHistory = searchHistory.slice(0, MAX_SEARCH_HISTORY);
+            localStorage.setItem('itemSearchHistory', JSON.stringify(searchHistory));
+            renderSearchHistory();
+        }
+
+        function renderSearchHistory() {
+            var bar = document.getElementById('searchHistoryBar');
+            if (!bar) return;
+            if (searchHistory.length === 0) { bar.innerHTML = ''; return; }
+            bar.innerHTML = searchHistory.map(function(term) {
+                return '<span class="search-history-chip" onclick="useSearchHistory(\'' + term.replace(/'/g, "\\'") + '\')">' +
+                    '<i class="fas fa-search" style="font-size:0.5rem"></i> ' + term +
+                    '<span class="chip-x-btn" onclick="event.stopPropagation(); removeFromSearchHistory(\'' + term.replace(/'/g, "\\'") + '\');">✕</span></span>';
+            }).join('');
+        }
+
+        window.useSearchHistory = function(term) {
+            var searchInput = document.getElementById('itemSearch');
+            if (searchInput) searchInput.value = term;
+            saveSearchToHistory(term);
+            currentState.filters.search = term.toLowerCase();
+            currentState.currentPage = 1;
+            renderItems();
+        };
+
+        window.removeFromSearchHistory = function(term) {
+            searchHistory = searchHistory.filter(function(s) { return s !== term; });
+            localStorage.setItem('itemSearchHistory', JSON.stringify(searchHistory));
+            renderSearchHistory();
+        };
+
+        // Recently Viewed Data
+        var recentlyViewed = JSON.parse(localStorage.getItem('itemRecentlyViewed') || '[]');
+        var MAX_RECENTLY_VIEWED = 8;
+
+        window.addToRecentlyViewed = function(item) {
+            if (!item || !item.id) return;
+            recentlyViewed = recentlyViewed.filter(function(r) { return r.id !== item.id; });
+            recentlyViewed.unshift({ id: item.id, name: item.name, image: item.image });
+            if (recentlyViewed.length > MAX_RECENTLY_VIEWED) recentlyViewed = recentlyViewed.slice(0, MAX_RECENTLY_VIEWED);
+            localStorage.setItem('itemRecentlyViewed', JSON.stringify(recentlyViewed));
+            renderRecentlyViewed();
+        };
+
+        function renderRecentlyViewed() {
+            var container = document.getElementById('recentlyViewedScroll');
+            if (!container || recentlyViewed.length === 0) { if(container) container.innerHTML = ''; return; }
+            container.innerHTML = recentlyViewed.map(function(item) {
+                return '<div class="recently-viewed-item" onclick="openItemModal(' + item.id + ')">' +
+                    '<img src="' + item.image + '" alt="' + item.name + '" loading="lazy">' +
+                    '<span>' + item.name + '</span></div>';
+            }).join('');
+        }
+
+        // Preset Filters
+        window.applyPresetFilter = function(preset) {
+            document.querySelectorAll('.preset-filter-chip').forEach(function(chip) {
+                chip.classList.toggle('active', chip.dataset.preset === preset);
+            });
+            var typeFilter = document.getElementById('itemTypeFilter');
+            switch(preset) {
+                case 'all': if(typeFilter) typeFilter.value = ''; currentState.filters.type = ''; break;
+                case 'weapons': if(typeFilter) typeFilter.value = 'weapon'; currentState.filters.type = 'weapon'; break;
+                case 'armor': if(typeFilter) typeFilter.value = 'armor'; currentState.filters.type = 'armor'; break;
+                case 'helmets': if(typeFilter) typeFilter.value = 'helmet'; currentState.filters.type = 'helmet'; break;
+                case 'accessories': if(typeFilter) typeFilter.value = 'accessory'; currentState.filters.type = 'accessory'; break;
+                case 'materials': if(typeFilter) typeFilter.value = 'material'; currentState.filters.type = 'material'; break;
+                case 'high-level':
+                    var minL = document.getElementById('minLevel');
+                    var maxL = document.getElementById('maxLevel');
+                    if(minL) minL.value = 50; if(maxL) maxL.value = 100;
+                    currentState.filters.minLevel = 50; currentState.filters.maxLevel = 100; break;
+                case 'epic-plus': break; // Implement if needed
+            }
+            showFilterSyncIndicator();
+            currentState.currentPage = 1;
+            renderItems();
+            updateFabFilterBadge();
+        };
+
+        window.showFilterSyncIndicator = function() {
+            var indicator = document.getElementById('filterSyncIndicator');
+            if (!indicator) return;
+            indicator.classList.add('visible');
+            setTimeout(function() { indicator.classList.remove('visible'); }, 600);
+        };
+
+        // ===== 2. PERFORMANCE OPTIMIZATIONS =====
+
+        // Global Ripple (Event Delegation - No loops!)
+        function initGlobalRipple() {
+            document.body.addEventListener('touchstart', function(e) {
+                const target = e.target.closest('button, .item-card, a.nav-link');
+                if (!target) return;
+
+                const touch = e.touches[0];
+                const rect = target.getBoundingClientRect();
+                const x = touch.clientX - rect.left;
+                const y = touch.clientY - rect.top;
+
+                const circle = document.createElement('span');
+                circle.className = 'ripple-circle';
+                const size = Math.max(rect.width, rect.height) * 0.5;
+                
+                circle.style.cssText = `
+                    width: ${size}px; height: ${size}px;
+                    left: ${x - size/2}px; top: ${y - size/2}px;
+                    position: absolute; border-radius: 50%;
+                    background: rgba(139, 92, 246, 0.2);
+                    pointer-events: none;
+                    transform: scale(0);
+                    animation: tactileRippleExpand 0.4s ease-out forwards;
+                `;
+                
+                target.style.position = 'relative'; 
+                target.style.overflow = 'hidden';
+                target.appendChild(circle);
+                setTimeout(() => circle.remove(), 500);
             }, { passive: true });
-            if (header) {
-                header.classList.remove('scroll-hide');
-                header.classList.add('scroll-show');
-            }
+        }
 
-            // ===== PRESET FILTER CAROUSEL =====
-            window.applyPresetFilter = function(preset) {
-                document.querySelectorAll('.preset-filter-chip').forEach(function(chip) {
-                    chip.classList.toggle('active', chip.dataset.preset === preset);
+        // Lazy Loading
+        function initLazyLoading() {
+            if (!('IntersectionObserver' in window)) return;
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                            imageObserver.unobserve(img);
+                        }
+                    }
                 });
-                var typeFilter = document.getElementById('itemTypeFilter');
-                switch(preset) {
-                    case 'all': if(typeFilter) typeFilter.value = ''; currentState.filters.type = ''; break;
-                    case 'weapons': if(typeFilter) typeFilter.value = 'weapon'; currentState.filters.type = 'weapon'; break;
-                    case 'armor': if(typeFilter) typeFilter.value = 'armor'; currentState.filters.type = 'armor'; break;
-                    case 'helmets': if(typeFilter) typeFilter.value = 'helmet'; currentState.filters.type = 'helmet'; break;
-                    case 'accessories': if(typeFilter) typeFilter.value = 'accessory'; currentState.filters.type = 'accessory'; break;
-                    case 'materials': if(typeFilter) typeFilter.value = 'material'; currentState.filters.type = 'material'; break;
-                    case 'high-level':
-                        var minL = document.getElementById('minLevel');
-                        var maxL = document.getElementById('maxLevel');
-                        if(minL) minL.value = 50; if(maxL) maxL.value = 100;
-                        currentState.filters.minLevel = 50; currentState.filters.maxLevel = 100; break;
-                    case 'epic-plus': break;
-                }
-                showFilterSyncIndicator();
-                currentState.currentPage = 1;
-                renderItems();
-                updateFabFilterBadge();
-            };
+            }, { rootMargin: '200px' });
 
-            // ===== SEARCH HISTORY =====
-            var searchHistory = JSON.parse(localStorage.getItem('itemSearchHistory') || '[]');
-            var MAX_SEARCH_HISTORY = 5;
-
-            function saveSearchToHistory(term) {
-                if (!term) return;
-                searchHistory = searchHistory.filter(function(s) { return s !== term; });
-                searchHistory.unshift(term);
-                if (searchHistory.length > MAX_SEARCH_HISTORY) searchHistory = searchHistory.slice(0, MAX_SEARCHHistory);
-                localStorage.setItem('itemSearchHistory', JSON.stringify(searchHistory));
-                renderSearchHistory();
-            }
-
-            window.removeFromSearchHistory = function(term) {
-                searchHistory = searchHistory.filter(function(s) { return s !== term; });
-                localStorage.setItem('itemSearchHistory', JSON.stringify(searchHistory));
-                renderSearchHistory();
-            };
-
-            function renderSearchHistory() {
-                var bar = document.getElementById('searchHistoryBar');
-                if (!bar) return;
-                if (searchHistory.length === 0) { bar.innerHTML = ''; return; }
-                bar.innerHTML = searchHistory.map(function(term) {
-                    return '<span class="search-history-chip" onclick="useSearchHistory(\'' + term.replace(/'/g, "\\'") + '\')">' +
-                        '<i class="fas fa-search" style="font-size:0.5rem"></i> ' + term +
-                        '<span class="chip-x-btn" onclick="event.stopPropagation(); removeFromSearchHistory(\'' + term.replace(/'/g, "\\'") + '\');">✕</span></span>';
-                }).join('');
-            }
-
-            window.useSearchHistory = function(term) {
-                var searchInput = document.getElementById('itemSearch');
-                if (searchInput) searchInput.value = term;
-                saveSearchToHistory(term);
-                currentState.filters.search = term.toLowerCase();
-                currentState.currentPage = 1;
-                renderItems();
-            };
-
-            // Save search on apply
-            var origApplyBtn = document.getElementById('applyFilters');
-            if (origApplyBtn) {
-                origApplyBtn.addEventListener('click', function() {
-                    var searchVal = document.getElementById('itemSearch').value.trim();
-                    if (searchVal) saveSearchToHistory(searchVal);
+            const grid = document.getElementById('itemsGrid');
+            if (!grid) return;
+            
+            grid.querySelectorAll('img[data-src]').forEach(img => imageObserver.observe(img));
+            const observer = new MutationObserver((mutations) => {
+                mutations.forEach(mutation => {
+                    mutation.addedNodes.forEach(node => {
+                        if (node.nodeType === 1) {
+                            if (node.matches && node.matches('img[data-src]')) imageObserver.observe(node);
+                            const imgs = node.querySelectorAll && node.querySelectorAll('img[data-src]');
+                            if (imgs) imgs.forEach(img => imageObserver.observe(img));
+                        }
+                    });
                 });
-            }
+            });
+            observer.observe(grid, { childList: true, subtree: true });
+        }
 
-            // ===== RECENTLY VIEWED =====
-            var recentlyViewed = JSON.parse(localStorage.getItem('itemRecentlyViewed') || '[]');
-            var MAX_RECENTLY_VIEWED = 8;
-
-            window.addToRecentlyViewed = function(item) {
-                if (!item || !item.id) return;
-                recentlyViewed = recentlyViewed.filter(function(r) { return r.id !== item.id; });
-                recentlyViewed.unshift({ id: item.id, name: item.name, image: item.image });
-                if (recentlyViewed.length > MAX_RECENTLY_VIEWED) recentlyViewed = recentlyViewed.slice(0, MAX_RECENTLY_VIEWED);
-                localStorage.setItem('itemRecentlyViewed', JSON.stringify(recentlyViewed));
-                renderRecentlyViewed();
-            };
-
-            function renderRecentlyViewed() {
-                var container = document.getElementById('recentlyViewedScroll');
-                if (!container || recentlyViewed.length === 0) { if(container) container.innerHTML = ''; return; }
-                container.innerHTML = recentlyViewed.map(function(item) {
-                    return '<div class="recently-viewed-item" onclick="openItemModal(' + item.id + ')">' +
-                        '<img src="' + item.image + '" alt="' + item.name + '" loading="lazy">' +
-                        '<span>' + item.name + '</span></div>';
-                }).join('');
-            }
-
-            // Patch openItemModal to track recently viewed
-            var origOpenItemModal = window.openItemModal;
-            window.openItemModal = async function(itemId, isGoingBack) {
-                await origOpenItemModal(itemId, isGoingBack);
-                if (itemLoader && typeof itemLoader.getItem === 'function') {
-                    var item = await itemLoader.getItem(itemId);
-                    if (item) window.addToRecentlyViewed(item);
-                }
-            };
-
-            // ===== FILTER PEEK BAR =====
-            var peekTimeout = null;
-            function initFilterPeekBar() {
-                var peekBar = document.getElementById('filterPeekBar');
-                if (!peekBar) return;
-                window.addEventListener('scroll', function() {
-                    clearTimeout(peekTimeout);
-                    peekBar.classList.remove('visible');
-                    peekTimeout = setTimeout(function() { peekBar.classList.add('visible'); }, 4000);
-                }, { passive: true });
-                peekTimeout = setTimeout(function() { peekBar.classList.add('visible'); }, 5000);
-            }
-
-            // ===== FILTER SYNC INDICATOR =====
-            function showFilterSyncIndicator() {
-                var indicator = document.getElementById('filterSyncIndicator');
-                if (!indicator) return;
-                indicator.classList.add('visible');
-                setTimeout(function() { indicator.classList.remove('visible'); }, 600);
-            }
-            window.showFilterSyncIndicator = showFilterSyncIndicator;
-
-            // ===== TACTILE RIPPLE FROM TOUCH ORIGIN =====
-            function initTactileRipple() {
-                document.querySelectorAll('button, .item-card, a.nav-link').forEach(function(el) {
-                    el.classList.add('tactile-ripple');
-                    el.addEventListener('touchstart', function(e) {
-                        var touch = e.touches[0];
-                        var rect = el.getBoundingClientRect();
-                        var x = touch.clientX - rect.left;
-                        var y = touch.clientY - rect.top;
-                        var existing = el.querySelectorAll('.ripple-circle');
-                        existing.forEach(function(r) { r.remove(); });
-                        var circle = document.createElement('div');
-                        circle.className = 'ripple-circle';
-                        var size = Math.max(rect.width, rect.height) * 0.5;
-                        circle.style.width = size + 'px';
-                        circle.style.height = size + 'px';
-                        circle.style.left = (x - size / 2) + 'px';
-                        circle.style.top = (y - size / 2) + 'px';
-                        el.appendChild(circle);
-                        setTimeout(function() { if (circle.parentNode) circle.remove(); }, 500);
-                    }, { passive: true });
+        // Auto-Hiding Header
+        let lastScrollY = 0;
+        let headerScrollTicking = false;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function() {
+            if (!headerScrollTicking && header) {
+                requestAnimationFrame(function() {
+                    const currentY = window.scrollY;
+                    if (currentY > lastScrollY && currentY > 100) {
+                        header.classList.add('scroll-hide');
+                        header.classList.remove('scroll-show');
+                    } else if (currentY < lastScrollY - 10) {
+                        header.classList.remove('scroll-hide');
+                        header.classList.add('scroll-show');
+                    }
+                    lastScrollY = currentY;
+                    headerScrollTicking = false;
                 });
+                headerScrollTicking = true;
             }
+        }, { passive: true });
 
-            // ===== MAGNETIC TAP (PROXIMITY GLOW) =====
-            function initMagneticTap() {
-                document.addEventListener('touchmove', function(e) {
-                    var touch = e.touches[0];
-                    var target = document.elementFromPoint(touch.clientX, touch.clientY);
-                    if (!target) return;
-                    document.querySelectorAll('.proximity-glow').forEach(function(el) { el.classList.remove('proximity-glow'); });
-                    var nearest = target.closest('.item-card, button, .tactile-ripple');
-                    if (nearest) nearest.classList.add('proximity-glow');
-                }, { passive: true });
-                document.addEventListener('touchend', function() {
-                    document.querySelectorAll('.proximity-glow').forEach(function(el) { el.classList.remove('proximity-glow'); });
-                }, { passive: true });
+        // ===== 3. INITIALIZATION =====
+        function initCrystalTouch() {
+            if (isMobile()) {
+                if(typeof init3DTilt === 'function') init3DTilt();
+                if(typeof initSwipeDismiss === 'function') initSwipeDismiss();
+                if(typeof initModalPullToClose === 'function') initModalPullToClose();
+                if(typeof initModalTabSwipe === 'function') initModalTabSwipe();
+                if(typeof initFabScrollBehavior === 'function') initFabScrollBehavior();
+                if(typeof showFABs === 'function') showFABs();
             }
+            
+            initGlobalRipple();
+            initLazyLoading();
+            renderSearchHistory();
+            renderRecentlyViewed();
+        }
 
-            // ===== INIT ALL ENHANCEMENTS =====
-            function initCrystalTouch() {
-                initFilterPeekBar();
-                initTactileRipple();
-                initMagneticTap();
-                renderSearchHistory();
-                renderRecentlyViewed();
+        // Run on Idle
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(initCrystalTouch, { timeout: 2000 });
+        } else {
+            setTimeout(initCrystalTouch, 200);
+        }
+
+        // Patch openItemModal to track history
+        var _origOpenItemModal = window.openItemModal;
+        window.openItemModal = async function(itemId, isGoingBack) {
+            await _origOpenItemModal(itemId, isGoingBack);
+            if (itemLoader && typeof itemLoader.getItem === 'function') {
+                var item = await itemLoader.getItem(itemId);
+                if (item) window.addToRecentlyViewed(item);
             }
+        };
 
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initCrystalTouch);
-            } else {
-                initCrystalTouch();
-            }
-
-            // Re-init after items render
-            var _origRender = window.renderItems;
-            window.renderItems = async function() {
-                await _origRender();
-                setTimeout(function() {
-                    renderSearchHistory();
-                    renderRecentlyViewed();
-                    initTactileRipple();
-                    initMagneticTap();
-                }, 200);
-            };
-        })();
-    </script>
+        // Patch renderItems
+        const _origRender = window.renderItems;
+        window.renderItems = async function() {
+            await _origRender();
+            setTimeout(() => {
+                if(typeof addRarityClassToCards === 'function') addRarityClassToCards();
+                if (isMobile() && typeof init3DTilt === 'function') init3DTilt();
+            }, 100);
+        };
+        
+    })();
+</script>
 </body>
 </html>

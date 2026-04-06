@@ -1,0 +1,619 @@
+/* ================================================================
+   MOBILE-ONLY STYLES FOR MONSTERS PAGE (< 768px)
+   ================================================================ */
+
+@media (max-width: 768px) {
+    /* ===== HEADER COMPACT ===== */
+    header {
+        padding: 0 !important;
+        min-height: 48px;
+    }
+
+    header .container {
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+    }
+
+    header h1 {
+        font-size: 0.95rem !important;
+    }
+
+    header .w-10.h-10 {
+        width: 1.6rem !important;
+        height: 1.6rem !important;
+    }
+
+    header .w-10.h-10 i {
+        font-size: 0.7rem !important;
+    }
+
+    /* ===== MAIN CONTENT SPACING ===== */
+    main {
+        padding: 0.5rem 0 !important;
+    }
+
+    section.text-center {
+        padding: 0.75rem 0 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    section.text-center h2 {
+        font-size: 1.3rem !important;
+        margin-bottom: 0.25rem !important;
+        line-height: 1.2 !important;
+    }
+
+    section.text-center p {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.5rem !important;
+        color: rgba(248, 250, 252, 0.6) !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Hide floating decorations */
+    section.text-center .absolute {
+        display: none !important;
+    }
+
+    /* ===== SEARCH BAR MOBILE ===== */
+    .max-w-2xl.mx-auto.relative {
+        position: relative !important;
+    }
+
+    #monsterSearchInput {
+        padding: 0.75rem 3.5rem 0.75rem 1.25rem !important;
+        font-size: 16px !important;
+        border-radius: 2rem !important;
+        background: rgba(30, 30, 50, 0.8) !important;
+        border: 1px solid rgba(239, 68, 68, 0.2) !important;
+        color: #f8fafc !important;
+        min-height: 48px !important;
+        width: 100% !important;
+    }
+
+    #monsterSearchInput::placeholder {
+        color: rgba(248, 250, 252, 0.4) !important;
+    }
+
+    /* Search button inside input */
+    section.text-center .max-w-2xl .absolute.right-3.top-3 {
+        position: absolute !important;
+        right: 0.35rem !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 2.75rem !important;
+        height: 2.75rem !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, rgba(239, 68, 68, 0.25), rgba(139, 92, 246, 0.25)) !important;
+        border: 1px solid rgba(239, 68, 68, 0.35) !important;
+        border-radius: 50% !important;
+        color: #fca5a5 !important;
+        z-index: 10 !important;
+    }
+
+    section.text-center .max-w-2xl .absolute.right-3.top-3 i {
+        font-size: 0.85rem !important;
+    }
+
+    section.text-center .max-w-2xl .absolute.right-3.top-3:active {
+        transform: translateY(-50%) scale(0.92) !important;
+        background: linear-gradient(135deg, rgba(239, 68, 68, 0.4), rgba(139, 92, 246, 0.4)) !important;
+    }
+
+    /* ===== FILTERS SECTION ===== */
+    section.mb-12 > .flex.flex-col.md\:flex-row {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        align-items: stretch !important;
+    }
+
+    /* Monster count heading */
+    section.mb-12 > .flex.flex-col.md\:flex-row > h3 {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    /* Filter controls container */
+    section.mb-12 > .flex.flex-col.md\:flex-row > .flex.flex-wrap {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.4rem !important;
+        width: 100% !important;
+    }
+
+    /* Filter selects full width */
+    .filter-select {
+        width: 100% !important;
+        min-height: 42px !important;
+        font-size: 16px !important;
+        border-radius: 0.6rem !important;
+        background: rgba(30, 30, 50, 0.7) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        color: #f8fafc !important;
+        padding: 0.6rem 2.5rem 0.6rem 0.85rem !important;
+    }
+
+    /* Level filter container */
+    .level-filter-container {
+        width: 100% !important;
+        border-radius: 0.75rem !important;
+        padding: 0.6rem 0.75rem !important;
+        background: rgba(30, 30, 50, 0.6) !important;
+        border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    }
+
+    .level-filter-header {
+        margin-bottom: 0.4rem !important;
+    }
+
+    .level-filter-label {
+        font-size: 0.75rem !important;
+    }
+
+    .level-range-display {
+        font-size: 0.7rem !important;
+        padding: 0.2rem 0.5rem !important;
+    }
+
+    .level-slider-container {
+        height: 36px !important;
+        margin: 0.3rem 0 !important;
+    }
+
+    .slider-labels {
+        font-size: 0.6rem !important;
+        margin-top: 1rem !important;
+    }
+
+    .level-quick-buttons {
+        gap: 0.25rem !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .level-quick-btn {
+        font-size: 0.65rem !important;
+        padding: 0.25rem 0.5rem !important;
+        border-radius: 0.75rem !important;
+    }
+
+    /* Sort button */
+    #sortMonstersButton {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 0.55rem 1rem !important;
+        font-size: 0.8rem !important;
+        border-radius: 0.6rem !important;
+        background: linear-gradient(135deg, rgba(239, 68, 68, 0.12), rgba(139, 92, 246, 0.12)) !important;
+        border: 1px solid rgba(239, 68, 68, 0.3) !important;
+        color: #fca5a5 !important;
+    }
+
+    #sortMonstersButton:active {
+        transform: scale(0.97) !important;
+    }
+
+    /* Sort dropdown */
+    #sortMonstersDropdown {
+        left: 0 !important;
+        right: auto !important;
+        width: 100% !important;
+    }
+
+    /* ===== MONSTER GRID - 2 COLUMNS ===== */
+    #monsterGrid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.5rem !important;
+        padding: 0 0.5rem !important;
+    }
+
+    /* Monster card compact */
+    #monsterGrid > div.bg-wlDark {
+        padding: 0.5rem !important;
+        border-radius: 0.6rem !important;
+        border: 1px solid rgba(255, 255, 255, 0.06) !important;
+        background: rgba(30, 30, 50, 0.7) !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Monster icon smaller */
+    #monsterGrid > div.bg-wlDark .w-16.h-16 {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        border-radius: 0.5rem !important;
+    }
+
+    #monsterGrid > div.bg-wlDark .w-16.h-16 i {
+        font-size: 1rem !important;
+    }
+
+    #monsterGrid > div.bg-wlDark .w-16.h-16 img {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+    }
+
+    /* Monster name */
+    #monsterGrid > div.bg-wlDark h4 {
+        font-size: 0.75rem !important;
+        margin-bottom: 0.1rem !important;
+    }
+
+    #monsterGrid > div.bg-wlDark h4 .text-xs {
+        font-size: 0.55rem !important;
+    }
+
+    /* Location text */
+    #monsterGrid > div.bg-wlDark .text-opacity-70 {
+        font-size: 0.6rem !important;
+    }
+
+    /* Stats row */
+    #monsterGrid > div.bg-wlDark .space-y-1 {
+        margin-bottom: 0.25rem !important;
+    }
+
+    #monsterGrid > div.bg-wlDark .space-y-1 p {
+        font-size: 0.6rem !important;
+    }
+
+    #monsterGrid > div.bg-wlDark .space-y-1 strong {
+        font-size: 0.55rem !important;
+    }
+
+    /* Drops preview */
+    #monsterGrid > div.bg-wlDark .truncate {
+        font-size: 0.55rem !important;
+    }
+
+    /* View Details link */
+    #monsterGrid > div.bg-wlDark .view-details-link {
+        font-size: 0.65rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        padding: 0.3rem 0 !important;
+        border-radius: 0.5rem !important;
+        background: rgba(239, 68, 68, 0.08) !important;
+        border: 1px solid rgba(239, 68, 68, 0.2) !important;
+    }
+
+    #monsterGrid > div.bg-wlDark .view-details-link:active {
+        transform: scale(0.95) !important;
+        background: rgba(239, 68, 68, 0.2) !important;
+    }
+
+    /* ===== NO RESULTS MESSAGE ===== */
+    #noResultsMessage {
+        padding: 2rem 1rem !important;
+        text-align: center !important;
+    }
+
+    #noResultsMessage i {
+        font-size: 2rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    #noResultsMessage p {
+        font-size: 0.75rem !important;
+    }
+
+    /* ===== PAGINATION MOBILE ===== */
+    #paginationControls {
+        padding: 0 0.5rem !important;
+    }
+
+    #paginationInfo {
+        font-size: 0.65rem !important;
+        margin-bottom: 0.35rem !important;
+    }
+
+    #paginationControls .flex.items-center.gap-2 {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    #paginationControls button {
+        min-width: 2rem !important;
+        min-height: 2rem !important;
+        padding: 0.25rem 0.4rem !important;
+        font-size: 0.7rem !important;
+        border-radius: 0.4rem !important;
+    }
+
+    #pageNumbers button {
+        min-width: 1.75rem !important;
+        min-height: 1.75rem !important;
+        padding: 0.2rem 0.35rem !important;
+        font-size: 0.65rem !important;
+    }
+
+    #perPageSelect {
+        min-height: 36px !important;
+        font-size: 16px !important;
+        border-radius: 0.5rem !important;
+        background: rgba(30, 30, 50, 0.7) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        color: #f8fafc !important;
+        padding: 0.4rem 2rem 0.4rem 0.6rem !important;
+    }
+
+    /* ===== MODAL BOTTOM SHEET ===== */
+    #monsterModal.modal-overlay {
+        align-items: flex-end !important;
+        padding: 0 !important;
+    }
+
+    #monsterModal .modal-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        max-height: 85vh !important;
+        height: auto !important;
+        border-radius: 1.25rem 1.25rem 0 0 !important;
+        padding: 1rem 0.75rem !important;
+        margin: 0 !important;
+        background: linear-gradient(180deg, rgba(30, 41, 59, 0.98) 0%, rgba(15, 23, 42, 0.99) 100%) !important;
+        border-top: 1px solid rgba(239, 68, 68, 0.15) !important;
+        box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.5) !important;
+        transform: translateY(100%) !important;
+        opacity: 0 !important;
+        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease !important;
+    }
+
+    #monsterModal[style*="display: flex"] .modal-content,
+    #monsterModal:not(.modal-hidden) .modal-content {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+
+    /* Modal close button */
+    .modal-close-button {
+        width: 2rem !important;
+        height: 2rem !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.06) !important;
+    }
+
+    .modal-close-button:active {
+        background: rgba(239, 68, 68, 0.2) !important;
+    }
+
+    /* Modal monster icon */
+    #modalMonsterIcon {
+        width: 3.5rem !important;
+        height: 3.5rem !important;
+        border-radius: 0.75rem !important;
+    }
+
+    #modalMonsterIcon i {
+        font-size: 1.5rem !important;
+    }
+
+    /* Modal name */
+    #modalMonsterName {
+        font-size: 1.1rem !important;
+    }
+
+    #modalMonsterSubtitle {
+        font-size: 0.7rem !important;
+    }
+
+    /* Modal stats */
+    #modalMonsterStats .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.35rem !important;
+    }
+
+    #modalMonsterStats .bg-wlDarker {
+        padding: 0.4rem !important;
+        border-radius: 0.5rem !important;
+    }
+
+    #modalMonsterStats .text-sm {
+        font-size: 0.65rem !important;
+    }
+
+    #modalMonsterStats .font-bold {
+        font-size: 0.85rem !important;
+    }
+
+    /* Drops section */
+    #modalMonsterDrops li {
+        font-size: 0.7rem !important;
+        padding: 0.25rem 0 !important;
+    }
+
+    #modalNoDrops {
+        font-size: 0.7rem !important;
+    }
+
+    /* ===== FOOTER MOBILE ===== */
+    footer .grid {
+        display: block !important;
+        text-align: center !important;
+    }
+
+    footer .grid > div {
+        display: none !important;
+    }
+
+    footer .grid > div:first-child {
+        display: block !important;
+        text-align: center !important;
+    }
+
+    footer .grid > div:first-child .flex {
+        justify-content: center !important;
+    }
+
+    footer .border-t {
+        padding-top: 0.75rem !important;
+    }
+
+    footer .border-t .text-sm {
+        font-size: 0.6rem !important;
+    }
+
+    /* ===== MOBILE MENU BUTTON - HIDDEN (replaced by FAB) ===== */
+    #openSidebar {
+        display: none !important;
+    }
+
+    /* ===== SIDEBAR MOBILE ===== */
+    #mobileSidebar {
+        width: 80vw !important;
+        max-width: 18rem !important;
+    }
+
+    #mobileSidebar nav a {
+        padding: 0.6rem 0.75rem !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+/* ===== EXTRA SMALL SCREENS (<=420px) ===== */
+@media (max-width: 420px) {
+    #monsterGrid {
+        gap: 0.4rem !important;
+        padding: 0 0.25rem !important;
+    }
+
+    #monsterGrid > div.bg-wlDark {
+        padding: 0.4rem !important;
+    }
+
+    #monsterGrid > div.bg-wlDark .w-16.h-16 {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    #monsterGrid > div.bg-wlDark h4 {
+        font-size: 0.68rem !important;
+    }
+
+    #monsterGrid > div.bg-wlDark .space-y-1 p {
+        font-size: 0.55rem !important;
+    }
+}
+
+/* ===== LANDSCAPE MOBILE ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    #monsterModal .modal-content {
+        max-height: 95vh !important;
+    }
+}
+
+/* ===== FAB NAVIGATION ===== */
+#fabNavContainer {
+    display: flex !important;
+    position: fixed !important;
+    bottom: calc(env(safe-area-inset-bottom, 0.5rem) + 1.5rem) !important;
+    left: calc(env(safe-area-inset-left, 0.5rem) + 1.5rem) !important;
+    z-index: 999 !important;
+}
+
+#fabNavBtn {
+    display: flex !important;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.55rem 0.85rem;
+    min-height: 3rem;
+    border-radius: 1.5rem;
+    background: rgba(16, 185, 129, 0.2) !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25), 0 1px 3px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px) saturate(1.8);
+    -webkit-backdrop-filter: blur(16px) saturate(1.8);
+    color: #6ee7b7 !important;
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+#fabNavBtn i {
+    font-size: 0.8rem !important;
+}
+
+#fabNavBtn .fab-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(248, 250, 252, 0.9);
+    white-space: nowrap;
+}
+
+#fabNavBtn:active {
+    transform: scale(0.93) !important;
+    background: rgba(16, 185, 129, 0.35) !important;
+}
+
+/* FAB Drawer */
+#fabNavDrawer {
+    display: none !important;
+    position: fixed !important;
+    bottom: calc(env(safe-area-inset-bottom, 0.5rem) + 5rem) !important;
+    left: calc(env(safe-area-inset-left, 0.5rem) + 1.5rem) !important;
+    z-index: 998 !important;
+    background: linear-gradient(180deg, rgba(20, 20, 35, 0.98) 0%, rgba(13, 13, 20, 0.99) 100%) !important;
+    border: 1px solid rgba(139, 92, 246, 0.15) !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    padding: 0.5rem !important;
+    min-width: 180px;
+    transform: scale(0.75) translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#fabNavDrawer.open {
+    display: flex !important;
+    flex-direction: column !important;
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#fabNavDrawer a {
+    display: flex !important;
+    align-items: center;
+    gap: 0.6rem !important;
+    padding: 0.65rem 0.85rem !important;
+    border-radius: 0.6rem !important;
+    font-size: 0.8rem !important;
+    color: rgba(248, 250, 252, 0.7) !important;
+    transition: background-color 0.1s ease, transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#fabNavDrawer a:active {
+    transform: scale(0.97);
+    background-color: rgba(139, 92, 246, 0.1) !important;
+}
+
+#fabNavDrawer a i {
+    font-size: 0.85rem !important;
+    width: 1.2rem;
+    text-align: center;
+}
+
+/* FAB overlay backdrop */
+#fabNavOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 997;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+#fabNavOverlay.open {
+    display: block;
+    opacity: 1;
+}
